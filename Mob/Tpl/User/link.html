@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系人信息</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，联系人信息">
+    <meta name="description" content="滴滴快贷联系人信息。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+    <script src="/Public/Mob/yh/js/jquery-1.11.3.min.js"></script>
+    <style>
+          /*浮层样式*/
+        .shadowBox{
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: fixed;
+            /*left: 0;*/
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.8);
+            display:none;
+        }
+        .wrapBox{
+            width: 80%;
+            /*height: 40%;*/
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin-left: -40%;
+            -webkit-box-shadow: 0 0 4px #000000;
+            -moz-box-shadow: 0 0 4px #000000;
+            box-shadow: 0 0 4px #000000;
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .wrapBox p{
+            padding: 10px;
+        }
+        .wrapBox p:last-of-type{
+            margin-bottom: 40px;
+        }
+        .wrapBox .shadowBtn {
+            position: relative;
+            width: 100%;
+        }
+        .wrapBox .shadowBtn .Btn_container{
+            width: 80%;
+            padding-bottom: 30px;
+            margin: 0 auto;
+
+        }
+        .wrapBox .shadowBtn .Btn_container:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .wrapBox .shadowBtn span{
+            display: block;
+            width: 45%;
+            background: #ee3200;
+            margin-right: 5%;
+            text-align: center;
+            float: left;
+            line-height: 2.2;
+            color: #ffffff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="mhome">
+<header class="dd_header">联系人信息<span class="fa fa-chevron-left dd_return" onclick="return_page()"></span></header>
+<section class="dd_index  dd_index2" style="height: 500px;">
+    <div style="width: 90.5%; margin: 0 auto;">
+        <ul class="worker_info" >
+			<li>
+                    <span class="contact_dd contact_add">联系人</span>
+                    <span class="contact_dd contact_add">关系</span>
+                    <span class="contact_dd contact_tel contact_add">电话</span>
+            </li>
+			<volist name="result" id="vo">
+            <li onclick="del({$vo.id})"><span class="contact_dd">{$vo.name}</span><span class="contact_dd">{$vo.relation}</span><span class="contact_dd contact_tel">{$vo.phone}</span></li>
+            <input type="hidden" id="del_id" />
+			</volist>
+			<if condition="$status eq 2">
+			<li onclick="add()">
+                <a href="javascript:;" class="a_contact">
+                    <span class="contact_dd contact_add">添加联系人</span>
+                    <span class="contact_dd contact_add">添加关系</span>
+                    <span class="contact_dd contact_tel contact_add">添加电话</span>
+                </a>
+            </li>
+            <li>点击联系人可删除</li>
+			</if>
+        </ul>
+    </div>
+</section>
+<!--新的提示框-->
+<div class="shadowBox">
+    <section class="wrapBox" id="news">
+        <p>确定要删除？</p>
+        <p>&nbsp;</p>
+        <div class="shadowBtn">
+            <div class="Btn_container">
+                <span id="do">确定</span>
+                <span id="cancel">取消</span>
+            </div>
+
+        </div>
+    </section>
+</div>
+</body>
+<script>
+    var shadow=document.getElementsByClassName("shadowBox")[0];
+    var btns=shadow.getElementsByClassName("shadowBtn")[0].getElementsByTagName("span");
+	function add(){
+		window.location.href="{:U('User/link_update',array('id'=>$id))}";
+	}
+	function return_page(){
+		window.location.href = "{:U('User/index')}";
+	}
+    function del(id){
+        shadow.style.display="block";
+        $("#del_id").val(id);
+    }
+    $("#do").bind('click',function(){
+        var  id = $("#del_id").val();
+        $.ajax({ 
+                type: "POST", 
+                url: "{:U('User/link_del')}",
+                data:{'id':id},
+                success:function(data){
+                    var data = eval("("+data+")");
+                    if(data.error == 1){
+                          window.location.href=data.msg;
+                    }
+                }
+        });        
+    });
+    $("#cancel").bind('click',function(){
+        shadow.style.display="none";
+        $("#del_id").val('');
+    });
+</script>
+</html>

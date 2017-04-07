@@ -1,0 +1,3 @@
+<?php
+//000000000000s:64:"SELECT `id` FROM `dcyd_user` WHERE ( phone=王企鹅 ) LIMIT 1  ";
+?>

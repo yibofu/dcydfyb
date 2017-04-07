@@ -1,0 +1,236 @@
+        .sizea{ font-size: 1.6rem;}/*18*/
+        .sizeb{ font-size: 1.8rem;}/*24*/
+        .sizec{ font-size: 1.6rem;}/*18*/
+        .sizef{ font-size: 1.4rem;}/*18*/
+        .sized{ font-size: 2rem;}
+        .sizee{ font-size: 1.4rem;}/*18*/
+        .fom-jia{ font-weight: bold;}
+        .texta{text-indent:2em;}
+        .yinc{text-overflow : ellipsis;
+            white-space : nowrap;
+            overflow : hidden;
+        }
+        .lin-a{ line-height: 1.8rem}
+        .lin-b{ line-height: 3rem}
+        .fona-w{font-family: 'Georgia', Times, Times New Roman, serif;color: #999999; font-size: 1.8rem;}
+        .fona-r{font-family: 'Georgia', Times, Times New Roman, serif;color: #000000; font-size: 1.4rem;}
+
+
+        /*********** 文字颜色 ************/
+        .coloa{ color: #b3b3b3;}
+        .colob{ color: #cc0000;}
+        .coloc{ color: #ffffff;}
+        .colod{ color: #00a0e9;}
+
+        .videoa{ margin-top: 3rem; background: #ffffff; padding-bottom: 1rem; border-bottom: .08rem solid #dddddd;padding-top: 1rem;}
+
+        .videoa .videoa-heah{
+            line-height: 1.8rem;
+            margin: 0 4%;
+        }
+        .videoa .videoa-heah .videoa-heah-aa{
+            width: 100%;
+            display: inline-block;
+            margin: 0rem;
+            line-height: 3.4rem;
+        }
+        .videoa .videoa-nav{
+            width: 80%;
+            line-height: 2.2rem;
+            margin-left: 4%;
+
+        }
+        .videoa .videoa-nav .videoa-nav-aa{
+            width: 120%;
+
+        }
+        .videoa .videoa-nav .videoa-nav-aa .nav-aa-a{
+            width: 35%;
+            display: inline-block;
+        }
+        .videoa .videoa-nav .videoa-nav-aa .nav-aa-b{
+            width: 30%;
+            display: inline-block;
+        }
+        .videoa .videoa-nav .videoa-nav-aa .nav-aa-c{
+            width: 30%;
+            display: inline-block;
+        }
+
+
+        /*******选项卡******/
+        .ting{
+            margin-left: 6%;
+        }
+        .main-title{
+            margin-top: 1rem;
+            width:100%;
+
+        }
+        .tab-nav{
+            margin:0;
+            height:3rem;
+            padding:0;
+            background: #ffffff;
+        }
+        .tab-nav li{
+            margin:0;
+            padding:0;
+            width:33.3%;
+            height:3rem;
+            line-height: 2rem;
+            float:left;
+            text-align:center;
+        }
+        .current{
+            border-bottom: .1rem solid #00a0e9;
+        }
+        .tab-content{
+            width:100%;
+            margin: .4rem 0 0 0;
+            padding-bottom: 4rem;
+        }
+        .tab-content .content-nav{
+            margin: .8rem 7% 0 7%;
+        }
+        .tab-content .content-h{
+            margin: 0 7%;
+            line-height: 3.4rem;
+        }
+        .tab-content .content-ion{
+            background: #ffffff;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            padding-left: 4%;
+        }
+        .tab-content .content-iun{
+            width: 93%;
+            margin-left: 4%;
+        }
+        .tab-content .inu{
+            margin: 0 7%;
+            padding-left: 4%;
+            line-height: 2.2rem;
+        }
+        .tab-content .content-iun a img{
+            width: 46%;
+        }
+        .content .content-o{
+            width:100%;
+            position: relative;
+        }
+        .content .content-o .content-o-a{
+            width: 30%;
+            display: inline-block;
+            position: absolute;
+            top: 5rem;
+            left: 7%;
+        }
+        .content .content-o .content-o-a img{
+            width: 7rem;
+            height: 7rem;
+        }
+        .content .content-o .content-o-b{
+            width: 65%;
+            display: inline-block;
+            margin-left: 35%;
+        }
+        .content .content-i{
+            line-height: 2.6rem;
+            padding-left: 4%;
+            background: #ffffff;
+        }
+        /*******评论******/
+        #ctn {
+            width: 100%;
+            margin: .4rem auto 4rem auto;
+        }
+        #ctn p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        #area {
+            width: 100%;
+            height: 6rem;
+            margin: 0 auto;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background: #f5f5f5;
+            z-index: 19;
+        }
+        .uij{
+            position: absolute;
+            left: 3%;
+            bottom:.6rem;
+        }
+        #area textarea{ position: absolute;z-index: 9;}
+        #textArea {
+            display: block;
+            width:100%;
+            padding: .4rem;
+            border-radius: 3px;
+            resize: none;
+            font-size: 1.6rem;
+            border: .1rem solid #CCCCCC;
+			height: 3.2rem;
+        }
+        #textArea:focus {
+            outline: none;
+        }
+        #submit {
+            width: 20%;
+            border: none;
+            background: #38f;
+            color: #fff;
+            border-radius: 3px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            height: 2rem;
+        }
+        .con{
+            width: 100%;
+            line-height: 2rem;
+            height: 7rem;
+            padding: .8rem 5% 1.6rem 19%;
+            border-bottom: 1px solid #cccccc;
+            display: inline-block;
+            word-wrap: break-word;
+            position: relative;
+        }
+        .con span {
+            position: absolute;
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            left: 10px;
+            top: 5px;
+            width: 3.2rem;
+            height: 2.7rem;
+        }
+        .con span img{
+            width: 3.2rem;
+            height: 2.7rem;
+        }
+        .con i {
+            display: block;
+            font-size: 12px;
+            font-style: normal;
+            position: absolute;
+            right: 9%;
+            bottom: 0;
+        }
+        .opi{margin-right: 4%;}
+        .web-yin{ width:1.4rem; height: 1.4rem; margin-right: 3%; margin-bottom: .6rem;}
+        .web-ya{ width:2.3rem; height: 1.4rem;margin-left: 8%;margin-bottom: .6rem;}
+        .iond{ position: absolute; top: 3.6rem; left: 2%; width: 4rem; height: 2rem;}
+
+        #preview1{color: #00a0e9;}
+        #preview2{}
+        #preview3{}
+        #preview4{}
+        .none1{display: block;}
+        .none2{display: none;}
+        .none3{display: none;}
+        .none4{display: none;}

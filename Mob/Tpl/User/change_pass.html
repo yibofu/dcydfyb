@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改登录密码</title>
+    <meta name="keywords" content="滴滴快贷，修改登录密码">
+    <meta name="description" content="滴滴快贷修改登录密码。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+	<script src="/Public/Mob/js/jquery-1.11.3.min.js"></script>
+	<style>
+		 /*浮层样式*/
+        .shadowBox{
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: fixed;
+            /*left: 0;*/
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.8);
+			display:none;
+        }
+        .wrapBox{
+            width: 80%;
+            /*height: 40%;*/
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin-left: -40%;
+            -webkit-box-shadow: 0 0 4px #000000;
+            -moz-box-shadow: 0 0 4px #000000;
+            box-shadow: 0 0 4px #000000;
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .wrapBox p{
+            padding: 10px;
+        }
+        .wrapBox p:last-of-type{
+            margin-bottom: 40px;
+        }
+        .wrapBox .shadowBtn {
+            position: relative;
+            width: 100%;
+        }
+        .wrapBox .shadowBtn .Btn_container{
+            width: 80%;
+            padding-bottom: 30px;
+            margin: 0 auto;
+
+        }
+        .wrapBox .shadowBtn .Btn_container:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .wrapBox .shadowBtn span{
+            display: block;
+            width: 45%;
+            background: #ee3200;
+            margin-right: 5%;
+            text-align: center;
+            float: left;
+            line-height: 2.2;
+            color: #ffffff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        /*浮层样式*/
+	</style>
+</head>
+<body class="mhome">
+<header class="dd_header">修改登录密码<span class="fa fa-chevron-left dd_return" onclick="history.go(-1);"></span></header>
+<section class="dd_index dd_index2">
+    <form action="#"method="post">
+        <div class="input_box">
+            <span class="input_text">原始密码</span><input type="password" name="initpwd" maxlength="15" placeholder="请输入初始密码" id="old_pass" name="old_pass"/>
+        </div>
+        <div class="input_box">
+            <span class="input_text">新&nbsp;密&nbsp;码</span><input type="password" name="newpwd" maxlength="15" placeholder="请输入新密码" id="new_pass1" name="new_pass1"/>
+        </div>
+        <div class="input_box">
+            <span class="input_text">确认密码</span><input type="password" placeholder="请确认新密码" id="new_pass2" name="new_pass2"/>
+        </div>
+
+    </form>
+    <div class="dd_yzm " onclick="sub()"><a href="javascript:;">确认</a></div>
+</section>
+<div class="shadowBox">
+    <section class="wrapBox">
+        <p>&nbsp;</p>
+        <p id="word" style="text-align:center;">浮层内容</p>
+        <p>&nbsp;</p>
+        <div class="shadowBtn">
+            <div class="Btn_container">
+                <span>确定</span>
+                <span>取消</span>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<script>
+	var shadow=document.getElementsByClassName("shadowBox")[0];
+	var btns=shadow.getElementsByClassName("shadowBtn")[0].getElementsByTagName("span");
+	for(var i=0;i<btns.length;i++){
+			btns[i].onclick=function(){
+				shadow.style.display="none";
+				flag=true;
+			};
+	}
+	$("#old_pass").bind('blur',function(){
+		var pass = $(this).val();
+		var id = {$id};
+		$.ajax({ 
+				type: "POST", 
+				url: "{:U('User/check_pass')}",
+				data:{'pwd':pass,'id':id},
+				success:function(data){
+					var data = eval("("+data+")");
+					if(!data.error){
+						shadow.style.display="block";
+						$("#word").html(data.message);
+						$(this).val('');
+					}
+				}
+		});
+	});
+	function sub(){
+		var pwd1 = $("#new_pass1").val();
+		var pwd2 = $("#new_pass2").val();
+		var id = {$id};
+		$.ajax({ 
+				type: "POST", 
+				url: "{:U('User/update_pass',array('id'=>$id))}",
+				data:{'pwd_nomd5':pwd1,'pwd':pwd2},
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						window.location.href = "{:U('Index/login')}";
+					}else{
+						shadow.style.display="block";
+						$("#word").html(data.message);
+					}
+				}
+		});
+	}
+	function return_page(){
+		window.location.href = "{:U('User/index')}";
+	}
+</script>
+</html>

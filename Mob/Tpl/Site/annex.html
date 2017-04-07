@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>补充附件</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，补充附件">
+    <meta name="description" content="滴滴快贷补充附件。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/css/set.css"/>
+    <link rel="stylesheet" href="/Public/Mob/css/footer.css"/>
+    <script src="/Public/Mob/js/jquery-1.11.3.min.js"></script>
+</head>
+<body class="mhome">
+<header class="dd_header">补充附件<span class="fa fa-chevron-left dd_return"></span></header>
+<section class="dd_index">
+    <form action="#">
+        <div class="dd_buchong">
+            <span class="buchong_title">标题</span><input type="text" id="fj_title" placeholder="请输入标题"/>
+        </div>
+        <div class="show_img">
+            <img src="./img/i_img_take_photo.png" alt="" width="100%"/>
+        </div>
+
+    </form>
+    <div class="dd_yzm"><a href="#">查找拍照</a></div>
+    <div class="dd_yzm dd-zc" style="margin-top:10px;"><a href="#">确认</a></div>
+</section>
+
+<footer class="web_footer">
+    <ul>
+        <li><a href="#"><span class="dd_nav1 "></span>申请</a></li>
+        <li><a href="#"><span class="dd_nav2"></span>账户</a></li>
+        <li class="active"><a href="#" class="active"><span class="dd_nav3x"></span>设置</a></li>
+        <li><a href="#"><span class="dd_nav4"></span>应用</a></li>
+    </ul>
+</footer>
+<script>
+    $(function () {
+        var screen_height=$(window).height();
+       $(".show_img").css({
+           height:screen_height/3
+       });
+        $(".show_img").css({
+            height: $(".show_img").find("img").height()
+        });
+
+    })
+</script>
+</body>
+</html>

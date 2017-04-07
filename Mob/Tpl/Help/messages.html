@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消息</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，消息">
+    <meta name="description" content="滴滴快贷消息。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css?v=20160101"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+    <link rel="stylesheet" href="/Public/Mob/yh/css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/account.css"/>
+    <link rel="stylesheet" href="/Public/Mob/yh/css/more.css"/>
+    <script src="/Public/Mob/js/jquery-1.11.3.min.js"></script>
+    <style>
+        .dd_set li{
+            height: auto;
+        }
+        .dd_set li .showDetail{
+            background: #eeeeee;
+            font-size: 14px;
+            padding:0 5px;
+            line-height: 24px;
+            display: none;
+        }
+        .dd_index:last-of-type{
+            margin-bottom: 65px;
+        }
+        .new_mess{
+            color: #ff0000;
+            font-size: 13px;
+            border:1px solid #ff0000;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            padding: 1px;
+            margin-left: 2px;
+        }
+        .date{
+            font-size: 12px;
+            position: absolute;
+            right: 30px;
+            top: 2px;
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body class="mhome" style="background: #f0f4fe;">
+<header class="dd_header">消息<span class="fa fa-chevron-left dd_return" onclick="history.go(-1);"></span></header>
+<volist name="result" id="vo" empty='$empty'>
+<section class="dd_index">
+    <div class="dd_set_container">
+        <ul class="dd_set">
+            <li>
+                <div class="mess">
+                    <a href="/Mob/index.php/Help/message_detail/id/{$vo.id}">{$vo.title}{$vo.is_read}<span class="date">{$vo.ctime}</span> <span class="fa fa-chevron-right chevron_right"></span>
+                </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+</volist>
+<include file="Public:footer"/>
+</body>
+</html>

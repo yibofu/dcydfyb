@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请中</title>
+    <meta name="keywords" content="滴滴快贷，申请借款确认">
+    <meta name="description" content="滴滴快贷申请借款确认。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/account.css"/>
+    <link rel="stylesheet" href="/Public/Mob/yh/css/footer.css"/>
+	 <script src="/Public/Mob/yh/js/jquery-1.11.3.min.js"></script>
+    <style>
+		 /*浮层样式*/
+        .shadowBox{
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: fixed;
+            /*left: 0;*/
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.8);
+			display:none;
+        }
+        .wrapBox{
+            width: 80%;
+            /*height: 40%;*/
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin-left: -40%;
+            -webkit-box-shadow: 0 0 4px #000000;
+            -moz-box-shadow: 0 0 4px #000000;
+            box-shadow: 0 0 4px #000000;
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .wrapBox p{
+            padding: 10px;
+        }
+        .wrapBox p:last-of-type{
+            margin-bottom: 40px;
+        }
+        .wrapBox .shadowBtn {
+            position: relative;
+            width: 100%;
+        }
+        .wrapBox .shadowBtn .Btn_container{
+            width: 80%;
+            padding-bottom: 30px;
+            margin: 0 auto;
+
+        }
+        .wrapBox .shadowBtn .Btn_container:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .wrapBox .shadowBtn span{
+            display: block;
+            width: 45%;
+            background: #ee3200;
+            margin-right: 5%;
+            text-align: center;
+            float: left;
+            line-height: 2.2;
+            color: #ffffff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="mhome">
+<header class="dd_header">账号-{$info.name}</header>
+    <section class="dd_account">
+        <div class="dd_account_box_left">
+            <p class="dd_account_p">目前应还款</p>
+            <p class="dd_account_p1"><span class="ac_total">{$info.money}</span>元</p>
+        </div>
+        <div class="dd_account_box_right">
+            <ul>
+                <li>共借款：<span>{$info.nums}</span>笔</li>
+                <li>合计金额：<span>{$info.loan_money}</span>元</li>
+                <li>信用额度：<span>5000.00</span>元</li>
+            </ul>
+        </div>
+    </section>
+<section class="dd_borrow_box">
+    <nav>
+        <ul >
+            <li class="active" onclick="apply()" style="cursor:pointer">申请中</li>
+            <li onclick="should()" style="cursor:pointer">应还款</li>
+            <li onclick="end()" style="cursor:pointer">已还款</li>
+        </ul>
+    </nav>
+    <!--申请信息-->
+	<if condition="$status neq 1">
+    <section class="apply_detail" <if condition="$applying_datalist.is_over neq 2">style="border: 1px solid red;"</if>>
+        <div class="total">
+            <div class="total_m fl">{$applying_datalist.loan_money}元</div>
+            <div class="total_m fr">{$applying_datalist.time_limit}个月</div>
+        </div>
+		
+        <p style="font-size: 14px; color: #999999;">申请于{$applying_datalist.creatime|date="Y-m-d H:i:s",###}</p>
+		<if condition="$applying_datalist.is_over eq 2">
+        <div class="apply_process" id="apply_process">
+			<if condition="$applying_datalist.plan eq 11">
+			<img src="/Public/Mob/yh/img/img_apply_process4.png"/>
+			<elseif condition="$applying_datalist.plan eq 12"/>
+			<img src="/Public/Mob/yh/img/img_apply_process5.png"/>
+			<elseif condition="$applying_datalist.plan eq 1"/>
+			<img src="/Public/Mob/yh/img/img_apply_process2.png"/>
+			<elseif condition="$applying_datalist.plan eq 0"/>
+			<img src="/Public/Mob/yh/img/img_apply_process1.png" alt=""/>
+			<else />
+			<img src="/Public/Mob/yh/img/img_apply_process3.png" alt=""/>
+			</if>
+		</div>
+		</if>
+		<if condition="$applying_datalist.is_over eq 2">
+        <p class="apply_text" id="apply_text">
+				<if condition="$applying_datalist.plan eq 11">
+				审核通过，待汇款
+				<elseif condition="$applying_datalist.plan eq 12"/>
+				审核通过，已放款
+				<elseif condition="$applying_datalist.plan eq 1"/>
+				审核中
+				<elseif condition="$applying_datalist.plan eq 0"/>
+				已提交，等待审核
+				<else />
+				复核中
+				</if>	
+		</p>
+        <p  class="apply_detail_text">
+            <span onclick="detail()" style="display:block;">详情</span><if condition="$applying_datalist.plan eq 0"><span class="detail_next" id="give_up">取消申请</span></if>
+        </p>
+		<elseif condition="$applying_datalist.is_over eq 1" />
+		<p class="apply_text" style="color:red;">
+				借款未通过	
+		</p>
+        <p  class="apply_detail_text">
+            <span onclick="detail()" style="display:block;">详情</span>
+        </p>
+		<else />
+		<p class="apply_text" style="color:red;">
+				借款已取消	
+		</p>
+        <p  class="apply_detail_text">
+            <span onclick="detail()" style="display:block;">详情</span>
+        </p>
+		</if>
+    </section>
+	<volist name="list" id="vo" offset="0" length='3'>
+	<section class="cancel">
+            <div>{$vo.loan_money}元</div>
+            <div>
+                <p>{$vo.is_over}</p>
+                <p>申请于{$vo.creatime}</p>
+            </div>
+            <div>
+                <span class="fa fa-chevron-right"></span>
+            </div>
+    </section>
+	</volist>
+    <div class="show_his">+查看历史申请记录</div>
+<else />
+	<section class="nullstate">
+        <div style="">
+            <img src="/Public/Mob/yh/img/nullstate.png" alt="状态为空，没有申请" style="width: 100%;"/>
+        </div>
+        <p style="">暂时没有该款项的消息</p>
+    </section>
+</if>
+</section>
+<div class="shadowBox">
+    <section class="wrapBox">
+        <p>&nbsp;</p>
+        <p style="text-align:center;">您确定要取消申请？</p>
+        <p>&nbsp;</p>
+        <div class="shadowBtn">
+            <div class="Btn_container">
+                <span onclick="do_up()">确定</span>
+                <span onclick="cancel()">取消</span>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="shadowBox">
+    <section class="wrapBox">
+        <p>&nbsp;</p>
+        <p style="text-align:center;">您有新的消息！{$title}</p>
+        <p>&nbsp;</p>
+        <div class="shadowBtn">
+            <div class="Btn_container">
+                <span onclick="teru_up()">读取</span>
+                <span onclick="turn_cancal()">取消</span>
+            </div>
+        </div>
+    </section>
+</div>
+<input type="hidden" name="is_address" value="{$address}" />
+<input type="hidden" id="is_read" value="{$is_read}" />
+<include file="Public:footer"/>
+</body>
+<script>
+    var shadow=document.getElementsByClassName("shadowBox")[0];
+    var shadow1 = document.getElementsByClassName("shadowBox")[1];
+    var is_read = $('#is_read').val();
+    if(is_read == 1){
+        shadow1.style.display="block";
+    }
+	function check(){
+		$.ajax({ 
+            type: "POST", 
+            url: "{:U('Apply/is_address',array('id'=>$id))}",
+            success:function(data){
+                var data = eval("("+data+")");
+                if(!data.error){
+                    $("[name=is_address]").val(2);
+                    window.didikd.startLoc('{$id}');
+                }
+            }
+        });
+        $.ajax({ 
+                type: "POST", 
+                url: "{:U('Apply/is_com',array('id'=>$id))}",
+                success:function(data){
+                    var data = eval("("+data+")");
+                    if(!data.error){
+                        window.didikd.getLxr('{$id}');
+                    }
+                }
+        });
+		$.ajax({ 
+                type: "POST", 
+                url: "{:U('Apply/is_com',array('id'=>$id))}",
+                success:function(data){
+                    var data = eval("("+data+")");
+                    if(!data.error){
+                        window.didikd.getJl('{$id}');
+                    }
+                }
+        });
+	}
+	setTimeout('check()', 2000); 
+	/*var create_time = {$applying_datalist.creatime};
+	create_time = create_time * 1000;
+	var now = Date.parse(new Date());
+	var t = (now - create_time) / 1000;
+	if(t < 3600){
+		var time = 3600 - t;
+		var a = setInterval(function(){
+							time = time - 1;
+							if(time == 0){
+								time = 0;
+								clearInterval(a);
+								$('.detail_next').css('display','none');
+							}
+						},1000);
+	}else{
+		$('.detail_next').css('display','none');
+	}*/
+	function apply(){
+		window.location.href = "{:U('Repay/index')}";
+	}
+	function should(){
+		window.location.href = "{:U('Repay/shouldpay')}";
+	}
+	function end(){
+		window.location.href = "{:U('Repay/end')}";
+	}
+	function detail(){
+		window.location.href = "{:U('Repay/detail',array('id'=>$applying_datalist['id']))}";
+	}
+	//显示历史记录。
+	$('.show_his').click(function(){
+		window.location.href="{:U('Repay/history',array('id'=>$id))}";
+	});
+	
+	$("#give_up").bind('click',function(){
+		shadow.style.display="block";
+	});
+	function cancel(){
+		shadow.style.display="none";
+	}
+	function do_up(){
+		$.ajax({ 
+				type: "POST", 
+				url: "{:U('Apply/give_up',array('id'=>$applying_datalist['id']))}",
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						window.location.href="{:U('Repay/index',array('id'=>$applying_datalist['id']))}";
+					}
+				}
+		});
+	}
+    function teru_up(){
+        window.location.href = '{:U('Help/messages',array('id'=>$id))}';
+    }
+    function turn_cancal(){
+        shadow1.style.display="none";
+    }
+</script>
+</html>

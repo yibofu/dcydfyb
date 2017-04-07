@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "SimHei";
+}
+.mhome{
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f4f7fe;
+}
+.logo_container{
+    width: 100%;
+    height:8.35rem ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 1px solid transparent;*/
+    background: #F4F7FE;
+}
+.logo{
+    position: relative;
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 4.7rem;
+    padding: 0;
+}
+.dd_index{
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    border:none;
+}
+.dd_contaier1{
+    width: 14rem;
+    margin: 0 auto;
+}
+.dd_index .fir_pwd:first-child{
+    margin-top: 2.45rem;
+    margin-bottom: 0.65rem;
+}
+.dd_index .fir_pwd:last-child{
+    margin-bottom: 1.25rem;
+
+}
+.dd_index .InputBox{
+    padding-left: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+.icon{
+    display: block;
+    width: 0.65rem;
+    height: 1rem;
+    position: absolute;
+    left: 0.15rem;
+    top: 0.4rem;
+    z-index: 10;
+
+}
+.icon1 {
+    background: url("/Public/Mob/img/login.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.icon2 {
+    background: url("/Public/Mob/img/login.png") no-repeat left top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.icon3 {
+    width: 0.8rem;
+    background: url("/Public/Mob/img/login.png") no-repeat right top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.icon4 {
+    width: 0.855rem;
+    height: 0.7rem;
+    /*width: 35px;*/
+    /*height: 28px;*/
+    top: 0.5rem;
+    left: 0.15rem;
+    background: url("/Public/Mob/img/shenfenzheng.png") no-repeat right top;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.dd_yzm{
+    width: 14rem;
+    height: 2.25rem;
+}
+.dd_yzm a {
+    display: block;
+    width: 100%;
+    line-height: 2.25rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+.dd-zc {
+    margin-top: 0.6rem;
+    margin-bottom: 0.25rem;
+    background: #ee3200;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dd_yzm .dd_re a{
+    color: #bbbbbb;
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+/*×¢²áÒ³Ãæ*/
+.yzmNew {
+    position: absolute;
+    right: 0;
+    top: 0.275rem;
+    width: 5rem;
+    height: 1.25rem;
+}
+.dd_yzmm {
+    width: 100%;
+    background: #ee3200;
+    height: 1.25rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.dd_yzmm a {
+    display: block;
+    width: 100%;
+    line-height: 1.25rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+.dd_yzm_again{
+    width: 100%;
+    color: #ffffff;
+    background: #929292;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+.dd_yzm_again a{
+    font-size: 0.45rem;
+}
+/*Íü¼ÇÃÜÂë*/
+.point_text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.55rem;
+    color: #ee3200;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>扁鹊财学院--领先的财务解决方案供应商。财务咨询，财税咨询，企业上市服务，企业并购服务。</title>
+    <link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
+    <meta name="title" content="扁鹊财学院---财税资讯">
+    <meta name="Keywords" content="财务咨询、股权设计、税务筹划" />
+    <meta name="description" content="扁鹊财学院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
+    <link rel="stylesheet" href="/Public/app/css/official.css">
+    <link rel="stylesheet" href="/Public/app/css/caption.css">
+    <script type="text/javascript" src="/Public/app/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/Public/app/js/L_slide.js"></script>
+    <script type="text/javascript" src="/Public/app/js/jquery.js"></script>
+    <script type="text/javascript">
+        //分页 c02003
+        $(document).ready(function(){
+            //每页显示的数目
+            var show_per_page = 32;
+            //获取content对象里面，数据的数量
+            var number_of_items = $('#content').children().size();
+            //计算页面显示的数量
+            var number_of_pages = Math.ceil(number_of_items/show_per_page);
+            //隐藏域默认值
+            $('#current_page').val(0);
+            $('#show_per_page').val(show_per_page);
+            var navigation_html = '<a class="previous_link" href="javascript:previous();">上一页</a>';
+            var current_link = 0;
+            while(number_of_pages > current_link){
+                navigation_html += '<a class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+                current_link++;
+            }
+            navigation_html += '<a class="next_link" href="javascript:next();">下一页</a>';
+            $('#page_navigation').html(navigation_html);
+            //add active_page class to the first page link
+            $('#page_navigation .page_link:first').addClass('active_page');
+            //隐藏该对象下面的所有子元素
+            $('#content').children().css('display', 'none');
+            //显示第n（show_per_page）元素
+            $('#content').children().slice(0, show_per_page).css('display', 'block');
+        });
+        //上一页
+        function previous(){
+            new_page = parseInt($('#current_page').val()) - 1;
+            //if there is an item before the current active link run the function
+            if($('.active_page').prev('.page_link').length==true){
+                go_to_page(new_page);
+            }
+        }
+        //下一页
+        function next(){
+            new_page = parseInt($('#current_page').val()) + 1;
+            //if there is an item after the current active link run the function
+            if($('.active_page').next('.page_link').length==true){
+                go_to_page(new_page);
+            }
+        }
+        //跳转某一页
+        function go_to_page(page_num){
+            //get the number of items shown per page
+            var show_per_page = parseInt($('#show_per_page').val());
+            //get the element number where to start the slice from
+            start_from = page_num * show_per_page;
+            //get the element number where to end the slice
+            end_on = start_from + show_per_page;
+            //hide all children elements of content div, get specific items and show them
+            $('#content').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+            /*get the page link that has longdesc attribute of the current page and add active_page class to it
+             and remove that class from previously active page link*/
+            $('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.active_page').removeClass('active_page');
+            //update the current page input field
+            $('#current_page').val(page_num);
+        }
+
+
+
+    </script>
+    <style>
+        #page_navigation{ position: absolute;bottom: -50px; left: 380px; }
+        #page_navigation a{
+
+            padding:3px 10px;
+
+            border:1px solid gray;
+
+            margin:2px;
+
+            color:black;
+
+            text-decoration:none
+
+        }
+
+        .active_page{
+
+            background:#0098b3;
+
+            color:white !important;
+
+        }
+        .message-san{ width: 700px; margin-left: 96px; margin-top: 60px;}
+        .message-san .tab-content{}
+        .message-san .content .content-h3{ width: 672px; border-bottom: 1px dashed #787878;}
+        .message-san .content .content-h3 h3{ text-align: center; width: 610px;line-height: 40px;}
+        .message-san .content .content-p{ width: 370px; color: #aaaaaa;}
+    </style>
+</head>
+<body class="message-nav">
+<div class="message">
+    <!--头部 c02003-->
+    <include file="Public:head" />
+    <!--选择卡-->
+    <include file="Public:xxk" />
+    <!--图片 c02003-->
+    <div class="message-numbera">
+        <img src="/Public/app/img/daid.png"/>
+    </div>
+    <div class="one message-one message-ini min-q bor-e">
+        <img src="/Public/app/img/sanyuan.png" class="imgsan"/>
+        <div class="message-left fl tab-nav">
+        </div>
+        <div class="message-san fl">
+            <div class="tab-content basic">
+                <input type='hidden' id='current_page' />
+
+                <input type='hidden' id='show_per_page' />
+
+                <div class="content">
+                    <div class="content-h3 height-c"><h3 class="fl wina">{$rea['title']}</h3><a href="{:U('Index/message')}" class="fr color-b wid" id="uin">返回列表》</a><div class="clearfix"></div></div>
+                    <div class="content-p fr title-d height-c min-t">
+                        <p class="fl">作者：</p><p class="fl">{$rea['auth']}</p><p class="fl min-c">上传时间：</p><p class="fl">{$rea['time']}</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div  id='content' class="height-j ini color-u">
+                        <p>{$rea['content']}</p>
+
+                    </div>
+                </div>
+                <div id='page_navigation'></div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--友情链接 c02003-->
+    <include file="Public:bottom"/>
+</div>
+
+</body>
+<script>
+    //选择卡 c02003
+    $("document").ready(function(){
+        $(".tab-nav li").each(function(){
+            $(this).click(function(){
+                if(!$(this).hasClass('current')){
+                    $(this).addClass('current').siblings('.current').removeClass('current');
+                }else{
+                    $(this).siblings('.current').removeClass('current');
+                }
+                var target = $(this).attr('name');
+                $("."+target).show();
+                $("."+target).siblings('.tab-content').hide();
+            });
+        });
+    });
+
+    //导航栏 c02003
+    $(function(){
+        $(".boe").hover(function(){
+            $(".aoe").css('border','0');
+        })
+        $(".aoe").hover(function(){
+            $(".aoe").css('border','0');
+        })
+        $(".boe").mouseout(function(){
+            $(".aoe").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-left','1px solid #ffffff');
+        })
+        $(".boa").hover(function(){
+            $(".aoa").css('border','0');
+            $(".aoe").css('border-right','0px');
+        })
+        $(".aoa").hover(function(){
+            $(".aoa").css('border','0');
+            $(".aoe").css('border-right','0');
+        })
+        $(".boa").mouseout(function(){
+            $(".aoa").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-left','1px solid #ffffff');
+        })
+
+
+        $(".bob").hover(function(){
+            $(".aoa").css('border','0');
+            $(".aob").css('border','0');
+        })
+        $(".aob").hover(function(){
+            $(".aoa").css('border','0');
+            $(".aob").css('border','0');
+        })
+        $(".bob").mouseout(function(){
+            $(".aoa").css('border-right','2px solid #ffffff');
+            $(".aob").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-left','1px solid #ffffff');
+        })
+
+        $(".boc").hover(function(){
+            $(".aob").css('border','0');
+            $(".aoc").css('border','0');
+        })
+        $(".aoc").hover(function(){
+            $(".aob").css('border','0');
+            $(".aoc").css('border','0');
+        })
+        $(".boc").mouseout(function(){
+            $(".aob").css('border-right','2px solid #ffffff');
+            $(".aoc").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-left','1px solid #ffffff');
+        })
+
+        $(".bod").hover(function(){
+            $(".aod").css('border','0');
+            $(".aoc").css('border','0');
+        })
+        $(".aod").hover(function(){
+            $(".aod").css('border','0');
+            $(".aoc").css('border','0');
+        })
+        $(".bod").mouseout(function(){
+            $(".aod").css('border-right','2px solid #ffffff');
+            $(".aoc").css('border-right','2px solid #ffffff');
+            $(".aoe").css('border-left','1px solid #ffffff');
+        })
+    })
+
+
+</script>
+</html>

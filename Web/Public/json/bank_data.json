@@ -1,0 +1,66 @@
+[{
+	"id":1,
+	"bankname":"中国工商银行",
+	"desc":"Write once, run anywhere"
+},{
+	"id":2,
+	"bankname":"中国建设银行",
+	"desc":"One of the programming languages designed for the Common Language Infrastructure"
+},{
+	"id":3,
+	"bankname":"中国农业银行",
+	"selected":true,
+	"desc":"A dynamic, reflective, general-purpose object-oriented programming language"
+},{
+	"id":4,
+	"bankname":"中国邮政储蓄银行",
+	"desc":"A high-level, general-purpose, interpreted, dynamic programming language"
+},{
+	"id":5,
+	"bankname":"中国光大银行",
+	"desc":"A high-level, general-purpose, interpreted, dynamic programming language"
+},{
+	"id":6,
+	"bankname":"中国民生银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":7,
+	"bankname":"深圳发展银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":8,
+	"bankname":"广东发展银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":9,
+	"bankname":"招商银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":10,
+	"bankname":"中国银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":11,
+	"bankname":"中信银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":12,
+	"bankname":"华夏银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":13,
+	"bankname":"兴业银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":14,
+	"bankname":"交通银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":15,
+	"bankname":"杭州银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+},{
+	"id":16,
+	"bankname":"中国平安银行",
+	"desc":"A family of general-purpose, high-level programming languages"
+}]

@@ -1,0 +1,62 @@
+.back_link a,span{
+	color: #7f7F7F;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.text_list{
+	margin-top: 30px;
+}
+.text_list ul li{
+	height: 30px;
+	line-height: 35px;
+	margin: 5px 0 5px 0;
+	border-bottom: 1px #7f7f7f  dashed;
+}
+.text_list ul li a{
+	display: inline-block;
+	width: 320px;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+
+	color:rgb(102, 102, 102);
+	font-size:14px;
+	font-family: 微软雅黑;
+}
+.text_list ul li a:hover{
+	color: #0098B3;
+	cursor: pointer;
+}
+.text_list ul li span{
+	float: right;
+	margin-right: 20px;
+	font-size: 16px;
+}
+
+/*页数*/
+.page{
+	overflow: hidden;
+	margin-top: 30px;
+}
+.page ul{
+	float: right;
+	margin-right: 100px;
+}
+.page ul li{
+	float: left;
+	border: 1px #e7e7e7 solid;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	color: #666666;
+	margin: 0 5px 0 5px;
+}
+.page ul li:hover{
+	cursor: pointer;
+}
+.page_num{
+	width:30px ;
+}
+.page_left,.page_right{
+	width: 60px;
+}

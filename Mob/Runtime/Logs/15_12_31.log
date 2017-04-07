@@ -1,0 +1,2218 @@
+[ 2015-12-31T09:18:28+08:00 ] 127.0.0.1 /Mob/index.php/Repay/shouldpay
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.049003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.055003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:20:04+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.051003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.100006s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.047002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.050002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.110006s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.047003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.042002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:20:34+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.042002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.043002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.034002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:21:28+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.050003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.038002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:24:51+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.038002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:24:53+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/history/id/35.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.051003s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `id`,`loan_money`,`creatime`,`loan_status`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 2 ) AND ( (`is_over` = 1) OR (`is_over` = 3) )  [ RunTime:0.043002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 196 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Mob/Tpl/Public/header.html): failed to open stream: No such file or directory D:\wamp\www\ddkd\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:25:01+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.036002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.038003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.037002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:25:11+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.046003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.045002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.045002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.054003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.043002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:25:12+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.053003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.041003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-31T09:27:13+08:00 ] 127.0.0.1 /Mob/index.php/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.046002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.044002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.045003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.043002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-31T09:27:21+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.042002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.042002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.045003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:27:23+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.049003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.041003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.037003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:12+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.047002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.042003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.046002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:14+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.034002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.045002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.050003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:18+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.040002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.035002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:19+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.044003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.038002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:28:24+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.036002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.041003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:26+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.036002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.036002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.037002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:28:40+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.042003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.041003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.036002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-31T09:28:41+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.041002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.041003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.275016s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:28:44+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.036002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.038002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:30:15+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.038003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.056003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.039002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:31:08+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.048003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.045003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.049002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.042002s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.042003s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:31:10+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.036002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 102 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:33:01+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.043002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.052003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.047002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.058004s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.044002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 106 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-31T09:34:00+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.043002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.036002s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:34:10+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.054003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.040002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.035002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.038003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 101 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:34:13+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.048003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.045003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.049002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.042002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.037002s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:34:14+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.042002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.046002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.041002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 101 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-31T09:34:16+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.041002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.041002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.045003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:34:19+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.037002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.036002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 101 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:35:24+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.047002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.041003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.043003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.041003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 105 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:36:47+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.043003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.045002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.062004s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.059003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 105 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:36:50+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.061003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.052003s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.066003s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:36:52+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.093006s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.050003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.046002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.042003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:36:55+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.045002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.042002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.052003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.051002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.051003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.048002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 103 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 105 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:47:27+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.048003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.068004s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.047003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:47:29+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.048003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.047003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.057003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.060003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.045002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:47:34+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.065004s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.052003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.054003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.056003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.050003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.050003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.060003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:48:31+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.050003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.055004s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.066003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.090006s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.065003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.051003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.056004s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T09:48:34+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.042002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.038003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.041002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.053003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.047003s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.041002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 102 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 105 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:48:36+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.054003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.046002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.041003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.048003s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.056003s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:48:38+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.068004s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.053003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.055003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.056004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.110006s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.051003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.054003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:49:46+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.043003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.040002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.042002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.065004s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T09:49:52+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.087005s ]
+SQL: SELECT `name`,`bank`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.050003s ]
+ERR: 1054:Unknown column 'bank' in 'field list'
+ [ SQL语句 ] : SELECT `name`,`bank`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.044002s ]
+SQL: SELECT `loan_money`,`loan_installments`,`status`,`is_over` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1054:Unknown column 'loan_installments' in 'field list'
+ [ SQL语句 ] : SELECT `loan_money`,`loan_installments`,`status`,`is_over` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1  
+NOTIC: [8] Undefined index: loan_money D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `installments`,`total`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( `uid` = 6 )  [ RunTime:0.046002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: name D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 20 行.
+NOTIC: [8] Undefined index: bank_no D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 22 行.
+NOTIC: [8] Undefined index: bank D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 23 行.
+NOTIC: [8] Undefined index: loan_money D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 29 行.
+NOTIC: [8] Undefined index: loan_installments D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 30 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-31T09:50:08+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.045003s ]
+SQL: SELECT `name`,`bank`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.061004s ]
+ERR: 1054:Unknown column 'bank' in 'field list'
+ [ SQL语句 ] : SELECT `name`,`bank`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.054003s ]
+SQL: SELECT `loan_money`,`loan_installments`,`status`,`is_over` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.064003s ]
+ERR: 1054:Unknown column 'loan_installments' in 'field list'
+ [ SQL语句 ] : SELECT `loan_money`,`loan_installments`,`status`,`is_over` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1  
+NOTIC: [8] Undefined index: loan_money D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 168 行.
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.052003s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `installments`,`total`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( `uid` = 6 )  [ RunTime:0.052003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: name D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 20 行.
+NOTIC: [8] Undefined index: bank_no D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 22 行.
+NOTIC: [8] Undefined index: bank D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 23 行.
+NOTIC: [8] Undefined index: loan_money D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 29 行.
+NOTIC: [8] Undefined index: loan_installments D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 30 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:09:57+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.043003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.045003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.044002s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.043002s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.043003s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.043002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 178 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 178 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T10:10:20+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.044003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.034002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.039002s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.129008s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.040002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 178 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 178 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 73 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:10:56+08:00 ] 127.0.0.1 /Mob/index.php?s=/Public/agreement.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\wamp\www\ddkd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\wamp\www\ddkd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\wamp\www\ddkd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:18:20+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.044003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.047003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.044003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.055003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.045003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.046003s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.043002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 197 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 197 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: reason D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T10:20:24+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.047003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.062004s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.283016s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.049003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.042003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.052003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.040002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.038002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: reason D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:20:40+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.082005s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.051003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.047003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.047003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.060004s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.041002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: reason D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T10:21:10+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.057003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.044002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.050003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.048002s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.045003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.042002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.046003s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.043002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: bank D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:21:19+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.047003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.046002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.050003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.044003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.058003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.046003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.043003s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: bank D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:21:43+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.054003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.061004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.052003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.044002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.046002s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.052003s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.043003s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: reason D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:23:45+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.056003s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.050003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.037002s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.037002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.036002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 204 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: reason D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 65 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-31T10:24:41+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.050003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041002s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.044003s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.039002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T10:25:29+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.208012s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.041003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.044002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.106007s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.056003s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.129007s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.036002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.036002s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Mob\Runtime\Cache\57414ad1023b7018c7eedc388a7e24d5.php 第 69 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T11:11:40+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/detail/id/6.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`time_limit`,`plan`,`loan_status` FROM `dd_loan` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `bank`,`bank_no` FROM `dd_userdetail` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.039002s ]
+SQL: SELECT `manage_prize`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=6 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.038002s ]
+SQL: SELECT `installments`,`should_money`,`repay_time` FROM `dd_repay` WHERE ( lid=6 ) ORDER BY installments asc  [ RunTime:0.044003s ]
+NOTIC: [8] Undefined variable: repay_data D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 203 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T12:22:25+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.048003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.074005s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.057003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.052003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.049003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.051003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T12:23:11+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.048003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.046003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.087004s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.046002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.060004s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.045002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.085005s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T12:23:23+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.060003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.052003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.052003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.040002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.045002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T12:24:33+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.134007s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.161010s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.115006s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.225013s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.232013s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.158009s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.040002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T12:25:19+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.052003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.060003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.042003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.053003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.102006s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.046003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T12:26:48+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.042002s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.036003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SELECT `id`,`loan_money`,`time_limit`,`creatime`,`loan_status`,`plan`,`is_over` FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `plan` < 11 ) AND ( `is_over` = 2 ) LIMIT 1   [ RunTime:0.040003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\ddkd\Mob\Runtime\Cache\00ce614944ceadac22309f2dd0a98622.php 第 129 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-31T12:26:51+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/shouldpay.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.051003s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.043003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.039002s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.046003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039002s ]
+SQL: SELECT l.id,l.deal_num,r.should_money,r.installments,r.repay_time FROM dd_repay as r LEFT JOIN dd_loan as l on r.lid=l.id WHERE ( r.uid = 35 ) AND ( r.status = 1 ) ORDER BY r.repay_time asc  [ RunTime:0.037003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 108 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: applying_datalist D:\wamp\www\ddkd\Mob\Runtime\Cache\d3a8d5cff45b7c89bdf78f9e917e1e71.php 第 106 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T12:26:54+08:00 ] 127.0.0.1 /Mob/index.php?s=/Repay/end.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.091005s ]
+SQL: SELECT sum(should_money) as money FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.063003s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.040003s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 35 ) AND ( `loan_status` = 1 ) AND ( `plan` = 12 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.053003s ]
+SQL: SELECT `name` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.094005s ]
+SQL: SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 )  [ RunTime:0.054004s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT `lid`,`installments`,`repay_time`,`real_repay_time`,`real_money`,`` FROM `dd_repay` WHERE ( `uid` = 35 ) AND ( `status` = 2 ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 70 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T15:08:41+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T15:08:43+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/loan_manage/id/35.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.048003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_loan` WHERE ( uid=35 ) LIMIT 1   [ RunTime:0.047003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_loan` WHERE ( `is_over` = 2 ) AND ( `uid` = 35 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037003s ]
+SQL: SELECT `dark_status` FROM `dd_user` WHERE ( id=35 ) LIMIT 1   [ RunTime:0.061003s ]
+
+[ 2015-12-31T15:08:54+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/userinfo/id/20.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T15:09:03+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/userinfo/id/20.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T15:09:18+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/userdetail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-31T15:09:22+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/userdetail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T15:13:22+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/bankinfo
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T15:13:29+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/bankinfo
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-31T15:14:14+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-31T15:14:19+08:00 ] 127.0.0.1 /Mob/index.php?s=/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+

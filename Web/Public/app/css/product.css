@@ -1,0 +1,65 @@
+/*重置css*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#131313;background:#f9f9f9;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clear{clear:both;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #131313}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}
+
+.eight{background: #d6d6d6; width: 99.5%; height:100%;background-size: 100% 100%;}
+.eight .tou{ width: 99.4%; height: 3.5rem; background: rgba(228,197,64,0.7);position: fixed;top: 0; left: 0;}
+.eight .tou .backa{ padding: 1rem 0 0 4%;}
+.eight .tou .backa img{ width: 100%; height: 1.8rem;}
+.eight .tou .backb{ width: 85%;}
+.eight .eighta{width: 85%; margin: 0 auto; padding: 4rem 0;}
+.eight .eighta .img1{ width: 29%; height: 2rem;}
+.red{ color: #B58F19;}
+.lan{ color: #000620}
+.jia{ font-weight: 700;}
+.jian{ font-weight: 100;}
+.fona{ font-size: .8rem;}
+.fonb{ font-size: 1rem;}
+.text{ text-align: center;}
+.texta{text-indent:2em;}
+.textb{text-indent:4em;}
+.lin-a{ line-height: 2rem;}
+.lin-b{ line-height: 1.5em;}
+.poa{padding: .6rem 0;}
+.min{ margin-left: 7%;}
+
+.tab{border: .1rem solid #ffffff;}
+.but{ width: 40%; margin: .8rem auto;}
+#and{ padding: .2rem 18%;}
+
+.eight .tou .guan{ width: 75%; position: absolute; left: 33%; top: 1.2rem;}
+.eight .tou .guan h3{ width: 75%;}
+.eight .tou .cai{ width: 87%;position: absolute; left: 36%; top: 1.2rem;}
+.eight .tou .cai h3{ width: 40%;}
+.eight .tou .caia{ width: 75%; position: absolute; left: 24%; top: 1.2rem;}
+.eight .tou .caia h3{ width: 90%;}
+.eight .tou .caib{ width: 100%; position: absolute; left: 16%; top: 1.2rem;}
+.eight .tou .caib h3{ width: 85%;}
+.uim{width: 100%;}
+.uim .ini{ width: 55%; margin-top: 1.5rem; margin-right: 5%;}
+.uim .imj{ width: 40%;}
+.miu{ margin-left: 14%}
+
+.makeg{ width: 100%; height: 100%; background: rgba(196,196,196,.7); position: fixed; top: 0; left: 0;z-index: 5;}
+.makeg .makeg-a{ width: 50%; height: 14rem; position: absolute; background: #ffffff;z-index: 6; top: 12rem; left: 25%; border-radius: .8rem;}
+.makeg .imgt{ width: 45%; height: 6rem; margin: 1.2rem 0 0 25%; }
+.makeg .imgs{ position: absolute; right: 4%; top: .6rem; width: 10%; height: 1.2rem;}
+.makeg .ki{ text-align: center; margin-top: 1rem; line-height: 1.4rem;font-size: .7rem}
+
+.box{content:"\2714";font-size: .6rem;}

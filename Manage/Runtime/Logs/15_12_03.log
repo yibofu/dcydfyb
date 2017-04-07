@@ -1,0 +1,1228 @@
+[ 2015-12-03T10:02:39+08:00 ] 127.0.0.1 /Manerger/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: admin D:\wamp\www\ddkd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\wamp\www\ddkd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:02:39+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:03:16+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.044002s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_role` [ RunTime:0.041002s ]
+SQL: SELECT `powers` FROM `dd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.040003s ]
+SQL: SHOW COLUMNS FROM `dd_node` [ RunTime:0.049002s ]
+SQL: SELECT `name` FROM `dd_node` WHERE ( pid>0 )  [ RunTime:0.036002s ]
+SQL: UPDATE `dd_admin` SET `last_time`=1449108196,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.038002s ]
+NOTIC: [8] Undefined variable: var D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2015-12-03T10:03:16+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.052003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:03:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T10:08:02+08:00 ] 127.0.0.1 /Manerger/index.php/LoanApplication/docheck
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.039002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.062003s ]
+SQL: SELECT `id`,`username` FROM `dd_admin` WHERE ( `rid` = 14 )  [ RunTime:0.032002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:08:03+08:00 ] 127.0.0.1 /Manerger/index.php?m=LoanApplication&a=dochecklist
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.035002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+NOTIC: [8] Undefined index: name D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 169 行.
+NOTIC: [8] Undefined index: loan_num D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 172 行.
+NOTIC: [8] Undefined index: job D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 175 行.
+NOTIC: [8] Undefined index: loan_installments D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 178 行.
+NOTIC: [8] Undefined index: check_id D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 181 行.
+NOTIC: [8] Undefined index: check_id D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 184 行.
+NOTIC: [8] Undefined index: loan_money D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 187 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 190 行.
+NOTIC: [8] Undefined index: go_time D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 202 行.
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.057003s ]
+SQL: SELECT u.id as uid,m.username,u.job,l.loan_num,l.name,l.loan_money,l.loan_installments,l.create_time,l.id,l.status FROM dd_loan as l LEFT JOIN dd_admin as m on m.id=l.check_id LEFT JOIN dd_user as u on u.id=l.uid WHERE ( l.check_id <> '' ) LIMIT 0,20   [ RunTime:0.042002s ]
+NOTIC: [8] Undefined variable: count D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 249 行.
+
+[ 2015-12-03T10:08:06+08:00 ] 127.0.0.1 /Manerger/index.php/Check/detail/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.036002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`loan_installments`,`repay_mode`,`phone_brand`,`app_version`,`source`,`create_time`,`check_id`,`loan_num` FROM `dd_loan` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.036002s ]
+SQL: SELECT `manage_prize`,`year_rate`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.048003s ]
+SQL: SELECT `bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.039003s ]
+SQL: SELECT `installments`,`corpus`,`interest`,`month_price`,`should_money` FROM `dd_repay` WHERE ( `loan_id` = 1 )  [ RunTime:0.037002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Manage\Lib\Action\CheckAction.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.042002s ]
+SQL: SELECT u.id,u.phone,u.name,u.bank_no,u.create_time,u.card_no,u.bank,u.bank_local,u.phone_local,ud.province,ud.town,ud.county,ud.census_register,u.job,u.job_check,u.com_name,u.city,u.com_phone,u.job_status,ud.card_front,ud.card_back,ud.card_hand,u.account,ud.card_status FROM dd_user as u LEFT JOIN dd_userdetail as ud on u.id=ud.uid WHERE ( u.id = '2' ) LIMIT 1   [ RunTime:0.043002s ]
+SQL: SELECT `year_rate`,`serve_prize`,`overdue_fine`,`manage_prize`,`dedit`,`number`,`limit` FROM `dd_rate` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_phone_record` [ RunTime:0.037002s ]
+SQL: SELECT `phone`,`phone_local`,`operators`,`phone_brand`,`record_time` FROM `dd_phone_record` WHERE ( `userid` = 2 )  [ RunTime:0.054003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043002s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_front_history`,`card_back_history`,`card_hand_history` FROM `dd_userdetail` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.040003s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.040002s ]
+SQL: SELECT `id`,`name`,`relation`,`phone`,`is_result`,`createtime`,`result`,`is_del` FROM `dd_linkman` WHERE ( `uid` = 2 )  [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.036002s ]
+SQL: SELECT `manage_prize` FROM `dd_rate` WHERE ( `loan_id` = 1 ) LIMIT 1   [ RunTime:0.039003s ]
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.041002s ]
+SQL: SELECT `id` FROM `dd_address` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.037002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:08:07+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.037002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.036002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.037003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:08:07+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.043003s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.044002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:08:08+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist1&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.042002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.037002s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 )  [ RunTime:0.035002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+
+[ 2015-12-03T10:08:08+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist2&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.034002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.038003s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 )  [ RunTime:0.033002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 ) LIMIT 1   [ RunTime:0.041002s ]
+
+[ 2015-12-03T10:08:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=address&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.034002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.036002s ]
+SQL: SELECT `id`,`createtime`,`address_detail` FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 0,10   [ RunTime:0.035002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 1   [ RunTime:0.036002s ]
+
+[ 2015-12-03T10:08:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=loan&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.037002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.052003s ]
+SQL: SELECT l.loan_money,l.loan_installments,l.create_time,l.status,l.recode,a.realname FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) ORDER BY l.create_time desc LIMIT 0,10   [ RunTime:0.038002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) LIMIT 1   [ RunTime:0.039002s ]
+
+[ 2015-12-03T10:08:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=repay&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.034002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.041003s ]
+SQL: SELECT r.loan_id,r.total,r.installments,r.repay_time,r.real_repay_time,r.repay_content,a.realname FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 0,10   [ RunTime:0.039002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 1   [ RunTime:0.041003s ]
+
+[ 2015-12-03T10:08:10+08:00 ] 127.0.0.1 /Manerger/index.php?m=Check&a=check_content&id=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.035002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_check_record` [ RunTime:0.048003s ]
+SQL: SELECT `check_id`,`check_time`,`check_content`,`loan_code` FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 0,5   [ RunTime:0.042003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.071004s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.038002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Manage\Lib\Action\CheckAction.class.php 第 598 行.
+
+[ 2015-12-03T10:08:40+08:00 ] 127.0.0.1 /Manerger/index.php/Check/detail/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.035002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.037002s ]
+SQL: SELECT `id`,`uid`,`loan_money`,`loan_installments`,`repay_mode`,`phone_brand`,`app_version`,`source`,`create_time`,`check_id`,`loan_num` FROM `dd_loan` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.042003s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.039002s ]
+SQL: SELECT `manage_prize`,`year_rate`,`serve_prize` FROM `dd_rate` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.041002s ]
+SQL: SELECT `bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.036002s ]
+SQL: SELECT `installments`,`corpus`,`interest`,`month_price`,`should_money` FROM `dd_repay` WHERE ( `loan_id` = 1 )  [ RunTime:0.033002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Manage\Lib\Action\CheckAction.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT u.id,u.phone,u.name,u.bank_no,u.create_time,u.card_no,u.bank,u.bank_local,u.phone_local,ud.province,ud.town,ud.county,ud.census_register,u.job,u.job_check,u.com_name,u.city,u.com_phone,u.job_status,ud.card_front,ud.card_back,ud.card_hand,u.account,ud.card_status FROM dd_user as u LEFT JOIN dd_userdetail as ud on u.id=ud.uid WHERE ( u.id = '2' ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SELECT `year_rate`,`serve_prize`,`overdue_fine`,`manage_prize`,`dedit`,`number`,`limit` FROM `dd_rate` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_phone_record` [ RunTime:0.034002s ]
+SQL: SELECT `phone`,`phone_local`,`operators`,`phone_brand`,`record_time` FROM `dd_phone_record` WHERE ( `userid` = 2 )  [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.038002s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_front_history`,`card_back_history`,`card_hand_history` FROM `dd_userdetail` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.035002s ]
+SQL: SELECT `id`,`name`,`relation`,`phone`,`is_result`,`createtime`,`result`,`is_del` FROM `dd_linkman` WHERE ( `uid` = 2 )  [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_rate` [ RunTime:0.035002s ]
+SQL: SELECT `manage_prize` FROM `dd_rate` WHERE ( `loan_id` = 1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.037002s ]
+SQL: SELECT `id` FROM `dd_address` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.033002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-03T10:08:40+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.038002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.041002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:08:41+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.056003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.043002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.041002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:08:41+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist1&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.034002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.035002s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 )  [ RunTime:0.037002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 ) LIMIT 1   [ RunTime:0.032002s ]
+
+[ 2015-12-03T10:08:42+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist2&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.033002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.035002s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 )  [ RunTime:0.038002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 ) LIMIT 1   [ RunTime:0.035002s ]
+
+[ 2015-12-03T10:08:42+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=address&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.039002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.036002s ]
+SQL: SELECT `id`,`createtime`,`address_detail` FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 0,10   [ RunTime:0.037002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 1   [ RunTime:0.032002s ]
+
+[ 2015-12-03T10:08:43+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=loan&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.042002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.045003s ]
+SQL: SELECT l.loan_money,l.loan_installments,l.create_time,l.status,l.recode,a.realname FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) ORDER BY l.create_time desc LIMIT 0,10   [ RunTime:0.042003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) LIMIT 1   [ RunTime:0.042002s ]
+
+[ 2015-12-03T10:08:43+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=repay&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.040002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.044003s ]
+SQL: SELECT r.loan_id,r.total,r.installments,r.repay_time,r.real_repay_time,r.repay_content,a.realname FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 0,10   [ RunTime:0.037002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 1   [ RunTime:0.043003s ]
+
+[ 2015-12-03T10:08:44+08:00 ] 127.0.0.1 /Manerger/index.php?m=Check&a=check_content&id=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_check_record` [ RunTime:0.044002s ]
+SQL: SELECT `check_id`,`check_time`,`check_content`,`loan_code` FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 0,5   [ RunTime:0.041003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.042003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Manage\Lib\Action\CheckAction.class.php 第 598 行.
+
+[ 2015-12-03T10:09:45+08:00 ] 127.0.0.1 /Manerger/index.php/TelCheck/index/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.051003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.074004s ]
+SQL: SELECT u.name,u.phone,u.card_no,d.native,d.age,d.loan_detail,d.credit_detail,d.findlaw,d.baidu,d.dark_status,d.icbc,d.social FROM dd_user as u LEFT JOIN dd_userdetail as d on u.id=d.uid WHERE ( u.id=2 ) LIMIT 1   [ RunTime:0.076004s ]
+SQL: SHOW COLUMNS FROM `dd_phone_check` [ RunTime:0.046003s ]
+SQL: SELECT `is_identity_verification`,`purpose`,`qq`,`weixin`,`shot_message`,`address`,`job`,`stream`,`marriage`,`family`,`family_know`,`else_message`,`way`,`download`,`habit`,`experience`,`record`,`sid` FROM `dd_phone_check` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.071004s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:09:45+08:00 ] 127.0.0.1 /Manerger/index.php?m=TelCheck&a=linklist&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.056004s ]
+SQL: SELECT `id`,`name`,`phone`,`relation`,`createtime`,`is_result` FROM `dd_linkman` WHERE ( `uid` = 2 ) AND ( `is_del` = 1 ) LIMIT 0,5   [ RunTime:0.051003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_linkman` WHERE ( `uid` = 2 ) AND ( `is_del` = 1 ) LIMIT 1   [ RunTime:0.048003s ]
+
+[ 2015-12-03T10:09:52+08:00 ] 127.0.0.1 /Manerger/index.php/TelCheck/save/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.063003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.079005s ]
+SQL: UPDATE `dd_linkman` SET `result`='',`is_result`=1 WHERE ( id=1 ) [ RunTime:0.039002s ]
+
+[ 2015-12-03T10:09:53+08:00 ] 127.0.0.1 /Manerger/index.php?m=TelCheck&a=linklist&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.055003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.053003s ]
+SQL: SELECT `id`,`name`,`phone`,`relation`,`createtime`,`is_result` FROM `dd_linkman` WHERE ( `uid` = 2 ) AND ( `is_del` = 1 ) LIMIT 0,5   [ RunTime:0.045003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_linkman` WHERE ( `uid` = 2 ) AND ( `is_del` = 1 ) LIMIT 1   [ RunTime:0.036002s ]
+
+[ 2015-12-03T10:10:05+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist1&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.044003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.062004s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 )  [ RunTime:0.049003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 1 ) LIMIT 1   [ RunTime:0.048002s ]
+
+[ 2015-12-03T10:10:06+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=datalist2&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.043002s ]
+SQL: SELECT * FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 )  [ RunTime:0.055004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_annex` WHERE ( `uid` = 2 ) AND ( `from` = 0 ) LIMIT 1   [ RunTime:0.038002s ]
+
+[ 2015-12-03T10:10:06+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=address&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.043003s ]
+SQL: SELECT `id`,`createtime`,`address_detail` FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 0,10   [ RunTime:0.042002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_address` WHERE ( `uid` = 2 ) LIMIT 1   [ RunTime:0.042003s ]
+
+[ 2015-12-03T10:10:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=loan&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.035002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.049002s ]
+SQL: SELECT l.loan_money,l.loan_installments,l.create_time,l.status,l.recode,a.realname FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) ORDER BY l.create_time desc LIMIT 0,10   [ RunTime:0.039002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_loan as l LEFT JOIN dd_admin as a on a.id=l.check_id WHERE ( l.uid = '2' ) LIMIT 1   [ RunTime:0.041002s ]
+
+[ 2015-12-03T10:10:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Loan&a=repay&id=2
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.048003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.042002s ]
+SQL: SELECT r.loan_id,r.total,r.installments,r.repay_time,r.real_repay_time,r.repay_content,a.realname FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 0,10   [ RunTime:0.058004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_repay as r LEFT JOIN dd_admin as a on a.id=r.check_id WHERE ( r.uid = '2' ) LIMIT 1   [ RunTime:0.059003s ]
+
+[ 2015-12-03T10:10:08+08:00 ] 127.0.0.1 /Manerger/index.php?m=Check&a=check_content&id=1
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.039002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_check_record` [ RunTime:0.053003s ]
+SQL: SELECT `check_id`,`check_time`,`check_content`,`loan_code` FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 0,5   [ RunTime:0.061003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_check_record` WHERE ( loan_id=1 ) LIMIT 1   [ RunTime:0.042003s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.045002s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\ddkd\Manage\Lib\Action\CheckAction.class.php 第 598 行.
+
+[ 2015-12-03T10:13:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T10:23:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T10:33:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T10:36:57+08:00 ] 127.0.0.1 /Manerger/index.php/LoanApplication/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.035002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.038002s ]
+SQL: SELECT `id`,`rid`,`username` FROM `dd_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_role` [ RunTime:0.033002s ]
+SQL: SELECT `powers` FROM `dd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.047003s ]
+SQL: SHOW COLUMNS FROM `dd_node` [ RunTime:0.044003s ]
+SQL: SELECT `name` FROM `dd_node` WHERE ( pid>0 )  [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:36:58+08:00 ] 127.0.0.1 /Manerger/index.php?m=LoanApplication&a=datalist
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.037002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+NOTIC: [8] Undefined index: name D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: loan_num D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: loan_installments D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: card_status D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: card_status D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: l.loan_num D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: l.loan_money D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: go_time D:\wamp\www\ddkd\Manage\Lib\Action\LoanApplicationAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.037002s ]
+SQL: SELECT d.card_status,l.id,l.loan_num,l.name,l.loan_money,l.loan_installments,l.create_time FROM dd_userdetail as d LEFT JOIN dd_loan as l on d.uid=l.uid WHERE ( l.is_over = '2' ) LIMIT 0,20   [ RunTime:0.039002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dd_userdetail as d LEFT JOIN dd_loan as l on f.uid=l.uid WHERE ( l.is_over = '2' ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1054:Unknown column 'f.uid' in 'on clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM dd_userdetail as d LEFT JOIN dd_loan as l on f.uid=l.uid WHERE ( l.is_over = '2' ) LIMIT 1  
+
+[ 2015-12-03T10:37:00+08:00 ] 127.0.0.1 /Manerger/index.php/ShowCard/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.034002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `uid` FROM `dd_loan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.034002s ]
+SQL: SELECT u.id,u.name,u.card_no,u.phone,u.phone_local,u.bank_no,u.bank_local,d.card_front,d.card_back,d.card_hand,d.province,d.town,d.county,d.census_register FROM dd_user as u LEFT JOIN dd_userdetail as d on u.id=d.uid WHERE ( u.id=2 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: hand_back D:\wamp\www\ddkd\Manage\Runtime\Cache\1a3573c6568757dbdb80781e258dbece.php 第 133 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T10:37:44+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.044003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.038002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.038002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:37:46+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.036002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.036002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 2 ) LIMIT 1   [ RunTime:0.035002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:38:04+08:00 ] 127.0.0.1 /Manerger/index.php/ShowCard/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.037002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.040003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.040002s ]
+SQL: SELECT `uid` FROM `dd_loan` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SELECT u.id,u.name,u.card_no,u.phone,u.phone_local,u.bank_no,u.bank_local,d.card_front,d.card_back,d.card_hand,d.province,d.town,d.county,d.census_register FROM dd_user as u LEFT JOIN dd_userdetail as d on u.id=d.uid WHERE ( u.id=2 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: hand_back D:\wamp\www\ddkd\Manage\Runtime\Cache\1a3573c6568757dbdb80781e258dbece.php 第 133 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T10:43:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T10:53:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:03:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:13:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:23:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:33:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:43:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T11:53:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:03:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:13:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:23:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:33:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:43:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T12:53:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T13:03:17+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T13:58:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:08:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:18:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:28:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:38:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:48:11+08:00 ] 127.0.0.1 /Manerger/index.php/Remind/getnums
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Remind
+
+[ 2015-12-03T14:57:24+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.200011s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T14:57:24+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-03T19:38:17+08:00 ] 127.0.0.1 /Manerger/index.php/Address/index/id/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 57 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_address` [ RunTime:0.036002s ]
+SQL: SELECT `coordinate`,`address_detail` FROM `dd_address` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.035002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T19:38:17+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T19:38:17+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T19:38:20+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.036002s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.034002s ]
+SQL: SHOW COLUMNS FROM `dd_role` [ RunTime:0.035002s ]
+SQL: SELECT `powers` FROM `dd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_node` [ RunTime:0.038003s ]
+SQL: SELECT `name` FROM `dd_node` WHERE ( pid>0 )  [ RunTime:0.042002s ]
+SQL: UPDATE `dd_admin` SET `last_time`=1449142700,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.035002s ]
+NOTIC: [8] Undefined variable: var D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2015-12-03T19:38:20+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.041003s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-03T19:38:36+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_admin` [ RunTime:0.071004s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_role` [ RunTime:0.042002s ]
+SQL: SELECT `powers` FROM `dd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.042003s ]
+SQL: SHOW COLUMNS FROM `dd_node` [ RunTime:0.042002s ]
+SQL: SELECT `name` FROM `dd_node` WHERE ( pid>0 )  [ RunTime:0.042003s ]
+SQL: UPDATE `dd_admin` SET `last_time`=1449142715,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.041002s ]
+NOTIC: [8] Undefined variable: var D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\wamp\www\ddkd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2015-12-03T19:38:36+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dd_operate` [ RunTime:0.036002s ]
+ERR: 1146:Table 'ddkd.dd_operate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `dd_operate`
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

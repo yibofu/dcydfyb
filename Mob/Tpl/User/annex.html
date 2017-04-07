@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>补充附件</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，补充附件">
+    <meta name="description" content="滴滴快贷补充附件。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+    <link rel="stylesheet" href="/Public/Mob/yh/css/footer.css"/>
+    <script src="/Public/Mob/yh/js/jquery-1.11.3.min.js"></script>
+    <script src="/Public/Mob/yh/js/MyRespond.js"></script>
+	 <link rel="stylesheet" href="/Public/Mob/css/progress_style.css"/>
+	 <script>
+		 function haha(id){
+			$("#aid").val(id);
+		 }
+	 </script>
+	<style>
+        .Upload{
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            height: 50px;
+            width: 50px;
+            margin-top: -25px;
+            margin-left: -25px;
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+            text-align: center;
+            line-height: 150px;
+
+        }
+       .Up_shadow{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            background-color: rgba(0,0,0,.8);
+            z-index: 122;
+        }
+        .Uptext{
+            color: #ffffff;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            height: 30px;
+            width: 150px;
+            margin-left: -70px;
+            line-height: 30px;
+            text-align: center;
+        }
+		 /*浮层样式*/
+        .shadowBox{
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: fixed;
+            /*left: 0;*/
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.8);
+			display:none;
+        }
+        .wrapBox{
+            width: 80%;
+            /*height: 40%;*/
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin-left: -40%;
+            -webkit-box-shadow: 0 0 4px #000000;
+            -moz-box-shadow: 0 0 4px #000000;
+            box-shadow: 0 0 4px #000000;
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .wrapBox p{
+            padding: 10px;
+        }
+        .wrapBox p:last-of-type{
+            margin-bottom: 40px;
+        }
+        .wrapBox .shadowBtn {
+            position: relative;
+            width: 100%;
+        }
+        .wrapBox .shadowBtn .Btn_container{
+            width: 80%;
+            padding-bottom: 30px;
+            margin: 0 auto;
+
+        }
+        .wrapBox .shadowBtn .Btn_container:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .wrapBox .shadowBtn span{
+            display: block;
+            width: 45%;
+            background: #ee3200;
+            margin-right: 5%;
+            text-align: center;
+            float: left;
+            line-height: 2.2;
+            color: #ffffff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        /*浮层样式*/
+    </style>
+</head>
+<body class="mhome">
+<header class="dd_header">补充附件<span class="fa fa-chevron-left dd_return" onclick="return_page()"></span></header>
+<section class="dd_index">
+    <form action="{:U('User/annex_update',array('id'=>$id))}" id="myform" method="post">
+        <div class="dd_buchong">
+            <span class="buchong_title">标题</span><input type="text" id="fj_title" placeholder="请输入标题" name="title" require/>
+        </div>
+        <div class="show_img" id="show_img" style="width:8rem;height:auto;">
+            <img src="/Public/Mob/yh/img/i_img_take_photo.png" alt="" width="100%"/>
+        </div>
+		<input type="hidden" name="url_ske" id="url_ske"/>
+		<input type="hidden" name="aid" id="aid">
+    </form>
+</section>
+<div class="alert_shadow" id="shenfentt" style="display: none;">
+    <ul class="photo_alert">
+        <span>选择方式</span>
+        <li onclick="mobile(7)">手机拍照</li>
+        <!--<li>预览大图</li>-->
+        <li class="cancel">取消</li>
+    </ul>
+</div>
+<div class="dd_yzm" style="background: #45c018;" id="shenfenT"><a href="javascript:;">查找拍照</a></div>
+<div class="dd_yzm" style="margin-top:10px; margin-bottom: 60px;" onclick="sub()"><a href="javascript:;">确认</a></div>
+<div class="Up_shadow" style="display: none;" id="load">
+    <img  class="Upload" src="/Public/Mob/yh/img/loading.gif" alt="loading.gif"/>
+    <p class="Uptext">正在上传中……</p>
+</div>
+<div class="shadowBox">
+    <section class="wrapBox">
+        <p>&nbsp;</p>
+        <p id="word" style="text-align:center;">浮层内容</p>
+        <p>&nbsp;</p>
+        <div class="shadowBtn">
+            <div class="Btn_container">
+                <span>确定</span>
+                <span>取消</span>
+            </div>
+        </div>
+    </section>
+</div>
+<include file="Public:footer"/>
+<script>
+   /* window.onload = function(){
+       var screen_height=$(window).height();
+       $(".show_img").css({
+           height:screen_height/3
+       });
+        $(".show_img").css({
+            height: $(".show_img").find("img").height()
+        });
+    }
+    */
+	var shadow=document.getElementsByClassName("shadowBox")[0];
+	var btns=shadow.getElementsByClassName("shadowBtn")[0].getElementsByTagName("span");
+	for(var i=0;i<btns.length;i++){
+			btns[i].onclick=function(){
+				shadow.style.display="none";
+				flag=true;
+			};
+	}
+	$("#shenfenT").bind("click",function(){
+			/*请求点*/
+			var imei = window.didikd.getImei();
+			var imsi = window.didikd.getImsi();
+			var channel = window.didikd.getChannel();
+			var mode = window.didikd.getModel();
+			var behavior = '1038';
+			$.ajax({ 
+					type: "GET", 
+					url: "http://27.50.130.152/api/ddkdtongji.php",
+					async:true,
+					data:{'imei':imei,'imsi':imsi,'channel':channel,'behavior':behavior,'mode':mode},
+					success:function(data){}
+			});	
+		/*结束*/
+            var height=$("html").height();
+            $("#shenfentt").css({"display":"block",height:height});
+        });
+	$(".cancel").bind("click",function(){
+            $(this).parents(".alert_shadow").css("display","none");
+      })
+	function mobile(types){
+		$("#shenfentt").css("display","none");
+		$("#load").css('display','block');
+		//请求后台添加一条新数据
+		$.ajax({ 
+				type: "POST", 
+				url: "{:U('User/annex_add',array('id'=>$id))}",
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						$("#aid").val(data.id);
+						window.didikd.setfjid(data.id);
+						window.didikd.clickToPhoto(types,data.id);
+					}
+				}
+		});
+	}
+	 /*
+	 function photo(type,id){
+		$("#shenfentt").css("display","none");
+		$("#load").css('display','block');
+		window.didikd.choosePic(type,'{$id}');
+	 }
+	 */
+	 function show_photo(url,type){
+		var img;
+		var t=setTimeout("$('#load').css('display','none')",2000);
+		//$("#load").css('display','none');
+		img = '<img src="'+url+'" alt="附件" style="max-width:100%;height:auto;"/>';
+		$("#show_img").html(img);
+		$("#url_ske").val(url);
+	 }
+	 function sub(){
+		var title = $("#fj_title").val();
+        var url_ske = $('#url_ske').val();
+		if(title == ''){
+			$("#word").html('请输入标题!');
+			shadow.style.display="block";
+			return;
+		}
+        if(url_ske == ''){
+            $("#word").html('请上传图片!');
+            shadow.style.display="block";
+            return;
+        }
+		$("#myform").submit();
+	 }
+	 function return_page(){
+		window.location.href = "{:U('User/annex_list',array('id'=>$id))}";
+	 }
+</script>
+</body>
+</html>

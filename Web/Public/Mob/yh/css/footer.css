@@ -1,0 +1,83 @@
+.web_footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    background: #ffffff;
+}
+.web_footer ul{
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+}
+.web_footer ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 65px;
+    line-height: 27px;
+    text-align: center;
+    padding-top: 33px;
+    border-top: 1px solid #ffffff;
+    /*border-right: 1px solid #dfdfdf;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border:none;
+}
+.web_footer ul li a{
+    display: block;
+    width:100%;
+    color: #848484;
+    font-size: 15px;
+    /*font-weight: bold;*/
+}
+/*.web_footer ul li.active{
+    background:linear-gradient(#fff 36%, #dfdfdf);
+    border-top: 2px solid #E32700;
+}
+.web_footer ul li a.active{
+    color: #E32700;
+}*/
+.web_footer ul li span{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -13px;
+    width: 25px;
+    height: 25px;
+}
+.web_footer ul li span.dd_nav1{
+    background: url("../img/iconMenu.png")no-repeat left bottom;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav1x{
+    background: url("../img/iconMenu.png") no-repeat left top;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav2{
+    background: url("../img/iconMenu.png") no-repeat -55px bottom;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav2x{
+    background: url("../img/iconMenu.png") no-repeat -55px top;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav3{
+    background: url("../img/iconMenu.png") no-repeat -107px bottom;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav3x{
+    background: url("../img/iconMenu.png") no-repeat -107px top;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav4{
+    background: url("../img/iconMenu.png") no-repeat -160px bottom;
+    background-size: 185px 70px;
+}
+.web_footer ul li span.dd_nav4x{
+    background: url("../img/iconMenu.png") no-repeat -160px top;
+    background-size: 185px 70px;
+}

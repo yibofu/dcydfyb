@@ -1,0 +1,19 @@
+/*重置css*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#000000;background:#f9f9f9;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clear{clear:both;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #ffffff}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}

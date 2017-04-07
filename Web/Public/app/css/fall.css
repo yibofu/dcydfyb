@@ -1,0 +1,245 @@
+/*重置css c02003*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+ul {list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#333333;background:#6bb6ed;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式 c02003*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #ffffff}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}
+.text{text-align: center;}
+button{ border: 0;}
+
+.fall{
+    width: 820px;
+    margin: 0 auto;
+}
+.fall-one{
+    width: 100%;
+}
+.fall-one img {
+    width: 100%;
+    height: 34.8rem;
+}
+.fall-two img {
+    width: 90%;
+    height: 43.2rem;
+    padding: 1% 2%;
+    border: 2px dashed #ffffff;
+    margin: 0.1rem 2.5% 0 2.5%;
+}
+.fall-three {
+    background: url(../img/fall-three_03.png) no-repeat center;
+    background-size: 95% 98%;
+    width: 90%;
+    height: 1030px;
+    padding: 0 2% 1rem 2%;
+    border: 2px dashed #ffffff;
+    margin: 0.1rem 2.5% 0.1rem 2.5%;
+    border-top: 0px;
+}
+.fall-three .three-a {
+    width: 77%;
+    height: 155px;
+    margin: 0 auto;
+    border-bottom: 1px dashed #9b9b9b;
+    padding-bottom: 23px;
+}
+.fall-three .three-a .imga{
+    width: 30%;
+    height: 168px;
+}
+.fall-three .three-a .pa{
+    margin-left: 7%;
+    width: 50%;
+    line-height: 46px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.fall-six {
+    background: url(../img/fall-five.png) no-repeat center;
+    background-size: 95% 98%;
+    width: 90%;
+    height: 940px;
+    padding: 0 2% 1rem 2%;
+    border: 2px dashed #ffffff;
+    margin: 0.1rem 2.5% 0.1rem 2.5%;
+    border-top: 0px;
+}
+.fall-six .six-a {
+    width: 87%;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+.fall-six .six-a .sixa {
+    width: 46%;
+    height: 300px;
+    background: url(../img/fall-seven.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.fall-six .six-b {
+    width: 87%;
+    margin: 68px auto;
+}
+.fall-six .six-b .sixa {
+    width: 46%;
+    height: 300px;
+    background: url(../img/fall-seven.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.fall-six .six-a .sixa .imga {
+    width: 35%;
+    height: 120px;
+    padding-top: 42px;
+    padding-left: 32%;
+}
+.fall-six .six-a .sixa .pa {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.fall-six .six-a .sixa .imgb {
+    width: 50%;
+    height: 108px;
+    padding-top: 42px;
+    padding-left: 25%;
+}
+.fall-six .six-a .sixa .pb {
+    margin-top: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 50%;
+    margin: 26px auto;
+}
+.fall-six .six-b .sixa .imgc {
+    width: 30%;
+    height: 105px;
+    padding-top: 42px;
+    padding-left: 35%;
+}
+.fall-six .six-b .sixa .pc {
+    margin-top: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%;
+    margin: 17px auto;
+}
+.fall-six .six-b .sixa .imgd {
+    width: 39%;
+    height: 101px;
+    padding-top: 42px;
+    padding-left: 30%;
+}
+.fall-six .six-b .sixa .pd {
+    margin-top: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%;
+    margin: 21px auto;
+}
+.fall-five img {
+    width: 90%;
+    height: 535px;
+    padding: 1% 2%;
+    border: 2px dashed #ffffff;
+    margin: 0.1rem 2.5% 0 2.5%;
+    border-top: 0px;
+}
+.fall-nine{
+    position: absolute;
+}
+.fall-nine .imgniu {
+    width: 90%;
+    height: 465px;
+    padding: 1% 2%;
+    margin: 0.1rem 2.5% 0 2.5%;
+}
+.fall-nine .imgni {
+    position: relative;
+    top: -212px;
+    right: -59%;
+    width: 25%;
+}
+.fall-nine .imgp {
+    position: relative;
+    top: -230px;
+    left: 8%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 40px;
+    width: 8%;
+    color: #c30e13;
+}
+.fall-valve{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 84px;
+    width: 100%;
+    background: #8f82bc;
+}
+.fall-valve .valve-a {
+    width: 245px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    color: #ffffff;
+    font-weight: bold;
+    height: 67px;
+    margin-top: 8px;
+}
+.fall-valve .valve-a img{
+    width: 59px;
+    height: 49px;
+    margin-top: 5px;
+}
+.pin-a{padding-top: 199px;}
+.pin-b{padding-top: 15px;}
+#login-d{
+    width: 350px;
+    height: 380px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 5px;
+    display: none;
+}
+.close {
+     width: 30px;
+     height: 30px;
+     position: relative;
+     right: -90%;
+     top: -359px;
+ }
+.close img{
+    width: 30px;
+    height: 30px;
+}
+#login-d p{
+    width: 100%;
+    font-weight: bold;
+}
+.fall-miuy{
+    margin-left: 5%;
+    font-size: 26px;
+}
+.fall-ti {
+    margin-left: 17%;
+}

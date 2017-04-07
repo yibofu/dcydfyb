@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bianqdyhstyle1.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bianqdyhindex.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .carousel .carousel-inner .item img{ width: 100%; height: 14rem;}
+        .carousel .carousel-indicators li{ margin-left: 1%;}
+        .content{ width: 100%; height: 1.4rem; background: #dddddd;}
+        .ni-a{ font-size: 1.6rem; line-height: 5.6rem; margin:0 5% 0 5%; border-bottom: 0.1rem solid #cccccc; color: #000000;}
+        .ni-a span{ width: 0.5rem; height: 2rem; background: #b68f17; display: block; float: left; margin-top: 1.8rem; margin-right: 0.8rem;}
+        .img1-a{ width: 23%; height: 2rem; margin-top: 0.9rem; margin-left:39%; margin-bottom: 0;}
+        .img2-a{ width: 100%; text-align: center;font-size: 1.3rem; line-height: 3.38rem; color: #FFFFFF;margin-bottom: 0;}
+        .img3-a{width: 100%; font-size: 1rem; line-height: 1.5rem; color: #FFFFFF; margin-bottom: 0; margin-left: 5%;}
+        .img1-b{ width:24%; height:1.5rem; margin: 1rem 0 0 39%}
+        .img2-b{ color: #5f1e19; font-size: 1.3rem; text-align: center; margin-top: 2rem;}
+        .img3-b{ color: #FFFFFF;font-size: 0.91rem;line-height: 0.8rem; margin-left: 4.5%}
+        .img-4-b{ color: #FFFFFF;}
+        .content-b{height: 12.3rem;}
+        .content-b .content-b-1{ width: 30%; margin-left: 5%; float: left; }
+        .content-b .content-b-1 .img1{ width: 80%; height:7rem; margin: 0.8rem 10% 0.5rem 10%;}
+        .content-b .content-b-1 .img2{ font-size:1rem; text-align: center; color: #000000; margin-right: 1%}
+        .content-b .content-b-2{ width: 30%; float: left;}
+        .content-b .content-b-2 .img1{ width: 80%; height:7rem; margin: 0.8rem 10% 0.5rem 10%;}
+        .content-b .content-b-2 .img2{ font-size:1rem; text-align: center; color: #000000;}
+        .content-b .content-b-3{ width: 30%; margin-right: 5%; float: left;}
+        .content-b .content-b-3 .img1{ width: 80%; height:7rem; margin: 0.8rem 10% 0.5rem 10%;}
+        .content-b .content-b-3 .img2{ font-size:1rem; text-align: center; color: #000000;  margin-left: 1%;}
+        .content-c{ height: 30.8rem;}
+        .content-c .content-c-1{ width: 59%; height: 10.2rem; margin: 1.5rem 2% 1.7rem 5%; background: #d78e27; border-radius: 3%; float: left;}
+        .content-c .content-c-1 .img1{ width: 25%; height: 4.6rem; margin-top: 1.2rem; margin-left: 10%; float: left;}
+        .content-c .content-c-1 .img2{ width: 18%; height: 3.3rem;margin-top: 2rem; margin-left: 18%; float: left; margin-right: 25%}
+        .content-c .content-c-1 .img3{ line-height: 2.3rem; width: 96%; font-size: 1.17rem; float: left; color: #FFFFFF;margin-left: 10%; margin-top: 1rem;}
+        .content-c .content-c-2{ width: 29%; height: 10.2rem; margin: 1.5rem 5% 1.7rem 0; background: #af4942; border-radius: 3%; float: left;}
+        .content-c .content-c-3{ width: 28.5%;height: 10.2rem;margin: 0 2% 0 5%;background: #498b94;border-radius: 3%; float: left;}
+        .content-c .content-c-4{ width: 28.5%;height: 10.2rem; margin-right:2%;background: #5c5566;border-radius: 3%; float: left;}
+        .content-c .content-c-5{ width: 29%;height: 10.2rem;background: #866350;border-radius: 3%; float: left;}
+        .content-d{ height: 30.8rem;}
+        .content-d .content-d-1{ width: 29%; height: 10.2rem; margin: 1.5rem 0 1.7rem 5%; background: #af4942; border-radius: 3%; float: left;}
+        .content-d .content-d-2{ width: 59%; height: 10.2rem; margin: 1.5rem 5% 1.7rem 2%; background: #d78e27; border-radius: 3%; float: left;}
+        .content-d .content-d-2 .img1{width: 25%; height: 4.6rem; margin-top: 1.2rem; margin-left: 15%; float: left;}
+        .content-d .content-d-2 .img2{width: 18%; height: 3.3rem;margin-top: 2rem; margin-left: 18%; float: left; margin-right: 20%;}
+        .content-d .content-d-2 .img3{line-height: 2.3rem; width: 75%; font-size: 1.17rem; float: left; color: #FFFFFF;margin-left: 18%; margin-top: 1rem;}
+        .content-d .content-d-3{ width: 29%;height: 10.2rem;margin: 0 2% 0 5%;background: #498b94;border-radius: 3%; float: left;}
+        .content-d .content-d-4{ width: 28.5%;height: 10.2rem; margin-right:2%;background: #5c5566;border-radius: 3%; float: left;}
+        .content-d .content-d-5{ width: 28.5%;height: 10.2rem;background: #866350;border-radius: 3%; float: left;}
+        .content-f{ height: 20rem; }
+        .content-f .content-f-1{ background: #af4942; margin-left: 5%;}
+        .content-f .content-f-a{ width: 11%; height:9rem; float: left;border-radius: 3%; margin-right: 2.2%; margin-top: 2rem;}
+        .content-f .content-f-2{ background: #498b94; }
+        .content-f .content-f-3{ background: #4087c9; }
+        .content-f .content-f-4{ background: #cd544b; }
+        .content-f .content-f-5{ background: #d78e27; }
+        .content-f .content-f-6{ background: #498b94; }
+        .content-f .content-f-7{ background: #d78e27; }
+        .content-f-a .content-f-q{ width: 30%; color: #FFFFFF; margin-left: 30%;}
+        .content-f-a .img1{ width: 30%; height: 0.8rem; margin-left: 32%;}
+    </style>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/lun.png" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="images/lun.png" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="images/lun.png" alt="Second slide">
+        </div>
+    </div>
+</div>
+    <div class="content"></div>
+    <div class="content-a">
+        <div class="ni-a"><span></span>扁鹊时间</div>
+    </div>
+    <div class="content-b">
+        <div class="content-b-1">
+            <img src="images/tu01.png" class="img1"/>
+            <p class="img2">最实时的热点点</p>
+        </div>
+        <div class="content-b-2">
+            <img src="images/tu9.png" class="img1"/>
+            <p class="img2">最具实战性的财务</p>
+        </div>
+        <div class="content-b-3">
+            <img src="images/tu10.png" class="img1"/>
+            <p class="img2">精彩直播不容错</p>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="content-c">
+        <div class="ni-a"><span></span>社区互动</div>
+        <div class="content-c-1">
+            <img src="images/tu02.png" class="img1"/>
+            <img src="images/tu03.png" class="img2"/>
+            <p class="img3">本期名额有限 速速来报名哦~</p>
+        </div>
+        <div class="content-c-2">
+            <img src="images/tu04.png" class="img1-b"/>
+            <p class="img2-b">金鹊CLUB</p>
+            <p class="img3-b">加入社群</p>
+            <p class="img3-b">让你的圈子动起来</p>
+        </div>
+        <div class="content-c-3">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+        <div class="content-c-4">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+        <div class="content-c-5">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="content-d">
+        <div class="ni-a"><span></span>扁鹊干货</div>
+        <div class="content-d-1">
+            <img src="images/tu04.png" class="img1-b"/>
+            <p class="img2-b img-4-b">金鹊CLUB</p>
+            <p class="img3-b">加入社群</p>
+            <p class="img3-b">让你的圈子动起来</p>
+        </div>
+        <div class="content-d-2">
+            <img src="images/tu06.png" class="img1"/>
+            <img src="images/tu07.png" class="img2"/>
+            <p class="img3">常见财务问题 我来找答案</p>
+        </div>
+        <div class="content-d-3">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+        <div class="content-d-4">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+        <div class="content-d-5">
+            <img src="images/tu05.png" class="img1-a"/>
+            <p class="img2-a">举手提问</p>
+            <p class="img3-a">金鹊CLUB会员</p>
+            <p class="img3-a">特有福利哦</p>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="content-f">
+        <div class="ni-a"><span></span>扁鹊服务</div>
+        <div class="content-f-1 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-2 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-3 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-4 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-5 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-6 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+        <div class="content-f-7 content-f-a">
+            <img src="images/tu08.png" class="img1"/>
+            <p class="content-f-q">企业辅导</p>
+        </div>
+    </div>
+</body>
+<script>
+    $("#myCarousel").ready(function(){
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    });
+</script>
+</html>

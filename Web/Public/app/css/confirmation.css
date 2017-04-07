@@ -1,0 +1,261 @@
+*{
+	font-family: "微软雅黑";
+}
+.confirmation_all{
+	width: 1000px;
+	margin: 0 auto;
+}
+.confirmation_main{
+	padding-left: 42px;
+	padding-right: 35px;
+	border: 2px #b7d1f5 solid;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.confirmation_main>div{
+	margin-bottom: 40px;
+}
+.confirmation_title{
+	border-bottom: 2px #4cbbcf solid;
+}
+.confirmation_title{
+	width: 100%;
+	color: #044a99;
+	height: 50px;
+	line-height: 30px;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+}
+
+/*导语部分*/
+.confirmation_lead :first-child{
+	color: #555555;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+}
+.confirmation_lead :first-child span{
+	color: #2965a1;
+	display: inline-block;
+	margin-left: 10px;
+}
+.confirmation_lead :last-child{
+	color: #666666;
+	font-size: 18px;
+	line-height: 20px;
+}
+/*参课信息*/
+.join_classes_title{
+	color: #2965a1;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	height: 30px;
+	border-bottom: 2px #4cbbcf solid;
+}
+.join_classes p :first-child{
+	font-weight: 700;
+	color: #555555;
+}
+.join_classes p :last-child{
+	color: #666666;
+}
+.join_classes span{
+	font-size: 18px;
+	line-height: 20px;
+	margin-right: 10px;
+}
+/*费用与付款事宜*/
+.confirmation_price_title{
+	color: #2965a1;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	height: 30px;
+	border-bottom: 2px #4cbbcf solid;
+}
+.confirmation_price p :first-child{
+	font-weight: 700;
+	color: #555555;
+}
+.confirmation_price p :last-child{
+	color: #666666;
+}
+.confirmation_price p span{
+	font-size: 18px;
+	line-height: 20px;
+	margin-right: 10px;
+}
+/*特殊情况*/
+.special_case_title{
+	color: #2965a1;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+	height: 30px;
+	border-bottom: 2px #4cbbcf solid;
+}
+.special_case p{
+	font-size: 18px;
+	line-height: 36px;
+	text-indent: 40px;
+}
+.special_case :first-child{
+	color: #666666;
+}
+.special_case :last-child{
+	margin-top: 80px;
+	color: #044a99;
+}
+/*报名需要看的协议*/
+.apply_aggrement{
+	overflow: hidden;
+	border-top: 2px #b7d1f5 solid;
+	padding-top: 15px;
+}
+.apply_aggrement input{
+	zoom: 130%;
+	display:inline-block;
+	margin-left:40px;
+	margin-right: 10px;
+}
+.apply_aggrement label{
+	color: #666666;
+	font-size: 20px;
+}
+.apply_aggrement label:hover{
+	cursor: pointer;
+}
+/*确认按钮*/
+.ack{
+	width: 125px;
+	height: 45px;
+	border: 2px #b7d1f5 solid;
+	border-radius: 5px;
+	background: none;
+	color: #044a99;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 700;
+}
+.ack_back{
+	width: 72px;
+	height: 45px;
+	border: 2px #b7d1f5 solid;
+	border-radius: 5px;
+	background: none;
+	color: #044a99;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;	
+	font-weight: 700;
+}
+.ack_btn{
+	float: right;
+	margin-top: 15px;
+	margin-right: 35px;
+	margin-bottom: 10px!important;
+}
+.ack_btn button:hover{
+	cursor: pointer;
+	color: #f55e5e;
+}
+/*弹窗*/
+.popup{
+	width: 950px;
+	margin-left: 20px;
+	height: 417px;
+	border-radius: 5px;
+	border:2px #7c8ea6 solid;
+	background: white;
+}
+.popup_text{
+	overflow: hidden;
+}
+.off_btn{
+	float: right;
+	margin-right: 10px;
+}
+.off_btn:hover{
+	cursor: pointer;
+}
+.submit_success_title{
+	color: #044a99;
+	font-size: 28px;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.submit_success_text{
+	width: 500px;
+	float: left;
+}
+.submit_success_text p{
+	color: #444444;
+	font-size: 20px;
+	margin-left: 50px;
+}
+.popup_phone{
+	width: 450px;
+	float: right;
+	margin-top: 20px;
+}
+.popup_phone img{
+	float: left;
+}
+.phone_number{
+	float: left;
+	display:block;
+	line-height: 40px;
+	margin-left: 10px;
+	color: #ff5918;
+	font-size: 22px;
+	font-weight: 700;
+}
+.phone_text{
+	color: #555555;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.focusOn{
+	color: #333333;
+	font-size: 20px;
+	font-weight: 800;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+.inFont_img{
+	margin-left: 200px;
+	overflow: hidden;
+}
+.inFont_img i{
+	color: #a9a9a9;
+	font-size: 65px;
+}
+.inFont_img p{
+	color: #a9a9a9;
+	font-size: 16px;
+	font-weight: 700;
+}
+.icon_num{
+	float: left;
+	margin-right: 80px;
+}
+.icon_num :hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+/*重置css c02003*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+ul {list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#333333;background:#cbe5fe;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式 c02003*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+button{ border: 0;}
+
+
+.src{ width:100%;  margin: 0 auto;}
+.src img{ width:100%;  height: 12.72rem;}
+.src .src-one{ width: 93%; background: #fafcff; border: 0.04rem solid #c1d9f1;border-top: 0.04rem solid #fafcff; margin: 1.04rem auto 0 auto;}
+.src-one .fon-a{ font-size: 1.3rem; font-weight: bolder; line-height: 1.6rem;  margin: 1.78rem 3% 0 3%; }
+.src-one .img1{ height: 2.2rem; width: 50%; margin-top: 1rem;}
+.src-one .fon-b{ font-size: .9rem;  line-height: 1.7rem;margin: .53rem 4% 1.1rem 4%;}
+.src-one .img2{ height: 4rem;  width: 20%;  position: absolute;  right: 2%;  top: 13.8rem;}
+
+.src-two{ width: 93%; background: #fafcff; border: 0.04rem solid #c1d9f1;border-top: 0.04rem solid #fafcff; margin: 1.04rem auto 0 auto;padding-bottom: 1.25rem;}
+.src-two .fon-a{ font-size: 1.1rem;margin: 1.57rem 3% .54rem 3%; line-height: 1.57rem;}
+.src-two .two-one{ width: 94%; margin: 1.4rem 3% 0 3%; background: #ecf6ff; border: 0.04rem solid #e1e5e8; border-bottom: .04rem solid #a4b0b9; border-top: .04rem solid #ecf6ff; }
+.src-two .two-one .img1{ width: 29%; height: 5.6rem; margin: .9rem 0 .9rem 4%;}
+.src-two .two-one .img2{ width: 61%; margin: 1rem 3% 0 3%;}
+.src-two .two-one .img2 .fon-b{ font-size: .8rem; line-height: 1.35rem;  }
+.src-two .two-one .img2 .img3{ width: 2.1rem; height: 1.75rem; margin-top: .5rem;}
+.src-two .two-one .img2 .fon-c{ font-size: .7rem; margin-top: 1.2rem; margin-left: 2%; }
+.src-two .two-one .img2 .inputa{
+    width: 38%;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background: #7bbfff;
+    color: #ffffff;
+    border-radius: .4rem;
+    font-size: 1rem;
+    border-bottom: .06rem solid #8c9297;
+    border: .06rem solid #ccd4dc;
+    margin-left: 10%;
+    margin-top: .6rem;
+}
+
+.src-three{ width: 93%; background: #fafcff; border: 0.04rem solid #c1d9f1;border-top: 0.04rem solid #fafcff; margin: 1.04rem auto; position: absolute; left: 3%; padding-bottom: 2rem;}
+.src-three .fon-a{ font-size: 1.1rem;margin: 1.57rem 7% .54rem 7%; line-height: 1.57rem;}
+.src-three .img1{ height: 2.6rem;  width: 50%;  position: relative;  right: 0%;  top: .9rem;}
+.src-three .fon-b{ font-size: 1.1rem;  line-height: 1.8rem;margin: 1.4rem 4% .77rem 4%;}
+.src-three .moblie{ width: 90%;height:2.2rem;line-height: 2.2rem; border: .1rem solid #c8c8c8; margin: .9rem 0 0 3%; border-radius: .4rem; padding-left: 3%; color: #CCCCCC; font-size:1rem; }
+.src-three .mobliea{ width: 90%;margin: .9rem 0 0 3%; height: 10.1rem;border: .1rem solid #c8c8c8;border-radius: .4rem;padding-left: 3%; color: #CCCCCC;font-size:1.1rem;line-height: 2.2rem;}
+.src-three .inputb{ width:30%; height: 2rem; line-height: 2rem; background: #2d82eb; color: #ffffff; font-size: 1rem; border-radius: .4rem; margin-right: 5%; margin-top: .7rem;}
+.src-three .moblie:hover p{ color: #333333;}
+.src-three .mobliea:hover p{ color: #333333;}
+.src-three .moblie input{ height:2.2rem;line-height: 2.2rem; margin-left: 2%;font-size:1rem;}
+.src-three .mobliea .text{ width: 80%; height: 9.8rem;line-height: 2.2rem; margin-left: 2%;font-size:1rem; }
+
+.popularize-h{ text-align: center; padding-top: 4rem; color: #CCCCCC;}
+.texta{text-indent:2em;}
+
+#min-a{ margin-top: 2.4rem;}
+#min-b{ margin-top: 3.8rem;}
+#min-c{ margin-top: 2.4rem;}
+#min-d{ margin-top: 1.2rem;}
+#min-e{ margin-top: 1rem;}

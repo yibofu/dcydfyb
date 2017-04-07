@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="/Public/app/css/gsstyle.css" rel="stylesheet">
+    <link href="/Public/app/css/animations.css" rel="stylesheet">
+    <script src="/Public/app/js/zepto.min.js"></script>
+    <script src="/Public/app/js/touch.js"></script>
+    <script src="/Public/app/js/gsindex.js"></script>
+</head>
+<script>
+    window.onload=function(){
+        var mUc=document.getElementById("muc");
+        var aUd=document.getElementById("aud");
+        var onOff=true;
+        mUc.onclick=function(){
+            if(onOff){
+                aUd.pause();
+                this.className='';
+            }else{
+                aUd.play();
+                this.className='mussic';
+            }
+            onOff=!onOff;
+        }
+    }
+</script>
+<body>
+<div class="mussic" id="muc">
+    <img src="/Public/app/img/gsyin.png">
+</div>
+<audio src="/Public/app/media/spring.mp3" autoplay id="aud"></audio>
+
+<div class="page page-1-1">
+    <div class="wrap">
+        <div>
+            <img src="/Public/app/img/gs03.png" class="img2 pt-page-moveFromTop pt-page-delay500"/>
+            <img src="/Public/app/img/gs02.png" class="img1 pt-page-moveFromTop pt-page-delay400"/>
+            <img src="/Public/app/img/gs04.png" class="img3 pt-page-rotateRoomTopIn pt-page-delay400"/>
+            <img src="/Public/app/img/gs05.png" class="img4 pt-page-rotateRoomLeftIn pt-page-delay700"/>
+            <img src="/Public/app/img/gs06.png" class="img5 pt-page-rotateRoomBottomIn pt-page-delay700"/>
+            <img src="/Public/app/img/gs07.png" class="img6 pt-page-scaleUpDown pt-page-delay700"/>
+            <img src="/Public/app/img/gs08.png" class="img7 pt-page-scaleUpDown pt-page-delay600"/>
+        </div>
+    </div>
+</div>
+<div class="page page-2-1 hide">
+    <div class="wrap">
+        <!--<img src="images/gsa03.png" class="img2 pt-page-rotateRoomLeftIn pt-page-delay700"/>-->
+        <img src="/Public/app/img/gsa02.png" class="img1 pt-page-rotateRoomLeftIn pt-page-delay400"/>
+        <img src="/Public/app/img/gsa04.png" class="img3"/>
+        <img src="/Public/app/img/gsa06.png" class="img5 pt-page-scaleUpDown pt-page-delay600"/>
+        <img src="/Public/app/img/gsa05.png" class="img4 pt-page-flipInBottom pt-page-delay500"/>
+
+    </div>
+</div>
+<div class="page page-3-1 hide">
+    <div class="wrap">
+        <!--<img src="images/gsb04.png" class="img3 pt-page-rotateRoomRightIn pt-page-delay500"/>-->
+        <!--<img src="images/gsb05.png" class="img4"/>-->
+        <img src="/Public/app/img/gsb03.png" class="img2 pt-page-rotateRoomRightIn pt-page-delay500"/>
+        <img src="/Public/app/img/gsa04.png" class="img5"/>
+        <img src="/Public/app/img/gsb06.png" class="img6 pt-page-rotateUnfoldBottom pt-page-delay1000"/>
+        <img src="/Public/app/img/gsb07.png" class="img7 pt-page-rotateUnfoldBottom pt-page-delay1000"/>
+        <img src="/Public/app/img/gsb02.png" class="img1 pt-page-rotateInNewspaper pt-page-delay1000"/>
+
+    </div>
+</div>
+<div class="page page-4-1 hide">
+    <div class="wrap">
+        <!--<img src="images/gsd03.png" class="img2 pt-page-rotateRoomLeftIn pt-page-delay700"/>-->
+        <img src="/Public/app/img/gsd02.png" class="img1 pt-page-rotateRoomLeftIn pt-page-delay500"/>
+        <img src="/Public/app/img/gsd04.png" class="img3 pt-page-flipInBottom pt-page-delay500"/>
+        <img src="/Public/app/img/gsd05.png" class="img4"/>
+        <img src="/Public/app/img/gsd06.png" class="img5 pt-page-flipInBottom pt-page-delay500"/>
+
+
+    </div>
+</div>
+<div class="page page-5-1 hide">
+    <div class="wrap">
+        <img src="/Public/app/img/gsf02.png" class="img1 pt-page-scaleUp pt-page-delay500"/>
+        <img src="/Public/app/img/gsf03.png" class="img2 pt-page-scaleUp pt-page-delay700"/>
+        <img src="/Public/app/img/gsf04.png" class="img3 pt-page-flipInBottom pt-page-delay500"/>
+        <img src="/Public/app/img/gsf05.png" class="img4 pt-page-flipInBottom pt-page-delay500"/>
+    </div>
+</div>
+<div class="page page-6-1 hide">
+    <div class="wrap">
+        <img src="/Public/app/img/gse03.png" class="img2 pt-page-rotateRoomLeftIn pt-page-delay500"/>
+        <img src="/Public/app/img/gse02.png" class="img1 pt-page-rotateRoomLeftIn pt-page-delay700"/>
+        <img src="/Public/app/img/gse04.png" class="img3 pt-page-scaleUp pt-page-delay700"/>
+        <img src="/Public/app/img/gse05.png" class="img4 pt-page-rotateRoomRightIn page-delay500"/>
+        <img src="/Public/app/img/gse06.png" class="img5 pt-page-rotateRoomLeftIn pt-page-delay500"/>
+        <img src="/Public/app/img/gse07.png" class="img6 pt-page-scaleUp pt-page-delay700"/>
+        <img src="/Public/app/img/gse08.png" class="img7 pt-page-rotateRoomRightIn pt-page-delay700"/>
+        <img src="/Public/app/img/gse09.png" class="img8 pt-page-rotateRoomLeftIn pt-page-delay700"/>
+        <img src="/Public/app/img/gse10.png" class="img9 pt-page-scaleUp pt-page-delay700"/>
+    </div>
+</div>
+<div class="page page-7-1 hide">
+    <div class="wrap">
+        <img src="/Public/app/img/gss01.png" class="img1 pt-page-flipInTop pt-page-delay500"/>
+        <img src="/Public/app/img/gss02.png" class="img2 pt-page-flipInBottom pt-page-delay500"/>
+        <img src="/Public/app/img/gss03.png" class="img3 pt-page-flipInBottom pt-page-delay500"/>
+        <img src="/Public/app/img/gss04.png" class="img4 pt-page-flipInTop pt-page-delay500"/>
+        <img src="/Public/app/img/gss06.png" class="img5 pt-page-flipInTop pt-page-delay800"/>
+        <img src="/Public/app/img/gss05.png" class="img6 pt-page-flipInBottom pt-page-delay800"/>
+        <img src="/Public/app/img/gss07.png" class="img7 pt-page-flipInBottom pt-page-delay800"/>
+        <img src="/Public/app/img/gss08.png" class="img8 pt-page-flipInTop pt-page-delay800"/>
+
+    </div>
+</div>
+<div class="page page-8-1 hide">
+    <div class="wrap">
+        <img src="/Public/app/img/gsy02.png" class="img1 pt-page-rotateRoomRightIn pt-page-delay500"/>
+        <img src="/Public/app/img/gsy03.png" class="img2 pt-page-rotateRoomLeftIn pt-page-delay500"/>
+        <img src="/Public/app/img/gsy04.png" class="img3 pt-page-scaleUp pt-page-delay400"/>
+        <img src="/Public/app/img/gsy05.png" class="img4 pt-page-rotateUnfoldTop pt-page-delay400"/>
+        <img src="/Public/app/img/gsy06.png" class="img5 pt-page-scaleUp pt-page-delay400"/>
+        <img src="/Public/app/img/gsy07.png" class="img6 pt-page-rotateUnfoldTop pt-page-delay500"/>
+    </div>
+</div>
+</body>
+
+</html>

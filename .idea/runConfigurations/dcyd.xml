@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dcyd" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="dcyd.com" start_url="www.dcyd.com/Manerger">
+    <method />
+  </configuration>
+</component>

@@ -1,0 +1,205 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>预算系统建设</title>
+    <link rel="stylesheet" href="/Public/app/css/product.css">
+    <script src="/Public/app/js/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="eight">
+    <div class="tou">
+        <a href="<?php echo U('Product/index');?>" class="backa fl"><img src="/Public/app/img/fh.png"/></a>
+        <div class="backb fl guan"><h3>预算系统建设</h3></div>
+    </div>
+    <div class="eighta">
+        <img src="/Public/app/img/logoo.png" class="img1"/>
+        <h3 class="red text">预算系统建设</h3>
+        <p class="fr jia fona lin-a">——快速构建自己企业的财务体系</p>
+        <div class="clearfix"></div>
+        <p class="fona texta">“预算系统建设”咨询项目服务是专为民营企业设计的驻场咨询式产品。财务专家进驻企业、针对企业财务管理某问题，提供一段时间的驻场调研、诊断、方案设计、协助落地等财务管理升级服务。</p>
+        <h3 class="red fonb poa">【咨询成果】</h3>
+        <p class="fona texta">预算目标管控系统</p>
+        <h3 class="red fonb poa">【咨询内容】</h3>
+        <p class="fona texta jia">主要内容：</p>
+        <p class="fona miu">
+            战略目标梳理及数字化<br/>
+            收入目标设计与分解<br/>
+            利润与成本控制目标设计<br/>
+            费用控制预算 <br/>
+            资金流计划与预算<br/>
+            各部门和人员的业绩目标及责任书<br/>
+            预算管理手册 赠送服务：<br/>
+            管理者预算文化”内训 2 天<br/>
+            “Excel 预算编制”软件模板 1 套<br/>
+        </p>
+        <h3 class="red fonb poa">【咨询收获】</h3>
+        <p class="fona min">
+            定目标，有计划 —— 预先知道明年的经营结果<br/>
+            明方向，清责任 —— 每个员工知道自己该做什么<br/>
+            文化正，氛围浓 —— 员工闲聊内容变成目标达成<br/>
+            软件好，表格齐 —— 业务人员做预算成为习惯<br/>
+            保绩效，创利润 —— 公司自动运转，解放老板<br/>
+        </p>
+        <h3 class="red fonb poa">【服务方式】</h3>
+        <ul class="fona texta">
+            <li class="jia">驻场诊断：<span class="jian">专家团队进入企业，深入调研，发现问题及产生原因，提供问题诊断报告书及项目实施建议。</span></li>
+            <li class="jia">方案设计：<span class="jian">针对企业的问题，设计相应的管理工具（表单、制度、方法、流程、软件模型）及实施方案（时间表、负责人）等。</span></li>
+            <li class="jia">落地导入：<span class="jian">在企业现场，协助管理工具与财务提升的落地与实施，随时解决实施与落地过程中存在的问题，包括：员工培训、亲自示范、操作演练、工具导入、穿行测试、试运行、正式上线等。</span></li>
+            <li class="jia">跟踪辅导：<span class="jian">系统实施落地后，专家离场，远程或返场提供一段时间的专项辅导或跟踪服务。</span></li>
+        </ul>
+        <h3 class="red fonb poa">【阶段周期】</h3>
+        <table class="tab fona" border=1 cellspacing=0 cellpadding=0>
+            <tr>
+                <th>项目阶段</th>
+                <th>形式</th>
+                <th>周期</th>
+            </tr>
+            <tr>
+                <td>调研诊断阶段</td>
+                <td>
+                    企业现场调研、外部行业调研
+                </td>
+                <td>
+                    15-20 天<br/>
+                    （企业方现场调研不低于 3 天）
+                </td>
+            </tr>
+            <tr>
+                <td>方案设计阶段</td>
+                <td>
+                    企业现场讨论方案、方案培训与说明会、沟通、方案调整
+                </td>
+                <td>
+                    40 天<br/>
+                    （企业方现场方案设计不低于 15 天）
+                </td>
+            </tr>
+            <tr>
+                <td>导入实施阶段</td>
+                <td>导入启动会、工具方法培训、跟踪辅导</td>
+                <td>
+                    90 天<br/>
+                    （培训天数不低于 3 天）
+                </td>
+            </tr>
+        </table>
+        <div class="but"><button id="and" class="lan jia">企业报名</button></div>
+        <p class="text fonb bou">联系电话：18310629197 联系人：郭女士</p>
+        <div id="fo" style="display: none">
+            
+<style>
+    .consult{ width: 90%; height: 12rem;background: #b8bcbd; position: relative;top: -26rem; left: 0; border-radius: .8rem; border: .1rem solid #55afc1; margin: 0 auto;}
+    .consult .img{ width: 65%; margin:.6rem auto;}
+    .consult .img .x{ width: 6%; height: .8rem; position: relative; top: 0; left:112%;}
+    .consult .img .img02{ margin-top: 0.5rem;}
+    .consult .img input{ border: .1rem solid #000; padding: .2rem 2%;}
+    .consult .img .img03{ width: 30%; margin: 1rem auto;}
+    .consult .img .img03 input{ width: 100%; color: #000000;}
+
+</style>
+<div id="train" class="consult">
+    <div class="img">
+        <img id="x" src="/Public/app/img/x.png" class="x"/>
+        <div class="img01">姓名：<input type="text" name="name" value="" placeholder="请输入姓名" autocomplete="off" ></div>
+        <div class="img02">手机：<input type="text" name="phone" value="" placeholder="请输入电话号码" autocomplete="off" ></div>
+        <div class="img03"><input class="jia" type="button" onclick="order()" value="提交"></div>
+    </div>
+</div>
+<div class="makeg" style="display: none">
+    <div class="makeg-a">
+        <a href="<?php echo U('Product/index');?>"><img id="uin" src="/Public/app/img/xx.png" class="imgs"/></a>
+        <img src="/Public/app/img/shape.png" class="imgt"/>
+        <p class="foa ki">
+            您的问题已经提交,请耐心等待!<br/>
+            财税专家会在24小时内对<br/>
+            您的问题进行解答！
+        </p>
+    </div>
+</div>
+<script>
+</script>
+
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+//    $('#and').click(function(){
+//        $('.consult').fadeIn(200);
+//        $('#train').slideDown(300);
+//    })
+    $('#x').click(function(){
+        $('.consult').fadeOut(200);
+        $('#train').slideUp(300);
+    })
+    $("#and").click(function(){
+        $("#fo").css("display","block");
+//        $("#fo").toggle();
+    })
+
+$(function(){
+
+    $("input[name='user']").focus(function(){
+        $("input[name='name']").attr("placeholder","请输入用户名");
+    }).blur(function(){
+        ob = $(this);
+        ob.next("span").remove();
+        var s = ob.val();
+        if(s == ""){
+            $("input[name='name']").attr("placeholder","请输入用户名");
+            return false;
+        }else if(s.match(/^([\u4e00-\u9fa5]{1,20}|[a-zA-Z\.\s]{1,20})$/) == null){
+            $("input[name='name']").val("").attr("placeholder","您输入的名字不合法");
+            return false;
+        }
+    })
+    $("input[name='phone']").focus(function(){
+        $("input[name='phone']").attr("placeholder","请输入您的手机号");
+    }).blur(function(){
+        pb = $(this);
+        pb.next("span").remove();
+        var a = pb.val();
+        if(a == ""){
+            $("input[name='phone']").attr("placeholder","请输入您的手机号");
+            return false;
+        }else if(a.match(/^1[0-9]{10}$/) == null){
+            $("input[name='phone']").val("").attr("placeholder","您输入的手机号格式不对");
+            return false;
+        }
+    })
+})
+function order(){
+    var name = $("input[name='name']").val();
+    var phone = $("input[name='phone']").val();
+    if(name == ""){
+        $("input[name='name']").attr("placeholder","姓名不能为空");
+        return false;
+    }
+    if(phone == ""){
+        $("input[name='phone']").attr("placeholder","手机号码不能为空");
+        return false;
+    }
+
+    $.ajax({
+        type:"POST",
+        url:"<?php echo U('Product/twoadd');?>",
+        data:{"name":name,"phone":phone},
+        dataType:"json",
+        success:function(str){
+            var data = eval("("+str+")");
+            if(data){
+                $('.makeg').css("display","block");
+            }
+        }
+    })
+}
+</script>
+</html>

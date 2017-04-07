@@ -1,0 +1,100 @@
+body.mhome{
+    background: #f0f4fe;
+}
+.dd_hkindex{
+    margin: 0px auto;
+}
+.dd_par {
+    margin: 0 auto;
+    font-size: 14px;
+    background: #ffffff;
+}
+.Alipay_container{
+    width: 100%;
+    margin: 0 auto;
+
+    background: #F0F4FE;
+}
+.Alipay_container1{
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #666666;
+}
+.dd_Alipay{
+    width:90%;
+    margin:0 auto;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333333;
+}
+.Alipay_container1 .dd_Alipay{
+    color: #666666;
+    font-size: 14px;
+    border-bottom: 1px solid #DEDEDE;
+}
+.dd_Alipay i{
+    font-style: normal;
+    color: #4774b8;
+    font-size: 18px;
+}
+.dd_account{
+    width: 90%;
+    margin:0 auto;
+    padding: 15px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #dedede;
+}
+.Alipay_account{
+    position: relative;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+.Alipay_account span{
+    display: block;
+    /*padding-left: 20px;*/
+    margin-top: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+.Alipay_account p{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #bebebe;
+    color: #68c983;
+}
+.account_name{
+    padding: 10px 0;
+    font-size: 14px;
+}
+.account_name i{
+    font-style: normal;
+    color: #4774b8;
+}
+.Alipay_tishi{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666666;
+}
+.Alipay_tishi i{
+    font-style: normal;
+    color: #ee3200;
+}
+.Alipay_method{
+    width: 90%;
+    margin: 10px auto;
+    height: 40px;
+    line-height: 40px;
+    border:1px solid #ee3200;
+    background: #ee3200;
+    text-align: center;
+}
+.Alipay_method a{
+    color: #ffffff;
+    font-size: 16px;
+}

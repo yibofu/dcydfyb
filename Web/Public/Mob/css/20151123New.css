@@ -1,0 +1,131 @@
+.dd_container{
+    width:80.5%;
+    margin: 0 auto;
+}
+
+/*µÇÂ¼Ò³*/
+.logo_container{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background: #F4F7FE;
+}
+.logo{
+    width:80%;
+    margin: 10%  auto 0px;
+    padding: 20px 0 0;
+}
+.dd_container1{
+    width:90%;
+    margin: 0 auto;
+}
+.dd_index .InputBox{
+    margin: 0;
+    width:100%;
+    border:none;
+    padding-left: 35px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.dd_index .fir_pwd:first-child{
+    margin-top: 50px;
+}
+.icon{
+    display: block;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 10;
+
+}
+.icon1{
+    background: url("/Public/Mob/img/login.png") no-repeat center center;
+    -webkit-background-size: 140px 27px;
+    background-size: 140px 27px;
+}
+.icon2{
+    background: url("/Public/Mob/img/login.png") no-repeat left top;
+    -webkit-background-size: 140px 27px;
+    background-size: 140px 27px;
+}
+.icon3{
+    background: url("/Public/Mob/img/login.png") no-repeat right top;
+    -webkit-background-size: 140px 27px;
+    background-size: 127px 27px;
+}
+.icon4{
+    width: 30px;
+    height: 20px;
+    top: 10px;
+    left: 0px;
+
+    background: url("/Public/Mob/img/shenfenzheng.png") no-repeat right top;
+    -webkit-background-size: 140px 27px;
+    background-size: 29px 20px;
+}
+.yzmNew{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 127px;
+    height: 30px;
+}
+.dd_yzmm {
+    width: 100%;
+    background: #ee3200;
+    height: 30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.dd_yzmm a{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+.dd_yzm_again
+{
+    width: 100%;
+    color: #ffffff;
+    background: #929292;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+}
+.dd_yzm_again a{
+
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+.dd_yzm_again i{
+    font-style: normal;
+}
+.dd-zc-new{
+    background: #ee3200;
+    width: 100%;
+}
+.dd-zc-new{
+    border:none;
+}
+.dd_re{
+    width: 100%;
+    text-align: left;
+}
+.dd_re a{
+    color: #999999;
+    line-height: 30px;
+    text-align: left;
+    font-size: 14px;
+    text-indent: 2px;
+}

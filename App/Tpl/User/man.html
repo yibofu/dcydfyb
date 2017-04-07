@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>OO交友 -- 用户中心</title>
+    <link rel="stylesheet" href="/Public/app/css/userdetail.css" media="all"/>
+    <link rel="stylesheet" href="/Public/app/css/usercenter_tmp.css" media="all"/>
+    <link rel="stylesheet" href="/Public/app/css/jquery.fileupload.css"/>
+    <!--[if lt IE9>
+    <script src="./js/html5.js"></script>
+    <![end if]-->
+</head>
+<body>
+<header id="pageHeader">
+    <section class="container" >
+        <span class="logo">
+            <img src="/Public/app/img/ooxxlogo.png" alt="OOXX"/>
+        </span>
+        <nav class="oonav">
+            <ul>
+                <li class="home">
+                    <a href="{:U('Show/index')}"><span class="homeIcon"></span>首页</a>
+                </li>
+				<a href="{:U('User/man')}">
+				<li class="user">
+                    <span class="userIcon"></span>{$userinfo.nickname}，你好!
+                </li>
+				</a>
+				 <li class="setting">
+                    <a href="{:U('User/man')}"><img src="/Public/app/img/setting.png" alt="" title="设置"/></a>
+                </li>
+                <li class="message">
+					<if condition="$has_new eq 1">
+					<a href="{:U('User/man')}"><img src="/Public/app/img/logo4.png" alt="" title="消息"/></a>
+					<else />
+					<a href="{:U('User/man')}"><img src="/Public/app/img/message.png" alt="" title="消息"/></a>
+					</if>
+                </li>
+                <li class="quit">
+                    <a href="{:U('Index/loginout')}"><img src="/Public/app/img/quit.png" alt="" title="退出"/></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<section class="main">
+    <div class="container" style="background: #ffffff;">
+        <div class="header">
+            <div class="fl detailBox">
+                <span><img src="/Public/app/img/user.png" alt=""/>个人中心</span>
+            </div>
+            <div class="fr searchBox">
+                <form action="{:U('Show/index')}" method="post" id="user_search">
+                    <input  class="searchInput" type="search" placeholder="请输入手机号或用户昵称" name="phone_id" maxlength="11"/>
+                    <span class="searchbtn" onclick="fun()"><i></i></span>
+                </form>
+            </div>
+        </div>
+        <div class="body">
+            <div class="panel">
+                <div class="fl panelImg" id="userlist">
+                    <ul>
+                        <li class="active"><a href="javascript:;">我的资料</a></li>
+                        <li><a href="javascript:;">我的收藏</a></li>
+                        <li><a href="javascript:;">送礼记录</a></li>
+                        <li><a href="javascript:;">我的消息</a><i class="newsmess" <if condition="$has_new eq 1">style="display:block;"</if>></i></li>
+                    </ul>
+                </div>
+                <section class="part1" style="display: block;">
+                    <div class="fl panelInfo">
+						<input type="hidden" value="{$userinfo.uid}" id="uid" />
+                        <form action="#">
+                            <ul>
+                                <li><label>昵称</label><span>{$userinfo.nickname}</span></li>
+                                <li><label>ID号</label><span>{$userinfo.userid}</span></li>
+                                <li><label>性别</label><span>男</span></li>
+                                <li><label>城市</label><span id="userCity">{$userinfo.city}</span>
+								<input type="hidden" id="hidden_city" value="{$userinfo.city}" />
+                                    <select id="selProvince" onChange = "getCity(this.options[this.selectedIndex].value)" style="display: none;">
+                                        <option value="">-请选择-</option>
+                                        <option value="北京市">北京市</option>
+                                        <option value="上海市">上海市</option>
+                                        <option value="天津市">天津市</option>
+                                        <option value="重庆市">重庆市</option>
+                                        <option value="河北省">河北省</option>
+                                        <option value="山西省">山西省</option>
+                                        <option value="内蒙古自治区">内蒙古自治区</option>
+                                        <option value="辽宁省">辽宁省</option>
+                                        <option value="吉林省">吉林省</option>
+                                        <option value="黑龙江省">黑龙江省</option>
+                                        <option value="江苏省">江苏省</option>
+                                        <option value="浙江省">浙江省</option>
+                                        <option value="安徽省">安徽省</option>
+                                        <option value="福建省">福建省</option>
+                                        <option value="江西省">江西省</option>
+                                        <option value="山东省">山东省</option>
+                                        <option value="河南省">河南省</option>
+                                        <option value="湖北省">湖北省</option>
+                                        <option value="湖南省">湖南省</option>
+                                        <option value="广东省">广东省</option>
+                                        <option value="广西壮族自治区">广西壮族自治区</option>
+                                        <option value="海南省">海南省</option>
+                                        <option value="四川省">四川省</option>
+                                        <option value="贵州省">贵州省</option>
+                                        <option value="云南省">云南省</option>
+                                        <option value="西藏自治区">西藏自治区</option>
+                                        <option value="陕西省">陕西省</option>
+                                        <option value="甘肃省">甘肃省</option>
+                                        <option value="宁夏回族自治区">宁夏回族自治区</option>
+                                        <option value="青海省">青海省</option>
+                                        <option value="新疆维吾尔族自治区">新疆维吾尔族自治区</option>
+                                        <option value="香港特别行政区">香港特别行政区</option>
+                                        <option value="澳门特别行政区">澳门特别行政区</option>
+                                        <option value="台湾省">台湾省</option>
+                                        <option value="其它">其它</option>
+                                    </select>
+                                    <select id="selCity"  style="display: none;"><option value="0">-城市-</option></select>
+                                </li>
+                                <li><label>签名</label>
+                                    <input type="text" name="sign" id="sign" value="{$userinfo.show}" maxlength="20" readonly/>
+                                </li>
+                                <li>
+                                    <label>学校</label>
+                                    <input type="text" id="school" name="school" value="{$userinfo.school}" maxlength="10" readonly/>
+                                </li>
+                                <li>
+                                    <label>职业</label>
+                                    <span id="uprofession" style="margin-left: 10px;">{$userinfo.job}</span>
+                                    <select name="profession" id="profession" style="width: 230px; display: none;">
+                                        <option value="管理人员" <if condition="$userinfo.job eq 管理人员">selected</if>>管理人员</option>
+                                        <option value="一般人员" <if condition="$userinfo.job eq 一般人员">selected</if>>一般人员</option>
+                                        <option value="内勤" <if condition="$userinfo.job eq 内勤">selected</if>>内勤</option>
+                                        <option value="后勤" <if condition="$userinfo.job eq 后勤">selected</if>>后勤</option>
+                                        <option value="工人" <if condition="$userinfo.job eq 工人">selected</if>>工人</option>
+                                        <option value="销售/中介/业务代表" <if condition="$userinfo.job eq 销售/中介/业务代表">selected</if>>销售/中介/业务代表</option>
+                                        <option value="营业/服务员" <if condition="$userinfo.job eq 营业/服务员">selected</if>>营业/服务员</option>
+                                        <option value="个体商户" <if condition="$userinfo.job eq 个体商户">selected</if>>个体商户</option>
+                                        <option value="学生" <if condition="$userinfo.job eq 学生">selected</if>>学生</option>
+                                        <option value="其他" <if condition="$userinfo.job eq 其他">selected</if>>其他</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>星座</label><span id="starzuo">{$userinfo.constellation}</span>
+                                    <select name="constellation" id="constellation" style="display: none;">
+                                        <option value="白羊座" <if condition="$userinfo.constellation eq 白羊座">selected</if>>白羊座</option>
+                                        <option value="金牛座" <if condition="$userinfo.constellation eq 金牛座">selected</if>>金牛座</option>
+                                        <option value="双子座" <if condition="$userinfo.constellation eq 双子座">selected</if>>双子座</option>
+                                        <option value="巨蟹座" <if condition="$userinfo.constellation eq 巨蟹座">selected</if>>巨蟹座</option>
+                                        <option value="狮子座" <if condition="$userinfo.constellation eq 狮子座">selected</if>>狮子座</option>
+                                        <option value="处女座" <if condition="$userinfo.constellation eq 处女座">selected</if>>处女座</option>
+                                        <option value="天秤座" <if condition="$userinfo.constellation eq 天秤座">selected</if>>天枰座</option>
+                                        <option value="天蝎座" <if condition="$userinfo.constellation eq 天蝎座">selected</if>>天蝎座</option>
+                                        <option value="射手座" <if condition="$userinfo.constellation eq 射手座">selected</if>>射手座</option>
+                                        <option value="摩羯座" <if condition="$userinfo.constellation eq 魔蝎座">selected</if>>魔蝎座</option>
+                                        <option value="水瓶座" <if condition="$userinfo.constellation eq 水瓶座">selected</if>>水瓶座</option>
+                                        <option value="双鱼座" <if condition="$userinfo.constellation eq 双鱼座">selected</if>>双鱼座</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </form>
+                        <div class="editInfo">编辑</div>
+                    </div>
+                    <div class="fl action">
+                        <div class="userimg">
+                            <if condition="$userinfo.img_status eq 1">
+							<img src="{$userinfo.img_url}" alt="用户头像" id="hidden_img"/>
+							<elseif condition="$userinfo.img_status eq 2" />
+							<img src="/Public/app/img/no.png" alt=""/>
+							<elseif condition="$userinfo.img_status eq 3" />
+							<img src="/Public/app/img/shenhe.png" alt=""/>
+							<else />
+							<img src="/Public/app/img/zsjj.png" alt=""/>
+							</if>
+                        </div>
+                        <p id="editHeadImg">修改头像</p>
+                    </div>
+                </section>
+                <section class="part2" style="display: none;">
+                    <div class="mycollect">我的收藏</div>
+                    <div class="collectList" id="collectList">
+                        <ul id="collect_content">
+							<volist name="collect_reuslt" id="vo">	
+                            <li>
+                                <a href="/index.php/User/userdetail/temp/{$vo.userid}" target="_blank">
+                                    <div class="showprotrait">
+                                        <div class="protraitbox">
+                                            <img src="{$vo.img_url}" alt=""/>
+                                        </div>
+                                        <h4>{$vo.collect_name}</h4>
+                                    </div>
+                                    <div class="imgaction">
+                                        <span style="text-align: left; float:left;">打赏</span>
+                                        <span style="text-align: right;float: right;">聊聊</span>
+                                    </div>
+                                </a>
+                            </li>
+							</volist>
+							<input type="hidden" id="collect_pagenum" value="1" />
+							<input type="hidden" id="max_collect_pagenum" value="{$collect_pagenum}" />
+                        </ul>
+                    </div>
+                    <div id="collectBtn">加载更多</div>
+                </section>
+                <section class="part3" style="display: none;">
+                    <ul class="liwuhistory" id="lwhistory">
+						<volist name="consume_result" id="vo">
+                        <li>
+                            <p>您给<b>{$vo.receive_name}</b>一个<b>￥{$vo.money}</b>{$vo.gift_name}<span class="NewImg"><img src="/Public/app/img/New.png" alt=""/></span></p>
+                            <span>{$vo.ctime}</span>
+                        </li>
+						</volist>
+						<input type="hidden" id="consume_pagenum" value="1" />
+						<input type="hidden" id="max_consume_pagenum" value="{$consume_pagenum}" />
+                    </ul>
+                    <div class="moreHistory" id="man_moreHistory">加载更多</div>
+                </section>
+                <section class="part4" style="display: none;">
+                    <ul  class="messbox" id="talkbox">
+						<volist name="chat_result" id="vo">
+                        <li onclick="do_talk({$vo.id})">
+                            <div class="portrait">
+								<if condition="$vo.img_status eq 1" >
+								<img src="{$vo.img_url}" alt=""/>
+								<elseif condition="$vo.img_status eq 3"/>
+								<img src="/Public/app/img/shenhe.png" alt=""/>
+								<else />
+								<img src="/Public/app/img/no.png" alt=""/>
+								</if>
+							</div>
+                            <div class="messageboard">
+                                <h2><if condition="$vo.is_admin eq 1">管理员<else />{$vo.nickname}</if> <if condition="$vo.has_new eq 1"><span class="newContent" id="new_content{$vo.id}"><img src="/Public/app/img/New.png" width="24" height="12"/></span></if></h2>
+                                <p class="newtalk">{$vo.message}</p>
+                                <p>{$vo.mtime}</p>
+                            </div>
+                        </li>
+						</volist>
+							<input type="hidden" id="message_pagenum" value="1" />
+						<input type="hidden" id="max_message_pagenum" value="{$message_pagenum}" />
+                    </ul>
+                    <div class="talk" id="moretalk">加载更多</div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!--弹出层-->
+<section class="shadow" id="uploadshadow" style="display: none;">
+    <div class="dialog">
+        <div class="dialog-header">上传头像 <span class="dialog-close"><img src="/Public/app/img/close.png" alt=""/></span></div>
+        <div class="dialog-body">
+           <div class="previewImg"><img src="/Public/app/img/add.png" alt=""/></div>
+            <!--<span class="uploadBtn">本地上传<input type="file" value="本地上传"></span>-->
+             <span class="btn fileinput-button uploadBtn">
+                 <span>本地上传</span>
+				 <form id='formFile' name='formFile' method="post" action="/index.php/User/upload" target='frameFile'
+    enctype="multipart/form-data">
+                 <input type="file" name="files[]" id="uploadimg">
+				 </form>
+             </span>
+            <p class="imgSize">(仅支持jpg、gif、png格式，文件小于5M)</p>
+            <div class="updateText">头像上传请勿上传淫秽、低俗内容、广告内容、政治、伟人、传销等违法、敏感图片作为头像。</div>
+        </div>
+        <div class="uploaded">完成</div>
+    </div>
+	 <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>
+</section>
+<!--留言板-->
+<section class="shadow" id="llshadow" style="display: none;">
+    <div class="dialog ">
+        <div class="dialog-header"> <span class="dialog-close"><img src="/Public/app/img/close.png" alt=""/></span></div>
+        <div class="dialog-body" id="msg">
+            <div class="date"></div>
+            
+            
+        </div>
+        <div class="dialog-footer">
+            
+                <input type="text" id="sendingtext" name="liaoliao" value="请输入文字" maxlength="20"/>
+				<input type="hidden" id="hidden_chat_id" />
+                <span class="dialog-btn" id="sending">发送</span>
+            
+        </div>
+    </div>
+</section>
+<!--留言板-->
+<script src="/Public/app/js/jquery-1.11.3.min.js"></script>
+
+<script src="/Public/app/js/userCenter.js"></script>
+<script src="/Public/app/js/citySelect.js"></script>
+<script src="/Public/app/js/moreloading.js"></script>
+</body>
+<script>
+	function fun(){
+		var val=$(".searchInput").val();
+        if(!(new RegExp(/[\u4e00-\u9fa5a-zA-Z]/gm).test(val))){
+            if(val != ""){
+                alert("请输入中文或字母");
+				return false;
+            }
+        }
+		$("#user_search").submit();
+	}
+</script>
+</html>

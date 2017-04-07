@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>补充附件</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，补充附件">
+    <meta name="description" content="滴滴快贷补充附件。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+    <link rel="stylesheet" href="/Public/Mob/yh/css/footer.css"/>
+    <script src="/Public/Mob/yh/js/jquery-1.11.3.min.js"></script>
+    <style>
+        .dd_circle{ font-size:14px; top:12px;right:37px;color: #ee3200;}
+
+    </style>
+</head>
+<body class="mhome">
+<header class="dd_header">补充附件<span class="fa fa-chevron-left dd_return" onclick="return_page()"></span></header>
+<section class="dd_index">
+    <div style="width: 90.5%; margin: 0 auto;">
+        <ul class="dd_set">
+		<volist name="result" id="vo">
+        <li><a href="/Mob/index.php/User/annex_show/id/{$vo.id}/uid/{$id}">{$vo.title}
+            <span class="fa-stack fa-lg dd_circle">
+				<if condition="$vo.is_agree eq 1">
+					<i class="fa fa-check-circle-o fa-stack-2x" style="color: #ee3200;"></i>
+				<else if condition="$vo.is_agree eq 2"/>
+					<i class="fa fa-times-circle-o fa-stack-2x"  style="color: #ee3200;"></i>
+				<else />	
+                <i class="fa fa-circle-o fa-stack-2x"></i>
+                <i class="fa fa-question fa-stack-1x"></i></span>
+				</if>
+            <span class="fa fa-chevron-right chevron_right"></span>
+            </a>
+        </li>
+		</volist>
+    </ul>
+    </div>
+</section>
+<div class="dd_yzm" style="margin-top:10px;margin-bottom:100px;" onclick="add()"><a href="javascript:;">添加附件</a></div>
+
+<include file="Public:footer"/>
+<script>
+    $(function () {
+        var screen_height=$(window).height();
+        $(".show_img").css({
+            height:screen_height/3
+        });
+        $(".show_img").css({
+            height: $(".show_img").find("img").height()
+        });
+    })
+	function add(){
+		window.location.href="{:U('User/annex',array('id'=>$id))}";
+	}
+	function return_page(){
+		window.location.href = "{:U('User/index')}";
+	}
+</script>
+</body>
+</html>

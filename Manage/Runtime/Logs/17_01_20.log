@@ -1,0 +1,102 @@
+[ 2017-01-20T11:20:00+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-20T11:20:05+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.009000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.008000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1484882405,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-01-20T11:20:05+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-01-20T11:20:08+08:00 ] 127.0.0.1 /Manerger/index.php/Article/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-01-20T11:20:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Article&a=articlelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.014000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` LIMIT 0,20   [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_article` LIMIT 1   [ RunTime:0.001000s ]
+

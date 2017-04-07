@@ -1,0 +1,234 @@
+
+/*<!--财税案例-->*/ 
+.one_title{
+	height: 26px;
+	width: 100%;
+	/*border: 1px yellow solid;*/
+	color: #0098b3;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+}
+.one_text_text li{
+	list-style: disc;
+	margin-left: 70px;
+}
+.two_text_text li{
+	margin-left:20px;
+	list-style: disc;
+}
+.three_text_text li{
+	list-style: disc;
+	margin-left: 50px;
+}
+.four_text_text li{
+	margin-left:20px;
+	list-style: disc;
+}
+.one_title :first-child{
+	text-decoration: none;
+	color:rgb(0, 152, 179);;
+}
+.two_title :first-child{
+	text-decoration: none;
+	color:rgb(0, 152, 179);;
+}
+.three_title :first-child{
+	text-decoration: none;
+	color:rgb(0, 152, 179);;
+}
+.four_title :first-child{
+	text-decoration: none;
+	color:rgb(0, 152, 179);;
+}
+.one_title :last-child{
+	text-decoration: none;
+	display: inline-block;
+	color: #ff5918;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	float: right;
+
+}
+.one_text{
+	border-top: 2px #0098b3 solid;
+	overflow: hidden;
+	padding: 50px 30px 50px 0px;
+}
+.one_text_img{
+	width:180px ;
+	height:170px;
+	float: left;
+}
+.one_text_img img{
+	width:100%;
+	height:100%;
+}
+.one_text_text{
+	margin-top: -20px;
+	float: left;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+.one_text_text li{
+	padding:10px 0 10px 0 ;
+}
+.one_text_text li a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.one_text_text li a:hover{
+	color: #0098B3;
+}
+/*<!--财政法规-->*/
+.two_title{
+	height: 26px;
+	width: 100%;
+	/*border: 1px yellow solid;*/
+	color: #0098b3;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+}
+.two_title :last-child{
+	text-decoration: none;
+	display: inline-block;
+	color: #ff5918;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	float: right;
+}
+.two_text_img{
+	float: right;
+}
+.two_text{
+	border-top: 2px #0098b3 solid;
+	overflow: hidden;
+	padding: 50px 30px 50px 0px;
+}
+
+.two_text_text{
+	margin-top: -20px;
+	float: left;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+.two_text_text li{
+	padding:10px 0 10px 0 ;
+}
+.two_text_text li a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.two_text_text li a:hover{
+	color: #0098B3;
+}
+/*<!--扁鹊干货-->*/
+.three_title{
+	height: 26px;
+	width: 100%;
+	/*border: 1px yellow solid;*/
+	color: #0098b3;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+}
+.three_title :last-child{
+	text-decoration: none;
+	display: inline-block;
+	color: #ff5918;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	float: right;
+}
+.three_text{
+	border-top: 2px #0098b3 solid;
+	overflow: hidden;
+	padding: 50px 30px 50px 0px;
+}
+.three_text_img{
+	width:180px ;
+	height:170px;
+	float: left;
+}
+.three_text_img img{
+	width:100%;
+	height:100%;
+}
+
+.three_text_text{
+	margin-top: -20px;
+	float: right;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+.three_text_text li{
+	padding:10px 0 10px 0 ;
+}
+.three_text_text li a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.three_text_text li a:hover{
+	color: #0098B3;
+}
+/*新闻动态*/
+.four_title{
+	height: 26px;
+	width: 100%;
+	/*border: 1px yellow solid;*/
+	color: #0098b3;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	line-height:20px;
+	margin: 0;
+	padding: 0;
+}
+.four_title :last-child{
+	text-decoration: none;
+	display: inline-block;
+	color: #ff5918;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	float: right;
+}
+.four_text{
+	border-top: 2px #0098b3 solid;
+	overflow: hidden;
+	padding: 50px 30px 50px 0px;
+}
+.four_text_img{
+	float: right;
+}
+
+.four_text_text{
+	margin-top: -20px;
+	float: left;
+	width: 400px;
+	/*background-color: yellow;*/
+}
+.four_text_text li{
+	padding:10px 0 10px 0 ;
+}
+.four_text_text li a{
+	text-decoration: none;
+	color: #666666;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.four_text_text li a:hover{
+	color: #0098B3;
+}
+

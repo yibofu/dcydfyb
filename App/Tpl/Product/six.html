@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>企业并购</title>
+    <link rel="stylesheet" href="/Public/app/css/product.css">
+    <script src="/Public/app/js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class="eight">
+    <div class="tou">
+        <a href="{:U('Product/index')}" class="backa fl"><img src="/Public/app/img/fh.png"/></a>
+        <div class="backb fl cai"><h3>企业并购</h3></div>
+    </div>
+    <div class="eighta">
+        <img src="/Public/app/img/logoo.png" class="img1"/>
+        <h3 class="red text">企业并购</h3>
+        <p class="fr jia fona lin-a">——资源融资、实现梦想</p>
+        <div class="clearfix"></div>
+        <p class="fona texta">“企业并购”服务是整合国内知名企业财务专家、上市并购专家、上市公司资源，为企业出售控股权，实现上市公司并购提供一站式服务。 </p>
+        <p class="fona texta">在全球经济衰退、国内经济结构转型的大背景下，受制于宏观经济复苏乏力，企业利润收缩，越来越多产业需要通过并购实现大规模整合。</p>
+        <p class="fona texta">2014 年我们企业并购交易额突破 3000 亿美元，我们正步入兼并收购和产业整合的黄金时期，财务协同到产业升级，并购助推经济转型！</p>
+        <h3 class="red fonb poa">【老板思考】</h3>
+        <p class="fona min">
+            您是想做实业家还是资本家？<br/>
+            您是把企业当作孩子养还是当猪养？<br/>
+            您是打算让自己子女像自己当年那样辛苦去经营企业吗？<br/>
+            您的子女愿意子承父业接班自己的产业吗？<br/>
+            您是否在企业最好的时候把企业卖掉成为资本家还是打算不退休经营一辈子？
+        </p>
+        <h3 class="red fonb poa">【并购优势】</h3>
+        <p class="fona min">
+            将企业以最好时机并入上市公司，实现企业间接上市，实现企业证券化！<br/>
+            将企业控股权转让给上市公司后，企业家仍为董事长，继续经营事业，把风险转移出去，同时实现财富增值，股权证券化变现！<br/>
+            通过上市公司收购实现资源整合，促进企业快速成长！
+        </p>
+        <h3 class="red fonb poa">【服务流程】</h3>
+        <p class="fona min">
+            1.财务梳理，清产核资，财务咨询服务<br/>
+            2.价值挖掘，编写商业计划书<br/>
+            3.价值评估，交易结构设计<br/>
+            4.收购方寻找，成交协调<br/>
+            5.合同签署，对价支付，并购完成
+        </p>
+        <h3 class="red fonb poa">【服务内容】</h3>
+        <p class="fona min">
+            财务咨询:<br/>
+            为企业进行账务优化、提升企业价值、促进成交、清产核资、摸清家底。<br/>
+            价值挖掘、亮点提炼<br/>
+            编写商业计划书<br/>
+            价值评估:<br/>
+            尽职调查、战略梳理与重新规划、企业定位、股权架构梳理、组织架构重构、业务流程梳理。<br/>
+            财务预测:<br/>
+            协助企业进行财务预测<br/>
+            交易结构设计:<br/>
+            双方成交关键在于交易结构设计，满足双方利益诉求。<br/>
+            收购方筛选<br/>
+            协调并购谈判:<br/>
+            作为财务顾问角色，从中间人角度协助谈判，维护企业利益，协调双方观点、思维，达到成交。<br/>
+            签署合同、支付对价
+        </p>
+        <div class="but"><button id="and" class="lan jia">企业报名</button></div>
+        <p class="text fonb bou">联系电话：18310629197 联系人：郭女士</p>
+        <div id="fo" style="display: none">
+            <include file="Product:tiao"/>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $('#and').click(function(){
+        $('.consult').fadeIn(200);
+        $('#train').slideDown(300);
+    })
+    $('#x').click(function(){
+        $('.consult').fadeOut(200);
+        $('#train').slideUp(300);
+    })
+
+    $("#and").click(function(){
+        $("#fo").css("display","block");
+//        $("#fo").toggle();
+    })
+
+    $(function(){
+
+        $("input[name='user']").focus(function(){
+            $("input[name='name']").attr("placeholder","请输入用户名");
+        }).blur(function(){
+            ob = $(this);
+            ob.next("span").remove();
+            var s = ob.val();
+            if(s == ""){
+                $("input[name='name']").attr("placeholder","请输入用户名");
+                return false;
+            }else if(s.match(/^([\u4e00-\u9fa5]{1,20}|[a-zA-Z\.\s]{1,20})$/) == null){
+                $("input[name='name']").val("").attr("placeholder","您输入的名字不合法");
+                return false;
+            }
+        })
+        $("input[name='phone']").focus(function(){
+            $("input[name='phone']").attr("placeholder","请输入您的手机号");
+        }).blur(function(){
+            pb = $(this);
+            pb.next("span").remove();
+            var a = pb.val();
+            if(a == ""){
+                $("input[name='phone']").attr("placeholder","请输入您的手机号");
+                return false;
+            }else if(a.match(/^1[0-9]{10}$/) == null){
+                $("input[name='phone']").val("").attr("placeholder","您输入的手机号格式不对");
+                return false;
+            }
+        })
+    })
+    function order(){
+        var name = $("input[name='name']").val();
+        var phone = $("input[name='phone']").val();
+        if(name == ""){
+            $("input[name='name']").attr("placeholder","姓名不能为空");
+            return false;
+        }
+        if(phone == ""){
+            $("input[name='phone']").attr("placeholder","手机号码不能为空");
+            return false;
+        }
+
+        $.ajax({
+            type:"POST",
+            url:"{:U('Product/sixadd')}",
+            data:{"name":name,"phone":phone},
+            dataType:"json",
+            success:function(str){
+                var data = eval("("+str+")");
+                if(data){
+                    $('.makeg').css("display","block");
+                }
+            }
+        })
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+.group_container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ceced2;
+    overflow: hidden;
+}
+.group_container1{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ceced2;
+}
+.group_container1:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.group_container .input_add,.group_container1 .input_add{
+    border:none;
+}
+.group_container .select_group, .group_container1 .select_group{
+    border:none;
+    background: #ffffff;
+}

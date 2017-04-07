@@ -1,0 +1,3255 @@
+[ 2015-12-08T09:11:50+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.044002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.040002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:15:48+08:00 ] 127.0.0.1 /Mob/index.php/User/change_pass
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:15:52+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.056003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.041002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:15:53+08:00 ] 127.0.0.1 /Mob/index.php/User/change_tel
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.045002s ]
+SQL: SELECT `phone` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.045002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `phone` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-08T09:15:56+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:15:58+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.034002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`card_no` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.035002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:16:50+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.033001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:16:52+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037002s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:17:32+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.044002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:17:36+08:00 ] 127.0.0.1 /Mob/index.php/User/card
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.273016s ]
+SQL: SELECT `name`,`card_no`,`bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`card_no`,`bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:17:39+08:00 ] 127.0.0.1 /Mob/index.php/User/card_update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.051003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.041002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`card_no` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:18:02+08:00 ] 127.0.0.1 /Mob/index.php/User/card
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.041002s ]
+SQL: SELECT `name`,`card_no`,`bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.033002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`card_no`,`bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:18:04+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:18:06+08:00 ] 127.0.0.1 /Mob/index.php/User/annex
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.461026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.461026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:18:16+08:00 ] 127.0.0.1 /Mob/index.php/User/annex_lis%20t
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:annex_lis t
+
+[ 2015-12-08T09:18:24+08:00 ] 127.0.0.1 /Mob/index.php/User/annex_list
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_annex` [ RunTime:0.043003s ]
+SQL: SELECT `id`,`is_agree`,`title` FROM `dd_annex` WHERE ( uid= )  [ RunTime:0.041002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`is_agree`,`title` FROM `dd_annex` WHERE ( uid= ) 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:03+08:00 ] 127.0.0.1 /Mob/index.php/User/annex_lis%20t
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:annex_lis t
+
+[ 2015-12-08T09:19:04+08:00 ] 127.0.0.1 /Mob/index.php/User/annex
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:06+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.059003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.034002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:19:07+08:00 ] 127.0.0.1 /Mob/index.php/User/work
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.040002s ]
+SQL: SELECT `job`,`com_phone`,`com_name`,`job_province`,`job_city`,`job_zone`,`job_detail` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.033001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `job`,`com_phone`,`com_name`,`job_province`,`job_city`,`job_zone`,`job_detail` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: job D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 22 行.
+NOTIC: [8] Undefined index: com_name D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 23 行.
+NOTIC: [8] Undefined index: com_phone D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:11+08:00 ] 127.0.0.1 /Mob/index.php/User/work_update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T09:19:14+08:00 ] 127.0.0.1 /Mob/index.php/User/work
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SELECT `job`,`com_phone`,`com_name`,`job_province`,`job_city`,`job_zone`,`job_detail` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `job`,`com_phone`,`com_name`,`job_province`,`job_city`,`job_zone`,`job_detail` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: job D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 22 行.
+NOTIC: [8] Undefined index: com_name D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 23 行.
+NOTIC: [8] Undefined index: com_phone D:\wamp\www\ddkd\Mob\Runtime\Cache\3217a72b40830534b6be8b30df85920b.php 第 25 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:16+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.069004s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.049003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:19:18+08:00 ] 127.0.0.1 /Mob/index.php/User/link
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.137008s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.035002s ]
+SQL: SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= )  [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= ) 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:21+08:00 ] 127.0.0.1 /Mob/index.php/User/link_update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\2e8e6ac2698233ce0e08f0594bc1858c.php 第 38 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:24+08:00 ] 127.0.0.1 /Mob/index.php/User/link
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.035002s ]
+SQL: SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= )  [ RunTime:0.041002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= ) 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:19:25+08:00 ] 127.0.0.1 /Mob/index.php/User/link_update
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\2e8e6ac2698233ce0e08f0594bc1858c.php 第 38 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:19:38+08:00 ] 127.0.0.1 /Mob/index.php/User/link
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.047002s ]
+SQL: SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= )  [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= ) 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:19:41+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.046003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:44+08:00 ] 127.0.0.1 /Mob/index.php/User/code
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:19:46+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.058003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.040003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:36:04+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:36:05+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:36:07+08:00 ] 127.0.0.1 /Mob/index.php/Index/check_login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.030000s ]
+SQL: SELECT `id` FROM `dd_user` WHERE ( `phone` = '18618162410' ) AND ( `pwd` = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.030000s ]
+
+[ 2015-12-08T09:36:07+08:00 ] 127.0.0.1 /Mob/index.php/Apply/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:36:16+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.102006s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:36:19+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.035002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:37:57+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.125008s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.035002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:38:44+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.035002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:40:12+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.037003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.036002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.036002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T09:42:50+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.036002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.033001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T09:45:29+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.036003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.033002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:47:02+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.038002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.047003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.039002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:50:39+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.036002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.035002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T09:51:04+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.041002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.040002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.041002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T09:56:31+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.038003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.033002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.036002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:57:24+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.035002s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.039003s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.038002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T09:57:50+08:00 ] 127.0.0.1 /Mob/index.php/User/card_mess
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.043003s ]
+SQL: SELECT `name`,`card_no` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.039002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:41:30+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:41:41+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:42:32+08:00 ] 127.0.0.1 /Mob/index.php/Index/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:42:34+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T10:42:35+08:00 ] 127.0.0.1 /Mob/index.php/Index/forgot
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T10:42:36+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T10:42:53+08:00 ] 127.0.0.1 /Mob/index.php/Index/check_login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.140008s ]
+SQL: SELECT `id` FROM `dd_user` WHERE ( `phone` = '18618162410' ) AND ( `pwd` = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.852048s ]
+
+[ 2015-12-08T10:42:53+08:00 ] 127.0.0.1 /Mob/index.php/Apply/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:45:00+08:00 ] 127.0.0.1 /Mob/index.php/Apply/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:45:18+08:00 ] 127.0.0.1 /Mob/index.php/Repay/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_repay` [ RunTime:0.035002s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\ddkd\Mob\Lib\Action\RepayAction.class.php 第 82 行.
+SQL: SELECT sum(should_money) should_money FROM `dd_repay` LIMIT 1   [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `dd_loan` [ RunTime:0.073004s ]
+SQL: SELECT sum(loan_money) loan_money,count(id) nums FROM `dd_loan` WHERE ( `uid` = 2 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.044003s ]
+SQL: SELECT `id`,`loan_money`,`loan_installments`,FROM_UNIXTIME(create_time) create_time,`status` FROM `dd_loan` WHERE ( `uid` = 2 ) AND ( `status` = 0 )  [ RunTime:0.044003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] A non well formed numeric value encountered D:\wamp\www\ddkd\Mob\Runtime\Cache\00ce614944ceadac22309f2dd0a98622.php 第 48 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:50:36+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.398023s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.101006s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T10:50:39+08:00 ] 127.0.0.1 /Mob/index.php/User/card
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.070004s ]
+SQL: SELECT `name`,`card_no`,`bank_no`,`bank_local`,`bank` FROM `dd_user` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.050003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T10:50:41+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.063004s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.055003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T10:50:50+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.058003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.042003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T11:31:15+08:00 ] 127.0.0.1 /Mob/index.php/User/code
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T11:55:31+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T11:55:33+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T11:55:34+08:00 ] 127.0.0.1 /Mob/index.php/Index/check_login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.035002s ]
+SQL: SELECT `id` FROM `dd_user` WHERE ( `phone` = '18618162410' ) AND ( `pwd` = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.036002s ]
+NOTIC: [8] Undefined index: token D:\wamp\www\ddkd\Mob\Lib\Action\IndexAction.class.php 第 24 行.
+SQL: UPDATE `dd_user` SET `token`=null WHERE ( id=4 ) [ RunTime:0.046003s ]
+
+[ 2015-12-08T11:55:34+08:00 ] 127.0.0.1 /Mob/index.php/Apply/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T11:56:14+08:00 ] 127.0.0.1 /Mob/index.php/Apply/loan_manage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2015-12-08T11:56:14+08:00 ] 127.0.0.1 /Mob/index.php/Apply/userinfo
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-12-08T11:56:16+08:00 ] 127.0.0.1 /Mob/index.php/Apply/useradd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.050003s ]
+SQL: UPDATE `dd_user` SET `name`='',`card_no`='',`bank_no`='',`bank`='工商银行',`bank_local`='北京市辖区东城区' WHERE ( id=4 ) [ RunTime:0.055004s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.037002s ]
+SQL: INSERT INTO `dd_linkman` (`uid`,`name`,`phone`,`createtime`,`relation`,`is_del`) VALUES (4,'',null,1449546976,'',1) [ RunTime:0.332019s ]
+
+[ 2015-12-08T11:56:16+08:00 ] 127.0.0.1 /Mob/index.php/Apply/userdetail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T11:56:19+08:00 ] 127.0.0.1 /Mob/index.php/Apply/detailadd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047003s ]
+SQL: UPDATE `dd_user` SET `job`=0,`com_name`='',`job_province`='北京',`job_city`='市辖区',`job_zone`='东城区',`job_detail`='',`com_phone`='',`job_contact`='8,22' WHERE ( id=4 ) [ RunTime:0.041002s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043003s ]
+SQL: INSERT INTO `dd_userdetail` (`marry`,`son`,`home_province`,`home_city`,`home_zone`,`home_detail`,`home_contact`,`landline`,`life_radius`,`uid`) VALUES ('未婚','无子女','北京','市辖区','东城区','','8,22','','方圆10公里内',4) [ RunTime:0.056003s ]
+
+[ 2015-12-08T11:56:19+08:00 ] 127.0.0.1 /Mob/index.php/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T11:58:01+08:00 ] 127.0.0.1 /Mob/index.php/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T11:58:48+08:00 ] 127.0.0.1 /Mob/index.php/Apply/example
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-12-08T11:59:03+08:00 ] 127.0.0.1 /Mob/index.php/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T12:25:59+08:00 ] 127.0.0.1 /Mob/index.php/Apply/cardload
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-12-08T12:30:37+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T12:30:51+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T14:47:41+08:00 ] 127.0.0.1 /Mob/index.php/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:19:48+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.080005s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.162009s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:19:51+08:00 ] 127.0.0.1 /Mob/index.php/User/link
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.045002s ]
+SQL: SHOW COLUMNS FROM `dd_linkman` [ RunTime:0.037003s ]
+SQL: SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= )  [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `name`,`phone`,`relation` FROM `dd_linkman` WHERE ( uid= ) 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T15:26:45+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.039002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:27:15+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:27.029546s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:27:16+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.052003s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:27:19+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.036002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-12-08T15:27:23+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.046003s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.043003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:27:29+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.040002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:27:39+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.064004s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:27:57+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.061003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.058003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:28:30+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043003s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.047003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:28:34+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.150008s ]
+SQL: SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.202011s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front`,`card_back`,`card_hand`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 119 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 127 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 128 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 194 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 203 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:34:05+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.067004s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:34:53+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.052003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.048003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:36:29+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.064004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:36:48+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.055003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.041003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-08T15:37:08+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.040002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-12-08T15:37:23+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.062004s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.036002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:37:29+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.068004s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.033002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T15:37:35+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.052003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.038002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:37:44+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.038002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.046003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:39:59+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.047003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-08T15:55:34+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.111006s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T15:56:28+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.042002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.080004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+
+[ 2015-12-08T15:56:49+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.091005s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.046003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T15:57:01+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.042002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:57:52+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.173010s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.040003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T15:58:16+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.046003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.045003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T16:29:31+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.041003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 110 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 117 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 118 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 125 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 126 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 191 行.
+NOTIC: [8] Undefined variable: id D:\wamp\www\ddkd\Mob\Runtime\Cache\f8780e293d0110be624f646c0bcccd82.php 第 200 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T16:29:34+08:00 ] 127.0.0.1 /Mob/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.042002s ]
+SQL: SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.038002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T16:29:42+08:00 ] 127.0.0.1 /Mob/index.php/Apply/apply
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 110 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.047003s ]
+SQL: SELECT `name`,`card_no`,`bank_no`,`bank_local` FROM `dd_user` WHERE ( id= ) LIMIT 1   [ RunTime:0.047003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `name`,`card_no`,`bank_no`,`bank_local` FROM `dd_user` WHERE ( id= ) LIMIT 1  
+NOTIC: [8] Undefined index: money D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 116 行.
+NOTIC: [8] Undefined index: money D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 118 行.
+NOTIC: [8] Undefined index: month D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 118 行.
+NOTIC: [8] Undefined index: month D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 120 行.
+NOTIC: [2] Division by zero D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 121 行.
+NOTIC: [8] Undefined index: month D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 123 行.
+NOTIC: [8] Undefined variable: new_arr D:\wamp\www\ddkd\Mob\Lib\Action\ApplyAction.class.php 第 131 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: money D:\wamp\www\ddkd\Mob\Runtime\Cache\4cdeb8961f405ddc67d2b4ff00ecbe41.php 第 30 行.
+NOTIC: [8] Undefined index: month D:\wamp\www\ddkd\Mob\Runtime\Cache\4cdeb8961f405ddc67d2b4ff00ecbe41.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-12-08T19:16:26+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.048003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.042002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:16:41+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.075005s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.064004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-08T19:24:20+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.033001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+
+[ 2015-12-08T19:24:40+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.051003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.034002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T19:25:04+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.048003s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.036002s ]
+
+[ 2015-12-08T19:30:30+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 239 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.062004s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.034002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+
+[ 2015-12-08T19:44:42+08:00 ] 127.0.0.1 /Mob/index.php/User/card_hand
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 240 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.034002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_front_ske`,`card_back_ske`,`card_hand_ske`,`card_status`,`card_reason` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:44:57+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.034002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-08T19:45:00+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.042002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.334019s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:10+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.046003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.042003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:35+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.050003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.044003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T19:45:37+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.056003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.042003s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T19:45:38+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.043003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.040002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T19:45:39+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.047002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.043002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:40+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.052003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.042002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:40+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.085004s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.037002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T19:45:41+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.038002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:41+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.089005s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.040002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T19:45:42+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: userinfo D:\wamp\www\ddkd\Mob\Lib\Action\UserAction.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.039002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1   [ RunTime:0.039002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `card_status` FROM `dd_userdetail` WHERE ( uid= ) LIMIT 1  
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant MODEL_NAME - assumed 'MODEL_NAME' D:\wamp\www\ddkd\Mob\Runtime\Cache\0b992000bac8a58a5154b3a5af3f92cd.php 第 60 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T20:59:39+08:00 ] 127.0.0.1 /Mob/index.php/User/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: lgtime D:\wamp\www\ddkd\Mob\Lib\Action\CommonAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.037002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T20:59:39+08:00 ] 127.0.0.1 /Mob/index.php/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T20:59:41+08:00 ] 127.0.0.1 /Mob/index.php/Index/check_login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+NOTIC: [2] htmlspecialchars() expects parameter 2 to be long, string given D:\wamp\www\ddkd\ThinkPHP\Lib\Core\App.class.php 第 56 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.053003s ]
+SQL: SELECT `id`,`name` FROM `dd_user` WHERE ( `phone` = '18618162410' ) AND ( `pwd` = '202cb962ac59075b964b07152d234b70' ) LIMIT 1   [ RunTime:0.041002s ]
+SQL: UPDATE `dd_user` SET `token`='' WHERE ( id=1 ) [ RunTime:0.049003s ]
+
+[ 2015-12-08T20:59:41+08:00 ] 127.0.0.1 /Mob/index.php/Apply/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T20:59:44+08:00 ] 127.0.0.1 /Mob/index.php?s=/User/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.037002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.039002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T20:59:46+08:00 ] 127.0.0.1 /Mob/index.php?s=/User/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.045003s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.043003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-08T21:00:05+08:00 ] 127.0.0.1 /Mob/index.php?s=/User/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.288017s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.044003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-08T21:00:06+08:00 ] 127.0.0.1 /Mob/index.php?s=/User/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dd_userdetail` [ RunTime:0.044002s ]
+SQL: SELECT `card_status` FROM `dd_userdetail` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.042002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+

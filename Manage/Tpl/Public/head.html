@@ -1,0 +1,165 @@
+            <header>
+                <div class="navbar navbar-fixed-top">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <a class="brand" href="#"><i class="icon-home icon-white"></i> 主页111</a>
+                            <ul class="nav user_menu pull-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Username <b class="caret"></b></a>
+                                    <!--<ul class="dropdown-menu">
+                                        <li><a href="#">应用列表</a></li>
+                                        <li><a href="#">分类管理</a></li>
+                                        <li><a href="#">媒介管理</a></li>
+                                        <li><a href="#">版本统计</a></li>
+                                    </ul>-->
+                                </li>
+                            </ul>
+                            <ul class="nav" id="mobile-nav">
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 用户管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{:U('User/index')}">用户列表</a></li>
+										<li><a href="{:U('Kouliang/index')}">定制扣量参数</a></li>
+										<li><a href="{:U('Jingcai/index')}">足球竞猜</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 应用管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">应用列表</a></li>
+                                        <li><a href="#">分类管理</a></li>
+                                        <li><a href="#">媒介管理</a></li>
+                                        <li><a href="#">版本统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 广告管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">应用列表</a></li>
+                                        <li><a href="#">分类管理</a></li>
+                                        <li><a href="#">媒介管理</a></li>
+                                        <li><a href="#">版本统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 报表管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{:U('Report/index')}">广告收入报表</a></li>
+                                        <li><a href="{:U('Report/adbyad')}">按广告统计报表</a></li>
+                                        <li><a href="{:U('Report/Liucun')}">每日留存报表</a></li>
+                                        <li><a href="#">版本统计</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> 财务管理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">应用列表</a></li>
+                                        <li><a href="#">分类管理</a></li>
+                                        <li><a href="#">媒介管理</a></li>
+                                        <li><a href="#">版本统计</a></li>
+                                    </ul>
+                                </li>								
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="sidebar">
+                <div class="antiScroll">
+                    <div class="antiscroll-inner">
+                        <div class="antiscroll-content">
+                            <div class="sidebar_inner">
+                                <form action="search_page.html" class="input-append" method="post" >
+                                    <input autocomplete="off" name="query" class="search_query input-medium" size="16" type="text" placeholder="Search..." /><button type="submit" class="btn"><i class="icon-search"></i></button>
+                                </form>
+                                <div id="side_accordion" class="accordion">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a href="#collapseOne" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                                用户管理
+                                            </a>
+                                        </div>
+                                        <div class="accordion-body collapse in" id="collapseOne">
+                                            <div class="accordion-inner">
+                                                <ul class="nav nav-list">
+                                                    <li><a href="{:U('User/index')}">用户列表</a></li>
+                                                    <li><a href="{:U('Kouliang/index')}">定制扣量参数</a></li>
+                                                    <li><a href="{:U('Jingcai/index')}">足球竞猜</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a href="#collapseOnes" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                                应用管理
+                                            </a>
+                                        </div>
+                                        <div class="accordion-body collapse" id="collapseOnes">
+                                            <div class="accordion-inner">
+                                                <ul class="nav nav-list">
+                                                    <li><a href="{:U('App/index')}">应用列表</a></li>
+                                                    <li><a href="{:U('Category/index')}">分类管理</a></li>
+                                                    <li><a href="{:U('Meijie/index')}">媒介管理</a></li>
+                                                    <li><a href="{:U('Version/index')}">版本统计</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a href="#collapseTwo" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                                广告管理
+                                            </a>
+                                        </div>
+                                        <div class="accordion-body collapse" id="collapseTwo">
+                                            <div class="accordion-inner">
+                                                <ul class="nav nav-list">
+                                                    <li><a href="{:U('Adver/index')}">广告列表</a></li>
+													<li><a href="{:U('Adver/add')}">添加广告</a></li>
+                                                    <li><a href="{:U('Adver/add')}">广告限制条数</a></li>
+                                                    <li><a href="{:U('Adver/add')}">广告限制条数</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a href="#collapseThree" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                                报表管理
+                                            </a>
+                                        </div>
+                                        <div class="accordion-body collapse" id="collapseThree">
+                                            <div class="accordion-inner">
+                                                <ul class="nav nav-list">
+                                                    <li><a href="{:U('Report/index')}">广告收入报表</a></li>
+													<li><a href="{:U('Report/adbyad')}">按广告统计报表</a></li>
+													<li><a href="{:U('Report/Liucun')}">每日留存报表</a></li>
+													<li><a href="{:U('Activity/index')}">补偿或者奖励</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a href="#collapseFour" data-parent="#side_accordion" data-toggle="collapse" class="accordion-toggle">
+                                                财务管理
+                                            </a>
+                                        </div>
+                                        <div class="accordion-body collapse" id="collapseFour">
+                                            <div class="accordion-inner">
+                                                <ul class="nav nav-list">
+                                                    <li><a href="{:U('Install/index')}">财务流水</a></li>
+                                                    <li><a href="{:U('Encash/index')}">提现管理</a></li>
+                                                    <li><a href="{:U('Install/jixing')}">机型</a></li>
+                                                    <li><a href="{:U('Report/pingbi')}">屏蔽量查询</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	

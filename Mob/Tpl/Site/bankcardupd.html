@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行卡信息</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，银行卡信息">
+    <meta name="description" content="滴滴快贷银行卡信息。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/css/set.css"/>
+</head>
+<body class="mhome">
+<header class="dd_header">银行卡信息<span class="fa fa-chevron-left dd_return"></span></header>
+<section class="dd_index">
+    <form action="" id="bank_form" ></form>
+    <ul class="worker_info" >
+        <li><span class="worker_l">真实姓名：</span> <span class="worker_r">周杰伦</span></li>
+        <li><span class="worker_l">身份证号：</span><span class="worker_r">000000000000000001</span></li>
+        <li><span class="worker_l" style="margin-top: 8px;">银行卡号：</span><span class="worker_r"><input type="text"
+value="00000000000000001" form="bank_form" maxlength="19"/></span></li>
+        <li><span class="worker_l">所属银行：</span>
+            <span class="worker_r">
+                <select name="bank" id="bank" style="width: 100%;" >
+                    <option value="工商银行">工商银行</option>
+                    <option value="农业银行">农业银行</option>
+                    <option value="中国银行">中国银行</option>
+                    <option value="招商银行">招商银行</option>
+                    <option value="建设银行">建设银行</option>
+                    <option value="交通银行">交通银行</option>
+                    <option value="邮政储蓄">邮政储蓄</option>
+                    <option value="民生银行">民生银行</option>
+                    <option value="光大银行">光大银行</option>
+                    <option value="兴业银行">兴业银行</option>
+                    <option value="other">其他</option>
+                </select>
+            </span>
+        </li>
+        <li class="select_other" style="display: none;">
+            <span class="worker_l" style="margin-top: 10px;">银行名称：</span>
+            <span class="worker_r">
+                <input type="text" value="北京西城" form="bank_form" maxlength="19"/>
+            </span>
+        </li>
+        <li><span class="worker_l" style="margin-top: 10px;">
+            开户城市：</span><span class="worker_r">
+            <input type="text" value="北京西城" form="bank_form" maxlength="19"/>
+        </span>
+        </li>
+    </ul>
+
+</section>
+<div class="dd_yzm dd-zc"><a href="#">更换银行卡</a></div>
+
+<script>
+    $("#bank").blur(function(){
+        var bank=$("#bank").find("option:selected").val();
+        if(bank=="other"){
+            $(".select_other").show();
+        }else{
+            $(".select_other").hide();
+        }
+    })
+</script>
+</body>
+</html>

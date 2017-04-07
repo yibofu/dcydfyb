@@ -1,0 +1,566 @@
+/*重置css*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#000000;background:#eeeeee;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clear{clear:both;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #ffffff}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;display: none}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}
+
+/*****个人中心登录******/
+.personal-login{
+    width: 79%;
+    margin:0 auto;
+    background: #ffffff;
+    padding: 3.2rem 10.5%;
+    border-bottom: .1rem solid #dddddd;
+}
+.personal-login .login-heah{
+    height: 3.2rem;
+    border-bottom: .1rem solid #ccc;
+    position: relative;
+}
+.personal-login .login-heah .heah-slip{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    border: .04rem solid #00a0e9;
+    border-radius: .4rem;
+    padding: .1rem 3%;
+}
+.personal-login .login-heah .img1{
+    width: 7%;
+    height:1.46rem;
+    margin: .9rem 3.5% .8rem 3.5%;
+}
+.personal-login .login-heah .login-heah-a{
+    height: 3.2rem;
+    color: #b3b3b3;
+    width: 86%;
+}
+.personal-login .login-keep{
+    width: 100%;
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+.personal-login .login{
+    position:relative;
+    top: 1.8rem;
+    width: 100%;
+    height: 2.2rem;
+    text-align:center;
+    line-height: 2.2rem;
+    border:none;
+    margin:0 auto;
+    color:white;
+    cursor:pointer;
+    border-radius: .5rem;
+    background: #00a0e9;
+}
+.personal-login .login input{
+    cursor:pointer;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    left:0px;
+    border:none;
+    background-color:transparent;
+}
+#login_tip{
+    font-size: .64rem;
+}
+
+
+/*****个人中心******/
+.personal-centre{}
+.personal-centre .centre-heah{
+    width: 100%;
+    height:9rem;
+    background: url("../img/centre-heah.png") no-repeat;
+    background-size:100% 9rem;
+    position: relative;
+}
+.personal-centre .centre-heah .heah{
+    margin: auto;
+    position: absolute;
+    top: 2rem;
+    left: 0%;
+    right: 0%;
+}
+.personal-centre .centre-heah .heah .heah-cap{
+    width:3.8rem ;
+    height: 3.8rem;
+    background: #ffffff;
+    box-shadow:0 0 1rem #a1938d;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.personal-centre .centre-heah .heah .heah-cap .imga{
+    width:3.8rem ;
+    height: 3.8rem;
+    border-radius: 50%;
+}
+.personal-centre .centre-heah .heah .heah-name{
+    width: 100%;
+    text-align: center;
+    line-height: 1.6rem;
+    height: 1.6rem;
+}
+.personal-centre .centre-heah .heah-fonts{
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    background: rgba(27,27,27,.7);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.personal-centre .centre-heah .heah-fonts .img1{
+    width: 1.1rem ;
+    height: 1rem;
+    margin: 0 0 0 2%;
+}
+.personal-centre .centre-content{}
+.personal-centre .centre-content .content-heah{
+    width: 100%;
+    height: 2.6rem;
+    margin: .4rem 0;
+    background: #f5f5f5;
+}
+.personal-centre .centre-content .content-heah .heah-left{
+    width: 3.1rem;
+    height: 2.6rem;
+    background: #00b7ee;
+    position: relative;
+}
+.personal-centre .centre-content .content-heah .heah-left .left-a{
+    width: 40%;
+    height: 1.3rem;
+    position: relative;
+}
+.personal-centre .centre-content .content-heah .heah-left .left-a .img1{
+    width: 100%;
+    height: 1.3rem;
+    margin: .6rem 65%;
+}
+.personal-centre .centre-content .content-heah .heah-left .left-a span{
+    width: .6rem;
+    height: .6rem;
+    background: #c00;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.4rem;
+    left: 133%;
+    font-size: .42rem;
+    color: #ffffff;
+    line-height: .6rem;
+    text-align: center;
+}
+.personal-centre .centre-content .content-heah .heah-right{
+    line-height:2.6rem;
+    margin-left: 6%;
+}
+.personal-centre .centre-select{
+    width: 100%;
+    background: #f5f5f5;
+    position: relative;
+}
+.personal-centre .centre-select .select-a{
+    width: 49.8%;
+    height: 7rem;
+    background: #f5f5f5;
+}
+.personal-centre .centre-select .select-a .article{
+    line-height: 2.2rem;
+    text-align: center;
+}
+.personal-centre .centre-select .select-a .img1{
+    height: 3.6rem;
+    width: 3rem;
+    margin:.6rem auto;
+    display: block;
+}
+.personal-centre .centre-select .select-a .img2{
+    height: 3.6rem;
+    width: 3.8rem;
+    margin:.6rem auto;
+    display: block;
+}
+.personal-centre .centre-select .select-a .img3{
+    height: 3.8rem;
+    width: 3.6rem;
+    margin:.5rem auto;
+    display: block;
+}
+.personal-centre .centre-select .select-a .img4{
+    height: 3.6rem;
+    width: 3.4rem;
+    margin:.6rem auto;
+    display: block;
+}
+.personal-centre .centre-select .select-a .img5{
+    height: 3.6rem;
+    width: 3.8rem;
+    margin:.6rem auto;
+    display: block;
+}
+.personal-centre .centre-select .select-a .img6{
+    height: 2rem;
+    width: 3.6rem;
+    margin:1.4rem auto;
+    display: block;
+}
+.personal-centre .centre-select .imgvip{
+    width: 3.8rem;
+    height: 3.2rem;
+    position: absolute;
+    top:13.8rem;
+    left: 48%;
+}
+.personal-centre .select{
+    line-height: 4rem;
+    text-align: center;
+}
+
+/*********** 文字 ************/
+.sizea{ font-size: 1rem;}/*18*/
+.sizeb{ font-size: 1.4rem;}/*24*/
+.sizec{ font-size: .8rem;}/*18*/
+.texta{ margin-left: 2rem;}
+.sizee{ font-size: .7rem;}/*18*/
+.yinc{
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+}
+
+/*********** 文字颜色 ************/
+.coloa{ color: #b3b3b3;}
+.colob{ color: #cc0000;}
+.coloc{ color: #ffffff;}
+.colod{ color: #00a0e9;}
+
+/************文字加粗****************/
+.fom-jia{ font-weight: bold;}
+.fom-jian{}
+
+/*********** 组件 ************/
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: .4rem solid transparent;
+    border-left: .6rem solid #00b7ee;
+    border-bottom: .4rem solid transparent;
+    position: absolute;
+    top: .2rem;
+    right: -16%;
+}
+.wire-a{
+    border-bottom: .04rem solid #ccc;
+}
+.wire-b{
+    border-bottom: .04rem solid #ccc;
+    border-right: .04rem solid #ccc;
+}
+#error{
+    width: 50%;
+    font-size: .64rem;
+    position: absolute;
+    z-index: 3;
+    top: 1rem;
+    left: 60%;
+    color: #cc0000;
+}
+
+/****选择卡*****/
+.ting{
+    margin-left: 6%;
+}
+.main-title{
+    width:100%;
+
+}
+.tab-nav{
+    margin:0;
+    height:2.6rem;
+    padding:0;
+    background: #ffffff;
+}
+.tab-nav li{
+    margin:0;
+    padding:0;
+    width:50%;
+    line-height: 2.6rem;
+    float:left;
+    text-align:center;
+}
+.tab-nav li a{
+    font-size: 1rem;
+}
+
+/*********我的提问*******/
+
+.current{
+    border-bottom: .1rem solid #00a0e9;
+}
+.tab-content{
+    width:100%;
+    margin: .4rem 0 0 0;
+    background: #ffffff;
+
+}
+.tab-content .tab-content-all{
+    width: 86%;
+    background: #ffffff;
+    height: 4.8rem;
+    border-bottom: .1rem solid #dddddd;
+    margin: 0 auto;
+}
+.tab-content .tab-content-all p{
+    line-height: 1.4rem;
+    height: 1.4rem;
+}
+.piou{
+    padding-top: .6rem;
+}
+.tab-content .tab-content-alla{
+    width: 86%;
+    background: #ffffff;
+    height: 3.6rem;
+    border-bottom: .1rem solid #dddddd;
+    margin: 0 auto;
+}
+#traina{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(196,196,196,0.7);
+    top: 0;
+    left: 0;
+}
+#traina .trainaa{
+    width: 70%;
+    margin: 5rem auto;
+    height:20.6rem;
+    background: #ffffff;
+    padding: .6rem 5%;
+    border-radius: .8rem;
+}
+#traina .trainaa p{
+    line-height: 1.6rem;
+}
+#x{
+    width: 1rem;
+    height: 1rem;
+    display: block;
+}
+.trainaa{ position: relative;}
+.trainaa .traina-g{
+    position: absolute;
+    right: 4%;
+    bottom:.4rem;
+}
+
+/*****忘记密码******/
+.personal-true{
+    background: #ffffff;
+    height: 2.03rem;
+    width: 84%;
+    margin: 1.07rem auto;
+    border-radius: .4rem;
+    padding-left: 3%;
+    line-height: 2.03rem;
+}
+.personal-truea{
+    width: 81%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 9.14rem;
+    background: #ffffff;
+    border-radius: .4rem;
+    margin: 1.07rem auto;
+}
+.personal-truea .true-a{
+    line-height: 2.2rem;
+    height: 2.2rem;
+}
+.personal-trueb{
+    width: 81%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 4.5rem;
+    background: #ffffff;
+    border-radius: .4rem;
+    margin: 1.07rem auto;
+}
+.personal-trueb .true-a{
+    line-height: 2.2rem;
+    height: 2.2rem;
+}
+
+.personal .logina{
+    width: 60%;
+    height: 2.2rem;
+    margin:0 auto;
+}
+.personal .logina .login-a{
+    width: 40%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    background: #00a0e9;
+    display: block;
+    border-radius: .4rem;
+}
+.personal .logina .login-b{
+    width: 40%;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    background: #00a0e9;
+    display: block;
+    margin-right: 12%;
+    border-radius: .4rem;
+}
+
+/****个人信息******/
+.personal-true{
+    background: #ffffff;
+    height: 2.03rem;
+    width: 84%;
+    margin: 1.07rem auto;
+    border-radius: .4rem;
+    padding-left: 3%;
+    line-height: 2.03rem;
+}
+.personal-truea{
+    width: 81%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 9.14rem;
+    background: #ffffff;
+    border-radius: .4rem;
+    margin: 1.07rem auto;
+}
+.personal-truea .true-a{
+    line-height: 2.2rem;
+}
+.personal-trueb{
+    width: 81%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 4.5rem;
+    background: #ffffff;
+    border-radius: .4rem;
+    margin: 1.07rem auto;
+}
+.personal-trueb .true-a{
+    line-height: 2.2rem;
+}
+.personal .login{
+    position:relative;
+    top: 1.8rem;
+    width: 100%;
+    height: 2.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    border:none;
+    margin: 0 auto;
+    color:white;
+    cursor:pointer;
+    border-radius: .5rem;
+    background: #00a0e9;
+}
+
+.personal .login input{
+    cursor:pointer;
+    position:absolute;
+   	
+    height: 2.2rem;
+    line-height: 2.2rem;
+    left:0px;
+    border:none;
+    background-color:transparent;
+}
+
+
+/********个人中心弹窗成功*******/
+.makega{
+    width: 100%;
+    height: 100%;
+    background: rgba(196,196,196,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.makega .makeg-aa{
+    width: 50%;
+    height: 11.4rem;
+    position: absolute;
+    background: #ffffff;
+    z-index: 6;
+    top: 12rem;
+    left: 25%;
+    border-radius: .8rem;
+}
+.makega .imgta{
+    width: 45%;
+    height: 6rem;
+    margin: 1.2rem 0 0 25%;
+}
+.makega .imgsa{
+    position: absolute;
+    right: 4%;
+    top: .6rem;
+    width: 10%;
+    height: 1.2rem;
+}
+.makega .kia{
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+    width: 75%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: 1rem auto;
+    background: #00a0e9;
+    border-radius: .6rem;
+}
+
+
+
+.check{ width: 90%; margin: 0 auto;border-bottom: .1rem solid #dddddd;}
+.check .checkboxFour{ width: 15%; display: inline-block; display: none;}
+.check .checkboxFour input{ width: 100%; margin: 2rem auto; height: 1.4rem;}
+.check .checkbox{ width: 95%; display: inline-block; margin-left: 5%;}
+.check .checkbox p{ line-height: 1.8rem;}
+.content-abc{ position: fixed; bottom: 0; left: 0; width: 100%; height: 3rem; background: #f5f5f5;}
+.content-abc .content-i{ width: 10%; line-height: 3rem; background: #f5f5f5; margin-left: 5%; display: none;}
+.content-abc .content-s{  width:22%; height: 3rem; background: #ef2632; border: 0; display: none;}
+.content-abc .content-y{width:22%; height: 3rem; background: #00a0e9; border: 0; display: none;}
+.content-abc .content-j{  width:22%; height: 3rem; background: #00a0e9; border: 0;}
+
+.topm{ margin-top: .4rem;}
+
+.checkbox .img1{ width: 45%; height: 5.2rem; border-radius: .6rem; margin: .8rem 0;}
+.checkbox .checkboxp{ width: 50%; display: block; margin-top: .6rem; margin-left: 5%;}
+.checkbox .checkboxp p{ line-height: 1.4rem;}
+
+

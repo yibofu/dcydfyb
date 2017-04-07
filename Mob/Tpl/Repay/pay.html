@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>还款</title>
+    <meta name="keywords" content="滴滴快贷，还款">
+    <meta name="description" content="滴滴快贷还款。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+     <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+     <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/css/hkdetail.css"/>
+    <script src="/Public/Mob/js/jquery-1.11.3.min.js"></script>
+</head>
+<body class="mhome">
+<header class="dd_header">还款<span class="fa fa-chevron-left dd_return" onclick="return_page()"></span></header>
+    <div style="margin-top: 5px; background: #ffffff;padding-top: 10px;">
+        <section class="dd_index" style="margin-bottom: 50px;">
+        <section class="dd_par">
+            <div class="dd_Alipay">支付宝账号转账汇款</div>
+            <div class="dd_Alipay">如果你有支付宝账号，可以通过支付宝账户转账功能进行还款，请使用您的支付宝账号汇款:<br/>
+           <i>{$money}</i> </div>
+            <p class="dd_account">到滴滴快贷支付平台账户：</p>
+            <div class="Alipay_account">
+                <span>账户：</span>
+                <p>pay@didikuaidai.com</p>
+            </div>
+            <p class="Alipay_tishi">重要：在操作支付宝转账时，请在留言处写上借款人的姓名，完成转账后请点击下面的“我已按该方式付款”，以便更快的核对。</p>
+            <div class="Alipay_method">
+            <a href="javascript:;" onclick="do_check(1)">我已按该方式付款</a>
+            </div>
+        </section>
+        <section class="dd_par" style="margin-top: 10px;">
+            <div class="dd_Alipay">银行卡或现金转账汇款：</div>
+            <div class="dd_Alipay">使用银行卡或现金汇款方式，通过银行ATM、银行柜台或个人网银汇款：<br/>
+                <i>{$money}</i> </div>
+            <p class="dd_account">到滴滴快贷支付平台账户：</p>
+            <div class="Alipay_account">
+                <span>账户名：</span>
+                <p>马博</p>
+                <span>开户银行：</span>
+                <p>中国建设银行    北京天宝北街支行</p>
+                <div class="account_name"><span>银行卡号：<i>6227000014290060759</i></span></div>
+            </div>
+            <p class="Alipay_tishi">重要：汇款后请务必点击下面的“我已按该方式付款”，以便更快的核对。</p>
+            <div class="Alipay_method">
+                <a href="javascript:;" onclick="do_check(4)">我已按该方式付款</a>
+        </section>
+		<section class="dd_par" style="margin-top: 10px;">
+            <div class="dd_Alipay">银行卡或现金转账汇款：</div>
+            <div class="dd_Alipay">使用银行卡或现金汇款方式，通过银行ATM、银行柜台或个人网银汇款：<br/>
+                <i>{$money}</i> </div>
+            <p class="dd_account">到滴滴快贷支付平台账户：</p>
+            <div class="Alipay_account">
+                <span>账户名：</span>
+                <p>马博</p>
+                <span>开户银行：</span>
+                <p>中国农业银行    北京分行方庄支行</p>
+                <div class="account_name"><span>银行卡号：<i>6228480018254999578</i></span></div>
+            </div>
+            <p class="Alipay_tishi">重要：汇款后请务必点击下面的“我已按该方式付款”，以便更快的核对。</p>
+            <div class="Alipay_method">
+                <a href="javascript:;" onclick="do_check(2)">我已按该方式付款</a>
+        </section>
+       <section class="dd_par" style="margin-top: 10px;">
+            <div class="dd_Alipay">银行卡或现金转账汇款：</div>
+            <div class="dd_Alipay">使用银行卡或现金汇款方式，通过银行ATM、银行柜台或个人网银汇款：<br/>
+                <i>{$money}</i> </div>
+            <p class="dd_account">到滴滴快贷支付平台账户：</p>
+            <div class="Alipay_account">
+                <span>账户名：</span>
+                <p>马博</p>
+                <span>开户银行：</span>
+                <p>招商银行    北京分行安立花园支行</p>
+                <div class="account_name"><span>银行卡号：<i>6225880145496502</i></span></div>
+            </div>
+            <p class="Alipay_tishi">重要：汇款后请务必点击下面的“我已按该方式付款”，以便更快的核对。</p>
+            <div class="Alipay_method">
+                <a href="javascript:;" onclick="do_check(3)">我已按该方式付款</a>
+        </section>
+
+        
+</section>
+    </div>
+</body>
+<script>
+	function return_page(){
+		window.location.href = "{:U('Repay/shouldpay')}";
+	}
+    function do_check(type){
+        $.ajax({ 
+                type: "post", 
+                url: "{:U('Repay/do_check',array('id'=>$id))}",
+                data:{'way':type},
+                success:function(data){
+                     window.location.href = "{:U('Repay/shouldpay')}";
+                }
+        }); 
+    }
+</script>
+</html>

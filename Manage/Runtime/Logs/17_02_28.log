@@ -1,0 +1,2944 @@
+[ 2017-02-28T09:36:34+08:00 ] 127.0.0.1 /manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:36:35+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:36:35+08:00 ] 127.0.0.1 /manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:36:36+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:36:43+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.012000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.008000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.007000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001001s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1488245803,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T09:36:44+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:36:47+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:38:06+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:38:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bosslist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 22 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url`,`view` FROM `dcyd_boss` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_boss` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T09:38:17+08:00 ] 127.0.0.1 /Manerger/index.php/Content/bossedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`content`,`url`,`img` FROM `dcyd_boss` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T09:38:57+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:43:28+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:43:29+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bosslist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 22 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url`,`view` FROM `dcyd_boss` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_boss` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T09:43:48+08:00 ] 127.0.0.1 /Manerger/index.php/Article/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:43:49+08:00 ] 127.0.0.1 /Manerger/index.php?m=Article&a=articlelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` LIMIT 0,20   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_article` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T09:46:30+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:46:59+08:00 ] 127.0.0.1 /Manerger/index.php/Article/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:47:00+08:00 ] 127.0.0.1 /Manerger/index.php?m=Article&a=articlelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_article` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T09:47:37+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T09:48:39+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.006000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`url`) VALUES ('http://dcyd.oss-cn-shanghai.aliyuncs.com/Hydrangeas.jpg') [ RunTime:0.002001s ]
+
+[ 2017-02-28T09:52:21+08:00 ] 127.0.0.1 /Manerger/index.php/Article/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T09:52:22+08:00 ] 127.0.0.1 /Manerger/index.php?m=Article&a=articlelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_article` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T09:56:34+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:00:25+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:00:56+08:00 ] 127.0.0.1 /Manerger/index.php/Article/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T10:00:57+08:00 ] 127.0.0.1 /Manerger/index.php?m=Article&a=articlelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of ArticleAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ArticleAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_article` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:26:44+08:00 ] 127.0.0.1 /Manerger/index.php/User/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+ERR: 非法操作:index
+
+[ 2017-02-28T10:26:47+08:00 ] 127.0.0.1 /Manerger/index.php/Power/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:26:48+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10259 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10263 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10265 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10278 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10280 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:27:23+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=edit&id=10283
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+SQL: UPDATE `dcyd_node` SET `title`='课程上传',`name`='/' WHERE ( `id` = 10283 ) [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:27:24+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10259 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10263 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10265 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10278 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10280 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:27:26+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10284 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:27:44+08:00 ] 127.0.0.1 /Manerger/index.php?m=Public&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T10:27:45+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:27:46+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:27:52+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.006000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.005001s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.000000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1488248872,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T10:27:53+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T10:28:01+08:00 ] 127.0.0.1 /Manerger/index.php/Role/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:28:02+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powertree
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10109 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10110 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10111 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10230 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10231 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10232 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10234 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10235 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10254 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10255 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10256 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10257 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10258 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10248 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10249 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10250 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10251 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10259 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10260 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10263 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10264 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10265 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10266 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10267 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10268 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10269 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10270 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10271 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10272 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10273 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10274 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10275 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10276 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10277 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10278 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10279 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10280 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10281 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10282 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10283 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10284 )  [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:28:03+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:28:06+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+SQL: SELECT `power` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:28:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=update
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004000s ]
+SQL: SELECT `pid` FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251','10259','10260','10263','10264','10265','10266','10267','10268','10269','10270','10271','10272','10273','10274','10275','10276','10277','10278','10279','10280','10281','10282','10283','10284') )  [ RunTime:0.000000s ]
+SQL: SELECT `name`,`title`,CONCAT_WS("_",`path`,id) as abspath FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251','10259','10260','10263','10264','10265','10266','10267','10268','10269','10270','10271','10272','10273','10274','10275','10276','10277','10278','10279','10280','10281','10282','10283','10284') ) ORDER BY abspath  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_role` SET `description`='管理',`name`='管理�\�',`power`='10109,10110,10111,10230,10231,10232,10234,10235,10254,10255,10256,10257,10258,10248,10249,10250,10251,10259,10260,10263,10264,10265,10266,10267,10268,10269,10270,10271,10272,10273,10274,10275,10276,10277,10278,10279,10280,10281,10282,10283,10284',`powername`='站点管理,角色管理,功能模块,管理员管�\�,用户管理,用户管理,头像管理,消息管理,客户诊断报名,财务诊断,审合�\�,审报�\�,面试财务经理,内容管理,Boss�\�,扁鹊V�\�,百问百答,留言�\�,马上提问,约见�\�,财税问题,享服�\�,老板财务�\�,管理层财务思维,企业陪伴计划,财务系统�\�,老板财务智囊,企业并购,新三板上市服�\�,预算系统建设,账钱税系统建�\�,税务稽查重点与应对策�\�,成本管控与持续优�\�,&amp;quot;营改�\�&amp;quot;政策应对与纳税规�\�,文章发布,发布,落地�\�,免费提交,问题提交,课程上传,上传',`powers`='[{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7ad9\\u70b9\\u7ba1\\u7406\",\"abspath\":\"0_10109\"},\"childrens\":[{\"name\":\"__APP__\\/Role\\/index\",\"title\":\"\\u89d2\\u8272\\u7ba1\\u7406\",\"abspath\":\"0_10109_10110\"},{\"name\":\"__APP__\\/Power\\/index\",\"title\":\"\\u529f\\u80fd\\u6a21\\u5757\",\"abspath\":\"0_10109_10111\"},{\"name\":\"__APP__\\/Admin\\/index\",\"title\":\"\\u7ba1\\u7406\\u5458\\u7ba1\\u7406\",\"abspath\":\"0_10109_10230\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231\"},\"childrens\":[{\"name\":\"__APP__\\/User\\/index\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231_10232\"},{\"name\":\"__APP__\\/User\\/image\",\"title\":\"\\u5934\\u50cf\\u7ba1\\u7406\",\"abspath\":\"0_10231_10234\"},{\"name\":\"__APP__\\/User\\/mesage\",\"title\":\"\\u6d88\\u606f\\u7ba1\\u7406\",\"abspath\":\"0_10231_10235\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5185\\u5bb9\\u7ba1\\u7406\",\"abspath\":\"0_10248\"},\"childrens\":[{\"name\":\"__APP__\\/Content\\/boss\",\"title\":\"Boss\\u542c\",\"abspath\":\"0_10248_10249\"},{\"name\":\"__APP__\\/Content\\/vk\",\"title\":\"\\u6241\\u9e4aV\\u8bfe\",\"abspath\":\"0_10248_10250\"},{\"name\":\"__APP__\\/Content\\/bwbd\",\"title\":\"\\u767e\\u95ee\\u767e\\u7b54\",\"abspath\":\"0_10248_10251\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5ba2\\u6237\\u8bca\\u65ad\\u62a5\\u540d\",\"abspath\":\"0_10254\"},\"childrens\":[{\"name\":\"__APP__\\/Question\\/cwzd\",\"title\":\"\\u8d22\\u52a1\\u8bca\\u65ad\",\"abspath\":\"0_10254_10255\"},{\"name\":\"__APP__\\/Question\\/sht\",\"title\":\"\\u5ba1\\u5408\\u540c\",\"abspath\":\"0_10254_10256\"},{\"name\":\"__APP__\\/Question\\/sbb\",\"title\":\"\\u5ba1\\u62a5\\u8868\",\"abspath\":\"0_10254_10257\"},{\"name\":\"__APP__\\/Question\\/mianshi\",\"title\":\"\\u9762\\u8bd5\\u8d22\\u52a1\\u7ecf\\u7406\",\"abspath\":\"0_10254_10258\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7559\\u8a00\\u770b\",\"abspath\":\"0_10259\"},\"childrens\":[{\"name\":\"__APP__\\/Reply\\/one\",\"title\":\"\\u9a6c\\u4e0a\\u63d0\\u95ee\",\"abspath\":\"0_10259_10260\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7ea6\\u89c1\\u8c08\",\"abspath\":\"0_10263\"},\"childrens\":[{\"name\":\"__APP__\\/Yuejt\\/one\",\"title\":\"\\u8d22\\u7a0e\\u95ee\\u9898\",\"abspath\":\"0_10263_10264\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u4eab\\u670d\\u52a1\",\"abspath\":\"0_10265\"},\"childrens\":[{\"name\":\"__APP__\\/Product\\/bosscwt\",\"title\":\"\\u8001\\u677f\\u8d22\\u52a1\\u901a\",\"abspath\":\"0_10265_10266\"},{\"name\":\"__APP__\\/Product\\/cwsw\",\"title\":\"\\u7ba1\\u7406\\u5c42\\u8d22\\u52a1\\u601d\\u7ef4\",\"abspath\":\"0_10265_10267\"},{\"name\":\"__APP__\\/Product\\/qypbjh\",\"title\":\"\\u4f01\\u4e1a\\u966a\\u4f34\\u8ba1\\u5212\",\"abspath\":\"0_10265_10268\"},{\"name\":\"__APP__\\/Product\\/cwxtb\",\"title\":\"\\u8d22\\u52a1\\u7cfb\\u7edf\\u73ed\",\"abspath\":\"0_10265_10269\"},{\"name\":\"__APP__\\/Product\\/bosscwzn\",\"title\":\"\\u8001\\u677f\\u8d22\\u52a1\\u667a\\u56ca\",\"abspath\":\"0_10265_10270\"},{\"name\":\"__APP__\\/Product\\/qybg\",\"title\":\"\\u4f01\\u4e1a\\u5e76\\u8d2d\",\"abspath\":\"0_10265_10271\"},{\"name\":\"__APP__\\/Product\\/xsbssfw\",\"title\":\"\\u65b0\\u4e09\\u677f\\u4e0a\\u5e02\\u670d\\u52a1\",\"abspath\":\"0_10265_10272\"},{\"name\":\"__APP__\\/Product\\/ysxtjs\",\"title\":\"\\u9884\\u7b97\\u7cfb\\u7edf\\u5efa\\u8bbe\",\"abspath\":\"0_10265_10273\"},{\"name\":\"__APP__\\/Product\\/zqsxtjs\",\"title\":\"\\u8d26\\u94b1\\u7a0e\\u7cfb\\u7edf\\u5efa\\u8bbe\",\"abspath\":\"0_10265_10274\"},{\"name\":\"__APP__\\/Product\\/camp\",\"title\":\"\\u7a0e\\u52a1\\u7a3d\\u67e5\\u91cd\\u70b9\\u4e0e\\u5e94\\u5bf9\\u7b56\\u7565\",\"abspath\":\"0_10265_10275\"},{\"name\":\"__APP__\\/Product\\/cost\",\"title\":\"\\u6210\\u672c\\u7ba1\\u63a7\\u4e0e\\u6301\\u7eed\\u4f18\\u5316\",\"abspath\":\"0_10265_10276\"},{\"name\":\"__APP__\\/Product\\/tax\",\"title\":\"&quot;\\u8425\\u6539\\u589e&quot;\\u653f\\u7b56\\u5e94\\u5bf9\\u4e0e\\u7eb3\\u7a0e\\u89c4\\u5212\",\"abspath\":\"0_10265_10277\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u6587\\u7ae0\\u53d1\\u5e03\",\"abspath\":\"0_10278\"},\"childrens\":[{\"name\":\"__APP__\\/Article\\/index\",\"title\":\"\\u53d1\\u5e03\",\"abspath\":\"0_10278_10279\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u843d\\u5730\\u9875\",\"abspath\":\"0_10280\"},\"childrens\":[{\"name\":\"__APP__\\/Popularize\\/index\",\"title\":\"\\u514d\\u8d39\\u63d0\\u4ea4\",\"abspath\":\"0_10280_10281\"},{\"name\":\"__APP__\\/Popularize\\/question\",\"title\":\"\\u95ee\\u9898\\u63d0\\u4ea4\",\"abspath\":\"0_10280_10282\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u8bfe\\u7a0b\\u4e0a\\u4f20\",\"abspath\":\"0_10283\"},\"childrens\":[{\"name\":\"__APP__\\/Up\\/index\",\"title\":\"\\u4e0a\\u4f20\",\"abspath\":\"0_10283_10284\"}]}]' WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:28:10+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:28:14+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:28:31+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:28:32+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bosslist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 22 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url`,`view` FROM `dcyd_boss` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_boss` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T10:30:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Public&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T10:30:10+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:30:11+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:30:11+08:00 ] 127.0.0.1 /Manerger/index.php?m=Public&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+
+[ 2017-02-28T10:30:25+08:00 ] 127.0.0.1 /manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:30:26+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-28T10:30:32+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.006001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.005000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1488249032,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T10:30:33+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.017001s ]
+
+[ 2017-02-28T10:30:36+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:33:32+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:33:36+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:33:37+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:33:38+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:36:25+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:37:09+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:37:57+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.006001s ]
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`url`) VALUES ('http://dcyd.oss-cn-shanghai.aliyuncs.com/Koala.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T10:38:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:42:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:42:47+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:43:02+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:44:26+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:45:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:45:23+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:45:45+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T10:45:54+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:46:10+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T10:55:13+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:58:53+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T10:59:12+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:02:38+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:03:38+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:03:53+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:07:54+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:27:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:27:45+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T11:28:00+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:28:13+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:28:29+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:30:42+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T11:31:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T11:34:28+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`url`) VALUES ('http://dcyd.oss-cn-shanghai.aliyuncs.com/Jellyfish.jpg') [ RunTime:0.000000s ]
+
+[ 2017-02-28T11:35:26+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T11:36:17+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`url`) VALUES ('http://dcyd.oss-cn-shanghai.aliyuncs.com/Jellyfish.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T11:54:10+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T11:54:31+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('111','111','111','111','111','111','111','http://dcyd.oss-cn-shanghai.aliyuncs.com/Tulips.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T12:03:07+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T12:06:37+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-28T12:08:06+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T12:08:31+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-28T12:09:02+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T12:09:39+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-02-28T12:09:55+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.006000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('111','111','111','111','111','','111','') [ RunTime:0.000000s ]
+
+[ 2017-02-28T12:13:05+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T14:33:22+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T14:33:24+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T15:11:42+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T15:12:03+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:08:36+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:12:16+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T16:13:15+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 18 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 31 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`img`,`url`) VALUES ('222','222','222','222','222','222','222','C:\\fakepath\\Koala.jpg','http://dcyd.oss-cn-shanghai.aliyuncs.com/Tulips.jpg') [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:15:03+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T16:15:03+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:15:03+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T16:15:10+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.005000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004001s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1488269710,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T16:15:10+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T16:15:12+08:00 ] 127.0.0.1 /Manerger/index.php/Role/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:15:12+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powertree
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10109 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10110 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10111 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10230 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10231 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10232 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10234 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10235 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10254 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10255 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10256 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10257 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10258 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10248 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10249 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10250 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10251 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10259 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10260 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10263 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10264 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10265 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10266 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10267 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10268 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10269 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10270 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10271 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10272 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10273 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10274 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10275 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10276 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10277 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10278 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10279 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10280 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10281 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10282 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10283 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10284 )  [ RunTime:0.000000s ]
+
+[ 2017-02-28T16:15:12+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T16:15:15+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T16:15:15+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bosslist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 22 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url`,`view` FROM `dcyd_boss` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_boss` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T16:17:53+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-02-28T16:44:38+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 18 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 31 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('333','333','333','333','333','333','333','http://dcyd.oss-cn-shanghai.aliyuncs.com/Hydrangeas.jpg') [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:44:39+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:45:42+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.009001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 18 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 31 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('555','555','555','555','555','555','555','http://dcyd.oss-cn-shanghai.aliyuncs.com/Desert.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T16:50:57+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T16:54:33+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.005001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 18 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 28 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 31 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`img`,`url`) VALUES ('666','666','666','666','666','666','666','C:\\fakepath\\Penguins.jpg','http://dcyd.oss-cn-shanghai.aliyuncs.com/Jellyfish.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T16:54:34+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T16:56:32+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T16:56:58+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.007001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+
+[ 2017-02-28T17:01:35+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T17:02:17+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.007000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 32 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`img`,`url`) VALUES ('000','000','000','000','000','000','000','C:\\fakepath\\Penguins.jpg','http://dcyd.oss-cn-shanghai.aliyuncs.com/Koala.jpg') [ RunTime:0.001000s ]
+
+[ 2017-02-28T17:02:21+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T17:06:44+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.008000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 19 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 29 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 32 行.
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`img`,`url`) VALUES ('123','123','123','123','123','123','123','C:\\fakepath\\Tulips.jpg','http://dcyd.oss-cn-shanghai.aliyuncs.com/Penguins.jpg') [ RunTime:0.000000s ]
+
+[ 2017-02-28T17:14:07+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T17:14:19+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-28T17:15:42+08:00 ] 127.0.0.1 /Manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T17:20:32+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('付一�\�','付一�\�','998','付一�\�','付一�\�','付一�\�','付一�\�','http://dcyd.oss-cn-shanghai.aliyuncs.com/1.mp4') [ RunTime:0.000000s ]
+
+[ 2017-02-28T17:29:12+08:00 ] 127.0.0.1 /Manerger/index.php/Power/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.005000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.000000s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T17:29:12+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10259 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10263 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10265 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10278 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10280 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T17:32:02+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10283 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10284 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T17:33:27+08:00 ] 127.0.0.1 /Manerger/index.php/Role/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-02-28T17:33:28+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powertree
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.006000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10109 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10110 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10111 )  [ RunTime:0.003000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10230 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10231 )  [ RunTime:0.005001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10232 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10234 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10235 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10254 )  [ RunTime:0.005000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10255 )  [ RunTime:0.009001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10256 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10257 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10258 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10248 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10249 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10250 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10251 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10259 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10260 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10263 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10264 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10265 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10266 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10267 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10268 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10269 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10270 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10271 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10272 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10273 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10274 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10275 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10276 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10277 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10278 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10279 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10280 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10281 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10282 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10283 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10284 )  [ RunTime:0.001000s ]
+
+[ 2017-02-28T17:33:28+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-02-28T17:33:31+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.006000s ]
+SQL: SELECT `power` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T17:33:34+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=update
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.006000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005000s ]
+SQL: SELECT `pid` FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251','10259','10260','10263','10264','10265','10266','10267','10268','10269','10270','10271','10272','10273','10274','10275','10276','10277','10278','10279','10280','10281','10282','10283','10284') )  [ RunTime:0.000000s ]
+SQL: SELECT `name`,`title`,CONCAT_WS("_",`path`,id) as abspath FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251','10259','10260','10263','10264','10265','10266','10267','10268','10269','10270','10271','10272','10273','10274','10275','10276','10277','10278','10279','10280','10281','10282','10283','10284') ) ORDER BY abspath  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_role` SET `description`='管理',`name`='管理�\�',`power`='10109,10110,10111,10230,10231,10232,10234,10235,10254,10255,10256,10257,10258,10248,10249,10250,10251,10259,10260,10263,10264,10265,10266,10267,10268,10269,10270,10271,10272,10273,10274,10275,10276,10277,10278,10279,10280,10281,10282,10283,10284',`powername`='站点管理,角色管理,功能模块,管理员管�\�,用户管理,用户管理,头像管理,消息管理,客户诊断报名,财务诊断,审合�\�,审报�\�,面试财务经理,内容管理,Boss�\�,扁鹊V�\�,百问百答,留言�\�,马上提问,约见�\�,财税问题,享服�\�,老板财务�\�,管理层财务思维,企业陪伴计划,财务系统�\�,老板财务智囊,企业并购,新三板上市服�\�,预算系统建设,账钱税系统建�\�,税务稽查重点与应对策�\�,成本管控与持续优�\�,&amp;quot;营改�\�&amp;quot;政策应对与纳税规�\�,文章发布,发布,落地�\�,免费提交,问题提交,课程上传,上传',`powers`='[{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7ad9\\u70b9\\u7ba1\\u7406\",\"abspath\":\"0_10109\"},\"childrens\":[{\"name\":\"__APP__\\/Role\\/index\",\"title\":\"\\u89d2\\u8272\\u7ba1\\u7406\",\"abspath\":\"0_10109_10110\"},{\"name\":\"__APP__\\/Power\\/index\",\"title\":\"\\u529f\\u80fd\\u6a21\\u5757\",\"abspath\":\"0_10109_10111\"},{\"name\":\"__APP__\\/Admin\\/index\",\"title\":\"\\u7ba1\\u7406\\u5458\\u7ba1\\u7406\",\"abspath\":\"0_10109_10230\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231\"},\"childrens\":[{\"name\":\"__APP__\\/User\\/index\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231_10232\"},{\"name\":\"__APP__\\/User\\/image\",\"title\":\"\\u5934\\u50cf\\u7ba1\\u7406\",\"abspath\":\"0_10231_10234\"},{\"name\":\"__APP__\\/User\\/mesage\",\"title\":\"\\u6d88\\u606f\\u7ba1\\u7406\",\"abspath\":\"0_10231_10235\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5185\\u5bb9\\u7ba1\\u7406\",\"abspath\":\"0_10248\"},\"childrens\":[{\"name\":\"__APP__\\/Content\\/boss\",\"title\":\"Boss\\u542c\",\"abspath\":\"0_10248_10249\"},{\"name\":\"__APP__\\/Content\\/vk\",\"title\":\"\\u6241\\u9e4aV\\u8bfe\",\"abspath\":\"0_10248_10250\"},{\"name\":\"__APP__\\/Content\\/bwbd\",\"title\":\"\\u767e\\u95ee\\u767e\\u7b54\",\"abspath\":\"0_10248_10251\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5ba2\\u6237\\u8bca\\u65ad\\u62a5\\u540d\",\"abspath\":\"0_10254\"},\"childrens\":[{\"name\":\"__APP__\\/Question\\/cwzd\",\"title\":\"\\u8d22\\u52a1\\u8bca\\u65ad\",\"abspath\":\"0_10254_10255\"},{\"name\":\"__APP__\\/Question\\/sht\",\"title\":\"\\u5ba1\\u5408\\u540c\",\"abspath\":\"0_10254_10256\"},{\"name\":\"__APP__\\/Question\\/sbb\",\"title\":\"\\u5ba1\\u62a5\\u8868\",\"abspath\":\"0_10254_10257\"},{\"name\":\"__APP__\\/Question\\/mianshi\",\"title\":\"\\u9762\\u8bd5\\u8d22\\u52a1\\u7ecf\\u7406\",\"abspath\":\"0_10254_10258\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7559\\u8a00\\u770b\",\"abspath\":\"0_10259\"},\"childrens\":[{\"name\":\"__APP__\\/Reply\\/one\",\"title\":\"\\u9a6c\\u4e0a\\u63d0\\u95ee\",\"abspath\":\"0_10259_10260\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7ea6\\u89c1\\u8c08\",\"abspath\":\"0_10263\"},\"childrens\":[{\"name\":\"__APP__\\/Yuejt\\/one\",\"title\":\"\\u8d22\\u7a0e\\u95ee\\u9898\",\"abspath\":\"0_10263_10264\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u4eab\\u670d\\u52a1\",\"abspath\":\"0_10265\"},\"childrens\":[{\"name\":\"__APP__\\/Product\\/bosscwt\",\"title\":\"\\u8001\\u677f\\u8d22\\u52a1\\u901a\",\"abspath\":\"0_10265_10266\"},{\"name\":\"__APP__\\/Product\\/cwsw\",\"title\":\"\\u7ba1\\u7406\\u5c42\\u8d22\\u52a1\\u601d\\u7ef4\",\"abspath\":\"0_10265_10267\"},{\"name\":\"__APP__\\/Product\\/qypbjh\",\"title\":\"\\u4f01\\u4e1a\\u966a\\u4f34\\u8ba1\\u5212\",\"abspath\":\"0_10265_10268\"},{\"name\":\"__APP__\\/Product\\/cwxtb\",\"title\":\"\\u8d22\\u52a1\\u7cfb\\u7edf\\u73ed\",\"abspath\":\"0_10265_10269\"},{\"name\":\"__APP__\\/Product\\/bosscwzn\",\"title\":\"\\u8001\\u677f\\u8d22\\u52a1\\u667a\\u56ca\",\"abspath\":\"0_10265_10270\"},{\"name\":\"__APP__\\/Product\\/qybg\",\"title\":\"\\u4f01\\u4e1a\\u5e76\\u8d2d\",\"abspath\":\"0_10265_10271\"},{\"name\":\"__APP__\\/Product\\/xsbssfw\",\"title\":\"\\u65b0\\u4e09\\u677f\\u4e0a\\u5e02\\u670d\\u52a1\",\"abspath\":\"0_10265_10272\"},{\"name\":\"__APP__\\/Product\\/ysxtjs\",\"title\":\"\\u9884\\u7b97\\u7cfb\\u7edf\\u5efa\\u8bbe\",\"abspath\":\"0_10265_10273\"},{\"name\":\"__APP__\\/Product\\/zqsxtjs\",\"title\":\"\\u8d26\\u94b1\\u7a0e\\u7cfb\\u7edf\\u5efa\\u8bbe\",\"abspath\":\"0_10265_10274\"},{\"name\":\"__APP__\\/Product\\/camp\",\"title\":\"\\u7a0e\\u52a1\\u7a3d\\u67e5\\u91cd\\u70b9\\u4e0e\\u5e94\\u5bf9\\u7b56\\u7565\",\"abspath\":\"0_10265_10275\"},{\"name\":\"__APP__\\/Product\\/cost\",\"title\":\"\\u6210\\u672c\\u7ba1\\u63a7\\u4e0e\\u6301\\u7eed\\u4f18\\u5316\",\"abspath\":\"0_10265_10276\"},{\"name\":\"__APP__\\/Product\\/tax\",\"title\":\"&quot;\\u8425\\u6539\\u589e&quot;\\u653f\\u7b56\\u5e94\\u5bf9\\u4e0e\\u7eb3\\u7a0e\\u89c4\\u5212\",\"abspath\":\"0_10265_10277\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u6587\\u7ae0\\u53d1\\u5e03\",\"abspath\":\"0_10278\"},\"childrens\":[{\"name\":\"__APP__\\/Article\\/index\",\"title\":\"\\u53d1\\u5e03\",\"abspath\":\"0_10278_10279\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u843d\\u5730\\u9875\",\"abspath\":\"0_10280\"},\"childrens\":[{\"name\":\"__APP__\\/Popularize\\/index\",\"title\":\"\\u514d\\u8d39\\u63d0\\u4ea4\",\"abspath\":\"0_10280_10281\"},{\"name\":\"__APP__\\/Popularize\\/question\",\"title\":\"\\u95ee\\u9898\\u63d0\\u4ea4\",\"abspath\":\"0_10280_10282\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u8bfe\\u7a0b\\u4e0a\\u4f20\",\"abspath\":\"0_10283\"},\"childrens\":[{\"name\":\"__APP__\\/Up\\/index\",\"title\":\"\\u4e0a\\u4f20\",\"abspath\":\"0_10283_10284\"}]}]' WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-02-28T17:33:34+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-02-28T17:34:19+08:00 ] 127.0.0.1 /Manerger/index.php?m=Public&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T17:34:19+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T17:34:20+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-02-28T17:34:30+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.004001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.004000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1488274470,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-02-28T17:34:30+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T18:21:52+08:00 ] 127.0.0.1 /manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.006000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.005001s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-02-28T18:21:56+08:00 ] 127.0.0.1 /manerger/index.php/Up/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-02-28T18:22:19+08:00 ] 127.0.0.1 /manerger/index.php?m=Up&a=uploads
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_video` [ RunTime:0.005001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: INSERT INTO `dcyd_video` (`title`,`name`,`money`,`introduce`,`explain`,`comment`,`chapter`,`url`) VALUES ('','','','','','','','http://dcyd.oss-cn-shanghai.aliyuncs.com/Chrysanthemum.jpg') [ RunTime:0.000000s ]
+

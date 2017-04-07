@@ -1,0 +1,42 @@
+/*重置css*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:.8rem '微软雅黑';color:#000000;background:#eeeeee;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clear{clear:both;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #ffffff}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}
+
+/*********** 文字 ************/
+.sizea{ font-size: 1rem;}/*18*/
+.sizeb{ font-size: 1.8rem;}/*24*/
+.sizec{ font-size: .64rem;}/*18*/
+.sized{ font-size: 2rem;}
+.fom-jia{ font-weight: bold;}
+.texta{text-indent:2em;}
+.yinc{text-overflow : ellipsis;
+    white-space : nowrap;
+    overflow : hidden;
+}
+.lin-a{ line-height: 1.8rem}
+.fona-w{font-family: 'Georgia', Times, Times New Roman, serif;color: #000000; font-size: 1.8rem;}
+.fona-r{font-family: 'Georgia', Times, Times New Roman, serif;color: #000000; font-size: 1.4rem;}
+
+
+/*********** 文字颜色 ************/
+.coloa{ color: #b3b3b3;}
+.colob{ color: #cc0000;}
+.coloc{ color: #ffffff;}
+.colod{ color: #00a0e9;}
+

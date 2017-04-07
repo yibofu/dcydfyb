@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+	.and .popularize{
+		width: 94%;
+	}
+	.and .popularize .popularize-b h3{
+		margin-left: 0%;
+		line-height: 3.75rem;
+	}
+	.and .popularize-r img {
+		margin-top: .8rem;
+		margin-left: 20%;
+	}
+	.u-radio, .u-checkbox {
+		margin-left: 1%;
+	}
+	.and .popularize .popularize-b .nim{
+		padding-left: 10%;
+	}
+	.and .popularize .popularize-b .box img{
+		width: 83%;
+		margin-left: 0%;
+	}
+	.and .popularize .popularize-d .introduce-a img{
+		height: 9rem;
+	}
+	.and .popularize .popularize-e h3{
+		line-height: 2rem;
+		font-size: .88rem;;
+	}
+	.and .popularize .popularize-e img{
+		height: 13rem;
+	}
+	.and .popularize .popularize-o .introduce-a img{
+		height: 10rem;
+	}
+	.and .popularize-i img {
+		height: 11rem;
+	}
+	.and .popularize-y img{
+		height: 9.4rem;
+	}
+	.font-a {
+		font-size: .8rem;
+	}
+	.font-b {
+		font-size: .9rem;
+	}
+	.font-d {
+		font-size: 1.1rem;
+	}
+	.font-c{
+		font-size: 1.4rem;
+	}
+	.lin-a {
+		line-height: 1rem;
+	}
+	.font-e {
+		font-size: .7rem;
+	}
+	.lin-g{
+		line-height: 1.4rem;
+	}
+	.lin-p{
+		line-height: 1.6rem;
+	}
+	.font-i {
+		font-size: 1.1rem;
+	}
+	.and .theme-popover {
+		z-index: 4;
+		position: fixed;
+		top: 50%;
+		left: 23%;
+		width: 17.8rem;
+		height: 15.75rem;
+		margin: -180px 0 0 -10%;
+		border-radius: 10px;
+		border: solid 2px #666;
+		background-color: #fff;
+		box-shadow: 0 0 10px #666;
+	}
+	#LR_User_Icon0 {
+		width: 106%;
+		margin-left: 0%;
+	}
+
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+	.and .popularize{
+		width: 93%;
+	}
+	.and .popularize .popularize-b h3{
+		margin-left: 0%;
+		line-height: 3.75rem;
+	}
+	.font-a {
+		font-size: .5rem;
+	}
+	.font-b {
+		font-size: .8rem;
+	}
+	.font-d {
+		font-size: 1.1rem;
+	}
+	.and .popularize-r img {
+		margin-top: .8rem;
+		margin-left: 12%;
+	}
+	.u-radio, .u-checkbox {
+		margin-left: 0%;
+	}
+	.and .popularize .popularize-b .nim{
+		padding-left: 0%;
+	}
+	.and .popularize .popularize-b .box img{
+		width: 90%;
+		margin-left: 0%;
+	}
+	.and .popularize .popularize-e img {
+		height: 11rem;
+	}
+	.and .popularize .popularize-o .introduce-a img {
+		height: 9rem;
+	}
+	.and .popularize-i img {
+		height: 9rem;
+	}
+	.and .theme-popover {
+		z-index: 4;
+		position: fixed;
+		top: 50%;
+		left: 15%;
+		width: 17.8rem;
+		height: 15.75rem;
+		margin: -180px 0 0 -10%;
+		border-radius: 10px;
+		border: solid 2px #666;
+		background-color: #fff;
+		box-shadow: 0 0 10px #666;
+	}
+	#LR_User_Icon0 {
+		width: 126%;
+		margin-left: -18%;
+	}
+}
+

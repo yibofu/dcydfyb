@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+		<title>推荐用户</title>
+		<link href="/Public/app/css/index.min.css?v=<?php echo time();?>" rel="stylesheet"/>
+		<!--[if lt IE9>
+    		<script src="/Public/app/js/html5.js"></script>
+   		 <![end if]-->
+		<style>
+			.logobox{
+				position: absolute;
+				left: 50%;
+				width: 1200px;
+				margin-left: -600px;
+
+			}
+			.resultname{
+				display: none;
+				position: absolute;
+				bottom: 0px;
+				width: 220px;
+				height: 40px;
+				/*background: rgba(0,0,0,0.6);*/
+				color: #000;
+				line-height: 40px;
+				font-size: 18px;
+				text-indent: 20px;
+				opacity: 1;
+			}
+			#phone_id {
+				position: relative;
+				display: inline-block;
+				width: 360px;
+				height: 44px;
+				vertical-align: top;
+				border: 1px solid #999da0;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				background: #dfdfdf;
+				font-size: 24px;
+				color: #999da0;
+				padding: 0 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="logobox">
+				<span class="logo">
+					<img src="/Public/app/img/ooxxlogo.png" alt="OOXX"/>
+				</span>
+			</div>
+
+			<div style="width: 1200px; margin:0 auto; position: relative;">
+				<ul class="list">
+					<a href="{:U('Show/index')}"><li class="active">首页</li></a>
+					<if condition="$sex eq 1">
+					<a href="{:U('User/man')}"><li class="li1">{$nickname}，你好！</li></a>
+					<a href="{:U('User/man')}"><li class="li2"><img src="/Public/app/img/logo3.png"/></li></a>
+					<if condition="$has_new eq 1">
+					<a href="{:U('User/man')}"><li class="li3"><img src="/Public/app/img/logo4.png"/></li></a>
+					<else />
+					<a href="{:U('User/man')}"><li class="li3"><img src="/Public/app/img/message.png"/></li></a>
+					</if>
+					<else />
+					<a href="{:U('User/women')}"><li class="liwomen">{$nickname}，你好！</li></a>
+					<a href="{:U('User/women')}"><li class="li2"><img src="/Public/app/img/logo3.png"/></li></a>
+					<if condition="$has_new eq 1">
+					<a href="{:U('User/women')}"><li class="li3"><img src="/Public/app/img/logo4.png"/></li></a>
+					<else />
+					<a href="{:U('User/women')}"><li class="li3"><img src="/Public/app/img/message.png"/></li></a>
+					</if>
+					</if>
+					<a href="{:U('Index/loginout')}"><li><img src="/Public/app/img/logo5.png"/></li></a>
+				</ul>
+			</div>
+			
+		</div>
+		<div id="content">
+			<div class="title">
+				<if condition="$phone_id neq ''">
+					<h3>搜索结果</h3>
+				<else />
+					<h3>推荐用户</h3>
+				</if>	
+				<form action="{:U('Show/index')}" method="post" id="myform">
+				<input class="submit" value="" type="button"  id="search"/>
+				<input class="text" type="search" name="phone_id" id="phone_id" placeholder="请输入手机号或用户昵称" value="{$phone_id}" maxlength="11"/>
+				</form>
+			</div>
+			<ul class="imgbox">
+				<volist name="result" id="vo" offset="0" length='5'>
+				
+				<if condition="$i % 5 eq 0">
+					<li class="th5" <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				<else />
+					<li <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				</if>
+				</volist>
+			</ul>
+			<ul class="imgbox">
+				<volist name="result" id="vo" offset="5" length='5'>
+				<if condition="$i % 5 eq 0">
+					<li class="th5" <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				<else />
+					<li <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				</if>
+				</volist>
+			</ul>
+			<ul class="imgbox">
+				<volist name="result" id="vo" offset="10" length='5'>
+				<if condition="$i % 5 eq 0">
+					<li class="th5" <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				<else />
+					<li <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				</if>
+				</volist>
+			</ul>
+			<ul class="imgbox">
+				<volist name="result" id="vo" offset="15" length='5'>
+				<if condition="$i % 5 eq 0">
+					<li class="th5" <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				<else />
+					<li <if condition="$phone_id neq ''">style="height:309px;"</if>><a href="{:U('User/userdetail')}?temp={$vo.userid}" target="_blank"><img src="{$vo.img_url}" alt="{$vo.nickname}"/><span>{$vo.nickname}</span></a><div class="resultname" <if condition="$phone_id neq ''">style="display:block;"</if>>{$vo.nickname}</div></li>
+				</if>
+				</volist>
+			</ul>
+		</div>
+		<input type="hidden" id="page" value="1" />
+		<input type="hidden" id="max_page" value="{$page}" />
+		<div id="footer">版权所有：宜春姝慧信息咨询有限公司<br/>网站备案：赣ICP备15011104号-3<br/>客服电话：400-998-7220（周一至周五：9:00-18:00）<br/>客服邮箱：kefu@oojiaoyou.com</div>
+		<script src="/Public/app/js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(function () {
+				$("#content").delegate(".imgbox a","mouseover",function(){
+					$(this).find("span").css("display","block");
+				});
+				$("#content").delegate(".imgbox a","mouseout", function () {
+					$(this).find("span").css("display","none");
+				});
+				$(window).scroll(function(){
+					var scroll=$(this).scrollTop();
+					var windowH=$(window).height();
+					var documentH=$(document).height();
+					var page = $("#page").val();
+					var max_page = $("#max_page").val();
+					var phone_id = $("#phone_id").val();
+					page = parseInt(page);
+					page = page + 1;
+					if(scroll>=documentH-windowH-92){
+						if(page <= max_page){
+							$.ajax({
+								type:'post',
+								data:{'phone_id':phone_id},
+								url:"/index.php/Show/ajax_photo/p/"+page,
+								success:function(data){
+									data = eval('('+data+')');
+									if (data){
+										var str= '';
+										for(var i=0;i<data.length;i++){
+											if(i%5 == 0){
+												//开头
+												str += '<ul class="imgbox"><li><a href="/index.php/User/userdetail/temp/'+data[i].userid+'" target="_blank"><img src="'+data[i].img_url+'" alt="'+data[i].nickname+'"/><span>'+data[i].nickname+'</span></a></li>';
+											}else if(i%5 == 4){
+												//结尾
+												str += '<li class="th5"><a href="/index.php/User/userdetail/temp/'+data[i].userid+'" target="_blank"><img src="'+data[i].img_url+'" alt="'+data[i].nickname+'"/><span>'+data[i].nickname+'</span></a></li></ul>';
+											}else{
+												if(i == data.length){
+														str += '<li class="th5"><a href="/index.php/User/userdetail/temp/'+data[i].userid+'" target="_blank"><img src="'+data[i].img_url+'" alt="'+data[i].nickname+'"/><span>'+data[i].nickname+'</span></a></li></ul>';
+												}else{
+														str += '<li><a href="/index.php/User/userdetail/temp/'+data[i].userid+'" target="_blank"><img src="'+data[i].img_url+'" alt="'+data[i].nickname+'"/><span>'+data[i].nickname+'</span></a></li>';
+												}
+											}
+										}
+										$("#content").append(str);
+									}
+								}
+							});
+							$("#page").val(page);
+						}
+					}
+				})
+			})
+			$("#search").bind('click',function(){
+				var val=$("#phone_id").val();
+				if(!(new RegExp(/[\u4e00-\u9fa5a-zA-Z]/gm).test(val))){
+					if(val != ""){
+						alert("请输入中文或字母");
+						$("#phone_id").val('');
+						return false;
+					}
+				}
+				$("#myform").submit();
+			});
+		</script>
+	</body>
+</html>

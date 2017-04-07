@@ -1,0 +1,462 @@
+/*重置css c02003*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+ul {list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#333333;background:#ffffff;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式 c02003*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.boi{background: #ffffff;}
+.bou{ color: #ffffff}
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+.texta{text-indent:2em;}
+button{ border: 0;}
+
+
+.u-radio{
+    line-height: 24px;
+}
+
+.u-radio .icon{
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.u-radio .icon {
+    background: url("../img/icon_radio.png") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.u-radio.z-checked .icon {
+    background-image: url("../img/icon_radio_chekced.png");
+}
+.u-radio, .u-checkbox {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    *zoom: 1;
+    *display: inline;
+}
+
+.u-radio input[type="radio"],
+.u-checkbox input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.font-a{
+    font-size: 1.1rem;
+}
+.font-b{
+    font-size: 1.4rem;
+}
+.font-c{
+    font-size: 2.4rem;
+}
+.font-d{
+    font-size: 1.4rem;
+}
+.font-e{
+    font-size: 1rem;
+}
+.font-i{
+    font-size: 1.64rem;
+}
+.min-a{
+    margin-left: 4%;
+}
+.min-b{
+    margin-right: 4%;
+}
+.min-c{
+    margin: 0 10%;
+}
+.min-d{
+    margin-top: 1.5rem;
+}
+.min-f{
+    margin-left: 1%;
+}
+.min-e{
+    margin-top: 1.2rem;
+}
+.min-p{
+    margin-top: .7rem;
+}
+.text{
+    text-align: center;
+}
+.texta{
+    text-indent:2em;
+}
+.borser-a{
+    border-bottom:.05rem solid #c9c9c9;
+}
+.coloa{
+    color: #ec4b5a;
+}
+.colob{
+    color: #41aedf;
+}
+.coloc{
+    color: #5f7ab7;
+}
+.colod{
+    color: #ee936f;
+}
+.coloe{
+    color: #f370a0;
+}
+.lin-a{
+    line-height: 2rem;
+}
+.lin-b{
+    line-height: 1.64rem;
+}
+.lin-o{
+    line-height: 2.1rem;
+}
+.lin-g{
+    line-height: 1.6rem;
+}
+.lin-p{
+    line-height: 2rem;
+}
+.popularize{
+    width: 40rem;
+    margin: 0 auto;
+}
+.popularize .popularize-a{
+    height: 2.6rem;
+    line-height:2.6rem;
+}
+.popularize .popularize-a .xin{
+    width: 45%;
+    height:1.8rem;
+    display: block;
+    color: #ffffff;
+    background: linear-gradient(#f7cace, #ed5260);
+    line-height: 1.8rem;
+    border-radius: .2rem;
+    margin-top: 0.35rem;
+}
+.popularize .popularize-b{
+    height: 3.75rem;
+    line-height:3.75rem;
+}
+.popularize .popularize-b h3{
+    margin-left: 6%;
+    line-height: 3.75rem;
+}
+.popularize .popularize-b .moblie{
+    line-height: 3.3rem;
+    height: 3.3rem;
+    width: 90%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    font-size: 1rem;
+}
+.popularize .popularize-b .moblie-a{
+    line-height: 3.3rem;
+    height: 3.3rem;
+    width: 40%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    font-size: 1rem;
+}
+.popularize .popularize-b .btn{
+    line-height: 3.5rem;
+    height: 3.5rem;
+    width: 95%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    margin: 1.5rem 4% 0 4%;
+    font-size: 1.6rem;
+    background: #ec4b5a;
+    color: #ffffff;
+}
+.popularize .popularize-b .nim{
+    width: 40%;
+    margin: 0 auto;
+    height: 3.75rem;
+    padding-left: 13%;
+    float: left;
+
+}
+
+.popularize .popularize-b .nimv{
+    border-left: .05rem solid #7d7d7d;
+    padding-left: 4%;
+    margin-top: 2.75rem;
+
+}
+.popularize .popularize-b .nimv p{
+    line-height: 1.9rem;
+    font-weight: 600;
+}
+.popularize .popularize-c{
+    margin-top: 1.65rem;;
+}
+.foml{
+    height: 2.75rem;
+    line-height: 2.75rem;
+    font-size: 1.8rem;
+    margin-left: 4%;
+    font-family: "SingleMaltaRegular";
+}
+.popularize .popularize-c p{
+    font-weight: 500;
+    margin-left: 5%;
+    line-height: 2.1rem;
+    margin-right: 4%;
+}
+.popularize .popularize-c .img1{
+    margin-top: 1rem;
+}
+.popularize .popularize-c .img1 img{
+    width: 30%;
+}
+.popularize .popularize-d{
+    margin-top: 1.2rem;
+}
+.popularize .popularize-d h3{
+    height: 3.14rem;
+    line-height: 3.14rem;
+}
+.popularize .popularize-d .introduce-a{
+    width: 100%;
+    margin-left: 1%;
+}
+.popularize .popularize-d .introduce-a img{
+    width: 40%;
+    height: 16rem;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.popularize .popularize-d .introduce-a .introduce-b h5{
+    line-height: 2rem;
+}
+.popularize .popularize-e img{
+    width: 100%;
+    height: 25rem;
+}
+.popularize .popularize-e h3{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: .05rem solid #7d7d7d;
+    margin-bottom: .2rem;
+    text-align: center;
+}
+.popularize .popularize-f .moblie{
+    line-height: 3.3rem;
+    height: 3.3rem;
+    width: 90%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    font-size: 1rem;
+}
+.popularize .popularize-f .moblie-a{
+    line-height: 3.3rem;
+    height: 3.3rem;
+    width: 40%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    font-size: 1rem;
+}
+.popularize .popularize-f .btn{
+    line-height: 3.5rem;
+    height: 3.5rem;
+    width: 95%;
+    padding-left: 4%;
+    border: .05rem solid #c9c9c9;
+    border-radius: .6rem;
+    margin: 1.5rem 4% 0 4%;
+    font-size: 1.6rem;
+    background: #ec4b5a;
+    color: #ffffff;
+}
+.popularize .popularize-o{
+    margin-top: .82rem;
+}
+.popularize .popularize-o .introduce-a{
+    width: 90%;
+    margin-left: 5%;
+}
+.popularize .popularize-o .introduce-a img{
+    width: 43%;
+    height: 16rem;
+    margin: 0 3%;
+}
+.popularize .popularize-o .introduce-a .introduce-b h5{
+    line-height: 2rem;
+}
+.popularize .popularize-o .introduce-a .introduce-b{
+    width: 50%;
+}
+.boa{
+    height: 3.5rem;
+    width: 92%;
+    line-height: 3.5rem;
+    display: block;
+    margin-left:4%;
+    margin-top: 4%;
+    background: #ec4b5a;
+    color: #ffffff;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+}
+.popularize-i img {
+    width: 80%;
+    height: 18rem;
+    margin-left: 11%;
+}
+.popularize-p p{
+    margin: 0 4%;
+}
+.popularize-v .introduce-a{
+    margin-left: 8%;
+}
+.popularize-v .introduce-a img{
+    width: 3.9rem;
+    height: 3.9rem;
+}
+.popularize-v .introduce-a .introduce-b{
+    width: 68%;
+    margin-left: 7%;
+    line-height: 1.4rem;
+}
+.popularize-y img{
+    width: 93%;
+    height: 15rem;
+    margin-left:5%;
+    margin-top: .8rem;
+}
+.popularize-r{
+    height: 3.5rem;
+    width: 92%;
+    line-height: 3.5rem;
+    display: block;
+    margin-left: 6%;
+    margin-top: 3rem;
+    background: #ec4b5a;
+    color: #ffffff;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+}
+.popularize-r img{
+    margin-top: .8rem;
+    margin-left: 30%;
+}
+.popularize-r p{
+    margin-left: 2%;
+}
+.popularize-h{
+    text-align: center;
+    width: 100%;
+    color: #CCCCCC;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+@font-face{
+    font-family: "SingleMaltaRegular";               /*自定义字体名称*/
+    src: url("../fonts/FZCQJW_0.TTF");   /*IE9兼容模式*/
+    src: url("../fonts/FZCQJW_0.TTF") format("embedded-opentype"),  /*IE6~IE8*/
+    url("../fonts/FZCQJW_0.TTF") format("woff"),         /*现代浏览器*/
+    url("../fonts/FZCQJW_0.TTF") format("truetype"),     /*Safari,Android,iOS*/
+    url("../fonts/FZCQJW_0.TTF") format("svg");   /*Legacy iOS*/
+    font-weight: 700;
+    font-style: normal;
+}
+.theme-popover-mask{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.theme-popover{
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: 53%;
+    width: 17.8rem;
+    height: 15.75rem;
+    margin: -180px 0 0 -10%;
+    border-radius: 10px;
+    border: solid 2px #666;
+    background-color: #fff;
+    box-shadow: 0 0 10px #666;
+}
+.theme-popover .close{
+    z-index: 5;
+    position: absolute;
+    right: -.7rem;
+    top: -.9rem;
+    width: 2rem;
+    height: 2rem;
+}
+.theme-popover .close img{
+    width: 2rem;
+    height: 2rem;
+}
+.theme-popbod .popbod{
+    background: #fbdbde;
+    height: 12.2rem;
+    border-radius: 5px 5px 0 0;
+}
+.theme-popbod .popbod img{
+    width: 7.6rem;
+    height: 5.4rem;
+    margin-left: 5.4rem;
+    margin-top: 1.7rem;
+}
+.theme-popbod .popbod-a a{
+    height: 1.5rem;
+    width: 11rem;
+    background: #f06f7b;
+    border-radius: .5rem;
+    color: #ffffff;
+    display: block;
+    margin-top: 5%;
+    margin-left: 19%;
+    line-height: 1.5rem;
+}
+#LR_User_Icon0{
+    width: 77%;
+    margin-left: 20%;
+    float: left;
+
+}
+#LR_User_Icon0 img{
+    width: 59%;
+    height: 4.4rem;
+    margin: 2rem auto;
+    margin-left: 25%;
+}

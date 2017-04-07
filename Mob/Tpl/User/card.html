@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行卡信息</title>
+    <meta content="IE=Edge,,chrome=1" http-equiv="x-ua-compatible"/>
+    <meta name="keywords" content="滴滴快贷，银行卡信息">
+    <meta name="description" content="滴滴快贷银行卡信息。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/yh/css/20151123style.css" media="all">
+    <link rel="stylesheet" href="/Public/Mob/yh/css/set.css"/>
+</head>
+<body class="mhome" style="background: #f0f4fe;">
+<header class="dd_header">银行卡信息<span class="fa fa-chevron-left dd_return" onclick="return_page()"></span></header>
+<section class="dd_index">
+    <div style="width: 90.5%; margin: 0 auto;">
+        <ul class="worker_info" >
+            <li><span class="worker_l">真实姓名：</span> <span class="worker_r">{$result.name}</span></li>
+            <li><span class="worker_l">身份证号：</span><span class="worker_r">{$result.card_no}</span></li>
+            <li><span class="worker_l">银行卡号：</span><span class="worker_r">{$result.bank_no}</span></li>
+            <li><span class="worker_l">所属银行：</span><span class="worker_r">{$result.bank}</span></li>
+            <li><span class="worker_l">开户城市：</span><span class="worker_r">{$result.bank_local}</span></li>
+
+        </ul>
+    </div>
+
+</section>
+<div class="dd_yzm"onclick="sub()"><a href="javascript:;">更换银行卡</a></div>
+</body>
+<script>
+	function sub(){
+		window.location.href="{:U('User/card_update',array('id'=>$id))}";
+	}
+	function return_page(){
+		window.location.href = "{:U('User/index')}";
+	}
+</script>
+</html>

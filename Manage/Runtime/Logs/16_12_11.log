@@ -1,0 +1,2052 @@
+[ 2016-12-11T17:29:34+08:00 ] 127.0.0.1 /Manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-12-11T17:29:34+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-12-11T21:50:56+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:51:02+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.015000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.011001s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.002000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1481464262,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2016-12-11T21:51:03+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T21:51:07+08:00 ] 127.0.0.1 /Manerger/index.php/Content/boss
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\815443377fcce08cc62c7bd026c2a6b7.php 第 131 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T21:51:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bosslist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_boss` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 22 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url`,`view` FROM `dcyd_boss` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_boss` LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2016-12-11T21:51:12+08:00 ] 127.0.0.1 /Manerger/index.php/Content/vk
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\d344bed19cfad41459f02cf7aee90000.php 第 124 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.661038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.662038s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.013001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-12-11T21:51:13+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=vklist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 336 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 337 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 338 行.
+SQL: SHOW COLUMNS FROM `dcyd_vk` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 341 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url` FROM `dcyd_vk` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 342 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_vk` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:51:15+08:00 ] 127.0.0.1 /Manerger/index.php/Content/bwbd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\f204e5880c5095fa8d955ea636f1aa0e.php 第 124 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-12-11T21:51:15+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=bwbdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 178 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 179 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 180 行.
+NOTIC: [8] Undefined index: img D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 181 行.
+SQL: SHOW COLUMNS FROM `dcyd_bwbd` [ RunTime:0.007000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 184 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url` FROM `dcyd_bwbd` LIMIT 0,20   [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_bwbd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:51:21+08:00 ] 127.0.0.1 /Manerger/index.php/Power/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:51:22+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:51:57+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('客户诊断报名','/',1,1481464317,0,0) [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:51:57+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10252 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:04+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=remove
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.008001s ]
+SQL: DELETE FROM `dcyd_node` WHERE ( `id` = 10252 ) [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:52:04+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:52:24+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add&pid=10252
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.007000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `path` FROM `dcyd_node` WHERE ( `id` = 10252 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('客户诊断报名','/',1,1481464344,10252,'_10252') [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:24+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:30+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.008001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10249 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10250 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10251 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:52:32+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10232 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10234 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10235 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:34+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.007001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10110 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10111 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10230 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:40+08:00 ] 127.0.0.1 /Manerger/index.php/Power/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:52:40+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.007000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:55+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('客户诊断报名','/',1,1481464375,0,0) [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:52:56+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:53:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10249 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10250 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10251 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:53:48+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add&pid=10254
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `path` FROM `dcyd_node` WHERE ( `id` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('财务诊断','__APP__/Question/cwzd',1,1481464428,10254,'0_10254') [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:53:49+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:53:51+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10255 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:54:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add&pid=10254
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `path` FROM `dcyd_node` WHERE ( `id` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('审合�\�','__APP__/Question/sht',1,1481464454,10254,'0_10254') [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:54:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:54:36+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add&pid=10254
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `path` FROM `dcyd_node` WHERE ( `id` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('审报�\�','__APP__/Question/sbb',1,1481464476,10254,'0_10254') [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:54:36+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:55:02+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=add&pid=10254
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.009000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT `path` FROM `dcyd_node` WHERE ( `id` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+SQL: INSERT INTO `dcyd_node` (`title`,`name`,`status`,`ctime`,`pid`,`path`) VALUES ('面试财务经理','__APP__/Question/mianshi',1,1481464502,10254,'0_10254') [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:55:02+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:55:04+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.008000s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10255 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10256 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10257 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10258 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:55:11+08:00 ] 127.0.0.1 /Manerger/index.php/Role/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T21:55:11+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powertree
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10109 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10110 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10111 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10230 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10231 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10232 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10234 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10235 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10254 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10255 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10256 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10257 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10258 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10248 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10249 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10250 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10251 )  [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:55:12+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.011001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:55:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.008000s ]
+SQL: SELECT `power` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:55:18+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=update
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.009000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `pid` FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251') )  [ RunTime:0.001000s ]
+SQL: SELECT `name`,`title`,CONCAT_WS("_",`path`,id) as abspath FROM `dcyd_node` WHERE ( `id` IN ('10109','10110','10111','10230','10231','10232','10234','10235','10254','10255','10256','10257','10258','10248','10249','10250','10251') ) ORDER BY abspath  [ RunTime:0.001000s ]
+SQL: UPDATE `dcyd_role` SET `description`='管理',`name`='管理�\�',`power`='10109,10110,10111,10230,10231,10232,10234,10235,10254,10255,10256,10257,10258,10248,10249,10250,10251',`powername`='站点管理,角色管理,功能模块,管理员管�\�,用户管理,用户管理,头像管理,消息管理,客户诊断报名,财务诊断,审合�\�,审报�\�,面试财务经理,内容管理,Boss�\�,扁鹊V�\�,百问百答',`powers`='[{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7ad9\\u70b9\\u7ba1\\u7406\",\"abspath\":\"0_10109\"},\"childrens\":[{\"name\":\"__APP__\\/Role\\/index\",\"title\":\"\\u89d2\\u8272\\u7ba1\\u7406\",\"abspath\":\"0_10109_10110\"},{\"name\":\"__APP__\\/Power\\/index\",\"title\":\"\\u529f\\u80fd\\u6a21\\u5757\",\"abspath\":\"0_10109_10111\"},{\"name\":\"__APP__\\/Admin\\/index\",\"title\":\"\\u7ba1\\u7406\\u5458\\u7ba1\\u7406\",\"abspath\":\"0_10109_10230\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231\"},\"childrens\":[{\"name\":\"__APP__\\/User\\/index\",\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"abspath\":\"0_10231_10232\"},{\"name\":\"__APP__\\/User\\/image\",\"title\":\"\\u5934\\u50cf\\u7ba1\\u7406\",\"abspath\":\"0_10231_10234\"},{\"name\":\"__APP__\\/User\\/mesage\",\"title\":\"\\u6d88\\u606f\\u7ba1\\u7406\",\"abspath\":\"0_10231_10235\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5185\\u5bb9\\u7ba1\\u7406\",\"abspath\":\"0_10248\"},\"childrens\":[{\"name\":\"__APP__\\/Content\\/boss\",\"title\":\"Boss\\u542c\",\"abspath\":\"0_10248_10249\"},{\"name\":\"__APP__\\/Content\\/vk\",\"title\":\"\\u6241\\u9e4aV\\u8bfe\",\"abspath\":\"0_10248_10250\"},{\"name\":\"__APP__\\/Content\\/bwbd\",\"title\":\"\\u767e\\u95ee\\u767e\\u7b54\",\"abspath\":\"0_10248_10251\"}]},{\"power\":{\"name\":\"\\/\",\"title\":\"\\u5ba2\\u6237\\u8bca\\u65ad\\u62a5\\u540d\",\"abspath\":\"0_10254\"},\"childrens\":[{\"name\":\"__APP__\\/Question\\/cwzd\",\"title\":\"\\u8d22\\u52a1\\u8bca\\u65ad\",\"abspath\":\"0_10254_10255\"},{\"name\":\"__APP__\\/Question\\/sht\",\"title\":\"\\u5ba1\\u5408\\u540c\",\"abspath\":\"0_10254_10256\"},{\"name\":\"__APP__\\/Question\\/sbb\",\"title\":\"\\u5ba1\\u62a5\\u8868\",\"abspath\":\"0_10254_10257\"},{\"name\":\"__APP__\\/Question\\/mianshi\",\"title\":\"\\u9762\\u8bd5\\u8d22\\u52a1\\u7ecf\\u7406\",\"abspath\":\"0_10254_10258\"}]}]' WHERE ( `id` = 1 ) [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:55:18+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.012001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:55:28+08:00 ] 127.0.0.1 /Manerger/index.php?m=Public&a=logout
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2016-12-11T21:55:28+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-12-11T21:55:28+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:55:35+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.009001s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.008001s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.000000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1481464535,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2016-12-11T21:55:35+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:55:38+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:55:39+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sht
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:55:40+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sbb
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:55:41+08:00 ] 127.0.0.1 /Manerger/index.php/Question/mianshi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:08+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:09+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:09+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sht
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:10+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sbb
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:10+08:00 ] 127.0.0.1 /Manerger/index.php/Question/mianshi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 无法加载模块:Question
+
+[ 2016-12-11T21:57:13+08:00 ] 127.0.0.1 /Manerger/index.php/Role/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T21:57:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powertree
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.011001s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=0 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10109 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10110 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10111 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10230 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10231 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10232 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10234 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10235 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10254 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10255 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10256 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10257 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10258 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10248 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10249 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10250 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,title as text,`pid` FROM `dcyd_node` WHERE ( pid=10251 )  [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:57:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Role&a=rolelist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 20 行.
+SQL: SELECT `id`,`name`,`powername`,`power`,`description`,`ctime` FROM `dcyd_role` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\RoleAction.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_role` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T21:57:15+08:00 ] 127.0.0.1 /Manerger/index.php/Power/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Constant THEME_NAME already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T21:57:15+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10109 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10231 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10248 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T21:57:17+08:00 ] 127.0.0.1 /Manerger/index.php?m=Power&a=powerlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010001s ]
+SQL: SELECT `id`,`pid`,`name`,`title`,`status`,`path`,`ctime` FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10254 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10255 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10256 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10257 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_node` WHERE ( `pid` = 10258 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:02:44+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-12-11T22:02:45+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sht
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:02:46+08:00 ] 127.0.0.1 /Manerger/index.php/Question/sbb
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-12-11T22:02:46+08:00 ] 127.0.0.1 /Manerger/index.php/Question/mianshi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:03:25+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\b9e8abf512659ea560d2f484cefa993e.php 第 124 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-12-11T22:03:26+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=vklist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 336 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 337 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 338 行.
+SQL: SHOW COLUMNS FROM `dcyd_vk` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 341 行.
+SQL: SELECT `id`,`title`,`content`,`img`,`url` FROM `dcyd_vk` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\ContentAction.class.php 第 342 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_vk` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:06:07+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\b9e8abf512659ea560d2f484cefa993e.php 第 123 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-12-11T22:06:07+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.008000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.010000s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.001000s ]
+ERR: 非法操作:cwzdlist
+
+[ 2016-12-11T22:07:05+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: res D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\b9e8abf512659ea560d2f484cefa993e.php 第 123 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-12-11T22:07:05+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 非法操作:cwzdlist
+
+[ 2016-12-11T22:13:29+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T22:13:30+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 非法操作:cwzdlist
+
+[ 2016-12-11T22:13:31+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:13:31+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 非法操作:cwzdlist
+
+[ 2016-12-11T22:14:05+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:14:06+08:00 ] 127.0.0.1 /Manerger/index.php?m=Content&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+ERR: 非法操作:cwzdlist
+
+[ 2016-12-11T22:15:00+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:15:00+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:20:44+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:20:44+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.015001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:23:02+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:23:03+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2016-12-11T22:29:10+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:29:10+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:29:41+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:29:41+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.011000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:31:13+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T22:31:13+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:32:50+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:32:51+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:33:39+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T22:33:40+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:33:44+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:33:44+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.011000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:35:09+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T22:35:10+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.018001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:37:56+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:37:56+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:38:05+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-12-11T22:38:05+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:39:25+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-12-11T22:39:26+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.014000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:39:58+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-12-11T22:39:58+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:44:10+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:44:11+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:44:15+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:44:17+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.010001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:45:34+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:45:35+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:47:12+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:47:13+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:47:16+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:47:18+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:47:24+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 16 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 17 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:51:20+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-12-11T22:51:20+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.010000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 22 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:51:24+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008000s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `status` = '2' ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `status` = '2' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+
+[ 2016-12-11T22:51:26+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+
+[ 2016-12-11T22:51:30+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.011001s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+
+[ 2016-12-11T22:51:32+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.009000s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `status` = '1' ) LIMIT 1   [ RunTime:0.001001s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+
+[ 2016-12-11T22:52:11+08:00 ] 127.0.0.1 /Manerger/index.php/Question/cwzd
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-12-11T22:52:11+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: phone D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 13 行.
+NOTIC: [8] Undefined index: time D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 22 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:52:14+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008000s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `name` LIKE '%44%' ) LIMIT 0,20   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `name` LIKE '%44%' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-12-11T22:52:19+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.007000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 22 行.
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 23 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-12-11T22:52:36+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.011001s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `time` = '2016-11-12' ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `time` = '2016-11-12' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+
+[ 2016-12-11T22:52:38+08:00 ] 127.0.0.1 /Manerger/index.php?m=Question&a=cwzdlist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `dcyd_cwzd` [ RunTime:0.008001s ]
+SQL: SELECT `id`,`name`,`phone`,`time`,`status` FROM `dcyd_cwzd` WHERE ( `time` = '2016-11-12' ) LIMIT 0,20   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_cwzd` WHERE ( `time` = '2016-11-12' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\QuestionAction.class.php 第 24 行.
+

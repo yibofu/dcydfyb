@@ -1,0 +1,10 @@
+/*重置css*/
+/*index*/
+a:hover{text-decoration:none}
+img{width:100%;height:100%}
+.clear{clear:both;}
+a{blr:expression(this.onFocus=this.blur());outline:none;border:none}/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+a:focus{outline:none;}
+a:hover{outline:none;border:none}
+li{list-style:none;}
+body{font:16px '冬青黑体简体中文';color:#666;background:#f9f9f9;}

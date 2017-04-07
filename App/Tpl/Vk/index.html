@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扁鹊V课</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        p{ margin: 0;}
+        body{ margin: 0;}
+        a{text-decoration:none;color:#000;}
+        .box{ background: #dddddd; height: 1.3rem; width: 100%; border-top: .1rem solid #dddddd;}
+        .bos2{ background: rgba(253,252,251,0.5); height: 2rem; line-height: 2rem; color: #000000;  width: 100%; position: absolute;bottom: 0; left: 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+        .bos3{ background-color: #fff; height: 6.2rem;white-space: normal;overflow:hidden;text-overflow:ellipsis;}
+        .bos3 p{ line-height: 1.4rem; padding: .65rem 3% .65rem 3%; color: #5b5b5d;}
+        .bosz{ background: url(images/ba.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosx{ background: url(images/ba.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosp{ background: url(images/bb.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosi{ background: url(images/bc.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosf{ background: url(images/bd.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bose{ background: url(images/be.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosc{ background: url(images/bf.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosb{ background: url(images/bi.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosa{ background: url(images/bu.png) no-repeat; width: 100%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosl{  background: url(images/bl.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosw{  background: url(images/bw.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosr{  background: url(images/br.png) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosm{  background: url(images/bm.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosy{  background: url(images/by.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .boso{  background: url(images/bo.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosaa{  background: url(images/baa.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosab{  background: url(images/bab.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosac{  background: url(images/bbc.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosai{  background: url(images/booi.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bosae{  background: url(images/boase.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhio{  background: url(images/bhio.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhia{  background: url(images/bhia.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhib{  background: url(images/bhib.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhic{  background: url(images/bhic.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhid{  background: url(images/bhid.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhif{  background: url(images/bhif.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+        .bhiy{  background: url(images/bhiy.jpg) no-repeat; width: 99.5%; height: 15rem; background-size: 100% 13rem; position: relative;border: 0.1rem solid #cccccc;}
+
+    </style>
+</head>
+<body>
+    <div><!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/aIe3cGtLPlK_aYaFrReaog">
+            <div class="box"></div>
+            <div class="bhiy">
+                <div class="bos2">【原创】别做“数据表哥”费晓虹教你做报表！</div>
+            </div>
+            <div class="bos3">
+                <p>你知道报表CEO是什么吗？<br/>
+                    做工作的时候为什么要做？<br/>
+                    财务工作大多数时间花到哪里？<br/>
+                    财务总监该怎么给老板出报表？<br/>
+                    财务总监给老板出报表以什么形式？
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/fPM2_vb483ztAZZ8o1uAGg">
+            <div class="box"></div>
+            <div class="bhif">
+                <div class="bos2">【原创】孙从青带你搞懂市盈率 玩转PE （四）</div>
+            </div>
+            <div class="bos3">
+                <p>怎样调整被估值企业的净利率？<br/>
+                    证监会的21条非经常性损益是什么？<br/>
+                    关于非经常性损益的要点？<br/>
+                    把非经常性损益列出后怎样处理？<br/>
+                    怎样计算扣除非经常性损益后的净利率？
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/dqx1gOr-KBJZMiUV_YGzsg">
+            <div class="box"></div>
+            <div class="bhid">
+                <div class="bos2">【原创】孙从青带你搞懂市盈率 玩转PE （三）</div>
+            </div>
+            <div class="bos3">
+                <p>什么是中位数？<br/>
+                    怎样用市盈率估值？<br/>
+                    如何去找上市公司的市盈率？<br/>
+                    找上市公司市盈率找多少合适？
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/in-oMNUV3WRAt9UjMNew5w">
+            <div class="box"></div>
+            <div class="bhic">
+                <div class="bos2">【原创】孙丛青带你搞懂市盈率 玩转PE （二）</div>
+            </div>
+            <div class="bos3">
+                <p>市盈率的公式?<br/>
+                    市盈率估值的假设?<br/>
+                    市盈率法的操作?<br/>
+                    动态静态市盈率是什么?
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/bZK2mYSK4JPKNU1Xghp-hw">
+            <div class="box"></div>
+            <div class="bhib">
+                <div class="bos2">【原创】孙丛青带你搞懂市盈率 玩转PE （一）</div>
+            </div>
+            <div class="bos3">
+                <p>怎样解决资金不足？<br/>
+                    什么叫债权融资？<br/>
+                    债权融资的形式？<br/>
+                    市盈率估值法的基本原理？<br/>
+                    市盈率法对企业估值的因素？
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/uLwAflO984MPqg7oCl_9lw">
+            <div class="box"></div>
+            <div class="bhia">
+                <div class="bos2">【公开课】银行新政落地，你的资产将再无秘密可言！</div>
+            </div>
+            <div class="bos3">
+                <p>一、12月1日剧变：银发【2016】302号文，个人账户将分类管理是什么鬼?<br/>
+                    二、80%的老板会失眠，个人账户分类管理给大家戴上紧箍咒;<br/>
+                    三、万税万税万万税，个人账户分类管理对企业和个人的纳税影响;
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/8lGfHtwwkexYrl2tID2XZA">
+            <div class="box"></div>
+            <div class="bhio">
+                <div class="bos2">【原创】曹继学老师带你解读：企业注销中的“财务坑”</div>
+            </div>
+            <div class="bos3">
+                <p>公司注销都有哪些问题？<br/>
+                    公司不走注销流程，不去管可以吗？<br/>
+                    注销公司的具体时间你知道吗？
+
+                </p>
+            </div>
+        </a>
+        <a href="http://mp.weixin.qq.com/s/Eiaays9YrZO02LTYYX7qUg">
+            <div class="box"></div>
+            <div class="bosae">
+                <div class="bos2">史上最浅显的缴税指南  曹继学老师让你少缴糊涂税！</div>
+            </div>
+            <div class="bos3">
+                <p>公司需要缴纳哪些税费？<br/>
+                    哪些企业可以申请成为一般纳税人？<br/>
+                    企业成为一般缴税人后是否申请在成为小规模纳税人？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/8iLfhKhN-HY0eqiHwWiS1Q">
+            <div class="box"></div>
+            <div class="bosai">
+                <div class="bos2">【原创】扁鹊时间：创业经营想长久 杨丽华老师告诉你 股权设计奥秘（下）</div>
+            </div>
+            <div class="bos3">
+                <p>股东怎样用财务其管理公司？<br/>
+                    怎样用好股权保证自己的权益？<br/>
+                    股东怎样合理退出公司？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/VgGKCfdWsCTgX6wQab3JJg">
+            <div class="box"></div>
+            <div class="bosac">
+                <div class="bos2">【原创】扁鹊时间：创业经营想长久 杨丽华老师告诉你  股权设计奥秘（上）</div>
+            </div>
+            <div class="bos3">
+                <p>合伙创业初期有哪些问题？<br/>
+                    股份怎么分配合理？<br/>
+                    经营管理无法统一怎么办？<br/>
+                    哪部分股份不能稀释？<br/>
+                    怎样选择创业伙伴？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/l5_uRrr5UIvKiB_y-WWACA">
+            <div class="box"></div>
+            <div class="bosab">
+                <div class="bos2">【原创】扁鹊时间：财务总监想躺着挣钱？费晓虹老师告诉你 so  easy !！</div>
+            </div>
+            <div class="bos3">
+                <p>什么原因导致财务这么忙？<br/>
+                    财务能不能不加班按时完成工作？<br/>
+                    财务怎样有条理，有效率的完成任务？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/F-2MNlqOgX5tweA0F1KUYA">
+            <div class="box"></div>
+            <div class="bosaa">
+                <div class="bos2">【原创】扁鹊时间：孙从青老师揭秘“市净率估值法”！</div>
+            </div>
+            <div class="bos3">
+                <p>市净率估值是什么？<br/>
+                    估值方法有哪些？<br/>
+                    企业估值的目的是什么？<br/>
+                    市净率的公式你知道吗？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/YPldRCeENQ6s9ywV8wYpdA">
+            <div class="box"></div>
+            <div class="boso">
+                <div class="bos2">【原创】扁鹊时间  翁嘉：企业“天网”正将你的企业扒的一干二净！</div>
+            </div>
+            <div class="bos3">
+                <p>企业信息查询系统究竟是什么？<br/>
+                    信息系统包括什么？有怎样功能？<br/>
+                    企业家该如何应用信息查询系统？
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-1-->
+        <a href="http://mp.weixin.qq.com/s/QTDkitTcEjGq7J1SS23SjQ">
+            <div class="box"></div>
+            <div class="bosy">
+                <div class="bos2">【原创】速看！印正国悄悄告诉你：节省税收成本的绝密“优惠政策”</div>
+            </div>
+            <div class="bos3">
+                <p>如何利用税收优惠政策降低企业的税收成本？<br/>
+                    如何利用行业的税率优惠做好企业的税收规划？<br/>
+                    企业存货账目不符怎么解决？<br/>
+                    妥善解决遗留问题方案如何规划?
+                </p>
+            </div>
+        </a>
+        <!--1-1-1-->
+        <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483927&idx=1&sn=5b0e85b55f8af75309696a0fe7412acd&chksm=eade36b5dda9bfa31fcd1c492ff5fc867530b93c8a6cf690df05a5905f5491df4226071ea66d&scene=0#wechat_redirect">
+            <div class="box"></div>
+            <div class="bosm">
+                <div class="bos2">【原创】扁鹊时间:你注意到财务指标中的“wc”吗?</div>
+            </div>
+            <div class="bos3">
+                <p>什么是WC?<br/>
+                    硬性wc和软性wc的区别?<br/>
+                    wc就是working capital!营运资金<br/>
+                    营运资金能反映出公司效率??
+                </p>
+            </div>
+        </a>
+        <!--1-1-->
+        <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483912&idx=1&sn=df247cfed6889ba5851be936764c1960&chksm=eade36aadda9bfbc78a825d138c74f0daac58e3c69aa8d5257f4c6b662e620acb627b6b76b9d&scene=0#wechat_redirect" class="bos">
+            <div class="box"></div>
+            <div class="bosl">
+                <div class="bos2">【原创】新常态下的财务风险管控 ——你知道吗?</div>
+            </div>
+            <div class="bos3">
+                <p>什么是为他人虚开？<br/>
+                    或是让他人虚开<br/>
+                    股权架构怎样设计？
+                </p>
+            </div>
+        </a>
+        <!--1-2-->
+        <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483893&idx=2&sn=a9f19d2f99fae0e4962325ac74b54f65&chksm=eade3557dda9bc4129929d7b2fd87056ba739db970d72e3ceebc122a0b4b5fef96ce45282cfe&scene=35#wechat_redirect" class="bos">
+            <div class="box"></div>
+            <div class="bosw">
+                <div class="bos2">【原创】扁鹊时间：孙从青老师带您玩转股权(下)</div>
+            </div>
+            <div class="bos3">
+                <p>老板的钱是老板的，公司的钱是公司，只有公司经营业务，才能用公司的钱，老板一旦把钱投到公司里面，这钱就不是老板的了，是这样的么？ ——今天继续由孙丛青老师为您解析.....</p>
+            </div>
+        </a>
+        <!--1-3-->
+        <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483874&idx=1&sn=83a2ed60b1df0c223a288b19b98656cb&chksm=eade3540dda9bc5669a758f40c368df2947b5a44df9e9366facca54c0ff57c5fd781a9183aec&scene=35#wechat_redirect" class="bos">
+            <div class="box"></div>
+            <div class="bosr">
+                <div class="bos2">【原创】扁鹊时间：孙从青老师带您玩转股权(上)</div>
+            </div>
+            <div class="bos3">
+                <p>“朋友看好了你的公司 准备和你一起做，出资1000万，这个钱进来后，那这个钱算是你的吗？你能用吗？”——今天孙丛青老师为您解析......</p>
+            </div>
+        </a>
+        <!--1-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483845&idx=1&sn=c3377798d63338f3f9b5a33519e03332&chksm=eade3567dda9bc711014cd5a0e352897cb5d1a041eb36ae853b6556b49433698e3e811bba68f&mpshare=1&scene=1&srcid=1115fJ8fsrFOQhP9l2kyb7YE&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosa">
+                <div class="bos2">【原创】扁鹊时间：销售环节的税务筹划（上）</div>
+            </div>
+            <div class="bos3">
+                <p>听“财务男神”吕定杰老师讲解企业在销售环节的税务筹划…</p>
+            </div>
+        </a>
+        <!--2-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483828&idx=1&sn=5aa2f1c6486e59d44cc4452e2841e161&chksm=eade3516dda9bc002f78be9ffaeb999c69b26f83e24aa2f124a5f6729a5d04db52b11494ea15&mpshare=1&scene=1&srcid=1115myTcQk89355sseGOdasc&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosb">
+                <div class="bos2">【原创】扁鹊时间：金疙瘩不想卖成白菜价？</div>
+            </div>
+            <div class="bos3">
+                <p>企业市值如何测算？  股权价格如何测定？价值同价格究竟是什么关系？——今天，公司估值的几种方法。</p>
+            </div>
+        </a>
+        <!--3-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483780&idx=1&sn=4fa957d42eed810feb3605c7f0934023&chksm=eade3526dda9bc30f7f52fb0653682c227c39e8338dcf43efbb1a8a98fc3d159e1ba671911f6&mpshare=1&scene=1&srcid=1115jYPesdhJT9hRtaieEOhh&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosc">
+                <div class="bos2">【原创】扁鹊时间：采购节税（下）：供应链的塑造</div>
+            </div>
+            <div class="bos3">
+                <p>为什么有的老板一做就是偷税？有人一不小心就是避税？聪明人总能节税？——快来听听吕老师最新微课——《采购环节的节税策略》。</p>
+            </div>
+        </a>
+        <!--4-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483771&idx=1&sn=6d075207d391ec170a995bd7a8e1c7ec&chksm=eade35d9dda9bccf4b26a7ac2df5c38228fc84d2441a80617e578d20e23564003f24e23e3b2e&mpshare=1&scene=1&srcid=1115eLsGFENqsZHIqQ2bOPQG&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bose">
+                <div class="bos2">【原创】扁鹊时间：采购节税（上）：供应商的管理</div>
+            </div>
+            <div class="bos3">
+                <p>为什么有的老板一做就是偷税？有人一不小心就是避税？聪明人总能节税？——快来听听吕老师最新微课——《采购环节的节税策略》。</p>
+            </div>
+        </a>
+        <!--5-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483756&idx=1&sn=f318a7099768f446b89ac3898614e430&chksm=eade35cedda9bcd8672376d3ec55f5288d6a78b272a4c075e24cf4b444c0c0b06bf62b0edbf3&mpshare=1&scene=1&srcid=1115Phc95FhZENZuHAJjGRkH&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosf">
+                <div class="bos2">【原创】扁鹊时间：董高仲老师解读税务风险新常态</div>
+            </div>
+            <div class="bos3">
+                <p>在上一期《扁鹊时间》里，董高仲老师从税务稽查的角度解读了“复华药业事件”，我们发现“金税三期”系统的出现，确实给企业的税务风险管控带来了新的挑战......</p>
+            </div>
+        </a>
+        <!--6-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483744&idx=1&sn=2deb016c9b44bb9a0284f7bdca79d2db&chksm=eade35c2dda9bcd4605d08837b18416c7b23e4344e19f687310ba333339fa9e2b5c9b08c1bcd&mpshare=1&scene=1&srcid=11152eP6IYRfeTRDIuJss4tp&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosi">
+                <div class="bos2">【原创】扁鹊时间：复华药业被罚2.6亿？</div>
+            </div>
+            <div class="bos3">
+                <p>税务机关拟对复华药业罚款合计约2.66亿元，引发业内轰动。2015 年年报显示，复华药业净利润为5497 万元，罚款加补缴税款金额将超5亿，这也就是意味着复华药业10年白干了.....</p>
+            </div>
+        </a>
+        <!--7-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483725&idx=1&sn=9cdf7e97a5a8e06ee11a9e87da06d662&chksm=eade35efdda9bcf9219d274f5f0bdb5db1d85183a7fef4c1392488ab9e63cde72710d402d2b0&mpshare=1&scene=1&srcid=1115XCcMprLf3Ytpi22ANi7r&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosp">
+                <div class="bos2">【原创】扁鹊时间：“税务零申报”</div>
+            </div>
+            <div class="bos3">
+                <p>企业的运营是有成本的，长期零申报，往往就会涉及“走逃户”、虚开发票、隐瞒收入等风险，你知道吗？！快来听听曹老师为你解读“税务零申报”，寻找真正的解决之道！</p>
+            </div>
+        </a>
+        <!--8-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483734&idx=1&sn=623df159afda38a370900d1502515117&chksm=eade35f4dda9bce26ee885a7a9246d0f09e0412fff606d8522af4fcd56972b9a16a333fe0136&mpshare=1&scene=1&srcid=1115cyc7DHYvE7voPKzecF3W&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosx">
+                <div class="bos2">【原创】扁鹊V课：老板少交税的正确心法（下）</div>
+            </div>
+            <div class="bos3">
+                <p>让“财务男神”吕定杰老师用最浅显的案例告诉你，究竟什么才是最安全的节税方法！</p>
+            </div>
+        </a>
+        <!--9-->
+        <a href="https://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483698&idx=1&sn=a910782a5ed2294ab8b7316514547b94&chksm=eade3590dda9bc86e9cb89339b68eefb9cb2f949135c3eb23040567342b89b096a8fba4837c0&mpshare=1&scene=1&srcid=1115wjtmMIE2Q9OIhtaxMnbU&pass_ticket=AIGnKC3dZxPxokQ3hBtWRvsTC4skVVPyW9OnMB3omrFR2ZpM450KXN4tPedv9Oqb#rd" class="bos">
+            <div class="box"></div>
+            <div class="bosz">
+                <div class="bos2">【原创】扁鹊V课：老板少交税的正确心法（上）</div>
+            </div>
+            <div class="bos3">
+                <p>为什么有的老板一不小心就是偷税？
+                    有的人一不小心就是避税？
+                    然而聪明人会是节税!
+                    快来听听吕定杰老师是怎么做节税的！
+                </p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

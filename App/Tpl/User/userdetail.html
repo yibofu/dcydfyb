@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>OO交友 -- 用户详情</title>
+    <link rel="stylesheet" href="/Public/app/css/userdetail.css" media="all"/>
+    <!--[if lt IE9>
+    <script src="./js/html5.js"></script>
+    <![end if]-->
+    <style>
+
+    </style>
+
+</head>
+<body>
+<header id="pageHeader">
+    <section class="container" >
+
+        <span class="logo">
+            <img src="/Public/app/img/ooxxlogo.png" alt="OOXX"/>
+        </span>
+            <nav class="oonav">
+                <ul>
+                    <li class="home">
+                        <a href="{:U('Show/index')}"><span class="homeIcon"></span>首页</a>
+                    </li>
+					<if condition="$sex eq 1">
+					<a href="{:U('User/man')}">
+					<li class="user">
+                        <span class="userIcon"></span>{$nickname}，你好!
+                    </li>
+					</a>
+                    <li class="setting">
+                        <a href="{:U('User/man')}"><img src="/Public/app/img/setting.png" alt="" title="设置"/></a>
+
+                    </li>
+                    <li class="message">
+                        <a href="{:U('User/man')}"><img src="/Public/app/img/message.png" alt="" title="消息"/></a>
+
+                    </li>
+					<else />
+					<a href="{:U('User/women')}">
+					<li class="user">
+                        <span class="userWomen"></span>{$nickname}，你好!
+                    </li>
+					</a>
+					<li class="setting">
+                        <a href="{:U('User/women')}"><img src="/Public/app/img/setting.png" alt="" title="设置"/></a>
+
+                    </li>
+                    <li class="message">
+                        <a href="{:U('User/women')}"><img src="/Public/app/img/message.png" alt="" title="消息"/></a>
+
+                    </li>
+					</if>
+                    <li class="quit">
+                        <a href="{:U('Index/loginout')}"><img src="/Public/app/img/quit.png" alt="" title="退出"/></a>
+                    </li>
+                </ul>
+            </nav>
+    </section>
+</header>
+<section class="main">
+    <div class="container" style="background: #ffffff;">
+        <div class="header">
+            <div class="fl detailBox">
+                <span><img src="/Public/app/img/detail.png" alt=""/>用户详情</span>
+            </div>
+            <div class="fr searchBox">
+               <form action="{:U('Show/index')}" method="post" id="user_search">
+                   <input class="searchInput" type="search" name="phone_id" placeholder="请输入手机号或用户昵称" maxlength="11"/>
+                    <span class="searchbtn" onclick="fun()"><i></i></span>
+                </form>
+				
+            </div>
+        </div>
+        <div class="body">
+            <div class="panel">
+                <div class="fl panelImg">
+                    <div class="userImg">
+                        <span class="imgbox">
+							<if condition="$result.img_status eq 1">
+                             <img src="{$result.img_url}" alt=""/>
+							<else />
+							<img src="{$result.img_url}" alt=""/>
+							</if>	
+                        </span>
+                        <h4>{$result.nickname}~</h4>
+                    </div>
+                    <div class="ID">
+                        <h5>&nbsp;ID:{$result.userid}</h5>
+                        <p>"{$result.show}"</p>
+                    </div>
+                </div>
+                <div class="fl panelInfo">
+                    <ul>
+                        <li>性别 <em>女</em></li>
+                        <li>城市<em>{$result.city}</em></li>
+                        <li>学校<em>{$result.school}</em></li>
+                        <li>职业<em>{$result.job}</em></li>
+                        <li>星座<em>{$result.constellation}</em></li>
+                    </ul>
+                </div>
+				<if condition="$sex eq 1">
+                <div class="fl action">
+                    <div class="dashang">
+                        <span class="dsIcon"></span>
+                        <span class="dstext">打赏</span>
+                    </div>
+                    <div class="liaoliao">
+                        <span class="dsIcon "></span>
+                        <span class="dstext">聊聊</span>
+                    </div>
+                    <div class="collect">
+                        <span class="dsIcon {$add_class}"></span>
+                        <span class="dstext">收藏</span>
+                    </div>
+                </div>
+				</if>
+            </div>
+        </div>
+    </div>
+	<input type="hidden" name="user_id" id="user_id" value="{$result.id}" />
+	<input type="hidden" name="userid_temp" id="userid_temp" value="{$result.userid}" />
+	<input type="hidden" name="is_consume" id="is_consume" value="{$is_consume}" /> 
+	<input type="hidden" name="chat_id" id="chat_id" value="{$chat_id}" />
+	<input type="hidden" name="img_url" id="img_url" value="{$img_url}" />
+</section>
+<section class="shadow" id="dsshadow" style="display: none;">
+    <div class="dialog">
+        <div class="dialog-header">打赏 <span class="dialog-close"><img src="/Public/app/img/close.png" alt=""/></span></div>
+        <div class="dialog-body">
+            <div class="momey_box">
+                <div class="momey">
+                    <div class="momey1">
+                        <img src="/Public/app/img/ds1.png" alt=""/><br/>
+                        <p>￥10</p>
+                        <div class="num">
+                            <em>0</em>
+                            <span class="reduce">-</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="momey">
+                    <div class="momey1">
+                        <img src="/Public/app/img/ds2.png" alt=""/><br/>
+                        <p>￥100</p>
+                        <div class="num">
+                            <em>0</em>
+                            <span class="reduce">-</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="momey">
+                    <div class="momey1">
+                        <img src="/Public/app/img/ds3.png" alt=""/><br/>
+                        <p>￥1000</p>
+                        <div class="num">
+                            <em>0</em>
+                            <span class="reduce">-</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="totall">
+                <span><i>￥</i><b id="total_prince">0</b></span>
+            </div>
+        </div>
+        <div class="charge">付款</div>
+    </div>
+</section>
+<!--测试支付    图片 246*246-->
+<section class="shadow" id="pay" style="display: none;">
+    <div class="dialog" style="height:400px;">
+        <div class="dialog-header">支付<span class="dialog-close" id="close_temp"><img src="/Public/app/img/close.png" alt=""/></span></div>
+        <div class="dialog-body" style="height:250px;">
+           <img src="/Public/app/img/pay.jpg" width="246" height="246" style="margin: 0 auto;display:block;">
+        </div>
+		<div style="width: 220px;height: 44px;line-height:44px;color: #ffffff;font-size: 22px;  background: #e86867;  text-align: center;  margin: 0 auto;border-radius: 3px;cursor: pointer;" onclick="pay_over()">付款</div>
+    </div>
+</section>
+<!--测试支付结束-->
+<section class="shadow" id="llshadow" style="display: none;">
+    <div class="dialog ">
+        <div class="dialog-header"> <span class="dialog-close"><img src="/Public/app/img/close.png" alt=""/></span></div>
+        <div class="dialog-body" id="msg">
+            <div class="date"></div>
+            
+            
+        </div>
+        <div class="dialog-footer">
+                <input type="text" id="sendingtext" name="liaoliao" value="请输入文字" maxlength="20"/>
+				<input type="hidden" id="hidden_chat_id" />
+                <span class="dialog-btn" id="sending">发送</span>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container" style="line-height: 23px; padding-top: 23px; font-size: 15px;">
+        版权所有：宜春姝慧信息咨询有限公司<br/>网站备案：赣ICP备15011104号-3&nbsp;|&nbsp;客服电话：400-998-7220（周一至周五：9:00-18:00）&nbsp;|&nbsp;客服邮箱：kefu@oojiaoyou.com
+    </div>
+</footer>
+<script src="/Public/app/js/jquery-1.11.3.min.js"></script>
+<script src="/Public/app/js/detail.js"></script>
+</body>
+<script>
+	function fun(){
+		$("#user_search").submit();
+	}
+	function pay_over(){
+		var total_prince = $('#total_prince').html();
+		 total_prince = parseInt(total_prince);
+		var uid = $("#user_id").val();
+		var userid = $("#userid_temp").val();
+		$.ajax({
+			    type:'post',
+				url:"/index.php/User/pay_temp",
+				data:{'total_prince':total_prince,'uid':uid},
+				success:function(data){
+			        window.location.href = '/index.php/User/userdetail.html?temp='+userid;
+				}
+		})
+	}
+    $(".searchInput").on("blur",function(){
+        var val=$(this).val();
+        if(!(new RegExp(/[\u4e00-\u9fa5a-zA-Z]/gm).test(val))){
+            if(val != ""){
+                alert("请输入中文或字母");
+            }
+        }
+    });
+</script>
+</html>

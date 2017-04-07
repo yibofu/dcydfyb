@@ -1,0 +1,634 @@
+[ 2017-03-16T09:50:43+08:00 ] 127.0.0.1 /manerger/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Lib\Action\IndexAction.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin D:\phpstudy\WWW\dcyd\Manage\Runtime\Cache\6eb21b90e50e413ebd495101e2f3fb87.php 第 27 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T09:50:44+08:00 ] 127.0.0.1 /Manerger/index.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T09:50:50+08:00 ] 127.0.0.1 /Manerger/index.php/Public/checklogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_admin` [ RunTime:0.007000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`rid`,`username` FROM `dcyd_admin` WHERE ( `username` = 'admin' ) AND ( `password` = '8b88e6b7e854b04cb74e' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_role` [ RunTime:0.006000s ]
+SQL: SELECT `powers` FROM `dcyd_role` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_node` [ RunTime:0.006001s ]
+SQL: SELECT `name` FROM `dcyd_node` WHERE ( pid>0 )  [ RunTime:0.002000s ]
+SQL: UPDATE `dcyd_admin` SET `last_time`=1489629050,`last_ip`=127 WHERE ( id=1 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: var D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 247 行.
+
+[ 2017-03-16T09:50:50+08:00 ] 127.0.0.1 /Manerger/index.php?
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-03-16T09:51:01+08:00 ] 127.0.0.1 /Manerger/index.php/Up/viewclass
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.007000s ]
+SQL: SELECT DISTINCT  `id`,`kind` FROM `dcyd_viewkinds`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_viewclass` [ RunTime:0.007000s ]
+SQL: SELECT DISTINCT  `id`,`zname` FROM `dcyd_viewclass`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-03-16T09:51:02+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=viewclassls
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: fname D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 567 行.
+NOTIC: [8] Undefined index: zname D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 568 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewclass` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 572 行.
+SQL: SELECT `id`,`vid`,`fname`,`zname` FROM `dcyd_viewclass` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 574 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_viewclass` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:07+08:00 ] 127.0.0.1 /Manerger/index.php/Up/teacher
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+SQL: SELECT DISTINCT  `id`,`name` FROM `dcyd_viewkinds`  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'name' in 'field list'
+ [ SQL语句 ] : SELECT DISTINCT  `id`,`name` FROM `dcyd_viewkinds` 
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-16T09:51:08+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=teacherls
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 434 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 435 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 436 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 437 行.
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 440 行.
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 441 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_teacher` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:09+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vede
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005001s ]
+SQL: SELECT DISTINCT  `id`,`kind` FROM `dcyd_viewkinds`  [ RunTime:0.000000s ]
+SQL: SELECT DISTINCT  `id`,`name` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-03-16T09:51:10+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:27+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vedeedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:36+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedesave&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.005000s ]
+SQL: SELECT `kind` FROM `dcyd_viewkinds` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id = 刘国东 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1054:Unknown column '刘国东' in 'where clause'
+ [ SQL语句 ] : SELECT `name` FROM `dcyd_teacher` WHERE ( id = 刘国东 ) LIMIT 1  
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] getimagesize() expects parameter 1 to be string, array given D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 385 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 397 行.
+SQL: UPDATE `dcyd_view` SET `kname`='系列标题',`name`=null,`title`='住别�\�11放到�\�',`money`='1112345',`introduce`='佛挡杀佛是的发送到发送到111',`chapternum`=1,`kctitle`='大别墅买起来',`kid`=1 WHERE ( id = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:37+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.006001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:40+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vedeedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:47+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedesave&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+SQL: SELECT `kind` FROM `dcyd_viewkinds` WHERE ( id = 系列标题 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column '系列标题' in 'where clause'
+ [ SQL语句 ] : SELECT `kind` FROM `dcyd_viewkinds` WHERE ( id = 系列标题 ) LIMIT 1  
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] getimagesize() expects parameter 1 to be string, array given D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 385 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 397 行.
+SQL: UPDATE `dcyd_view` SET `kname`=null,`name`='刘国�\�',`title`='住别�\�11放到�\�',`money`='1112345',`introduce`='佛挡杀佛是的发送到发送到111',`chapternum`=1,`kctitle`='大别墅买起来',`kid`=0 WHERE ( id = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:48+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:51+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vedeedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:51:58+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedesave&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+SQL: SELECT `kind` FROM `dcyd_viewkinds` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004001s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] getimagesize() expects parameter 1 to be string, array given D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 385 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 397 行.
+SQL: UPDATE `dcyd_view` SET `kname`='系列标题',`name`='刘国�\�',`title`='住别�\�11放到�\�',`money`='1112345',`introduce`='佛挡杀佛是的发送到发送到111',`chapternum`=1,`kctitle`='大别墅买起来',`kid`=1 WHERE ( id = 1 ) [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:51:58+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:54:08+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vede
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004001s ]
+SQL: SELECT DISTINCT  `id`,`kind` FROM `dcyd_viewkinds`  [ RunTime:0.000000s ]
+SQL: SELECT DISTINCT  `id`,`name` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-16T09:54:09+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.006001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:54:20+08:00 ] 127.0.0.1 /Manerger/index.php/Up/kind
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T09:54:21+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=kindls
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 228 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 229 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 230 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 231 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 234 行.
+SQL: SELECT `id`,`kind` FROM `dcyd_viewkinds` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 235 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_viewkinds` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:54:24+08:00 ] 127.0.0.1 /Manerger/index.php/Up/kindedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`kind` FROM `dcyd_viewkinds` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:54:31+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=kindsave&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: [8] Undefined index: kimg D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 280 行.
+NOTIC: [2] getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 281 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 290 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 293 行.
+SQL: UPDATE `dcyd_viewkinds` SET `kind`='系列专题' WHERE ( id = 1 ) [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:54:31+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=kindls
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 228 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 229 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 230 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 231 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 234 行.
+SQL: SELECT `id`,`kind` FROM `dcyd_viewkinds` LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 235 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_viewkinds` LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:54:34+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vede
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT DISTINCT  `id`,`kind` FROM `dcyd_viewkinds`  [ RunTime:0.001000s ]
+SQL: SELECT DISTINCT  `id`,`name` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-16T09:54:35+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T09:54:40+08:00 ] 127.0.0.1 /Manerger/index.php/Up/vedeedit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2017-03-16T09:54:47+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedesave&id=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005001s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.004000s ]
+SQL: SELECT `kind` FROM `dcyd_viewkinds` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: [2] getimagesize() expects parameter 1 to be string, array given D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 385 行.
+NOTIC: [8] Use of undefined constant uniqid - assumed 'uniqid' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 394 行.
+NOTIC: [8] Use of undefined constant date - assumed 'date' D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 397 行.
+SQL: UPDATE `dcyd_view` SET `kname`='系列专题',`name`='刘国�\�',`title`='住别�\�11放到�\�',`money`='1112345',`introduce`='佛挡杀佛是的发送到发送到111',`chapternum`=1,`kctitle`='大别墅买起来',`kid`=1 WHERE ( id = 1 ) [ RunTime:0.000000s ]
+
+[ 2017-03-16T09:54:48+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=vedels
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 341 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 342 行.
+NOTIC: [8] Undefined index: name D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 343 行.
+NOTIC: [8] Undefined index: ytime D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 347 行.
+SQL: SELECT `id`,`kid`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 348 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_view` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T13:50:47+08:00 ] 127.0.0.1 /Manerger/index.php/Up/viewclass
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewkinds` [ RunTime:0.005000s ]
+SQL: SELECT DISTINCT  `id`,`kind` FROM `dcyd_viewkinds`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_viewclass` [ RunTime:0.004000s ]
+SQL: SELECT DISTINCT  `id`,`zname` FROM `dcyd_viewclass`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-16T13:50:48+08:00 ] 127.0.0.1 /Manerger/index.php?m=Up&a=viewclassls
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [8] Undefined index: fname D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 567 行.
+NOTIC: [8] Undefined index: zname D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 568 行.
+SQL: SHOW COLUMNS FROM `dcyd_viewclass` [ RunTime:0.007000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 570 行.
+SQL: SELECT `id`,`vid`,`fname`,`zname` FROM `dcyd_viewclass` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\UpAction.class.php 第 571 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_viewclass` LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2017-03-16T13:50:54+08:00 ] 127.0.0.1 /Manerger/index.php/Xxdk/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of XxdkAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 184 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-16T13:50:55+08:00 ] 127.0.0.1 /Manerger/index.php?m=Xxdk&a=xxdklist
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+NOTIC: [2048] Declaration of XxdkAction::show() should be compatible with that of Action::show() D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 184 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: title D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: content D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 19 行.
+NOTIC: [8] Undefined index: describe D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 20 行.
+NOTIC: [8] Undefined index: keywords D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 21 行.
+NOTIC: [8] Undefined index: auth D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 22 行.
+NOTIC: [8] Undefined index: status D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: lanmu D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `dcyd_xxkc` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 27 行.
+SQL: SELECT `id`,`title`,`keywords`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status`,`img` FROM `dcyd_xxkc` LIMIT 0,20   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: map D:\phpstudy\WWW\dcyd\Manage\Lib\Action\XxdkAction.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dcyd_xxkc` LIMIT 1   [ RunTime:0.000000s ]
+

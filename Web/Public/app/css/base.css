@@ -1,0 +1,64 @@
+/*重置css*/
+body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
+li{list-style:none;}
+img,input,textarea,a{ border: none;outline: none;}
+a{text-decoration:none;color:#000;}
+body{font:16px '微软雅黑';color:#666;background:#f9f9f9;}
+img{border:0;display:inline-block;}
+i{ font-style:normal;}
+textarea{resize: none;}
+/*公共样式*/
+.fl{float: left;_display: inline;}
+.fr{float: right;_display: inline;}
+.clear{clear:both;}
+.clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+
+.head{ margin:0 auto;}
+.head .logo img{width: 274px; height: 108px; margin:22px auto; position:relative;z-index: 9; display: block;}
+.head .nev{margin:0 auto; height: 42px; width: 587px;position:relative;z-index: 9;}
+.head .nev li{float: left; margin-left: 52px; line-height:40px; width: 75px;font-size:18px; font-weight: 600; text-align: center; }
+.head .nev li:hover{ border-bottom: 2px solid #b68f17; width: 75px;}
+.head .nev li a:hover{color: #b68f17;}
+.head .nev .in{margin-left: 0;}
+.piou{ width: 100%;}
+
+.fon-a{font-size: 16px; line-height: 22px; color: #666;}
+.pc{margin-bottom: 21px;}
+
+.nio{width: 810px; margin:54px auto;}
+.nio h2{ line-height: 28px; font-size: 24px; font-weight:700; text-align: center; color: #000000;}
+
+.course{width: 810px; margin:31px auto;}
+.course h2{ line-height: 72px; font-size: 26px; font-weight: 700;color: #000000; text-align: center;}
+.man{margin-top: 25px;}
+.lin-b{line-height: 46px;}
+.texta{text-indent:2em;}
+.textb{text-indent:4em;}
+
+.fun{ border-bottom: 2px solid #b68f17; width: 75px;}
+.funa{color: #b68f17;}
+
+.erm{ background: #ffffff; position: fixed;bottom: 100px;; right: 5%; width: 100px; height: 132px;}
+.erm p{ line-height: 16px; font-size: 12px; text-align: center;}
+.erm img{ width: 100px; height: 100px;}
+.bibu{background: #262729; width: 100%; height: 220px; margin-top: 65px;}
+.bibu img{ width: 100%; height: 220px;}
+
+.lin-o{ height: 180px; background: #262729; width: 100%; padding-top: 40px; margin-top: 40px;}
+.lin-p{margin:0 auto; width:1000px;}
+.lin-o .lin-o1{ border-right: 1px solid #0e0e0f; height: 131px; width: 440px; padding-right: 40px}
+.lin-o .lin-o1 .lin-o-1 img{ height: 50px; width:130px; margin-top: 4%;}
+.lin-o .lin-o1 .lin-o-2{ margin-left:15px; width: 62%;}
+.lin-o .lin-o1 .lin-o-2 h3{ font-size: 12px; font-weight:700; line-height: 16px; color: #ffffff;}
+.lin-o .lin-o1 .lin-o-2 p{ line-height: 16px; font-size:10px; margin-top: 9%;color:#696a6b;}
+.lin-o .lin-o2{ border-left: 1px solid #444445; border-right: 1px solid #0e0e0f;height: 131px;padding-left:45px; padding-right: 45px;}
+.lin-o .lin-o2 h3{ font-size: 12px; color: #ffffff; font-weight: 700; line-height: 16px}
+.lin-o .lin-o2 p{color:#696a6b; line-height: 16px; font-size:10px;}
+.lin-o .lin-o3{ border-left: 1px solid #444445; height: 131px;padding-left:45px;}
+.lin-o .lin-o3 .lin-o3a{ margin-top: 3px;}
+.gid{ margin-top: 20px; margin-bottom: 20px;}
+.sis{ margin:0 auto; width: 550px;}
+.sia{ margin:0 auto; width: 760px;}
+.sib{ margin:0 auto; width: 370px;}
+.sic{ margin:0 auto; width: 773px;}
+.sid{ margin:0 auto; width: 550px;}

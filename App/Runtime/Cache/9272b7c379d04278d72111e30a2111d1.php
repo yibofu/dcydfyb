@@ -1,0 +1,158 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5会员</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="/Public/app/css/h5gstyle.css" rel="stylesheet">
+    <link href="/Public/app/css/animations.css" rel="stylesheet">
+    <script src="/Public/app/js/zepto.min.js"></script>
+    <script src="/Public/app/js/touch.js"></script>
+    <script src="/Public/app/js/h5gindex.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        window.onload=function(){
+            var mUc=document.getElementById("muc");
+            var aUd=document.getElementById("aud");
+            var onOff=true;
+            mUc.onclick=function(){
+                if(onOff){
+                    aUd.pause();
+                    this.className='';
+                }else{
+                    aUd.play();
+                    this.className='mussic';
+                }
+                onOff=!onOff;
+            }
+        }
+
+        var imgUrl = "http://www.bianquecxy.com/h5g/images/ha05.png";
+        var lineLink = "http://www.bianquecxy.com/h5g/";
+        var descContent = "1321321321321321321321321";
+        var shareTitle = '标题';
+        var appid = "wx2dba2331f53ebee0";
+
+        function shareFriend(){
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "appid": appid,
+                "img_url": imgUrl,
+                "img_width": "200",
+                "img_height": "200",
+                "link": lineLink,
+                "desc": descContent,
+                "title": shareTitle
+            },function(res){
+                alert("成功");
+            })
+        }
+        document.addEventListener('WeixinJSBridgeReady',function onBridgeReady(){
+            WeixinJSBridge.on("menu:share:appmessage",function(argv){
+                shareFriend();
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div class="mussic" id="muc">
+        <img src="/Public/app/img/yiny.png"/>
+    </div>
+    <audio src="/Public/app/media/Upbeat.mp3" autoplay id="aud"></audio>
+
+    <div class="page page-1-1 pab">
+        <div class="wrap">
+            <img src="/Public/app/img/ha02.png" class="img1 pt-page-flipInTop pt-page-delay500"/>
+            <img src="/Public/app/img/ha03.png" class="img2 pt-page-flipInTop pt-page-delay1000"/>
+            <img src="/Public/app/img/ha04.png" class="img3 pt-page-moveCircle pt-page-delay1000"/>
+            <img src="/Public/app/img/ha05.png" class="img4 pt-page-moveFromBottomFade pt-page-delay700"/>
+        </div>
+    </div>
+    <div class="page page-2-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/hb02.png" class="img1 pt-page-moveCircle pt-page-delay600"/>
+            <img src="/Public/app/img/hb03.png" class="img2 pt-page-flipInTop pt-page-delay1000"/>
+            <img src="/Public/app/img/hb04.png" class="img3 pt-page-scaleUpCenter pt-page-delay700"/>
+        </div>
+    </div>
+    <div class="page page-3-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hc01.png" class="img1 pt-page-moveFromTop pt-page-delay800"/>
+            <img src="/Public/app/img/hc02.png" class="img2 pt-page-moveFromBottom pt-page-delay800"/>
+        </div>
+    </div>
+    <div class="page page-4-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/hd02.png" class="img1 pt-page-scaleUp pt-page-delay700"/>
+            <img src="/Public/app/img/hd03.png" class="img2 pt-page-scaleUp pt-page-delay700"/>
+            <img src="/Public/app/img/hd04.png" class="img3 pt-page-scaleUp pt-page-delay700"/>
+            <img src="/Public/app/img/hd05.png" class="img4 pt-page-scaleUp pt-page-delay700"/>
+            <img src="/Public/app/img/hd06.png" class="img5"/>
+            <img src="/Public/app/img/hd07.png" class="img6"/>
+            <img src="/Public/app/img/hd08.png" class="img7 pt-page-scaleUpCenter pt-page-delay700"/>
+            <img src="/Public/app/img/hd09.png" class="img8 pt-page-moveCircle pt-page-delay700"/>
+        </div>
+    </div>
+    <div class="page page-5-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/he01.png" class="img1 pt-page-scaleUpCenter pt-page-delay800"/>
+            <img src="/Public/app/img/he02.png" class="img2 pt-page-scaleUpCenter pt-page-delay800"/>
+        </div>
+    </div>
+    <div class="page page-6-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hf01.png" class="img1 pt-page-moveFromBottomFade pt-page-delay700"/>
+            <img src="/Public/app/img/hf02.png" class="img2 pt-page-scaleUpCenter pt-page-delay700"/>
+            <img src="/Public/app/img/hf03.png" class="img3 pt-page-moveCircle pt-page-delay700"/>
+        </div>
+    </div>
+    <div class="page page-7-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hg01.png" class="img1 pt-page-flipInBottom pt-page-delay700"/>
+            <img src="/Public/app/img/hg02.png" class="img2 pt-page-rotatePullTop pt-page-delay1000"/>
+        </div>
+    </div>
+    <div class="page page-8-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hg01.png" class="img1 pt-page-flipInBottom pt-page-delay700"/>
+            <img src="/Public/app/img/hg03.png" class="img2 pt-page-rotatePullTop pt-page-delay1000"/>
+        </div>
+    </div>
+    <div class="page page-9-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/ht01.png" class="img1 pt-page-rotateInNewspaper pt-page-delay700"/>
+            <img src="/Public/app/img/ht02.png" class="img2 pt-page-rotatePullLeft pt-page-delay700"/>
+            <img src="/Public/app/img/ht03.png" class="img3 pt-page-rotatePullLeft pt-page-delay700"/>
+        </div>
+    </div>
+    <div class="page page-10-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hg04.png" class="img1 pt-page-flipInBottom pt-page-delay700"/>
+            <img src="/Public/app/img/hg05.png" class="img2 pt-page-rotatePullTop pt-page-delay1000"/>
+        </div>
+    </div>
+    <div class="page page-11-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/logo.png" class="logo"/>
+            <img src="/Public/app/img/hg06.png" class="img1 pt-page-flipInBottom pt-page-delay700"/>
+            <img src="/Public/app/img/hg07.png" class="img2 pt-page-rotatePullTop pt-page-delay1000"/>
+
+        </div>
+    </div>
+    <div class="page page-12-1 hide pab">
+        <div class="wrap">
+            <img src="/Public/app/img/hu01.png" class="img1 pt-page-scaleUpCenter pt-page-delay700"/>
+            <img src="/Public/app/img/hu02.png" class="img2 pt-page-flipInBottom pt-page-delay700"/>
+            <img src="/Public/app/img/hu03.png" class="img3 pt-page-flipInBottom pt-page-delay700"/>
+        </div>
+    </div>
+</body>
+
+</html>

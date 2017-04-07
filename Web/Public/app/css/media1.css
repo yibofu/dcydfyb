@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+	body .fall {
+		width: 100%;
+	}
+	.fall .fall-one img {
+		width: 100%;
+		height: 15.5rem;
+	}
+	.fall .fall-two img {
+		width: 90%;
+		height: 20rem;
+		padding: 1% 2%;
+		border: 2px dashed #ffffff;
+		margin: 0.1rem 2.5% 0 2.5%;
+	}
+	.fall .fall-three {
+		background: url(../img/fall-three_03.png) no-repeat center;
+		background-size: 95% 98%;
+		width: 90%;
+		height: 560px;
+		padding: 0 2% 1rem 2%;
+		border: 2px dashed #ffffff;
+		margin: 0.1rem 2.5% 0.1rem 2.5%;
+		border-top: 0px;
+	}
+	.fall .fall-three .three-a .imga {
+		width: 33%;
+		height: 85px;
+	}
+	.fall .fall-three .three-a .pa {
+		margin-left: 7%;
+		width: 60%;
+		line-height: 25px;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-top: 4px;
+	}
+	.fall .pin-a {
+		padding-top: 120px;
+	}
+	.fall .fall-three .three-a {
+		width: 77%;
+		height: 95px;
+		margin: 0 auto;
+		margin-bottom: 9px;
+		padding-bottom: 0px;
+	}
+	.fall .pin-b{padding-top: 0px;}
+	.fall .fall-six {
+		width: 90%;
+		height: 440px;
+		padding: 0 2% 1rem 2%;
+		border: 2px dashed #ffffff;
+		margin: 0.1rem 2.5% 0.1rem 2.5%;
+		border-top: 0px;
+	}
+
+	.fall .fall-six .six-a .sixa {
+		width: 46%;
+		height: 160px;
+	}
+	.fall .fall-six .six-a .sixa .imga {
+		width: 35%;
+		height: 67px;
+		padding-top: 35px;
+		padding-left: 31%;
+	}
+	.fall .fall-six .six-a .sixa .pa {
+		width: 90%;
+		margin-top: 0px;
+		margin-left: 5%;
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+	.fall .fall-six .six-a .sixa .imgb {
+		height: 55px;
+	}
+	.fall .fall-six .six-a .sixa .pb {
+		font-size: 1.1rem;
+		font-weight: bold;
+		width: 70%;
+		margin: -3px auto;
+	}
+	.fall .fall-six .six-b .sixa .pc {
+		font-size: 1.1rem;
+		font-weight: bold;
+		width: 75%;
+		margin: 0px auto;
+	}
+	.fall .fall-six .six-b .sixa .pd {
+		font-size: 1.1rem;
+		font-weight: bold;
+		width: 87%;
+		margin: 2px auto;
+	}
+	.fall .fall-six .six-b .sixa .imgd {
+		width: 46%;
+		height: 50px;
+		padding-top: 30px;
+		padding-left: 28%;
+	}
+	.fall .fall-six .six-b .sixa .imgc {
+		width: 40%;
+		height: 60px;
+		padding-top: 22px;
+		padding-left: 30%;
+	}
+	.fall .fall-six .six-a {
+		width: 87%;
+		padding-top: 80px;
+		margin: 0 auto;
+	}
+	.fall .fall-five img {
+		height: 260px;
+	}
+	.fall .fall-nine .imgniu {
+		width: 90%;
+		height: 245px;
+		padding: 1% 2%;
+		margin: 0.1rem 2.5% 0 2.5%;
+	}
+	.fall .fall-nine .imgp {
+		position: relative;
+		top: -119px;
+		left: 4%;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 2rem;
+		width: 16%;
+	}
+	.fall .fall-nine .imgni {
+		position: relative;
+		top: -114px;
+		right: -59%;
+		width: 25%;
+	}
+	.fall .fall-six .six-b .sixa {
+		height: 160px;
+	}
+	.fall-six .six-b {
+		width: 87%;
+		margin: 22px auto;
+	}
+	#login-d {
+		width: 240px;
+		height: 220px;
+	}
+	#login-d .inuuu {
+		width: 220px;
+		height: 195px;
+		margin-left: 10px;
+	}
+	#login-d .close{
+		width: 30px;
+		height: 30px;
+		position: relative;
+		right: -92%;
+		top: -228px;
+	}
+	.fall .fall-valve {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		height: 65px;
+		width: 100%;
+		background: #8f82bc;
+	}
+	.fall .fall-miuy {
+		margin-left: 5%;
+		font-size: 20px;
+	}
+	.fall .fall-valve .valve-a img {
+		width: 59px;
+		height: 49px;
+		margin-top: -2px;
+	}
+	.fall-valve .valve-a {
+		width: 205px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+		color: #ffffff;
+		font-weight: bold;
+		height: 67px;
+		margin-top: 3px;
+	}
+}
+	@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+		.fall .fall-six .six-b .sixa .imgd {
+			width: 46%;
+			height: 50px;
+			padding-top: 17px;
+			padding-left: 28%;
+		}
+		.fall .fall-one img {
+			width: 100%;
+			height: 13.5rem;
+		}
+		.fall .fall-three .three-a .imga {
+			width: 33%;
+			height: 70px;
+		}
+		.fall .fall-two img {
+			width: 90%;
+			height: 16.6rem;
+			padding: 1% 2%;
+			border: 2px dashed #ffffff;
+			margin: 0.1rem 2.5% 0 2.5%;
+		}
+		body .fall {
+			width: 99%;
+		}
+		.fall .fall-five img {
+			height: 230px;
+		}
+		.fall .fall-three .three-a {
+			width: 77%;
+			height: 90px;
+			margin: 0 auto;
+			margin-bottom: 8px;
+		}
+		.fall .fall-three {
+			height: 530px;
+		}
+		.fall .fall-nine .imgniu {
+			height: 210px;
+		}
+		.fall .fall-nine .imgp {
+			position: relative;
+			top: -119px;
+			left: 4%;
+		}
+		.fall .fall-nine .imgni {
+			position: relative;
+			top: -95px;
+			right: -59%;
+			width: 25%;
+		}
+		.fall .fall-six {
+			height: 390px;
+		}
+		.fall .fall-six .six-a .sixa {
+			width: 46%;
+			height: 130px;
+		}
+		.fall .fall-six .six-a .sixa .pa {
+			width: 85%;
+			margin-top: 0px;
+			font-size: 1rem;
+		}
+		.fall .fall-six .six-a .sixa .pb {
+			font-size: 1rem;
+			font-weight: bold;
+			width: 70%;
+			margin: 3px auto;
+		}
+		.fall .fall-six .six-b .sixa {
+			height: 130px;
+		}
+		.fall .fall-six .six-b .sixa .pc {
+			font-size: 1rem;
+			font-weight: bold;
+			width: 90%;
+			margin: 0px auto;
+		}
+		.fall .fall-six .six-b .sixa .pd {
+			font-size: 1rem;
+			font-weight: bold;
+			width: 90%;
+			margin: 2px auto;
+		}
+		.fall .fall-six .six-a {
+			width: 87%;
+			padding-top: 80px;
+			margin: 0 auto;
+		}
+		.fall .pin-a {
+			padding-top: 120px;
+		}
+		.fall .fall-six .six-a .sixa .imga {
+			width: 35%;
+			height: 55px;
+			padding-top: 15px;
+			padding-left: 31%;
+		}
+		.fall .fall-six .six-a .sixa .imgb {
+			height: 48px;
+			padding-top: 17px;
+		}
+		.fall .fall-six .six-b .sixa .imgc {
+			width: 40%;
+			height: 50px;
+			padding-top: 19px;
+			padding-left: 30%;
+		}
+		.fall .fall-nine .imgp {
+			position: relative;
+			top: -101px;
+			left: 6%;
+			font-size: 24px;
+		}
+	}
+

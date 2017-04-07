@@ -1,0 +1,195 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>账钱税系统建设</title>
+    <link rel="stylesheet" href="/Public/app/css/product.css">
+    <script src="/Public/app/js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div class="eight">
+    <div class="tou">
+        <a href="<?php echo U('Product/index');?>" class="backa fl"><img src="/Public/app/img/fh.png"/></a>
+        <div class="backb fl guan"><h3>账钱税系统建设</h3></div>
+    </div>
+    <div class="eighta">
+        <img src="/Public/app/img/logoo.png" class="img1"/>
+        <h3 class="red text">账钱税系统建设</h3>
+        <p class="fr jia fona lin-a">——快速构建自己企业的财务体系</p>
+        <div class="clearfix"></div>
+        <p class="fona texta">“账钱税系统建设”咨询项目服务是专为民营企业设计的驻场咨询式产品。财务专家进驻企业、针对企业财务管理某问题，提供一段时间的驻场调研、诊断、方案设计、协助落地等财务管理升级服务。</p>
+        <h3 class="red fonb poa">【咨询成果】</h3>
+        <p class="fona texta">账系统、钱系统、税系统建立完善</p>
+        <h3 class="red fonb poa">【咨询内容】</h3>
+        <p class="fona texta jia">主要内容：</p>
+        <p class="fona miu">
+            业务流程与表单设计<br/>
+            核算流程及账套设计<br/>
+            税务风险体系及规划设计（制度、工具）<br/>
+            资金管理流程设计（含应收款与信用体系）<br/>
+            内控制度设计<br/>
+            管理报表及管理驾驶舱设计 赠送服务：<br/>
+            股权架构设计<br/>
+            财务组织架构及岗位职责设计<br/>
+            集团管控模式<br/>
+        </p>
+        <h3 class="red fonb poa">【咨询收获】</h3>
+        <p class="fona min">
+            账目清，算账快 —— 清清楚楚，明明白白<br/>
+            严管钱，不遗漏 —— 发挥每一笔钱的用处<br/>
+            交税好，风险小 —— 管控老板的安全与财富<br/>
+            有报表，能监控 —— 每个决策都有数据依据<br/>
+            依制度，靠流程 —— 员工做事有规矩有方圆
+        </p>
+        <h3 class="red fonb poa">【服务方式】</h3>
+        <ul class="fona texta">
+            <li class="jia">驻场诊断：<span class="jian">专家团队进入企业，深入调研，发现问题及产生原因，提供问题诊断报告书及项目实施建议。</span></li>
+            <li class="jia">方案设计：<span class="jian">针对企业的问题，设计相应的管理工具（表单、制度、方法、流程、软件模型）及实施方案（时间表、负责人）等。</span></li>
+            <li class="jia">落地导入：<span class="jian">在企业现场，协助管理工具与财务提升的落地与实施，随时解决实施与落地过程中存在的问题，包括：员工培训、亲自示范、操作演练、工具导入、穿行测试、试运行、正式上线等。</span></li>
+            <li class="jia">跟踪辅导：<span class="jian">系统实施落地后，专家离场，远程或返场提供一段时间的专项辅导或跟踪服务。</span></li>
+        </ul>
+        <h3 class="red fonb poa">【阶段周期】</h3>
+        <table class="tab fona" border=1 cellspacing=0 cellpadding=0>
+            <tr>
+                <th>项目阶段</th>
+                <th>形式</th>
+                <th>周期</th>
+            </tr>
+            <tr>
+                <td>调研及个性化方案设计</td>
+                <td>
+                    企业调研 方案设计<br/>
+                    现场讨论方案
+                </td>
+                <td>
+                    20-30 天，其中现场工作不低于 10 天
+                </td>
+            </tr>
+            <tr>
+                <td>导入实施阶段</td>
+                <td>
+                    方案讨论及调整 工具方法培训 跟踪辅导
+                </td>
+                <td>
+                    120 天，其中现场工作不低于 20 天
+                </td>
+            </tr>
+            <tr>
+                <td>后续跟踪辅导</td>
+                <td>跟踪企业财务系统 进行远程持续指导</td>
+                <td>
+                    至合同期满
+                </td>
+            </tr>
+        </table>
+        <div class="but"><button id="and" class="lan jia">企业报名</button></div>
+        <p class="text fonb bou">联系电话：18310629197 联系人：郭女士</p>
+        <div id="fo" style="display: none">
+            
+<style>
+    .consult{ width: 90%; height: 12rem;background: #b8bcbd; position: relative;top: -26rem; left: 0; border-radius: .8rem; border: .1rem solid #55afc1; margin: 0 auto;}
+    .consult .img{ width: 65%; margin:.6rem auto;}
+    .consult .img .x{ width: 6%; height: .8rem; position: relative; top: 0; left:112%;}
+    .consult .img .img02{ margin-top: 0.5rem;}
+    .consult .img input{ border: .1rem solid #000; padding: .2rem 2%;}
+    .consult .img .img03{ width: 30%; margin: 1rem auto;}
+    .consult .img .img03 input{ width: 100%; color: #000000;}
+
+</style>
+<div id="train" class="consult">
+    <div class="img">
+        <img id="x" src="/Public/app/img/x.png" class="x"/>
+        <div class="img01">姓名：<input type="text" name="name" value="" placeholder="请输入姓名" autocomplete="off" ></div>
+        <div class="img02">手机：<input type="text" name="phone" value="" placeholder="请输入电话号码" autocomplete="off" ></div>
+        <div class="img03"><input class="jia" type="button" onclick="order()" value="提交"></div>
+    </div>
+</div>
+<div class="makeg" style="display: none">
+    <div class="makeg-a">
+        <a href="<?php echo U('Product/index');?>"><img id="uin" src="/Public/app/img/xx.png" class="imgs"/></a>
+        <img src="/Public/app/img/shape.png" class="imgt"/>
+        <p class="foa ki">
+            您的问题已经提交,请耐心等待!<br/>
+            财税专家会在24小时内对<br/>
+            您的问题进行解答！
+        </p>
+    </div>
+</div>
+<script>
+</script>
+
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+    $('#x').click(function(){
+        $('.consult').fadeOut(200);
+        $('#train').slideUp(300);
+    })
+    $("#and").click(function(){
+        $("#fo").css("display","block");
+//        $("#fo").toggle();
+    })
+
+    $(function(){
+
+        $("input[name='user']").focus(function(){
+            $("input[name='name']").attr("placeholder","请输入用户名");
+        }).blur(function(){
+            ob = $(this);
+            ob.next("span").remove();
+            var s = ob.val();
+            if(s == ""){
+                $("input[name='name']").attr("placeholder","请输入用户名");
+                return false;
+            }else if(s.match(/^([\u4e00-\u9fa5]{1,20}|[a-zA-Z\.\s]{1,20})$/) == null){
+                $("input[name='name']").val("").attr("placeholder","您输入的名字不合法");
+                return false;
+            }
+        })
+        $("input[name='phone']").focus(function(){
+            $("input[name='phone']").attr("placeholder","请输入您的手机号");
+        }).blur(function(){
+            pb = $(this);
+            pb.next("span").remove();
+            var a = pb.val();
+            if(a == ""){
+                $("input[name='phone']").attr("placeholder","请输入您的手机号");
+                return false;
+            }else if(a.match(/^1[0-9]{10}$/) == null){
+                $("input[name='phone']").val("").attr("placeholder","您输入的手机号格式不对");
+                return false;
+            }
+        })
+    })
+    function order(){
+        var name = $("input[name='name']").val();
+        var phone = $("input[name='phone']").val();
+        if(name == ""){
+            $("input[name='name']").attr("placeholder","姓名不能为空");
+            return false;
+        }
+        if(phone == ""){
+            $("input[name='phone']").attr("placeholder","手机号码不能为空");
+            return false;
+        }
+
+        $.ajax({
+            type:"POST",
+            url:"<?php echo U('Product/styliadd');?>",
+            data:{"name":name,"phone":phone},
+            dataType:"json",
+            success:function(str){
+                var data = eval("("+str+")");
+                if(data){
+                    $('.makeg').css("display","block");
+                }
+            }
+        })
+    }
+</script>
+</html>

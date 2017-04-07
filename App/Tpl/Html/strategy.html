@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>财务攻略</title>
+    <link href="/Public/app/css/base.css" rel="stylesheet"  type="text/css">
+    <link href="/Public/app/css/index.css" rel="stylesheet"  type="text/css">
+    <script src="/Public/app/js/jquery-3.1.0.min.js"></script>
+    <style>
+        .pk{ margin-top: 30px;}
+        .head .ai{display: block; color: #c00;}
+        .main_a{display:none;}
+        .head .ont{ margin:0 auto; width:70px; height: 16px; line-height: 16px;}
+        .head .ont li{ float: left; border: 1px solid #000000; padding: 8px; margin-left: 5px;}
+    </style>
+    <script>
+        window.onload=function() {
+            var oUl=document.getElementById('ar');
+            var aBtn=oUl.getElementsByClassName("af");
+            var aBox=document.getElementsByClassName('main_a');
+            //找到对应的div
+            for(var i=0;i<aBtn.length;i++){
+                //为每个标签标记编号
+                aBtn[i].index=i;
+                //为每个标签绑定事件
+                aBtn[i].onclick=function(){
+                    for(var j=0;j<aBtn.length;j++){
+                        aBtn[j].style.color='#000';
+
+                        aBtn[j].className='af';	//将全部标签去掉class
+                    }
+                    for(var j=0;j<aBox.length;j++){
+                        aBox[j].style.display="none";//把所有div隐藏
+                    }
+                    this.style.color='#c00';
+                    aBox[this.index].style.display="block"; //让当前标签对应的div显示
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+<div class="head">
+    <div class="logo"><img src="/Public/app/img/logo.png"/></div>
+    <ul class="nev">
+        <li class="in"><a href="{:U('Index/index')}">首页</a></li>
+        <li class="fun"><a class="funa" href="{:U('Html/infor')}">最新资讯</a></li>
+        <li><a href="{:U(Html/cas)}">近期课程</a></li>
+        <li><a href="{:U(Index/index)}">师资团队</a></li>
+        <li><a href="#">成功案例</a></li>
+    </ul>
+    <div>
+        <img class="piou" src="/Public/app/img/stra_02.jpg"/>
+    </div>
+    <div class="ai main_a course">
+        <h2>《财务系统工具包》——民营企业财务管理解决方案</h2>
+        <p class="fon-a texta">【什么是财务系统工具包？】：</p>
+        <p class="fon-a texta">财务系统工具包，是由刘国东等 30 多位来自跨国公司或大型民企的财税专家，结合多位来自跨国公司或大型民企的财税专家，结合上千家民营企业“财务系统咨询”工作实践，历时8年研发而成的，包含了 88 张视频 教学光盘、 6本系统化工具图书教材。</p>
+        <p class="fon-a texta">财务系统工具包，是一套集光碟和教材为一体的跨越型、革命性产品，我们整合国内外先进的财务管理系统，力图让您用最短时间、最简便的方式掌握这个体系，是真正意义上实现企业财务建设智能化的解决方案。</p>
+        <p class="fon-a texta">【财务工具包能解决什么？】</p>
+        <p class="fon-a textb">财务系统工具包，站在成长型民营企业老板的角度，立足于帮助企业规范财务管理，建立完善的财务系统。通过企业的账务核算、节税规划、资金管控、成本预算、风险管控等让企业能够安全、高效地赚钱。通过视频+图书的形式，完全做到“通俗易懂、深入浅出”，极具“易用性”，“实用性”和“用户体验”。</p>
+        <p class="fon-a texta">【财务系统自己建！】</p>
+        <p class="fon-a texta">您想数字化管理企业吗？</p>
+        <p class="fon-a texta">您想利润倍增吗？</p>
+        <p class="fon-a texta">您想透过报表洞悉企业经营问题吗？</p>
+        <p class="fon-a texta">您想账表清晰而又安全吗？</p>
+        <p class="fon-a texta">您想一劳永逸降低税负吗？</p>
+        <p class="fon-a texta">您想规避企业风险、实现财富增值吗？</p>
+        <p class="fon-a texta">您想持续提高现金流吗？</p>
+        <p class="fon-a texta">……</p>
+        <p class="fon-a texta pc">您需要有一套企业财务系统，不用做咨询，不用参加培训，不用外包管理，财务系统工具包帮您实现！</p>
+        <div class="sic"><img class="gid" src="/Public/app/img/caijin.jpg"/></div>
+    </div>
+    <div class="main_a course">
+        <p class="fon-a texta lin-b man">【超值内容】</p>
+        <p class="fon-a texta lin-b">财务战略支撑系统</p>
+        <p class="fon-a texta">做好财务系统的职能规划</p>
+        <p class="fon-a texta">设计企业的股权架构</p>
+        <p class="fon-a textb">确定企业的管理架构与治理结构</p>
+        <p class="fon-a texta">制定财务部职能的分工与岗位职责</p>
+        <p class="fon-a texta lin-b">税系统</p>
+        <p class="fon-a texta">解决企业存在的历史遗留问题(棘手)</p>
+        <p class="fon-a texta">在公司设立、采购、销售、经营等各环节进行税务规划</p>
+        <p class="fon-a texta">利用税收优惠政策和节税来控制企业整体税负</p>
+        <p class="fon-a texta">防范税务风险、规避税收违法责任</p>
+        <p class="fon-a texta lin-b">账系统</p>
+        <p class="fon-a texta">设计企业的内部管理报表体系，能透过资产负债表、损益表、现金流量表等发现企业存在的问题</p>
+        <p class="fon-a texta">规划企业的账务核算体系</p>
+        <p class="fon-a texta">学习核算账的设计</p>
+        <p class="fon-a texta lin-b">钱系统</p>
+        <p class="fon-a texta">对资金的静态预测与动态预测，分析企业缺钱的九大原因，防止资金链断裂</p>
+        <p class="fon-a texta">探讨现金流改善的思路与方法</p>
+        <p class="fon-a texta">掌握应收账款与信用管理的工具</p>
+        <p class="fon-a texta">设计企业现金的安全系统</p>
+        <p class="fon-a texta lin-b">管理会计系统</p>
+        <p class="fon-a texta">通过对主要经营指标的分析，为老板提供有效的分析报告与决策支持</p>
+        <p class="fon-a texta">探讨成本管控新思维</p>
+        <p class="fon-a texta">对企业成本进行分类控制和核算</p>
+        <p class="fon-a texta">学习成本改善的方法、策略与工具</p>
+        <p class="fon-a texta">探索公司主要风险的应对策略与内部控制的制度设计</p>
+        <p class="fon-a texta">掌握预算的核心理念、以及预算编制的流程、分析控制技巧</p>
+        <p class="fon-a texta lin-b">系统导入</p>
+        <p class="fon-a texta">通过财务团队打造，塑造财务经理的胜任力，建立企业的财务系统升级铁三角，解决管理报表、会计科目、业务单据、核算流程、财务制度与经营分析三角模型问题。</p>
+    </div>
+    <ul id="ar" class="ont">
+        <li class="af ai">1</li>
+        <li class="af">2</li>
+    </ul>
+</div>
+<div class="lin-o">
+    <div class="lin-p">
+        <div class="lin-o1 fl">
+            <div class="lin-o-1 fl"><img src="/Public/app/img/logo.png"/></div>
+            <div class="lin-o-2 fl">
+                <h3>预约您专属的财务医生！</h3>
+                <p>扁鹊财学院以中国传统名医代表“扁鹊”命名，以打造“您的专属财务医生”为使命，能为企业解答 从股权设计、税务筹划、并购重组、上市咨询到企业财务系统建设、财务历史遗留问题处理、高端财务 人员猎头在内的企业财务相关业务。</p>
+            </div>
+        </div>
+        <div class="lin-o2 fl">
+            <h3>联系我们</h3>
+            <p>公司地址：北京市朝阳区旺座大厦东塔1920室</p>
+            <p>商务合作：18310618231</p>
+            <p>客户服务：18310618231</p>
+            <p>版权所有：www.bianquecxy.con</p>
+            <p>2016-2017</p>
+            <p>© 2016 大财有道科技 京ICP备15010904号</p>
+        </div>
+        <div class="lin-o3 fl">
+            <div class="lin-o3a"><img src="/Public/app/img/ein_04.jpg"/></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

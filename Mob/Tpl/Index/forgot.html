@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <meta name="keywords" content="滴滴快贷，忘记密码">
+    <meta name="description" content="滴滴快贷忘记密码。">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/Public/Mob/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/Public/Mob/css/20151123style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/Public/Mob/css/20151123New.css"/>
+	<link rel="stylesheet" href="/Public/Mob/css/20151222style.css"/>
+	<script src="/Public/Mob/js/MyRespond.js"></script>
+	<script src="/Public/Mob/js/jquery-1.11.3.min.js"></script>
+	<style>
+		 /*浮层样式*/
+        .shadowBox{
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: fixed;
+            /*left: 0;*/
+            top: 0;
+            z-index: 50;
+            background: rgba(0, 0, 0, 0.8);
+			display:none;
+        }
+        .wrapBox{
+            width: 80%;
+            /*height: 40%;*/
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin-left: -40%;
+            -webkit-box-shadow: 0 0 4px #000000;
+            -moz-box-shadow: 0 0 4px #000000;
+            box-shadow: 0 0 4px #000000;
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .wrapBox p{
+            padding: 10px;
+        }
+        .wrapBox p:last-of-type{
+            margin-bottom: 40px;
+        }
+        .wrapBox .shadowBtn {
+            position: relative;
+            width: 100%;
+        }
+        .wrapBox .shadowBtn .Btn_container{
+            width: 80%;
+            padding-bottom: 30px;
+            margin: 0 auto;
+
+        }
+        .wrapBox .shadowBtn .Btn_container:after{
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .wrapBox .shadowBtn span{
+            display: block;
+            width: 45%;
+            background: #ee3200;
+            margin-right: 5%;
+            text-align: center;
+            float: left;
+            line-height: 2.2;
+            color: #ffffff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        /*浮层样式*/
+	</style>
+</head>
+<body class="mhome" style="background: #ffffff;">
+<header class="dd_header">忘记密码<span class="fa fa-chevron-left dd_return" onclick="window.history.go(-1)"></span></header>
+<div class="logo_container">
+	<div class="logo">
+		<img src="/Public/Mob/img/LoginLogo.png" alt="logo"  style="max-width: 100%"/>
+	</div>
+</div>
+<section class="dd_index">
+	<div class="dd_container1">
+		<form action="#"method="post">
+			<div class="fir_pwd">
+				<span class="icon icon1"></span>
+				<input type="text"class="InputBox" name="tel" maxlength="11" placeholder="请输入手机号"/>
+				<div class="yzmNew">
+					<div class="dd_yzmm" onclick="get_code(this)"><a href="javascript:;">获取短信验证码</a></div>
+					<div class="dd_yzm dd_yzm_again" style="display:none;" id="got_code"><a href="javascript:;"><i id="second">60</i>s后重新获取验证码</a></div>
+				</div>
+			</div>
+			<!--<div class="dd_yzm" onclick="get_code(this)"><a href="javascript:;">获取短信验证码</a></div>
+				 <div class="dd_yzm dd_yzm_again" style="display:none;" id="got_code"><a href="javascript:;"><i id="second">60</i>s后重新获取验证码</a></div>-->
+			<div class="fir_pwd">
+				<span class="icon icon3"></span>
+				<input type="text" class="InputBox" name="mess" placeholder="请输入短信验证码"/>
+			</div>
+
+			<p class="point_text"><strong>如果身份证已经过验证，请输入身份证号码</strong></p>
+			<div class="fir_pwd">
+				<span class="icon icon4"></span>
+				<input type="text"class="InputBox" name="shenfen" placeholder="请输入身份证号码"/>
+			</div>
+
+			<div class="fir_pwd">
+				<span class="icon icon2"></span>
+				<input type="password" class="InputBox" name="pwd1"  class="pwd" placeholder="请输入密码"/>
+				<!--<span class="pwd_xx"></span>-->
+			</div>
+			<div class="fir_pwd">
+				<span class="icon icon2"></span>
+				<input type="password" class="InputBox" name="pwd2"  class="pwd" placeholder="请再次输入密码"/>
+				<!--<span class="pwd_xx"></span>-->
+			</div>
+		</form>
+	</div>
+    <div class="dd_yzm" onclick="sub()"><a href="javascript:;">重置密码</a></div>
+	<input type="hidden" name="is_code" id="is_code" value="2" />
+</section>
+<div class="shadowBox">
+		<section class="wrapBox">
+			<p>&nbsp;</p>
+			<p id="word" style="text-align:center;">浮层内容</p>
+			<p>&nbsp;</p>
+			<div class="shadowBtn">
+				<div class="Btn_container">
+					<span>确定</span>
+					<span>取消</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script>
+	/*$(function(){
+		var clientWidth=document.body.clientWidth;
+		var bili=clientWidth/640;
+		var top=parseInt($(".icon").css("top"))*bili-2;
+		var left=parseInt($(".icon").css("left"))/bili;
+		console.log(top);
+		$(".icon").css({
+			"-webkit-transform": "scale("+bili+")",
+			"transform": "scale("+bili+")",
+			top:top
+		})
+		$(".icon4").css({
+			"-webkit-transform": "scale("+bili+")",
+			"transform": "scale("+bili+")",
+			top:top+2,
+			left:left
+		})
+		$(window).resize(function(){
+			$(".icon").css({
+				"-webkit-transform": "scale("+bili+")",
+				"transform": "scale("+bili+")",
+				top:top
+			})
+		})
+	})*/
+	var shadow=document.getElementsByClassName("shadowBox")[0];
+	var btns=shadow.getElementsByClassName("shadowBtn")[0].getElementsByTagName("span");
+	for(var i=0;i<btns.length;i++){
+			btns[i].onclick=function(){
+				shadow.style.display="none";
+				flag=true;
+			};
+	}
+	$(document).ready(function() { 
+		var imei = window.didikd.getImei();
+		$("#imei").val(imei);
+	}); 
+	function get_code(dom){
+		/*请求点*/
+		var imei = window.didikd.getImei();
+		var imsi = window.didikd.getImsi();
+		var channel = window.didikd.getChannel();
+		var mode = window.didikd.getModel();
+		var behavior = '1005';
+		$.ajax({ 
+				type: "GET", 
+				url: "http://27.50.130.152/api/ddkdtongji.php",
+				async:true,
+				data:{'imei':imei,'imsi':imsi,'channelid':channel,'behavior':behavior,'model':mode},
+				success:function(data){}
+		});	
+		/*结束*/
+		var mobile = $("[name=tel]").val();
+		var imei = $("#imei").val();
+		var new_time = 60;
+		var re = /^1\d{10}$/;
+		if(mobile == '' || !re.test(mobile)){
+			$("#word").html('手机号格式不正确!');
+			shadow.style.display="block";
+			$("[name=tel]").val('');
+			return;
+		}
+		$.ajax({ 
+				type: "POST", 
+				url:'{:U("Index/send_message_fogot")}',
+				data:{'mobile':mobile,'imei':imei},
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						$("#word").html(data.message);
+						shadow.style.display="block";
+						$("#got_code").show();
+						$(dom).hide();
+						var a = setInterval(function(){
+							new_time = new_time - 1;
+							if(new_time == 0){
+								new_time = 0;
+								clearInterval(a);
+								new_time = 60;
+								$("#got_code").hide();
+								$(dom).show();
+							}
+							$("#second").html(new_time);
+						},1000);
+					}else{
+						$("#word").html(data.message);
+						shadow.style.display="block";
+						return;
+					}
+				}
+		});
+	}
+	$("[name=pwd2]").bind('blur',function(){
+		var pwd1 = $("[name=pwd1]").val();
+		if($(this).val() == ''){
+			$(this).focus();
+		}else{
+			if($(this).val() != pwd1){
+				alert('两次输入密码不一致');
+				$(this).val("");
+				$(this).focus();
+			}
+		}
+	});
+	//检查验证码
+	$("[name=mess]").bind('blur',function(){
+		var code = $(this).val();
+		var mob = $("[name=tel]").val();
+		$.ajax({ 
+				type: "POST", 
+				url: "{:U('Index/check_for_code')}",
+				data:{'code':code,'mobile':mob},
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						$("#is_code").val(1);
+					}else{
+						$("#word").html(data.message);
+						shadow.style.display="block";
+						$("#is_code").val(2);
+					}
+				}
+		});
+	});
+	function sub(){
+		var mob = $("[name=tel]").val();
+		var pwd1 = $("[name=pwd1]").val();
+		var pwd2 = $("[name=pwd2]").val();
+		var card = $("[name=shenfen]").val();
+		var is_code = $("#is_code").val();
+		if(is_code == 2){
+			$("#word").html('验证码不正确!请尝试重新获取');
+			shadow.style.display="block";
+			return;
+		}
+		$.ajax({ 
+				type: "POST", 
+				url: "/Mob/index.php/Index/fot_sub",
+				data:{'phone':mob,'pwd1':pwd1,'pwd2':pwd2,'card':card},
+				success:function(data){
+					var data = eval("("+data+")");
+					if(data.error){
+						$("#word").html(data.message);
+						shadow.style.display="block";
+						window.location.href = "{:U('Index/login')}";
+					}else{
+						$("#word").html(data.message);
+						shadow.style.display="block";
+						window.location.href = "{:U('Index/forgot')}";
+					}
+				}
+		});
+	}
+</script>
+</html>

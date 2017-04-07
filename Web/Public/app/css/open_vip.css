@@ -1,0 +1,178 @@
+
+.vip_all{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.open_vip_banner{
+	margin: 0 auto;
+}
+.open_vip_main{
+	margin-top: 60px;
+	overflow: hidden;
+}
+.vip_title{
+	width: 130px;
+	height: 55px;
+	margin-left: 70px;
+	background: #0098b3;
+	color: white;
+	text-align: center;	
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #016475;
+}
+.vip_title em{
+	display: block;
+	font-weight: 700;
+	font-size: 31px;
+	line-height: 30px;
+}
+.vip_title p{
+	font-weight: 700;
+}
+.vip_text{
+	width: 705px;
+	float: right;
+	overflow: hidden;
+}
+/*初级会员*/
+.vip_primary img{
+	float: left;
+}
+.vip_primary hr{
+	display: block;
+	width: 523px;
+	height: 2px;
+	background: #CCCCCC;
+	float: left;
+	margin-top: 15px;
+}
+.vip_primary>p{
+	font-size: 20px;
+	color: #0098b3;
+	font-weight: 700;
+	position: relative;
+	left:-330px;
+	width: 120px;
+	height: 25px;
+	line-height:25px;
+	text-align: center;
+	background: white;
+	overflow: hidden;
+	margin-top: 3px;
+}
+.vip_primary ul li{
+	color: #56b7d8;
+}
+.vip_primary ul li p{
+	font-size: 16px;
+	color: #333333;
+	line-height: 35px;
+}
+/*开通会员*/
+.open_vip_btn_box{
+	width: 100%;
+	height:50px;
+	overflow: hidden;
+}
+.open_vip_btn{
+	width: 100px;
+	height: 40px;
+	margin-left: 70px;
+	background: #0098b3;
+	color: white;
+	font-size: 16px;
+	line-height:4px;
+	font-weight: 700;
+	text-align: center;	
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #016475;
+	float: right;
+	margin-right: 42px;
+}
+/*金鹊会员*/
+
+.vip_jinque img{
+	float: left;
+}
+.vip_jinque hr{
+	display: block;
+	width: 523px;
+	height: 2px;
+	background: #CCCCCC;
+	float: left;
+	margin-top: 15px;
+}
+.vip_jinque>p{
+	font-size: 20px;
+	color: #0098b3;
+	font-weight: 700;
+	position: relative;
+	left:-330px;
+	width: 120px;
+	height: 25px;
+	line-height:25px;
+	text-align: center;
+	background: white;
+	overflow: hidden;
+	margin-top: 3px;
+}
+.vip_jinque ul{
+	overflow: hidden;
+}
+.vip_jinque ul li{
+	color: #56b7d8;
+	float: left;
+	margin-right: 80px;
+}
+.vip_jinque ul li p{
+	font-size: 16px;
+	color: #333333;
+	line-height: 35px;
+}
+/*步骤*/
+.vip_steps{
+	width: 1000px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+.vip_step_1{
+	color: #666666;
+	font-size: 16px;
+	line-height: 27px;
+}
+.vip_steps>div{
+	width: 300px;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+.vip_steps>div p{
+	font-size: 16px;
+	line-height: 27px;
+	color: #666666;
+	font-weight: 600;
+}
+.vip_steps>div img{
+	margin: 50px 0 0 70px;
+}
+/*立即开通*/
+.promptly_open{
+	width: 403px;
+	margin: 0 auto;
+	margin-top: 90px;
+	margin-bottom: 120px;
+}
+.promptly_open button{
+	color: white;
+	width: 400px;
+	height: 50px;
+	background: #0098b3;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px #0d4f5b ;
+}
+
+
+
