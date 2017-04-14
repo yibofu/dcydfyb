@@ -380,15 +380,11 @@ class UpAction extends Action{
         $data["kname"] = $res["kind"];
         $data["name"] = $this->_post("name");
 
-
         $viewclass = M("viewclass");
         $data["zid"] = $this->_post("zname");
         $ressa = $viewclass->field('zname')->where("id = ".$data["zid"])->find();
         $data["zname"] = $ressa["zname"];
 //        $data["name"] = $this->_post("name");
-
-
-
 
         $teacher = M("teacher");
         $ress = $teacher->field('name')->where("id = ".$data["name"])->find();
@@ -454,7 +450,7 @@ class UpAction extends Action{
         if ($_POST['ytime'] != "") $map['ytime'] = array('like','%'.$_POST['ytime'].'%');
 
         $teacher = M("teacher");
-        $list = $teacher->field("id,name,timg,explain")->where($map)->page($page.','.$rows)->select();
+        $list = $teacher->field("id,name,timg,explain,traders,limg")->where($map)->page($page.','.$rows)->select();
         $total = $teacher->where($map)->count();
 
         $result = array(
@@ -471,6 +467,8 @@ class UpAction extends Action{
         $data = $teacher->create();
         $data["name"] = $this->_post("name");
         $data['explain'] = $this->_post("explain");
+        $data['traders'] = $this->_post("traders");
+
         $app_img = $_FILES['timg'];
         $wide_height = getimagesize($app_img);
         $IMG_DIR = "../Public/upload";
@@ -492,8 +490,11 @@ class UpAction extends Action{
         }else{
             $info = $upload->getUploadFileInfo();
             $filename = $info[0]["savename"];
+            $filename1 = $info[1]["savename"];
             $fujianurl = substr($info[0]['savepath'].$filename,2 );
+            $fujianurl1 = substr($info[1]['savepath'].$filename1,2);
             $data['timg'] = $fujianurl;
+            $data['limg'] = $fujianurl1;
         }
         $result = $teacher->add($data);
         if($result !== false){
@@ -514,7 +515,7 @@ class UpAction extends Action{
         $id = $this->_post('id');
         if(!empty($id) && isset($id)){
             $teacher = M("teacher");
-            $result = $teacher->field('id,name,explain,timg')->where("id = ".$id)->find();
+            $result = $teacher->field('id,name,explain,traders,timg,limg')->where("id = ".$id)->find();
             $result['explain'] = htmlspecialchars_decode($result['explain']);
             echo json_encode($result);
         }
@@ -525,6 +526,7 @@ class UpAction extends Action{
         $data = $teacher->create();
         $data["name"] = $this->_post("name");
         $data["explain"] = $this->_post("explain");
+        $data['traders'] = $this->_post("traders");
         $app_img = $_FILES['timg'];
         $wide_height = getimagesize($app_img);
         $IMG_DIR = "../Public/upload";
@@ -546,8 +548,11 @@ class UpAction extends Action{
         }else{
             $info = $upload->getUploadFileInfo();
             $filename = $info[0]["savename"];
+            $filename1 = $info[1]["savename"];
             $fujianurl = substr($info[0]['savepath'].$filename,2 );
+            $fujianurl1 = substr($info[1]['savepath'].$filename1,2);
             $data['timg'] = $fujianurl;
+            $data['limg'] = $fujianurl1;
         }
 
         $result = $teacher->where('id = '.$_GET['id'])->save($data);

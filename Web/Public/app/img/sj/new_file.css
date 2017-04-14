@@ -1,0 +1,155 @@
+html{
+	font-size: 100px;
+	background: #d2eff7;
+	min-height: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.bodyAll{
+	width: 100%;
+}
+.top_cloud{
+	width: 100%;
+	top: 0;
+	position: fixed;
+}
+.top_cloud img{
+	width: 100%;
+	
+}
+.plent{
+	margin-top: 19%;
+}
+.plentImg{
+	width:20%;
+	float: left;
+	z-index: 100000;
+}
+.personImg{
+	width: 20%;
+	float: right;
+	margin-top: 0.7rem;
+}
+.plent div{
+	float: left;
+	width:50%;
+	margin-left: 0.15rem;
+	margin-top: 0.2rem;
+}
+.classesApply{
+	width: 100%;
+	color: #ff1212;
+	font-size: 0.25rem;
+	font-weight: 600;
+	text-align: center;
+	font-family: '宋体', Tahoma, Arial;
+}
+.name{
+	width: 90%;
+	margin-top: 0.1rem;
+}
+.name span{
+	color: #333333;
+	font-size: 0.15rem;
+}
+.name input{
+	width:68%;
+	border: 0;
+	border-bottom: 1px #aaaaaa solid;
+	background: #d2eff7;
+}
+.phone span{
+	color: #333333;
+	font-size: 0.15rem;
+}
+.phone input{
+	width:62%;
+	border: 0;
+	background: #d2eff7;
+	border-bottom: 1px #aaaaaa solid;
+}
+.plent div p{
+	line-height: 0.25rem;
+}
+.lastBtn{
+	float: right;
+	color: #000000;
+	text-align: center;
+	height: 0.20rem;
+	line-height: 0.22rem;
+	width: 0.5rem;
+	background: #9dcced;
+	border: 0;
+	margin-top: 0.1rem;
+	margin-right: 0.27rem;
+	margin-left: 0.5rem;
+}
+.top_cloud{
+	/*border: 1px red solid;*/
+}
+.plent{
+	/*border: 1px red solid;*/
+}
+.classessText{
+	margin-bottom: 0.2rem;
+	/*border: 1px red solid;*/
+}
+.classessText>p{
+	width: 100%;
+	text-align: center;
+}
+.classessText>div{
+	width: 70%;
+	margin: 0 auto;
+}
+.classessText>div p{
+	text-align: center;
+	line-height: 0.25rem;
+	font-size: 0.15rem;
+	color:#333333;
+}
+.classessText>div h5{
+	text-align: center;
+	line-height: 0.20rem;
+	color:#103466;
+	font-size: 0.2rem;
+	font-weight: 500!important;
+}
+.classesNewPlanTitle{
+	font-size: 0.25rem;
+	font-family: '宋体', Tahoma, Arial;
+	color: #ff1212;
+	font-weight: 600;
+	margin-bottom: 0.1rem;
+}
+
+
+
+.bottom_cloud{
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+.bottom_cloud img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

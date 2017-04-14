@@ -54,9 +54,11 @@
     <tr>
         <th field="id" align="center" width="5%">id</th>
         <th field="name" align="center" width="15%">老师名称</th>
-        <th field="explain" align="center" width="30%">老师信息</th>
-        <th field="timg" align="center" width="15%" formatter="imgFormatter">老师图片</th>
-        <th field="f" align="center" width="30%" formatter="show_manger">操作</th>
+        <th field="explain" align="center" width="20%">老师信息</th>
+        <th field="timg" align="center" width="10%" formatter="imgFormatter">老师图片</th>
+        <th field="limg" align="center" width="10%" formatter="imgFormatter">老师列表圆形图片</th>
+        <th field="traders" align="center" width="20%">操盘案例</th>
+        <th field="f" align="center" width="20%" formatter="show_manger">操作</th>
     </tr>
     </thead>
 </table>
@@ -78,12 +80,13 @@
     </div>
 </div>
 <!--新增-->
-<div id="dlg" class="easyui-dialog" title="设置" closed="true" buttons="#dlg-button" style="width:900px;height:700px;">
+<div id="dlg" class="easyui-dialog" title="设置" closed="true" buttons="#dlg-button" style="width:700px;height:500px;">
     <form id="fm" method="post" enctype="multipart/form-data">
         <div class="fitem">
             <label>老师名称:</label>
             <input type="text" name="name" class="easyui-validatebox">
         </div>
+
         <div class="fitem">
             <label>老师信息:</label>
             <script id="editor" name="explain" type="text/plain" style="width:750px;height:300px;">
@@ -91,8 +94,16 @@
             </script>
         </div>
         <div class="fitem">
+            <label>操盘案例:</label>
+            <input type="text" name="traders" class="easyui-validatebox" style="width: 300px;height:150px;;">
+        </div>
+        <div class="fitem">
             <label>老师图片:</label>
             <input type="file" name="timg">
+        </div>
+        <div class="fitem">
+            <label>老师列表圆形图片:</label>
+            <input type="file" name="limg">
         </div>
         <div id="dlg-button">
             <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()">保存</a>
@@ -104,10 +115,16 @@
 
 </body>
 <script type="text/javascript">
-    var ue = UE.getEditor('editor');
+
     var url;
     //图片
     function imgFormatter(value,row,index){
+        if('' != value && null != value)
+            value = '<img style="width:50px; height:50px" src="' + value + '">';
+        return  value;
+
+    }
+    function imgFormatter1(value,row,index){
         if('' != value && null != value)
             value = '<img style="width:50px; height:50px" src="' + value + '">';
         return  value;
@@ -131,9 +148,12 @@
 
     //展示修改信息
     function add(){
+        var ue = UE.getEditor('editor');
         $('#fm').form('clear');
         $('#dlg').dialog('open').dialog('setTitle','发布消息');
         url = "{:U('Up/teacheradd')}";
+        $('.window').css('zIndex', 1000);
+        $('.window-shadow').css('zIndex', 999);
 
     }
     //增加提交
@@ -190,18 +210,27 @@
         });
     }
 
+    var first = 0;
     function edit(id){
+        first += 1;
         $.ajax({
             type:'post',
             url:"__APP__/Up/teacheredit",
             data:{id:id},
             success:function(data){
-                row = eval('('+data+')');
-//                alert(row);
+                row = eval("("+data+")");
                 if (row){
                     $('#fm').form('clear');
                     $('#dlg').dialog('open');
+
+                    if(first == 1){
+                        $('#editor').html(row['explain']);
+                        var ue = UE.getEditor('editor');
+                    }
                     url = "{:U('Up/teachersave')}&id="+id;
+                    $('.window').css('zIndex', 1000);
+                    $('.window-shadow').css('zIndex', 999);
+                    $('.window-shadow').css('zIndex', 999);
                     $('#fm').form('load',row);
                 }else{
                     $.messager.show({

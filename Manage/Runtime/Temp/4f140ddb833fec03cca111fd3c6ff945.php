@@ -1,3 +1,0 @@
-<?php
-//000000000000s:80:"SELECT `kind` FROM `dcyd_viewkinds` WHERE ( `kind` = 'ä¸“å®¶ç²¾é€\‰' ) LIMIT 1  ";
-?>

@@ -2,23 +2,38 @@
 	class IndexAction extends Action {
 		public function index(){
 			$article = M("article");
-			$resul = $article->where("lanmu=1 && status=2")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->select();
+			$resul = $article->where("lanmu=1 && status=2")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->select();
 			$this->assign("resul",$resul);
-			$resu = $article->where("lanmu=2 && status=2")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->select();
+			$resu = $article->where("lanmu=2 && status=2")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->select();
 			$this->assign("resu",$resu);
-			$res = $article->where("lanmu=3 && status=2")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->select();
+			$res = $article->where("lanmu=3 && status=2")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->select();
 			$this->assign("res",$res);
-			$re = $article->where("lanmu=4 && status=2")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->select();
+			$re = $article->where("lanmu=4 && status=2")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->select();
 			$this->assign("re",$re);
 
 			//选课中心的信息显示
 			$view = M("view");
-			$arr = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')->group('kctitle')->where("kname = '系列专题'")->limit(3)->select();
+			$arr = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
+				->group('kctitle')->where("kname = '系列专题'")
+				->limit(3)
+				->select();
 			$this->assign("arr",$arr);
-			$arra = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')->group('kctitle')->where("kname = '专家精选'")->limit(3)->select();
+			$arra = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
+				->group('kctitle')->where("kname = '专家精选'")
+				->limit(3)
+				->select();
 			$this->assign("arra",$arra);
 			$xxkc = M("xxkc");
-			$rea = $xxkc->field('id,title,laiyuan,content,auth,describe,time,status,img')->select();
+			$rea = $xxkc->field('id,title,laiyuan,content,auth,describe,time,status,img')
+				->select();
 			foreach($rea as $key => $val) {
 				$rea[$key]['time'] = date('Y-m-d H:i:s', $val['time']);
 			}
@@ -48,7 +63,9 @@
 		public function essay(){
 			$id = $_GET["id"];
 			$article = M("article");
-			$result = $article->where("id=$id")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->find();
+			$result = $article->where("id=$id")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->find();
 			$result['content'] = htmlspecialchars_decode($result['content']);
 			$result['time'] = date('Y-m-d H:i:s',$result['time']);
 			$this->assign("result",$result);
@@ -63,7 +80,10 @@
 			import('ORG.Util.Page');
 			$Page       = new Page($count,8);
 			$show       = $Page->show();
-			$result = $article->where("lanmu=$lanmu and status = 2")->field('id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status')->limit($Page->firstRow.','.$Page->listRows)->select();
+			$result = $article->where("lanmu=$lanmu and status = 2")
+				->field('id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status')
+				->limit($Page->firstRow.','.$Page->listRows)
+				->select();
 			foreach($result as &$val){
 				$val['time'] = date('Y-m-d H:i:s',$val['time']);
 			}
@@ -88,7 +108,9 @@
 		public function mes(){
 			$lanmu = isset($_GET["lanmu"]) && !empty($_GET["lanmu"]) ? $_GET["lanmu"] : 1;
 			$article = M("article");
-			$resu = $article->where("lanmu=$lanmu")->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")->select();
+			$resu = $article->where("lanmu=$lanmu")
+				->field("id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status")
+				->select();
 			$this->assign("resu",$resu);
 			$this->display("index");
 		}
@@ -97,74 +119,56 @@
 		//课程页的信息
 		public function kce(){
 			$view = M("view");
-			$result = $view->field('id,kname,zname,name,title,img,kctitle')->where(" chapternum = 1 ")->select();
+			$name = $_GET["name"];
+			$result = $view->field('id,kname,zname,name,title,img,kctitle')->where(" chapternum = 1 ")
+				->select();
 			$this->assign("result",$result);
+			$viewkind = M("viewkinds");
+			$rea = $viewkind->field('id,kind')->select();
+			$this->assign('rea',$rea);
 			$viewclass = M("viewclass");
-			$resultt = $viewclass->distinct(true)->field('id,fname,zname')->where("fname = '系列专题'")->group("zname")->select();
+			$resultt = $viewclass->distinct(true)->field('id,fname,zname')->where("fname = '系列专题'")
+				->group("zname")->select();
 			$this->assign("resultt",$resultt);
 			$teacher = M("teacher");
-			$resultt1 = $teacher->distinct(true)->field('id,name')->group("name")->select();
+			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
 			$this->assign("resultt1",$resultt1);
-			$arr1 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')->where("kname = '系列专题' and chapternum = 1 ")->select();
+			$arr1 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
+				->where("kname = '{$name}' and chapternum = 1 ")
+				->select();
+//			var_dump($arr1);die;
+//			echo $view->getLastsql();die;
 			$this->assign("arr1",$arr1);
-			$arr11 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')->where("kname = '专家精选' and chapternum = 1 ")->select();
-			$this->assign("arr11",$arr11);
+//			$arr11 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
+//				->where("kname = '{$name}' and chapternum = 1 ")
+//				->select();
+//			$this->assign("arr11",$arr11);
 			$this->display();
 		}
 
 		//系列专题子项
-		public function xl(){
+		public function vielist(){
+			$name = $_GET["name"];
 			$view = M("view");
-			$zname = $_GET["name"];
-			$arrr = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')->where("zname ='".$zname."'and  kname = '系列专题'  and chapternum = 1 ")->select();
-			if($arrr != false) {
-				foreach($arrr as $k => $v){
-					$arrr[$k] = $v;
-					$data = <<<str
-						 <li class="fl">
-                        <a href="/index.php/Index/visual?id={$v['id']}&kname={$v['kname']}&name={$v['name']}&kctitle={$v['kctitle']}&title={$v['title']}" class="avio">
-                            <img src="{$v['img']}">
-                            <i></i>
-                        </a>
-                        <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$v['id']}&kname={$v['kname']}&name={$v['name']}&kctitle={$v['kctitle']}&title={$v['title']}">{$v['kctitle']}</a></span>
-                            <p>讲师:&nbsp;{$v['name']}</p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        </div>
-                    </li>
-str;
-					$str.=$data;
-				}
+			$result = $view->field('id,kname,zname,name,title,img,kctitle')->where(" chapternum = 1 ")
+				->select();
+			$this->assign("result",$result);
+			$viewkind = M("viewkinds");
+			$rea = $viewkind->field('id,kind')->select();
+			$this->assign('rea',$rea);
+			$viewclass = M("viewclass");
+			$resultt = $viewclass->distinct(true)->field('id,fname,zname')->where("fname = '系列专题'")
+				->group("zname")->select();
+			$this->assign("resultt",$resultt);
+			$teacher = M("teacher");
+			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
+			$this->assign("resultt1",$resultt1);
+			$arrr = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
+				->where("zname='{$name}' and chapternum = 1")
+				->select();
+			$this->assign("arrr",$arrr);
+			$this->display();
 
-			}
-			echo $str;
-		}
-
-		//专家精选
-		public function zj(){
-			$view = M("view");
-			$name = $this->_get("name");
-			$res = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')->where("name ='".$name."'and  kname = '专家精选'  and chapternum = 1 ")->select();
-			if($res != false){
-				foreach($res as $k=>$v){
-					$res[$k] = $v;
-					$data = <<<eco
-						 <li class="fl">
-                        <a href="/index.php/Index/visual?id={$v['id']}&kname={$v['kname']}&name={$v['name']}&kctitle={$v['kctitle']}&title={$v['title']}" class="avio">
-                            <img src="{$v['img']}">
-                            <i></i>
-                        </a>
-                        <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="/index.php/Index/visual?id={$v['id']}&kname={$v['kname']}&name={$v['name']}&kctitle={$v['kctitle']}&title={$v['title']}">{$v['kctitle']}</a></span>
-                            <p>讲师:&nbsp;{$v['name']}</p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        </div>
-                    </li>
-eco;
-					$eco.=$data;
-				}
-			}
-			echo $eco;
 		}
 
 
@@ -176,9 +180,13 @@ eco;
 			$kctitle = $_GET["kctitle"];
 			$title = $_GET["title"];
 			$view = M("view");
-			$result1 = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')->where(' name = "'.$name.' " and'.' kname = "'.$kname .'" and' .' id =  '.$id)->find();
+			$result1 = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
+				->where(' name = "'.$name.' " and'.' kname = "'.$kname .'" and' .' id =  '.$id)
+				->find();
 			$data[] = $result1;
-			$ress = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')->where("name='".$name."' and kname='".$kname."' and kctitle='".$kctitle."'")->select();
+			$ress = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
+				->where("name='".$name."' and kname='".$kname."' and kctitle='".$kctitle."'")
+				->select();
 			$arr = $view->field('name')->where("id = ".$id)->find();
 			$namee = $arr["name"];
 			$teacher = M("teacher");
@@ -209,7 +217,9 @@ eco;
 		public function xxdk(){
 			$id = $_GET['id'];
 			$xxkc = M("xxkc");
-			$rea = $xxkc->field('id,title,keywords,laiyuan,content,auth,describe,time,status,img')->where("id = ".$id)->find();
+			$rea = $xxkc->field('id,title,keywords,laiyuan,content,auth,describe,time,status,img')
+				->where("id = ".$id)
+				->find();
 			$rea['content'] = htmlspecialchars_decode($rea['content']);
 			$rea['time'] = date('Y-m-d H:i:s',$rea['time']);
 			$this->assign("rea",$rea);
@@ -219,7 +229,9 @@ eco;
 		public function xxdks(){
 			$id = $this->_post("id");
 			$xxkc = M("xxkc");
-			$ad = $xxkc->field('id,title,keywords,laiyuan,content,auth,describe,time,status,img')->where("id = ".$id)->find();
+			$ad = $xxkc->field('id,title,keywords,laiyuan,content,auth,describe,time,status,img')
+				->where("id = ".$id)
+				->find();
 			if($ad != false){
 				$result = array(
 					'success'=>true,
@@ -236,7 +248,9 @@ eco;
 			}else{
 				$id = $_GET["id"];
 				$user = M("user");
-				$result = $user->field('id,Phone,nickname,sex,firmname,position,industry,address')->where("id = ".$id)->find();
+				$result = $user->field('id,Phone,nickname,sex,firmname,position,industry,address')
+					->where("id = ".$id)
+					->find();
 				$this->assign("result",$result);
 				$this->display();
 			}

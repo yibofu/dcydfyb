@@ -1,0 +1,153 @@
+.businessAddress{
+	border: 3px #55bdcf solid;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+.businessAddress p{
+	color: black;
+	font-size: 14px;
+}
+.businessAddress img{
+	position: relative;
+	top: -23px;
+	left: 44px;
+}
+.messageBtn{
+	overflow: hidden;
+}
+.messageBtn>div{
+	float: left;
+	margin-right: 10px;
+}
+.instationAddress{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+.instationAddress p{
+	color: black;
+	font-size: 14px;
+}
+.instationAddress img{
+	position: relative;
+	top: -23px;
+	left: 44px;
+	display: none;
+}
+.messageMain{
+	border: 1px #CCCCCC solid;
+}
+.deleteAddress{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+.deleteAddress p{
+	color: black;
+	font-size: 14px;
+}
+.deleteAddress img{
+	position: relative;
+	top: -23px;
+	left: 44px;
+	display: none;
+}
+.readAddress{
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+.readAddress p{
+	color: black;
+	font-size: 14px;
+}
+.readAddress img{
+	position: relative;
+	top: -19px;
+	left: 44px;
+}
+.messageMainBtn{
+		overflow: hidden;
+}
+.delete{
+	float: left;
+	margin-right: 10px;
+}
+.read{
+	float: left;
+}
+.checkAll{
+	float: left;
+	margin-top: 25px;
+}
+.checkAll label{
+	color: #F55E5E;
+	margin-right: 10px;
+}
+.checkAll input{
+	margin-left: 30px;
+}
+.messageMainText p span{
+	color: #999999;
+	font-size: 14px;
+	margin-right: 30px;
+	
+}
+.messageMainText p{
+	padding: 10px 20px 10px 20px;
+	border-bottom: 1px #E2E2E2 dashed;
+}
+.messageMainText p span{
+	overflow: hidden;
+}
+.messageMainText p span span{
+	color: #687fd7;
+	font-size: 14px;
+	float: right;
+}
+.messageMainText p span span:hover{
+	cursor: pointer;
+}
+.messageMainText p :nth-child(2){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+	width: 400px;
+	padding-top: 10px;
+}
+
+.messageMainText p a{
+	text-decoration: none;
+	color: #0098B3;
+	font-size: 700;
+}
+.unread{
+	color: #F55E5E!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

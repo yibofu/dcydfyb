@@ -1,0 +1,176 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+.headTop{
+	height:27px;
+	background: #f2f2f2;
+	width: 100%;
+}
+.headTopCenter{
+	width:1000px;
+	height: 27px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.headTopCenter ul{
+	/*border: 1px red solid;*/
+	height: 100%;
+	width: 450px;
+	float: right;
+	overflow: hidden;
+}
+.headTopCenter ul li{
+	list-style: none;
+	float: left;
+}
+.welHead{
+	margin-right: 13px;
+	text-decoration: none;
+	font-size: 12px;
+	color:#999999;
+	cursor: pointer;
+	line-height: 27px;
+}
+
+.ahref{
+	width: 70px;
+	/*border: 1px red solid;*/
+	text-align: center;
+}
+.headTopCenter ul li a{
+	line-height:27px;
+	text-decoration: none;
+	font-size: 12px;
+	color:#999999;
+	cursor: pointer;
+}
+
+
+
+.serchTop{
+	height: 90px;
+	width: 100%;
+}
+.serchTopCenter{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.serchTopCenter>a{
+	display: inline-block;
+	float: left;
+}
+.serchInput{
+	float: left;
+	/*border: 1px red solid;*/
+	margin:28px 0px 0 180px ;
+}
+.InputAll{
+	height: 32px;
+	line-height: 32px;
+	width: 350px;
+	overflow: hidden;
+	border: 1px #e5e5e5 solid;
+}
+.InputAll select{
+	height: 32px;
+	width: 75px;
+	line-height: 32px;
+	float: left;
+	border: 1px #e5e5e5 solid;
+}
+.InputAll button{
+	width: 57px;
+	height: 32px;
+	background: #22abc3;
+	color: white;
+	font-size: 14px;
+	line-height: 32px;
+	text-align: center;
+	float: right;
+	border: 0;
+}
+.InputAll input{
+	float: left;
+	width: 215px;
+	height: 32px;
+	line-height: 32px;
+	border: 0;
+	color: #c2c2c2;
+	font-size: 12px;
+	text-indent: 5px;
+}
+.phoneSever{
+	/*border: 1px red solid;*/
+	float: right;
+	overflow: hidden;
+	margin: 25px 0 0 0;
+}
+.phoneSever img{
+	float: left;
+}
+.severImgText{
+	float: left;
+	height: 32px;
+	line-height: 16px;
+}
+.severImgText p{
+	width: 100%;
+	font-size: 12px;
+	margin-left: 5px;
+}
+.severImgText :nth-child(1){
+	color: #999999;
+}
+
+.severImgText :nth-child(2){
+	color: #ff5918;
+}
+
+
+.liOutA{
+	display:block;
+	width: 125px;
+	height: 42px;
+	float: left;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration:none;
+}
+.navBar{
+	width: 100%;
+	height: 42px;
+	background: #22abc3;
+}
+.navBarTitle{
+	width: 1000px;
+	margin: 0 auto;
+	height: 42px;
+	line-height: 42px;
+}
+.navBarTitle ul{
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

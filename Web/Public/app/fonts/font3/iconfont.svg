@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20120731 at Sat Apr  8 16:49:24 2017
+ By admin
+</metadata>
+<defs>
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face 
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="896"
+    descent="-128"
+    x-height="792"
+    bbox="0 -149 1024 896"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+0078-E895"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="341" 
+ />
+    <glyph glyph-name="x" unicode="x" horiz-adv-x="1001" 
+d="M281 543q-27 -1 -53 -1h-83q-18 0 -36.5 -6t-32.5 -18.5t-23 -32t-9 -45.5v-76h912v41q0 16 -0.5 30t-0.5 18q0 13 -5 29t-17 29.5t-31.5 22.5t-49.5 9h-133v-97h-438v97zM955 310v-52q0 -23 0.5 -52t0.5 -58t-10.5 -47.5t-26 -30t-33 -16t-31.5 -4.5q-14 -1 -29.5 -0.5
+t-29.5 0.5h-32l-45 128h-439l-44 -128h-29h-34q-20 0 -45 1q-25 0 -41 9.5t-25.5 23t-13.5 29.5t-4 30v167h911zM163 247q-12 0 -21 -8.5t-9 -21.5t9 -21.5t21 -8.5q13 0 22 8.5t9 21.5t-9 21.5t-22 8.5zM316 123q-8 -26 -14 -48q-5 -19 -10.5 -37t-7.5 -25t-3 -15t1 -14.5
+t9.5 -10.5t21.5 -4h37h67h81h80h64h36q23 0 34 12t2 38q-5 13 -9.5 30.5t-9.5 34.5q-5 19 -11 39h-368zM336 498v228q0 11 2.5 23t10 21.5t20.5 15.5t34 6h188q31 0 51.5 -14.5t20.5 -52.5v-227h-327z" />
+    <glyph glyph-name="mima" unicode="&#xe633;" 
+d="M522 256q-31 0 -53 -21.5t-22 -52.5q0 -22 12 -40t31 -27v-83q0 -13 9.5 -22.5t22.5 -9.5t22.5 9.5t9.5 22.5v83q19 9 31 27t12 40q0 31 -22 52.5t-53 21.5zM831 406h-640q-26 0 -45 -19t-19 -45v-427q0 -26 19 -45t45 -19h640q27 0 45.5 19t18.5 45v427q0 26 -18.5 45
+t-45.5 19zM831 -42q0 -27 -8 -35t-34 -8h-555q-27 0 -35 8t-8 35v341q0 27 8 35t35 8h555q26 0 34 -8t8 -35v-341zM209 438q13 0 22.5 9.5t10.5 22.5v0q22 92 97 152.5t172 60.5q76 0 139.5 -37.5t100.5 -100.5q8 -19 29 -19q14 0 23 9t9 23q0 10 -5 18q-46 78 -124.5 124.5
+t-171.5 46.5q-123 0 -216.5 -75.5t-117.5 -193.5v-2l-0.5 -1l-0.5 -1v0v-3q0 -14 9.5 -23.5t23.5 -9.5z" />
+    <glyph glyph-name="yonghuming" unicode="&#xe895;" 
+d="M1009 -67q-33 114 -98 202q-95 127 -241 170l-3 2l8 4q89 48 134 134t30 182q-13 90 -75 158q-83 92 -209 108q-2 0 -25 3h-36l-5 -1q-47 -6 -49 -7q-128 -26 -203 -130t-51 -231q28 -143 165 -218q1 0 6 -3q-4 -1 -5 -1q-60 -23 -63 -24q-107 -49 -181 -152
+q-70 -97 -101 -222q0 -2 -7 -35h1024q-14 58 -15 61zM241 583q0 106 79.5 181t191.5 75t191 -75t79 -181t-79 -181t-191 -75t-191.5 75t-79.5 181zM90 -71q5 30 6 31q20 96 77 168q76 95 205 127q73 18 161 14q79 -3 143 -25q144 -50 212 -185q30 -61 38 -126l1 -4h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1
+h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-1h-9v0z" />
+  </font>
+</defs></svg>

@@ -11,11 +11,65 @@
 		<link rel="stylesheet" href="/Public/app/fonts/font/iconfont.css" />
 		<link rel="stylesheet" href="/Public/app/css/Video_diagnostic.css" />
 		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
-
 		<script type="text/javascript" src="/Public/app/fonts/font/iconfont.js" ></script>
+		<script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
 		<style>
 			.active{
 				background: rgba(0,0,0,0.1);
+			}
+			.confirmText{
+				width: 625px;
+				height: 235px;
+				z-index: 101;
+				display: none;
+			}
+			.confirmTextMain{
+				overflow: hidden;
+				width: 500px;
+				margin: 0 auto;
+			}
+			.confirmTextImg{
+				border-radius: 50%;
+				width: 68px;
+				height: 68px;
+				border: 3px #55bdcf solid;
+				overflow: hidden;
+				float: left;
+				margin-top: 60px;
+			}
+			.confirmTextText{
+				margin-top: 30px;
+				width: 350px;
+				margin-left:20px;
+				float: left;
+				padding-top: 30px;
+			}
+			.confirmTextText p{
+				line-height: 25px;
+			}
+			.confirmTextText p a{
+				font-size: 12px;
+				color: #F55E5E;
+				margin: 0px 10px 0 10px;
+			}
+			.confirmTextText{
+				text-align: center;
+			}
+			.confirmTextImg img{
+				margin-left: 5px;
+			}
+			.confirmTextText :nth-child(1){
+				color: #189dbb;
+				font-size: 30px;
+				width: 100%;
+				margin: 0 auto;
+				line-height: 40px;
+			}
+			.confirmTextText :nth-child(2){
+				color: #666666;
+				font-size: 12px;
+				width: 70%;
+				margin:0 auto ;
 			}
 		</style>
 	</head>
@@ -143,7 +197,21 @@
 								</div>
 							</div>
 						</div>
-						
+							<div class="confirmText">
+								<div class="confirmTextMain">
+									<div class="confirmTextImg">
+										<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
+									</div>
+									<div class="confirmTextText">
+										<p>恭喜您！预约已成功！</p >
+										<p>请保持电话畅通，客服会在24小时内与您取得
+											联系。请在个人中心查看您的服务。</p >
+										<p>
+											<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回视频诊断</a><span>|</span><a href="#">进入个人中心</a>
+									</p >
+								</div>
+							</div>
+						</div>
 					</div>
 						<!--确定预约按钮-->
 						<div class="confirm_button">
@@ -285,7 +353,12 @@
 	</body>
 	<script src="/Public/app/js/jquery.min.js"></script>
 	<script>
-	
+		// 弹窗
+		$(".confirm_button button").click(function(){
+			$(".confirmText").css({"display":"block"});
+			$(".part_number").css("display","none");
+
+		});
 	$(function(){
 		//选项卡
 		$(".TAB_num i").css("color","#7FCBD9");
@@ -297,6 +370,7 @@
 		$(".TAB_num div").eq(0).css({"border":"2px #7fcbd9 solid"});
 		$(".TAB_num").mouseover(function(){
 //			alert($(this).index());
+			$(".confirmText").css({"display":"none"});
 			$(".TAB_num").css({"background":"white"});
 			$(".TAB_num").eq($(this).index()).css({"background":"#0098b3"});
 			$(".TAB_num div").css({"border":"2px #7fcbd9 solid"});

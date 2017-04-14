@@ -10,7 +10,40 @@
 		<link rel="stylesheet" href="/Public/app/css/teachers_introduce.css" />
 		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
 		<link rel="stylesheet" href="/Public/app/css/caption.css">
+		<link rel="stylesheet" href="/Public/app/css/fenye.css">
+		<link rel="stylesheet" href="/Public/app/css/fenye.js">
 		<script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
+		<style>
+			.teachers_specific_bottomText p{
+				line-height: 20px;
+				word-wrap: break-word;
+				overflow: hidden;
+				height:80px;
+			}
+			.teachers_specific_bottomText p :nth-child(2){
+				line-height: 20px;
+				height:40px;
+				overflow: hidden;
+				display: block;
+				color: #0098b3;
+				font-size: 14px;
+				font-width:600;
+
+			}
+			.teachers_specific_bottomText p a{
+				display: block;
+				float:right;
+			}
+
+			.leftText_textNew{
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4; /*这里规定在第几行开始变省略号*/
+				-webkit-box-orient: vertical;
+			}
+
+		</style>
 	</head>
 	<body style="background: white;">
 		<div class="consult_all">
@@ -88,6 +121,7 @@
 								<p class="teacher_text">企业财务管理顶尖实战专家企业财务管理顶尖</p>
 								<p class="teacher_text">企业财务管理顶尖实战专家企业财务管理顶尖</p>
 								<p class="teacher_text">企业财务管理顶尖实战专家</p>
+								<a class="teacher_button" href="#">更多</a>
 							</div>
 							<!--操盘案例-->
 							<div class="eg_traders">
@@ -99,149 +133,42 @@
 							</div>
 						</div>
 						<div class="teachers_introduce">
-							
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/lvjingjie.png" />
+							<volist name="result" id="vo">
+								<div class="teachers_specific">
+									<!--照片-->
+									<div class="teachers_specific_img">
+										<img src="{$vo.limg}" />
+									</div>
+									<!--右边文字-->
+									<div class="teachers_specific_leftText">
+										<p class="leftText_title"><span>{$vo.name}</span>财务健康顾问</p>
+										<div class="leftText_textNew">{$vo.explain}</div>
+
+									</div>
+									<div style="clear: both;"></div>
+									<!--下边文字-->
+									<div class="teachers_specific_bottomText">
+										<p><span>操盘案例：</span>
+											<span>{$vo.traders}</span>
+											<a href="{:U('Teacher/teacherIntroduce')}?id={$vo.id}">[更多]</a>
+										</p>
+									</div>
 								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>吕定杰</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>吕老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/zubaozhu.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>朱宝珠</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>朱老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/wenjia.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>翁嘉</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>翁老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/donggaozhong.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>董高仲</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>董老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/fangchong.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>方翀</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>方老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/xuzhike.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>徐志珂</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>徐老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/caojixue.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>曹继学</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>曹老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
-							<div class="teachers_specific">
-								<!--照片-->
-								<div class="teachers_specific_img">
-									<img src="/Public/app/img/teachers_img/zhaojinxuan.png" />
-								</div>
-								<!--右边文字-->
-								<div class="teachers_specific_leftText">
-									<p class="leftText_title"><span>赵进选</span>财务健康顾问</p>
-									<p class="leftText_text">企业财务管理顶尖实战专家 <br />企业财务管理顶尖实战专家<br /> <span>企业财务管理顶尖实战专家1231</sapn></p>
-								</div>
-								<div style="clear: both;"></div>
-								<!--下边文字-->
-								<div class="teachers_specific_bottomText">
-									<p><span>操盘案例：</span>赵老师通过课程理论与情景模拟结合等刘老师通过课程理论与情景<a href="#">[更多]</a></p>
-								</div>
-							</div>
+							</volist>
 						</div>
 						<!--页数-->
 						<div class="page">
-							<ul>
-								<li class="page_left">上一页</li>
-								<li class="page_num">1</li>
-								<li class="page_num">2</li>
-								<li class="page_num">3</li>
-								<li class="page_num">4</li>
-								<li class="page_num">5</li>
-								<li class="page_num">...</li>
-								<li class="page_right">下一页</li>
-							</ul>
+							<!--<ul>-->
+								<!--<li class="page_left">上一页</li>-->
+								<!--<li class="page_num">1</li>-->
+								<!--<li class="page_num">2</li>-->
+								<!--<li class="page_num">3</li>-->
+								<!--<li class="page_num">4</li>-->
+								<!--<li class="page_num">5</li>-->
+								<!--<li class="page_num">...</li>-->
+								<!--<li class="page_right">下一页</li>-->
+							<!--</ul>-->
+							{$page}
 						</div>
 						<!--专家现场授课-->
 						<div class="expert_teach">

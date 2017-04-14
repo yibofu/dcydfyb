@@ -1,0 +1,48 @@
+.security input{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 5px;
+	border: 1px #CCCCCC solid;
+}
+.security  p span{
+	font-size: 14px;
+	color: #666666;
+}
+.security{
+	padding-left: 50px;
+	margin-top: 50px;
+}
+.security p{
+	margin:  20px 0 20px 0;
+}
+.oldPassword{
+	width: 300px;
+	
+}
+.newPassword{
+	width: 300px;
+}
+.inputCode{
+	width: 215px;
+}
+.codeBtn{
+	width: 85px;
+	background:#0098b3 ;
+	color: white;
+}
+.security button{
+	width: 65px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	color: white;
+	background: #F55E5E;
+	border: 0;
+	margin-left: 200px;
+	margin-top: 30px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px black;
+}
+.hint{
+	color:#F55E5E;
+}

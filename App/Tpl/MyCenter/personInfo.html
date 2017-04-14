@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" href="/Public/app/css/person_page.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/app/css/commonality.css"/>
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script src="/Public/app/js/person_page.js"></script>
+		<script type="text/javascript" src="/Public/app/js/birthday.js"></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+				<form id="datas" action="{:U('MyCenter/updateInfo')}" method="post" enctype="multipart/form-data">
+				<div class="main_person_text">
+					<p class="person_title"><span>个人信息</span></p>
+					<!--个人信息头像-->
+					<div class="person_information">
+						<!--
+						<div class="person_information_left">
+							<input type="file" name="photo">
+						</div>
+							-->
+						<div class="my_photo div1">
+						<img src="{$person.img}" class="person_information_img">
+							<div class="div2">上传图片</div>
+							<input value=" 上传头像" type="file" name="file" class="inputstyle" />
+						</div>
+						<div class="person_information_right">
+							<p>用户名：<span>{$person.nickname}</span></p>
+							<p>会员类型：
+								<if condition="$person.is_vip eq 2">
+								<span>普通会员</span>
+								<elseif condition="$person.is_vip eq 1" />
+								<span>金鹊会员</span>
+								</if>
+							</p>
+							<if condition="$person.is_vip eq 2">
+							<a href="#">升级金鹊会员</a>
+							</if>
+						</div>
+					</div>
+					<!--个人信息-->
+					<div class="person_information_form">
+						<div class="nickname">
+							<p><span>*</span>昵称：<input type="text" name="sname" value="{$person.nickname}" required="required"/></p>
+						</div>
+						<div class="sex">
+							<p><span>*</span>性别：
+							<input type="radio" value="1" name="sex" <if condition="$person.sex eq 1">checked="checked"</if>><label>男</label>
+							<input type="radio" value="0" name="sex" <if condition="$person.sex eq 2">checked="checked"</if>><label>女</label></p>
+						</div>
+						<div class="birthday">
+							<p>
+								<span>*</span>生日：
+								<select class="sel_year" name='year' rel="{$person.birth.0}"></select><span>年</span>
+								<select class="sel_month"  name='month' rel="{$person.birth.1}"></select><span>月</span>
+								<select class="sel_day" name='day' rel="{$person.birth.2}"></select><span>日</span>
+							</p>
+						</div>
+						<div class="company">
+							<p><span>*</span>公司：<input type="text" required="required" value="{$person.firmname}" placeholder="大财有道" name="company"/></p>
+						</div>
+						<div class="job">
+							<p><span>*</span>职位：<input type="text" required="required"  value="{$person.position}" placeholder="产品经理" name="position"/></p>
+						</div>
+						<div class="business">
+							<p><span>*</span>行业：<input type="text" required="required"  value="{$person.industry}" placeholder="互联网" name="trade" /></p>
+						</div>
+						<div class="interests">
+							<p><span>*</span>兴趣爱好：请选择您感兴趣的分类，给您最精准的推荐 </p>
+							<div>
+									<volist name="hobbylist" id="hobby">
+									<input type="checkbox" name="hobs[]" style="display:none" value="{$hobby.v}" <if condition="$hobby.check eq 1"> checked="checked"</if> id="{$hobby.pysx}"/>
+									<label for="{$hobby.pysx}" class="onelabel" <if condition="$hobby.check eq 1"> style="border:3px #55bdcf solid"</if>>{$hobby.name}</label>
+									</volist>
+							</div>
+						</div>
+						<div class="company">
+							<p>邮箱：<span><input type="text" required="required" value="{$person.mail}"  placeholder="邮箱" name="mail" /></span></p>
+						</div>
+						<div class="trueName">
+							<p><span>*</span>真实姓名：<input class="trueNameInput"  value="{$person.truename}" name="relname" type="text" placeholder="董丽丽" required="required"/><span class="hint"></span></p>
+						</div>
+						
+						<div class="btn">
+							<button class="asubmitBtn" name="sub" type="submit">提交</button>
+						</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+
+	<script>  
+		$(function () {
+			$.ms_DatePicker({
+				YearSelector: ".sel_year",
+				MonthSelector: ".sel_month",
+				DaySelector: ".sel_day"
+			});
+		});
+	</script>
+</html>

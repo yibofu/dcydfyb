@@ -1,0 +1,162 @@
+<!DOCTYPE html> <html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心主页</title>
+		<link rel="stylesheet" href="/Public/app/css/person_homepage.css" />
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script src="/Public/app/js/person_homepage.js"></script>
+		<style type="text/css">
+			.MinHeight{
+				min-height: 200px;
+				text-align:center;
+				line-height: 200px;
+				border:1px solid #cccccc;
+				margin-bottom: 20px;
+			}
+			.MinHeight p{
+				color: #cccccc;
+				font-size: 14px;
+			}
+			.my_order>p span a {
+				text-decoration:none;
+				color: #0098b3;
+			}		
+			.my_order>p span a:hover {
+				text-decoration:underline;
+			}		
+		</style>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--左侧内容部分-->
+				<div class="main_left">
+					<!--个人信息-->
+					<div class="person_information">
+						<!--头像-->
+						<div class="my_photo">
+							<img src="{$userInfo.img}"  class="person_information_img">
+						</div>
+						<!--名字以及信息-->
+						<div class="name_information">
+							<p class="name">{$userInfo.nickname}</p>
+							<p class="vip_mold">会员类型：<span>{$userInfo.vipType}</span></p>
+							<div class="SAM">
+								<p>账户安全：</p>
+								<div>
+									<p></p>
+									<p></p>
+									<p></p>
+								</div>
+								<p class="SAM_last_p">较高</p>
+							</div>
+						</div>
+						<!--待付款-->
+						<div class="name_icon">
+							<div>
+								<img src="/Public/app/img/obligation.png" />
+								<p>待付款<span>{$noPaynumber}</span></p>
+							</div>
+							<div>
+								<img src="/Public/app/img/answer.png" />
+								<p>待回答<span>{$noAnswer}</span></p>
+							</div>
+							<div>
+								<img src="/Public/app/img/sign_up.png" />
+								<p>已报名<span>{$signUp}</span></p>
+							</div>
+							<div>
+								<img src="/Public/app/img/meet.png" />
+								<p>待约见<span>{$yjtNumber}</span></p>
+							</div>
+						</div>
+					</div>
+					<!--我的订单-->
+					<div class="my_order">
+						<p>我的订单<span><a href="{:U('MyCart/index')}">查看全部订单</a></span></p>
+						<!--我的订单开始遍历-->
+						<volist name="orderInfo" id="order" empty="$empty">
+						<div class="my_order_text">
+							<img src="{$order.img}" style="width:122px;" />
+							<div class="my_order_text_text">
+								<div><p>{$order.title}</p></div>
+								<div><p>￥{$order.money}</p><p>在线支付</p></div>
+							<div><p>{$order.day}</p><p>{$order.hour}</p></div>
+							<div>
+								<p style=<if condition="$order.status eq 1">"color: #F55E5E;"</if>>{$order.chstatus}</p>
+								<if condition="$order.status eq 2">
+								<p style="color: #F55E5E;">评价课程</p>
+								<elseif condition="$order.status eq 3"/>
+								<p>已评价</p>
+								</if>
+								
+							</div>
+							</div>
+						</div>
+						</volist>
+					</div>
+					<!--最近浏览-->
+					<div class="recent">
+						<p class="recent_title">最新浏览</p>
+						<div class="video_show">
+						<!--块级-->
+						<volist name="browserInfo" id="video" empty="$empty">
+							<div class="video_show_part">
+								<img class="img_num1"  src="{$video.img}" />
+								<div class="first_model">
+									<p><span>视频</span></p>
+									<span>{$video.title}</span>
+								</div>
+								<div class="second_model">
+									<img src="/Public/app/img/person.png" />
+									<span style="font-size: 10px;">{$video.teacher}</span>
+									<span style="font-size: 10px;" class="price">￥{$video.money}</span>
+									<span  style="font-size: 10px;"class="VIP_free">VIP免费</span>
+									<img class="star_collect" src="/Public/app/img/collect.png" />
+									<span class="star_number" style="font-size: 10px;">{$video.collNum}</span>
+								</div>
+							</div>
+						</volist>
+						</div>
+					</div>
+				</div>
+				<!--右侧会员推荐-->
+				<div class="main_right">
+					<!--会员推荐-->
+					<div class="vip_introduce">
+						<p class="vip_recommend">会员推荐</p>
+						<a><img src="/Public/app/img/jinque_vip.png" /></a>
+						<div class="boss_thought">
+							<div class="boss_thought_model">
+								<p class="boss_thought_title">老板财务思维</p>
+								<img src="/Public/app/img/video_img.png" width="80%"/>
+							</div>
+						</div>
+					</div>
+					
+					<!--我的收藏-->
+					<div>
+						<p class="my_collect_title">我的收藏</p>
+						<div class="my_collect">
+							<volist name="collectionInfo" id="collect" empty="$empty">
+							<div class="my_collect_model">
+								<img src="{$collect.img}" style="width:105px;" />
+								<p><a href="#">{$collect.title}</a></p>
+							</div>
+							</volist>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+			$(function(){
+				$(".bac-e a").eq(0).css("color","#55BDCF");
+			});
+		</script>
+</html>

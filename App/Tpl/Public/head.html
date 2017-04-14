@@ -1,38 +1,81 @@
-<!--头部 c02003-->
-<div class="official-head">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>导航</title>
+		<link rel="stylesheet" href="/Public/app/css/head.css" />
+		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+	</head>
+	<body>
+		
+		<div class="headAll">
 
-    <div class="head-two">
-        <div class="one">
-            <a href="{:U('Index/index')}"><img src="/Public/app/img/logo-a.png" class="img1 fl"/></a>
-            <div class="seek-a fl">
-                <div class="seek bor-a">
-					<form action="{:U('Search/search')}" method="get">
-						<table class="fl">
-							<tr>
-								<td>
-									<select name="drop2" class="ui-select fl">
-										<option value="article">搜文章</option>
-										<option value="video">搜视频</option>
-									</select>
-								</td>
-							</tr>
-						</table>
-						<input class="fl title-a" type="text" name="keywords" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}"onblur="if (value ==''){value='请输入关键词'}">
-						<button class="fl" type="submit">搜索</button>
-					</form>
-                </div>
-                <div class="trade fl">
-                    <p class="title-a fl wid color-a">热门搜索：</p>
-                    <div class="box title-a fl color-b wid"></div>
-                    <a class="change title-a fl color-a"><img src="/Public/app/img/hh.png" class="img3"/>换一换</a>
-                </div>
-            </div>
-            <div class="hours fl">
-                <img src="/Public/app/img/logo-b.png" class="img4 fl"/>
-                <p class="title-a">24小时服务热线</p>
-                <p class="title-a color-c">010-59458017</p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
+			<!--头部栏-->
+			<div class="headTop">
+				<div class="headTopCenter">
+				<if condition="$_SESSION['admins']['id'] eq ''">
+					<ul>
+						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
+						<li class="ahref"><a href="{:U('Login/loginPage')}">登录</a></li>
+						<li class="ahref"><a href="{:U('Register/doorway')}">注册</a></li>
+						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="{:U('Index/user')}">用户中心</a></li>
+					</ul>
+				<else />
+					<ul>
+						<li class="welHead">您好，欢迎<a href="{:U('MyCenter/index')}" style="color:#ff5918;">{$_SESSION['admins']['Phone']}</a>访问扁鹊财院</li>
+						<li class="ahref"><a href="{:U('Index/loginout')}" style="color:#ff5918;">[退出]</a></li>
+						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="{:U('MyCenter/index')}">用户中心</a></li>
+					</ul>
+				</if>
+				</div> 
+			</div>
+			<!--中间栏目-->
+			<div class="serchTop">
+				<div class="serchTopCenter">
+					<!--左边logo图标-->
+					<a href="{:U('Index/index')}"><img class="LOGOAll" src="/Public/app/img/LOGOAll.png" /></a>
+					<!--搜索框-->
+					<div class="serchInput">
+						<div class="InputAll">
+							<form action="{:U('Search/search')}">
+								<select  name="drop2">
+									<option  value="article">搜文章</option>
+									<option value="video">搜视频</option>
+								</select>
+								<input type="search" name="keywords" placeholder="请输入关键词"/>
+								<button type="submit">搜索</button>
+							</form>
+						</div>
+						
+					</div>
+					<!--右边服务图标和文字-->
+					<div class="phoneSever">
+						<img src="/Public/app/img/severlogo.png" />
+						<div class="severImgText">
+							<p>24小时服务热线</p>
+							<p>010-5945-8017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navBar">
+				<div class="navBarTitle">
+					<ul>
+						<a href="{:U('Index/index')}" class="liOutA">首页</a>
+						<a href="{:U('Videodiagnostic/Video_diagnostic')}" class="liOutA">财税问诊</a>
+						<a href="{:U('Index/kce')}" class="liOutA">课程中心</a>
+						<a href="{:U('Article/message')}" class="liOutA">新政速递</a>
+						<a href="{:U('AskAnswer/Asks')}" class="liOutA">百问百答</a>
+						<a href="{:U('Vip/openVip')}" class="liOutA">会员专享</a>
+						<a href="{:U('Teacher/teacherList')}" class="liOutA">专家团队</a>
+						<a href="{:U('Index/about')}" class="liOutA">关于扁鹊</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,138 @@
+
+
+.deleteDay7{
+	width: 100%;
+	height:65px;
+	background: #eeeeee;
+	margin-top: 45px;
+}
+.deleteDay7 p{
+	color: #333333;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 65px;
+	padding-left: 20px;
+}
+.coursesTitle{
+	background: #F9F9F9;
+	height: 45px;
+	width: 100%;
+	overflow: hidden;
+}
+.coursesTitle :nth-child(1){
+	width:370px ;
+}
+.coursesTitle :nth-child(2){
+	width:300px ;
+}
+.coursesTitle :nth-child(3){
+	width:100px ;
+}
+.coursesTitle p{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	font-size: 14px;
+	color: #333333;
+}
+.coursesText{
+	margin-top: 20px;
+	padding-bottom:20px;
+	border-bottom: 1px #CCCCCC solid;
+}
+.textTime{
+	font-size: 14px;
+	color: #333333;
+}
+.textSpecific{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.textSpecific img{
+	float: left;
+}
+.textSpecific>p{
+	float: left;
+}
+.status{
+	color: #F55E5E;
+	font-size: 14px;
+	font-weight: 700;	
+	padding-top: 25px;
+	margin-left: 130px;
+}
+.textSpecific>div{
+	float: right;
+	margin-right: 10px;
+}
+.imgText{
+	color: #0098B3;
+	font-size: 14px;
+	font-weight: 700;
+	padding-top: 25px;
+	margin-left: 10px;
+	width: 250px;
+    overflow: hidden;
+}
+
+.textSpecific>div>a{
+	display: block;
+	width: 85px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #982727;
+	background: #F55E5E;
+	color: white;
+	font-size: 16px;
+	line-height: 35px;
+	border: 0;
+	text-decoration: none;
+}
+.textSpecific>div>a:hover{
+	cursor: pointer;
+}
+.textSpecific>div p{
+	width: 100%;
+	margin-top: 3px;
+	text-align: center;
+}
+.textSpecific>div p a{
+	color: #0098B3;
+	font-size: 16px;
+	text-decoration: none;
+} 
+ .textSpecific>div :nth-child(2){
+ 	color: #F55E5E;
+ }
+  .textSpecific>div :nth-child(2):hover{
+  	cursor: pointer;
+  }
+ .statusCheck{
+ 	color: #666666;
+ }
+.textSpecific>div p{
+	width: 100%;
+	margin-right: 20px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+

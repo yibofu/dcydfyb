@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>线下课程</title>
+		<link rel="stylesheet" href="/Public/app/css/Offline-Courses.css" />
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/fenye.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/Public/app/js/fenye.js" ></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+				<div class="main_person_text" style="width: 780px;">
+					<p class="person_title"><span>线下课程</span></p>
+					<div class="deleteDay7">
+						<p>七天内未付款的课程将自动删除</p>
+					</div>
+					<div class="coursesTitle">
+						<p>购课信息</p>
+						<p>状态</p>
+						<p>操作</p>
+					</div>
+					<div class="coursesText">
+						<volist name="list" id="course" empty="$empty">				
+						<div class="textSpecific">
+							<img src="/Public/app/img/课程图片.png"/>
+							<p class="imgText">
+								<span>{$course.courseName}</span>
+								<span>开课时间&nbsp;|<span>{$course.date}</span></span>
+								<span>
+									<if condition="$course['paytype'] eq 1">
+									<img src="/Public/app/img/offline-pay.png">
+									<elseif condition="$course['paytype'] eq 2" />
+									<img src="/Public/app/img/online-pay.png">
+									</if>
+									<a href="#" style="color: #0098B3;">{$course.dpaytype}</a>
+								</span>
+							</p>
+							<p class="status">{$course.dstatus}</p>
+							<if condition="$course.status eq 1">
+							<div>
+								<!--
+								<a href="#">立即付款</a>
+								-->
+								<a href="{:U('MyOpenCourse/cancelSign')}?courid={$course.id}">取消报名</a>
+								<p><a href="{:U('MyOpenCourse/delSign')}?courid={$course.id}">删除记录</a></p>
+							</div>
+							<elseif condition="$course.status eq 2 && $course.isevaluate eq 0" />
+							<div>
+								<a href="{:U('MyOpenCourse/evaluate')}?cid={$course.id}">评价课程</a>
+								<p><a href="{:U('MyOpenCourse/delSign')}?courid={$course.id}">删除记录</a></p>
+							</div>
+							<elseif condition="$course.status eq 2 && $course.isevaluate eq 1" />
+							<div>
+								<p>已评价</p>
+								<p><a href="{:U('MyOpenCourse/delSign')}?courid={$course.id}">删除记录</a></p>
+							</div>
+							<elseif condition="$course.status eq 3" />
+							<div>
+								<p><a href="{:U('MyOpenCourse/delSign')}?courid={$course.id}">删除记录</a></p>
+							</div>
+							</if>
+						</div>
+						</volist>
+					</div>
+						<!--页数-->
+					<div class="page">
+						{$page}
+					</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+				$(".bac-e a").eq(10).css("color","#55BDCF");
+			});
+		</script>
+</html>

@@ -1,3 +1,0 @@
-<?php
-//000000000000s:71:"SELECT `type` FROM `dd_answer` WHERE ( id=11111111111111111 ) LIMIT 1  ";
-?>

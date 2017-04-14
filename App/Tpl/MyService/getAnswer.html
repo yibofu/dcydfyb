@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>问题详情</title>
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/problem-details.css" />
+		<link rel="stylesheet" href="/Public/app/css/iconfont.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script src="/Public/app/js/iconfont.js"></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+				<div class="main_person_text" style="width: 700px;">
+					<p class="person_title"><span>问题详情</span></p>
+					<div class="firstTr">
+						<p></p>
+						<p>问题</p>
+						<p>{$question.addtime}</p>
+					</div>
+					<div class="score">
+						<div class="scoreProblem">
+							<p>
+							{$question.question}
+							</p>
+						</div>
+						<div class="scoreContent">
+							<p>答案：</p>
+							<p>{$answer.answer}</p>
+						</div>
+					</div>
+					<div class="solveProblem">
+						<div class="solveProblemLeft">
+							<p>本次答案是否解决了您的问题？</p>
+							<button type="button" attr="2" name="solve" class="settleBtn">
+								<p><i class="iconfont" style="color: #F55E5E;line-height: 18px;">&#xe61d;</i><span>已解决</span></p>
+								<img class="settle" style="top: -21px;" src="/Public/app/img/gou.png"/>
+							</button>
+							<button attr="3" type="button" name="solve" class="unsettleBtn">
+								<p><i class="iconfont" style="color: #3cf497;">&#xe60d;</i><span >未解决</span></p>
+								<img class="unsettle" style="top: -21px;" src="/Public/app/img/gou.png"/>
+							</button>
+						</div>
+						<div class="solveProblemRight">
+							<a href="{:U('MyService/evaluate')}?sid=tw_{$question.id}">评价</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+//				$(".bac-e a").eq(1).css("color","#55BDCF");
+				$(".settleBtn").css("border","2px #55bdcf solid");
+				$(".settleBtn").find("img").css("display","block");
+				$(".unsettleBtn").css("border","2px #cccccc solid");;
+				$(".unsettleBtn").find("img").css("display","none");
+				$(".solveProblemLeft>button").click(function(){
+					$(this).css("border","2px #55bdcf solid");
+					$(this).find("img").css("display","block");
+					$(this).siblings("button").css("border","2px #cccccc solid");
+					$(this).siblings("button").find("img").css("display","none");
+				});
+				
+				$("button[name=solve]").click(function() {
+					var qid = {$question.id};
+					var scode = $(this).attr('attr');
+
+					$.post(
+						"{:U('MyService/solved')}",
+						{'qid':qid, 'scode':scode},
+						function(res) {
+							alert(res);
+						}
+					);
+				})
+			});
+		</script>
+</html>
+

@@ -1,8 +1,0 @@
-[ 2017-01-20T11:20:51+08:00 ] 127.0.0.1 /
-INFO: [ app_begin ] --START--
-INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
-NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
-SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.008001s ]
-SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001001s ]
-

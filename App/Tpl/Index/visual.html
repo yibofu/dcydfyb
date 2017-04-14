@@ -264,7 +264,6 @@
         .basic-a .basicb:hover{ cursor:pointer;font-weight: bold;}
         .head-three .three li {
             float: left;
-            width: 200px;
             line-height: 17px;
             text-align: center;
             font-size: 16px;
@@ -272,9 +271,20 @@
             height: 42px;
             cursor: pointer;
         }
-        .head-three .three li a {
-            color: #ffffff;
-            padding: 0 67px;
+        /*.head-three .three li a {*/
+            /*!*color: #ffffff;*!*/
+            /*!*padding: 0 67px;*!*/
+            /*!*border: 1px red solid;*!*/
+        /*}*/
+
+        .fl input{
+            width: 210px!important;;
+        }
+        .fl button{
+            float: right;
+        }
+        .seek{
+            overflow: hidden;
         }
     </style>
     <script src="/Public/app/js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
@@ -432,74 +442,74 @@
 </body>
 <script type="text/javascript">
     //导航栏 c02003
-    $(function(){
-        $(".boe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".aoe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".boe").mouseout(function(){
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-        $(".boa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0px');
-        })
-        $(".aoa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0');
-        })
-        $(".boa").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-
-        $(".bob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".aob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".bob").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".boc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aoc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".boc").mouseout(function(){
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".bod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".bod").mouseout(function(){
-            $(".aod").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-    })
+//    $(function(){
+//        $(".boe").hover(function(){
+//            $(".aoe").css('border','0');
+//        })
+//        $(".aoe").hover(function(){
+//            $(".aoe").css('border','0');
+//        })
+//        $(".boe").mouseout(function(){
+//            $(".aoe").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-left','1px solid #ffffff');
+//        })
+//        $(".boa").hover(function(){
+//            $(".aoa").css('border','0');
+//            $(".aoe").css('border-right','0px');
+//        })
+//        $(".aoa").hover(function(){
+//            $(".aoa").css('border','0');
+//            $(".aoe").css('border-right','0');
+//        })
+//        $(".boa").mouseout(function(){
+//            $(".aoa").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-left','1px solid #ffffff');
+//        })
+//
+//
+//        $(".bob").hover(function(){
+//            $(".aoa").css('border','0');
+//            $(".aob").css('border','0');
+//        })
+//        $(".aob").hover(function(){
+//            $(".aoa").css('border','0');
+//            $(".aob").css('border','0');
+//        })
+//        $(".bob").mouseout(function(){
+//            $(".aoa").css('border-right','2px solid #ffffff');
+//            $(".aob").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-left','1px solid #ffffff');
+//        })
+//
+//        $(".boc").hover(function(){
+//            $(".aob").css('border','0');
+//            $(".aoc").css('border','0');
+//        })
+//        $(".aoc").hover(function(){
+//            $(".aob").css('border','0');
+//            $(".aoc").css('border','0');
+//        })
+//        $(".boc").mouseout(function(){
+//            $(".aob").css('border-right','2px solid #ffffff');
+//            $(".aoc").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-left','1px solid #ffffff');
+//        })
+//
+//        $(".bod").hover(function(){
+//            $(".aod").css('border','0');
+//            $(".aoc").css('border','0');
+//        })
+//        $(".aod").hover(function(){
+//            $(".aod").css('border','0');
+//            $(".aoc").css('border','0');
+//        })
+//        $(".bod").mouseout(function(){
+//            $(".aod").css('border-right','2px solid #ffffff');
+//            $(".aoc").css('border-right','2px solid #ffffff');
+//            $(".aoe").css('border-left','1px solid #ffffff');
+//        })
+//    })
     $('#kcjs').bind('click',function(){
 //        alert(1);
         $(".basic").css("display","block");

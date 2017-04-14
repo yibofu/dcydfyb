@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的诊断</title>
+		<link rel="stylesheet" href="/Public/app/css/my-diagnose.css" />
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/fenye.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/Public/app/js/fenye.js" ></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+				<div class="main_person_text" style="width: 700px;" >
+					<p class="person_title"><span>我的诊断</span></p>
+										<table>
+						<tr class="th">
+							<td>编号</td>
+							<td>服务类型</td>
+							<td>预约时间</td>
+							<td>服务状态</td>
+							<td>专家顾问</td>
+							<td>备注信息</td>
+						</tr>
+						<volist name="list" id="service">
+						<tr>
+							<td>编号：{$service.number}</td>
+							<td>{$service.typename}</td>
+							<td>{$service.time}</td>
+							<td>
+								<p>{$service.status}</p>
+								<p></p>
+							</td>
+							<td>{$service.teacher}</td>
+							<td>
+								<if condition="$service.note eq 'eva'">
+								<a href="{:U('MyService/evaluate')}?sid=zd_{$service.id}">评价</a>
+								<else />
+								{$service.note}
+								</if>
+								
+							</td>
+						</tr>
+						</volist>
+					</table>
+					<?php 
+						if(empty($list)){
+							 echo $empty; 
+						}
+					?>
+
+					<!--页数-->
+						<div class="page">
+						{$page}
+						</div>
+
+				</div>
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+				$(".bac-e a").eq(6).css("color","#55BDCF");
+			});
+		</script>
+</html>

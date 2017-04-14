@@ -1,0 +1,41 @@
+.collection {
+	margin-top: 20px;
+}
+.collection ul{
+	overflow: hidden;
+	margin-left: 10px;
+}
+.collection ul li {
+	list-style: none;
+	float: left;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+.checkLightBot {
+	position: relative;
+	top: -20px;
+	left: 93%;
+	display: block;
+	width: 15px;
+	height: 15px;
+}
+.collection ul li :nth-child(3){
+	color: #999999;
+	font-size: 14px;
+	margin-top: -10px;
+}
+.checkAllBtn{
+	padding-left: 540px;
+	margin-top: 30px;
+}
+.checkAllBtn button{
+	width: 65px;
+	height: 25px;
+	color: #666666;
+	font-size: 14px;
+	text-align: center;
+	line-height: 14px;
+	border: 0;
+	background: #e5e5e5;
+}

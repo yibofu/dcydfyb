@@ -218,18 +218,20 @@
 	margin-right: 10px;
 	font-weight: 700;
 }
-.leftText_text{
+.leftText_textNew{
 	margin-top: 20px;
 	width: 170px;
+	height: 60px;
+	overflow: hidden;
 	font-size: 14px;
 	color: #666666;
 }
-.leftText_text span{
-	display: block;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-}
+/*.leftText_text span{*/
+	/*display: block;*/
+	/*text-overflow: ellipsis;*/
+	/*overflow: hidden;*/
+	/*white-space: nowrap;*/
+/*}*/
 .teachers_specific_bottomText{
 	margin-top: 10px;
 }
@@ -238,7 +240,7 @@
 	font-size: 14px;
 	padding: 10px;
 }
-.teachers_specific_bottomText p span{
+.teachers_specific_bottomText p :nth-child(1){
 	color: #0098b3;
 	font-size: 14px;
 	font-weight: 700;
@@ -294,4 +296,24 @@
 	height: 137px;
 	float: left;
 	margin: 5px 0 5px 5px ;
+}
+
+.weekend_teacher{
+	border: 1px #0098b3 solid;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.teacher_button{
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #015a6a;
+	display: block;
+	float: right;
+	text-decoration: none;
+	width: 65px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	background: #0098B3;
 }

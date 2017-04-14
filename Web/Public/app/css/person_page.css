@@ -1,0 +1,411 @@
+
+/*个人信息头像*/
+.person_information{
+	width: 100%;
+	/*border: 1px red solid;*/
+	margin-top: 30px;
+	padding:0 50px 0 50px;
+	overflow: hidden;
+}
+.person_information_left{
+	width: 100px;
+	float: left;
+}
+.person_information_left input{
+	display: inline-block;
+	width: 75px;
+	height: 25px;
+	line-height: 20px;
+	text-align: center;
+	color: #7e7e7e;
+	font-size: 14px;
+	margin-left: 15px;
+	border: none!important;
+}
+.person_information_img{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.person_information_right{
+	float: left;
+	color: #666666;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.person_information_right p{
+	height: 20px;
+	line-height: 20px;
+}
+.person_information_right a{
+	display: block;
+	color: #f55e5e;
+	font-size: 13px;
+	margin-top: 20px;
+	text-decoration: none;
+}
+/*个人信息*/
+.person_information_form{
+	margin-top: 20px;
+}
+.person_information_form>div{
+	line-height: 40px;
+}
+/*昵称*/
+.nickname{
+	padding-left: 38px;
+	/*border: 1px red solid;*/
+}
+.nickname p input{
+	width: 128px;
+	height: 28px;
+	border: 1px #cccccc solid;
+	text-indent: 5px;
+}
+.nickname p{
+	color: #666666;
+	font-size: 14px;
+}
+.nickname p :nth-child(1){
+	color: #F55E5E;
+}
+.nickname p :nth-child(3){
+	color: #c7c7c7;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+/*性别*/
+.sex{
+	padding-left: 38px;
+	/*border: 1px red solid;*/
+}
+.sex p{
+	color: #666666;
+	font-size: 14px;
+}
+.sex p :nth-child(1){
+	color: #F55E5E;
+}
+.sex p :nth-child(3){
+	margin-right: 15px;
+}
+/*生日*/
+.birthday{
+	padding-left: 38px;
+	/*border: 1px red solid;*/
+}
+.birthday select{
+	width: 70px;
+	line-height: 28px;
+	height: 28px;
+	margin-left: -4px;
+}
+.birthday p{
+	color: #666666;
+	font-size: 14px;
+}
+.birthday p :nth-child(1){
+	color: #F55E5E;
+}
+.birthday p :nth-child(3){
+	margin-right: 15px;
+	margin-left: 3px;
+}
+.birthday p :nth-child(5){
+	margin-right: 15px;
+	margin-left: 3px;
+}
+.birthday p :nth-child(7){
+	margin-right: 15px;
+	margin-left: 3px;
+}
+/*公司*/
+.company{	
+	padding-left: 38px;
+	/*border: 1px red solid;*/
+}
+.company p input{
+	width: 128px;
+	height: 28px;
+	border: 1px #cccccc solid;
+	text-indent: 5px;
+}
+.company p{
+	color: #666666;
+	font-size: 14px;
+}
+.company p :nth-child(1){
+	color: #F55E5E;
+}
+.company p :nth-child(3){
+	color: #c7c7c7;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*职位*/
+.job{
+	/*border: 1px red solid;*/	
+	padding-left: 38px;
+}
+.job p input{
+	width: 128px;
+	height: 28px;
+	border: 1px #cccccc solid;
+	text-indent: 5px;
+}
+.job p{
+	color: #666666;
+	font-size: 14px;
+}
+.job p :nth-child(1){
+	color: #F55E5E;
+}
+.job p :nth-child(3){
+	color: #c7c7c7;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*行业*/
+.business{
+	/*border: 1px red solid;*/
+	padding-left: 38px;
+}
+.business p input{
+	width: 128px;
+	height: 28px;
+	border: 1px #cccccc solid;
+	text-indent: 5px;
+}
+.business p{
+	color: #666666;
+	font-size: 14px;
+}
+.business p :nth-child(1){
+	color: #F55E5E;
+}
+.business p :nth-child(3){
+	color: #c7c7c7;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*兴趣爱好*/
+.interests{
+	/*border: 1px red solid;*/
+}
+
+.interests>p{
+	color: #666666;
+	font-size: 14px;
+}
+.interests div{
+	margin-left: 80px;
+	width: 420px;
+}
+.interests p span{
+	color: #F55E5E;
+}
+.interests div label{
+	color: #666666;
+	font-size: 14px;
+	display: inline-block;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	margin: 5px;
+	padding: 0 10px 0 10px;
+	border: 1px #CCCCCC solid;
+	
+}
+.interests div form input{
+	display: none;
+}
+.onelabel img{
+	display: inline-block;
+	position: relative;
+	left: 80px;
+	top: -15px;
+	display: none;
+}
+.twolabel img{
+	display: inline-block;
+	position: relative;
+	left: 38px;
+	top: -15px;
+	display: none;
+}
+.threelabel img{
+	display: inline-block;
+	position: relative;
+	left: 52px;
+	top: -15px;
+	display: none;
+}
+.fourlabel img{
+	display: inline-block;
+	position: relative;
+	left: 52px;
+	top: -15px;
+	display: none;
+}
+.fivelabel img{
+	display: inline-block;
+	position: relative;
+	left: 108px;
+	top: -15px;
+	display: none;
+}
+.sixlabel img{
+	display: inline-block;
+	position: relative;
+	left: 52px;
+	top: -15px;
+	display: none;
+}
+.sevenlabel img{
+	display: inline-block;
+	position: relative;
+	left: 80px;
+	top: -15px;
+	display: none;
+}
+.eightlabel img{
+	display: inline-block;
+	position: relative;
+	left: 108px;
+	top: -15px;
+	display: none;
+}
+.ninelabel img{
+	display: inline-block;
+	position: relative;
+	left: 52px;
+	top: -15px;
+	display: none;
+}
+.tenlabel img{
+	display: inline-block;
+	position: relative;
+	left: 80px;
+	top: -15px;
+	display: none;
+}
+.elevenlabel img{
+	display: inline-block;
+	position: relative;
+	left: 80px;
+	top: -15px;
+	display: none;
+}
+.twelvelabel img{
+	display: inline-block;
+	position: relative;
+	left: 38px;
+	top: -15px;
+	display: none;
+}
+.thirteenlabel img{
+	display: inline-block;
+	position: relative;
+	left: 93px;
+	top: -15px;
+	display: none;
+}
+
+
+
+.interests div label:hover{
+	cursor: pointer;
+}
+/*邮件*/
+.email a{
+	text-decoration: none;
+	color: #005ea7;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.email{	
+	/*border: 1px red solid;*/
+}
+.email p{
+	color: #666666;
+	font-size: 14px;
+}
+
+/*真实姓名*/
+.trueName{	
+	/*border: 1px red solid;*/
+}
+.trueName p input{
+	width: 128px;
+	height: 28px;
+	border: 1px #cccccc solid;
+	text-indent: 5px;
+}
+.trueName p{
+	color: #666666;
+	font-size: 14px;
+}
+.trueName p :nth-child(1){
+	color: #F55E5E;
+}
+
+/*按钮*/
+.btn{
+	padding-left: 75px;
+	margin-top: 30px;
+}
+.btn button{
+	width:58px ;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin-right: 10px;
+}
+.submitBtn{
+	background: #f55e5e;
+	color: white;
+	border: 1px #d02121 solid;
+}
+.abolishBtn{
+	background: #f1f9ea;
+	border: 1px #bfd6af solid;
+ }
+ .hint{
+ 	color: #F55E5E;
+ }
+ 
+.div1{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: url(../img/postNew.png)  no-repeat;
+	float: left;
+	position:relative;
+	overflow: hidden;
+}
+.div2{
+	text-align:center;
+	/*padding-top:12px;*/
+	font-size: 12px;
+	font-weight:800;
+	margin-top: 80px;
+	color: #666666;
+	background: #CCCCCC;
+}
+.inputstyle{
+	width: 100px;
+	height:100px;
+	cursor: pointer;
+	font-size: 14px;
+	padding-top: 20px;
+	outline: medium none;
+	position: absolute;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity:0; 
+	left:0px;
+	top: 0px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的消息</title>
+		<link rel="stylesheet" href="/Public/app/css/my-information.css" />
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/fenye.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script src="/Public/app/js/fenye.js"></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+				<div class="main_person_text"  style="width: 700px;">
+					<p class="person_title"><span>我的消息</span></p>
+					<div class="messageBtn">
+						<div class="message">
+							<div class="businessAddress"><p>消息</p><img src="/Public/app/img/gou.png"/></div>
+						</div>	
+						<!--<div class="notice">
+							<div class="instationAddress"><p>站内公告</p><img src="img/delivery-address/gou.png"/></div>
+						</div>-->
+					</div>
+					<div class="messageMain">
+						<div class="messageMainBtn">
+							<div class="delete">
+								<div class="deleteAddress"><p>删除消息</p></div>
+							</div>	
+							<div class="read">
+								<div class="readAddress"><p>标为已读</p></div>
+							</div>	
+							<p class="checkAll"><input type="checkbox" id="check" onclick="ck()"/><label for="check">全选</label></p>
+						</div>
+						<div class="messageMainText">
+							<volist name="data" id="message" empty="$empty">
+							<p>
+								<input type="checkbox" name="mid" value="{$message.id}"/>
+								<span >{$message.title}</span>
+								<span>【{$message.send_time}】</span>
+								<a href="#">
+									<if condition="$message.isread eq 0">
+									未读
+									<else />
+									已读
+									</if>
+								</a>
+							</p>
+							</volist>
+						</div>
+						<!--页数-->
+							<div class="page">
+								{$page}
+							</div>
+					</div>
+					<input type="hidden" value="{$nowPage}" name="nowPage">
+					
+				</div>
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+				$(".bac-e a").eq(5).css("color","#55BDCF");
+					/*
+					$("#check").click(function(){
+							if (this.checked) {
+									$(".messageMainText p").find("input").each(function () { 
+										$(this).attr("checked", true);
+									});
+							}
+							else{
+								$(".messageMainText p").find("input").each(function () {
+						                $(this).attr("checked", false);
+						    	});
+							}
+							
+					});
+					*/
+					//删除和标为已读切换
+					$(".deleteAddress").css("border","3px #55bdcf solid");
+					$(".readAddress").css("border","3px #cccccc solid");
+					$(".deleteAddress").mouseover(function(){
+						$(this).css("border","3px #55bdcf solid");
+						$(".readAddress").css("border","3px #cccccc solid");
+					});
+					$(".readAddress").mouseover(function(){
+						$(this).css("border","3px #55bdcf solid");
+						$(".deleteAddress").css("border","3px #cccccc solid");
+					});
+					//删除消息
+					$(".deleteAddress").click(function(){
+						/*
+						if ($(".messageMainText p input[type='checkbox']:checked")) {
+							$(".messageMainText p input[type='checkbox']:checked").parent().css("display","none");
+						} 
+						*/
+
+						//获取消息id
+						var ids = '';
+						$('input[name=mid]:checked').each(
+							function() {
+								ids = ids + ' ' + $(this).val();
+							}		
+								
+						);
+
+						var nowPage = $('input[name=nowPage]').val();
+
+						$.post(
+							"{:U('WebMessage/deleteMessage')}", 
+							{'mid':ids, 'page':nowPage},
+
+							function(res) {
+								$('input[name=mid]:checked').parent().remove();
+								if(!res.code) {
+									alert(res.msg);
+								} else if(res.code == '1') {
+									var nodes = res.msg;
+									var htmls = $(".messageMainText").html();
+									htmls += res.msg;
+									$(".messageMainText").html('');
+									$(".messageMainText").html(htmls);
+								}	
+							}
+								
+						);
+					})
+					//标记为已读、]
+					$(".readAddress").click(function(){
+						//获取消息id
+						var ids = '';
+						$('input[name=mid]:checked').each(
+							function() {
+								ids = ids + ' ' + $(this).val();
+							}		
+								
+						);
+
+						$.post(
+							"{:U('WebMessage/signReaded')}", 
+							{'mid':ids},
+							function(res) {
+								if(res) {
+									$(".messageMainText p input[type='checkbox']:checked").siblings("a").html("已读");
+									$(".messageMainText p input[type='checkbox']:checked").siblings("a").css("color","#0098B3");
+								}
+							}
+						);
+					})
+			});
+			//文字
+			document.body.innerHTML = document.body.innerHTML.replace(/未读/ig,"<span style='color: #f55e5e;'>$&</span>");
+
+
+			function ck() {
+				var Ock = document.getElementsByName('mid');
+				var OckBtn = document.getElementById('check');
+
+				for(var i=0; i < Ock.length; i++) {
+					if(OckBtn.checked) {
+						Ock[i].checked = true;
+					} else {
+						Ock[i].checked = false;
+					}
+				}
+			
+			}
+
+	</script>
+</html>

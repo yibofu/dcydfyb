@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的评价</title>
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/my-evaluate.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/myhead" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<include file="Public/myleft" />
+				<!--个人信息-->
+					<div class="main_person_text" style="width: 700px;" >
+						<p class="person_title"><span>服务评价</span></p>
+						
+						<table>
+							<tr class="firstTr">
+								<td>服务信息</td>
+								<td>预约时间</td>
+								<td>评价状态</td>
+							</tr>
+							<tr class="lastTr">
+								<td>线下课程</td>
+								<td>{$data.time}</td>
+								<td>发表评价</td>
+							</tr>
+						</table>
+						<div class="score">
+							<div class="scoreStar">
+								<p>评分：
+									<img src="/Public/app/img/2.png">
+									<img src="/Public/app/img/2.png">
+									<img src="/Public/app/img/2.png">
+									<img src="/Public/app/img/2.png">
+									<img src="/Public/app/img/2.png">
+								</p>
+							</div>
+							<div class="scoreContent">
+								<p><span>评分内容：</span></p>
+								<form>
+									<textarea name="con"></textarea>
+								</form>
+							</div>
+						</div>
+						
+						<div class="score-finish">
+							<div class="score-finish-text">
+								<p class="textOne">恭喜您！评价已成功</p>
+								<p>感谢您的评价。您的评价对扁鹊财院有着深远的意义。</p>
+								<p style="color: #666666;">点击回到<a href="{:U('MyCenter/index')}">个人中心</a></p>
+							</div>
+							<div class="score-finish-btn">
+								<button type="submit">确认</button>
+							</div>
+						</div>
+				</div>
+				
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/mybottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+//				$(".bac-e a").eq(1).css("color","#55BDCF");
+				//星星评价
+				$(".scoreStar p img").click(function(){
+					$(this).prevAll().attr("src","/Public/app/img/1.png");
+					$(this).attr("src","/Public/app/img/1.png");
+					$(this).nextAll().attr("src","/Public/app/img/2.png");
+				})
+
+
+				$('button').click(function(){
+					var sid = '{$data.sid}';
+					var stars = 0;
+					var star = $('.scoreStar p img').each(function(){
+							var src = $(this).attr('src');
+							var file = src.substring(src.lastIndexOf('/'));
+							if(file == '/1.png') {
+								stars++;
+							}
+					});		
+
+					var con = $('textarea').val();
+
+					$.post(
+						'{:U("MyOpenCourse/makeEvaluate")}',
+						{'star':stars, 'con':con, 'sid':sid},
+						function(res) {
+							if(res == 1) {
+								alert('评价成功');
+							} else {
+								alert(res);
+							}
+						}
+					);
+						
+				});
+			});
+		</script>
+</html>

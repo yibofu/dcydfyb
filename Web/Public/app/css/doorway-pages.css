@@ -1,0 +1,158 @@
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.welcomeBannerAll{
+	width: 100%;
+	height: 116px;
+}
+.welcomeBanner{
+	width: 1000px;
+	height: 116px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.welcomeBanner img{
+	/*border: 1px red solid;*/
+	line-height:116px ;
+	margin-top: 25px;
+	float: left;
+}
+.welcomeText{
+	float: left;
+	font-size: 18px;
+	color: #2091a9;
+	height: 115px;
+	line-height: 115px;
+	margin-left: 20px;
+	/*border: 1px red solid;*/
+}
+/*内容部分*/
+.welcomeMainALL{
+	width: 100%;
+	height: 524px;
+	background: #55bdcf;
+}
+.welcomeMain{
+	width: 1000px;
+	height: 524px;
+	margin: 0 auto;
+	background: url(../img/map.png) no-repeat 30%;
+}
+.welcomeMainInclude{
+	/*border: 1px red solid;*/
+	width: 735px;
+	margin: 0 auto; 
+}
+.welcome-identity{
+	/*border: 1px red solid;*/
+	margin-left: 120px;
+	margin-top: 20px;
+}
+
+/*以上是公共样式*/
+
+
+.welcomeThreeImg{
+	/*border: 1px red solid;*/
+	overflow: hidden;
+	margin-top: 10px;
+}
+.welcomeThreeImg>div{
+	width: 214px;
+	height: 368px;
+	float: left;
+	box-shadow: 1px 1px 1px #538088;
+	background: #a6d2da;
+	margin-bottom: 5px;
+}
+.welcomeBoss{
+	margin-right: 20px;
+}
+.welcomeManager{
+	margin: 0 21px 0 22px;
+}
+.welcomeBookkeeper{
+	margin-left: 21px;
+}
+.LoginWords{
+	overflow: hidden;
+	margin-top: 15px;
+}
+.LoginWords a{
+	font-size: 22px;
+	font-weight: 700;
+	color: #005ea7;
+	text-decoration: none;
+}
+.LoginWords span{
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	margin-right: 10px;
+	margin-top: 2px;
+}
+.LoginWords :nth-child(1){
+	float: left;
+}
+.LoginWords :nth-child(2){
+	float: right;
+}
+/*遮罩*/
+.welcomeThreeImg>div p{
+	width: 214px;
+	height: 370px;
+	position: relative;
+	top:-372px;
+	background:rgba(0,0,0,0.4);
+	z-index: 100;
+}
+.welcomeThreeImg>div p img{
+	position: relative;
+	left: 75px;
+	top: 150px;
+}
+
+
+/*友情链接*/
+.friendly_link{
+	width: 1000px;
+	margin:100px auto;
+}
+.link_title{
+	width: 100%;
+	font-size: 24px;
+	color: #0098b3;
+	font-family: "微软雅黑";
+}
+.friendly_link ul{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.friendly_link  li{
+	padding: 0 5px 0 5px;
+	float: left;
+	list-style: none;	
+}
+.friendly_link  li a{
+	font-size: 16px;
+	color: #666666;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+.friendly_link  li a:hover{
+	color: #0098b3;
+}
+
+
+
+
+
+
+
+
+
+
+

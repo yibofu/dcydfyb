@@ -15,56 +15,86 @@
 </head>
 <body style="background-color:white ;">
 <!--头部 c02003-->
-<!--头部 c02003-->
-<div class="official-head">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>导航</title>
+		<link rel="stylesheet" href="/Public/app/css/head.css" />
+		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+	</head>
+	<body>
+		
+		<div class="headAll">
 
-    <div class="head-two">
-        <div class="one">
-            <a href="<?php echo U('Index/index');?>"><img src="/Public/app/img/logo-a.png" class="img1 fl"/></a>
-            <div class="seek-a fl">
-                <div class="seek bor-a">
-					<form action="<?php echo U('Search/search');?>" method="get">
-						<table class="fl">
-							<tr>
-								<td>
-									<select name="drop2" class="ui-select fl">
-										<option value="article">搜文章</option>
-										<option value="video">搜视频</option>
-									</select>
-								</td>
-							</tr>
-						</table>
-						<input class="fl title-a" type="text" name="keywords" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}"onblur="if (value ==''){value='请输入关键词'}">
-						<button class="fl" type="submit">搜索</button>
-					</form>
-                </div>
-                <div class="trade fl">
-                    <p class="title-a fl wid color-a">热门搜索：</p>
-                    <div class="box title-a fl color-b wid"></div>
-                    <a class="change title-a fl color-a"><img src="/Public/app/img/hh.png" class="img3"/>换一换</a>
-                </div>
-            </div>
-            <div class="hours fl">
-                <img src="/Public/app/img/logo-b.png" class="img4 fl"/>
-                <p class="title-a">24小时服务热线</p>
-                <p class="title-a color-c">010-59458017</p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
+			<!--头部栏-->
+			<div class="headTop">
+				<div class="headTopCenter">
+				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
+						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
+						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
+						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+					</ul>
+				<?php else: ?>
+					<ul>
+						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
+						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+					</ul><?php endif; ?>
+				</div> 
+			</div>
+			<!--中间栏目-->
+			<div class="serchTop">
+				<div class="serchTopCenter">
+					<!--左边logo图标-->
+					<a href="<?php echo U('Index/index');?>"><img class="LOGOAll" src="/Public/app/img/LOGOAll.png" /></a>
+					<!--搜索框-->
+					<div class="serchInput">
+						<div class="InputAll">
+							<form action="<?php echo U('Search/search');?>">
+								<select  name="drop2">
+									<option  value="article">搜文章</option>
+									<option value="video">搜视频</option>
+								</select>
+								<input type="search" name="keywords" placeholder="请输入关键词"/>
+								<button type="submit">搜索</button>
+							</form>
+						</div>
+						
+					</div>
+					<!--右边服务图标和文字-->
+					<div class="phoneSever">
+						<img src="/Public/app/img/severlogo.png" />
+						<div class="severImgText">
+							<p>24小时服务热线</p>
+							<p>010-5945-8017</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navBar">
+				<div class="navBarTitle">
+					<ul>
+						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
+						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
+						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
+						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
+						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
 
-<!--选择卡-->
-<div class="head-three">
-    <ul class="three one">
-        <li class="boe"><a class="aoe bor-c" style="padding: 0 82px;border-left: 1px solid #ffffff;" href="<?php echo U('Index/index');?>">首页</a></li>
-        <li class="boa"><a href="<?php echo U('Index/kce');?>" class="aoa bor-c" target="_blank">课程中心</a></li>
-        <li class="bob"><a href="<?php echo U('Article/message');?>" class="aob bor-c" target="_blank">政策速递</a></li>
-        <li class="boc"><a href="<?php echo U('Vip/openVip');?>" class="aoc bor-c" target="_blank">会员专享</a></li>
-        <li class="bod"><a href="<?php echo U('Index/about');?>" class="aod bor-c" target="_blank">关于扁鹊</a></li>
-        <div class="clearfix"></div>
-    </ul>
-</div>
 <div class="vip_all">
 
 	<!--banner图片-->
@@ -90,9 +120,9 @@
 				</ul>
 			</div>
 			<!--开通会员-->
-			<div class="open_vip_btn_box">
-				<button class="open_vip_btn">开通会员</button>
-			</div>
+			<!--<div class="open_vip_btn_box">-->
+				<!--<button class="open_vip_btn">开通会员</button>-->
+			<!--</div>-->
 
 			<!--金鹊会员-->
 			<div class="vip_jinque">
@@ -130,65 +160,72 @@
 	</div>
 	<!--按钮-->
 	<div class="promptly_open">
-		<button >升级金鹊会员？立即开通</button>
+		<a href="<?php echo U('Vip/member');?>"><button >升级金鹊会员？立即开通</button></a>
 	</div>
 	<!--友情链接-->
 
 </div>
-<!--友情链接 c02003-->
-<div class="official-eight one" >
-    <h3 class="title-b color-b wid min-h">友情链接</h3>
-    <ul>
-        <li><a href="http://www.changcaizixun.com/">天津长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">北京长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">太原长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">广州长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">成都长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">长沙长财咨询</a></li>
-        <li><a href="http://www.changcaizixun.com/">金华长财咨询</a></li>
-        <li><a>四度信息</a></li>
-        <div class="clearfix"></div>
-    </ul>
-</div>
-<!--底部 c02003-->
-<div class="official-bottom">
-    <div class="one min-l">
-        <div class="bottom-one fl bor-y"><img src="/Public/app/img/logoxia.png"/></div>
-        <div class="bottom-two fl bor-y bor-v">
-            <ul>
-                <li class="height-s color-s title-d wid">帮助中心</li>
-                <li class="height-a color-v title-a">购物帮助</li>
-                <li class="height-a color-v title-a">支付方式</li>
-                <li class="height-a color-v title-a">选定课程</li>
-            </ul>
-        </div>
-        <div class="bottom-two fl bor-y bor-v">
-            <ul>
-                <li class="height-s color-s title-d wid">关于我们</li>
-                <li class="height-a color-v title-a">了解我们</li>
-                <li class="height-a color-v title-a">关注我们</li>
-                <li class="height-a color-v title-a">加入我们</li>
-            </ul>
-        </div>
-        <div class="bottom-four fl bor-y bor-v">
-            <ul>
-                <li class="height-s color-s title-d wid">联系我们</li>
-                <li class="height-a color-v title-a">公司地址：北京市朝阳区旺座大厦东塔1920室 </li>
-                <li class="height-a color-v title-a">客服服务：18310618231</li>
-                <li class="height-a color-v title-a">版权所有：WWW.bianquecxy.con</li>
-            </ul>
-        </div>
-        <div class="bottom-five fl">
-            <ul class="fl">
-                <li class="color-s height-s title-d">服务热线</li>
-                <li class="height-a title-e color-d">010-59458017</li>
-                <li class="height-a title-d color-d">© 2016 大财有道科技<br/> 京ICP备16057406号</li>
-            </ul>
-            <img src="/Public/app/img/er.png" class="fl"/>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>尾部</title>
+		<link rel="stylesheet" href="/Public/app/css/firendlyLink.css" />
+		<link rel="stylesheet" href="/Public/app/css/footer.css" />
+	</head>
+	<body>
+	<div class="friendly_link">
+			<p class="link_title">友情链接</p>
+			<ul>
+				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="www.changcaizixun.com">四度信息</a></li>
+			</ul>
+		</div>
+		<div class="footerAll">
+			<div class="footerAllCenter"> 
+				<div class="footCenterFirst">
+					<img src="/Public/app/img/logoxia.png" />
+				</div>
+				<div class="footHelpCenter">
+					<h5>帮助中心</h5>
+					<p><a href="#">购物帮助</a></p>
+					<p><a href="#">支付方式</a></p>
+					<p><a href="#">选定课程</a></p>
+				</div>
+				<div class="footerAboutUs">
+					<h5>关于我们</h5>
+					<p><a href="#">了解我们</a></p>
+					<p><a href="#">关注我们</a></p>
+					<p><a href="#">加入我们</a></p>
+				</div>
+				<div class="footerContactUs">
+					<h5>联系我们</h5>
+					<p><a href="#">公司地址：北京市朝阳区旺座大厦东塔</a></p>
+					<p><a href="#">客户服务：18310618231</a></p>
+					<p><a href="#">版权所有：www.bianquecxy.com</a></p>
+				</div>
+				<div class="footerOrder">
+					<div class="footPhoneHot">
+						<h5>订购热线</h5>
+						<p>010-594-58017</p>
+						<p>© 2016 大财有道科技</p>
+						<p>京ICP备16057406号</p>
+					</div>
+					<div class="footCode">
+						<img src="/Public/app/img/er.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
 </body>
 </html>

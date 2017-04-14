@@ -227,7 +227,7 @@
 <include file="Public:xxk" />
 
     <div class="banner">
-        <img src="/Public/app/img/pic-d.png"/>
+        <img src="/Public/app/img/kecheng.png"/>
     </div>
 <div class="main">
     <div class="inner">
@@ -237,19 +237,19 @@
                     <a href="{:U(Index/kce)}"><img src="/Public/app/img/officialkce-xin.png" style="margin: 2px 0 0 1px;"/></a>
                 </div>
                 <div class="fl h1_main5_title">
-                    <div class="title-f fl h1_main5_title-one" onclick="xilie()"><a class="color-k">系列专题 ></a></div>
-
+                    <div class="title-f fl h1_main5_title-one"><a href="{:U('Index/kce')}?name={$rea[0]['kind']}" class="color-k">{$rea[0]['kind']}></a></div>
+                    <!--系列专题后边的选项-->
                     <ul class="h1_main5_title-two">
                         <volist name="resultt" id="vov">
-                            <li class="title-e fl"><a onclick="zname(this)" name="zna">{$vov.zname}</a></li>
+                            <li class="title-e fl"><a href="{:U('Index/vielist')}?name={$vov.zname}" name="zna">{$vov.zname}</a></li>
                         </volist>
                     </ul>
-                    <div class="hl_main5_content1-one title-f" onclick="zhuanjia()"><a class="color-k">专家精选 ></a></div>
+                    <div class="hl_main5_content1-one title-f"><a href="{:U('Index/kce')}?name={$rea[1]['kind']}" class="color-k">{$rea[1]['kind']}></a></div>
+                    <!--专家精选后边的后边的选项-->
                     <div class="hl_main5_content1">
-
                         <ul class="hl_main5_content1-two">
                             <volist name="resultt1" id="vvoo">
-                            <li class="title-e fl content1-two"><a onclick="namee(this)">{$vvoo.name}</a></li>
+                                <li class="title-e fl content1-two"><a href="{:U('Index/vielist')}?name={$vvoo.name}" name="za">{$vvoo.name}</a></li>
                             </volist>
                         </ul>
                     </div>
@@ -268,6 +268,7 @@
             </div>
         </div>
         <div id="video">
+            <!--全部的课程-->
             <ul class="ck-video basia tab-content newslist" id="all" style="display: block;">
                 <volist name="result" id="vo">
                 <li class="fl">
@@ -283,8 +284,8 @@
                 </li>
                 </volist>
             </ul>
-
-            <ul class="ck-video basia tab-content newslist" id="xlzt" style="display: none;">
+            <!--点击系列专题的出来的视频-->
+            <ul class="ck-video basia tab-content newslist" id="son" style="display: none;">
                 <volist name="arr1" id="voo">
                     <li class="fl">
                         <a href="{:U('Index/visual')}?id={$voo.id}&kname={$voo.kname}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}" class="avio">
@@ -294,54 +295,6 @@
                         <div class="cursor" style="margin-top: 230px;">
                             <span><a href="{:U('Index/visual')}?id={$voo.id}&kname={$voo.kname}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}">{$voo.kctitle}</a></span>
                             <p>讲师:&nbsp{$voo.name}</p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        </div>
-                    </li>
-                </volist>
-            </ul>
-
-            <ul class="ck-video basia tab-content newslist" id="zjjx" style="display: none;">
-                <volist name="arr11" id="vov">
-                    <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}" class="avio">
-                            <img src="{$vov.img}">
-                            <i></i>
-                        </a>
-                        <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}">{$vov.kctitle}</a></span>
-                            <p>讲师:&nbsp{$vov.name}</p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        </div>
-                    </li>
-                </volist>
-            </ul>
-            <!--系列专题的子项-->
-            <ul class="ck-video basia tab-content newslist" id="xlztz" style="display: none;">
-                <volist name="arrr" id="vovo">
-                    <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$vovo.id}&kname={$vovo.kname}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}" class="avio">
-                            <img src="{$vovo.img}">
-                            <i></i>
-                        </a>
-                        <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$vovo.id}&kname={$vovo.kname}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}">{$vovo.kctitle}</a></span>
-                            <p>讲师:&nbsp{$vovo.name}</p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        </div>
-                    </li>
-                </volist>
-            </ul>
-            <!--专家精选的子项-->
-            <ul class="ck-video basia tab-content newslist" id="zjjxz" style="display: none;">
-                <volist name="arr11" id="vov">
-                    <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}" class="avio">
-                            <img src="{$vov.img}">
-                            <i></i>
-                        </a>
-                        <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}">{$vov.kctitle}</a></span>
-                            <p>讲师:&nbsp{$vov.name}</p>
                             <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
                         </div>
                     </li>
@@ -499,11 +452,41 @@
             };
         }
     })
+    //获取url的get参数并且解决汉字乱码问题
+    $(function(){
+        var local_url = document.location.href;
+        var url = local_url.split('name=')[1];
+        var u = decodeURI(url);
+        if(u == "专家精选"){
+            $("#all").css("display","none");
+            $("#son").css("display","block");
+        }
+        else if(u == "系列专题"){
+            $("#all").css("display","none");
+            $("#son").css("display","block");
+        }else{
+            $("#all").css("display","block");
+            $("#son").css("display","none");
+        }
+    })
+    $("#xilie").bind('click',function(){
+        $('#xlztz').text(" ");
+        $("#xlzt").css("display","block");
+        $("#all").css("display","none");
+        $("#zjjx").css("display","none");
+    })
+    $("#zhuanjia").bind('click',function(){
+        $('#xlztz').text(" ");
+        $("#all").css("display","none");
+        $("#xlzt").css("display","none");
+        $("#zjjx").css("display","block");
+    })
 
     function xilie(){
         $('#xlztz').text(" ");
         $("#xlzt").css("display","block");
         $("#all").css("display","none");
+        $("#zjjx").css("display","none");
     }
 
     function zhuanjia(){
@@ -512,54 +495,5 @@
         $("#xlzt").css("display","none");
         $("#zjjx").css("display","block");
     }
-
-    //系列专题
-    function zname(obj){
-        var names = $(obj).html();
-        url = "{:U('Index/xl')}?name="+names;
-        $.ajax({
-            type:"post",
-            dataType:"html",
-            url:url,
-            data:{"zname":names},
-            success:function(data){
-                $('#xlztz').text(" ");
-                $("#xlztz").html(data);
-                $("#all").css("display","none");
-                $("#xlzt").css("display","none");
-                $("#zjjx").css("display","none");
-                $("#xlztz").css("display","block");
-                $("#zjjxz").css("display","none");
-                $(".avio-one .img1").click(function(){
-                    $(this).attr('src','/Public/app/img/offcial-collecta.png');
-                });
-            }
-        })
-    }
-
-    //专家精选
-    function namee(obj){
-        var name = $(obj).html();
-        url = "{:U('Index/zj')}?name="+name;
-        $.ajax({
-            type:"post",
-            dataType:"html",
-            url:url,
-            data:{"name":name},
-            success:function(data){
-                $('#zjjxz').text(" ");
-                $("#zjjxz").html(data);
-                $("#all").css("display","none");
-                $("#xlzt").css("display","none");
-                $("#zjjx").css("display","none");
-                $("#xlztz").css("display","none");
-                $("#zjjxz").css("display","block");
-                $(".avio-one .img1").click(function(){
-                    $(this).attr('src','/Public/app/img/offcial-collecta.png');
-                });
-            }
-        })
-    }
-
 </script>
 </html>

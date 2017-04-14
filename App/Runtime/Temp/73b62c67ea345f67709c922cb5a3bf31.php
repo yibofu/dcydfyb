@@ -1,3 +1,0 @@
-<?php
-//000000000000s:125:"SELECT `username`,`password` FROM `oo_user` WHERE ( username='aaa' && password='4297f44b13955235245b2497399d7a93' ) LIMIT 1  ";
-?>

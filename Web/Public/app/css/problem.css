@@ -1,0 +1,12 @@
+.payProblem{
+	padding: 20px;
+	margin-top: 30px;
+	text-indent: 25px;
+	color: #333333;
+	font-size: 14px;
+	line-height: 25px;
+}
+.payProblem span{
+	color: #0098b3;
+	font-weight: 700;
+}
