@@ -14,7 +14,7 @@
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<if condition="$_SESSION['admins']['id'] eq ''">
+				<if condition="$_SESSION['admins']['id'] eq '' && $_SESSION['rigister']['id'] eq ''">
 					<ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="{:U('Login/loginPage')}">登录</a></li>

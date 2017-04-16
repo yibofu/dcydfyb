@@ -77,174 +77,50 @@
 <body class="box">
 <!--头部 c02003-->
 <include file="Public:head" />
-<!--选择卡-->
-<include file="Public:xxk" />
-        <div class="user-three one">
-            <div class="three-b">
-                <!--扁鹊会员-->
-                <div id="bianque" style="margin-left: 8px;">
-                    <div id="zero">
-                        <img src="/Public/app/img/user-a.png" style="width: 100%;"/>
-                        <div style="margin: 14px 0 14px 11px; border-left: 2px solid #00a0e9; font-size: 14px;">&nbsp;&nbsp;开通VIP</div>
-                        <div id="one">
-                            <div class="fl uij" style="width: 458px; margin-left: 50px;">
-                                <div class="iny" style="width: 369px; height: 144px; border: 2px solid #0098b3; margin-left: 62px; position: absolute;">
-                                    <img src="/Public/app/img/user-d.png" style="position: relative; top: 20px; right:-72px;"/>
-                                    <div class="fl height-w title-k color-b" style="margin-left: 108px;">金鹊<p class="fr wia height-w title-e color-q">&nbsp;&nbsp;&nbsp;VIP会员 > ></p><div class="clearfix"></div></div>
-                                    <div><img src="/Public/app/img/user-b.png" class="fl" style="margin-top: 5px; margin-left: 99px;"/><p class="height-a title-j color-b fl">&nbsp;&nbsp;365元</p><div class="clearfix"></div></div>
-                                </div>
-                                <div class="title-d" style="width: 100%; margin-top: 148px; line-height: 36px; margin-left: 66px;">
-                                    <div class="fl">VIP限量8888名</div>
-                                    <div style="margin-left: 10px" class="fl color-c">只剩301名</div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div style=" margin: 16px 0 0 77px;">
-                                    <div style="line-height: 36px; font-size: 16px;" class="fl">支付方式：</div>
-                                    <div style="width: 118px;height: 30px; padding:3px 0 0 16px;" class="fl bor-l"><img src="/Public/app/img/wxzf.png"/></div>
-                                </div>
-                                <input id="one-a" style="margin: 54px 0 0 96px;" class="btn btn-primary title-c" type="submit" name="submit" value="立 即 开 通" />
-                            </div>
-                            <div class="fr" style="width: 240px;font-size: 16px; margin:35px 70px 0 0; line-height: 30px;">
-                                <p>1.VIP会员可免费观看扁鹊财院资深讲师分享的直播课程，每周一期，全年免费。</p>
-                                <p>2.VIP会员有机会参加扁鹊财院组织的线下沙龙分享。</p>
-                                <p>3.VIP会员有机会与资深财务专家同台直播。</p>
-                            </div>
+<div class="user-three one">
+    <div class="three-b">
+        <!--扁鹊会员-->
+        <div id="bianque" style="margin-left: 8px;">
+            <div id="zero">
+                <img src="/Public/app/img/user-a.png" style="width: 100%;"/>
+                <div style="margin: 14px 0 14px 11px; border-left: 2px solid #00a0e9; font-size: 14px;">&nbsp;&nbsp;开通VIP</div>
+                <div id="one">
+                    <div class="fl uij" style="width: 458px; margin-left: 50px;">
+                        <div class="iny" style="width: 369px; height: 144px; border: 2px solid #0098b3; margin-left: 62px; position: absolute;">
+                            <img src="/Public/app/img/user-d.png" style="position: relative; top: 20px; right:-72px;"/>
+                            <div class="fl height-w title-k color-b" style="margin-left: 108px;">金鹊<p class="fr wia height-w title-e color-q">&nbsp;&nbsp;&nbsp;VIP会员 > ></p><div class="clearfix"></div></div>
+                            <div><img src="/Public/app/img/user-b.png" class="fl" style="margin-top: 5px; margin-left: 99px;"/><p class="height-a title-j color-b fl">&nbsp;&nbsp;{$res['price']}元</p><div class="clearfix"></div></div>
+                        </div>
+                        <div class="title-d" style="width: 100%; margin-top: 148px; line-height: 36px; margin-left: 66px;">
+                            <div class="fl">VIP限量{$res['znum']}名</div>
+                            <div style="margin-left: 10px" class="fl color-c">只剩{$res['snum']}名</div>
                             <div class="clearfix"></div>
                         </div>
+                        <div style=" margin: 16px 0 0 77px;">-*
+                            ++++
+                            <div style="line-height: 36px; font-size: 16px;" class="fl">支付方式：</div>
+                            <div style="width: 118px;height: 30px; padding:3px 0 0 16px;" class="fl bor-l"><img src="/Public/app/img/wxzf.png"/></div>
+                        </div>
+                        <a href="{:U('Vip/member1')}"><input id="one-a" style="margin: 54px 0 0 96px;" class="btn btn-primary title-c" type="button" name="kaitong" value="立 即 开 通" /></a>
                     </div>
-                    <div id="two" style="margin:65px 0 0 310px; display: none">
-                        <h3 style="line-height: 30px;font-size: 24px;">您即将购买的是扁鹊财院年费会员</h3>
-                        <p style="font-size: 18px; line-height: 54px;">价格：365元</p>
-                        <div style=" margin-top: 28px;">
-                            <div style="line-height: 38px; margin-right: 10px; font-size: 18px;" class="fl">支付方式：</div>
-                            <img src="/Public/app/img/wxzf.png" class="fl"/>
-                            <div class="clearfix"></div>
-                        </div>
-                        <input style="margin: 62px 0 0 30px;" id="two-a" class="btn btn-primary title-c" type="submit" name="submit" value="立 即 支 付" />
+                    <div class="fr" style="width: 240px;font-size: 16px; margin:35px 70px 0 0; line-height: 30px;">
+                        <p>1.VIP会员可免费观看扁鹊财院资深讲师分享的直播课程，每周一期，全年免费。</p>
+                        <p>2.VIP会员有机会参加扁鹊财院组织的线下沙龙分享。</p>
+                        <p>3.VIP会员有机会与资深财务专家同台直播。</p>
                     </div>
-                    <div id="three" style="display: none">
-                        <div style="width: 220px; line-height: 34px; font-size: 16px; margin:50px 0 0 210px;" class="fl">
-                            <p>订单编号:43546456</p>
-                            <p>购买订单：2017-2-12</p>
-                            <p>价格：365元</p>
-                            <div class="ooy" style="margin:30px 0 0 25px;"><img src="/Public/app/img/erty.png"/></div>
-                        </div>
-                        <div style="width: 300px;line-height: 34px; font-size: 16px; margin:50px 0 0 104px; " class="fl">
-                            <p>商品名称：扁鹊财院年费会员</p>
-                            <p>商家名称：北京大财有道科技有限公司</p>
-                            <div class="oou" style="margin: 35px 0 0 20px;"><img src="/Public/app/img/user-o.png"/></div>
-                        </div>
-                    </div>
-                    <div id="six">
-                        <div style="width: 220px; line-height: 34px; font-size: 16px; margin:50px 0 0 104px;" class="fl">
-                            <p>订单编号:43546456</p>
-                            <p>交易时间：2017-2-12</p>
-                        </div>
-                        <div style="width: 300px;line-height: 34px; font-size: 16px; margin:50px 0 0 104px; " class="fl">
-                            <p>商品名称：扁鹊财院年费会员</p>
-                            <p>商家名称：北京大财有道科技有限公司</p>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="ooi">
-                            <img src="/Public/app/img/cg.png"/>
-                        </div>
-                    </div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
+    <div class="clearfix"></div>
+</div>
+</div>
 <include file="Public:bottom" />
 </body>
 <script>
-    //导航栏 c02003
-    $(function(){
-        $(".boe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".aoe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".boe").mouseout(function(){
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-        $(".boa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0px');
-        })
-        $(".aoa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0');
-        })
-        $(".boa").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
 
 
-        $(".bob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".aob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".bob").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".boc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aoc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".boc").mouseout(function(){
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".bod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".bod").mouseout(function(){
-            $(".aod").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-    })
-    $('#one-a').click(function () {
-        $('#one').slideUp(200);
-        $('#two').slideDown(200);
-    })
-    $('#two-a').click(function () {
-        $('#two').slideUp(200);
-        $('#three').slideDown(200);
-    })
-    $('#nine').click(function () {
-        $('.three-six').slideUp(200);
-        $('#zero').slideDown(200);
-        $('#one').slideDown(200);
-    })
-    $('.i').click(function () {
-        $('#zero').slideUp(200);
-        $('#two').slideUp(200);
-        $('#three').slideUp(200);
-        $('#six').slideUp(200);
-    })
 
     jQuery(document).ready(function($) {
         $('#mima').click(function () {

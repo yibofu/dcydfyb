@@ -140,15 +140,15 @@
 	font-size: 22px;
 	text-decoration: none;
 }
-.welcomeSroll:hover{
-	cursor: url('../img/gaizhang.cur'),default;
-}
-.welcomeSrollText div label:hover{
-	cursor: url('../img/gaizhang.cur'),default;
-}
-.cheText div input:hover{
-	cursor: url('../img/gaizhang.cur'),default;
-}
+/*.welcomeSroll:hover{*/
+	/*cursor: url('../img/gaizhang.cur'),default;*/
+/*}*/
+/*.welcomeSrollText div label:hover{*/
+	/*cursor: url('../img/gaizhang.cur'),default;*/
+/*}*/
+/*.cheText div input:hover{*/
+	/*cursor: url('../img/gaizhang.cur'),default;*/
+/*}*/
 
 
 

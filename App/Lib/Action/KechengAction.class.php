@@ -76,13 +76,11 @@ class KechengAction extends Action{
         $this->display();
     }
 
-	//报名界面
-	public function signUp() {
-
-		if(!isset($_SESSION['admins']['id'])) {
-			$this->redirect('Index/index');
+//报名界面
+public function signUp() {
+	if(!isset($_SESSION['admins']['id'])) {
+			$this->redirect('Login/loginPage');
 		}
-
 		$courseid = $this->_get('courid');
 		$model = M('openCourse');
 		$courseInfo = $model->field('dcyd_open_course_type.tname title, dcyd_open_course_type.cost cost, dcyd_open_course.id id, dcyd_open_course.address address, dcyd_open_course.startday startday, dcyd_open_course.endday endday')
@@ -114,7 +112,7 @@ class KechengAction extends Action{
 	//确认信息
 	public function confirmation() {
 		if(!isset($_SESSION['admins']['id'])) {
-			$this->redirect('Index/index');
+			$this->redirect('Login/loginPage');
 		}
 
 		$data = $this->_post();
@@ -154,15 +152,18 @@ class KechengAction extends Action{
 
 	//我要报名
 	public function goSign() {
+		if(!$this->isAjax()) {
+			die('非法请求');
+		}
 		if(!isset($_SESSION['admins']['id'])) {
-			$this->redirect('Index/index');
+			$this->ajaxReturn(3);
 		}
 
 		$postdata = $this->_post();
 		$postdata = $postdata['datas'];
 		$data = array();
-		$data['uid'] = $postdata['uid'];
-		$data['courseid'] = $postdata['cour'];
+		$data['uid'] = $_SESSION['admins']['id'];
+		$data['courseid'] = intval($postdata['cour']);
 		$data['addtime'] = time();
 		$data['username'] = $postdata['uname'];
 		$data['upostion'] = $postdata['postion'];
@@ -171,20 +172,34 @@ class KechengAction extends Action{
 		$data['ucompany'] = $postdata['company'];
 		$data['uphone'] = $postdata['phone'];
 		$data['other'] = $postdata['others'];
+
+		$rules = array(
+			array('courseid', 'number', '本课程不存在', 1),		
+			array('username', 'require', '请填写参课人员名称', 1),		
+			array('uposition', 'require', '请填写参课人员职位', 1),		
+			array('uapart', 'require', '请填写参课人员部门', 1),		
+			array('uemail', 'email', '请填写正确的邮箱', 1),		
+			array('ucompany', 'require', '请填写公司名称', 1),		
+			array('uphone', '/\d{11}/', '请填写正确手机号', 1),		
+		);
 		
 		$model = M('signcourse');
-		if($model->add($data)) {
-			//加入个人中心
-			$myCourseModel = M('mycourse');
-			$mydata = array();
-			$mydata['uid'] = $data['uid'];
-			$mydata['courseid'] = $data['courseid'];
-			$mydata['addtime'] = $data['addtime'];
-			$mydata['status'] = '1';
-			$myCourseModel->add($mydata);
-			$this->ajaxReturn(1);
+		$res = $model->validate($rules)->create($data);
+		if($res) {
+			if($model->add($data)) {
+				//加入个人中心
+				$myCourseModel = M('mycourse');
+				$mydata = array();
+				$mydata['uid'] = $data['uid'];
+				$mydata['courseid'] = $data['courseid'];
+				$mydata['addtime'] = $data['addtime'];
+				$mydata['status'] = '1';
+				$myCourseModel->add($mydata);
+				$this->ajaxReturn(1);
+			}		
 		} else {
-			$this->ajaxReturn(0);
+			$this->ajaxReturn($model->getError());
 		}
+
 	}
 }

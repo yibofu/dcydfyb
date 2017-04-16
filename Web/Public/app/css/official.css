@@ -20,7 +20,7 @@ textarea{resize: none;}
 button{ border: 0;}
 
 /*头部 c02003*/
-.one{ width: 1000px; margin:0 auto;}
+.one{ width: 1000px; margin:0 auto;margin-top: 50px;}
 .official-head .head-one{ width: 100%; height:27px; background: #f2f2f2; }
 .official-head .head-one .one .one-a{ width: 430px;}
 .official-head .head-two{ width: 100%; height:93px; background: #ffffff;}
@@ -88,7 +88,7 @@ button{ border: 0;}
 
 /*首页 c02003*/
 /*约见专家 c02003*/
-.official-two{ margin-top: 27px; padding: 20px 16px 15px 16px; position: relative;}
+.official-two{ margin-top: 27px; padding: 20px 16px 15px 16px; position: relative;height: 525px;}
 .scroll{margin:0 auto; width:967px; height:530px;  position:relative; overflow:hidden;}
 .scroll ul{list-style-type:none; padding:0; margin:0; position:absolute; top:0;left:0; width:99999px; height:500px; }
 .scroll li{float:left; width:967px;}
@@ -261,7 +261,7 @@ button{ border: 0;}
 .mia{ margin-left: 42px;}
 .min-a{ margin-top: 35px;}
 .min-c{ margin-left: 21px;}
-.min-d{ margin-top: 39px;}
+.min-d{ margin-top: 20px;}
 .min-e{ margin-top: 70px;}
 .min-i{ margin-bottom: 1px;}
 .min-k{ margin-top: 30px;}

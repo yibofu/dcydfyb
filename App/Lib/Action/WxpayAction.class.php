@@ -19,7 +19,7 @@ class WxpayAction extends Action {
         $out_trade_no = C('WxPay.pub.config.APPID')."$timeStamp";
         $unifiedOrder->setParameter("out_trade_no","$out_trade_no");//商户订单号
         $unifiedOrder->setParameter("total_fee","1");//总金额
-        $unifiedOrder->setParameter("notify_url", 'http://123.57.163.32/weipay/index.php/home/index/notify');//通知地址
+        $unifiedOrder->setParameter("notify_url", 'http://123.57.207.163/weipay/index.php/home/index/notify');//通知地址
         $unifiedOrder->setParameter("trade_type","NATIVE");//交易类型
         //非必填参数，商户可根据实际情况选填
         //$unifiedOrder->setParameter("sub_mch_id","XXXX");//子商户号

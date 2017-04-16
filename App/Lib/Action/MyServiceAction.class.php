@@ -2,12 +2,15 @@
 	class MyServiceAction extends Action {
 		public function __construct() {
 			parent::__construct();	//继承父类构造方法
-			
 			if(!isset($_SESSION['admins']['id'])) {
+				if($this->isAjax()) {
+					$this->ajaxReturn(0);
+				}
 				$this->redirect('Login/loginPage');
 			}
 		}
 
+		/***********诊断*********/
 		//获取诊断列表
 		public function diagnoseList() {
 			$uid = $_SESSION['admins']['id'];
@@ -63,6 +66,57 @@
 			$this->display();
 		}
 
+		//预约诊断
+		public function makeDiagnose() {
+			$apply = $this->_post('apply');
+
+			$apply = trim($apply);
+			if(empty($apply)) {
+				$this->ajaxReturn('请选择服务');
+			}
+
+			//判断这项服务是否存在
+			$serviceModel = M('zdtype');
+			$trueService = $serviceModel->select();
+			$flag = false;
+			foreach($trueService as $key => $value) {
+				if(strpos($apply, $value['name']) != FALSE || strpos($apply, $value['name']) === 0) {
+					$flag = true;
+					$data['zdtype'] = $value['id'];
+					break;
+				} 
+			}
+
+			if(!$flag) {
+				$this->ajaxReturn('我们没这项服务');
+			}
+
+			$data['uid'] = $_SESSION['admins']['id'];
+			$data['addtime'] = time();
+			$data['number'] = 'bp' . time();
+
+			$model = M('service');
+
+			//查询是否已经预约该服务
+			$find = $model->field('id')->where('uid='.$data['uid'].' and zdtype=6 and status="1"')->find();
+			if($find['id']) {
+				$this->ajaxReturn('您已预约该服务，请耐心等待');
+			}
+
+			if($model->add($data)) {
+				$msg = '恭喜您！预约成功！';
+			} else {
+				$msg = '对不起，预约失败，请稍后预约';
+			}
+
+			$this->ajaxReturn($msg);
+		}
+
+
+
+
+
+		/***********约见**********/
 		//获取约见列表
 		public function apporintmentList() {
 			$uid = $_SESSION['admins']['id'];
@@ -122,19 +176,64 @@
 			$this->display();
 		}
 
+		//请求约见
+		public function makeMeet() {
+			$uid = $_SESSION['admins']['id'];
+			$post = $this->_post();
+			$tid = intval($post['tid']);
+
+			//判断老师是否存在
+			$teacherModel = M('teacher');
+			$find = $teacherModel->field('name')->where('id='.$tid)->find();
+			if(!$find) {
+				$this->ajaxReturn('该老师不存在');
+			}
+
+			$model = M('yjt');
+			
+			//查看是否已经约见老师
+			$getteacher = $model->field('id')
+						->where('uid=' .$uid. ' and status in ("0", "1")')
+						->find();
+
+			if($getteacher['id']) {
+				$this->ajaxReturn('您已预约过老师，请耐心等待');
+			}
+
+			$data['teacherid'] = $tid;
+			$data['time'] = time();
+			$data['number'] = 'yj'.time();
+			$data['uid'] = $uid;
+			$data['teachername'] = $find['name'];
+
+			if($model->add($data)) {
+				$this->ajaxReturn('约见成功');
+			} else {
+				$this->ajaxReturn('约见失败，请稍后约见');
+			}
+		
+		}
+
+
+
 		//取消约见
 		public function cancelMeet() {
 			$appoId = $this->_post('data');
 			$data = array('status' => '3');
+			$uid = $_SESSION['admins']['id'];
 
 			$model = M('yjt');
-			if($model->where('id='.$appoId)->save($data)) {
+			if($model->where('id='.$appoId. ' and uid=' . $uid)->save($data)) {
 				$this->ajaxReturn('1');
 			} else {
 				$this->ajaxReturn('0');
 			}
 		}
 
+
+
+
+		/***************提问************/
 		//问题列表
 		public function questionList() {
 			$uid = $_SESSION['admins']['id'];
@@ -157,6 +256,7 @@
 					->order('dcyd_question.addtime desc')
 					->limit($page->firstRow.','.$page->listRows)
 					->select();
+
 
 			$teacherModel = M('teacher');
 
@@ -197,6 +297,44 @@
 			$this->display();
 		}
 		
+		//提问
+		public function makeQuestion() {
+			$uid = $_SESSION['admins']['id'];
+			$question = trim($this->_post('content'));
+			$tid = intval($this->_post('tid'));
+
+			$rules = array(
+				array('question', 'require', '问题不能为空', 1),
+				array('type', 'number', '问题类型有误', 1)
+			);
+
+			//查看问题类型是否存在
+			$typeModel = M('questionType');
+			$type = $typeModel->field('id')->where('id='.$tid)->find();
+
+			if(!$type['id']) {
+				$this->ajaxReturn('此问题类型不存在');
+			}
+
+			$data['type'] = $tid;
+			$data['question'] = $question;
+			$data['addtime'] = time();
+			$data['number'] = 'qu' . time();
+			$data['userid'] = $uid;
+
+			$model = M('question');
+
+			$data = $model->validate($rules)->create($data);
+
+			if($data) {
+				$model->add($data);
+				$this->ajaxReturn(1);
+			} else {
+				$this->ajaxReturn($model->getError());
+			}
+		
+		}
+
 		//查看答案
 		public function getAnswer() {
 			$qid = $this->_get('qid');
@@ -241,6 +379,11 @@
 		
 		}
 
+
+
+
+
+		/****************服务评论******************/
 		//评价
 		public function evaluate() {
 			$uid = $_SESSION['admins']['id'];

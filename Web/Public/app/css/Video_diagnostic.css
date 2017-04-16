@@ -1,256 +1,327 @@
 /*选项卡部分*/
 .TAB_all{
-	border-bottom: 1px #aaaaaa solid;
+    border: 1px #AAAAAA  solid;
+    padding-left: 13px;
 }
 /*选项卡*/
 .diagnostic_TAB{
-	width: 625px;
-	height: 72px;
-	border: 1px #d5d5d5 solid;
-	overflow: hidden;
+    width: 625px;
+    height: 80px;
+    border: 1px #d5d5d5 solid;
+    overflow: hidden;
+    margin-top: 20px;
 }
 .TAB_num{
-	width: 125px;
-	float: left;
+    width: 123px;
+    height: 80px;
+    border: 1px #e4e4e4 solid;
+    float: left;
 }
 .TAB_num div{
-	width: 35px;
-	height: 35px;
-	border-radius: 3px;
-	margin: 0 auto;
-	margin-top: 10px;
-	border: 2px #0098b3 solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px #7fcbd9 solid;
 }
 .TAB_num i{
-	/*color: #7fcbd9;*/
-	margin-left: 2px;
-	font-size: 30px;
-	line-height: 35px;
+    /*color: #7fcbd9;*/
+    margin-left: 2px;
+    font-size: 30px;
+    line-height: 35px;
 }
 .TAB_num p{
-	font-size: 14px;
-	/*color: #0098b3;*/
-	line-height: 17px;
-	text-align: center;
-	margin:5px 0 5px 0;
+    font-size: 14px;
+    /*color: #0098b3;*/
+    line-height: 17px;
+    text-align: center;
+    margin:5px 0 5px 0;
 }
 /*选项卡内容*/
 .part_number{
-	/*border: 1px red solid;*/
-	height: 235px;
-	overflow: hidden;
-	display: none;
+    /*border: 1px red solid;*/
+    height: 275px;
+    overflow: hidden;
+    display: none;
 }
 .part_number_left{
-	float: left;
-	margin: 20px;
-	width: 200px;
-	height: 200px;
+    float: left;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
 }
 .part_number_left img{
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .part_number_right{
-	float: left;
-	margin: 25px 10px 0 10px;
+    float: left;
+    margin: 25px 10px 20px 10px;
 }
 .part_num_title{
-	font-size: 20px;
-	font-weight: 700;
-	color:#555555 ;
+    font-size: 20px;
+    font-weight: 700;
+    color:#555555 ;
 }
 .part_num_title span{
-	color: #0098b3;
-	font-size: 18px;
-	font-weight: 700;
-	margin-left: 10px;
+    color: #0098b3;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
 }
 .part_num_text{
-	color: #666666;
-	width: 370px;
-	font-size: 16px;
-	line-height: 30px;
-	margin-top: 10px;
+    color: #666666;
+    width: 370px;
+    height: 150px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 /*确定预约按钮*/
 .confirm_button{
-	overflow: hidden;
-	height: 40px;
-	margin: 10px 0 30px 0;
+    overflow: hidden;
+    height: 40px;
+    margin: 10px 0 10px 0;
 }
 .confirm_button button{
-	width: 100px;
-	height: 35px;
-	line-height: 35px;
-	font-size: 18px;
-	border-radius: 5px;
-	background: #4cbbcf;
-	border: none;
-	color: white;
-	float: right;
-	margin-right: 5px;
-	box-shadow: 1px 1px 2px #265c66;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #4cbbcf;
+    border: none;
+    color: white;
+    float: right;
+    margin-right: 5px;
+    box-shadow: 1px 1px 2px #265c66;
+}
+
+/*预约弹窗*/
+.confirmText{
+    width: 625px;
+    height: 275px;
+    z-index: 101;
+    display: none;
+}
+.confirmTextMain{
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto;
+}
+.confirmTextImg{
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    border: 3px #55bdcf solid;
+    overflow: hidden;
+    float: left;
+    margin-top: 60px;
+}
+.confirmTextText{
+    margin-top: 30px;
+    width: 350px;
+    margin-left:20px;
+    float: left;
+    padding-top: 30px;
+}
+.confirmTextText p{
+    line-height: 25px;
+}
+.confirmTextText p a{
+    font-size: 12px;
+    color: #F55E5E;
+    margin: 0px 10px 0 10px;
+}
+.confirmTextText{
+    text-align: center;
+}
+.confirmTextImg img{
+    margin-left: 5px;
+}
+.confirmTextText :nth-child(1){
+    color: #189dbb;
+    font-size: 30px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 40px;
+}
+.confirmTextText :nth-child(2){
+    color: #666666;
+    font-size: 12px;
+    width: 70%;
+    margin:0 auto ;
 }
 /*扁鹊服务*/
 .bianque_service{
-	margin-top: 30px;
-	padding-bottom: 50px;
-	border-bottom: 1px #AAAAAA solid;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px #AAAAAA solid;
 }
 .service_title{
-	background:#4cbbcf ;
-	width: 133px;
-	height: 33px;
-	text-align: center;
-	line-height: 33px;
-	color: white;
-	font-size: 18px;
-	font-weight: 700;
-	float: left;
-	overflow: hidden;
+    background:#4cbbcf ;
+    width: 133px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+    overflow: hidden;
 }
 .service_title img{
-	float: left;
-	margin-top: 5px;
-	margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 .bianque_service div{
-	overflow: hidden;
+    overflow: hidden;
 }
 .bianque_service div span{
-	display: block;
-	float: left;
-	margin-top: 8px;
-	font-size: 18px;
-	margin-left: 10px;
-	color: #555555;
-	font-weight: 700;
+    display: block;
+    float: left;
+    margin-top: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #555555;
+    font-weight: 700;
 }
 .service_text{
-	color: #666666;
-	font-size: 14px;
-	text-indent: 30px;
-	line-height: 30px;
-	margin-top: 20px;
+    color: #666666;
+    font-size: 14px;
+    text-indent: 30px;
+    line-height: 30px;
+    margin-top: 20px;
 }
 /*课程推荐*/
 .classes_recommend{
-	margin-top: 30px;
-	padding-bottom: 50px;
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 .classes_recommend_title{
-	background:#4cbbcf ;
-	width: 133px;
-	height: 33px;
-	text-align: center;
-	line-height: 33px;
-	color: white;
-	font-size: 18px;
-	font-weight: 700;
-	float: left;
-	overflow: hidden;
+    background:#4cbbcf ;
+    width: 133px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+    overflow: hidden;
 }
 .classes_recommend_title img{
-	float: left;
-	margin-top: 5px;
-	margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 .classes_recommend>div{
-	overflow: hidden;
+    overflow: hidden;
+}
+.img_num1{
+    width: 100%;
 }
 .video_show_part{
-	width: 120px;
-	height: 168px;
-	border: 2px #efefef solid;
-	float: left;
-	margin-right:7px;
-
+    width: 150px;
+    height: 190px;
+    border: 2px #efefef solid;
+    float: left;
+    margin:20px 5px 0 5px;
 }
 .video_show_part:hover{
-	box-shadow: 0px 2px 1px #707070;
-	cursor: pointer;
+    box-shadow: 0px 2px 1px #707070;
+    cursor: pointer;
 }
 .video_show{
-	margin-top: 30px;
-	overflow: hidden;
-	padding-bottom:10px ;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-bottom:10px ;
 }
 .first_model{
-	overflow: hidden;
+    overflow: hidden;
+    width: 100%;
 }
 .first_model p{
-	width: 30px;
-	height: 30px;
-	text-align: center;
-	float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    float: left;
 }
 .first_model p span{
-	width: 25px;
-	height: 13px;
-	color: white;
-	font-size: 10px;
-	margin-top: 5px;
-	line-height: 13px;
-	text-align: center;
-	background: #0098b3;
+    width: 25px;
+    height: 13px;
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+    line-height: 13px;
+    text-align: center;
+    background: #0098b3;
 }
 
 .first_model>span{
-	width: 80px;
-	display:block;
-	float: left;
-	color: #333333;
-	font-size: 10px;
-	line-height: 15px;
+    width: 110px;
+    display:block;
+    float: left;
+    color: #333333;
+    font-size: 10px;
+    line-height: 15px;
 }
 .second_mode {
-	overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    border: 1px red solid;
 }
 .second_mode span{
-	color: #333333;
+    color: #333333;
 }
 .second_model :first-child{
-	float: left;
-	margin-top: 8px;
-	margin-right: 5px;
-	margin-left: 7px;
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 7px;
 }
 .second_model :last-child{
-	float: right;
-	margin-top: 8px;
-	margin-right: 10px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
 }
 .star_collect:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
 /*友情链接*/
 .friendly_link{
-	width: 1000px;
-	margin: 20px auto;
+    width: 1000px;
+    margin: 20px auto;
 }
 .link_title{
-	width: 100%;
-	font-size: 24px;
-	color: #0098b3;
-	font-family: "微软雅黑";
+    width: 100%;
+    font-size: 24px;
+    color: #0098b3;
+    font-family: "微软雅黑";
 }
 .friendly_link ul{
-	overflow: hidden;
+    overflow: hidden;
 }
 .friendly_link  li{
-	padding: 0 5px 0 5px;
-	float: left;
-	list-style: none;	
+    padding: 0 5px 0 5px;
+    float: left;
+    list-style: none;
 }
 .friendly_link  li a{
-	font-size: 16px;
-	color: #666666;
-	font-family: "微软雅黑";
-	text-decoration: none;
+    font-size: 16px;
+    color: #666666;
+    font-family: "微软雅黑";
+    text-decoration: none;
 }
 .friendly_link  li a:hover{
-	color: #0098b3;
+    color: #0098b3;
 }
 
 

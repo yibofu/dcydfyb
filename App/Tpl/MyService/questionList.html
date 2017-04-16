@@ -21,7 +21,7 @@
 					<table>
 						<tr class="th">
 							<td>编号</td>
-							<td>服务类型</td>
+							<td>问题类型</td>
 							<td>提问时间</td>
 							<td>问题</td>
 							<td>服务状态</td>
@@ -30,7 +30,7 @@
 						<volist name="list" id="question" empty="">
 						<tr>
 							<td>{$question.number}</td>
-							<td>视频诊断</td>
+							<td>{$question.type}</td>
 							<td>{$question.addtime}</td>
 							<td width="50">
 								<p class="text_td">{$question.question}</p>

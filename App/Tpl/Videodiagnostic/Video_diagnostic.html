@@ -19,7 +19,7 @@
 			}
 			.confirmText{
 				width: 625px;
-				height: 235px;
+				height: 275px;
 				z-index: 101;
 				display: none;
 			}
@@ -132,6 +132,10 @@
 									<p>3、财务专家如约与您视频连线，进行财务诊断</p>
 									<p>4、诊断完成，请对本次视频诊断做出评价及建议</p>
 								</div>
+                                <!--确定预约按钮-->
+                                <div class="confirm_button">
+                                    <button>确定预约</button>
+                                </div>
 							</div>
 						</div>
 						<!--第二部分-->
@@ -147,6 +151,10 @@
 									<p>3、财务专家如约与您视频连线，进行财务经理面试</p>
 									<p>4、诊断完成，请对本次视频面试做出评价及建议</p>
 								</div>
+                                <!--确定预约按钮-->
+                                <div class="confirm_button">
+                                    <button>确定预约</button>
+                                </div>
 							</div>
 						</div>
 						<!--第三部分-->
@@ -163,6 +171,10 @@
 									<p>4、合同审改完毕，请点击下载审改后的完整合同</p>
 									<p>5、下载合同完毕，请对本次审改做出评价及建议</p>
 								</div>
+                                <!--确定预约按钮-->
+                                <div class="confirm_button">
+                                    <button>确定预约</button>
+                                </div>
 							</div>
 						</div>
 						<!--第四部分-->
@@ -171,7 +183,7 @@
 								<img src="/Public/app/img/Video_diagnostic/picture_4.png" style="width: 80%;"/>
 							</div>
 							<div class="part_number_right">
-								<p class="part_num_title">您即将预约的是<span>我要申报表</span></p>
+								<p class="part_num_title">您即将预约的是<span>我要审报表</span></p>
 								<div class="part_num_text">
 									<p>1、在线提交报表</p>
 									<p>2、24小时内专家会与您连线详谈报表事项</p>
@@ -179,6 +191,10 @@
 									<p>4、报表审改完毕，请点击下载审改后的完整报表</p>
 									<p>5、下载报表完毕，请对本次审改做出评价及建议</p>
 								</div>
+                                <!--确定预约按钮-->
+                                <div class="confirm_button">
+                                    <button>确定预约</button>
+                                </div>
 							</div>
 						</div>
 						<!--第五部分-->
@@ -195,7 +211,12 @@
 									<p>4、发起面试</p>
 									<p>5、面试完成后，请对推荐的财务人员进行评价</p>
 								</div>
+                                <!--确定预约按钮-->
+                                <div class="confirm_button">
+                                    <button>确定预约</button>
+                                </div>
 							</div>
+
 						</div>
 							<div class="confirmText">
 								<div class="confirmTextMain">
@@ -208,15 +229,13 @@
 											联系。请在个人中心查看您的服务。</p >
 										<p>
 											<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回视频诊断</a><span>|</span><a href="#">进入个人中心</a>
-									</p >
-								</div>
-							</div>
-						</div>
-					</div>
-						<!--确定预约按钮-->
-						<div class="confirm_button">
-							<button>确定预约</button>
-						</div>
+									    </p >
+								    </div>
+							    </div>
+					    	</div>
+
+                        </div>
+
 					</div>
 					<!--扁鹊服务部分-->
 					<div class="bianque_service">
@@ -356,9 +375,14 @@
 		// 弹窗
 		$(".confirm_button button").click(function(){
 			$(".confirmText").css({"display":"block"});
-			$(".part_number").css("display","none");
-
+			$(this).parents(".part_number").css("display","none");
+             var Num=$(this).parents(".part_number").index();
+            $(".TAB_num").eq(Num).mouseover(function(){
+                $(".confirmText").css({"display":"block"});
+                $(".part_number").eq(Num).css("display","none");
+            });
 		});
+
 	$(function(){
 		//选项卡
 		$(".TAB_num i").css("color","#7FCBD9");
@@ -384,7 +408,7 @@
 		});
 		//视频显示效果
 		$(".video_show_part").mouseover(function(){
-			$(this).find(".img_num1").attr("src","/Public/app/img/Video_diagnostic/未标题-1.png");
+			$(this).find(".img_num1").attr("src","/Public/app/img/Video_diagnostic/Video_play.png");
 			$(this).find(".img_num1").addClass("active");
 			
 		});

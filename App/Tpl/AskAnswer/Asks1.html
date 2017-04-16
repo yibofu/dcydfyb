@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
+		<title>扁鹊财院-百问百答</title>
+		<meta name="title" content="扁鹊财院-领先的财务解决方案供应商。财务咨询，财税咨询，企业上市服务，企业并购服务。">
+		<meta name="Keywords" content="财务咨询、股权设计、税务筹划" />
+		<meta name="description" content="扁鹊财院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
+		<link rel="stylesheet" href="/Public/app/css/official.css" />
+		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
+		<link rel="stylesheet" href="/Public/app/css/ask_answer.css" />
+		<link rel="stylesheet" href="/Public/app/css/caption.css">
+		<script src="/Public/app/js/jquery.min.js"></script>
+		<script src="/Public/app/js/ask_answer.js"></script>
+		<script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
+	</head>
+	<body style="background: white;">
+		<div class="consult_all">
+			<include file="Public:head" />
+			<include file="Public:xxk" />
+			<!--banner头部图片-->
+			<div class="consult_banner">
+				<img src="/Public/app/img/ask_answer_banner.png" />
+			</div>
+			<div class="consult_main">
+				<!--内容左边的部分-->
+				<div class="consult_left">
+					<!--选项卡标题-->
+					<div class="TAB_title">
+						<volist name="types" id="type" offset="0" length="3">
+						<p attr="{$type.id}">{$type.name}</p>
+						</volist>
+						<p attr="{$types[3]['id']}"style="margin-right:0px;">{$types[3]['name']}</p>
+					</div>
+					<div class="left_part1">
+						<div class="TAB_text">
+							<p class="TAB_text_title"><span>最新-</span>钱账税</p>
+							<!--循环遍历的开始-->
+							<div class="TAB_text_text" id="lqzs">
+								<img src="/Public/app/img/ask_answer_person.png" />
+								<div class="TAB_text_textRight">
+									<p>税已经超报了，15555号之前要扣税款，账上没有钱，怎么办啊？</p>
+									<div>
+										<p>151****9611</p>
+										<p>提问时间：2016：12：09</p>
+										<img title="点赞" src="/Public/app/img/support.png"/>
+										<span name="like">9</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="left_part1">
+						<div class="TAB_text">
+							<p class="TAB_text_title"><span>最新-</span>新三板</p>
+							<!--循环遍历的开始-->
+							<div class="TAB_text_text">
+								<img src="/Public/app/img/ask_answer_person.png" />
+								<div class="TAB_text_textRight">
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+									<div>
+										<p>151****9611</p>
+										<p>提问时间：2016：12：09</p>
+										<img title="点赞" src="/Public/app/img/support.png"/>
+										<span>9</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="left_part1">
+						<div class="TAB_text">
+							<p class="TAB_text_title"><span>最新-</span>股权设立</p>
+							<!--循环遍历的开始-->
+							<div class="TAB_text_text">
+								<img src="/Public/app/img/ask_answer_person.png" />
+								<div class="TAB_text_textRight">
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+									<div>
+										<p>151****9611</p>
+										<p>提问时间：2016：12：09</p>
+										<img title="点赞" src="/Public/app/img/support.png"/>
+										<span>9</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="left_part1">
+						<div class="TAB_text">
+							<p class="TAB_text_title"><span>最新-</span>收购并购</p>
+							<!--循环遍历的开始-->
+							<div class="TAB_text_text">
+								<img src="/Public/app/img/ask_answer_person.png" />
+								<div class="TAB_text_textRight">
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+									<div>
+										<p>151****9611</p>
+										<p>提问时间：2016：12：09</p>
+										<img title="点赞" src="/Public/app/img/support.png"/>
+										<span>9</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--页数-->
+					<div class="page">
+						<ul>
+							<li class="page_left">上一页</li>
+							<li class="page_num">1</li>
+							<li class="page_num">2</li>
+							<li class="page_num">3</li>
+							<li class="page_num">4</li>
+							<li class="page_num">5</li>
+							<li class="page_num">...</li>
+							<li class="page_right">下一页</li>
+						</ul>
+					</div>
+					<div class="left_part2">
+						<div class="ask_title">
+							<button>我要提问</button>
+							<img src="/Public/app/img/horn.png" />
+							<p>
+								<span></span>
+							</p>
+						</div>
+						<div class="ask_text">
+							<textarea name="textarea"></textarea>
+							<div class="number_limit">
+								<p>限45个字符 已输入<span>0</span>个字符</p>
+								<button name="sub" class="sub">提交问题</button>
+								<input type="hidden" name="tid" value="{$types[0]['id']}">
+							</div>
+						</div>
+					</div>			
+				</div>
+				<!--内容右边的部分-->
+				<div class="consult_right">
+					<!--菜单部分-->
+					<div class="main-fr">
+		                <div class="main-fr-t">
+		                    <ul class="main-fr-t-a">
+		                        <li id="swphoto">
+		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-01.png" style="display: none"/>
+		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-1.png"/>
+		                        </li>
+		                        <li id="swphota">
+		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-02.png"/>
+		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-2.png" style="display: none"/>
+		                        </li>
+		                        <li id="swphotb">
+		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-03.png"/>
+		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-3.png" style="display: none"/>
+		                        </li>
+		                        <li id="swphotc">
+		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-04.png"/>
+		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-4.png" style="display: none"/>
+		                        </li>
+		                        <li id="swphotd">
+		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-05.png"/>
+		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-5.png" style="display: none"/>
+		                        </li>
+		                        <li><img src="/Public/app/img/menu_img/main-fr-06.jpg"/></li>
+		                    </ul>
+		                </div>
+		                
+		            </div>
+		            <div class="clear"></div>
+					<!--轮播图-->
+					<div class="carousel">
+						<div class="carousel_title">授课展示图</div>
+						<div class="carousel_img">
+							<img src="/Public/app/img/carousel_1.png" id="pic" />
+						</div>
+					</div>
+					<!--参与讨论-->
+					<div class="join_discuss">
+						<!--开始部分-->
+						<div class="discuss_part1">
+							<!--参与讨论的标题-->
+							<div class="discuss_title">
+								<img src="/Public/app/img/new.png" />
+								<p>看别人的问题  说自己的观点</p>
+							</div>
+							<!--参与讨论的内容(开始循环遍历的块)-->
+							<div class="discuss_text">
+								<div class="question">
+									<img src="/Public/app/img/Q.png" />
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+								</div>
+								<div class="answer">
+									<img src="/Public/app/img/A.png" />
+									<p>如果你处于这样的困境，那么你会面临两个问题，也许最要记住的事情是你即使付不起税务也要报税。</p>
+								</div>
+								<div class="expert_contact">
+									<img src="/Public/app/img/expect_contact.png" />
+									<p><a href="#">吕定杰</a></p>
+									<button class="QR_btn">参与讨论</button>
+								</div>
+							</div>
+						</div>
+						<div class="discuss_part1">
+							<!--参与讨论的内容(开始循环遍历的块)-->
+							<div class="discuss_text">
+								<div class="question">
+									<img src="/Public/app/img/Q.png" />
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+								</div>
+								<div class="answer">
+									<img src="/Public/app/img/A.png" />
+									<p>如果你处于这样的困境，那么你会面临两个问题，也许最要记住的事情是你即使付不起税务也要报税。</p>
+								</div>
+								<div class="expert_contact">
+									<img src="/Public/app/img/expect_contact.png" />
+									<p><a href="#">吕定杰</a></p>
+									<button class="QR_btn">参与讨论</button>
+								</div>
+							</div>
+						</div>
+						<div class="discuss_part1">
+							<!--参与讨论的内容(开始循环遍历的块)-->
+							<div class="discuss_text">
+								<div class="question">
+									<img src="/Public/app/img/Q.png" />
+									<p>税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
+								</div>
+								<div class="answer">
+									<img src="/Public/app/img/A.png" />
+									<p>如果你处于这样的困境，那么你会面临两个问题，也许最要记住的事情是你即使付不起税务也要报税。</p>
+								</div>
+								<div class="expert_contact">
+									<img src="/Public/app/img/expect_contact.png" />
+									<p><a href="#">吕定杰</a></p>
+									<button class="QR_btn">参与讨论</button>
+								</div>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+			
+			
+			</div>
+			
+			<include file="Public:bottom" />
+		</div>
+		
+			<!--二维码-->
+			<div class="QR_code">
+				<img src="/Public/app/img/QR_code.png" />
+				<p>扫码参与讨论</p>
+			</div>
+			
+		
+	</body>
+	<script>
+	//轮播
+		window.onload=function(){
+			var OImg=document.getElementById("pic");
+			var timer=setInterval(go,1000);
+			var index=0;
+			function go(){
+				index++;
+				if (index==5) {
+					index=1;
+				}
+				OImg.src="/Public/app/img/carousel_"+index+".png";
+			}
+			
+		}
+	</script>
+	<script>
+	
+	
+	
+	
+	
+//		分页
+		$(function(){
+	    	var i=0;
+	    	$(".page_num").eq(i).css({"background":"#5fc8da","color":"white"});
+	    	$(".page_num").click(function(){
+	    		$(".page_num").css({"background":"","color":""});
+	    		$(this).css({"background":"#5fc8da","color":"white"});
+	    	});
+	    	
+	    })
+	
+		$("#swphoto").click(function(){
+        $("#swphoto .img1").css('display','block');
+        $("#swphoto .img2").css('display','none');
+        $("#swphota .img2").css('display','none');
+        $("#swphotb .img2").css('display','none');
+        $("#swphotc .img2").css('display','none');
+        $("#swphotd .img2").css('display','none');
+        $("#swphota .img1").css('display','block');
+        $("#swphotb .img1").css('display','block');
+        $("#swphotc .img1").css('display','block');
+        $("#swphotd .img1").css('display','block');
+    });
+    $("#swphota").click(function(){
+
+        $("#swphota .img1").css('display','none');
+        $("#swphota .img2").css('display','block');
+
+        $("#swphoto .img1").css('display','none');
+        $("#swphotb .img2").css('display','none');
+        $("#swphotc .img2").css('display','none');
+        $("#swphotd .img2").css('display','none');
+        $("#swphoto .img2").css('display','block');
+        $("#swphotb .img1").css('display','block');
+        $("#swphotc .img1").css('display','block');
+        $("#swphotd .img1").css('display','block');
+    });
+    $("#swphotb").click(function(){
+        $("#swphotb>img").toggle();
+        $("#swphoto .img1").css('display','none');
+        $("#swphota .img2").css('display','none');
+        $("#swphotc .img2").css('display','none');
+        $("#swphotd .img2").css('display','none');
+        $("#swphoto .img2").css('display','block');
+        $("#swphota .img1").css('display','block');
+        $("#swphotc .img1").css('display','block');
+        $("#swphotd .img1").css('display','block');
+    });
+    $("#swphotc").click(function(){
+        $("#swphotc .img1").css('display','none');
+        $("#swphotc .img2").css('display','block');
+
+        $("#swphoto .img1").css('display','none');
+        $("#swphota .img2").css('display','none');
+        $("#swphotb .img2").css('display','none');
+        $("#swphotd .img2").css('display','none');
+        $("#swphoto .img2").css('display','block');
+        $("#swphota .img1").css('display','block');
+        $("#swphotb .img1").css('display','block');
+        $("#swphotd .img1").css('display','block');
+
+    });
+    $("#swphotd").click(function(){
+        $("#swphotd>img").toggle();
+
+        $("#swphoto .img1").css('display','none');
+        $("#swphota .img2").css('display','none');
+        $("#swphotb .img2").css('display','none');
+        $("#swphotc .img2").css('display','none');
+        $("#swphoto .img2").css('display','block');
+        $("#swphota .img1").css('display','block');
+        $("#swphotb .img1").css('display','block');
+        $("#swphotc .img1").css('display','block');
+    });
+
+		$(".TAB_title").children().mouseover(function(){
+			$('input[name=tid]').val($(this).attr('attr'));
+		})
+
+		$('button[name=sub]').click(function() {
+			var tid = $('input[name=tid]').val();
+			var content = $('textarea[name=textarea]').val();
+
+			$.post(
+				'{:U("MyService/makeQuestion")}',
+				{'tid':tid,'content':content},
+				function(res) {
+					if(res == 0) {
+						location.href = '{:U("Login/loginPage")}';
+					} else if(res == 1) {
+						
+					
+					}
+					alert(res);
+				}
+			);
+				
+				
+		});
+
+		
+	</script>
+</html>

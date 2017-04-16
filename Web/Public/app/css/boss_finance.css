@@ -2,7 +2,7 @@
 	/*border: 1px red solid;*/
 	
 }
-/*banner按钮*/''
+/*banner按钮*/
 .introduce_btn{
 	overflow: hidden;
 }
@@ -22,7 +22,7 @@
 .apply:hover{
 	cursor: pointer;
 }
-.apply input:hover{
+.apply a:hover{
 	cursor: pointer;
 }
 .apply img{
@@ -30,13 +30,16 @@
 	margin-top: 13px;
 	margin-left: 10px;
 }
-.apply input{
+.apply a{
 	display: inline-block;
 	background: none;
 	color: white;
 	font-size: 18px;
 	font-family: "微软雅黑";
 	line-height: 42px;
+}
+.apply a:hover{
+	text-decoration: none;
 }
 /*右边的按钮*/
 .audition{
@@ -53,7 +56,7 @@
 .audition:hover{
 	cursor: pointer;
 }
-.audition input:hover{
+.audition a:hover{
 	cursor: pointer;
 }
 .audition img{
@@ -61,13 +64,16 @@
 	margin-top: 13px;
 	margin-left: 10px;
 }
-.audition input{
+.audition a{
 	display: inline-block;
 	background: none;
 	color: white;
 	font-size: 18px;
 	font-family: "微软雅黑";
 	line-height: 42px;
+}
+.audition a:hover{
+	text-decoration: none;
 }
 /*菜单栏按钮*/
 .main_btn{
@@ -87,6 +93,9 @@
 	float: left;
 	margin-right: 3px;
 	background-color:#47b8cc ;
+}
+.main_btn a:hover{
+	text-decoration: none;
 }
 
 /*课程介绍*/
@@ -216,10 +225,7 @@
 	color: #333333;
 	float: left;
 }
-.earnings_text:hover{
-	cursor: pointer;
-	color: #3ab3d5;
-}
+
 /*参训人群*/
 .person{
 	overflow: hidden;
@@ -247,10 +253,7 @@
 .we_teamimg{
 	float: left;
 }
-.person_text:hover{
-	cursor: pointer;
-	color: #647abe;
-}
+
 
 /*课程特色*/
 .classes{
@@ -275,10 +278,7 @@
 	color: #333333;
 	float: left;
 }
-.classes_text:hover{
-	cursor: pointer;
-	color: #fc8d69;
-}
+
 /*课程介绍*/
 .class_outline{
 	width: 625px;
@@ -331,13 +331,16 @@
 	float: left;
 	margin:7px 3px 0 5px;
 }
-.outline_listen input{
+.outline_listen a{
 	display: inline-block;
 	background: none;
 	color: white;
 	font-size: 12px;
 	font-family: "微软雅黑";
 	line-height: 25px;
+}
+.outline_listen a:hover{
+	text-decoration: none;
 }
 
 /*右边的按钮*/
@@ -363,7 +366,7 @@
 	float: left;
 	margin:7px 3px 0 5px;
 }
-.outline_get input{
+.outline_get a{
 	display: inline-block;
 	background: none;
 	color: white;
@@ -371,7 +374,9 @@
 	font-family: "微软雅黑";
 	line-height: 25px;
 }
-
+.outline_get a:hover{
+	text-decoration: none;
+}
 
 .outline_model{
 	overflow: hidden;
@@ -644,6 +649,21 @@
 	height: 113px;
 	margin-top: 10px;
 	border: 1px #D5D5D5 solid;
+}
+.first_btn{
+	font-weight: 700;
+	background-color: #47b8cc;
+	border-radius: 3px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	width: 75px;
+	height:25px;
+	line-height: 25px;
+	float: right;
+	margin-bottom: 5px;
+	margin:20px 5px 5px 0;
+	box-shadow: 1px 2px  1px #0b525e;
 }
 .second_text{
 	font-size: 12px;

@@ -1,300 +1,414 @@
 *{
-	font-family: "微软雅黑";
+    font-family: "微软雅黑";
 }
 
 /*选项卡标题*/
 .TAB_title{
-	overflow: hidden;
+    overflow: hidden;
 }
 .TAB_title p{
-	text-align: center;
-	border: 1px #0098b3 solid;
-	float: left;
-	width: 150px;
-	height: 35px;
-	line-height: 35px;
-	margin-right: 15px;
+    text-align: center;
+    border: 1px #0098b3 solid;
+    float: left;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 15px;
 }
 .TAB_title p:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
 .left_part1{
-	border: 1px #83e3f4 solid;
-	width: 650px;
+    border: 1px #83e3f4 solid;
+    width: 650px;
 }
 /*选项卡内容*/
 .TAB_text{
-	width: 600px;
-	margin: 0 auto;
-	margin-top: 20px;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
 }
 .TAB_text_title{
-	height: 40px;
-	line-height: 40px;
-	border-bottom: 2px#dcdcdc solid;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 2px#dcdcdc solid;
+}
+.TAB_text_title img{
+    float: left;
 }
 .TAB_text_title span{
-	color: #47b8cc;
-	font-size: 20px;
-	font-weight: 700;
+    float: left;
+    display: inline-block;
+    color: #666666;
+    line-height: 30px;
+    font-size: 18px;
+    margin-left: 10px;
 }
 .TAB_text_title{
-	font-size: 16px;
-	color: #47b8cc;	
-	font-weight: 700;
+    font-size: 16px;
+    color: #47b8cc;
+    font-weight: 700;
 }
 .TAB_text_text{
-	background: #e6f9fd;
-	width: 100%;
-	
-	margin: 13px auto;
-	overflow: hidden;
+    background: #e6f9fd;
+    width: 100%;
+    margin: 13px auto;
+    overflow: hidden;
+    padding: 5px 0 5px 0;
+
 }
-.TAB_text_text>img{
-	float: left;
+.TAB_text_img{
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.TAB_text_img p{
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+.personImg{
+    width:70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px #0098b3 solid;
+    margin-left: 13px;
+    background: url("../img/ask_answer/person.png") no-repeat;
 }
 .TAB_text_textRight{
-	float: left;
-	width: 500px;
-	padding: 10px 10px 10px 15px;
+    float: left;
+    width: 500px;
+    padding: 10px 10px 10px 15px;
 }
-.TAB_text_textRight>p{
-	color: #6088d7;
-	font-size: 16px;
-	line-height:25px;
-	height: 30px;
+.TAB_text_img p span{
+    color: #F55E5E;
 }
-.TAB_text_textRight>div{
-	color: #666666;
-	font-size: 14px;
-	overflow: hidden;
+.TAB_text_textRight{
+    float: left;
+    width: 460px;
 }
-.TAB_text_textRight>div p{
-	/*line-height: 30px;*/ 
-	margin-right: 30px;
-	float: left;
+.questionText{
+    color: #6088d7;
+    font-size: 14px;
 }
-.TAB_text_textRight>div img{
-	float: left;
-	margin-top: 10px;
-	margin-left:150px;
+.answerText{
+    color: #666666;
+    font-size: 14px;
 }
-.TAB_text_textRight>div span{
-	display: block;
-	float: right;
-	margin-top: 8px;
-	margin-right: 10px;
+.text_question{
+    overflow: hidden;
 }
-.TAB_text_textRight>div span:hover{
-	cursor: pointer;
+.text_question p img{
+    width: 20px;
 }
-.TAB_text_textRight>div img:hover{
-	cursor: pointer;
+.text_question p{
+    overflow: hidden;
 }
+.text_question :nth-child(1) img{
+    float: left;
+    margin-right: 5px;
+}
+.text_question :nth-child(1) span{
+    width: 435px;
+    display: block;
+    float: left;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /*这里规定在第几行开始变省略号*/
+    -webkit-box-orient: vertical;
+}
+.text_question :nth-child(2) img{
+    float: left;
+    margin-right: 5px;
+}
+.text_question :nth-child(2) span{
+    width: 435px;
+    display: block;
+    float: left;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;        /*这里规定在第几行开始变省略号*/
+    -webkit-box-orient: vertical;
+}
+.textQuestionPerson img{
+    float: left;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.collectImg{
+    /*border: 1px red solid;*/
+}
+.textQuestionPerson span{
+    float: left;
+    display: block;
+    margin-top: 5px;
+}
+.textQuestionPerson{
+    float: right;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.textQuestionPerson button{
+    float: right;
+    width:60px;
+    height: 25px;
+    line-height: 25px;
+    text-align:center;
+    color: #ffffff;
+    font-size: 12px;
+    background: #5c9ad5;
+    border-radius: 3px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.textQuestionPerson span{
+    font-size: 14px;
+    display: inline-block;
+}
+.adminName{
+    width: 80px;
+    text-align: center;
+    color: #5c9ad5;
+    font-weight: 600;
+}
+.collectNum{
+    text-align: center;
+    width: 30px;
+    color: #999999;
+}
+
 /*提问框*/
 .left_part2{
-	margin-top:30px;
-	margin-bottom: 50px;
+    margin-top:30px;
+    margin-bottom: 50px;
 }
 .ask_title{
-	overflow: hidden;
+    overflow: hidden;
 }
 .ask_title button{
-	width: 95px;
-	height: 38px;
-	line-height: 38px;
-	text-align: center;
-	background:#8c97cb ;
-	color: white;
-	font-size: 16px;
-	font-weight: 700;
-	float: left;
+    width: 95px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background:#8c97cb ;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
 }
 .ask_title img{
-	float: left;
-	margin-top: 10px;
-	margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .ask_title p{
-	float: left;
-	height: 40px;
-	line-height: 40px;
-	width: 500px;
-	margin-left: 20px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 500px;
+    margin-left: 20px;
 }
 .ask_title p span{
-	margin: 0 10px 0 0px;
-	display: inline-block;	
-	width: 100px;
-	text-align: center;
-	overflow: hidden;
-	word-wrap: normal;
-	text-overflow: ellipsis;
-	color: #666666;
-	height: 25px;
-	line-height: 25px;
-	margin-top: 8px;
+    margin: 0 10px 0 0px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    color: #666666;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 8px;
 }
 .ask_text textarea{
-	width: 630px;
-	border-radius: 5px;
-	resize: none;
-	padding: 10px;
-	height: 160px;
-	border: 1px #dcdcdc solid;
+    width: 630px;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    height: 160px;
+    border: 1px #dcdcdc solid;
 }
 .number_limit{
-	overflow: hidden;
-	margin-top: 15px;
+    overflow: hidden;
+    margin-top: 15px;
 }
 .number_limit p{
-	float: left;
-	color: #a3a3a3;
-	font-size: 14px;
-	font-weight: 700;
+    float: left;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 700;
 }
 .number_limit p span{
-	color: #F55E5E;
+    color: #F55E5E;
 }
 .number_limit button{
-	float: right;
-	width: 95px;
-	height: 38px;
-	line-height: 38px;
-	text-align: center;
-	background:#8c97cb ;
-	color: white;
-	font-size: 16px;
-	font-weight: 700;
+    float: right;
+    width: 95px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background:#8c97cb ;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
 }
 /*参与讨论*/
 .join_discuss{
-	margin-top: 30px;
+    margin-top: 30px;
 }
 .discuss_part1{
-	background: #f3f2f2;
-	padding: 10px 10px 5px 30px;
-	margin:10px 0 10px 0 ;
+    background: #f3f2f2;
+    padding: 10px 10px 5px 15px;
+    margin:10px 0 10px 0 ;
 }
 .discuss_title{
-	height: 40px;
-	line-height: 40px;
-	overflow: hidden;
-	border-bottom: 1px dashed #d2d2d2;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px dashed #d2d2d2;
 }
 .discuss_title img{
-	float: left;
-	margin-top: 12px;
+    float: left;
 }
 .discuss_title p{
-	float: left;
-	margin-left: 10px;
+    margin-left: 10px;
+    float: left;
+    line-height: 40px;
 }
 .discuss_text{
-	 color: #666666;
-	 font-size: 12px;
-	 line-height: 20px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 .question{
-	overflow: hidden;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .question img{
-	float: left;
-	margin-top: 3px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
 }
-.question p{
-	width: 250px;
-	float: left;
+.question p {
+    font-size: 12px;
+}
+.question div{
+    width: 250px;
+    float: left;
+}
+.questionFirP{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /*这里规定在第几行开始变省略号*/
+    -webkit-box-orient: vertical;
+}
+.questionSecP{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 3px;
+}
+.questionSecP span{
+    display: inline-block;
+    color: #5c9ad5;
+    font-size: 12px;
+    cursor: pointer;
+}
+.phoneNumber{
+    float: right;margin-right: 5px;
 }
 .answer{
-	margin-top: 20px;
-	overflow: hidden;
+    margin-top: 20px;
+    overflow: hidden;
 }
 .answer img{
-	float: left;
-	margin-top: 3px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
 }
 .answer p{
-	width: 250px;
-	float: left;
+    width: 250px;
+    float: left;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /*这里规定在第几行开始变省略号*/
+    -webkit-box-orient: vertical;
 }
 .expert_contact{
-	margin-top: 15px;
-	overflow: hidden;
-	height: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+    height: 30px;
 }
-.expert_contact img{
-	float: left;
-}
-.expert_contact p a{
-	color: #5c9ad5;
-	font-weight: 700;
-	font-size: 12px;
-	float: left;
-	margin-left: 5px;
-}
-.expert_contact button{
-	float: right;
-	margin-right: 20px;
-	width: 60px;
-	height: 23px;
-	line-height:17px;
-	color: white;
-	font-size: 12px;
-	background: #5c9ad5;
-	border-radius: 2px;
-	box-shadow: 1px 1px 1px #355370;
-}
-.expert_contact button:hover{
-	cursor: pointer;
+.expert_contact p{
+
 }
 /*右侧浮动二维码*/
 .QR_code{
-	width: 100px;
-	height: 140px;
-	border: 1px #cdcdcd solid;
-	/*position: relative;
-	top: -450px;
-	left: 1380px;*/
+    width: 100px;
+    height: 140px;
+    border: 1px #cdcdcd solid;
+    /*position: relative;
+    top: -450px;
+    left: 1380px;*/
+    background: white;
+    display: none;
 }
-.QR_code img{
-	margin: 10px 0 0 8px;
+.QR_code :nth-child(1){
+    float: right;cursor: pointer;
+}
+.QR_code :nth-child(2){
+    margin:-2px 0 0 8px;
 }
 .QR_code p{
-	height: 40px;
-	font-size: 13px;
-	text-align: center;
-	color: #497fcf;
-	line-height: 40px;
-	border-top: 1px #cdcdcd solid;
-	box-shadow: 0 1px 1px #5a5a5a;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+    color: #497fcf;
+    line-height: 40px;
+    border-top: 1px #cdcdcd solid;
+    box-shadow: 0 1px 1px #5a5a5a;
 }
 
 
 /*页数*/
 .page{
-	overflow: hidden;
-	margin-top: 30px;
+    overflow: hidden;
+    margin-top: 30px;
 }
 .page ul{
-	float: right;
-	margin-right: 100px;
+    float: right;
+    margin-right: 100px;
 }
 .page ul li{
-	float: left;
-	border: 1px #e7e7e7 solid;
-	height: 27px;
-	text-align: center;
-	line-height: 27px;
-	color: #666666;
-	margin: 0 5px 0 5px;
+    float: left;
+    border: 1px #e7e7e7 solid;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #666666;
+    margin: 0 5px 0 5px;
 }
 .page ul li:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
 .page_num{
-	width:30px ;
+    width:30px ;
 }
 .page_left,.page_right{
-	width: 60px;
+    width: 60px;
 }

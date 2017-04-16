@@ -48,6 +48,13 @@
 				}
 			}
 			$this->assign("aa",$aa);
+
+			//查询提问类别
+			$qtype = M('questionType');
+			$qtypeList = $qtype->field('id, name')->select(); 
+			$this->assign("qtypeList",$qtypeList);
+
+
 			$this->display();
 		}
 
@@ -416,6 +423,50 @@
 			);
 		}
 		echo json_encode($result);
+	}
+
+
+
+
+	//视频页学院评论
+	public function viewComment(){
+		$data['uid'] = $_SESSION['admins']['id'];
+
+		if(!$data['uid']) {
+			$this->ajaxReturn(0);
+		}
+
+		$data['viewid'] = intval($this->_post('vid'));
+		$data['content'] = trim($this->_post('content'));
+		$data['addtime'] = time();
+		$data['starts']  = 5;
+
+		$rules = array(
+			array('viewid', 'number', '此视频不存在', 1),		
+			array('content', 'require', '请输入评论内容', 1),		
+		);
+
+		$model = M('vevaluate');
+
+		$res = $model->validate($rules)->create($data);
+
+		if($res) {
+			if($model->add($data)) {
+				$this->ajaxReturn(1);
+			} else {
+				$this->ajaxReturn($model->getError());
+			}
+		}
+	}
+
+
+	//检查用户是否登陆
+	public function isLogin() {
+		if(!$_SESSION['admins']['id']) {
+			$this->ajaxReturn(0);
+		} else {
+			$this->ajaxReturn(1);
+		}
 	}
 }
 ?>

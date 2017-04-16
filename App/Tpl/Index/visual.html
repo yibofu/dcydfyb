@@ -324,7 +324,7 @@
                     </div>
                     <div class="playContent">
                         <div class="videoitem" >
-                            <video width="100%" height="100%;" src="{$data[0]['url']}" controls loop></video>
+                            <video width="100%" height="100%;" src="{$data[0]['url']}" controls="true" loop></video>
                         </div>
                     </div>
                 </div>
@@ -365,7 +365,7 @@
                 <ul class="tab-nav">
                     <li class="current sizec lin-b" name="basic"><a id="kcjs" class="lin-b">课程介绍</a></li>
                     <li class="sizec lin-b" name="content"><a id="zjjj" class="lin-b">专家讲师</a></li>
-                    <!--<li class="sizec lin-b" name="user"><a id="xypl" class="lin-b">学员评论</a></li>-->
+                    <li class="sizec lin-b" name="user"><a id="xypl" class="lin-b">学员评论</a></li>
                 </ul>
                 <div class="tab-content basic">
                     <volist name="ress" id="vo1">
@@ -400,7 +400,7 @@
                         <form action="">
                             <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
                             <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
-                            <a href="#ctn"><input type="button" value="评论" id="submit"></a>
+                            <a href="#"><input type="button" value="评论" id="submit"></a>
                         </form>
                     </div>
                     <div class="clearfix"></div>
@@ -660,6 +660,48 @@
       $("#preview2").css("color","#000");
     });
 
+	$('#submit').click(function() {
+		var vid = {$data[0]['id']};	
+		var content = $('#textArea').val();
 
+		$.post(
+			'{:U("Index/viewComment")}',
+			{'vid':vid, 'content':content},
+			function(res) {
+				if(res == 0) {
+					location.href = '{:U("Login/loginPage")}';
+					return;
+				}	
+				
+				alert(res);
+			}
+				
+		);
+			
+	});
+
+//sanfenzhong
+		var flag = false;
+		var video = document.getElementsByTagName('video')[0];
+		video.addEventListener('timeupdate', function() {
+			var t = parseInt(video.currentTime);
+			if(t >= 180 && !flag) {
+				$.post(
+					'{:U("Index/isLogin")}',{},
+					function(res) {
+						if(res ==  0) {
+							video.pause();
+							if(confirm('请登陆继续观看')) {
+								location.href = '{:U("Login/loginPage")}';
+								return;
+							} 						
+						} else {
+							flag = true;
+						}
+
+					}
+				);
+			}
+		});
 </script>
 </html>

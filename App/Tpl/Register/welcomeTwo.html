@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="/Public/app/js/welcomeTwo.js" ></script>
 		<script>
 		function go(){
-			$(".welcomeSroll").animate({"height":"321px"},3000);
+			$(".welcomeSroll").animate({"height":"321px"},1000);
 		}
 		$(function(){
 			var timer=setInterval("go()",500);

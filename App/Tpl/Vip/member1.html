@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
+    <title>扁鹊财院---会员专享</title>
+    <meta name="title" content="扁鹊财院---会员专享">
+    <meta name="Keywords" content="财务咨询、股权设计、税务筹划" />
+    <meta name="description" content="扁鹊财学院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
+    <link rel="stylesheet" href="/Public/app/css/official.css">
+    <link rel="stylesheet" href="/Public/app/css/caption.css">
+    <script type="text/javascript" src="/Public/app/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/Public/app/js/jquery.kkPages.js"></script>
+    <script type="text/javascript" src="/Public/app/js/address.js"></script>
+    <script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
+    <style>
+        .iny{
+            background: url("/Public/app/img/user-c.png") no-repeat 345px 123px;
+        }
+        .box{
+            background: #ffffff;
+        }
+
+        .user .user-two{
+            height: 104px;
+        }
+        .user .user-two .two-a img{
+            margin-top: 11px;
+        }
+        .user .user-two .two-b{
+            width: 130px;
+            height: 32px;
+            margin-top: 36px;
+        }
+        .user .user-two .two-b img{
+            margin-right: 7px;
+        }
+
+        .user .user-three .three-a li{
+            height: 40px;
+            line-height: 40px;
+            margin-top: 5px;
+            cursor:pointer;
+        }
+        .user-three .three-b .three-eight .eight .eight-three li{
+            height: 46px;
+            line-height: 46px;
+            margin-left: 13px;
+            cursor:pointer;
+        }
+        .user-three .three-b .three-six .six-two p{
+            line-height: 26px;
+            margin-right: 10px;
+        }
+        .user-three .three-b .three-five .five-one .imgc span{
+            border-left: 3px solid #0098b3;
+        }
+        .user-three .three-b .three-five .five-one .imgd .two img{
+            width: 224px;
+            height: 191px;
+        }
+        .user-three .three-b .three-five .five-one .imgd p{
+            height: 30px;
+            line-height: 30px;
+        }
+        .ooy img{width: 174px; height: 174px;}
+        .oou img{width: 190px; height: 233px;}
+        .ooi{width: 504px; height: 249px; margin:30px 0 0 100px;display: none;}
+        .user-three .three-b .three-eight .imgc span{
+            border-left: 3px solid #0098b3;
+            line-height: 34px;
+        }
+        #login-io p{ margin-top: 10px; padding: 0 20px; line-height: 28px; font-size: 16px;text-align: left;}
+        #six{ margin-left: 145px;display: none;}
+    </style>
+</head>
+<body class="box">
+<!--头部 c02003-->
+<include file="Public:head" />
+<div class="user-three one">
+    <div class="three-b">
+        <!--扁鹊会员-->
+        <div id="bianque" style="margin-left: 8px;">
+            <div id="zero">
+                <img src="/Public/app/img/user-a.png" style="width: 100%;"/>
+                <div style="margin: 14px 0 14px 11px; border-left: 2px solid #00a0e9; font-size: 14px;">&nbsp;&nbsp;开通VIP</div>
+            </div>
+            <div id="two" style="margin:65px 0 0 310px; display: block">
+                <h3 style="line-height: 30px;font-size: 24px;">您即将购买的是扁鹊财院年费会员</h3>
+                <p style="font-size: 18px; line-height: 54px;">价格：{$res['price']}元</p>
+                <div style=" margin-top: 28px;">
+                    <div style="line-height: 38px; margin-right: 10px; font-size: 18px;" class="fl">支付方式：</div>
+                    <img src="/Public/app/img/wxzf.png" class="fl"/>
+                    <div class="clearfix"></div>
+                </div>
+                <a href="{:U('Vip/member2')}"><input style="margin: 62px 0 0 30px;" id="two-a" class="btn btn-primary title-c" type="button" name="ljzf" value="立 即 支 付" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+<include file="Public:bottom" />
+</body>
+<script>
+    $('#nine').click(function () {
+        $('.three-six').slideUp(200);
+        $('#zero').slideDown(200);
+        $('#one').slideDown(200);
+    })
+    $('.i').click(function () {
+        $('#zero').slideUp(200);
+        $('#two').slideUp(200);
+        $('#three').slideUp(200);
+        $('#six').slideUp(200);
+    })
+
+    jQuery(document).ready(function($) {
+        $('#mima').click(function () {
+            $('.theme-popover').slideDown(200);
+            $('.theme-popover-mask').slideDown(200);
+        })
+        $('.close').click(function () {
+            $('.theme-popover').slideUp(200);
+            $('.theme-popover-mask').slideUp(200);
+        })
+    })
+
+</script>
+</html>

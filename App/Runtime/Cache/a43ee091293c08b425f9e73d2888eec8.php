@@ -105,7 +105,7 @@
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
+				<?php if($_SESSION['admins']['id'] == '' && $_SESSION['rigister']['id'] == ''): ?><ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
@@ -383,10 +383,8 @@
                             <ul class="about color-d">
                                 <p class="title-j">2017</p>
                                 <h3 class="title-j">您所关注的财税问题都在这里</h3>
-                                <a href="<?php echo U('AskAnswer/Asks');?>"><li class="ac uiny">钱帐税</li></a>
-                                    <a href="<?php echo U('AskAnswer/Asks');?>"><li>股权设立</li></a>
-                                    <a href="<?php echo U('AskAnswer/Asks');?>"><li>收购并购</li></a>
-                                    <a href="<?php echo U('AskAnswer/Asks');?>"><li>新三板</li></a>
+									<a href="<?php echo U('AskAnswer/Asks');?>"><li attr="<?php echo ($qtypeList[0]['id']); ?>" name="qtype" class="ac uiny"><?php echo ($qtypeList[0]['name']); ?></li></a>
+									<?php if(is_array($qtypeList)): $i = 0; $__LIST__ = array_slice($qtypeList,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qtype): $mod = ($i % 2 );++$i;?><a href="<?php echo U('AskAnswer/Asks');?>"><li name="qtype" attr="<?php echo ($qtype["id"]); ?>"><?php echo ($qtype["name"]); ?></li></a><?php endforeach; endif; else: echo "" ;endif; ?>
                             </ul>
                         </div>
 
@@ -464,6 +462,7 @@
                             <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
                             <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
                             <a><input class="wid" type="button" value="提交问题" id="submit"></a>
+							<input type="hidden" value="<?php echo ($qtypeList[0]['id']); ?>" name="sqtype">
                         </form>
                         <div class="clearfix"></div>
                     </div>
@@ -572,7 +571,7 @@
           
         </div>
         <!--合作企业 c02003-->
-        <div class="official-seven bac-b bor-e">
+        <div class="official-seven bac-b">
             <img src="/Public/app/img/hz.png" class="mioj"/>
             <ul class="one bor-m">
                 <li class="bor-m fl"><img src="/Public/app/img/logo01.png"/></li>
@@ -709,9 +708,49 @@
 
                 $(".main_a").css("display","none");
                 $(".main_a").eq(Oindex-2).css("display","block");
+				$('input[name=sqtype]').val($(this).attr('attr'));
 
             });
 //
+		$('#submit').click(function() {
+			var	content = $('#textArea').val();	
+			var qtid = $('input[name=sqtype]').val();
+
+			$.post(
+				'<?php echo U("MyService/makeQuestion");?>',
+				{'content':content, 'tid':qtid},
+
+				function(res) {
+					if(res == 0) {
+						if(confirm('请先登陆')) {
+							location.href = '<?php echo U("Login/loginPage");?>';
+							return;
+						}
+					}
+
+					if(res == 1) {
+						var html = '<div class="con fl"><div class="fk bac-c fl"></div>';
+							html += content;
+							html += '</div>';
+
+						var ctn = $('#ctn');
+						if(ctn.children('.con').length >= 3) {
+							ctn.children('.con').last().remove();
+						}
+
+						var htmls = ctn.html();
+							htmls = html + htmls;
+							ctn.html('');
+							ctn.html(htmls);
+//							alert(htmls);
+					} else {
+						alert(res);
+					}
+				}
+			);
+				
+		});
+
 
 //
     $("#kina").click(function () {
@@ -867,59 +906,7 @@
                 aBox[this.index].style.display="block";//让当前标签对应的div显示
             };
         }
-    //问题 c02003
-    $(document).ready(function () {
-        var $btn = $('#submit');
-        var $area = $('#textArea');
-        var $ctn = $('#ctn');
-        //添加评论
-        $btn.click(function () {
-            $val = $area.val();
-            var date = new Date();
-            if ($val != '') {
-                $ctn.children('p').hide();
-                var $con = $('<div class="con fl win"><div class="fk bac-c fl"></div>' + $val + '</div>');
-                $con.data('cooName', 'name' + (date - 0));
-                $ctn.prepend($con);
-                $.cookie('name' + (date - 0), $val, {
-                    expires: 1
-                });
-                $('.con').children('span').click(function () {
-                    $.cookie($(this).parent().data('cooName'), '', {
-                        expires: -1
-                    });
-                    $(this).parent().remove();
-                    if ($ctn.children('div').size() == 0) {
-                        $ctn.children('p').show();
-                    }
-                });
-                $area.val('')
-            } else {
-                alert('内容不能为空!')
-            }
-        });
-        //获取评论
-        if (document.cookie) {
-            $ctn.children('p').hide();
-            var $coo = $.cookie();
-            for (var key in $coo) {
-                var date = new Date();
-                date.setTime(key.substring(4)-0);
-                var $con = $('<div class="con fl"><div class="fk bac-c fl"></div>' +$coo[key] + '</div>');
-                $con.data('cooName', key);
-                $ctn.prepend($con);
-                $('.con').children('span').click(function () {
-                    $.cookie($(this).parent().data('cooName'), '', {
-                        expires: -1
-                    });
-                    $(this).parent().remove();
-                    if ($ctn.children('div').size() == 0) {
-                        $ctn.children('p').show();
-                    }
-                })
-            }
-        }
-    });
+    
     //换 c02003
     $('#textArea').click(function () {
         $('#submit').css("background","#8c97cb")
@@ -1261,7 +1248,13 @@
 //         });
 //     })
 	
-	
+	$('#submit').click(function() {
+		var	content = $('#textArea').val();	
+		var qtid = $('input[name=qtype]').val();
+		alert(content);
+		alert(qtid);
+			
+	});
 
 
 </script>
