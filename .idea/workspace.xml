@@ -5,39 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ef3ad6c-51fb-4d33-b518-87da35e7fc0a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks1.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/WxpayAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/WxpayAction.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/272487dfab5634287eff798022d8ff45.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/272487dfab5634287eff798022d8ff45.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/81535ff447fb2539630e718f54c84ff3.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/81535ff447fb2539630e718f54c84ff3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/9ea754016c3c1d1dec6c07adc1701162.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/9ea754016c3c1d1dec6c07adc1701162.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/a43ee091293c08b425f9e73d2888eec8.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/a43ee091293c08b425f9e73d2888eec8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_14.log" afterPath="$PROJECT_DIR$/App/Runtime/Logs/17_04_14.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html" afterPath="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/visual.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/visual.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/confirmation.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/confirmation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/questionList.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/questionList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Public/head.html" afterPath="$PROJECT_DIR$/App/Tpl/Public/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" afterPath="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_16.log" afterPath="$PROJECT_DIR$/App/Runtime/Logs/17_04_16.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" afterPath="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Vip/member.html" afterPath="$PROJECT_DIR$/App/Tpl/Vip/member.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/ask_answer.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/ask_answer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/finance_class.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/finance_class.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/findpassword.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/findpassword.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/official.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/official.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/vipRegister.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/vipRegister.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/welcomeTwo.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/welcomeTwo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/js/ask_answer.js" afterPath="$PROJECT_DIR$/Web/Public/app/js/ask_answer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
     </list>
     <ignored path="dcyd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,73 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Tpl/Index/index.html">
+      <file leaf-file-name="VipAction.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Lib/Action/VipAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="512" column="40" selection-start-line="512" selection-start-column="40" selection-end-line="512" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video_diagnostic.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3256">
-              <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video_diagnostic.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="213" column="38" selection-start-line="199" selection-start-column="32" selection-end-line="213" selection-end-column="38" />
-              <folding>
-                <marker date="1492330953893" expanded="false" signature="6290:6340" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="findpassword.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/Public/app/css/findpassword.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcomeTwo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3014">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcomeTwo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/Public/app/css/welcomeTwo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="146" column="19" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="official.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/Public/app/css/official.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="275">
+              <caret line="204" column="34" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -199,7 +109,6 @@
         <option value="$PROJECT_DIR$/App/Tpl/Vip/member1.html" />
         <option value="$PROJECT_DIR$/App/Tpl/Vip/member.html" />
         <option value="$PROJECT_DIR$/App/Tpl/Vip/member2.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
         <option value="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" />
         <option value="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" />
         <option value="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" />
@@ -212,6 +121,7 @@
         <option value="$PROJECT_DIR$/Web/Public/app/css/findpassword.css" />
         <option value="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" />
         <option value="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
       </list>
     </option>
   </component>
@@ -235,10 +145,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1608" />
-    <option name="y" value="-198" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -801,12 +711,12 @@
       <workItem from="1492047944768" duration="27775000" />
       <workItem from="1492133140425" duration="14413000" />
       <workItem from="1492228301922" duration="12426000" />
-      <workItem from="1492311951175" duration="16550000" />
+      <workItem from="1492311951175" duration="20069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2103185000" />
+    <option name="totallyTimeSpent" value="2106704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,7 +728,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1608" y="-198" width="1616" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.170625" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -868,7 +778,7 @@
           <option name="timeStamp" value="253" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="256" />
+      <option name="time" value="257" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -885,13 +795,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/ArticleAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/Public/app/js/head.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -917,6 +820,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="417" column="20" selection-start-line="417" selection-start-column="20" selection-end-line="417" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,6 +850,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +907,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9174">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,6 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-789">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,6 +951,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,14 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/VipAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="46" column="72" selection-start-line="46" selection-start-column="72" selection-end-line="46" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1231,22 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="512" column="40" selection-start-line="512" selection-start-column="40" selection-end-line="512" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3014">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/Public/app/css/welcomeTwo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1259,14 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/findpassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1289,6 +1165,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="210" column="49" selection-start-line="210" selection-start-column="49" selection-end-line="210" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#p#2;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/NetSarang/Xftp/Temporary/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3014">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/findpassword.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="117" column="17" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3256">
@@ -1297,13 +1210,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html">
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="213" column="38" selection-start-line="199" selection-start-column="32" selection-end-line="213" selection-end-column="38" />
-          <folding>
-            <marker date="1492330953893" expanded="false" signature="6290:6340" placeholder="..." />
-          </folding>
+        <state relative-caret-position="217">
+          <caret line="512" column="40" selection-start-line="512" selection-start-column="40" selection-end-line="512" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/VipAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="204" column="34" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

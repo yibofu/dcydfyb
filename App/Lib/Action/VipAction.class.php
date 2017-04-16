@@ -44,7 +44,7 @@
 			$timeStamp = time();
 			$out_trade_no = C('WxPay.pub.config.APPID')."$timeStamp";
 			$unifiedOrder->setParameter("out_trade_no","$out_trade_no");//商户订单号
-			$unifiedOrder->setParameter("total_fee",($arr['price']*100));//总金额
+			$unifiedOrder->setParameter("total_fee",1);//总金额
 			$unifiedOrder->setParameter("notify_url", 'http://123.57.207.163/weipay/index.php/home/index/notify');//通知地址
 			$unifiedOrder->setParameter("trade_type","NATIVE");//交易类型
 			//非必填参数，商户可根据实际情况选填
@@ -131,6 +131,12 @@
 					//此处应该更新一下订单状态，商户自行增删操作
 					log_result($log_name,"【支付成功】:\n".$xml."\n");
 					$this->success("支付成功！");
+					$user= M("user");
+					$result = $user->field('is_vip')->where("id = ".$_SESSION['admins']['id'])->find();
+					$result['is_vip'] = 1;
+					$data['is_vip'] = $result['is_vip'];
+					$user->save($data);
+
 				}
 
 				//商户自行增加处理流程,
@@ -180,6 +186,11 @@
 					switch ($orderQueryResult["trade_state"])
 					{
 						case SUCCESS:
+							$user= M("user");
+							$result = $user->field('is_vip')->where("id = ".$_SESSION['admins']['id'])->find();
+							$result['is_vip'] = 1;
+							$data['is_vip'] = $result['is_vip'];
+							$user->where('id = '.$_SESSION['admins']['id'])->save($data);
 							$this->success("支付成功！");
 							break;
 						case REFUND:

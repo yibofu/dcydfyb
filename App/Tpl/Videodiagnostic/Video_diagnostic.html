@@ -133,9 +133,9 @@
 									<p>4、诊断完成，请对本次视频诊断做出评价及建议</p>
 								</div>
                                 <!--确定预约按钮-->
-                                <div class="confirm_button">
-                                    <button>确定预约</button>
-                                </div>
+								<div class="confirm_button">
+									<button attr="远程视频诊断" name="make">确定预约</button>
+								</div>
 							</div>
 						</div>
 						<!--第二部分-->
@@ -213,7 +213,7 @@
 								</div>
                                 <!--确定预约按钮-->
                                 <div class="confirm_button">
-                                    <button>确定预约</button>
+                                    <button attr="远程视频诊断"  name="make">确定预约</button>
                                 </div>
 							</div>
 
@@ -224,7 +224,7 @@
 										<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
 									</div>
 									<div class="confirmTextText">
-										<p>恭喜您！预约已成功！</p >
+										<p></p >
 										<p>请保持电话畅通，客服会在24小时内与您取得
 											联系。请在个人中心查看您的服务。</p >
 										<p>
@@ -405,6 +405,9 @@
 			$(".TAB_num p").eq($(this).index()).css({"color":"white"});
 			$(".part_number").css("display","none");
 			$(".part_number").eq($(this).index()).css("display","block");
+
+			var attr = $(this).children('p').html();
+			$('button[name=make]').attr('attr', attr);
 		});
 		//视频显示效果
 		$(".video_show_part").mouseover(function(){
@@ -549,6 +552,29 @@
         $("#swphotb .img1").css('display','block');
         $("#swphotc .img1").css('display','block');
     });
-    
+ 	$('button[name=make]').click(function() {
+		var apply = $('button[name=make]').attr('attr');
+
+		$.post(
+			'{:U("MyService/makeDiagnose")}',
+			{'apply': apply},
+
+			function(res) {
+				if(res == 0) {
+					if(confirm('请先登陆')) {
+						location.href = '{:U("Login/login")}';
+						return;
+					} else {
+						$('.confirmTextText').children('p').eq(0).html('对不起，登陆后才能预约');			
+					}
+				} else {
+					$('.confirmTextText').children('p').eq(0).html(res);			
+					$(".confirmText").css({"display":"block"});
+					$(".part_number").css("display","none");
+				
+				}
+			}
+		);
+	});   
 	</script>
 </html>
