@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -110,7 +110,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -189,10 +189,10 @@
                 <div class="one-er">
                     <ul class="er tabbtn title-a" id="fadetab">
                        <li class="current" id="pna" style="background-color: rgb(201, 234, 240);"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="a bor-f">远程视频诊断</p></a></li>
-                        <li id="pnb"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="b bor-f">面试财务经理</p></a></li>
+                        <li id="pnb"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="b bor-f">面对面咨询</p></a></li>
                         <li id="pnc"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="c bor-f">我要审核合同</p></a></li>
                         <li id="pnd"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="d bor-f">我要审报表</p></a></li>
-                        <li id="pne"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="e">财务猎头</p></a></li>
+                        <li id="pne"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="e">财务分析</p></a></li>
                         <div class="clearfix"></div>
                     </ul>
                     <div></div>
@@ -221,15 +221,15 @@
                         <div class="sublist">
                             <div class="one-aa bor-a fl">
                                 <img src="/Public/app/img/z01_03.png"/>
-                                <div class="one-ab color-d title-a">面试财务经理</div>
+                                <div class="one-ab color-d title-a">面对面咨询</div>
                             </div>
                             <div class="one-bb fl bor-j">
                                 <div class="one-bb-a fl">
                                     <h3 class="title-c wid height-b">最具专业价值的企业财务问题诊断</h3>
-                                    <p class="title-d height-c">1、预约申请财务经理面试  <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><span id="two" class="color-c cursor">【预约申请】</span></a></p>
-                                    <p class="title-d height-c">2、24小时内客服会与您取得联系约定好远程面试的时间</p>
-                                    <p class="title-d height-c">3、财务专家如约与您视频连线，进行财务经理面试</p>
-                                    <p class="title-d height-c">4、面试完成，请对本次视频面试做出评价及建议</p>
+                                    <p class="title-d height-c">1、预约申请面对面咨询  <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><span id="two" class="color-c cursor">【预约申请】</span></a></p>
+                                    <p class="title-d height-c">2、24小时内客服会与您取得联系约定好咨询时间</p>
+                                    <p class="title-d height-c">3、财务专家如约与您视频连线，进行面对面咨询</p>
+                                    <p class="title-d height-c">4、咨询完成，请对本次咨询做出评价及建议</p>
                                 </div>
                                 <div class="fl min-a">
                                     <img src="/Public/app/img/you-9.png"/>
@@ -281,15 +281,15 @@
                         <div class="sublist">
                             <div class="one-aa bor-a fl">
                                 <img src="/Public/app/img/z05_03.png"/>
-                                <div class="one-ab color-d title-a">财务猎头</div>
+                                <div class="one-ab color-d title-a">财务分析</div>
                             </div>
                             <div class="one-bb fl bor-j">
                                 <div class="one-bb-a fl">
                                     <h3 class="title-c wid height-b">帮助优秀的企业找到财务精英</h3>
                                     <p class="title-d height-c">1、在线预约  <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><span id="five" class="color-c cursor">【预约申请】</span></a></p>
-                                    <p class="title-d height-c">2、扁鹊客服进行简历匹配</p>
+                                    <p class="title-d height-c">2、扁鹊客服进行分析需求</p>
                                     <p class="title-d height-c">3、财务专家进行第二轮把关</p>
-                                    <p class="title-d height-c">4、客服与您联系，推荐优秀财务精英。 </p>
+                                    <p class="title-d height-c">4、客服与您联系，推荐优秀财务精英进行财务分析。 </p>
                                 </div>
                                 <div class="fl min-a minu">
                                     <img src="/Public/app/img/z05_06.png" class="minu"/>
@@ -461,7 +461,7 @@
                         <form action="">
                             <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
                             <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
-                            <a><input class="wid" type="button" value="提交问题" id="submit"></a>
+                            <a><input class="wid" type="button" style="background-color:#8c97cb;" value="提交问题" id="submit"></a>
 							<input type="hidden" value="<?php echo ($qtypeList[0]['id']); ?>" name="sqtype">
                         </form>
                         <div class="clearfix"></div>
@@ -722,11 +722,11 @@
 
 				function(res) {
 					if(res == 0) {
-						if(confirm('请先登陆')) {
+//						if(confirm('请先登陆')) {
 							location.href = '<?php echo U("Login/loginPage");?>';
 							return;
 						}
-					}
+//					}
 
 					if(res == 1) {
 						var html = '<div class="con fl"><div class="fk bac-c fl"></div>';
@@ -744,7 +744,7 @@
 							ctn.html(htmls);
 //							alert(htmls);
 					} else {
-						alert(res);
+//						alert(res);
 					}
 				}
 			);
@@ -972,7 +972,7 @@
         $('.theme-popover-mask').fadeIn(100);
     });
     $("#two").click(function () {
-        $("#one-a").text("面试财务经理");
+        $("#one-a").text("面对面咨询");
         $("#login-d").slideDown(200);
         $('.theme-popover-mask').fadeIn(100);
     });
@@ -987,7 +987,7 @@
         $('.theme-popover-mask').fadeIn(100);
     });
     $("#five").click(function () {
-        $("#one-a").text("财务猎头");
+        $("#one-a").text("财务分析");
         $("#login-d").slideDown(200);
         $('.theme-popover-mask').fadeIn(100);
     });

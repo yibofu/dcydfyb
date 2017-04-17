@@ -16,7 +16,7 @@ class KechengAction extends Action{
 					->order('startday asc')
 					->limit('0,4')
 					->select();
-
+//		echo $model->getLastsql();die;
 		foreach($nowCourse as $key => $course) {
 			$startDay = date('Y m d', $course['startday']);
 			$startDayArr = explode(' ', $startDay);
@@ -176,7 +176,7 @@ public function signUp() {
 		$rules = array(
 			array('courseid', 'number', '本课程不存在', 1),		
 			array('username', 'require', '请填写参课人员名称', 1),		
-			array('uposition', 'require', '请填写参课人员职位', 1),		
+			array('upostion', 'require', '请填写参课人员职位', 1),
 			array('uapart', 'require', '请填写参课人员部门', 1),		
 			array('uemail', 'email', '请填写正确的邮箱', 1),		
 			array('ucompany', 'require', '请填写公司名称', 1),		

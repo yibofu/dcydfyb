@@ -1,0 +1,3 @@
+<?php
+//000000000000s:377:"SELECT dcyd_question.type type,dcyd_question.question question,dcyd_question.id id,dcyd_answer.answer answer,dcyd_answer.teacherid teacherid,dcyd_user.img img,dcyd_user.nickname nickname FROM `dcyd_question` inner join dcyd_answer on dcyd_question.id = dcyd_answer.qid inner join dcyd_user on dcyd_question.userid = dcyd_user.id ORDER BY dcyd_question.addtime desc LIMIT 0, 7  ";
+?>

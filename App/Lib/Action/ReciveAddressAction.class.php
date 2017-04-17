@@ -65,9 +65,11 @@ class ReciveAddressAction extends Action {
 			$data['isdefault'] = '0';
 		}
 
-		$data = $addressModel->validate($rules)->create($data);
-		if($addAddress = $addressModel->add($data)) {
-			$this->ajaxReturn(1);
+		$res = $addressModel->validate($rules)->create($data);
+		if($res) {
+			if($addAddress = $addressModel->add($data)) {
+				$this->ajaxReturn(1);
+			}
 		} else {
 			$this->ajaxReturn($addressModel->getError());
 		}

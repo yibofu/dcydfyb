@@ -1,8 +1,14 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>欢迎登录</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
+		<title>扁鹊财院-欢迎登陆</title>
+		<meta name="title" content="扁鹊财院-领先的财务解决方案供应商。财务咨询，财税咨询，企业上市服务，企业并购服务。">
+		<meta name="Keywords" content="财务咨询、股权设计、税务筹划" />
+		<meta name="description" content="扁鹊财院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
+
+		<link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/Public/app/css/doorway-pages.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/doorway-pages.js" ></script>
@@ -14,7 +20,7 @@
 		<div class="welcomeBannerAll">
 			<!--始终在中间的部分-->
 			<div class="welcomeBanner">
-				<img src="/Public/app/img/welcomeLogo.png" width="160px" height="60px"/>
+				<a href="<?php echo U('Index/index');?>"><img src="/Public/app/img/welcomeLogo.png" width="160px" height="60px"/></a>
 				<a href="<?php echo U(Login/loginPage);?>"><p class="welcomeText">欢迎登录</p></a>
 			</div>
 		</div>

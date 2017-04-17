@@ -33,7 +33,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>

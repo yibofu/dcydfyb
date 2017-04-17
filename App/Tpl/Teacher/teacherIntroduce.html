@@ -9,7 +9,8 @@
 		<meta name="description" content="扁鹊财院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
 		<link rel="stylesheet" href="/Public/app/css/official.css">
 		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
-		<link rel="stylesheet" href="/Public/app/css/boss_finance.css" /> 
+		<link rel="stylesheet" href="/Public/app/css/teachers_introduce.css" />
+		<link rel="stylesheet" href="/Public/app/css/boss_finance.css" />
 		<link rel="icon" href="http://www.bianquecxy.com/Public/app/img/logo.ico" type="image/x-icon">
 	    <link href="/Public/app/css/JS5.css" rel="stylesheet" type="text/css">
 	    <div id="LRdiv0" style="display: block;">
@@ -121,7 +122,7 @@
 				                <div class="main-top1">
 				                    <h3>专家介绍</h3>
 				                </div>
-				                <div style="width: 528px;margin-left: 87px;margin-top: 37px;">
+				                <div class="newAdd" style="width: 528px;margin-left: 87px;margin-top: 37px;">
 				                    <div class="top-a fl" style="margin-bottom: 40px;">
 				                        <img src="{$tea['timg']}" style="width: 156px;height: 192px;">
 				                        <p>讲师：{$tea['name']}</p>
@@ -136,10 +137,26 @@
 				                        </div>
 				                    </div>
 				                    <div class="clearfix"></div>
-				                    <button class="meet_btn"><img src="/Public/app/img/meet_icon.png"><span>约见专家</span></button>
+				                    <button name="sub" attr="{$tea['id']}" class="meet_btn"><img src="/Public/app/img/meet_icon.png"><span>约见专家</span></button>
 				                	<div style="clear: both;"></div>
-				                </div>
-				                
+
+				                 </div>
+								<div class="confirmText">
+									<img src="/Public/app/img/crossTeacher.png">
+									<div class="confirmTextMain">
+										<div class="confirmTextImg">
+											<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
+										</div>
+										<div class="confirmTextText">
+											<p>恭喜您！预约已成功！</p >
+											<p>请保持电话畅通，客服会在24小时内与您取得
+												联系。请在个人中心查看您的服务。</p >
+											<p>
+												<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回专家列表</a><span>|</span><a href="#">进入个人中心</a>
+											</p >
+										</div>
+									</div>
+								</div>
 				                 <div class="main-top1">
 				                    <h3>操盘案例</h3>
 				                </div>
@@ -220,110 +237,28 @@
 					</div>
 					<!--近期课程安排-->
 					<div class="classes_plan">
-						<img src="/Public/app/img/class_plan.png" />
+						<img src="/Public/app/img/introduce/class_plan.png" />
+						<volist name="allCourseType" id="courseType">
 						<div>
-							<p>财务通<span>点击日期可预约报名</span></p>
+							<p>{$courseType.name}<span>点击日期可预约报名</span></p>
 							<table>
 								<tr class="first_title_text">
 									<td><a href="#" class="tooltip" title="可点击报名">地点</a></td>
 									<td><a href="#" class="tooltip" title="可点击报名">课程时间</a></td>
 									<td><a href="#" class="tooltip" title="可点击报名">授课讲师</a></td>
 								</tr>
+								<volist name="courseType.courses" id="cour">
 								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">北京站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">3月24-26</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
+									<td><a href="#" class="tooltip" title="可点击报名">{$cour.address}站</a></td>
+									<td><a href="{:U('Kecheng/signUp')}?courid={$cour.id}" class="tooltip" title="可点击报名">{$cour.date}</a></td>
+									<td><a href="#" class="tooltip" title="可点击报名">【{$cour.teacher}】</a></td>
 								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">深圳站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">4月15-17</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">杭州站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">6月2-4</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">成都站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">6月20-22</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
+								</volist>
 							</table>
 						</div>
-						<div>
-							<p>管理层财务思维</p>
-							<table>
-								<tr class="first_title_text">
-									<td><a href="#" class="tooltip" title="可点击报名">地点</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">课程时间</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">授课讲师</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">南京站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">3月29-31</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">太原站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">4月9-11</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">大连站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">4月21-23</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">广州站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">5月21-23</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-							</table>
-						</div>
-						<div>
-							<p>财务系统 </p>
-							<table>
-								<tr class="first_title_text">
-									<td><a href="#" class="tooltip" title="可点击报名">地点</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">课程时间</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">授课讲师</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">杭州站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">3月14-19</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">北京站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">5月12-17</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">深圳站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">6月10-15</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【刘国东】</a></td>
-								</tr>
-							</table>
-						</div>
-						<div>
-							<p>税务稽查与应对策略</p>
-							<table>
-								<tr class="first_title_text">
-									<td><a href="#" class="tooltip" title="可点击报名">地点</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">课程时间</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">授课讲师</a></td>
-								</tr>
-								<tr>
-									<td><a href="#" class="tooltip" title="可点击报名">广州站</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">4月25-26</a></td>
-									<td><a href="#" class="tooltip" title="可点击报名">【叶吉楚】【杨勇】</a></td>
-								</tr>
-							</table>
-						</div>
-						
-						
+						</volist>
 					</div>
+					
 				</div>
 			</div>
 			  
@@ -383,6 +318,15 @@
 	</script>
 	
 	<script>
+		$(".newAdd").css("display","block");
+		$(".meet_btn").on("click",function(){
+			$(".newAdd").css("display","none");
+			$(".confirmText").css({"display":"block"});
+		});
+		$(".confirmText>img").click(function(){
+			$(".newAdd").css("display","block");
+			$(".confirmText").css({"display":"none"});
+		})
 //		分页
 		$(function(){
 	    	var i=0;
@@ -455,6 +399,23 @@
         $("#swphotb .img1").css('display','block');
         $("#swphotc .img1").css('display','block');
     });
+
+	$('button[name=sub]').click( function()	{
+		var tid = $(this).attr('attr');		
+
+		$.post(
+			'{:U("MyService/makeMeet")}',
+			{'tid':tid},
+			function(res) {
+				if(res == 0) {
+					location.href = '{:U("Login/loginPage")}';
+				}	
+			
+//				alert(res);
+			}
+		); 
+	});
+	
     
 	</script>
 </html>

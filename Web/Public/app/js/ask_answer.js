@@ -10,6 +10,7 @@ $(function(){
         $(".TAB_title p").eq(Oindex).css({"background":"#47b8cc","color":"white"})
         $(".left_part1").css("display","none");
         $(".left_part1").eq(Oindex).css("display","block");
+        $(".QR_code").css("display","none");
     });
 
     //鼠标移上去二维码出来
@@ -19,7 +20,8 @@ $(function(){
         var indexEp=Oindex-1;
         //alert(indexEp);
         //alert("-1150+Oindex*50+'px'");
-        $(".QR_code").css({"display":"block","position":"relative","top":-1150+indexEp*168+'px',"left":"1070px"});
+        $(".QR_code").css({"display":"block","position":"relative","top":-930+indexEp*150+'px',"left":"910px"});
+        // $(".QR_code").css({"display":"block","position":"relative","top":"-930px","left":"910px"});
 
     });
     $(".crossIcon").click(function(){

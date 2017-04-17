@@ -29,6 +29,7 @@
 				</volist>
 				<p attr="{$types[3]['id']}"style="margin-right:0px;">{$types[3]['name']}</p>
             </div>
+			<volist name="question" id="ques">
             <div class="left_part1">
                 <div class="TAB_text">
                     <p class="TAB_text_title">
@@ -36,136 +37,28 @@
                         <span>看别人的问题 说你的观点</span>
                     </p>
                     <!--循环遍历的开始-->
+					<volist name="ques" id="qu" empty="该分类下还没有问题">
                     <div class="TAB_text_text">
                         <div class="TAB_text_img">
                             <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
+                            <p><span>*</span>{$qu.nickname}</p>
                         </div>
                         <div class="TAB_text_textRight">
                             <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
+                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">{$qu.question}</span></p>
+                                <p><img src="/Public/app/img/A.png"/><span class="answerText">{$qu.answer}</span></p>
                                 <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
+                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">{$qu.teacher}</span>
                                     <img class="collectImg tooltip" title="点赞" src="/Public/app/img/support.png"><span class="collectNum">9</span>
                                     <button class="joinBtn">参与讨论</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+					</volist>
                 </div>
             </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  class="collectImg" src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
+			</volist>
 
             <!--页数-->
             <div class="page">
@@ -238,15 +131,17 @@
                         <p>最新问题</p>
                     </div>
                     <!--参与讨论的内容(开始循环遍历的块)-->
+					<volist name="newQuestion" id="nquestion">
                     <div class="discuss_text">
                         <div class="question">
                             <img src="/Public/app/img/Q.png" />
                             <div>
-                                <p class="questionFirP">111111111111111111111111111111税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
-                                <p class="questionSecP">提问时间：<span>2016-12.09</span><span class="phoneNumber">151****8888</span></p>
+                                <p class="questionFirP">{$nquestion.question}</p>
+                                <p class="questionSecP">提问时间：<span>{$nquestion.addtime}</span><span class="phoneNumber">{$nquestion.phone}</span></p>
                             </div>
                         </div>
                     </div>
+					</volist>
                 </div>
 
             </div>
@@ -414,9 +309,9 @@
 						htmls = html + htmls;
 						$('.discuss_text').html('');
 						$('.discuss_text').html(htmls);
-				}
 
-				alert('提问成功');
+						$('textarea[name=textarea]').val('');
+				}
 			}
 		);
 	});

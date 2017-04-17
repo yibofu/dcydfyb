@@ -2,7 +2,6 @@
 	class MyCenterAction extends Action {
 		public function __construct() {
 			parent::__construct();	//继承父类构造方法
-			$_SESSION['admins']['id'] = 25;
 			
 			if(!isset($_SESSION['admins']['id'])) {
 				$this->redirect('Login/loginPage');

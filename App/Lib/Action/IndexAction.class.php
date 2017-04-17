@@ -31,12 +31,9 @@
 				->limit(3)
 				->select();
 			$this->assign("arra",$arra);
-			$xxkc = M("xxkc");
-			$rea = $xxkc->field('id,title,laiyuan,content,auth,describe,time,status,img')
+			$oct = M("open_course_type");
+			$rea = $oct->field('id,tname,cost,days,img')
 				->select();
-			foreach($rea as $key => $val) {
-				$rea[$key]['time'] = date('Y-m-d H:i:s', $val['time']);
-			}
 			$this->assign("rea",$rea);
 			$teacher = M("teacher");
 			$aa = $teacher->field('id,name,timg,explain')->select();
@@ -53,8 +50,6 @@
 			$qtype = M('questionType');
 			$qtypeList = $qtype->field('id, name')->select(); 
 			$this->assign("qtypeList",$qtypeList);
-
-
 			$this->display();
 		}
 
@@ -186,24 +181,52 @@
 			$name = $_GET["name"];
 			$kctitle = $_GET["kctitle"];
 			$title = $_GET["title"];
+
 			$view = M("view");
 			$result1 = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
 				->where(' name = "'.$name.' " and'.' kname = "'.$kname .'" and' .' id =  '.$id)
 				->find();
+
 			$data[] = $result1;
 			$ress = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
 				->where("name='".$name."' and kname='".$kname."' and kctitle='".$kctitle."'")
 				->select();
 			$arr = $view->field('name')->where("id = ".$id)->find();
 			$namee = $arr["name"];
+
 			$teacher = M("teacher");
 			$arra = $teacher->field("name,timg,explain")->where("name='".$namee."'")->find();
 			$arra['explain'] = htmlspecialchars_decode($arra['explain']);
+
+			//获取评论
+			$commentModel = M('vevaluate');
+
+			//分页
+			import ('ORG.Util.Page');
+			$total = $commentModel->where('dcyd_vevaluate.viewid='.$id)->count();
+			$page = new Page($total, 4);
+			$page->setConfig('theme', '%upPage%%linkPage%%downPage%');
+
+			//评论列表
+			$commentList = $commentModel->field('dcyd_vevaluate.content content, dcyd_vevaluate.addtime addtime, dcyd_user.nickname name, dcyd_user.img img')
+				->join('inner join dcyd_user on dcyd_vevaluate.uid=dcyd_user.id')
+				->where('dcyd_vevaluate.viewid='.$id)
+				->order('addtime desc')
+				->limit($page->firstRow . ',' . $page->listRows)
+				->select();
+
+			foreach($commentList as $cok => $cov) {
+				$commentList[$cok]['addtime'] = date('Y-m-d H:i', $cov['addtime']);
+			}
+
+			$this->assign("commentList",$commentList);
+			$this->assign("page",$page->show());
 			$this->assign("data",$data);
 			$this->assign("ress",$ress);
 			$this->assign("arra",$arra);
 			$this->display();
 		}
+
 
 		public function kcjs(){
 			$id = $_GET['id'];
@@ -223,12 +246,11 @@
 
 		public function xxdk(){
 			$id = $_GET['id'];
-			$xxkc = M("xxkc");
-			$rea = $xxkc->field('id,title,keywords,laiyuan,content,auth,describe,time,status,img')
+			$oct = M("open_course_type");
+			$rea = $oct->field('id,tname,cost,days,img')
 				->where("id = ".$id)
 				->find();
-			$rea['content'] = htmlspecialchars_decode($rea['content']);
-			$rea['time'] = date('Y-m-d H:i:s',$rea['time']);
+
 			$this->assign("rea",$rea);
 			$this->display();
 		}

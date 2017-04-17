@@ -31,7 +31,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -106,143 +106,32 @@
 				<?php if(is_array($types)): $i = 0; $__LIST__ = array_slice($types,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$type): $mod = ($i % 2 );++$i;?><p attr="<?php echo ($type["id"]); ?>"><?php echo ($type["name"]); ?></p><?php endforeach; endif; else: echo "" ;endif; ?>
 				<p attr="<?php echo ($types[3]['id']); ?>"style="margin-right:0px;"><?php echo ($types[3]['name']); ?></p>
             </div>
-            <div class="left_part1">
+			<?php if(is_array($question)): $i = 0; $__LIST__ = $question;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ques): $mod = ($i % 2 );++$i;?><div class="left_part1">
                 <div class="TAB_text">
                     <p class="TAB_text_title">
                         <img src="/Public/app/img/newicon.png">
                         <span>看别人的问题 说你的观点</span>
                     </p>
                     <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
+					<?php if(is_array($ques)): $i = 0; $__LIST__ = $ques;if( count($__LIST__)==0 ) : echo "该分类下还没有问题" ;else: foreach($__LIST__ as $key=>$qu): $mod = ($i % 2 );++$i;?><div class="TAB_text_text">
                         <div class="TAB_text_img">
                             <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
+                            <p><span>*</span><?php echo ($qu["nickname"]); ?></p>
                         </div>
                         <div class="TAB_text_textRight">
                             <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
+                                <p><img src="/Public/app/img/Q.png"/><span class="questionText"><?php echo ($qu["question"]); ?></span></p>
+                                <p><img src="/Public/app/img/A.png"/><span class="answerText"><?php echo ($qu["answer"]); ?></span></p>
                                 <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
+                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName"><?php echo ($qu["teacher"]); ?></span>
                                     <img class="collectImg tooltip" title="点赞" src="/Public/app/img/support.png"><span class="collectNum">9</span>
                                     <button class="joinBtn">参与讨论</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
-
-            <div class="left_part1">
-                <div class="TAB_text">
-                    <p class="TAB_text_title">
-                        <img src="/Public/app/img/newicon.png">
-                        <span>看别人的问题 说你的观点</span>
-                    </p>
-                    <!--循环遍历的开始-->
-                    <div class="TAB_text_text">
-                        <div class="TAB_text_img">
-                            <div class="personImg"></div>
-                            <p><span>*</span>用户名111111111111111</p>
-                        </div>
-                        <div class="TAB_text_textRight">
-                            <div class="text_question">
-                                <p><img src="/Public/app/img/Q.png"/><span class="questionText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111</span></p>
-                                <p><img src="/Public/app/img/A.png"/><span class="answerText">税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122222222222222222</span></p>
-                                <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName">吕定杰</span>
-                                    <img class="collectImg tooltip" title="点赞"  class="collectImg" src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-               </div>
-            </div>
+            </div><?php endforeach; endif; else: echo "该分类下还没有问题" ;endif; ?>
 
             <!--页数-->
             <div class="page">
@@ -315,15 +204,15 @@
                         <p>最新问题</p>
                     </div>
                     <!--参与讨论的内容(开始循环遍历的块)-->
-                    <div class="discuss_text">
+					<?php if(is_array($newQuestion)): $i = 0; $__LIST__ = $newQuestion;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nquestion): $mod = ($i % 2 );++$i;?><div class="discuss_text">
                         <div class="question">
                             <img src="/Public/app/img/Q.png" />
                             <div>
-                                <p class="questionFirP">111111111111111111111111111111税已经超报了，15号之前要扣税款，账上没有钱，怎么办啊？</p>
-                                <p class="questionSecP">提问时间：<span>2016-12.09</span><span class="phoneNumber">151****8888</span></p>
+                                <p class="questionFirP"><?php echo ($nquestion["question"]); ?></p>
+                                <p class="questionSecP">提问时间：<span><?php echo ($nquestion["addtime"]); ?></span><span class="phoneNumber"><?php echo ($nquestion["phone"]); ?></span></p>
                             </div>
                         </div>
-                    </div>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
 
             </div>
@@ -552,9 +441,9 @@
 						htmls = html + htmls;
 						$('.discuss_text').html('');
 						$('.discuss_text').html(htmls);
-				}
 
-				alert('提问成功');
+						$('textarea[name=textarea]').val('');
+				}
 			}
 		);
 	});

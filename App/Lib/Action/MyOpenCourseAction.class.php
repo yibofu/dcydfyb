@@ -2,7 +2,6 @@
 	class MyOpenCourseAction extends Action {
 		public function __construct() {
 			parent::__construct();	//继承父类构造方法
-			
 			if(!isset($_SESSION['admins']['id'])) {
 				$this->redirect('Login/loginPage');
 			}
@@ -11,7 +10,6 @@
 		public function index() {
 			$uid = $_SESSION['admins']['id'];
 			
-
 			$model = M('mycourse');
 			$total = $model->where('uid=' . $uid)->count();
 

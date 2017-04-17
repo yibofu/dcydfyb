@@ -218,6 +218,20 @@
             display: inline;
         }
 
+        .Num{
+            float: right;
+            margin-top:-17px;
+            margin-right: 10px;
+        }
+        .ck-video p{
+            width: 130px;
+            float: left;
+        }
+        .avio-one{
+            float: left;
+
+        }
+
     </style>
 </head>
 <body>
@@ -243,7 +257,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -353,7 +367,8 @@
                     <div class="cursor" style="margin-top: 230px;">
                         <span><a href="<?php echo U('Index/visual');?>?id=<?php echo ($vo["id"]); ?>&kname=<?php echo ($vo["kname"]); ?>&name=<?php echo ($vo["name"]); ?>&kctitle=<?php echo ($vo["kctitle"]); ?>&title=<?php echo ($vo["title"]); ?>"><?php echo ($vo["kctitle"]); ?></a></span>
                         <p>讲师:&nbsp<?php echo ($vo["name"]); ?></p>
-                        <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
+                        <div class="fr avio-one"  style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
+                        <div class="Num">9</div>
                     </div>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
@@ -367,7 +382,8 @@
                         <div class="cursor" style="margin-top: 230px;">
                             <span><a href="<?php echo U('Index/visual');?>?id=<?php echo ($voo["id"]); ?>&kname=<?php echo ($voo["kname"]); ?>&name=<?php echo ($voo["name"]); ?>&kctitle=<?php echo ($voo["kctitle"]); ?>&title=<?php echo ($voo["title"]); ?>"><?php echo ($voo["kctitle"]); ?></a></span>
                             <p>讲师:&nbsp<?php echo ($voo["name"]); ?></p>
-                            <div class="fr avio-one"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
+                            <div class="fr avio-one" style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
+                            <div class="Num">9</div>
                         </div>
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
@@ -441,75 +457,16 @@
 </body>
 <script src="/Public/app/js/rollSlide.js"></script>
 <script>
-    //导航栏 c02003
-    $(function(){
-        $(".boe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".aoe").hover(function(){
-            $(".aoe").css('border','0');
-        })
-        $(".boe").mouseout(function(){
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-        $(".boa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0px');
-        })
-        $(".aoa").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aoe").css('border-right','0');
-        })
-        $(".boa").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
 
+    $(".img1").click(function(){
+        $(this).attr('src','/Public/app/img/offcial-collecta.png');
+        var Onum=$(".Num").html();
+        var Num=parseInt(Onum);
+        $(this).parent().siblings(".Num").html(Num+1);
+        $(this).unbind("click");
 
-        $(".bob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".aob").hover(function(){
-            $(".aoa").css('border','0');
-            $(".aob").css('border','0');
-        })
-        $(".bob").mouseout(function(){
-            $(".aoa").css('border-right','2px solid #ffffff');
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".boc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aoc").hover(function(){
-            $(".aob").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".boc").mouseout(function(){
-            $(".aob").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-
-        $(".bod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".aod").hover(function(){
-            $(".aod").css('border','0');
-            $(".aoc").css('border','0');
-        })
-        $(".bod").mouseout(function(){
-            $(".aod").css('border-right','2px solid #ffffff');
-            $(".aoc").css('border-right','2px solid #ffffff');
-            $(".aoe").css('border-left','1px solid #ffffff');
-        })
-    })
+    });
+    var Onum=$(".Num").html();
     $('.newslist').kkPages({
         PagesClass:'li', //需要分页的元素
         PagesMth:8, //每页显示个数
@@ -561,9 +518,7 @@
     }
     DY_scroll('.hl_main5_content','.hl_scrool_leftbtn','.hl_scrool_rightbtn','.hl_main5_content1','.hl_main5_content1',0,false);// true为自动播放，不加此参数或false就默认不自动
 
-    $(".avio-one .img1").click(function(){
-        $(this).attr('src','/Public/app/img/offcial-collecta.png');
-    });
+
     $(function(){
         var oUl=document.getElementsByClassName('about')[0];
         var aBtn=oUl.getElementsByTagName("li");

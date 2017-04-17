@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -96,7 +96,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -175,25 +175,25 @@
 							<div><i class="iconfont icon-shipin"></i></div>
 							<p>远程视频诊断</p>
 						</div>
-						<!--面试财务经理-->
+						<!--面对面咨询-->
 						<div class="TAB_num">
 							<div><i class="iconfont icon-mianshi"></i></div>
-							<p>面试财务经理</p>
+							<p>面对面咨询</p>
 						</div>
 						<!--我要审核合同-->
 						<div class="TAB_num">
 							<div><i class="iconfont icon-wodeshenhe"></i></div>
-							<p>我要审核合同</p>
+							<p>我要审合同</p>
 						</div>
 						<!--我要审报表-->
 						<div class="TAB_num">
 							<div><i class="iconfont icon-04"></i></div>
 							<p>我要审报表</p>
 						</div>
-						<!--财务猎头-->
+						<!--财务分析-->
 						<div class="TAB_num">
 							<div><i class="iconfont icon-tc-hunter"></i></div>
-							<p>财务猎头</p>
+							<p>财务分析</p>
 						</div>
 					</div>
 						<!--选项卡的内容-->
@@ -212,9 +212,9 @@
 									<p>4、诊断完成，请对本次视频诊断做出评价及建议</p>
 								</div>
                                 <!--确定预约按钮-->
-                                <div class="confirm_button">
-                                    <button>确定预约</button>
-                                </div>
+								<div class="confirm_button">
+									<button attr="远程视频诊断" name="make">确定预约</button>
+								</div>
 							</div>
 						</div>
 						<!--第二部分-->
@@ -223,16 +223,16 @@
 								<img src="/Public/app/img/Video_diagnostic/picture_2.png"/>
 							</div>
 							<div class="part_number_right">
-								<p class="part_num_title">您即将预约的是<span>面试财务经理</span></p>
+								<p class="part_num_title">您即将预约的是<span>面对面咨询</span></p>
 								<div class="part_num_text">
-									<p>1、预约申请财务经理面试</p>
-									<p>2、24小时内客服会与您取得联系约定好面试的时间</p>
-									<p>3、财务专家如约与您视频连线，进行财务经理面试</p>
-									<p>4、诊断完成，请对本次视频面试做出评价及建议</p>
+									<p>1、预约申请面对面咨询</p>
+									<p>2、24小时内客服会与您取得联系约定好咨询的时间</p>
+									<p>3、财务专家如约与您视频连线，进行面对面咨询</p>
+									<p>4、诊断完成，请对本次咨询做出评价及建议</p>
 								</div>
                                 <!--确定预约按钮-->
                                 <div class="confirm_button">
-                                    <button>确定预约</button>
+                                    <button attr="面对面咨询" name="make">确定预约</button>
                                 </div>
 							</div>
 						</div>
@@ -242,7 +242,7 @@
 								<img src="/Public/app/img/Video_diagnostic/picture_3.png"/>
 							</div>
 							<div class="part_number_right">
-								<p class="part_num_title">您即将预约的是<span>我要审核合同</span></p>
+								<p class="part_num_title">您即将预约的是<span>我要审合同</span></p>
 								<div class="part_num_text">
 									<p>1、在线提交合同</p>
 									<p>2、24小时内专家会与您连线详谈合同事项</p>
@@ -252,7 +252,7 @@
 								</div>
                                 <!--确定预约按钮-->
                                 <div class="confirm_button">
-                                    <button>确定预约</button>
+                                    <button attr="我要审合同" name="make">确定预约</button>
                                 </div>
 							</div>
 						</div>
@@ -272,7 +272,7 @@
 								</div>
                                 <!--确定预约按钮-->
                                 <div class="confirm_button">
-                                    <button>确定预约</button>
+                                    <button attr="我要审报表" name="make">确定预约</button>
                                 </div>
 							</div>
 						</div>
@@ -282,17 +282,17 @@
 								<img src="/Public/app/img/Video_diagnostic/picture_5.png"/>
 							</div>
 							<div class="part_number_right">
-								<p class="part_num_title">您即将预约的是<span>财务猎头</span></p>
+								<p class="part_num_title">您即将预约的是<span>财务分析</span></p>
 								<div class="part_num_text">
-									<p>1、在线填写财务人员需求</p>
-									<p>2、扁鹊客服需求进行简历匹配</p>
+									<p>1、在线填写财务分析需求</p>
+									<p>2、扁鹊客服需求进行需求匹配</p>
 									<p>3、财务专家进行第二轮把关匹配</p>
-									<p>4、发起面试</p>
-									<p>5、面试完成后，请对推荐的财务人员进行评价</p>
+									<p>4、发起分析</p>
+									<p>5、分析完成后，请对本次分析进行评价</p>
 								</div>
                                 <!--确定预约按钮-->
                                 <div class="confirm_button">
-                                    <button>确定预约</button>
+                                    <button attr="财务分析"  name="make">确定预约</button>
                                 </div>
 							</div>
 
@@ -303,11 +303,11 @@
 										<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
 									</div>
 									<div class="confirmTextText">
-										<p>恭喜您！预约已成功！</p >
+										<p></p >
 										<p>请保持电话畅通，客服会在24小时内与您取得
 											联系。请在个人中心查看您的服务。</p >
 										<p>
-											<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回视频诊断</a><span>|</span><a href="#">进入个人中心</a>
+											<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回视频诊断</a><span>|</span><a href="<?php echo U('MyCenter/index');?>">进入个人中心</a>
 									    </p >
 								    </div>
 							    </div>
@@ -333,71 +333,20 @@
 						
 						<div class="video_show">
 						<!--块级-->
-							<div class="video_show_part">
-								<img class="img_num1"  src="/Public/app/img/Video_diagnostic/video_img.png" />
-								<div class="first_model">
-									<p><span>视频</span></p>
-									<span>餐饮企业营改增应对餐饮企业</span>
-								</div>
-								<div class="second_model">
-									<img src="/Public/app/img/Video_diagnostic/person.png" />
-									<span style="font-size: 10px;">讲师  刘国东</span>
-									<img class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
-								</div>
-							</div>
-							<div class="video_show_part">
-								<img class="img_num1"  src="/Public/app/img/Video_diagnostic/video_img.png" />
-								<div class="first_model">
-									<p><span>视频</span></p>
-									<span>餐饮企业营改增应对餐饮企业</span>
-								</div>
-								<div class="second_model">
-									<img src="/Public/app/img/Video_diagnostic/person.png" />
-									<span style="font-size: 10px;">讲师  刘国东</span>
-									<img class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
-								</div>
-							</div>
-							<div class="video_show_part">
-								<img class="img_num1"  src="/Public/app/img/Video_diagnostic/video_img.png" />
-								<div class="first_model">
-									<p><span>视频</span></p>
-									<span>餐饮企业营改增应对餐饮企业</span>
-								</div>
-								<div class="second_model">
-									<img src="/Public/app/img/Video_diagnostic/person.png" />
-									<span style="font-size: 10px;">讲师  刘国东</span>
-									<img class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
-								</div>
-							</div>
-							<div class="video_show_part">
-								<img class="img_num1"  src="/Public/app/img/Video_diagnostic/video_img.png" />
-								<div class="first_model">
-									<p><span>视频</span></p>
-									<span>餐饮企业营改增应对餐饮企业</span>
-								</div>
-								<div class="second_model">
-									<img src="/Public/app/img/Video_diagnostic/person.png" />
-									<span style="font-size: 10px;">讲师  刘国东</span>
-									<img  class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
-								</div>
-							</div>
-							<div class="video_show_part">
-								<img  class="img_num1" src="/Public/app/img/Video_diagnostic/video_img.png" />
-								<div class="first_model">
-									<p><span>视频</span></p>
-									<span>餐饮企业营改增应对餐饮企业</span>
-								</div>
-								<div class="second_model">
-									<img src="/Public/app/img/Video_diagnostic/person.png" />
-									<span style="font-size: 10px;">讲师  刘国东</span>
-									<img class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
-								</div>
-							</div>
+							<?php if(is_array($recommendList)): $i = 0; $__LIST__ = $recommendList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="video_show_part">
+									<img class="img_num1"  src="<?php echo ($vo["img"]); ?>" />
+									<div class="first_model">
+										<p><span>视频</span></p>
+										<span><?php echo ($vo["title"]); ?></span>
+									</div>
+									<div class="second_model">
+										<img src="/Public/app/img/Video_diagnostic/person.png" />
+										<span style="font-size: 10px;">讲师  <?php echo ($vo["name"]); ?></span>
+										<img class="star_collect" src="/Public/app/img/Video_diagnostic/collect.png" />
+									</div>
+								</div><?php endforeach; endif; else: echo "" ;endif; ?>
 						</div>
-						
 					</div>
-					
-					
 				</div>
 				<!--内容右边的部分-->
 				<div class="consult_right">
@@ -513,15 +462,15 @@
 	<script src="/Public/app/js/jquery.min.js"></script>
 	<script>
 		// 弹窗
-		$(".confirm_button button").click(function(){
-			$(".confirmText").css({"display":"block"});
-			$(this).parents(".part_number").css("display","none");
-             var Num=$(this).parents(".part_number").index();
-            $(".TAB_num").eq(Num).mouseover(function(){
-                $(".confirmText").css({"display":"block"});
-                $(".part_number").eq(Num).css("display","none");
-            });
-		});
+//		$(".confirm_button button").click(function(){
+//			$(".confirmText").css({"display":"block"});
+//			$(this).parents(".part_number").css("display","none");
+//             var Num=$(this).parents(".part_number").index();
+//            $(".TAB_num").eq(Num).mouseover(function(){
+//                $(".confirmText").css({"display":"block"});
+//                $(".part_number").eq(Num).css("display","none");
+//            });
+//		});
 
 	$(function(){
 		//选项卡
@@ -533,7 +482,7 @@
 		$(".part_number").eq(0).css("display","block");
 		$(".TAB_num div").eq(0).css({"border":"2px #7fcbd9 solid"});
 		$(".TAB_num").mouseover(function(){
-//			alert($(this).index());
+
 			$(".confirmText").css({"display":"none"});
 			$(".TAB_num").css({"background":"white"});
 			$(".TAB_num").eq($(this).index()).css({"background":"#0098b3"});
@@ -545,6 +494,9 @@
 			$(".TAB_num p").eq($(this).index()).css({"color":"white"});
 			$(".part_number").css("display","none");
 			$(".part_number").eq($(this).index()).css("display","block");
+
+			var attr = $(this).children('p').html();
+			$('button[name=make]').attr('attr', attr);
 		});
 		//视频显示效果
 		$(".video_show_part").mouseover(function(){
@@ -559,8 +511,7 @@
 		});
 		//收藏星星
 		$(".star_collect").click(function(){
-//			alert($(this).parent().parent().index());
-			$(".star_collect").attr("src","/Public/app/img/Video_diagnostic/collect.png");
+
 			$(".star_collect").eq($(this).parent().parent().index()).attr("src","/Public/app/img/Video_diagnostic/collect_check.png");
 		});
 	});
@@ -588,14 +539,12 @@
 				var x=10;
 				var y=20;
 				$("a.tooltip").mouseover(function(e){
-//					alert(typeof(e));
 //					e表示的一个事件对象在这里表示的是鼠标移上去的事件对象----鼠标指针的位置
 					var tooltip="<div id='tooltip'>"+this.title+"</div>";
 					$("body").append(tooltip);
 					//pageX,pageY鼠标指针位置，相对于文本的左边缘
 					$("#tooltip").css({"position":"relative","top":(e.pageY+y)+"px","left":(e.pageX+x)+"px","height":"20px","width":"50px","line-height":"20px"}).show("fast");
 					//这里必须写相对定位或者绝对定位，要不然Top和Left都不能实现作用
-					//alert(e.pageY+y);
 				}).mouseout(function(){
 					$("#tooltip").remove();
 				});
@@ -605,7 +554,6 @@
 				$(".part_num").eq(0).css("display","");
 				$(".leaveword_btn").find("button").click(function(){
 					$(this).css({"background-color":"#47b8cc","color":"white"}).siblings().css({"background-color":"","color":""});
-//					alert($(this).index());
 					$(".part_num").css("display","none");
 					$(".part_num").eq($(this).index()).css("display","");
 				});
@@ -689,6 +637,32 @@
         $("#swphotb .img1").css('display','block');
         $("#swphotc .img1").css('display','block');
     });
-    
+$('button[name=make]').click(function() {
+	var apply = $('button[name=make]').attr('attr');
+
+	$.post(
+			'<?php echo U("MyService/makeDiagnose");?>',
+			{'apply': apply},
+
+			function(res) {
+				if(res == 0) {
+//					if(confirm('请先登陆')) {
+						location.href = '<?php echo U("Login/loginPage");?>';
+						return;
+//					} else {
+//						$('.confirmTextText').children('p').eq(0).html('对不起，登陆后才能预约');
+//						$(".confirmText").css({"display":"block"});
+//						$(".part_number").css("display","none");
+//					}
+				} else {
+					$('.confirmTextText').children('p').eq(0).html(res);
+					$(".confirmText").css({"display":"block"});
+					$(".part_number").css("display","none");
+
+				}
+			}
+	);
+});
+
 	</script>
 </html>

@@ -202,7 +202,6 @@
             success:function(data){
                 row = eval('('+data+')');
                 if (row){
-                    ue.setContent(row.content);
                     $('#fm').form('clear');
                     $('#dlg').dialog('open');
                     url = "{:U('Xxdk/xxdksave')}&id="+id;

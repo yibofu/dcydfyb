@@ -9,9 +9,11 @@
     <link rel="stylesheet" type="text/css" href="/Public/app/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="/Public/app/css/official.css">
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+	<link rel="stylesheet" href="/Public/app/css/fenye.css" />
     <script src="/Public/app/js/jquery-3.1.0.min.js"></script>
     <script src="/Public/app/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
     <script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
+	<script type="text/javascript" src="/Public/app/js/fenye.js" ></script>
     <style>
 
         /*********** 文字 ************/
@@ -161,12 +163,11 @@
         #area {
             width: 716px;
             height: 6rem;
-            position: fixed;
             left: -286px;
             bottom: 0;
             right: 0;
-            margin: auto;
-            background: #f5f5f5;
+            margin-top: 50px;
+            background:white;
             z-index: 19;
         }
         .uij{
@@ -178,12 +179,13 @@
         #textArea {
             display: block;
             width:100%;
-            padding: .4rem;
+            height:80px;
+            /*padding: .4rem;*/
             border-radius: 3px;
             resize: none;
             font-size: 1.6rem;
             border: .1rem solid #CCCCCC;
-            height: 3.2rem;
+            /*height: 3.2rem;*/
         }
         #textArea:focus {
             outline: none;
@@ -331,7 +333,7 @@
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -465,10 +467,20 @@
                         <!--<a><img src="/Public/app/img/video-heah-img.png" class="ting"/></a>-->
                     <!--</div>-->
                 </div>
-                <div class="tab-content user" style="display:none; position: absolute;">
-                    <div id="ctn">
-                        <p>暂无评论</p>
+                <div class="tab-content user" style="display:none; position: absolute; background:#eeeeee;">
+                    <div id="ctn" style="background: white;margin-top: 10px;">
+                        <!--<p>暂无评论</p>-->
+						<?php if(is_array($commentList)): $i = 0; $__LIST__ = $commentList;if( count($__LIST__)==0 ) : echo "暂无评论" ;else: foreach($__LIST__ as $key=>$comment): $mod = ($i % 2 );++$i;?><div class="con">
+								<?php echo ($comment["content"]); ?>
+								<p class="iond yinc"><?php echo ($comment["name"]); ?></p>
+								<span><img src="<?php echo ($comment["img"]); ?>"></span>
+								<i><?php echo ($comment["addtime"]); ?></i>
+								<div class="clearfix"></div>
+							</div><?php endforeach; endif; else: echo "暂无评论" ;endif; ?>
                         <div class="clearfix"></div>
+						<div class="page">
+						<?php echo ($page); ?>
+						</div>
                     </div>
                     <div class="clearfix"></div>
                     <div id="area">
@@ -733,7 +745,7 @@
             for (var key in $coo) {
                 var date = new Date();
                 date.setTime(key.substring(4)-0)
-                var $con = $('<div class="con">' +$coo[key] + '<p class="iond yinc">你好啊！ssssssssssssssssssssss</p><span><img src="/Public/app/img/txi.png"/></span><i>' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' +  date.getHours() + '：' + date.getMinutes() + ' ' + '</i><div class="clearfix"></div></div>');
+                var $con = $('<div class="con" style="background-color:"white"";>' +$coo[key] + '<p class="iond yinc">你好啊！ssssssssssssssssssssss</p><span><img src="/Public/app/img/txi.png"/></span><i>' + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' +  date.getHours() + '：' + date.getMinutes() + ' ' + '</i><div class="clearfix"></div></div>');
                 $con.data('cooName', key);
                 $ctn.prepend($con);
                 $('.con').children('span').click(function () {
@@ -807,9 +819,12 @@
 				if(res == 0) {
 					location.href = '<?php echo U("Login/loginPage");?>';
 					return;
-				}	
-				
-				alert(res);
+				}else if(res == 1){
+                    $('#textArea').val('');
+                }else{
+
+                }
+
 			}
 				
 		);

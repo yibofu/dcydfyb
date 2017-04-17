@@ -9,8 +9,8 @@ $(function(){
 		$("html").css({"background":""});
 	});
 	
-	$(".addressSpecificModel").eq(0).find(".name :last-child").addClass("default-Address");
-	$(".addressSpecificModel").eq(0).find(".name :last-child").html("默认地址");
+	// $(".addressSpecificModel").eq(0).find(".name :last-child").addClass("default-Address");
+	// $(".addressSpecificModel").eq(0).find(".name :last-child").html("默认地址");
 	$(".addressSpecificModel").eq(0).find(".name :last-child").css("box-shadow"," 1px 1px 1px #686868");
 	$(".addressSpecificModel").click(function(){
 		$(this).find(".name :last-child").addClass("default-Address");
