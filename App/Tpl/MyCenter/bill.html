@@ -9,141 +9,274 @@
 		<script src="/Public/app/js/bill.js"></script>
 	</head>
 	<body>
-		<div class="page_all">
-			<!--banner部分-->
-			<include file="Public/myhead" />
-			<!--内容部分-->
-			<div class="text_all">
-				<!--左侧菜单栏-->
-				<include file="Public/myleft" />
-				<!--个人信息-->
-				<div class="main_person_text" >
-					<p class="person_title"><span>发票信息</span></p>
-					<div class="invoiceType">
-						<p class="billCommonBtn">
-							<input  type="radio" name="billtype" value="putong" checked="checked" id="putong"/>
-							<label for="putong">普通发票</label>
-							<img src="/Public/app/img/gou.png"/>
-						</p>
-						<p class="billAddBtn">
-							<input  type="radio" name="billtype" value="zengzhi" id="zengzhi"/>
-							<label for="zengzhi">增值税发票</label>
-							<img src="/Public/app/img/gou.png"/></p>
-					</div>
-					<!--普通发票-->
-					<div class="billCommon">
-						<form name="putong">
-						<div class="rise">
-							<span>发票抬头：</span>
-							<p class="personBill">
-								<input  type="radio" name="billMold" value="个人" checked="checked" id="geren"/>
-								<label for="geren">个人</label>
-								<img src="/Public/app/img/gou.png" />
-							</p>
-							<p class="companyBill">
-								<input  type="radio" name="billMold" value="gongsi" id="company1"/>
-								<label for="company1">北京大财有道科技有限公司</label>
-								<img src="/Public/app/img/gou.png" />
-							</p>
-							<a>新增单位发票</a>
+   <div class="page_all">
+      <!--banner部分-->
+      <include file="Public/myhead" />
+      <!--内容部分-->
+      <div class="text_all">
+         <!--左侧菜单栏-->
+         <include file="Public/myleft" />
+         <!--个人信息-->
+         <div class="main_person_text" style="width: 780px;">
+            <p class="person_title"><span>发票信息</span></p>
+            <div class="invoiceType">
+               <p class="billCommonBtn">
+                  <input  type="radio" name="billtype" value="putong" checked="checked" id="putong"/>
+                  <label for="putong">普通发票</label>
+                  <img src="/Public/app/img/gou.png"/>
+               </p >
+               <p class="billAddBtn">
+                  <input  type="radio" name="billtype" value="zengzhi" id="zengzhi"/>
+                  <label for="zengzhi">增值税发票</label>
+                  <img src="/Public/app/img/gou.png"/></p>
+            </div>
+            <!--普通发票-->
+            <div class="billCommon">
+               <form name="putong">
+             
+              		<!--新增发票地址-->
+					<div class="addNewbill">
+						<!--填写新增发票-->
+						<div class="addNewbillText">
+							<p>新增发票</p >
+							<input name="ptbill" type="text" />
+							<button name="ptsub" type="button" class="submitBtnadd">保存</button>
 						</div>
-						<div class="contants">
-							<span>发票内容：</span>
-							<p class="contantAsk">
-								<input  type="radio" name="billMain" value="1" checked="checked" id="zixun"/>
-								<label for="zixun">咨询</label>
-								<img  src="/Public/app/img/gou.png">
-							</p>
-							<p class="contantTrain">
-								<input  type="radio" name="billMain"  value="2" id="peixun"/>
-								<label for="peixun">培训</label>
-								<img  src="/Public/app/img/gou.png">
-							</p>
+						<div class="addbillHead">
+							<p>发票抬头</p>
+							<div>
+								<volist name="ptbill" id="bill">
+								<p attr="{$bill.id}">
+									<span>{$bill.head}</span>
+									<span>&#10005;</span> 
+									<if condition="$bill.isdefault eq 1">
+									<span>【默认抬头】</span> 
+									<else />
+									<span></span> 
+									</if>
+								</p>
+								</volist>
+							</div>
 						</div>
-						<div class="btn">
-							<button name="sub" type="button" class="submitBtn">提交</button>
-							<button class="abolishBtn">取消</button>
+				   </div>
+              
+
+               </form>
+            </div>
+            <!--增值税发票-->
+            <div class="billAdd">
+               <form name="zengzhi">
+               <div class="billStyle">
+                  <span style="color: #666666;margin-left: 45px;margin-top:5px;">开票方式：</span>
+							<p class="second_span" style="color: #000000;">订单完成后开票</p>
 						</div>
-						</form>
-					</div>
-					<!--增值税发票-->
-					<div class="billAdd">
-						<form name="zengzhi">
-						<div class="billStyle">
-							<span style="color: #666666;margin-left: 45px;margin-top:5px;">开票方式：</span>
-							<p class="second_span">订单完成后开票<img src="/Public/app/img/gou.png"/></p>
-						</div>
-						<p class="company_name" style="margin-left: 32px;">
+						<p class="company_name" style="margin-left: 28px;">
 							<span>*</span>
 							<span >单位名称：</span>
-							<input type="text" name="company"/>
+							<input type="text" name="company" value="{$zzbill.company}" />
 							<span class="hint"></span>
 						</p>
 						<p>
 							<span>*</span>
 							<span>纳税人识别码：</span>
-							<input type="text" name="pcode" />
+							<input type="text" name="pcode" value="{$zzbill.personcode}" />
 							<span class="hint"></span>
 						</p>
-						<p style="margin-left: 32px;">
+						<p style="margin-left: 28px;">
 							<span>*</span>
 							<span>注册地址：</span>
-							<input type="text" name="address" />
+							<input type="text" name="address" value="{$zzbill.regaddress}" />
 							<span class="hint"></span>
 						</p>
-						<p style="margin-left: 32px;">
+						<p style="margin-left: 28px;">
 							<span>*</span>
 							<span>注册电话：</span>
-							<input type="text" name="phone" />
+							<input type="text" name="phone" value="{$zzbill.regphone}" />
 							<span class="hint"></span>
 						</p>
-						<p style="margin-left: 32px;">
+						<p style="margin-left: 28px;">
 							<span>*</span>
 							<span>开户银行：</span>
-							<input type="text" name="openbank" />
+							<input type="text" name="openbank" value="{$zzbill.bank}" />
 							<span class="hint"></span>
 						</p>
-						<p style="margin-left: 32px;">
+						<p style="margin-left: 28px;">
 							<span>*</span>
 							<span>银行账户：</span>
-							<input type="text" name="openaccount" />
+							<input type="text" name="openaccount" value="{$zzbill.bankaccount}" />
 							<span class="hint"></span>
 						</p>
 						<div class="btn">
-							<button type="button" name="sub" class="submitBtn">提交</button>
-							<button class="abolishBtn">取消</button>
+							<input type="hidden" name="billid" value="{$zzbill.id}" />
+							<button type="button" name="zzsub" class="submitBtn">保存</button>
+							<button type="button"  class="abolishBtn">修改</button>
 						</div>
 						</form>
 					</div>
-					
 				</div>
-				
 			</div>
 			<!--友情链接-->
 			<include file="Public/mybottom" />
 		</div>
 	</body>
 	<script>
-		$('button[name="sub"]').click(function() {
-			var url = '';
-			var type = $('input[name=billtype]:checked').val();
-			var data = collectForm(type);
-			switch(type) {
-				case 'putong':
-					url = '{:U("MyCenter/ptbill")}';
-					break;
-				
-				case 'zengzhi':
-					url = '{:U("MyCenter/zzbill")}';
-					break;
-			}
+		$(".addbillHead>div>p :nth-child(1)").click(function(){
+			$(this).nextAll("span:last").html("【默认抬头】");
+			$(this).parent("p").siblings().find("span:last").html("");
+		});
 
+		//删除发票抬头
+		function po() {
+			$(".addbillHead>div>p :nth-child(2)").click(function(){
+				var that = $(this);
+				var pid = $(this).parent('p').attr('attr');
+				
+				$.post(
+					'{:U("MyCenter/delptbill")}',
+					{'pid' : pid},
+					function(res) {
+						if(res == 1) {
+							that.parent("p").remove();
+						}
+					}
+				);
+			});
+		}
+		
+		$(".addbillHead>div>p :nth-child(2)").click(function(){
+			var that = $(this);
+			var pid = $(this).parent('p').attr('attr');
+			
 			$.post(
-				url, 
-				{'data':data}, 
+				'{:U("MyCenter/delptbill")}',
+				{'pid' : pid},
 				function(res) {
 					if(res == 1) {
-						alert('申请成功');
+						that.parent("p").remove();
+					}
+				}
+			);
+		});
+
+		//设为默认抬头
+		function makeDefault() {
+			$(".addbillHead>div>p :nth-child(1)").click(function(){
+				var that = $(this);
+				var pid = $(this).parent('p').attr('attr');
+
+				$.post(
+					'{:U("MyCenter/setdefaultbill")}',
+					{'pid' : pid},
+					function(res) {
+						if(res == 1) {
+							that.nextAll("span:last").html("【默认抬头】");
+							that.parent("p").siblings().find("span:last").html("");
+						}
+					}
+				);
+            });
+		}
+		$(".addbillHead>div>p :nth-child(1)").click(function(){
+				var that = $(this);
+				var pid = $(this).parent('p').attr('attr');
+
+				$.post(
+					'{:U("MyCenter/setdefaultbill")}',
+					{'pid' : pid},
+					function(res) {
+						if(res == 1) {
+							that.nextAll("span:last").html("【默认抬头】");
+							that.parent("p").siblings().find("span:last").html("");
+						}
+					}
+				);
+            });
+
+
+        //发票抬头切换
+        $(".rise p").eq(0).css("border","2px #55bdcf solid");
+        $(".rise p").eq(0).find("img").css("display","block");
+        $(".rise p").click(function(){
+            $(this).find("img").css("display","block");
+            $(this).siblings().find("img").css("display","none");
+            $(this).css("border","2px #55bdcf solid").siblings("p").css("border","2px #CCCCCC solid");
+        });
+
+//        发票切换
+        $(".billCommonBtn").click(function(){
+            $(this).find("img").css("display","block");
+            $(this).siblings().find("img").css("display","none");
+            $(this).css("border","2px #55bdcf solid").siblings("p").css("border","2px #CCCCCC solid");
+            $(".billCommon").css("display","block");
+            $(".billAdd").css("display","none");
+        });
+        $(".billAddBtn").click(function(){
+            $(this).css("border","2px #55bdcf solid").siblings("p").css("border","2px #CCCCCC solid");
+            $(".billAdd").css("display","block");
+            $(".billCommon").css("display","none");
+        });
+//增值税提交修改
+/*
+		$(".submitBtn").click(function(){
+			$(".billAdd input").attr("readonly",true);
+		});
+	*/
+//增值税取消
+		$(".abolishBtn").click(function(){
+			$(".billAdd input").attr("readonly",false);
+		})
+
+
+    //新增发票
+        $(".AddbillTT").click(function(){
+            $(".addNewbill").css("display","block");
+            $(".billCommon").css("display","none");
+        });
+
+//新增发票保存
+/*
+        $(".submitBtnadd").click(function(){
+            var Otext=$(".addNewbillText input").val();
+            if(""==Otext||null==Otext){
+            }else{
+                $(".addbillHead>div :first-child").animate({"margin-top":"+=1px"});
+                $(".addbillHead>div").prepend("<p class='newAddP'><span class='newAddSpan'></span><span>&#10005;</span> <span></span> </p>");
+                $(".newAddSpan").html(Otext);
+                sta();
+            }
+        });
+*/
+		$('button[name=ptsub]').click(function() {
+			var data = collectForm('putong');
+
+			$.post(
+				'{:U("MyCenter/ptbill")}', 
+				{'data':data}, 
+				function(res) {
+					if(res.a) {
+						var Otext=$(".addNewbillText input").val();
+						$(".addbillHead>div :first-child").animate({"margin-top":"+=1px"});
+						$(".addbillHead>div").prepend("<p attr='"+res+"' class='newAddP'><span class='newAddSpan'></span><span>&#10005;</span> <span></span> </p>");
+						$(".newAddSpan").html(Otext);
+						po();
+						makeDefault();
+					} else {
+						alert(res);
+					}
+				}	
+			);
+		});
+
+		//增值税
+		$('button[name=zzsub]').click(function() {
+			var data = collectForm('zengzhi');
+
+			$.post(
+				'{:U("MyCenter/zzbill")}', 
+				{'data':data}, 
+				function(res) {
+					if(res == 1 || res == 'er') {
+						$(".billAdd input").attr("readonly",true);
 					} else {
 						alert(res);
 					}

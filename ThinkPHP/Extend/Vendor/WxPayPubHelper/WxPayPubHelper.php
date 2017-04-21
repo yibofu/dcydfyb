@@ -81,7 +81,7 @@ class Common_util_pub
 			//商户支付密钥Key。审核通过后，在微信发送的邮件中查看
 			$this->KEY = 'V3AjcAJclClyDivK2c4nbT3YpxqfNMIv';
 			//JSAPI接口中获取openid，审核后在公众平台开启开发模式后可查看
-			$this->APPSECRET = 'e0d6e95442d9c2d64943e7afbdff504e';		
+			$this->APPSECRET = 'e0d6e95442d9c2d64943e7afbdff504e';
 			//=======【证书路径设置】=====================================
 			//证书路径,注意应该填写绝对路径
 			$this->SSLCERT_PATH = './cacert/apiclient_cert.pem';

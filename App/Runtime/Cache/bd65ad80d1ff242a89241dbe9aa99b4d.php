@@ -38,12 +38,12 @@
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<?php if($_SESSION['admins']['id'] == '' && $_SESSION['rigister']['id'] == ''): ?><ul>
+				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
 						<li class="ahref"><a href="#">消息</a></li>
-						<li class="ahref"><a href="<?php echo U('Index/user');?>">用户中心</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="main-top4">
                             <h3>我们的<span>理念</span></h3>
-                            <p>为企业用户提供在线财务问诊、与老师1对1私密电话沟通、远程专业猎头面试、重大财务合同审核、行业性财务咨询等众多服务让空间不再是距离，让专属老师随时为您服务。</p>
+                            <p>为企业用户提供在线财务问诊、与老师1对1私密电话沟通、重大财务合同审核、行业性财务咨询等众多服务让空间不再是距离，让专属老师随时为您服务。</p>
                         </div>
                         <div class="clear"></div>
                     </div>

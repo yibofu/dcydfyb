@@ -3,13 +3,8 @@ $(function(){
 	$(".invoiceType p").eq(0).css("border","3px #55bdcf solid");
 	$(".invoiceType p").eq(0).find("img").css("display","block");
 //抬头
-	$(".rise p").eq(0).css("border","3px #55bdcf solid");
-	$(".rise p").eq(0).find("img").css("display","block");
-	$(".rise p").click(function(){
-		$(this).find("img").css("display","block");
-		$(this).siblings().find("img").css("display","none");
-		$(this).css("border","3px #55bdcf solid").siblings("p").css("border","3px #CCCCCC solid");
-	});
+
+
 	$(".contants p").eq(0).css("border","3px #55bdcf solid");
 	$(".contants p").eq(0).find("img").css("display","block");
 	$(".contants p").click(function(){

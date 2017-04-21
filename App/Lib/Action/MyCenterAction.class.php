@@ -2,7 +2,6 @@
 	class MyCenterAction extends Action {
 		public function __construct() {
 			parent::__construct();	//继承父类构造方法
-			
 			if(!isset($_SESSION['admins']['id'])) {
 				$this->redirect('Login/loginPage');
 			}
@@ -126,22 +125,22 @@
 			$model = M('user');
 			$data = array();
 
+			//查询之前当前头像
+			$picture = $model->field('img')->where('id=' . $uid)->find();
+
 			//上传头像
-			if($_FILES['photo']['size'] != 0) {
+			if($_FILES['file']['size'] != 0) {
 				import('ORG.Net.UploadFile');
 				
 				$upload = new UploadFile();
 				$upload->maxSize = 1024*1024*2;
 				$upload->allowExts = array('jpg', 'jpeg', 'png', 'gif');
-				$img = "../Public/upload";
-				$path = 'image';
-				$savepath = $img .'/'.$path.'/';
+				$savepath = './Public/upload/image/';
 				$upload ->saveRule = uniqid;
 				$upload ->uploadReplace = true;
 				$upload ->autoSub = true;
 				$upload ->subType = date;
 				$upload ->dataFormat = "Ym";
-
 
 				if(!is_dir($savepath)) {
 					$r = mkdir($savepath, 0777, true);
@@ -152,10 +151,11 @@
 					$upinfo = $upload->getUploadFileInfo();
 					$path = $upinfo[0]['savepath'].$upinfo[0]['savename'];
 					$data['img'] = substr($path, 1);
+					unlink($picture['img']);
+				} else {
+					$data['img'] = $picture['img'];
 				}
 			}
-
-
 
 			$rules = array(
 				array('nickname', 'require', '昵称必须'),
@@ -189,15 +189,40 @@
 					$hmodel->add($idata);
 				}
 			}
-			$data = $model->validate($rules)->create($data);
+			$res = $model->validate($rules)->create($data);
+			$model->where('id='.$uid)->save($data); 
 
-			if($model->where('id='.$uid)->save($data)) {
-				$this->redirect('MyCenter/index');
-			}
+			$this->redirect('MyCenter/index');
 		}
 
 		//发票
 		public function bill() {
+			$uid = $_SESSION['admins']['id'];
+
+			//判断用户是否合法
+			if(!$uid) {
+				$this->redirect('Login/loginPage');
+			}
+			//判断用户合不合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $uid)->find();
+
+			if(!$userFind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+
+			//普通发票
+			$ptModel = M('ptbill');
+			$headList = $ptModel->field('id, head, isdefault')->where('uid=' . $uid)->select();
+
+			//增值税发票
+			$zzModel = M('zzbill');
+			$zzList = $zzModel->field('id, method, company, personcode, regaddress, regphone, bank, bankaccount')
+							->where('uid=' .$uid)
+							->find();
+
+			$this->assign('ptbill', $headList);
+			$this->assign('zzbill', $zzList);
 			$this->display();
 		}
 
@@ -206,35 +231,137 @@
 			$post = $this->_post();
 			$post = $post['data'];
 			$data['uid'] = $_SESSION['admins']['id'];
-			$data['head'] = $post['billMold'];
-			$data['content'] = $post['billMain'];
+			$data['head'] = $post['ptbill'];
 			$data['addtime'] = time();
-			$msg = '';
 
-			$rules = array(
-				array('head', 'require', '请选择发票抬头', 1),		
-				array('content', 'require', '请选择发票内容', 1),		
-			);
-
-			$model = M('ptbill');
-
-			$data = $model->validate($rules)->create($data);
-			if($model->add($data)) {
-				$msg = 1;
-			} else {
-				$msg = $model->getError();
+			if(!$data['uid']) {
+				$this->ajaxReturn(0);
 			}
 
-			$this->ajaxReturn($msg);
+			//判断用户合不合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $data['uid'])->find();
+
+			if(!$userFind['id']) {
+				$this->ajaxReturn(0);
+			}
+
+			//判断是否已经有５个了
+			$model = M('ptbill');
+			$total = $model->where('uid=' . $data['uid'])->count();
+
+			if($total >= 5) {
+				$this->ajaxReturn('你最多只能添加５个发票抬头');
+			} else if($total == 0) {
+				$data['isdefault'] = '1';
+			}
+
+
+			$rules = array(
+				array('head', 'require', '发票抬头不能为空', 1),		
+			);
+
+
+			$res = $model->validate($rules)->create($data);
+			if(!$res) {
+				$this->ajaxReturn($model->getError());
+			}
+
+			if($lastId = $model->add($data)) {
+				$arr = array('a'=>$lastId);
+				$this->ajaxReturn($arr);
+			}
+
 		}
+
+		//删除普通发票抬头
+		public function delptbill() {
+			$uid = $_SESSION['admins']['id'];
+			$pid = intval($this->_post('pid'));
+
+			//判断用户是否合法
+			if(!$uid) {
+				$this->redirect('Login/loginPage');
+			}
+			//判断用户合不合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $uid)->find();
+
+			if(!$userFind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+
+			//删除
+			$model = M('ptbill');
+			
+			$res = $model->where('id=' .$pid. ' and uid=' . $uid)->delete();
+
+			if($res) {
+				$this->ajaxReturn(1);
+			} else {
+				$this->ajaxReturn(0);
+			}
+		}
+
+		//设为默认发票抬头
+		public function setdefaultbill() {
+			$uid = $_SESSION['admins']['id'];
+			$pid = intval($this->_post('pid'));
+
+			//判断用户是否合法
+			if(!$uid) {
+				$this->redirect('Login/loginPage');
+			}
+			//判断用户合不合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $uid)->find();
+
+			if(!$userFind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+
+			//删除
+			$model = M('ptbill');
+
+			$data = array('isdefault'=>'1');
+			$cdata = array('isdefault'=>'0');
+
+			$billfind = $model->field('id')->where('id=' .$pid. ' and uid=' . $uid)->find();
+			if(!$billfind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+			
+			$res = $model->where('uid=' . $uid)->save($cdata);
+			$res = $model->where('id=' .$pid. ' and uid=' . $uid)->save($data);
+
+			if($res) {
+				$this->ajaxReturn(1);
+			} else {
+				$this->ajaxReturn(0);
+			}
+		}
+
 
 		//增值税发票
 		public function zzbill() {
 			$post = $this->_post();
 			$post = $post['data'];
-			$msg = '';
-
 			$data['uid'] = $_SESSION['admins']['id'];
+			$pid = $post['billid'];
+
+			//判断用户是否合法
+			if(!$data['uid']) {
+				$this->redirect('Login/loginPage');
+			}
+			//判断用户合不合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $data['uid'])->find();
+
+			if(!$userFind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+
+			//更新
 			$data['addtime'] = time();
 			$data['company'] = $post['company'];
 			$data['personcode'] = $post['pcode'];
@@ -253,19 +380,29 @@
 			);
 
 			$model = M('zzbill');
-			$data = $model->validate($rules)->create($data);
-			if($model->add($data)) {
-				$msg = 1;
-			} else {
-				$msg = $model->getError();
+			$res = $model->validate($rules)->create($data);
+
+			if(!$res) {
+				$this->ajaxReturn($model->getError());
 			}
 
-			$this->ajaxReturn($msg);
+			//查看用户是否已添加，有就修改，没有就添加
+			$find = $model->where('uid=' . $data['uid'])->find();
+			if($find['id']) {
+				$res = $model->where('id=' . $find['id'])->save($data);
+			} else {
+				$res = $model->add($data);
+			}
+
+			if($res) {
+				$this->ajaxReturn(1);
+			} else {
+				$this->ajaxReturn('er');
+			} 
 		}
 
 		//修改密码
 		public function accountSecurity() {
-			$this->assign('uid', $_SESSION['admins']['id']);
 			$this->display();
 		}
 
@@ -276,8 +413,8 @@
 			$msg = '';
 
 			//验证码核查
-			 if($data['vcode'] != $_SESSION['chvcode']) {
-				$this->error('验证码不正确');
+			 if($post['vcode'] != $_SESSION['chvcode']) {
+				$this->ajaxReturn('验证码不正确');
 			 }
 
 			//验证原密码是否正确
@@ -295,6 +432,11 @@
 			}
 
 			//符合条件修改密码
+			$post['newpasswd'] = trim($post["newpasswd"]);
+			if(empty($post["newpasswd"])) {
+				$this->ajaxReturn('密码不能为空');
+			}
+
 			$datas['password'] = 'dc'.$post["newpasswd"].'yd';
 			$datas['password'] = md5($datas["password"]);
 			$datas['password'] = substr($datas["password"],5,30);

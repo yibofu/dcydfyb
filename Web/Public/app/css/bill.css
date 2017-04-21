@@ -7,7 +7,7 @@
 .invoiceType p{
 	width: 100px;
 	height: 35px;	
-	border: 3px #CCCCCC solid;
+	border: 2px #CCCCCC solid;
 	color: #666666;
 	font-size: 14px;
 	line-height: 35px;
@@ -32,14 +32,32 @@
 .billAddBtn input{
 	display: none;
 }
+.billAdd span{
+    font-size: 14px;
+}
 /*普通*/
 .billCommon{
 	margin-left: 30px;
+    margin-left: 100px;
 }
 
 .billCommon :first-child span{
 	color: #666666;
 	font-size: 14px;
+}
+.AddbillTT{
+    display: block;
+    color:#005eb2;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.AddbillSC{
+    display: block;
+    color:#005eb2;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-top: 10px;
 }
 .rise{
 	margin-top: 30px;
@@ -51,15 +69,13 @@
 	font-size: 14px;
 	color: black;
 	margin-left: 70px;
-	border: 3px #CCCCCC solid;
+	border: 2px #CCCCCC solid;
 	margin-top: 20px;
+    overflow: hidden;
 }
-.billCommon :first-child a{
-	color: #005eb2;font-size: 14px;
-	margin-left: 70px;
-	margin-top: 10px;
-}
-.personBill img{
+
+
+.rise p img{
 	display: inline-block;
 	position: relative;
 	left:327px ;
@@ -67,22 +83,32 @@
 	display: none;
 }
 .personBill input{
-	display: none;
+	/*display: none;*/
+    width: 100%;
+    height: 100%;
+    border: 0;
+    text-indent: 5px;
 }
 .companyBill input{
-	display: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    text-indent: 5px;
+
+    /*display: none;*/
 }
-.companyBill img{
+.rise p img{
 	display: inline-block;
 	position: relative;
 	left:327px ;
 	top: -15px;
 	display: none;
 }
+
 .contantAsk{
 	width: 80px;
 	height: 35px;
-	border: 3px #CCCCCC solid;
+	border: 2px #CCCCCC solid;
 	text-align: center;
 	line-height: 35px;
 	margin-top: 30px;
@@ -102,7 +128,7 @@
 .contantTrain{
 	width: 80px;
 	height: 35px;
-	border: 3px #CCCCCC solid;
+	border: 2px #CCCCCC solid;
 	text-align: center;
 	line-height: 35px;
 	margin-top: 30px;
@@ -125,23 +151,18 @@ float: left;
 }
 .contants p{
 	float: left;
+    margin-left: 10px;
 }
 .second_span{
 	width: 135px;
 	height: 30px;
-	line-height: 30px;
+	line-height: 12px;
+    font-size: 14px;
 	text-align: center;
 	display: block;
-	border: 3px #55bdcf solid;
 	float: left;
 }
-.second_span img{
-	display: inline-block;
-	position: relative;
-	top:15px;
-	left: 120px;
-	
-}
+
 .billStyle{
 	width: 100%;
 	overflow: hidden;
@@ -154,19 +175,20 @@ float: left;
 	width: 300px;
 	height: 30px;
 	text-indent: 5px;
-	border: 1px #CCCCCC solid;
+	border: 2px #CCCCCC solid;
 }
 .billAdd{
+    margin-left: 60px;
 	margin-top: 20px;
 	padding-left: 0px;
 }
-.billAdd>p :nth-child(1){
+.billAdd p :nth-child(1){
 	color: #F55E5E;
 }
-.billAdd>p{
+.billAdd p{
 	margin: 10px 0 10px 0;
 }
-.billAdd>p :nth-child(2){
+.billAdd  :nth-child(2){
 	color: #666666;
 }
 /*按钮*/
@@ -194,4 +216,82 @@ float: left;
  .hint{
 	color: #F55E5E; 	
  }
- 
+
+
+
+
+
+ /*新增发票地址*/
+.addNewbill{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.addNewbill p{
+    color: #666666;
+    font-size: 14px;
+}
+.addNewbillText input{
+    height: 35px;
+    width: 410px;
+    border: 1px #666666 solid;
+    margin-left: 75px;
+    margin-top: 10px;
+    text-indent: 5px;
+}
+.addbillHead{
+    margin-top: 30px;
+}
+.addbillHead>div{
+    margin-left:120px;
+/*    height:105px;	*/
+    overflow: hidden;
+}
+.addbillHead>div p{
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+.addbillHead>div p :nth-child(1){
+    display: inline-block;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+.addbillHead>div p :nth-child(1){
+    cursor: pointer;
+}
+.addbillHead>div p :nth-child(2){
+    cursor: pointer;
+
+}
+.addbillHead>div p :last-child{
+    color: #005ea7;
+    cursor: pointer;
+    margin-left: 20px;
+}
+/*按钮*/
+.btnadd{
+    padding-left: 350px;
+    margin-top: 30px;
+}
+
+.submitBtnadd{
+    background: #f55e5e;
+    color: white;
+    border: 1px #d02121 solid;
+   width:58px ;
+    height: 35px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.abolishBtnadd{
+    background: #f1f9ea;
+    border: 1px #bfd6af solid;
+}
+
+
+
+

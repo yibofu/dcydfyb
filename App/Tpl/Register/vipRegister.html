@@ -131,13 +131,11 @@
 				success:function(data){
 					var data = eval("("+data+")");
 					if(data.error == 2){
-//                    window.location.href = "{:U('Index/index')}";
 						alert(data.msg);
 						return false;
 					}
 					if(!(data.error == 2)){
-						alert("注册成功，您可以去个人中心完善个人信息");
-						window.location.href="{:U('Index/index')}";
+						window.location.href="{:U('Register/registerSuccess')}";
 					}
 				}
 			})

@@ -45,6 +45,7 @@ class CodeAction extends Action{
             $code = rand(100000,999999);
             session('forget'.$mobile,$code,60);
             session('forget'.$mobile);
+			$_SESSION['forget'.$mobile] = $code;
             $tim = 60;
             $time = $tim ."秒";
             $arr = array($code,$time);
@@ -57,6 +58,37 @@ class CodeAction extends Action{
                 echo json_encode($result);
             }
     }
+	
+	//修改密码
+	public function chwd(){
+		//查询用户注册的手机号
+		$uid = $_SESSION['admins']['id'];
+		if(!$uid){
+			$this->ajaxReturn(0);
+		}
+
+		$model = M('user');
+		$phone = $model->where('id=' . $uid)->field('Phone')->find();
+		$phone = $phone['Phone'];
+
+		if(!$phone) {
+			$this->ajaxReturn('用户有误');
+		}
+
+		//生成验证码, 保存到session
+		$code = rand(100000,999999);
+		session('chvcode',$code,60);
+		session('chvcode');
+
+		//发送验证码
+		$tim = 60 . '秒';
+		$arr = array($code,$tim);
+		$temp = '148264';
+		$this->sendTemplateSMS($phone,$arr,$temp);
+
+		$this->ajaxReturn('短信发送成功');
+    }
+
 //    public function fpwd(){
 //        $mobile=$_POST['Phone'];
 //        $user = M("user");

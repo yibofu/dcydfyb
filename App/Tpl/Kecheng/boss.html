@@ -25,8 +25,8 @@
 			<div class="consult_banner">
 				<img src="/Public/app/img/introduce/introduce_banner.png" />
 				<div style="height: 0px;">
-					<div class="apply"><img src="/Public/app/img/introduce/apply.png"/><a href="{:U('Kecheng/signUp')}">预约报名</a></div>
-					<div class="audition"><img src="/Public/app/img/introduce/audition.png"/><a href="#consult">免费试听</a></div>
+					<div class="apply"><img src="/Public/app/img/introduce/apply.png"/><input type="button" value="预约报名" /></div>
+					<div class="audition"><img src="/Public/app/img/introduce/audition.png"/><input type="button" value="免费试听" /></div>
 				</div>
 				<div style="clear: both;"></div>
 			</div>	
@@ -117,8 +117,8 @@
 							<div class="outline_div">
 								<p class="outline_title">课程大纲</p>
 								<div class="out_titleBtn">
-									<div class="outline_listen"><img src="/Public/app/img/introduce/outline_listen.png"/><a href="#consult">免费试听申请</a></div>
-									<div class="outline_get"><img src="/Public/app/img/introduce/outline_get.png"/><a href="#consult">索取课程大纲</a></div>
+									<div class="outline_listen"><img src="/Public/app/img/introduce/outline_listen.png"/><p>免费试听申请</p></div>
+									<div class="outline_get"><img src="/Public/app/img/introduce/outline_get.png"/><p>索取课程大纲</p></div>
 								</div>
 							</div>
 							<!--内容-->
@@ -241,23 +241,24 @@
 					<!--留言部分   课程咨询-->
 					<div class="leaveword">
 						<div class="leaveword_btn">
-							<button>课程咨询</button>/
-							<button>课程试听</button>/
-							<button>索取大纲</button>
+							<button name="wants" attr="1">课程咨询</button>/
+							<button name="wants"  attr="2">课程试听</button>/
+							<button name="wants"  attr="3">索取大纲</button>
 							<p>400-810-9017</p>
 						</div>
 						<div class="leaveword_message">
+							<form name="zixun">
 							<div class="message_information">
-								<p><span>*</span>称呼：<input type="text" required="required" value=""></p>
-								<p><span>*</span>职位：<input type="text" required="required"	value=""></p>
-								<p><span>*</span>手机：<input type="text" required="required"	value=""></p>
-								<p><span>*</span>公司：<input type="text" required="required"	value=""></p>
+								<p><span>*</span>称呼：<input name="uname" type="text" required="required" value=""></p>
+								<p><span>*</span>职位：<input name="position" type="text" required="required"	value=""></p>
+								<p><span>*</span>手机：<input name="phone" type="text" required="required"	value=""></p>
+								<p><span>*</span>公司：<input name="company" type="text" required="required"	value=""></p>
 							</div>
 							<!--课程咨询-->
 							<div class="meassage_consult_text part_num">
 								<p class="num_title">您要咨询的内容是：</p>
-								<textarea></textarea>
-								<button class="first_btn">提交</button>
+								<textarea name="content"></textarea>
+								<button type="button" name="sub" class="second_btn">提交</button>
 							</div>
 							<!--课程试听-->
 							<div class="meassage_listen_text part_num">
@@ -266,15 +267,16 @@
 									电话形式与您确认试听需求，并确保您的资料
 									不被泄露。
 								</p>
-								<button class="second_btn">提交</button>
+								<button type="button" name="sub" class="second_btn">提交</button>
 							</div>
 							<div class="meassage_outline_text part_num">
 								<p class="num_title">试听注意事项:</p>
 								<p class="thrid_text">为保护安越课程知识版权，我们将尽快核实您的信息，并发送该课程相关资料。</p>
 								<p class="thrid_text">您也可致电010-59458017，向课程顾问索取课程大纲，或咨询各类课程相关的问题。</p>
-								<button class="thrid_btn">提交</button>
+								<button type="button" name="sub" class="thrid_btn">提交</button>
 							</div>
-							
+							<input type="hidden" value="1" name="want" />
+							</form>
 						</div>
 					</div>
 				</div>
@@ -330,7 +332,7 @@
 						<img src="/Public/app/img/introduce/class_plan.png" />
 						<volist name="allCourseType" id="courseType">
 						<div>
-							<p>{$courseType.name}<span>点击日期可预约报名</span></p>
+							<p>{$courseType.tname}<span>点击日期可预约报名</span></p>
 							<table>
 								<tr class="first_title_text">
 									<td><a href="#" class="tooltip" title="可点击报名">地点</a></td>
@@ -395,10 +397,13 @@
 				$(".part_num").css("display","none");
 				$(".part_num").eq(0).css("display","");
 				$(".leaveword_btn").find("button").click(function(){
-					$(this).css({"background-color":"#47b8cc","color":"white"}).siblings().css({"background-color":"","color":""});
-//					alert($(this).index());
+					$(this).css({"background-color":"#47b8cc","color":"white"})
+							.siblings().css({"background-color":"","color":""});
+
 					$(".part_num").css("display","none");
 					$(".part_num").eq($(this).index()).css("display","");
+				
+					$('input[name=want]').val($(this).attr('attr'));
 				});
 				//查询的内容(文本框)
 				$(".part_num textarea").click(function(){
@@ -481,6 +486,63 @@
         $("#swphotb .img1").css('display','block');
         $("#swphotc .img1").css('display','block');
     });
-    
+
+	$('button[name=sub]').click(function() {
+		var data = collectForm('zixun');		
+		$.post(
+			"{:U('Kecheng/consult')}",
+			{'data' : data},
+			function(res) {
+				if(res == 0) {
+					location.href = '{:U("Login/loginPage")}';
+					return;
+				} else {
+					alert(res);
+				}
+			}
+
+		);
+			
+	});
+
+		//收集表单数据
+		function collectForm(name) {
+			var data = {};
+			var myform = 'form';
+			if(name) {
+				myform = myform + '[name=' +name+ ']';	
+			}
+
+			var checkbox = $(myform + ' input[type=checkbox]:checked'); 
+			var checkBoxName = checkbox.attr('name');
+			data[checkBoxName] = [];
+			checkbox.each(function() {
+					data[checkBoxName].push($(this).val());
+			});
+
+			var radio = $(myform + ' input[type=radio]:checked'); 
+			radio.each(function() {
+				var radioName = $(this).attr('name');
+				data[radioName] = '';
+			});
+
+			radio.each(function() {
+				var rname = $(this).attr('name');
+				data[rname] = $(this).val();
+			});
+
+			$(myform + ' input,select,textarea').each(
+				function(){
+					if($(this).val() != '') {
+						var tmp = $(this).attr('name');
+						var type = $(this).attr('type');
+						if(type != 'checkbox' && type != 'radio') {
+							data[tmp] =  $(this).val();
+						}
+					}
+			});
+
+			return data;
+		}
 	</script>
 </html>

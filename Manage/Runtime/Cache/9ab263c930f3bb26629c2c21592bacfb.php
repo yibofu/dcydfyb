@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,7 +35,7 @@
 <body>
 	<table id="dg" class="easyui-datagrid" toolbar="#toolbar" style="width:90%px;height:80%px"
 			data-options="
-				url: '{:U('User/messlist',array('is_admin'=>2))}',
+				url: '<?php echo U('User/messlist',array('is_admin'=>2));?>',
 				rownumbers: true,
 				fit:true,
 				fitColumns:true,    //让列自适应表格的宽度。

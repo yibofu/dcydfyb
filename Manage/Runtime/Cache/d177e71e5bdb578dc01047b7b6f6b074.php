@@ -54,20 +54,21 @@
 >
     <thead>
     <tr>
-        <th field="id" align="center" width="5%">id</th>
-        <th field="kid" align="center" width="15%">视频种类id</th>
-        <th field="kname" align="center" width="15%">视频种类名称</th>
-        <th field="zname" align="center" width="15%">视频子类名称</th>
-        <th field="zid" align="center" width="15%">视频子类id</th>
+        <th field="id" align="center" width="10%">id</th>
+        <th field="kid" align="center" width="10%">视频种类id</th>
+        <th field="kname" align="center" width="10%">视频种类名称</th>
+        <th field="zname" align="center" width="10%">视频子类名称</th>
+        <th field="zid" align="center" width="10%">视频子类id</th>
         <th field="name" align="center" width="10%">老师名字</th>
         <th field="url" align="center" width="10%" >视频连接</th>
         <th field="title" align="center" width="10%" >章节标题</th>
         <th field="money" align="center" width="10%" >课程价格</th>
-        <th field="introduce" align="center" width="15%" >章节介绍</th>
+        <th field="introduce" align="center" width="10%" >章节介绍</th>
         <th field="chapternum" align="center" width="10%" >章节数</th>
         <th field="kctitle" align="center" width="10%" >课程标题</th>
-        <th field="img" align="center" width="15%" formatter="imgFormatter">老师图片</th>
-        <th field="f" align="center" width="10%" formatter="show_manger">操作</th>
+        <th field="img" align="center" width="15%" formatter="imgFormatter">课程图片</th>
+        <th field="isrecommend" align="center" width="10%" formatter="show_status">是否设置为推荐课程</th>
+        <th field="f" align="center" width="30%" formatter="show_manger">操作</th>
     </tr>
     </thead>
 </table>
@@ -155,6 +156,17 @@
 
     }
 
+
+
+    function show_status(val,row){
+        if(val == 0){
+            val = "<span style='color: red;'>未推荐</span>";
+        }else if(val == 1){
+            val = "<span style='color: green'>已推荐</span>";
+        }
+        return val;
+    }
+
     //搜索
     function doSearch(){
         $('#dg').datagrid('load',{
@@ -164,7 +176,47 @@
 
     //管理回调
     function show_manger(val,row){
-        return"<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >完善消息</a>"
+        return"<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >完善消息</a>&nbsp;/&nbsp;" +
+                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='shows("+row.id+")'>确认推荐</a>&nbsp;/&nbsp;"+
+                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='deshow("+row.id+")'>取消推荐</a>";
+    }
+
+    function shows(id){
+        $.ajax({
+            type:"post",
+            url:"__APP__/Up/shows",
+            data:{id:id},
+            success:function(data){
+                row = eval('('+data+')');
+                if(row){
+                    $('#dg').datagrid('reload',row);
+                }else{
+                    $.messager.show({
+                        title:'出错了！',
+                        msg:'请选择一条'
+                    })
+                }
+            }
+        })
+    }
+
+    function deshow(id){
+        $.ajax({
+            type:"post",
+            url:"__APP__/Up/deshow",
+            data:{id:id},
+            success:function(data){
+                row = eval('('+data+')');
+                if(row){
+                    $('#dg').datagrid('reload',row);
+                }else{
+                    $.messager.show({
+                        title:'出错了！',
+                        msg:'请选择一条'
+                    })
+                }
+            }
+        })
     }
     //修改提交
     function saveup(){

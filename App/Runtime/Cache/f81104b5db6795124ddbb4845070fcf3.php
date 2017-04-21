@@ -73,22 +73,22 @@
 						<i class="iconfont icon-huodongyujingqujiudianxiangqingyeicon09"></i>
 						<p>返回首页</p>
 					</div></a>
-					<div class="icon_num">
+					<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><div class="icon_num">
 						<i class="iconfont icon-huizhen"></i>
 						<p>远程问诊</p>
-					</div>
-					<div class="icon_num">
+					</div></a>
+					<a href="<?php echo U('Index/kce');?>"><div class="icon_num">
 						<i class="iconfont icon-x-mpg"></i>
 						<p>视频课程</p>
-					</div>
-					<div class="icon_num">
+					</div></a>
+					<a href="<?php echo U('Teacher/teacherList');?>"><div class="icon_num">
 						<i class="iconfont icon-27"></i>
 						<p>专家团队</p>
-					</div>
-					<div class="icon_num">
+					</div></a>
+					<a href="<?php echo U('Vip/openVip');?>"><div class="icon_num">
 						<i class="iconfont icon-huiyuanzhuanxiang"></i>
 						<p>会员专享</p>
-					</div>
+					</div></a>
 					
 				</div>
 			</div>

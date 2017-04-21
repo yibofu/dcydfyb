@@ -71,6 +71,27 @@
 				width: 70%;
 				margin:0 auto ;
 			}
+			.img_num1{
+				float: left;
+				z-index:-9999;
+			}
+			.video_show_part i{
+				float: left;
+				opacity:0;
+				margin-top: -80px;
+				height: 50px;
+				width: 50px;
+				margin-left: 50px;
+				bottom: auto;
+				background: url(/Public/app/img/play.png) center center no-repeat scroll;
+				background-size: 50px 50px;
+				z-index: 9999;
+				-webkit-transition: opacity .4s ease-in;
+				-moz-transition: opacity .4s ease-in;
+				-ms-transition: opacity .4s ease-in;
+				transition: opacity .4s ease-in;
+			}
+
 		</style>
 	</head>
 	<body style="background: white;">
@@ -91,7 +112,7 @@
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<?php if($_SESSION['admins']['id'] == '' && $_SESSION['rigister']['id'] == ''): ?><ul>
+				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
@@ -335,9 +356,10 @@
 						<!--块级-->
 							<?php if(is_array($recommendList)): $i = 0; $__LIST__ = $recommendList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="video_show_part">
 									<img class="img_num1"  src="<?php echo ($vo["img"]); ?>" />
+									<i></i>
 									<div class="first_model">
 										<p><span>视频</span></p>
-										<span><?php echo ($vo["title"]); ?></span>
+										<span style="margin-top:5px;"><?php echo ($vo["title"]); ?></span>
 									</div>
 									<div class="second_model">
 										<img src="/Public/app/img/Video_diagnostic/person.png" />
@@ -461,16 +483,6 @@
 	</body>
 	<script src="/Public/app/js/jquery.min.js"></script>
 	<script>
-		// 弹窗
-//		$(".confirm_button button").click(function(){
-//			$(".confirmText").css({"display":"block"});
-//			$(this).parents(".part_number").css("display","none");
-//             var Num=$(this).parents(".part_number").index();
-//            $(".TAB_num").eq(Num).mouseover(function(){
-//                $(".confirmText").css({"display":"block"});
-//                $(".part_number").eq(Num).css("display","none");
-//            });
-//		});
 
 	$(function(){
 		//选项卡
@@ -499,15 +511,25 @@
 			$('button[name=make]').attr('attr', attr);
 		});
 		//视频显示效果
-		$(".video_show_part").mouseover(function(){
-			$(this).find(".img_num1").attr("src","/Public/app/img/Video_diagnostic/Video_play.png");
-			$(this).find(".img_num1").addClass("active");
-			
-		});
-		$(".video_show_part").mouseleave(function(){
-			$(this).find(".img_num1").attr("src","/Public/app/img/Video_diagnostic/video_img.png");
+//		$(".video_show_part").mouseover(function(){
+//			$(this).find(".img_num1").attr("src","/Public/app/img/Video_diagnostic/Video_play.png");
 //			$(this).find(".img_num1").addClass("active");
-			
+//
+//		});
+//		$(".video_show_part").mouseleave(function(){
+//			<!--<volist name="recommendList" id="vo">-->
+//			$(this).find(".img_num1").attr("src","");
+////			$(this).find(".img_num1").addClass("active");
+//
+//		});
+		$(".video_show_part").hover(function () {
+//			$(this).find("i").css("display","block");
+			$(this).find("i").css("opacity",1);
+		});
+		$(".video_show_part").mouseleave(function () {
+//			$(this).find("i").css("display","none");
+//
+			$(this).find("i").css("opacity",0);
 		});
 		//收藏星星
 		$(".star_collect").click(function(){

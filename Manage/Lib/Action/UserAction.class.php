@@ -8,244 +8,93 @@ class UserAction extends CommonAction {
 	public function man(){
 		$this->display();
 	}
-	public function datalist(){
-		$sex = $this->_get('sex');
-		$map['u.sex'] = $sex;
-		$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+
+	public function userlist(){
+		$page = isset($_POST['page'])? intval($_POST['page']) : 1;
 		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		if($_POST['userid']!='') $map['u.userid'] = $_POST['userid'];
-		if($_POST['nickname']!='') $map['u.nickname'] = array('like','%'.$_POST['nickname'].'%');
-		if($_POST['status']!='') $map['u.status'] = $_POST['status'];
-		if(!empty($_POST['cstart'])){
-		    $start = strtotime($_POST['cstart']);
-			$end = empty($_POST['cend'])? $end = $start+86400 : strtotime($_POST['cend']);
-			$map["u.ctime"] = array(array('gt',$start),array('lt',$end));
+
+		if ($_POST['id'] != "") $map['id'] = $_POST['id'];
+		if ($_POST['nickname'] != "") $map['nickname'] = array('like','%'.$_POST['nickname'].'%');
+		if ($_POST['Phone'] != "") $map['Phone'] = array('like','%'.$_POST['Phone'].'%');
+		if ($_POST['is_vip'] != "") $map['is_vip'] = array('eq',$_POST['is_vip']);
+		if(!empty($_POST['regstart'])){
+			$start=$_POST['regstart'];
+			$map['ctime']=array('egt',strtotime($start));
 		}
-		if(!empty($_POST['lstart'])){
-		    $start = strtotime($_POST['lstart']);
-			$end = empty($_POST['lend'])? $end = $start+86400 : strtotime($_POST['lend']);
-			$map["u.ltime"] = array(array('gt',$start),array('lt',$end));
+		if(!empty($_POST['regend'])){
+			$end=$_POST['regend'];
+			$map['ctime']=array('elt',strtotime($end));
 		}
-		$user = M('user');
-		$list = $user->table("oo_user as u")->join("oo_accout as c on u.id=c.uid")->field('u.id,u.userid,u.nickname,u.status,u.ctime,u.ltime,c.balance,c.extract,c.receiving,c.send')->where($map)->page($page.','.$rows)->select();
-		$total = $user->table("oo_user as u")->join("oo_accout as c on u.id=c.uid")->where($map)->count();
-		foreach($list as &$val){
-			$val['ctime'] = date('Y-m-d H:i:s',$val['ctime']);
-			$val['ltime'] = date('Y-m-d H:i:s',$val['ltime']);
+		if ($_POST['regstart'] && $_POST['regend']) {
+			$map['ctime'] = array('between',array(strtotime($start),strtotime($end)));
 		}
-		if(empty($list)){
-			$list = array();
-		}
-		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
-		);
-		if(!empty($result)){
-			echo json_encode($result);
-		}
-	}
-	//展示修改项
-	public function show_edit(){
-		$id = $this->_post("id");
 		$user = M("user");
-		$result = $user->field("id,userid,username,nickname,pw,status")->where('id='.$id)->find();
-		echo json_encode($result);
-	}
-	//提交修改项
-	public function save_edit(){
-		$_POST['password']=substr(md5($_POST['pw'].'oxox'),8,20);
-		$user = M('user');
-		$user->create();
-		$res = $user->save();
-		if($res !== false){
-				$result = array(
-					'success'=>true,
-					'msg'=>'修改成功!',
-				);   
-		}else{
-				$result = array(
-					'success'=>false,
-					'msg'=>$user->getError()
-				);   
-		}
-		echo json_encode($result);
-	}
-	//展示个人信息项
-	public function show_detail(){
-		$id = $this->_post("id");
-		$detail = M("user_detail");
-		$result = $detail->field("uid,nickname,city,show,school,job,constellation,bank,bank_no,bank_name")->where('uid='.$id)->find();
-		echo json_encode($result);
-	}
-	//提交个人信息项
-	public function save_detail(){
-		$data = $_POST;
-		$uid = $data['uid'];
-		unset($data['uid']);
-		$detail = M('user_detail');
-		$detail->create($data);
-		$res = $detail->where('uid='.$uid)->save();
-		if($res !== false){
-				$result = array(
-					'success'=>true,
-					'msg'=>'修改成功!',
-				);   
-		}else{
-				$result = array(
-					'success'=>false,
-					'msg'=>$detail->getError()
-				);   
-		}
-		echo json_encode($result);
-	}
-	//展示收礼记录
-	public function receive(){
-		$page = isset($_POST['page'])? intval($_POST['page']) : 1;	
-		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		$id = $this->_get("uid");
-		$consume = M("consume");
-		$map['receive_id'] = $id;
-		$map['status'] = 1;
-		$list = $consume->field("receive_id,receive_name,ctime,money,uid,nickname")->where($map)->page($page.','.$rows)->select();
-		$total = $consume->where($map)->count();
+		$list = $user->field("id,nickname,Phone,ctime,is_vip")->where($map)->page($page.','.$rows)->select();
+		$total = $user->where($map)->count();
 		foreach($list as &$val){
-			$val['ctime'] = date('Y-m-d H:i:s',$val['ctime']);
-		}
-		if(empty($list)){
-			$list = array();
+			$val['ctime'] = date('Y-m-d H:i:m',$val['ctime']);
 		}
 		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
+			'total' => $total,
+			'rows' =>$list,
 		);
 		if(!empty($result)){
 			echo json_encode($result);
 		}
+
 	}
-	//展示提现记录
-	public function record(){
-		$page = isset($_POST['page'])? intval($_POST['page']) : 1;	
+
+	public function billlist(){
+		$page = isset($_POST['page'])? intval($_POST['page']) : 1;
 		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		$id = $this->_get("uid");
-		$record = M("record");
-		$map['uid'] = $id;
-		$list = $record->field("uid,name,surplus,ctime,extract,bank,bank_no,bank_name,status")->where($map)->page($page.','.$rows)->select();
-		$total = $record->where($map)->count();
-		foreach($list as &$val){
-			$val['ctime'] = date('Y-m-d H:i:s',$val['ctime']);
-			if($val['status'] == 1){
-				$val['status'] = '<font color="green">已处理</font>';
-			}else{
-				$val['status'] = '<font color="red">未处理</font>';
-			}
+		if ($_POST['id'] != "") $map['id'] = $_POST['id'];
+		if ($_POST['nickname'] != "") $map['nickname'] = array('like','%'.$_POST['nickname'].'%');
+		if ($_POST['Phone'] != "") $map['Phone'] = array('like','%'.$_POST['Phone'].'%');
+		if ($_POST['is_open'] != "") $map['is_open'] = array('eq',$_POST['is_open']);
+		if(!empty($_POST['regstart'])){
+			$start=$_POST['regstart'];
+			$map['addtime']=array('egt',strtotime($start));
 		}
-		if(empty($list)){
-			$list = array();
+		if(!empty($_POST['regend'])){
+			$end=$_POST['regend'];
+			$map['addtime']=array('elt',strtotime($end));
+		}
+		if ($_POST['regstart'] && $_POST['regend']) {
+			$map['addtime'] = array('between',array(strtotime($start),strtotime($end)));
+		}
+		$billcompany = M('billcompany');
+		$list = $billcompany->table("dcyd_billcompany as u")->join("dcyd_user as c on c.id = u.uid")
+			->field('u.id,u.company,u.addtime,u.is_open,c.Phone,c.nickname')->where($map)->page($page.','.$rows)->select();
+		$total = $billcompany->table("dcyd_billcompany as u")->join("dcyd_user as c on c.id = u.uid")
+			->where($map)->count();
+		foreach ($list as &$val){
+			$val['addtime'] = date('Y-m-d H:i:s',$val['addtime']);
 		}
 		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
+			'total' => $total,
+			'rows' =>$list,
 		);
 		if(!empty($result)){
 			echo json_encode($result);
 		}
+
 	}
-	//送礼记录展示
-	public function give(){
-		$page = isset($_POST['page'])? intval($_POST['page']) : 1;	
-		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		$id = $this->_get("uid");
-		$consume = M("consume");
-		$map['uid'] = $id;
-		$map['status'] = 1;
-		$list = $consume->field("receive_id,receive_name,ctime,money,uid,nickname,gift_name,bank,bank_no,bank_name")->where($map)->page($page.','.$rows)->select();
-		$total = $consume->where($map)->count();
-		foreach($list as &$val){
-			$val['ctime'] = date('Y-m-d H:i:s',$val['ctime']);
-		}
-		if(empty($list)){
-			$list = array();
-		}
-		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
-		);
-		if(!empty($result)){
-			echo json_encode($result);
-		}
-	}
-	//收藏记录展示
-	public function collect(){
-		$page = isset($_POST['page'])? intval($_POST['page']) : 1;	
-		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		$id = $this->_get("uid");
-		$collect = M("collect");
-		$list = $collect->field("uid,name,collect_id,collect_name,collect_time")->where('uid='.$id)->select();
-		$total = $collect->where('uid='.$id)->count();
-		foreach($list as &$val){
-			$val['collect_time'] = date('Y-m-d H:i:s',$val['collect_time']);
-		}
-		if(empty($list)){
-			$list = array();
-		}
-		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
-		);
-		if(!empty($result)){
-			echo json_encode($result);
-		}
-	}
-	//消息管理
-	public function mesage(){
-		$this->display();
-	}
-	public function messlist(){
-		$is_admin = $this->_get('is_admin');
-		$map['is_admin'] = $is_admin;
-		$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
-		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
-		if($_POST['accept_id']!='') $map['accept_id'] = $_POST['accept_id'];
-		if($_POST['content']!='') $map['content'] = array('like','%'.$_POST['content'].'%');
-		if($_POST['send_id']!='') $map['send_id'] = $_POST['send_id'];
-		if(!empty($_POST['start'])){
-		    $start = strtotime($_POST['start']);
-			$end = empty($_POST['end'])? $end = $start+86400 : strtotime($_POST['end']);
-			$map["send_time"] = array(array('gt',$start),array('lt',$end));
-		}
-		$message = M('message');
-		$list = $message->field("id,send_id,accept_id,send_time,content")->where($map)->page($page.','.$rows)->select();
-		$total = $message->where($map)->count();
-		foreach($list as &$val){
-			$val['send_time'] = date('Y-m-d H:i:s',$val['send_time']);
-		}
-		if(empty($list)){
-			$list = array();
-		}
-		$result = array(
-			'total'=>$total,
-			'rows'=>$list,
-		);
-		if(!empty($result)){
-			echo json_encode($result);
-		}
-	}
-	//删除信息
+
 	public function del_mes(){
-		$id = $this->_post('id');
-		if(!empty($id) && isset($id)){
-			$message = M('message');
-			$res = $message->where('id='.$id)->delete();
-			if($res !== false){
+		$id = $this->_post("id");
+		if(!empty($id)){
+			$billcompany = M('billcompany');
+			$result = $billcompany->where("id = ".$id)->delete();
+			if($result !== false){
 				$result = array(
 					'success'=>true,
-					'msg'=>'修改成功!',
-				);   
+					'msg'=>'删除成功'
+				);
 			}else{
 				$result = array(
 					'success'=>false,
-					'msg'=>$detail->getError()
-				);   
+					'msg'=>$billcompany->getError()
+				);
 			}
 		}else{
 			$result = array(
@@ -255,81 +104,141 @@ class UserAction extends CommonAction {
 		}
 		echo json_encode($result);
 	}
-	//头像管理
-	public function image(){
-		$uid = $_POST['uid'];
-		$nickname = $_POST['nickname'];
-		$status = $_POST['status'];
-		$img_status = $_POST['img_status'];
-		if($uid!='') $map['id'] = $uid;
-		if($nickname!='') $map['nickname'] = array('like','%'.$nickname.'%');
-		if($status!='') $map['status'] = $status;
-		if($img_status!='') $map['img_status'] = $img_status;
-		$user = M("user");
-		import("ORG.Util.Page");
-		$count =$user->where($map)->count();
-		$pagenum=ceil($count/36);
-		$Page = New Page($count,36);
-		$Page->setConfig('prev','上一页');
-		$Page->setConfig('next','下一页');
-		$Page->setConfig('theme','%upPage%  %linkPage%   %downPage% <li><a>共%totalPage%页</a></li>');
-		$rows = $user->field("id,nickname,img_url,img_time,img_status,status")->where($map)->order("img_status DESC,img_time DESC")->limit($Page->firstRow.','.$Page->listRows)->select();
-		foreach($rows as &$val){
-			if(!empty($val['img_time'])){
-				$val['img_time'] = date('Y/m/d H:i:s',$val['img_time']);
-			}else{
-				$val['img_time'] = '';
-			}
-			if($val['img_status'] == 1){
-				$val['img_status'] = '<font color="green">通过审核</font>';
-			}elseif($val['img_status'] == 2){
-				$val['img_status'] = '<font color="red">未通过</font>';
-			}else{
-				$val['img_status'] = '<font color="red">未处理</font>';
-			}
-			if($val['status'] == 2){
-				$val['id'] = '<font color="red">'.$val['id'].'</font>';
-				$val['nickname'] = '<font color="red">'.$val['nickname'].'</font>';
-			}
-		}
-		$show = $Page->show();
-		$this->assign("rows",$rows);
-		$this->assign("page",$show);
-		$this->assign("pagenum",$pagenum);
-		$this->assign('uid',$uid);
-		$this->assign('nickname',$nickname);
-		$this->assign('status',$status);
-		$this->assign('img_status',$img_status);
-		$this->display();
-	}
-	//头像审核通过
-	public function head_check(){
-		$id = $_POST['id'];
-		$id = rtrim($id,',');
-		$map['id'] = array('in',$id);
-		$user = M('user');
-		$data['img_status'] = 1;
-		$data['img_time'] = time();
-		$user->where($map)->save($data);
-		echo "<script>window.location.href='/Manerger/index.php/User/image'</script>";
-	}
-	//头像审核未通过
-	public function head_cancle(){
-		$id = $_POST['id'];
-		$id = rtrim($id,',');
-		$map['id'] = array('in',$id);
-		$user = M('user');
-		$data['img_status'] = 2;
-		$data['img_time'] = time();
-		$user->where($map)->save($data);
-		echo "<script>window.location.href='/Manerger/index.php/User/image'</script>";
-	}
-	//查看大图
-	public function show_big(){
-		$id = $this->_post('id');
-		$user = M('user');
-		$img_url = $user->where('id='.$id)->getField("img_url");
-		$result = array('error'=>true,'img_url'=>$img_url);
+
+	public function queren(){
+		$id = $this->_post("id");
+		$billcompany = M('billcompany');
+		$ret['is_open'] = 2;
+		$result = $billcompany->where("id = ".$id)->save($ret);
 		echo json_encode($result);
 	}
+
+	public function companyedit(){
+		$id = $this->_post("id");
+		$billcompany = M('billcompany');
+		$result = $billcompany->field('id,company')->where("id = ".$id)->find();
+		echo json_encode($result);
+	}
+
+	//修改发票抬头信息
+	public function companysave(){
+		$id = $this->_get("id");
+		$billcompany = M('billcompany');
+		$data = $billcompany->create();
+		$data['company'] = $this->_post('company');
+		$result = $billcompany->where("id = ".$id)->save($data);
+		if($result != null){
+			$result = array(
+				'success'=>true,
+				'msg'=>'修改成功'
+			);
+		}else{
+			$result = array(
+				'success'=>false,
+				'msg'=>'修改失败'
+			);
+		}
+		echo json_encode($result);
+	}
+
+	//用户评论
+	public function commentslist(){
+		$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+		$rows = isset($_POST['rows']) ? intval($_POST['rows']) == 0 ? 20 : intval($_POST['rows']) : 20;
+
+		if ($_POST['nickname'] != "") $map['nickname'] = array('like','%'.$_POST['nickname'].'%');
+		if ($_POST['title'] != "") $map['title'] = array('like','%'.$_POST['title'].'%');
+		if ($_POST['content'] != "") $map['content'] = array('like','%'.$_POST['content'].'%');
+		if ($_POST['status'] != "") $map['status'] = array('like','%'.$_POST['status'].'%');
+		$veva = M("vevaluate");
+		$list = $veva->table("dcyd_vevaluate as a")
+			->join("dcyd_user as b on a.uid=b.id")->join("dcyd_view as c on a.viewid=c.id")
+			->field("a.id,a.uid,a.viewid,a.content,a.addtime,a.status,b.nickname,b.Phone,c.title")
+			->where($map)->page($page.','.$rows)->select();
+		$total = $veva->table("dcyd_vevaluate as a")
+			->field("a.id,a.uid,a.viewid,a.content,a.addtime,b.nickname,b.Phone,c.title")
+			->where($map)->count();
+		foreach($list as &$val){
+			$val['addtime'] = date('Y-m-d H:i:s',$val['addtime']);
+		}
+		$result = array(
+			'total' => $total,
+			'rows' =>$list,
+		);
+		if(!empty($result)){
+			echo json_encode($result);
+		}
+	}
+
+	//是否显示评论
+	public function surecomments(){
+		$id = $this->_post("id");
+		$veva = M("vevaluate");
+		$ret['status'] = '2';
+		$result = $veva->where("id = ".$id)->save($ret);
+		echo json_encode($result);
+	}
+
+	//删除评论
+	public function delcomments(){
+		$id = $this->_post("id");
+		if(!empty($id)){
+			$veva = M("vevaluate");
+			$result = $veva->where("id = ".$id)->delete();
+			if($result !== false){
+				$result = array(
+					'success'=>true,
+					'msg'=>'删除成功'
+				);
+			}else{
+				$result = array(
+					'success'=>false,
+					'msg'=>$veva->getError()
+				);
+			}
+		}else{
+			$result = array(
+				'success'=>false,
+				'msg'=>'id为空'
+			);
+		}
+		echo json_encode($result);
+	}
+
+	public function collectionlist(){
+		$page = isset($_POST['page']) ? intval($_POST['page']) : 1;
+		$rows = isset($_POST['rows']) ? intval($_POST['rows']) == 0 ? 20 : intval($_POST['rows']) : 20;
+
+		if ($_POST['nickname'] != "") $map['nickname'] = array('like','%'.$_POST['nickname'].'%');
+		if ($_POST['title'] != "") $map['title'] = array('like','%'.$_POST['title'].'%');
+		if ($_POST['content'] != "") $map['content'] = array('like','%'.$_POST['content'].'%');
+		$collection = M("collection");
+		$list = $collection->table("dcyd_collection as a")
+			->join("dcyd_user as b on a.uid=b.id")->join("dcyd_view as c on a.courseid=c.id")
+			->field("a.id,a.uid,a.courseid,a.addtime,b.nickname,c.title")
+			->where($map)->page($page.','.$rows)->select();
+		$total = $collection->table("dcyd_collection as a")
+			->field("a.id,a.uid,a.courseid,c.content,a.addtime,b.nickname,c.title")
+			->where($map)->count();
+		foreach($list as &$val){
+			$val['addtime'] = date('Y-m-d H:i:s',$val['addtime']);
+		}
+		$result = array(
+			'total' => $total,
+			'rows' =>$list,
+		);
+		if(!empty($result)){
+			echo json_encode($result);
+		}
+	}
+
+
+//	//展示个人信息项
+//	public function show_detail(){
+//		$id = $this->_post("id");
+//		$detail = M("user_detail");
+//		$result = $detail->field("uid,nickname,city,show,school,job,constellation,bank,bank_no,bank_name")->where('uid='.$id)->find();
+//		echo json_encode($result);
+//	}
+	
 }

@@ -220,7 +220,7 @@
 				                	<div style="clear: both;"></div>
 
 				                 </div>
-								<div class="confirmText">
+								<div class="confirmText" style="display:none;">
 									<img src="/Public/app/img/crossTeacher.png">
 									<div class="confirmTextMain">
 										<div class="confirmTextImg">
@@ -454,15 +454,7 @@
 	</script>
 	
 	<script>
-		$(".newAdd").css("display","block");
-		$(".meet_btn").on("click",function(){
-			$(".newAdd").css("display","none");
-			$(".confirmText").css({"display":"block"});
-		});
-		$(".confirmText>img").click(function(){
-			$(".newAdd").css("display","block");
-			$(".confirmText").css({"display":"none"});
-		})
+
 //		分页
 		$(function(){
 	    	var i=0;
@@ -544,13 +536,24 @@
 			{'tid':tid},
 			function(res) {
 				if(res == 0) {
+					$('.confirmText').css("display","none");
 					location.href = '<?php echo U("Login/loginPage");?>';
-				}	
+				}else{
+					$(".newAdd").css("display","block");
+
+						$(".newAdd").css("display","none");
+						$(".confirmText").css({"display":"block"});
+
+				}
 			
 //				alert(res);
 			}
 		); 
 	});
+		$('.confirmText>img').bind('click',function(){
+			$(".confirmText").css("display","none");
+			$(".newAdd").css("display","block");
+		})
 	
     
 	</script>

@@ -24,7 +24,6 @@
 			$res = $vip->field('id,price,znum,snum')->find();
 			$this->assign("res",$res);
 			$this->display();
-			$this->display();
 		}
 		//初始化
 		public function _initialize()

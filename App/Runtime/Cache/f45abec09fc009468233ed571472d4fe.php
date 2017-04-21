@@ -63,7 +63,7 @@
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<?php if($_SESSION['admins']['id'] == '' && $_SESSION['rigister']['id'] == ''): ?><ul>
+				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>

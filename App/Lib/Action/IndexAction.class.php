@@ -56,6 +56,7 @@
 		public function loginout(){
 			if(isset($_SESSION['admins']['id'])){
 				unset($_SESSION['admins']);
+				unset($_SESSION['register']);
 				session_destroy();
 				setcookie('PHPSESSID','',-3600,' /');
 				$this->redirect('/Index/index');
@@ -138,13 +139,7 @@
 			$arr1 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
 				->where("kname = '{$name}' and chapternum = 1 ")
 				->select();
-//			var_dump($arr1);die;
-//			echo $view->getLastsql();die;
 			$this->assign("arr1",$arr1);
-//			$arr11 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
-//				->where("kname = '{$name}' and chapternum = 1 ")
-//				->select();
-//			$this->assign("arr11",$arr11);
 			$this->display();
 		}
 
@@ -371,9 +366,7 @@
 					'error' => true,
 					'msg' => '注册成功,您可以去个人中心完善个人信息'
 				);
-				$rows = $user->field("id")->where("Phone=".$data["Phone"])->find();
-				$id = $rows["id"];
-				$_SESSION['rigister']['id'] = $rows['id'];
+
 			}else{
 				$result = array(
 					'error' => false,

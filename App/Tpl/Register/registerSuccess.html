@@ -5,8 +5,8 @@
 		<title>欢迎登录</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/registerSuccess.css" />
-		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<link rel="stylesheet" href="/Public/app/css/registerSuccess.css" />
+		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 	</head>
 	<body>
 		<!--导航条-->
@@ -15,7 +15,7 @@
 		<div class="welcomeBannerAll">
 			<!--始终在中间的部分-->
 			<div class="welcomeBanner">
-				<img src="img/welcomeLogo.png" width="160px" height="60px"/>
+				<a href="{:U('Index/index')}"><img src="/Public/app/img/welcomeLogo.png" width="160px" height="60px"/></a>
 				<p class="welcomeText">欢迎登录</p>
 			</div>
 		</div>
@@ -24,19 +24,19 @@
 			<!--始终在中间的内容-->
 			<div class="welcomeMain">
 				<div class="FinanceConsultantImg">
-					<img src="img/welcomeFinanceConsultant.png">
+					<img src="/Public/app/img/welcomeFinanceConsultant.png">
 				</div>
 				
 				<div class="loginPageAll">
 					<div class="postPersonImg">
-						<img src="img/submitSuccess.png" />
+						<img src="/Public/app/img/submitSuccess.png" />
 					</div>
 					<div class="registerSuccess">
 						<p>恭喜您</p>
 						<p>注册成功了</p>
 					</div>
 					<div class="skip">
-						<a href="#">返回首页</a><span>|</span><a href="#">进入个人中心</a>
+						<a href="{:U('Index/index')}">返回首页</a><span>|</span><a href="{:U('MyCenter/index')}">进入个人中心</a>
 					</div>
 					
 				</div>

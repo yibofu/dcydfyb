@@ -1,7 +1,7 @@
 <?php
 class KechengAction extends Action{
     public function boss(){
-		$courseTypeId = $this->_get('ctid');
+		$courseTypeId = intval($this->_get('ctid'));
 
 		//查询课程信息
 		$model = M('openCourseType');
@@ -16,7 +16,7 @@ class KechengAction extends Action{
 					->order('startday asc')
 					->limit('0,4')
 					->select();
-//		echo $model->getLastsql();die;
+
 		foreach($nowCourse as $key => $course) {
 			$startDay = date('Y m d', $course['startday']);
 			$startDayArr = explode(' ', $startDay);
@@ -64,7 +64,7 @@ class KechengAction extends Action{
 			$allCourseType[$k]['courses'] = $courses;
 		}
 
-
+		$courseInfo['cid'] = $courseTypeId;
 		$this->assign('courseInfo', $courseInfo);
 		$this->assign('nowCourse', $nowCourse);
 		$this->assign('allCourseType', $allCourseType);
@@ -176,7 +176,7 @@ public function signUp() {
 		$rules = array(
 			array('courseid', 'number', '本课程不存在', 1),		
 			array('username', 'require', '请填写参课人员名称', 1),		
-			array('upostion', 'require', '请填写参课人员职位', 1),
+			array('upostion', 'require', '请填写参课人员职位', 1),		
 			array('uapart', 'require', '请填写参课人员部门', 1),		
 			array('uemail', 'email', '请填写正确的邮箱', 1),		
 			array('ucompany', 'require', '请填写公司名称', 1),		
@@ -201,5 +201,69 @@ public function signUp() {
 			$this->ajaxReturn($model->getError());
 		}
 
+	}
+
+	//提交咨询信息
+	public function consult() {
+		if(!$this->isAjax()) {
+			exit('非法请求');
+		}
+
+		$uid = intval($_SESSION['admins']['id']);
+		if(!$uid) {
+			$this->ajaxReturn(0);
+		}
+
+		$post = $this->_post();
+		$post = $post['data'];
+
+
+		//判断用户是否存在
+		$userModel = M('user');
+		$userFind = $userModel->field('id')->where('id=' . $uid)->find();
+		if(!$userFind['id']) {
+			$this->ajaxReturn(0);
+		}
+		
+
+		$model = M('consult');
+
+		//查看用户是否已经提交过咨询
+		$find = $model->field('id')
+					->where('uid=' .$uid. ' and type="' .$post['want']. '" and ishandled="0"')
+					->find();
+
+		if($find['id']) {
+			$this->ajaxReturn('您已提交过该请求，请耐心等待客服与您联系');
+		}
+
+		$data['uid'] = intval($uid);
+		$data['uname'] = $post['uname'];
+		$data['uposition'] = $post['position'];
+		$data['uphone'] = $post['phone'];
+		$data['ucompany'] = $post['company'];
+		$data['ucontent'] = $post['content'];
+		$data['type'] = $post['want'];
+		$data['addtime'] = time();
+
+		$rules = array(
+			array('uname', 'require', '请填写姓名', 1),
+			array('uposition', 'require', '请填写职位', 1),
+			array('uphone', '/\d{11}/', '手机有误', 1),
+			array('ucompany', 'require', '请填写公司', 1),
+			array('type', array('1','2','3'), '类别有误', 1, 'in')
+		);
+
+		$res = $model->validate($rules)->create($data);
+
+		if(!$res) {
+			$this->ajaxReturn($model->getError());
+		}
+
+		if($model->add($data)) {
+			$this->ajaxReturn('提交成功，请耐心等待客服人员与您联系');
+		} else {
+			$this->ajaxReturn('提交失败，请稍后提交');
+		}
 	}
 }

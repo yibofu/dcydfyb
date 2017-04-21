@@ -350,7 +350,7 @@ class UpAction extends Action{
         if ($_POST['ytime'] != "") $map['ytime'] = array('like','%'.$_POST['ytime'].'%');
 
         $view = M("view");
-        $list = $view->field("id,kid,zid,kname,zname,name,url,title,money,introduce,chapternum,kctitle,img")->where($map)->page($page.','.$rows)->select();
+        $list = $view->field("id,kid,zid,kname,zname,name,url,title,money,introduce,chapternum,kctitle,img,isrecommend")->where($map)->page($page.','.$rows)->select();
         $total = $view->where($map)->count();
 
         $result = array(
@@ -360,6 +360,22 @@ class UpAction extends Action{
         if(!empty($result)){
             echo json_encode($result);
         }
+    }
+
+    public function shows(){
+        $id = $this->_post("id");
+        $view = M("view");
+        $ret['isrecommend'] = '1';
+        $result = $view->where("id=".$id)->save($ret);
+        echo json_encode($result);
+    }
+
+    public function deshow(){
+        $id = $this->_post("id");
+        $view = M("view");
+        $ret['isrecommend'] = '0';
+        $result = $view->where("id=".$id)->save($ret);
+        echo json_encode($result);
     }
 
     public function vedeedit(){
