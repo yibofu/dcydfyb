@@ -57,13 +57,16 @@
 				
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>
-			$(function(){
-				$(".bac-e a").eq(8).css("color","#55BDCF");
-			});
-		</script>
+		$(function(){
+			$(".bac-e a").eq(8).css("color","#55BDCF");
+		});
+		//分页样式
+		var page = {$nowPage}; 
+		$('.page').children('li').eq(page-1).css({'background':'#55bdcf'}).find('a').css('color','#FFFFFF');
+	</script>
 </html>
 

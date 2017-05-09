@@ -22,22 +22,20 @@
 					<p class="person_title"><span>我的消息</span></p>
 					<div class="messageBtn">
 						<div class="message">
-							<div class="businessAddress"><p>消息</p><img src="/Public/app/img/gou.png"/></div>
-						</div>	
+                                <div class="delete">
+                                    <div class="deleteAddress" style="background:#55bdcf;"><p style="color: #ffffff;">删除消息</p></div>
+                                </div>
+                                <div class="read">
+                                    <div class="readAddress" style="background:#55bdcf;"><p style="color: #ffffff;">标为已读</p></div>
+                                </div>
+                                <p class="checkAll"><input type="checkbox" id="check" onclick="ck()"/><label for="check">全选</label></p>
+						</div>
 						<!--<div class="notice">
 							<div class="instationAddress"><p>站内公告</p><img src="img/delivery-address/gou.png"/></div>
 						</div>-->
 					</div>
 					<div class="messageMain">
-						<div class="messageMainBtn">
-							<div class="delete">
-								<div class="deleteAddress"><p>删除消息</p></div>
-							</div>	
-							<div class="read">
-								<div class="readAddress"><p>标为已读</p></div>
-							</div>	
-							<p class="checkAll"><input type="checkbox" id="check" onclick="ck()"/><label for="check">全选</label></p>
-						</div>
+
 						<div class="messageMainText">
 							<volist name="data" id="message" empty="$empty">
 							<p>
@@ -65,7 +63,7 @@
 				
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>
@@ -87,16 +85,15 @@
 					});
 					*/
 					//删除和标为已读切换
-					$(".deleteAddress").css("border","3px #55bdcf solid");
-					$(".readAddress").css("border","3px #cccccc solid");
-					$(".deleteAddress").mouseover(function(){
-						$(this).css("border","3px #55bdcf solid");
-						$(".readAddress").css("border","3px #cccccc solid");
-					});
-					$(".readAddress").mouseover(function(){
-						$(this).css("border","3px #55bdcf solid");
-						$(".deleteAddress").css("border","3px #cccccc solid");
-					});
+//					$(".deleteAddress").css("border","3px #55bdcf solid");
+//					$(".deleteAddress").mouseover(function(){
+//						$(this).css("border","3px #55bdcf solid");
+//						$(".readAddress").css("border","3px #cccccc solid");
+//					});
+//					$(".readAddress").mouseover(function(){
+//						$(this).css("border","3px #55bdcf solid");
+//						$(".deleteAddress").css("border","3px #cccccc solid");
+//					});
 					//删除消息
 					$(".deleteAddress").click(function(){
 						/*
@@ -176,5 +173,8 @@
 			
 			}
 
+		//分页样式
+		var page = {$nowPage}; 
+		$('.page').children('li').eq(page-1).css({'background':'#55bdcf'}).find('a').css('color','#FFFFFF');
 	</script>
 </html>

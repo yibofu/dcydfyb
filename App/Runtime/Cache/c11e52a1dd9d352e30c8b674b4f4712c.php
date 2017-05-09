@@ -45,11 +45,13 @@
 		<li class="i bac-e color-v" name="basif"><a href="<?php echo U('MyCart/index');?>">线上课程</a></li>
 		<li class="i bac-e color-v" name="basio"><a href="<?php echo U('MyOpenCourse/index');?>">线下课程</a></li>
 		<li class="i bac-e color-v" name="basip"><a href="<?php echo U('MyCollect/index');?>">收藏课程</a></li>
+		<!--
 		 <li class="bac-a color-d">帮助中心</li>
 		<li class="i bac-e color-v" name="basif"><a href="<?php echo U('HelpCenter/payProblem');?>">支付问题</a></li>
 		<li class="i bac-e color-v" name="basio"><a href="<?php echo U('HelpCenter/billProblem');?>">发票问题</a></li>
 		<li class="i bac-e color-v" name="basip"><a href="<?php echo U('HelpCenter/accountProblem');?>">账户问题</a></li>
 		<li class="i bac-e color-v" name="basip"><a href="<?php echo U('HelpCenter/makeselfProblem');?>">定制服务</a></li>
+		-->
 	</ul>
 </div>
 
@@ -59,22 +61,20 @@
 					<p class="person_title"><span>我的消息</span></p>
 					<div class="messageBtn">
 						<div class="message">
-							<div class="businessAddress"><p>消息</p><img src="/Public/app/img/gou.png"/></div>
-						</div>	
+                                <div class="delete">
+                                    <div class="deleteAddress" style="background:#55bdcf;"><p style="color: #ffffff;">删除消息</p></div>
+                                </div>
+                                <div class="read">
+                                    <div class="readAddress" style="background:#55bdcf;"><p style="color: #ffffff;">标为已读</p></div>
+                                </div>
+                                <p class="checkAll"><input type="checkbox" id="check" onclick="ck()"/><label for="check">全选</label></p>
+						</div>
 						<!--<div class="notice">
 							<div class="instationAddress"><p>站内公告</p><img src="img/delivery-address/gou.png"/></div>
 						</div>-->
 					</div>
 					<div class="messageMain">
-						<div class="messageMainBtn">
-							<div class="delete">
-								<div class="deleteAddress"><p>删除消息</p></div>
-							</div>	
-							<div class="read">
-								<div class="readAddress"><p>标为已读</p></div>
-							</div>	
-							<p class="checkAll"><input type="checkbox" id="check" onclick="ck()"/><label for="check">全选</label></p>
-						</div>
+
 						<div class="messageMainText">
 							<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$message): $mod = ($i % 2 );++$i;?><p>
 								<input type="checkbox" name="mid" value="<?php echo ($message["id"]); ?>"/>
@@ -98,21 +98,68 @@
 				
 			</div>
 			<!--友情链接-->
-			<div class="friendly_link">
-	<div class="link_title">友情链接</div>
-	<ul>
-		<li><a href="#">天津长财咨询</a></li>
-		<li><a href="#">长财咨询</a></li>
-		<li><a href="#">北京长财咨询</a></li>
-		<li><a href="#">太原长财咨询</a></li>
-		<li><a href="#">广州长财咨询</a></li>
-		<li><a href="#">成都长财咨询</a></li>
-		<li><a href="#">长沙长财咨询</a></li>
-		<li><a href="#">金华长财咨询</a></li>
-		<li><a href="#">四度信息</a></li>
-	</ul>
-</div>
-
+			<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>尾部</title>
+		<link rel="stylesheet" href="/Public/app/css/firendlyLink.css" />
+		<link rel="stylesheet" href="/Public/app/css/footer.css" />
+	</head>
+	<body>
+	<div class="friendly_link">
+			<p class="link_title">友情链接</p>
+			<ul>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
+			</ul>
+		</div>
+		<div class="footerAll">
+			<div class="footerAllCenter"> 
+				<div class="footCenterFirst">
+					<img src="/Public/app/img/logoxia.png" />
+				</div>
+				<div class="footHelpCenter">
+					<h5>帮助中心</h5>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
+				</div>
+				<div class="footerAboutUs">
+					<h5>关于我们</h5>
+					<p><a href="#">了解我们</a></p>
+					<p><a href="#">关注我们</a></p>
+					<p><a href="#">加入我们</a></p>
+				</div>
+				<div class="footerContactUs">
+					<h5>联系我们</h5>
+					<p><a href="#">公司地址：北京市朝阳区旺座大厦东塔</a></p>
+					<p><a href="#">客户服务：18310618231</a></p>
+					<p><a href="#">版权所有：www.bianquecxy.com</a></p>
+				</div>
+				<div class="footerOrder">
+					<div class="footPhoneHot">
+						<h5>订购热线</h5>
+						<p>010-594-58017</p>
+						<p>© 2016 大财有道科技</p>
+						<p>京ICP备16057406号</p>
+					</div>
+					<div class="footCode">
+						<img src="/Public/app/img/er.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
 
 		</div>
 	</body>
@@ -135,16 +182,15 @@
 					});
 					*/
 					//删除和标为已读切换
-					$(".deleteAddress").css("border","3px #55bdcf solid");
-					$(".readAddress").css("border","3px #cccccc solid");
-					$(".deleteAddress").mouseover(function(){
-						$(this).css("border","3px #55bdcf solid");
-						$(".readAddress").css("border","3px #cccccc solid");
-					});
-					$(".readAddress").mouseover(function(){
-						$(this).css("border","3px #55bdcf solid");
-						$(".deleteAddress").css("border","3px #cccccc solid");
-					});
+//					$(".deleteAddress").css("border","3px #55bdcf solid");
+//					$(".deleteAddress").mouseover(function(){
+//						$(this).css("border","3px #55bdcf solid");
+//						$(".readAddress").css("border","3px #cccccc solid");
+//					});
+//					$(".readAddress").mouseover(function(){
+//						$(this).css("border","3px #55bdcf solid");
+//						$(".deleteAddress").css("border","3px #cccccc solid");
+//					});
 					//删除消息
 					$(".deleteAddress").click(function(){
 						/*
@@ -224,5 +270,8 @@
 			
 			}
 
+		//分页样式
+		var page = <?php echo ($nowPage); ?>; 
+		$('.page').children('li').eq(page-1).css({'background':'#55bdcf'}).find('a').css('color','#FFFFFF');
 	</script>
 </html>

@@ -15,10 +15,10 @@ class LoginAction extends Action{
         $pwd = substr($pwd, 5, 30);
         $map['Phone'] = array('eq', $Phone);
         $map['password'] = array('eq', $pwd);
-        $row = $user->field("id,Phone,password")->where($map)->find();
+        $row = $user->field("id,Phone,password,nickname")->where($map)->find();
         $_SESSION['admins']['id'] = $row['id'];
         $_SESSION['admins']['Phone'] = $row['Phone'];
-        $_SESSION['admins']['password'] = $row['pwd'];
+        $_SESSION['admins']['nickname'] = $row['nickname'];
         if ($row) {
             $data['ltimes'] = time();
             $data['IPadd'] = get_client_ip();

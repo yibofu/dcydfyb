@@ -7,10 +7,8 @@
     <title>Boss听</title>
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/easyui.css?v=<?php echo date('Ymjs') ?>">
     <link rel="stylesheet" type="text/css" href="/Public/admin/css/icon.css?v=<?php echo date('Ymjs') ?>">
-    <!--<link rel="stylesheet" type="text/css" href="/Public/admin/css/uploadify.css">-->
-    <script type="text/javascript" src="/Public/admin/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/Public/admin/js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="/Public/admin/js/jquery.easyui.min.js"></script>
-    <!--<script type="text/javascript" src="/Public/admin/js/jquery.uploadify.min.js"></script>-->
 
     <style type="text/css">
         #fm{
@@ -53,11 +51,11 @@
     <tr>
         <th field="id" align="center" width="5%">id</th>
         <th field="title" align="center" width="10%">标题</th>
-        <th field="content" align="center" width="30%" >内容</th>
-        <th field="img" align="center" width="10%" formatter="imgFormatter">图片</th>
-        <th field="url" align="center" width="10%">微信连接</th>
-        <th field="view" align="center" width="15%">视频连接</th>
-        <th field="f" align="center" width="20%" formatter="show_manger">操作</th>
+        <th field="content" align="center" width="20%" >内容</th>
+        <th field="img" align="center" width="20%" formatter="imgFormatter">图片</th>
+        <th field="url" align="center" width="15%">微信连接</th>
+        <th field="view" align="center" width="10%">视频连接</th>
+        <th field="f" align="center" width="10%" formatter="show_manger">操作</th>
     </tr>
     </thead>
 </table>
@@ -127,48 +125,16 @@
             <input name="url"  class="easyui-validatebox" style="width:200px;">
         </div>
         <div class="fitem">
-            <label>图片连接:</label>
+            <label>图片:</label>
             <input type="file" name="img">
         </div>
-        <div class="fitem">
-            <label>视频连接:</label>
-            <input type="file" name="view" id="view">
-        </div>
+        <!--显示:<img src="{$res['img']}" style="height:100px;width: 100px;" alt="">-->
         <div id="dlg-button">
             <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="saveup()">保存修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlgup').dialog('close')">取消</a>
         </div>
     </form>
 </div>
-
-<!--图片-->
-<div id="dlgimg" class="easyui-dialog" title="修改" closed="true" buttons="#dlg-button" style="width:400px;height:320px;">
-    <form id="fmimg" method="post" enctype="multipart/form-data">
-        <div class="fitem">
-            <label>图片:</label>
-            <input type="file" name="img">
-        </div>
-        <div id="dlg-button">
-            <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="saveimg()">保存修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlgimg').dialog('close')">取消</a>
-        </div>
-    </form>
-</div>
-
-<!--视频-->
-<div id="dlgview" class="easyui-dialog" title="修改" closed="true" buttons="#dlg-button" style="width:400px;height:320px;">
-    <form id="fmview" method="post" enctype="multipart/form-data">
-        <div class="fitem">
-            <label>视频:</label>
-            <input type="file" name="view" id="view">
-        </div>
-        <div id="dlg-button">
-            <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="saveview()">保存修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlgview').dialog('close')">取消</a>
-        </div>
-    </form>
-</div>
-
 </body>
 <script type="text/javascript">
     var url;
@@ -188,112 +154,10 @@
 
     //管理回调
     function show_manger(val,row){
+        return "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >修改消息</a>&nbsp;/&nbsp;" +
+                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-cancel' onclick='del("+row.id+")' >删除消息</a>";
 
-        return "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='upimg("+row.id+")' >图片</a>/" +
-                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='upview("+row.id+")' >视频</a>/" +
-                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >修改消息</a>/" +
-                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-cancel' onclick='del("+row.id+")' >删除消息</a>"
     }
-
-//    图片
-    function upimg(id){
-        $.ajax({
-            type:'post',
-            url:"__APP__/Content/upimg",
-            data:{id:id},
-            success:function(data){
-                row = eval('('+data+')');
-                if (row){
-                    $('#fmimg').form('clear');
-                    $('#dlgimg').dialog('open');
-                    url = "{:U('Content/imgsave')}&id="+id;
-                    $('#fmimg').form('load',row);
-                }else{
-                    $.messager.show({
-                        title: '出错啦！！',
-                        msg: '请选择一条'
-                    });
-                }
-            }
-        });
-    }
-//    保存图片
-    function saveimg(){
-        $('#fmimg').form('submit',{
-            url: url,
-            onSubmit: function(){
-                return $(this).form('validate');
-            },
-            success: function(result){
-                var result = eval('('+result+')');
-                if (result.success){
-                    $('#dlgimg').dialog('close');		// close the dialog
-                    $('#dg').datagrid('reload');	// reload the user data
-                    $.messager.show({
-                        title: '消息',
-                        msg: result.msg
-                    });
-                }else{
-                    $.messager.show({
-                        title: '出错啦！！',
-                        msg: result.msg
-                    });
-                }
-            }
-        });
-    }
-
-
-
-
-    //    视频
-    function upview(id){
-        $.ajax({
-            type:'post',
-            url:"__APP__/Content/upview",
-            data:{id:id},
-            success:function(data){
-                row = eval('('+data+')');
-                if (row){
-                    $('#fmview').form('clear');
-                    $('#dlgview').dialog('open');
-                    url = "{:U('Content/viewsave')}&id="+id;
-                    $('#fmview').form('load',row);
-                }else{
-                    $.messager.show({
-                        title: '出错啦！！',
-                        msg: '请选择一条'
-                    });
-                }
-            }
-        });
-    }
-    //    视频
-    function saveview(){
-        $('#fmview').form('submit',{
-            url: url,
-            onSubmit: function(){
-                return $(this).form('validate');
-            },
-            success: function(result){
-                var result = eval('('+result+')');
-                if (result.success){
-                    $('#dlgview').dialog('close');		// close the dialog
-                    $('#dg').datagrid('reload');	// reload the user data
-                    $.messager.show({
-                        title: '消息',
-                        msg: result.msg
-                    });
-                }else{
-                    $.messager.show({
-                        title: '出错啦！！',
-                        msg: result.msg
-                    });
-                }
-            }
-        });
-    }
-
     //展示修改信息
     function add(){
         $('#fm').form('clear');

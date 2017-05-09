@@ -10,7 +10,6 @@ $(function(){
         $(".TAB_title p").eq(Oindex).css({"background":"#47b8cc","color":"white"})
         $(".left_part1").css("display","none");
         $(".left_part1").eq(Oindex).css("display","block");
-        $(".QR_code").css("display","none");
     });
 
     //鼠标移上去二维码出来
@@ -20,15 +19,14 @@ $(function(){
         var indexEp=Oindex-1;
         //alert(indexEp);
         //alert("-1150+Oindex*50+'px'");
-        $(".QR_code").css({"display":"block","position":"relative","top":-930+indexEp*150+'px',"left":"910px"});
-        // $(".QR_code").css({"display":"block","position":"relative","top":"-930px","left":"910px"});
+        $(".QR_code").css({"display":"block","position":"relative","top":-1150+indexEp*168+'px',"left":"1070px"});
 
     });
     $(".crossIcon").click(function(){
         $(this).parent().css("display","none");
     });
 
-    //点赞
+    //提示
     var x=10;
     var y=20;
     $(".collectImg").mouseover(function(e){
@@ -38,16 +36,6 @@ $(function(){
         $("#tooltip").css({"position":"relative","top":(e.pageY+y)+"px","left":(e.pageX+x)+"px","height":"20px","width":"50px","line-height":"20px"}).show("fast");
     }).mouseout(function(){
         $("#tooltip").remove();
-    });
-
-    //点赞变成红色
-    var Onum=$(".collectNum").html();
-    var Num=parseInt(Onum);
-//			alert(typeof(Num));
-    $(".collectImg").click(function(){
-        $(this).attr("src","/Public/app/img/ask_answer/support_check.png");
-        $(this).siblings(".collectNum").html(Num+1);
-        $(this).siblings(".collectNum").css({"color":"#ff5918","font-weight":"700"});
     });
 
     //写的文字作为题目

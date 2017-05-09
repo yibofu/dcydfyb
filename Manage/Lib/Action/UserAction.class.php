@@ -233,6 +233,61 @@ class UserAction extends CommonAction {
 	}
 
 
+	//发送消息
+	public function messagelist(){
+		$page = isset($_POST['page'])? intval($_POST['page']) : 1;
+		$rows = isset($_POST['rows'])? intval($_POST['rows'])==0 ? 20 : intval($_POST['rows']) : 20;
+
+
+		if ($_POST['title'] != "") $map['title'] = array('like','%'.$_POST['title'].'%');
+		if ($_POST['content'] != "") $map['content'] = array('like','%'.$_POST['content'].'%');
+		if ($_POST['isread'] != "") $map['isread'] = array('eq',$_POST['isread']);
+		if(!empty($_POST['regstart'])){
+			$start=$_POST['regstart'];
+			$map['send_time']=array('egt',strtotime($start));
+		}
+		if(!empty($_POST['regend'])){
+			$end=$_POST['regend'];
+			$map['send_time']=array('elt',strtotime($end));
+		}
+		if ($_POST['regstart'] && $_POST['regend']) {
+			$map['send_time'] = array('between',array(strtotime($start),strtotime($end)));
+		}
+		$wm = M("web_message");
+		$list = $wm->field("id,title,content,send_time,isread")->where($map)->page($page.','.$rows)->select();
+		$total = $wm->where($map)->count();
+		foreach($list as &$val){
+			$val['send_time'] = date('Y-m-d H:i:m',$val['send_time']);
+		}
+		$result = array(
+			'total' => $total,
+			'rows' =>$list,
+		);
+		if(!empty($result)){
+			echo json_encode($result);
+		}
+	}
+	public function messageadd(){
+		$wm = M("web_message");
+		$data = $wm->create();
+		$data['title'] = $this->_post("title");
+		$data['content'] = $this->_post("content");
+		$data['send_time'] = time();
+		$result = $wm -> add($data);
+		if($result != null){
+			$result = array(
+				'success'=>true,
+				'msg'=>'新增成功',
+			);
+		}else{
+			$result = array(
+				'success'=>false,
+				'msg'=>$wm->getError()
+			);
+		}
+		echo json_encode($result);
+	}
+
 //	//展示个人信息项
 //	public function show_detail(){
 //		$id = $this->_post("id");

@@ -1,8 +1,10 @@
-<?php
+﻿<?php
 class VoteAction extends Action{
     public function src(){
         $vote = M("votes");
         $resul = $vote->field("num")->select();
+	//print_r($resul);die;
+	//var_dump($resul[2]["num"]);die;
         $this->assign("resul",$resul);
         $this->display();
     }

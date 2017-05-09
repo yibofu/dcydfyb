@@ -5,6 +5,7 @@
     <link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
     <title>扁鹊财院---课程中心</title>
     <link rel="stylesheet" href="/Public/app/css/official.css">
+    <link rel="stylesheet" href="/Public/app/css/choosekc.css">
     <link rel="stylesheet" href="/Public/app/css/caption.css">
     <script type="text/javascript" src="/Public/app/js/jquery.js"></script>
     <script type="text/javascript" src="/Public/app/js/ajaxUtil2.js"></script>
@@ -155,7 +156,7 @@
             border-right: 1px solid #dddddd;position: relative;left: 20px;display: inline-block;
         }*/
         .kce-one{
-            background: #ffffff;border: 1px solid #dddddd;
+            background: #ffffff;border: 1px solid #ffffff;
         }
         .kce-one .kce-oneone{
             border-right: 1px solid #dddddd; height: 94px;width: 158px;
@@ -220,7 +221,7 @@
 
         .Num{
             float: right;
-            margin-top:-17px;
+            margin-top:-23px;
             margin-right: 10px;
         }
         .ck-video p{
@@ -246,35 +247,18 @@
 <div class="main">
     <div class="inner">
         <div class="kce-one">
-            <div id="ck" class="tab-nav hl_main5_content">
-                <div class="fl kce-oneone">
-                    <a href="{:U(Index/kce)}"><img src="/Public/app/img/officialkce-xin.png" style="margin: 2px 0 0 1px;"/></a>
-                </div>
-                <div class="fl h1_main5_title">
-                    <div class="title-f fl h1_main5_title-one"><a href="{:U('Index/kce')}?name={$rea[0]['kind']}" class="color-k">{$rea[0]['kind']}></a></div>
-                    <!--系列专题后边的选项-->
-                    <ul class="h1_main5_title-two">
-                        <volist name="resultt" id="vov">
-                            <li class="title-e fl"><a href="{:U('Index/vielist')}?name={$vov.zname}" name="zna">{$vov.zname}</a></li>
+			<div class="choose-bg">
+                <p class="choose-bg-title"><span>所有分类</span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span class="span-addHtml"></span></p>
+                <div class="choose-bg-text">
+                    <p>课程分类：</p>
+                    <ul>
+                        <volist name="rea" id="vo">
+                            <a href="{:U('Index/coursedetails')}?name={$vo.kind}"><li class="chooseLi">{$vo.kind}</li></a>
                         </volist>
                     </ul>
-                    <div class="hl_main5_content1-one title-f"><a href="{:U('Index/kce')}?name={$rea[1]['kind']}" class="color-k">{$rea[1]['kind']}></a></div>
-                    <!--专家精选后边的后边的选项-->
-                    <div class="hl_main5_content1">
-                        <ul class="hl_main5_content1-two">
-                            <volist name="resultt1" id="vvoo">
-                                <li class="title-e fl content1-two"><a href="{:U('Index/vielist')}?name={$vvoo.name}" name="za">{$vvoo.name}</a></li>
-                            </volist>
-                        </ul>
-                    </div>
-                    <div class="hl_scrool_leftbtn cursor" style="font-size: 18px;">
-                        <
-                    </div>
-                    <div class="hl_scrool_rightbtn cursor" style="font-size: 18px;">
-                        >
-                    </div>
                 </div>
             </div>
+
             <div id="title">
                 <span class="fl">全部视频<i style="margin-left: 5px;">></i></span>
                 <span class="fl" style="font-size: 14px; margin: 2px 0 0 5px;">专家精选<i style="margin-left: 5px;">></i></span>
@@ -286,16 +270,20 @@
             <ul class="ck-video basia tab-content newslist" id="all" style="display: block;">
                 <volist name="result" id="vo">
                 <li class="fl">
-                    <a href="{:U('Index/visual')}?id={$vo.id}&kname={$vo.kname}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}" class="avio">
+                    <a href="{:U('Index/visual')}?id={$vo.id}&kind={$vo.kind}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}" class="avio">
                         <img src="{$vo.img}">
                         <i></i>
                     </a>
                     <div class="cursor" style="margin-top: 230px;">
-                        <span><a href="{:U('Index/visual')}?id={$vo.id}&kname={$vo.kname}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}">{$vo.kctitle}</a></span>
+                        <span><a href="{:U('Index/visual')}?id={$vo.id}&kind={$vo.kind}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}">{$vo.kctitle}</a></span>
                         <p>讲师:&nbsp{$vo.name}</p>
-                        <div class="fr avio-one"  style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                        <div class="Num">9</div>
-                    </div>
+                        <div style="color: #F55E5E;font-size: 14px; float:left;margin-left: -30px; display: inline-block;margin-top: 5px;">￥{$vo.money}</div>
+			<if condition="$vo.iscoll eq 0">
+                        <div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" attr="{$vo.id}"  name="coll" title="收藏"/></div>
+						<else />
+                        <div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collecta.png" class="img1" attr="{$vo.id}" title="收藏"/></div>
+						</if>
+                        <div class="Num">{$vo.collnum}</div></div>
                 </li>
                 </volist>
             </ul>
@@ -303,15 +291,20 @@
             <ul class="ck-video basia tab-content newslist" id="son" style="display: none;">
                 <volist name="arr1" id="voo">
                     <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$voo.id}&kname={$voo.kname}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}" class="avio">
+                        <a href="{:U('Index/visual')}?id={$voo.id}&kind={$voo.kind}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}" class="avio">
                             <img src="{$voo.img}">
                             <i></i>
                         </a>
                         <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$voo.id}&kname={$voo.kname}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}">{$voo.kctitle}</a></span>
+                            <span><a href="{:U('Index/visual')}?id={$voo.id}&kind={$voo.kind}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}">{$voo.kctitle}</a></span>
                             <p>讲师:&nbsp{$voo.name}</p>
-                            <div class="fr avio-one" style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
-                            <div class="Num">9</div>
+			<div style="color: #F55E5E;font-size: 14px; float:left;margin-left: -15px; display: inline-block;margin-top: 5px;">￥{$voo.money}</div> 
+			<if condition="$voo.iscoll eq 0">
+			<div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" attr="{$voo.id}"  name="coll" title="收藏"/></div>
+			<else />
+			<div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collecta.png" class="img1" attr="{$voo.id}" title="收藏"/></div>
+			</if>
+                            <div class="Num">{$voo.collnum}</div>
                         </div>
                     </li>
                 </volist>
@@ -325,21 +318,6 @@
 </body>
 <script src="/Public/app/js/rollSlide.js"></script>
 <script>
-
-    $(".img1").click(function(){
-        $(this).attr('src','/Public/app/img/offcial-collecta.png');
-        var Onum=$(".Num").html();
-        var Num=parseInt(Onum);
-        $(this).parent().siblings(".Num").html(Num+1);
-        $(this).unbind("click");
-
-    });
-    var Onum=$(".Num").html();
-    $('.newslist').kkPages({
-        PagesClass:'li', //需要分页的元素
-        PagesMth:8, //每页显示个数
-        PagesNavMth:5 //显示导航个数
-    });
     $("document").ready(function(){
         $(".tab-nav li").each(function(){
             $(this).click(function(){
@@ -387,26 +365,7 @@
     DY_scroll('.hl_main5_content','.hl_scrool_leftbtn','.hl_scrool_rightbtn','.hl_main5_content1','.hl_main5_content1',0,false);// true为自动播放，不加此参数或false就默认不自动
 
 
-    $(function(){
-        var oUl=document.getElementsByClassName('about')[0];
-        var aBtn=oUl.getElementsByTagName("li");
-        var aBox=document.getElementsByClassName('main_a');
-        //找到对应的div
-        for(var i=0;i<aBtn.length;i++){
-            //为每个标签标记编号
-            aBtn[i].index=i;
-            aBtn[i].onclick=function(){
-                for(var j=0;j<aBtn.length;j++){
-                    aBtn[j].className='';	//将全部标签去掉class
-                }
-                for(var j=0;j<aBox.length;j++){
-                    aBox[j].style.display="none";//把所有div隐藏
-                }
-                this.className='ac uiny';//当前点击的标签增加class=ac
-                aBox[this.index].style.display="block";//让当前标签对应的div显示
-            };
-        }
-    })
+
     //获取url的get参数并且解决汉字乱码问题
     $(function(){
         var local_url = document.location.href;
@@ -450,5 +409,38 @@
         $("#xlzt").css("display","none");
         $("#zjjx").css("display","block");
     }
+
+ $('img[name=coll]').click(function() {
+        var courid = $(this).attr('attr');
+        var that = $(this);
+
+        $.post(
+                '{:U("MyCollect/collection")}',
+                {'couid' : courid},
+
+                function(res) {
+                    if(res == 1) {
+                        that.attr('src','/Public/app/img/offcial-collecta.png');
+			var numNode = that.parent().siblings(".Num");
+			var num = parseInt(numNode.html());
+			numNode.html(num+1);
+			that.unbind("click");
+                    } else if(res == 0) {
+			location.href = "{:U('Login/loginPage')}";
+			}
+                }
+
+        );
+
+    });
+	
+	  $(function(){
+        $(".chooseLi").click(function(){
+            $(".span-addHtml").html($(this).html());
+            $(this).css("color","#0098b3").siblings().css("color","");
+        });
+
+    });
+
 </script>
 </html>

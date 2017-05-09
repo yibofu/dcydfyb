@@ -52,15 +52,14 @@ class RegisterAction extends Action{
             $data["IPadd"] = get_client_ip();
             $result = $user->add($data);
             if($result){
-                $rows = $user->field("id,Phone")->where("Phone=".$data["Phone"])->find();
-                $id = $rows["id"];
-                $phone = $rows["Phone"];
-                $_SESSION['admins']['id'] = $id;
-                $_SESSION['admins']['Phone'] = $phone;
                 $result = array(
                     'error' => true,
                     'msg' => '注册成功,您可以去个人中心完善个人信息'
                 );
+                $rows = $user->field("id,Phone")->where("Phone=".$data["Phone"])->find();
+                $_SESSION['rigister']['id'] = $rows['id'];
+                $_SESSION['admins']['id'] = $rows['id'];
+                $_SESSION['admins']['Phone'] = $rows['Phone'];
             }else{
                 $result = array(
                     'error' => false,

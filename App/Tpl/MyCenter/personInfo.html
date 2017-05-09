@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="/Public/app/css/commonality.css"/>
 		<script src="/Public/app/js/jquery.min.js"></script>
 		<script src="/Public/app/js/person_page.js"></script>
+		<script src="/Public/app/js/jform.js"></script>
 		<script type="text/javascript" src="/Public/app/js/birthday.js"></script>
 	</head>
 	<body>
@@ -31,7 +32,7 @@
 						<div class="my_photo div1">
 						<img src="{$person.img}" class="person_information_img">
 							<div class="div2">上传图片</div>
-							<input value=" 上传头像" type="file" name="file" class="inputstyle" />
+							<input value=" 上传头像" type="file" name="file" onchange="upfile()" class="inputstyle" />
 						</div>
 						<div class="person_information_right">
 							<p>用户名：<span>{$person.nickname}</span></p>
@@ -43,7 +44,7 @@
 								</if>
 							</p>
 							<if condition="$person.is_vip eq 2">
-							<a href="#">升级金鹊会员</a>
+							<a href="{:U('Vip/openVip')}">升级金鹊会员</a>
 							</if>
 						</div>
 					</div>
@@ -55,7 +56,7 @@
 						<div class="sex">
 							<p><span>*</span>性别：
 							<input type="radio" value="1" name="sex" <if condition="$person.sex eq 1">checked="checked"</if>><label>男</label>
-							<input type="radio" value="0" name="sex" <if condition="$person.sex eq 2">checked="checked"</if>><label>女</label></p>
+							<input type="radio" value="0" name="sex" <if condition="$person.sex eq 0">checked="checked"</if>><label>女</label></p>
 						</div>
 						<div class="birthday">
 							<p>
@@ -75,7 +76,7 @@
 							<p><span>*</span>行业：<input type="text" required="required"  value="{$person.industry}" placeholder="互联网" name="trade" /></p>
 						</div>
 						<div class="interests">
-							<p><span>*</span>兴趣爱好：请选择您感兴趣的分类，给您最精准的推荐 </p>
+							<p style="margin-left: 10px;"><span>*</span>兴趣爱好：请选择您感兴趣的分类，给您最精准的推荐 </p>
 							<div>
 									<volist name="hobbylist" id="hobby">
 									<input type="checkbox" name="hobs[]" style="display:none" value="{$hobby.v}" <if condition="$hobby.check eq 1"> checked="checked"</if> id="{$hobby.pysx}"/>
@@ -84,10 +85,10 @@
 							</div>
 						</div>
 						<div class="company">
-							<p>邮箱：<span><input type="text" required="required" value="{$person.mail}"  placeholder="邮箱" name="mail" /></span></p>
+							<p style="margin-left: 6px;">邮箱：<span><input type="text" required="required" value="{$person.mail}"  placeholder="邮箱" name="mail" /></span></p>
 						</div>
 						<div class="trueName">
-							<p><span>*</span>真实姓名：<input class="trueNameInput"  value="{$person.truename}" name="relname" type="text" placeholder="董丽丽" required="required"/><span class="hint"></span></p>
+							<p style="margin-left: 10px;"><span>*</span>真实姓名：<input class="trueNameInput"  value="{$person.truename}" name="relname" type="text" placeholder="董丽丽" required="required"/><span class="hint"></span></p>
 						</div>
 						
 						<div class="btn">
@@ -99,7 +100,7 @@
 				
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 
@@ -111,5 +112,22 @@
 				DaySelector: ".sel_day"
 			});
 		});
+
+		function upfile() {
+			$('#datas').ajaxSubmit({
+				url:'{:U("MyCenter/updateInfo")}',	
+				type: 'post',
+//				dataType:'json',
+				//async : true,
+				success: function(data) {
+					$('.person_information_img').attr('src', data);
+				},
+				error: function(data) {
+					alert(222222);
+				}
+			});
+		
+		}
+
 	</script>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,9 +133,12 @@
 </div>
 </body>
 <script>
+    $('#and').click(function(){
+        $('.consult').fadeIn(200);
+        $('#train').slideDown(300);
+    })
     $("#and").click(function(){
         $("#fo").css("display","block");
-//        $("#fo").toggle();
     })
     $('#x').click(function(){
         $('.consult').fadeOut(200);

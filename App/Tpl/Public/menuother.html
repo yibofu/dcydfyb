@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css" />
+    <link rel="stylesheet" href="/Public/app/css/menuother.css" />
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js" ></script>
+</head>
+<body>
+<div class="menuRightcho">
+    <div class="menuRightchol">
+        <a href="{:U('Index/kce')}" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>我要学习</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>观看直播</p>
+        </a>
+        <a href="{:U('AskAnswer/Asks')}"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>我要提问</p>
+        </a>
+        <a href="{:U('Teacher/teacherList')}"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>预约专家</p>
+        </a>
+    </div>
+    <div class="menuRightchor">
+        <p>扁鹊财院核心服务</p>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>

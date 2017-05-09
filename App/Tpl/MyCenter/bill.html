@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -27,7 +27,7 @@
                </p >
                <p class="billAddBtn">
                   <input  type="radio" name="billtype" value="zengzhi" id="zengzhi"/>
-                  <label for="zengzhi">增值税发票</label>
+                  <label for="zengzhi">专用发票</label>
                   <img src="/Public/app/img/gou.png"/></p>
             </div>
             <!--普通发票-->
@@ -116,7 +116,7 @@
 				</div>
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>
@@ -256,8 +256,14 @@
 					if(res.a) {
 						var Otext=$(".addNewbillText input").val();
 						$(".addbillHead>div :first-child").animate({"margin-top":"+=1px"});
-						$(".addbillHead>div").prepend("<p attr='"+res+"' class='newAddP'><span class='newAddSpan'></span><span>&#10005;</span> <span></span> </p>");
+						var html = "<p attr='"+res.a+"' class='newAddP'>";
+							html += "<span class='newAddSpan'></span>";
+							html += "<span>&#10005;</span>";
+							html += "<span></span>";
+							html += "</p>";
+						$(".addbillHead>div").prepend(html);
 						$(".newAddSpan").html(Otext);
+						$(".newAddSpan").removeClass('newAddSpan');
 						po();
 						makeDefault();
 					} else {

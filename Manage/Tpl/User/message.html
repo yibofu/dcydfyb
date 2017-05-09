@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="jquery,ui,easy,easyui,web">
+    <meta name="description" content="easyui help you build your web page easily!">
+    <title>发送消息</title>
+    <link rel="stylesheet" type="text/css" href="/Public/admin/css/easyui.css?v=<?php echo date('Ymjs') ?>">
+    <link rel="stylesheet" type="text/css" href="/Public/admin/css/icon.css?v=<?php echo date('Ymjs') ?>">
+    <script type="text/javascript" src="/Public/admin/js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/Public/admin/js/jquery.easyui.min.js"></script>
+    <script  type="text/javascript" src="/Public/admin/js/DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <style type="text/css">
+        #fm{
+            margin:0;
+            padding:10px 30px;
+        }
+        .ftitle{
+            font-size:14px;
+            font-weight:bold;
+            color:#666;
+            padding:5px 0;
+            margin-bottom:10px;
+            border-bottom:1px solid #ccc;
+        }
+        .fitem{
+            margin-bottom:5px;
+        }
+        .fitem label{
+            display:inline-block;
+            width:80px;
+        }
+    </style>
+</head>
+<body>
+<table id="dg" class="easyui-datagrid" toolbar="#toolbar" style="width:90%px;height:80%px"
+       data-options="
+				url: '{:U('User/messagelist')}',
+				rownumbers: true,
+				fit:true,
+				fitColumns:true,    //让列自适应表格的宽度。
+				pagination: true,
+				pageNumber:1,
+				pageSize:20,
+				pageList: [20,30],
+				idField: 'id',
+				singleSelect: false,
+			"
+>
+    <thead>
+    <tr>
+        <th field="id" align="center" width="5%">id</th>
+        <th field="title" align="center" width="10%">发送标题</th>
+        <th field="content" align="center" width="5%">发送内容</th>
+        <th field="send_time" align="center" width="10%">发送时间</th>
+        <th field="isread" align="center" width="5%" formatter="show_status">状态</th>
+    </tr>
+    </thead>
+</table>
+<div id="toolbar" style="height:40px;">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onClick="add()">发布文章</a>
+                </td>
+                <td>标题:<input class="easyui-validatebox" id="title" type="text" name="title" size="14" ></td>
+                <td>内容:<input class="easyui-validatebox" id="content" type="text" name="content" size="15" ></td>
+                <td>&nbsp;申请发票时间:<input  type="text" style="width:85px;" id="reg_start" class="Wdate"  onClick="WdatePicker()">
+                    -<input  type="text" style="width:85px;" id="reg_end" class="Wdate"  onClick="WdatePicker()">
+                </td>
+                <td>
+                    <a href="javascript:void(0)" iconCls="icon-search" class="easyui-linkbutton" onClick="doSearch()">查询</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--新增-->
+<div id="dlg" class="easyui-dialog" title="设置" closed="true" buttons="#dlg-button" style="width:900px;height:500px;">
+    <form id="fm" method="post" enctype="multipart/form-data">
+        <div class="fitem">
+            <label>标题:</label>
+            <input name="title"  class="easyui-validatebox" style="width:300px;">
+        </div>
+        <div class="fitem">
+            <label>内容:</label>
+            <textarea name="content" cols="30" rows="10"></textarea>
+        </div>
+        <div id="dlg-button">
+            <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').dialog('close')">取消</a>
+        </div>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+
+
+    function show_status(val,row){
+        if(val == 0){
+            val = "<span style='color: red;'>未读</span>";
+        }else if(val == 1){
+            val = "<span style='color: green'>已读</span>";
+        }
+        return val;
+    }
+
+    //搜索
+    function doSearch(){
+        $('#dg').datagrid('load',{
+            title: $('#title').val(),
+            content: $('#content').val(),
+            regstart: $('#reg_start').val(),
+            regend: $('#reg_end').val(),
+        });
+    }
+
+    //展示修改信息
+    function add(){
+        $('#fm').form('clear');
+        $('#dlg').dialog('open').dialog('setTitle','发布消息');
+        url = "{:U('User/messageadd')}";
+
+    }
+
+    //增加提交
+    function save(){
+        $('#fm').form('submit',{
+            url: url,
+            onSubmit: function(){
+                return $(this).form('validate');
+            },
+            success: function(result){
+                var result = eval('('+result+')');
+                if (result.success){
+                    $('#dlg').dialog('close');		// close the dialog
+                    $('#dg').datagrid('reload');	// reload the user data
+                    $.messager.show({
+                        title: '消息',
+                        msg: result.msg
+                    });
+                }else{
+                    $.messager.show({
+                        title: '出错啦！！',
+                        msg: result.msg
+                    });
+                }
+            }
+        });
+    }
+</script>
+
+</html>

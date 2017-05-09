@@ -219,7 +219,7 @@
         }
         .Num{
             float: right;
-            margin-top:-17px;
+            margin-top:-23px;
             margin-right: 10px;
         }
         .ck-video p{
@@ -247,7 +247,7 @@
         <div class="kce-one">
             <div id="ck" class="tab-nav hl_main5_content">
                 <div class="fl kce-oneone">
-                    <a href="{:U(Index/kce)}"><img src="/Public/app/img/officialkce-xin.png" style="margin: 2px 0 0 1px;"/></a>
+                    <a href="{:U('Index/kce')}"><img src="/Public/app/img/officialkce-xin.png" style="margin: 2px 0 0 1px;"/></a>
                 </div>
                 <div class="fl h1_main5_title">
                     <div class="title-f fl h1_main5_title-one"><a href="{:U('Index/kce')}?name={$rea[0]['kind']}" class="color-k">{$rea[0]['kind']} ></a></div>
@@ -286,14 +286,15 @@
 
                 <volist name="arrr" id="vovo">
                     <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$vovo.id}&kname={$vovo.kname}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}" class="avio">
+                        <a href="{:U('Index/visual')}?id={$vovo.id}&kind={$vovo.kind}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}" class="avio">
                             <img src="{$vovo.img}">
                             <i></i>
                         </a>
                         <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$vovo.id}&kname={$vovo.kname}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}">{$vovo.kctitle}</a></span>
+                            <span><a href="{:U('Index/visual')}?id={$vovo.id}&kind={$vovo.kind}&name={$vovo.name}&kctitle={$vovo.kctitle}&title={$vovo.title}">{$vovo.kctitle}</a></span>
                             <p>讲师:&nbsp{$vovo.name}</p>
-                            <div class="fr avio-one"style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
+                            <div style="color: #F55E5E;font-size: 14px; float:left;margin-left: -15px; display: inline-block;margin-top: 5px;">￥888</div>
+                            <div class="fr avio-one"style="margin-top: -22px;margin-left: 200px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
                             <div class="Num">9</div>
                         </div>
                     </li>
@@ -303,12 +304,12 @@
             <ul class="ck-video basia tab-content newslist" id="zjjxz" style="display: block;">
                 <volist name="arr11" id="vov">
                     <li class="fl">
-                        <a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}" class="avio">
+                        <a href="{:U('Index/visual')}?id={$vov.id}&kind={$vov.kind}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}" class="avio">
                             <img src="{$vov.img}">
                             <i></i>
                         </a>
                         <div class="cursor" style="margin-top: 230px;">
-                            <span><a href="{:U('Index/visual')}?id={$vov.id}&kname={$vov.kname}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}">{$vov.kctitle}</a></span>
+                            <span><a href="{:U('Index/visual')}?id={$vov.id}&kind={$vov.kind}&name={$vov.name}&kctitle={$vov.kctitle}&title={$vov.title}">{$vov.kctitle}</a></span>
                             <p>讲师:&nbsp{$vov.name}</p>
                             <div class="fr avio-one"style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" title="收藏"/></div>
                             <div class="Num">9</div>

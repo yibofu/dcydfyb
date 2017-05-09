@@ -55,11 +55,11 @@
 >
     <thead>
     <tr>
-        <th field="id" align="center" width="5%">id</th>
-        <th field="tname" align="center" width="10%">分类名称</th>
-        <th field="cost" align="center" width="5%">金额</th>
-        <th field="days" align="center" width="10%">讲课天数</th>
-        <th field="img" align="center" width="10%" formatter="imgFormatter">图片</th>
+        <th field="id" align="center" width="10%">id</th>
+        <th field="tname" align="center" width="20%">分类名称</th>
+        <th field="cost" align="center" width="20%">金额</th>
+        <th field="days" align="center" width="15%">讲课天数</th>
+        <th field="img" align="center" width="15%" formatter="imgFormatter">图片</th>
         <th field="f" align="center" width="20%" formatter="show_manger">操作</th>
     </tr>
     </thead>
@@ -76,6 +76,7 @@
                 <td>讲课天数:<input class="easyui-validatebox" id="describe" type="text" name="title" size="14" ></td>
                 <td>
                     <a href="javascript:void(0)" iconCls="icon-search" class="easyui-linkbutton" onClick="doSearch()">查询</a>
+                    <a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >修改消息</a>
                 </td>
             </tr>
         </table>
@@ -129,8 +130,8 @@
     }
     //管理回调
     function show_manger(val,row){
-        return "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-edit' onclick='edit("+row.id+")' >修改消息</a>&nbsp;/&nbsp;" +
-                "<a href='javascript:;' class='easyui-linkbutton' iconCls='icon-cancel' onclick='del("+row.id+")' >删除消息</a>";
+        return "<a href='javascript:;' class='btn btn-warning' iconCls='icon-edit' onclick='edit("+row.id+")' >修改消息</a>&nbsp;/&nbsp;" +
+                "<a href='javascript:;' class='btn btn-warning' iconCls='icon-cancel' onclick='del("+row.id+")' >删除消息</a>";
     }
     //展示修改信息
     function add(){

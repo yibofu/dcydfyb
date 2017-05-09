@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
         .whole .nav .img01 input{height: 1.4rem; width: 60%;border: .04rem solid #CCCCCC; border-radius: .3rem; padding-left: 2%;}
         .whole .nav .po{ margin-top: .8rem;}
         .whole .nav .text{ border: .04rem solid #CCCCCC; border-radius: .3rem; width: 71%; margin-top: .6rem;height: 1.4rem; padding-left: 3%; line-height:1.4rem; }
-        .whole .nav .texta{ border: .04rem solid #CCCCCC; border-radius: .3rem; width: 90%; margin-top: .6rem;height: 12rem;}
+        .whole .nav .texta{ border: .04rem solid #CCCCCC; border-radius: .3rem; width: 90%; margin-top: .6rem;height: 15rem;}
         .whole .nav .pk{ color: #b1b1b1; margin-left: 40%; margin-top: 1rem;}
         .whole .makeg{ width: 100%; height: 100%; background: rgba(196,196,196,.7); position: fixed; top: 0; left: 0;z-index: 5; display: none;}
         .whole .makeg .makeg-a{ width: 52%; height: 14.5rem; position: absolute; background: #ffffff;z-index: 6; top: 12rem; left: 25%; border-radius: .8rem;}
@@ -22,12 +22,13 @@
         .whole .makeg .ki{ text-align: center; margin-top: 1rem;}
         .whole .bottom{ width: 100%; height: 2.6rem; margin-top: 2rem;}
         .whole .bottom .nina{ width: 89%; height: 2.2rem; margin: .2rem auto; text-align: center; display: block; background: #00a0e9; color: #ffffff; line-height: 2.2rem; border-radius: .3rem;}
-
+        
         .makega{ width: 100%; height: 100%; background: rgba(196,196,196,.7); display: none; position: fixed; top: 0; left: 0;z-index: 5;}
         .makega .makeg-aa{ width: 50%; height: 11.4rem; position: absolute; background: #ffffff;z-index: 6; top: 12rem; left: 25%; border-radius: .8rem;}
         .makega .imgta{ width: 45%; height: 6rem; margin: 1.2rem 0 0 25%; }
         .makega .imgsa{ position: absolute; right: 4%; top: .6rem; width: 10%; height: 1.2rem;}
         .makega .kia{ text-align: center; margin-top: 1rem; line-height: 1.4rem;font-size: .7rem}
+
         /*文字*/
         .foa{ font-size:.80rem;}/*18px*/
         .fob{ font-size:.86rem;}/*24px*/
@@ -79,12 +80,12 @@
     </div>
 </body>
 <script>
-//    $("#ton").on("touchstart",function(){
-//        $('.makeg').css("display","block");
-//    });
     $('#uina').click(function(){
         $('.makega').fadeOut(200);
     })
+//    $("#ton").on("touchstart",function(){
+//        $('.makeg').css("display","block");
+//    });
     $("#uin").on("touchstart",function(){
         $('.makeg').css("display","none");
     });
@@ -184,6 +185,7 @@
                 if(data == 1){
                     $('.makega').css("display","block");
                     $("input[name='phone']").val("");
+
                 }else{
                     $('.makeg').css("display","block");
                 }

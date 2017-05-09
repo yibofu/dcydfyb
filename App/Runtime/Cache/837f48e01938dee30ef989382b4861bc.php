@@ -11,11 +11,14 @@
 		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
 		<link rel="stylesheet" href="/Public/app/css/teachers_introduce.css" />
 		<link rel="stylesheet" href="/Public/app/css/boss_finance.css" />
+        <link rel="stylesheet" href="/Public/app/font/iconfont.css"/>
 		<link rel="icon" href="http://www.bianquecxy.com/Public/app/img/logo.ico" type="image/x-icon">
 	    <link href="/Public/app/css/JS5.css" rel="stylesheet" type="text/css">
 	    <div id="LRdiv0" style="display: block;">
 	    <div id="LRfloater0" style="z-index: 2147483647; right: 15px; top: 150px; position: fixed !important;"><div id="swtColse" style="width:20px; height:15px; top:0px; right:0px; position:absolute;background-image: url(http://pct.zoosnet.net/LR/closeimg/7.gif);background-repeat: no-repeat;background-position: right top;cursor:pointer;" onclick="LR_Hidemobileinvite(0);onlinerIcon0.hidden();"></div><img title="没有客服人员在线,请点击此处留言!我们会尽快答复;" alt="没有客服人员在线,请点击此处留言!我们会尽快答复;" src="/Public/app/img/offlineimgsrc_cn.jpg" style="cursor:pointer" onclick="openZoosUrl(&#39;chatwin&#39;);"></div></div><div id="LRdiv1" style="display:none;"></div><div id="LRdiv2" style="display:none;"></div><div id="LRdiv3" style="display:none;"></div>
-	    <script type="text/javascript" src="/Public/app/js/L_slide.js"></script>
+         <script type="text/javascript" src="/Public/app/js/Jquery/jquery.js"></script>
+        <script type="text/javascript" src="/Public/app/font/iconfont.js"></script>
+        <script type="text/javascript" src="/Public/app/js/L_slide.js"></script>
 	     <style>
 	     
 	     .main{
@@ -102,11 +105,40 @@
             color: #666666;
             font-size: 12px;
         }
+         #fullbg {
+             background-color: gray;
+             left: 0;
+             opacity: 0.5;
+             position: absolute;
+             top: 0;
+             z-index: 3;
+             filter: alpha(opacity=50);
+             -moz-opacity: 0.5;
+             -khtml-opacity: 0.5;
+         }
+
+         .popup {
+             background-color: #fff;
+             border: 5px solid rgba(0, 0, 0, 0.4);
+             width: 950px;
+             margin-left: 20px;
+             height: 417px;
+             left: 40%;
+             margin: -200px 0 0 -200px;
+             padding: 1px;
+             position: fixed !important;
+             /* 浮动对话框 */
+             position: absolute;
+             top: 40%;
+             z-index: 5;
+             border-radius: 5px;
+             display: none;
+         }
     </style>
 	</head>
 	<body style="background: white;">
 		<div class="consult_all">
-			<!DOCTYPE html>
+			﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -114,29 +146,61 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
 				<div class="headTopCenter">
-				<?php if($_SESSION['admins']['id'] == '' && $_SESSION['rigister']['id'] == ''): ?><ul>
+				<?php if($_SESSION['admins']['id'] == ''): ?><ul>
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != null): echo ($_SESSION['admins']['nickname']); ?>
+								<?php else: ?>
+									<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -173,17 +237,26 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
 			
@@ -220,27 +293,47 @@
 				                	<div style="clear: both;"></div>
 
 				                 </div>
-								<div class="confirmText" style="display:none;">
-									<img src="/Public/app/img/crossTeacher.png">
-									<div class="confirmTextMain">
-										<div class="confirmTextImg">
-											<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
-										</div>
-										<div class="confirmTextText">
-											<p>恭喜您！预约已成功！</p >
-											<p>请保持电话畅通，客服会在24小时内与您取得
-												联系。请在个人中心查看您的服务。</p >
-											<p>
-												<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回专家列表</a><span>|</span><a href="#">进入个人中心</a>
-											</p >
-										</div>
-									</div>
-								</div>
-				                 <div class="main-top1">
-				                    <h3>操盘案例</h3>
-				                </div>
-				                <p class="title-d height-a texta" style="width: 400px;  margin-top: 20px; margin-left: 28px;margin-bottom: 20px; float: left;"><?php echo ($tea['traders']); ?></p>
-				                <img src="/Public/app/img/eg_img.png" style="float: right;margin-top: 20px;">
+                                <div id="fullbg"></div>
+                                <div class="popup">
+                                    <p class="off_btn"><img src="/Public/app/img/off.png" /></p>
+                                    <p class="submit_success_title">恭喜您！预约已成功！</p>
+                                    <div class="popup_text">
+                                        <div class="submit_success_text">
+                                            <p>请保持电话畅通，客服会在24小时内与您联系。</p>
+                                            <p>请在个人中心查看您的服务进度。</p>
+                                        </div>
+                                        <div class="skipPage">
+                                            <p><a href="javascript:void(0)" class="noblank"> 留在本页</a>&nbsp;|&nbsp;<a href="<?php echo U('MyCenter/index');?>">进入个人中心</a></p>
+                                        </div>
+                                        <div class="popup_phone">
+                                            <p><img src="/Public/app/img/popup_phone.png" /><span class="phone_number">400-810-9017</span><span class="phone_text">(客服服务热线)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="focusOn">您可以继续关注</div>
+                                    <div class="inFont_img">
+                                        <div class="icon_num">
+                                            <a href="<?php echo U('Index/index');?>"><i class="iconfont icon-huodongyujingqujiudianxiangqingyeicon09"></i></a>
+                                            <p>返回首页</p>
+                                        </div>
+                                        <div class="icon_num">
+                                            <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><i class="iconfont icon-huizhen"></i></a>
+                                            <p>远程问诊</p>
+                                        </div>
+                                        <div class="icon_num">
+                                            <a href="<?php echo U('Index/kce');?>"><i class="iconfont icon-x-mpg"></i></a>
+                                            <p>视频课程</p>
+                                        </div>
+                                        <div class="icon_num">
+                                            <a href="<?php echo U('Teacher/teacherList');?>"><i class="iconfont icon-27"></i></a>
+                                            <p>专家团队</p>
+                                        </div>
+                                        <div class="icon_num">
+                                            <a href="<?php echo U('Vip/openVip');?>"><i class="iconfont icon-huiyuanzhuanxiang"></i></a>
+                                            <p>会员专享</p>
+                                        </div>
+                                    </div>
+                                </div>
+				                 
 				                <div style="clear: both;"></div>
 				                <div class="main-top1">
 				                    <h3>专家甄选</h3>
@@ -270,35 +363,58 @@
 				<!--内容右边的部分-->
 				<div class="consult_right">
 					<!--菜单部分-->
-					<div class="main-fr">
-		                <div class="main-fr-t">
-		                    <ul class="main-fr-t-a">
-		                        <li id="swphoto">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-01.png" style="display: none"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-1.png"/>
-		                        </li>
-		                        <li id="swphota">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-02.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-2.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotb">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-03.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-3.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotc">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-04.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-4.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotd">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-05.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-5.png" style="display: none"/>
-		                        </li>
-		                        <li><img src="/Public/app/img/menu_img/main-fr-06.jpg"/></li>
-		                    </ul>
-		                </div>
-		                
-		            </div>
-		            <div class="clear"></div>
+					﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css"/>
+    <link rel="stylesheet" href="/Public/app/css/menu.css"/>
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js"></script>
+</head>
+<body>
+    <div class="menuRightcho">
+        <a href="<?php echo U('Article/message');?>" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>财税资讯</p>
+        </a>
+        <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>财税问诊</p>
+        </a>
+        <a href="<?php echo U('Index/kce');?>" class="underlineNeg">
+            <i class="icon iconfont icon-anpaimianshi"></i>
+            <p>课程中心</p>
+        </a>
+        <a href="<?php echo U('Kecheng/boss');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>课程报名</p>
+        </a>
+        <a href="<?php echo U('AskAnswer/Asks');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>财税问题</p>
+        </a>
+        <a href="<?php echo U('Vip/openVip');?>"  class="underlineNegUN">
+            <p>VIP会员</p>
+            <p>核心服务</p>
+        </a>
+    </div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>
 					<!--轮播图-->
 					<div class="carousel">
 						<div class="carousel_title">授课展示图</div>
@@ -349,15 +465,15 @@
 	<div class="friendly_link">
 			<p class="link_title">友情链接</p>
 			<ul>
-				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">四度信息</a></li>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
 			</ul>
 		</div>
 		<div class="footerAll">
@@ -367,9 +483,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>
@@ -403,6 +520,11 @@
 	</body>
 	<script src="/Public/app/js/jquery.min.js"></script>
 	<script>
+        
+      $(".off_btn,.noblank").click(function(){
+			$(".popup,#fullbg").hide();
+		});
+
 	//轮播
 		window.onload=function(){
 			var OImg=document.getElementById("pic");
@@ -463,6 +585,17 @@
 	    		$(".page_num").css({"background":"","color":""});
 	    		$(this).css({"background":"#5fc8da","color":"white"});
 	    	});
+            //字体图标变色
+            $(".icon_num").mouseover(function(){
+                $(".icon_num").find("i").css("color","");
+                $(".icon_num").find("p").css("color","");
+                $(this).find("i").css("color","#044a99");
+                $(this).find("p").css("color","#044a99");
+            });
+            $(".icon_num").mouseleave(function(){
+                $(".icon_num").find("i").css("color","");
+                $(".icon_num").find("p").css("color","");
+            });
 	    })
 		$("#swphoto").click(function(){
         $("#swphoto .img1").css('display','block');
@@ -536,25 +669,25 @@
 			{'tid':tid},
 			function(res) {
 				if(res == 0) {
-					$('.confirmText').css("display","none");
 					location.href = '<?php echo U("Login/loginPage");?>';
 				}else{
-					$(".newAdd").css("display","block");
-
-						$(".newAdd").css("display","none");
-						$(".confirmText").css({"display":"block"});
-
+					var bh = $("body").height();
+					var bw = $("body").width();
+					$("#fullbg").css({
+						height:bh,
+						width:bw,
+						display:"block"
+					});
+					$('.submit_success_title').html(res);
+					$(".popup").show();
 				}
 			
 //				alert(res);
 			}
 		); 
 	});
-		$('.confirmText>img').bind('click',function(){
-			$(".confirmText").css("display","none");
-			$(".newAdd").css("display","block");
-		})
-	
+
+
     
 	</script>
 </html>

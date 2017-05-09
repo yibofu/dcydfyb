@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	class IndexAction extends Action {
 		public function index(){
 			$article = M("article");
@@ -21,19 +21,28 @@
 
 			//选课中心的信息显示
 			$view = M("view");
-			$arr = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
-				->group('kctitle')->where("kname = '系列专题'")
-				->limit(3)
-				->select();
+			$arr = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+				->order('a.id desc')->where("a.img != ''")
+				->limit(3)->select();
 			$this->assign("arr",$arr);
-			$arra = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
-				->group('kctitle')->where("kname = '专家精选'")
-				->limit(3)
-				->select();
-			$this->assign("arra",$arra);
-			$oct = M("open_course_type");
-			$rea = $oct->field('id,tname,cost,days,img')
-				->select();
+//			$arra = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+//				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+//				->group('a.kctitle')->where("b.kind = '专家精选' and a.img != ''")
+//				->limit(3)->select();
+//			$this->assign("arra",$arra);
+			$oct = M('open_course_type');
+			$rea = $oct->field('id, tname, cost, days, img')->select();
+			foreach($rea as $rkey => $rvalue) {
+				if(strstr('财务通', $rvalue['tname']) !== false) {
+					$rea[$rkey]['urlflag'] = 'cwt';
+				} else if (strstr('管理层财务思维', $rvalue['tname']) !== false) {
+					$rea[$rkey]['urlflag'] = 'glccwsw';
+				} else if (strstr('财务系统班', $rvalue['tname']) !== false) {
+					$rea[$rkey]['urlflag'] = 'cwxtb';
+				}
+			}
+
 			$this->assign("rea",$rea);
 			$teacher = M("teacher");
 			$aa = $teacher->field('id,name,timg,explain')->select();
@@ -50,13 +59,14 @@
 			$qtype = M('questionType');
 			$qtypeList = $qtype->field('id, name')->select(); 
 			$this->assign("qtypeList",$qtypeList);
+
+
 			$this->display();
 		}
 
 		public function loginout(){
 			if(isset($_SESSION['admins']['id'])){
 				unset($_SESSION['admins']);
-				unset($_SESSION['register']);
 				session_destroy();
 				setcookie('PHPSESSID','',-3600,' /');
 				$this->redirect('/Index/index');
@@ -123,105 +133,169 @@
 		public function kce(){
 			$view = M("view");
 			$name = $_GET["name"];
-			$result = $view->field('id,kname,zname,name,title,img,kctitle')->where(" chapternum = 1 ")
+
+			$result = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img,a.collnum')
+				->where(" chapternum = 1 ")
 				->select();
+
+			//查询课程是否被收藏数
+			$uid = $_SESSION['admins']['id'];
+			$collModel = M('collection');
+			foreach($result as $rk => $rv) {
+				$result[$rk]['iscoll'] = 0; //默认没被收藏
+				if($uid) {
+					$collfind = $collModel->field('id')->where('courseid=' .$rv['id']. ' and uid=' . $uid)->find();
+					if($collfind['id']) {
+						$result[$rk]['iscoll'] = 1; //修改为已收藏
+					}
+				}
+			}
+
 			$this->assign("result",$result);
 			$viewkind = M("viewkinds");
 			$rea = $viewkind->field('id,kind')->select();
 			$this->assign('rea',$rea);
-			$viewclass = M("viewclass");
-			$resultt = $viewclass->distinct(true)->field('id,fname,zname')->where("fname = '系列专题'")
-				->group("zname")->select();
-			$this->assign("resultt",$resultt);
-			$teacher = M("teacher");
-			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
-			$this->assign("resultt1",$resultt1);
-			$arr1 = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
-				->where("kname = '{$name}' and chapternum = 1 ")
+//			$resultt = $viewkind->table("dcyd_viewkinds as a")->join("dcyd_viewclass as b on b.vid = a.id ")
+//				->field('a.id,a.kind,b.zname')->where("a.kind = '系列专题'")
+//				->group("b.zname")->select();
+//			$this->assign("resultt",$resultt);
+//			$teacher = M("teacher");
+//			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
+
+//			$this->assign("resultt1",$resultt1);
+
+
+
+			$arr1 = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img,a.collnum')
+				->where("b.kind = '{$name}' and chapternum = 1 ")
 				->select();
+			//查询课程是否被收藏数
+			$collModel = M('collection');
+			foreach($arr1 as $ak => $av) {
+				$arr1[$ak]['iscoll'] = 0; //默认没被收藏
+				if($uid) {
+					$collfinds = $collModel->field('id')->where('courseid=' .$av['id']. ' and uid=' . $uid)->find();
+					if($collfinds['id']) {
+						$arr1[$ak]['iscoll'] = 1; //修改为已收藏
+					}
+				}
+			}
+
+
 			$this->assign("arr1",$arr1);
+
+			$this->display();
+		}
+
+		//最新的课程列表页
+		public function coursedetails(){
+			$viewkind = M("viewkinds");
+			$rea = $viewkind->field('id,kind')->select();
+			$this->assign('rea',$rea);
+			$kind =$this->_get("name");
+			$view = M("view");
+			$arr1 = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img,a.collnum')
+				->where("b.kind = '{$kind}' and chapternum = 1 ")
+				->select();
+			$this->assign('arr1',$arr1);
 			$this->display();
 		}
 
 		//系列专题子项
-		public function vielist(){
-			$name = $_GET["name"];
-			$view = M("view");
-			$result = $view->field('id,kname,zname,name,title,img,kctitle')->where(" chapternum = 1 ")
-				->select();
-			$this->assign("result",$result);
-			$viewkind = M("viewkinds");
-			$rea = $viewkind->field('id,kind')->select();
-			$this->assign('rea',$rea);
-			$viewclass = M("viewclass");
-			$resultt = $viewclass->distinct(true)->field('id,fname,zname')->where("fname = '系列专题'")
-				->group("zname")->select();
-			$this->assign("resultt",$resultt);
-			$teacher = M("teacher");
-			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
-			$this->assign("resultt1",$resultt1);
-			$arrr = $view->field('id,kname,name,zname,url,title,money,introduce,chapternum,kctitle,img')
-				->where("zname='{$name}' and chapternum = 1")
-				->select();
-			$this->assign("arrr",$arrr);
-			$this->display();
-
-		}
+//		public function vielist(){
+//			$name = $_GET["name"];
+//			$view = M("view");
+//			$result = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+//				->join("dcyd_viewclass as c on c.vid = b.id")
+//				->field('a.id,b.kind,c.zname,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img,a.collnum')
+//				->where(" chapternum = 1 ")
+//				->select();
+//			//查询课程是否被收藏数
+//			$uid = $_SESSION['admins']['id'];
+//			$collModel = M('collection');
+//			foreach($result as $rk => $rv) {
+//				$result[$rk]['iscoll'] = 0; //默认没被收藏
+//				if($uid) {
+//					$collfind = $collModel->field('id')->where('courseid=' .$rv['id']. ' and uid=' . $uid)->find();
+//					if($collfind['id']) {
+//						$result[$rk]['iscoll'] = 1; //修改为已收藏
+//					}
+//				}
+//			}
+//
+//			$this->assign("result",$result);
+//			$viewkind = M("viewkinds");
+//			$rea = $viewkind->field('id,kind')->select();
+//			$this->assign('rea',$rea);
+//			$viewclass = M("viewclass");
+//			$resultt = $viewkind->table("dcyd_viewkinds as a")->join("dcyd_viewclass as b on b.vid = a.id ")
+//				->field('a.id,a.kind,b.zname')->where("a.kind = '系列专题'")
+//				->group("b.zname")->select();
+//			$this->assign("resultt",$resultt);
+//			$teacher = M("teacher");
+//			$resultt1 = $teacher->distinct(true)->field('id,name')->select();
+//			$this->assign("resultt1",$resultt1);
+//
+//			$arr11 = $view->table("dcyd_view as a")->join(" inner join dcyd_viewkinds as b on b.id = a.kid")
+//				->join("inner join dcyd_viewclass as c on c.vid = b.id")
+//				->field('a.id,b.kind,c.zname,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+//				->where("c.zname = '{$name}' and a.chapternum = 1")
+//				->select();
+//			$this->assign("arr11",$arr11);
+//			$arrr = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+//				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+//				->where("zname='{$name}' and chapternum = 1")
+//				->select();
+//
+//			//查询课程是否被收藏数
+//			$uid = $_SESSION['admins']['id'];
+//			$collModel = M('collection');
+//			foreach($arrr as $ak => $av) {
+//				$arrr[$ak]['iscoll'] = 0; //默认没被收藏
+//				if($uid) {
+//					$collfind = $collModel->field('id')->where('courseid=' .$av['id']. ' and uid=' . $uid)->find();
+//
+//					if($collfind['id']) {
+//						$arrr[$ak]['iscoll'] = 1; //修改为已收藏
+//					}
+//				}
+//			}
+//
+//			$this->assign("arrr",$arrr);
+//			$this->display();
+//
+//		}
 
 
 		//视频页的信息
 		public function visual(){
 			$id = $_GET["id"];
-			$kname = $_GET["kname"];
+			$kind = $_GET["kind"];
 			$name = $_GET["name"];
 			$kctitle = $_GET["kctitle"];
 			$title = $_GET["title"];
-
 			$view = M("view");
-			$result1 = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
-				->where(' name = "'.$name.' " and'.' kname = "'.$kname .'" and' .' id =  '.$id)
-				->find();
-
+			$result1 = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+				->where(' a.name = "'.$name.' " and'.' b.kind = "'.$kind .'" and' .' a.id =  '.$id)->find();
 			$data[] = $result1;
-			$ress = $view->field('id,kname,name,url,title,money,introduce,chapternum,kctitle,img')
-				->where("name='".$name."' and kname='".$kname."' and kctitle='".$kctitle."'")
+			$ress = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+				->field('a.id,b.kind,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.kctitle,a.img')
+				->where("a.name='".$name."' and b.kind='".$kind."' and kctitle='".$kctitle."'")
 				->select();
 			$arr = $view->field('name')->where("id = ".$id)->find();
 			$namee = $arr["name"];
-
 			$teacher = M("teacher");
 			$arra = $teacher->field("name,timg,explain")->where("name='".$namee."'")->find();
 			$arra['explain'] = htmlspecialchars_decode($arra['explain']);
-
-			//获取评论
-			$commentModel = M('vevaluate');
-
-			//分页
-			import ('ORG.Util.Page');
-			$total = $commentModel->where('dcyd_vevaluate.viewid='.$id)->count();
-			$page = new Page($total, 4);
-			$page->setConfig('theme', '%upPage%%linkPage%%downPage%');
-
-			//评论列表
-			$commentList = $commentModel->field('dcyd_vevaluate.content content, dcyd_vevaluate.addtime addtime, dcyd_user.nickname name, dcyd_user.img img')
-				->join('inner join dcyd_user on dcyd_vevaluate.uid=dcyd_user.id')
-				->where('dcyd_vevaluate.viewid='.$id)
-				->order('addtime desc')
-				->limit($page->firstRow . ',' . $page->listRows)
-				->select();
-
-			foreach($commentList as $cok => $cov) {
-				$commentList[$cok]['addtime'] = date('Y-m-d H:i', $cov['addtime']);
-			}
-
-			$this->assign("commentList",$commentList);
-			$this->assign("page",$page->show());
 			$this->assign("data",$data);
 			$this->assign("ress",$ress);
 			$this->assign("arra",$arra);
 			$this->display();
 		}
-
 
 		public function kcjs(){
 			$id = $_GET['id'];
@@ -366,7 +440,9 @@
 					'error' => true,
 					'msg' => '注册成功,您可以去个人中心完善个人信息'
 				);
-
+				$rows = $user->field("id")->where("Phone=".$data["Phone"])->find();
+				$id = $rows["id"];
+				$_SESSION['rigister']['id'] = $rows['id'];
 			}else{
 				$result = array(
 					'error' => false,

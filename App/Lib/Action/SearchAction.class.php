@@ -1,12 +1,24 @@
-<?php
+﻿<?php
 class SearchAction extends Action {
 	public function search() {
 		$searchType = $this->_get('drop2') ? $this->_get('drop2') : 'article' ;
 		$searchKey = $this->_get('keywords');
 
 		if(empty($searchKey)) {
-			echo '关键字不能为空';
-			return false;
+			$data = array();		
+			switch($searchType) {
+				case 'video':
+					$this->assign('data', $datas);
+					$this->display('videoList');
+					break;
+				
+				case 'article':
+					$this->assign('data', $datas);
+					$this->display('articlelist');
+					break;
+			}
+			
+			return;
 		}
 
 		$where = 'title like "%'.$searchKey.'%"';
@@ -22,7 +34,7 @@ class SearchAction extends Action {
 				$page->setConfig('theme', "%upPage% %linkPage% %downPage%");
 
 				$datas = $videoModel->field('id,kid,zid,name,url,title,money,introduce,chapternum,kctitle,img')
-									->where($where)
+									->where($where . ' and chapternum=1')
 									->order('id desc')
 									->limit($page->firstRow, $page->listRows)
 									->select();
@@ -47,7 +59,7 @@ class SearchAction extends Action {
 						->select();
 
 				foreach($datas as $key => $value) {
-					$datas[$key]['time'] = date('Y-m-d', $value['time']);
+					$datas[$key]['time'] = date('Y-m-d H:i:s', $value['time']);
 				}
 
 				$this->assign('data', $datas);

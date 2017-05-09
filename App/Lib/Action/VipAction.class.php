@@ -8,16 +8,30 @@
 			$user = M("user");
 			$result = $user->field('id,Phone,is_vip,vip_start,vip_end')->where("id = ".$id)->find();
 			if(empty($id)){
-				header("Location:/index.php/Login/loginPage");
+//				header("Location:/index.php/Login/loginPage");
+//				$result = array(
+//					'success' =>null,
+//				);
+				$this->ajaxReturn(0);
 			}else if($result['is_vip']==1){
-				return false;
+//				$this->success('您已经是VIP');
+				$this->ajaxReturn(1);
 			}else{
-				$this->assign("result",$result);
+
+				$this->ajaxReturn(2);
 			}
 			$vip = M("vip");
 			$res = $vip->field('id,price,znum,snum')->find();
 			$this->assign("res",$res);
+			$this->assign("result",$result);
 			$this->display();
+		}
+		public function member0(){
+			$id = $_SESSION['admins']['id'];
+			$user = M("user");
+			$result = $user->field('id,Phone,is_vip,vip_start,vip_end')->where("id = ".$id)->find();
+			$this->assign("result",$result);
+			$this->display("member");
 		}
 		public function member1(){
 			$vip = M("vip");
@@ -43,8 +57,8 @@
 			$timeStamp = time();
 			$out_trade_no = C('WxPay.pub.config.APPID')."$timeStamp";
 			$unifiedOrder->setParameter("out_trade_no","$out_trade_no");//商户订单号
-			$unifiedOrder->setParameter("total_fee",($arr['price']*100));//总金额
-			$unifiedOrder->setParameter("notify_url", 'http://123.57.207.163/weipay/index.php/home/index/notify');//通知地址
+			$unifiedOrder->setParameter("total_fee",1);//总金额
+			$unifiedOrder->setParameter("notify_url", 'http://www.bianquecxy.com/index.php/Vip/notify');//通知地址
 			$unifiedOrder->setParameter("trade_type","NATIVE");//交易类型
 			//非必填参数，商户可根据实际情况选填
 			//$unifiedOrder->setParameter("sub_mch_id","XXXX");//子商户号
@@ -110,31 +124,31 @@
 
 			//以log文件形式记录回调信息
 			//         $log_ = new Log_();
-			$log_name= __ROOT__."/Public/notify_url.log";//log文件路径
+			// $log_name= __ROOT__."/Public/notify_url.log";//log文件路径
 
-			$this->log_result($log_name,"【接收到的notify通知】:\n".$xml."\n");
+			// $this->log_result($log_name,"【接收到的notify通知】:\n".$xml."\n");
 
 			if($notify->checkSign() == TRUE)
 			{
 				if ($notify->data["return_code"] == "FAIL") {
 					//此处应该更新一下订单状态，商户自行增删操作
-					log_result($log_name,"【通信出错】:\n".$xml."\n");
+					// log_result($log_name,"【通信出错】:\n".$xml."\n");
 					$this->error("1");
 				}
 				elseif($notify->data["result_code"] == "FAIL"){
 					//此处应该更新一下订单状态，商户自行增删操作
-					log_result($log_name,"【业务出错】:\n".$xml."\n");
+					// log_result($log_name,"【业务出错】:\n".$xml."\n");
 					$this->error("失败2");
 				}
 				else{
 					//此处应该更新一下订单状态，商户自行增删操作
-					log_result($log_name,"【支付成功】:\n".$xml."\n");
-					$this->success("支付成功！");
+					// log_result($log_name,"【支付成功】:\n".$xml."\n");
+					//;
 					$user= M("user");
-					$result = $user->field('is_vip')->where("id = ".$_SESSION['admins']['id'])->find();
-					$result['is_vip'] = 1;
-					$data['is_vip'] = $result['is_vip'];
-					$user->save($data);
+					$data['is_vip'] =1;
+					$where['id']=$_SESSION['admins']['id'];
+					$user->where($where)->save($data);
+					 // $this->success("支付成功！");
 
 				}
 

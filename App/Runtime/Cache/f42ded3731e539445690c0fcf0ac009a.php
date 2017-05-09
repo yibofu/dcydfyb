@@ -10,7 +10,7 @@
 </head>
 <body style="background: white;">
 <!--头部 c02003-->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -18,10 +18,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -30,17 +48,31 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != ''): echo ($_SESSION['admins']['nickname']); ?>
+
+								<?php else: ?>
+								<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -77,17 +109,26 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
 <!--选择卡-->
@@ -123,9 +164,8 @@
                                 <p><img src="/Public/app/img/Q.png"/><span class="questionText"><?php echo ($qu["question"]); ?></span></p>
                                 <p><img src="/Public/app/img/A.png"/><span class="answerText"><?php echo ($qu["answer"]); ?></span></p>
                                 <div class="textQuestionPerson">
-                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName"><?php echo ($qu["teacher"]); ?></span>
-                                    <img class="collectImg tooltip" title="点赞" src="/Public/app/img/support.png"><span class="collectNum">9</span>
-                                    <button class="joinBtn">参与讨论</button>
+                                    <img src="/Public/app/img/expect_contact.png"><span class="adminName"><a href="<?php echo U('Teacher/teacherIntroduce');?>?id=<?php echo ($qu["teacherid"]); ?>" style="color:#f55e5e;"><?php echo ($qu["teacher"]); ?></a></span>
+                                    <img class="collectImg tooltip" name="upvote" attr="<?php echo ($qu["aid"]); ?>" title="点赞" src="/Public/app/img/support.png"><span class="collectNum"><?php echo ($qu["upvote"]); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -158,34 +198,56 @@
         <!--内容右边的部分-->
         <div class="consult_right">
             <!--菜单部分-->
-            <div class="main-fr">
-                <div class="main-fr-t">
-                    <ul class="main-fr-t-a">
-                        <li id="swphoto">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-01.png" style="display: none"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-1.png"/>
-                        </li>
-                        <li id="swphota">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-02.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-2.png" style="display: none"/>
-                        </li>
-                        <li id="swphotb">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-03.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-3.png" style="display: none"/>
-                        </li>
-                        <li id="swphotc">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-04.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-4.png" style="display: none"/>
-                        </li>
-                        <li id="swphotd">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-05.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-5.png" style="display: none"/>
-                        </li>
-                        <li><img src="/Public/app/img/menu_img/main-fr-06.jpg"/></li>
-                    </ul>
-                </div>
+            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css" />
+    <link rel="stylesheet" href="/Public/app/css/menuother.css" />
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js" ></script>
+</head>
+<body>
+<div class="menuRightcho">
+    <div class="menuRightchol">
+        <a href="#" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>我要学习</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>观看直播</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>我要提问</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>预约专家</p>
+        </a>
+    </div>
+    <div class="menuRightchor">
+        <p>扁鹊财院核心服务</p>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>
 
-            </div>
             <div class="clear"></div>
             <!--轮播图-->
             <div class="carousel">
@@ -204,6 +266,7 @@
                         <p>最新问题</p>
                     </div>
                     <!--参与讨论的内容(开始循环遍历的块)-->
+                    <div class="qlist">
 					<?php if(is_array($newQuestion)): $i = 0; $__LIST__ = $newQuestion;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nquestion): $mod = ($i % 2 );++$i;?><div class="discuss_text">
                         <div class="question">
                             <img src="/Public/app/img/Q.png" />
@@ -213,6 +276,7 @@
                             </div>
                         </div>
                     </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
                 </div>
 
             </div>
@@ -225,11 +289,12 @@
 
 </div>
 <!--二维码-->
-<div class="QR_code">
-    <img class="crossIcon" src="/Public/app/img/cross.png">
-    <img src="/Public/app/img/QR_code.png" />
-
-    <p>扫码参与讨论</p>
+<div style="width: 600px;margin: 0 auto;">
+    <div class="QR_code">
+        <img class="crossIcon" src="/Public/app/img/cross.png">
+        <img src="/Public/app/img/QR_code.png" />
+        <p>扫码参与讨论</p>
+    </div>
 </div>
 <!--友情链接-->
 <!DOCTYPE html>
@@ -262,9 +327,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>
@@ -312,8 +378,27 @@
         }
 
     }
+    //鼠标移上去二维码出来
+    $(".QR_code").css("display","none");
+    $(".joinBtn").click(function(){
+//        alert(123)
+        var Oindex=$(this).parents(".TAB_text_text").index();
+        var indexEp=Oindex-1;
+        //alert(indexEp);
+        //alert("-1150+Oindex*50+'px'");
+        if (navigator.userAgent.indexOf('Firefox') >= 0){
+            $(".QR_code").css({"display":"block","position":"relative","top":-1020+indexEp*150+'px',"left":"340px"});
+        }
+        if (navigator.userAgent.indexOf('Chrome') >= 0){
+            $(".QR_code").css({"display":"block","position":"relative","top":-880+indexEp*150+'px',"left":"340px"});
+        }
+
+
+    });
+    $(".crossIcon").click(function(){
+        $(this).parent().css("display","none");
+    });
 </script>
-<script src="js/jquery.min.js"></script>
 <script>
     //		分页
     $(function(){
@@ -327,126 +412,82 @@
 
     })
 
-    $("#swphoto").click(function(){
-        $("#swphoto .img1").css('display','block');
-        $("#swphoto .img2").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphota").click(function(){
-
-        $("#swphota .img1").css('display','none');
-        $("#swphota .img2").css('display','block');
-
-        $("#swphoto .img1").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphotb").click(function(){
-        $("#swphotb>img").toggle();
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphotc").click(function(){
-        $("#swphotc .img1").css('display','none');
-        $("#swphotc .img2").css('display','block');
-
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-
-    });
-    $("#swphotd").click(function(){
-        $("#swphotd>img").toggle();
-
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-    });
 
 	$(".TAB_title").children().mouseover(function(){
 		$('input[name=tid]').val($(this).attr('attr'));
 	})
 
-	$('button[name=sub]').click(function() {
-		var tid = $('input[name=tid]').val();
-		var content = $('textarea[name=textarea]').val();
+    $('button[name=sub]').click(function() {
+        var tid = $('input[name=tid]').val();
+        var content = $('textarea[name=textarea]').val();
+        $.post(
+                '<?php echo U("MyService/makeQuestion");?>',
+                {'tid':tid,'content':content},
+                function(res) {
+                    if(res == 0) {
+                        location.href = '<?php echo U("Login/loginPage");?>';
+                    } else if(res == 1) {
+                        var childrens = $('.qlist').children('.discuss_text');
+
+                        //判断是否有７个以上的问题，如果多余７个则删除最后一个
+                        if(childrens.length >= 7) {
+                            childrens.last().remove();
+                        }
+
+                        //获取问题列表
+                        var dateobj = new Date();
+                        var nowyear = dateobj.getFullYear();
+                        var nowmonth = dateobj.getMonth();
+                        var nowday = dateobj.getDate();
+
+                        //拼接列表字符串
+                        var html = '<div class="discuss_text">';
+                        html += '<div class="question">';
+                        html += '<img src="/Public/app/img/Q.png" />';
+                        html += '<div>';
+                        html += '<p class="questionFirP">';
+                        html += content;
+                        html += '</p>';
+                        html += '<p class="questionSecP">提问时间：';
+                        html += '<span>';
+                        html += nowyear;
+                        html += '-';
+                        html += nowmonth;
+                        html += '.';
+                        html += nowday;
+                        html += '</span>'
+                        html += '<span class="phoneNumber">151****8888</span>'
+                        html += '</p> </div> </div></div>';
+
+                        $('.qlist').prepend(html);
+
+                        $('textarea[name=textarea]').val('');
+                        html = '';
+                    }
+                }
+        );
+    });
+
+//点赞
+    $("img[name=upvote]").click(function(){
+		var aid = $(this).attr('attr');
+		var that = $(this);
+
 		$.post(
-			'<?php echo U("MyService/makeQuestion");?>',
-			{'tid':tid,'content':content},
+			'<?php echo U("AskAnswer/upvote");?>',		
+			{'aid':aid},
 			function(res) {
-				if(res == 0) {
-					location.href = '<?php echo U("Login/loginPage");?>';
-				} else if(res == 1) {
-					var childrens = $('.discuss_text').children('.question');
-
-					//判断是否有７个以上的问题，如果多余７个则删除最后一个
-					if(childrens.length >= 7) { 
-						childrens.last().remove();
-					}
-
-					//获取问题列表
-					var htmls = $('.discuss_text').html();
-
-					var dateobj = new Date();
-					var nowyear = dateobj.getFullYear();
-					var nowmonth = dateobj.getMonth();
-					var nowday = dateobj.getDate();
-
-					//拼接列表字符串
-					var html = '<div class="question">'; 
-						html += '<img src="/Public/app/img/Q.png" />';
-						html += '<div>'; 
-						html += '<p class="questionFirP">';
-						html += content;
-						html += '</p>';
-						html += '<p class="questionSecP">提问时间：';
-						html += '<span>';
-						html += nowyear;
-						html += '-';
-						html += nowmonth;
-						html += '.';
-						html += nowday;
-						html += '</span>'
-						html += '<span class="phoneNumber">151****8888</span>'
-						html += '</p> </div> </div>';
-
-						htmls = html + htmls;
-						$('.discuss_text').html('');
-						$('.discuss_text').html(htmls);
-
-						$('textarea[name=textarea]').val('');
+				if(res == 1) {
+					var upnumnode = that.siblings(".collectNum");
+					var upnum = parseInt(upnumnode.html()) + 1;
+					that.attr("src","/Public/app/img/ask_answer/support_check.png");
+					that.siblings(".collectNum").html(upnum);
+					that.siblings(".collectNum").css({"color":"#ff5918","font-weight":"700"});
+					that.unbind('click');
 				}
+			
 			}
 		);
 	});
-
 </script>
 </html>

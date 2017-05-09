@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -9,8 +9,10 @@
 		<meta name="description" content="扁鹊财院以分享财务管理智慧为使命，致力于让企业财务更加安全、利用财务技术创造更多利润、让财务管理更规范。平台隶属于北京大财有道科技有限公司，为企业提供专业的财务培训、财税筹划咨询、高端财务人员猎头、企业资产管理等一站式服务，并为创业型资本运作企业提供财务整体解决方案。"/>
 		<link rel="stylesheet" href="/Public/app/css/official.css">
 		<link rel="stylesheet" href="/Public/app/fonts/font/iconfont.css" />
+        <link rel="stylesheet" href="/Public/app/font/iconfont.css"/>
 		<link rel="stylesheet" href="/Public/app/css/Video_diagnostic.css" />
 		<link rel="stylesheet" href="/Public/app/css/introduce_all.css" />
+        <script type="text/javascript" src="/Public/app/font/iconfont.js"></script>
 		<script type="text/javascript" src="/Public/app/fonts/font/iconfont.js" ></script>
 		<script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
 		<style>
@@ -92,11 +94,44 @@
 				transition: opacity .4s ease-in;
 			}
 
-		</style>
+
+
+            #fullbg {
+                background-color: gray;
+                left: 0;
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+                z-index: 3;
+                filter: alpha(opacity=50);
+                -moz-opacity: 0.5;
+                -khtml-opacity: 0.5;
+            }
+
+            .popup {
+                background-color: #fff;
+                border: 5px solid rgba(0, 0, 0, 0.4);
+                width: 950px;
+                margin-left: 20px;
+                height: 417px;
+                left: 40%;
+                margin: -200px 0 0 -200px;
+                padding: 1px;
+                position: fixed !important;
+                /* 浮动对话框 */
+                position: absolute;
+                top: 40%;
+                z-index: 5;
+                border-radius: 5px;
+                display: none;
+            }
+
+
+        </style>
 	</head>
 	<body style="background: white;">
 	<!--头部 c02003-->
-	<!DOCTYPE html>
+	﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -104,10 +139,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -116,17 +169,31 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != ''): echo ($_SESSION['admins']['nickname']); ?>
+
+								<?php else: ?>
+								<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -163,17 +230,26 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
 	<!--选择卡-->
@@ -318,21 +394,46 @@
 							</div>
 
 						</div>
-							<div class="confirmText">
-								<div class="confirmTextMain">
-									<div class="confirmTextImg">
-										<img src="/Public/app/img/Video_diagnostic/submitSuccess.png" />
+                            <div id="fullbg"></div>
+                            <div class="popup">
+                                <p class="off_btn"><img src="/Public/app/img/off.png" /></p>
+                                <p class="submit_success_title"></p>
+                                <div class="popup_text">
+                                    <div class="submit_success_text">
+                                        <p>请保持电话畅通，客服会在24小时内与您联系。</p>
+                                        <p>请在个人中心查看您的服务进度。</p>
+                                    </div>
+                                    <div class="skipPage">
+                                        <p><a href="javascript:void(0)" class="noblank"> 留在本页</a>&nbsp;|&nbsp;<a href="<?php echo U('MyCenter/index');?>">进入个人中心</a></p>
+                                    </div>
+                                    <div class="popup_phone">
+                                        <p><img src="/Public/app/img/popup_phone.png" /><span class="phone_number">400-810-9017</span><span class="phone_text">(客服服务热线)</span></p>
+                                    </div>
+                                </div>
+                                <div class="focusOn">您可以继续关注</div>
+                                <div class="inFont_img">
+									<div class="icon_num">
+										<a href="<?php echo U('Index/index');?>"><i class="iconfont icon-huodongyujingqujiudianxiangqingyeicon09"></i></a>
+										<p>返回首页</p>
 									</div>
-									<div class="confirmTextText">
-										<p></p >
-										<p>请保持电话畅通，客服会在24小时内与您取得
-											联系。请在个人中心查看您的服务。</p >
-										<p>
-											<a href=" " style="color: #F55E5E;font-size: 12px;margin-right: 10px;">返回视频诊断</a><span>|</span><a href="<?php echo U('MyCenter/index');?>">进入个人中心</a>
-									    </p >
-								    </div>
-							    </div>
-					    	</div>
+									<div class="icon_num">
+										<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><i class="iconfont icon-huizhen"></i></a>
+										<p>远程问诊</p>
+									</div>
+									<div class="icon_num">
+										<a href="<?php echo U('Index/kce');?>"><i class="iconfont icon-x-mpg"></i></a>
+										<p>视频课程</p>
+									</div>
+									<div class="icon_num">
+										<a href="<?php echo U('Teacher/teacherList');?>"><i class="iconfont icon-27"></i></a>
+										<p>专家团队</p>
+									</div>
+									<div class="icon_num">
+										<a href="<?php echo U('Vip/openVip');?>"><i class="iconfont icon-huiyuanzhuanxiang"></i></a>
+										<p>会员专享</p>
+									</div>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -356,6 +457,7 @@
 						<!--块级-->
 							<?php if(is_array($recommendList)): $i = 0; $__LIST__ = $recommendList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="video_show_part">
 									<img class="img_num1"  src="<?php echo ($vo["img"]); ?>" />
+                                    <div style="clear: both"></div>
 									<i></i>
 									<div class="first_model">
 										<p><span>视频</span></p>
@@ -373,34 +475,57 @@
 				<!--内容右边的部分-->
 				<div class="consult_right">
 					<!--菜单部分-->
-					<div class="main-fr">
-		                <div class="main-fr-t">
-		                    <ul class="main-fr-t-a">
-		                        <li id="swphoto">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-01.png" style="display: none"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-1.png"/>
-		                        </li>
-		                        <li id="swphota">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-02.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-2.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotb">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-03.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-3.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotc">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-04.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-4.png" style="display: none"/>
-		                        </li>
-		                        <li id="swphotd">
-		                            <img class="img1" src="/Public/app/img/menu_img/main-fr-05.png"/>
-		                            <img class="img2" src="/Public/app/img/menu_img/main-fr-5.png" style="display: none"/>
-		                        </li>
-		                        <li><img src="/Public/app/img/menu_img/main-fr-06.jpg"/></li>
-		                    </ul>
-		                </div>
-		                
-		            </div>
+                    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css" />
+    <link rel="stylesheet" href="/Public/app/css/menuother.css" />
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js" ></script>
+</head>
+<body>
+<div class="menuRightcho">
+    <div class="menuRightchol">
+        <a href="#" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>我要学习</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>观看直播</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>我要提问</p>
+        </a>
+        <a href="#"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>预约专家</p>
+        </a>
+    </div>
+    <div class="menuRightchor">
+        <p>扁鹊财院核心服务</p>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>
+
+
 		            <div class="clear"></div>
 					<!--轮播图-->
 					<div class="carousel">
@@ -428,15 +553,15 @@
 	<div class="friendly_link">
 			<p class="link_title">友情链接</p>
 			<ul>
-				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">四度信息</a></li>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
 			</ul>
 		</div>
 		<div class="footerAll">
@@ -446,9 +571,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>
@@ -485,7 +611,32 @@
 	<script>
 
 	$(function(){
-		//选项卡
+		//留在本页
+		$(".noblank,.off_btn").click(function(){
+			$(".popup,#fullbg").hide();
+		});
+//        菜单栏变色
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+        //字体图标变色
+        $(".icon_num").mouseover(function(){
+            $(".icon_num").find("i").css("color","");
+            $(".icon_num").find("p").css("color","");
+            $(this).find("i").css("color","#044a99");
+            $(this).find("p").css("color","#044a99");
+        });
+        $(".icon_num").mouseleave(function(){
+            $(".icon_num").find("i").css("color","");
+            $(".icon_num").find("p").css("color","");
+        });
+    		//选项卡
 		$(".TAB_num i").css("color","#7FCBD9");
 		$(".TAB_num p").css("color","#0098b3");
 		$(".TAB_num i").eq(0).css("color","white");
@@ -494,8 +645,6 @@
 		$(".part_number").eq(0).css("display","block");
 		$(".TAB_num div").eq(0).css({"border":"2px #7fcbd9 solid"});
 		$(".TAB_num").mouseover(function(){
-
-			$(".confirmText").css({"display":"none"});
 			$(".TAB_num").css({"background":"white"});
 			$(".TAB_num").eq($(this).index()).css({"background":"#0098b3"});
 			$(".TAB_num div").css({"border":"2px #7fcbd9 solid"});
@@ -504,8 +653,8 @@
 			$(".TAB_num i").eq($(this).index()).css({"color":"white"});
 			$(".TAB_num p").css({"color":"#0098b3"});
 			$(".TAB_num p").eq($(this).index()).css({"color":"white"});
-			$(".part_number").css("display","none");
-			$(".part_number").eq($(this).index()).css("display","block");
+            $(".part_number").css("display","none");
+            $(".part_number").eq($(this).index()).css("display","block");
 
 			var attr = $(this).children('p').html();
 			$('button[name=make]').attr('attr', attr);
@@ -570,15 +719,15 @@
 				}).mouseout(function(){
 					$("#tooltip").remove();
 				});
-			//最底下按钮和内容的切换
-				$(".leaveword_btn").find("button").eq(0).css({"background-color":"#47b8cc","color":"white"});
-				$(".part_num").css("display","none");
-				$(".part_num").eq(0).css("display","");
-				$(".leaveword_btn").find("button").click(function(){
-					$(this).css({"background-color":"#47b8cc","color":"white"}).siblings().css({"background-color":"","color":""});
-					$(".part_num").css("display","none");
-					$(".part_num").eq($(this).index()).css("display","");
-				});
+//			//最底下按钮和内容的切换
+//				$(".leaveword_btn").find("button").eq(0).css({"background-color":"#47b8cc","color":"white"});
+//				$(".part_num").css("display","none");
+//				$(".part_num").eq(0).css("display","");
+//				$(".leaveword_btn").find("button").click(function(){
+//					$(this).css({"background-color":"#47b8cc","color":"white"}).siblings().css({"background-color":"","color":""});
+//					$(".part_num").css("display","none");
+//					$(".part_num").eq($(this).index()).css("display","");
+//				});
 			//查询的内容(文本框)
 				$(".part_num textarea").click(function(){
 					$(this).css("border","1px #888888 solid");
@@ -596,95 +745,40 @@
 	    		$(this).css({"background":"#5fc8da","color":"white"});
 	    	});
 	    })
-		$("#swphoto").click(function(){
-        $("#swphoto .img1").css('display','block');
-        $("#swphoto .img2").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphota").click(function(){
 
-        $("#swphota .img1").css('display','none');
-        $("#swphota .img2").css('display','block');
+	//弹窗
+        $(".off_btn").click(function(){
+            $(".popup,#fullbg").hide();
+        });
 
-        $("#swphoto .img1").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphotb").click(function(){
-        $("#swphotb>img").toggle();
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
-    });
-    $("#swphotc").click(function(){
-        $("#swphotc .img1").css('display','none');
-        $("#swphotc .img2").css('display','block');
 
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotd .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotd .img1").css('display','block');
+	$('button[name=make]').click(function() {
+		var apply = $('button[name=make]').attr('attr');
 
-    });
-    $("#swphotd").click(function(){
-        $("#swphotd>img").toggle();
-
-        $("#swphoto .img1").css('display','none');
-        $("#swphota .img2").css('display','none');
-        $("#swphotb .img2").css('display','none');
-        $("#swphotc .img2").css('display','none');
-        $("#swphoto .img2").css('display','block');
-        $("#swphota .img1").css('display','block');
-        $("#swphotb .img1").css('display','block');
-        $("#swphotc .img1").css('display','block');
-    });
-$('button[name=make]').click(function() {
-	var apply = $('button[name=make]').attr('attr');
-
-	$.post(
+		$.post(
 			'<?php echo U("MyService/makeDiagnose");?>',
 			{'apply': apply},
 
 			function(res) {
 				if(res == 0) {
-//					if(confirm('请先登陆')) {
 						location.href = '<?php echo U("Login/loginPage");?>';
 						return;
-//					} else {
-//						$('.confirmTextText').children('p').eq(0).html('对不起，登陆后才能预约');
-//						$(".confirmText").css({"display":"block"});
-//						$(".part_number").css("display","none");
-//					}
 				} else {
-					$('.confirmTextText').children('p').eq(0).html(res);
-					$(".confirmText").css({"display":"block"});
-					$(".part_number").css("display","none");
+					var bh = $("body").height();
+					var bw = $("body").width();
+					$("#fullbg").css({
+						    height:bh,
+						    width:bw,
+						    display:"block"
+					});
+
+					$('.submit_success_title').html(res);
+					$(".popup").show();
 
 				}
 			}
-	);
-});
+		);
+	});
 
 	</script>
 </html>

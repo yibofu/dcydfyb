@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -50,12 +50,10 @@
     <thead>
     <tr>
         <th field="id" align="center" width="5%">id</th>
-        <!--<th field="teacherid" align="center" width="5%">老师id</th>-->
         <th field="address" align="center" width="10%">授课地址</th>
-        <!--<th field="type" align="center" width="10%">授课类型id</th>-->
         <th field="tname" align="center" width="10%">授课类型</th>
-        <th field="startday" align="center" width="10%">授课开始时间</th>
-        <th field="endday" align="center" width="10%">授课结束时间</th>
+        <th field="startday" align="center" width="15%">授课开始时间</th>
+        <th field="endday" align="center" width="15%">授课结束时间</th>
         <th field="cost" align="center" width="10%">课程价钱</th>
         <th field="name" align="center" width="15%" >授课讲师</th>
         <th field="f" align="center" width="15%" formatter="show_manger">操作</th>
@@ -112,7 +110,7 @@
 
         <div class="fitem">
             <label>授课讲师:</label>
-            <select name="teacherid" id="teacherid" data-options="panelHeight:'auto',editable:false" class="easyui-combobox">
+            <select name="teacherid" id="teacherid" style="height:20px; overflow: scroll;" class="easyui-combobox">
                 <option value="">--请选择--</option>
                 <volist name="result" id="vo">
                     <option value="{$vo.id}">{$vo.name}</option>

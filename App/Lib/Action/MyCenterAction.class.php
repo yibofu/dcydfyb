@@ -26,12 +26,11 @@
 			$orderInfo = self::orders($uid);
 			foreach($orderInfo as $key => $order) {
 				switch($order['status']) {
-					case '1':
+					case '0':
 						$orderInfo[$key]['chstatus'] = '未付款';
 						break;
 
-					case '3':
-					case '2':
+					case '1':
 						$orderInfo[$key]['chstatus'] = '已付款';
 						break;
 				}
@@ -60,8 +59,14 @@
 			$yjtNumber = self::yjt($uid);
 
 			//数据为空显示的
-			$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
-
+			$empty = '<div class="yihan">';
+			$empty .= '<img src="/Public/app/img/imgblackwhite.png">';
+			$empty .= '<div>';
+			$empty .= '<p>很遗憾！</p>';
+			$empty .= '<p>您在此没有留下足迹</p>';
+			$empty .= '</div>';
+			$empty .= '</div>';
+                                                        
 			$this->assign('userInfo', $userInfo);
 			$this->assign('orderInfo', $orderInfo);
 			$this->assign('collectionInfo', $collectionInfo);
@@ -125,35 +130,42 @@
 			$model = M('user');
 			$data = array();
 
-			//查询之前当前头像
-			$picture = $model->field('img')->where('id=' . $uid)->find();
+			if($this->isAjax()) {
+				//查询之前当前头像
+				$picture = $model->field('img')->where('id=' . $uid)->find();
 
-			//上传头像
-			if($_FILES['file']['size'] != 0) {
-				import('ORG.Net.UploadFile');
-				
-				$upload = new UploadFile();
-				$upload->maxSize = 1024*1024*2;
-				$upload->allowExts = array('jpg', 'jpeg', 'png', 'gif');
-				$savepath = './Public/upload/image/';
-				$upload ->saveRule = uniqid;
-				$upload ->uploadReplace = true;
-				$upload ->autoSub = true;
-				$upload ->subType = date;
-				$upload ->dataFormat = "Ym";
+				//上传头像
+				if($_FILES['file']['size'] != 0) {
+					import('ORG.Net.UploadFile');
+					
+					$upload = new UploadFile();
+					$upload->maxSize = 1024*1024*2;
+					$upload->allowExts = array('jpg', 'jpeg', 'png', 'gif');
+					$savepath = './Public/upload/image/';
+					$upload ->saveRule = uniqid;
+					$upload ->uploadReplace = true;
+					$upload ->autoSub = true;
+					$upload ->subType = date;
+					$upload ->dataFormat = "Ym";
 
-				if(!is_dir($savepath)) {
-					$r = mkdir($savepath, 0777, true);
-				}
+					if(!is_dir($savepath)) {
+						$r = mkdir($savepath, 0777, true);
+					}
 
-				$upload->savePath = $savepath;
-				if($upload->upload()) {
-					$upinfo = $upload->getUploadFileInfo();
-					$path = $upinfo[0]['savepath'].$upinfo[0]['savename'];
-					$data['img'] = substr($path, 1);
-					unlink($picture['img']);
-				} else {
-					$data['img'] = $picture['img'];
+					$upload->savePath = $savepath;
+					if($upload->upload()) {
+						$upinfo = $upload->getUploadFileInfo();
+						$path = $upinfo[0]['savepath'].$upinfo[0]['savename'];
+						$data['img'] = substr($path, 1);
+						unlink($picture['img']);
+					} else {
+						$data['img'] = $picture['img'];
+					}
+
+					$res = $model->where('id='.$uid)->save($data); 
+					if($res) {
+						$this->ajaxReturn($data['img'], 'json');
+					}
 				}
 			}
 
@@ -467,14 +479,13 @@
 
 		//获取三条订单
 		private function orders($uid) {
-			$orderModel = M('cart');
-			$orderInfo = $orderModel->field('dcyd_view.img img, dcyd_view.title title, dcyd_view.money money, dcyd_cart.status status, dcyd_cart.addtime addtime')
-						->join('inner join dcyd_view on dcyd_cart.courseid=dcyd_view.id')
-						->where('dcyd_cart.uid=' .$uid)
+			$orderModel = M('vieworder');
+			$orderInfo = $orderModel->field('dcyd_view.img img, dcyd_view.title title, dcyd_view.kname kname, dcyd_view.kctitle kctitle, dcyd_view.name name, dcyd_vieworder.viewid id,  dcyd_view.money money, dcyd_vieworder.status status, dcyd_vieworder.addtime addtime')
+						->join('inner join dcyd_view on dcyd_vieworder.viewid=dcyd_view.id')
+						->where('dcyd_vieworder.uid=' .$uid)
 						->order('addtime desc')
 						->limit('0,3')
 						->select();
-
 			return $orderInfo;
 		
 		}
@@ -482,7 +493,7 @@
 		//获取我的收藏四条
 		private function collects($uid) {
 			$collectModel = M('collection');
-			$collectInfo = $collectModel->field('dcyd_view.img img, dcyd_view.title title')
+			$collectInfo = $collectModel->field('dcyd_view.img img, dcyd_view.title title, dcyd_view.kname kname, dcyd_view.kctitle kctitle, dcyd_view.name name, dcyd_collection.courseid courseid')
 							->join('inner join dcyd_view on dcyd_collection.courseid=dcyd_view.id')
 							->where('uid=' . $uid)
 							->order('addtime desc')
@@ -495,7 +506,7 @@
 		//获取浏览过的课程
 		private function browser($uid) {
 			$browserModel = M('browse');
-			$browserInfo = $browserModel->field('dcyd_view.img img, dcyd_view.title title, dcyd_view.name teacher, dcyd_view.money money, dcyd_browse.courseid courseid')
+			$browserInfo = $browserModel->field('dcyd_view.img img, dcyd_view.title title, dcyd_view.kname kname, dcyd_view.kctitle kctitle, dcyd_view.name teacher, dcyd_view.money money, dcyd_browse.courseid courseid')
 							->join('inner join dcyd_view on dcyd_browse.courseid=dcyd_view.id')
 							->where('uid=' . $uid)
 							->order('addtime desc')
@@ -522,8 +533,8 @@
 		
 		//获取待付款个数
 		private function noPay($uid) {
-			$cartModel = M('cart');
-			$noPayNumber = $cartModel->where('uid=' .$uid. ' and status="1"')->count();
+			$cartModel = M('vieworder');
+			$noPayNumber = $cartModel->where('uid=' .$uid. ' and status="0"')->count();
 
 			return $noPayNumber;
 		}
@@ -539,7 +550,7 @@
 		//获取约见个数
 		private function yjt($uid) {
 			$yjtModel = M('yjt');
-			$yjtNumber = $yjtModel->where('uid=' .$uid. ' and status="1" and iscancel="1"')->count();
+			$yjtNumber = $yjtModel->where('uid=' .$uid. ' and status="0"')->count();
 
 			return $yjtNumber;
 		}

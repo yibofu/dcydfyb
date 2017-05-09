@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
     <script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
 </head>
 <body style="background: white;">
-<div class="consult_all">
+<div class="consult_all"  style="margin-top:-15px;">
     <!--头部 c02003-->
-    <!DOCTYPE html>
+    ﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -24,10 +24,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -36,17 +54,31 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != ''): echo ($_SESSION['admins']['nickname']); ?>
+
+								<?php else: ?>
+								<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -83,17 +115,26 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
     <!--选择卡-->
@@ -165,34 +206,58 @@
         <!--内容右边的部分-->
         <div class="consult_right">
             <!--菜单部分-->
-            <div class="main-fr">
-                <div class="main-fr-t">
-                    <ul class="main-fr-t-a">
-                        <li id="swphoto">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-01.png" style="display: none"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-1.png"/>
-                        </li>
-                        <li id="swphota">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-02.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-2.png" style="display: none"/>
-                        </li>
-                        <li id="swphotb">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-03.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-3.png" style="display: none"/>
-                        </li>
-                        <li id="swphotc">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-04.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-4.png" style="display: none"/>
-                        </li>
-                        <li id="swphotd">
-                            <img class="img1" src="/Public/app/img/menu_img/main-fr-05.png"/>
-                            <img class="img2" src="/Public/app/img/menu_img/main-fr-5.png" style="display: none"/>
-                        </li>
-                        <li><img src="/Public/app/img/menu_img/main-fr-06.jpg"/></li>
-                    </ul>
-                </div>
-
-            </div>
+            ﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css"/>
+    <link rel="stylesheet" href="/Public/app/css/menu.css"/>
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js"></script>
+</head>
+<body>
+    <div class="menuRightcho">
+        <a href="<?php echo U('Article/message');?>" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>财税资讯</p>
+        </a>
+        <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>财税问诊</p>
+        </a>
+        <a href="<?php echo U('Index/kce');?>" class="underlineNeg">
+            <i class="icon iconfont icon-anpaimianshi"></i>
+            <p>课程中心</p>
+        </a>
+        <a href="<?php echo U('Kecheng/boss');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>课程报名</p>
+        </a>
+        <a href="<?php echo U('AskAnswer/Asks');?>"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>财税问题</p>
+        </a>
+        <a href="<?php echo U('Vip/openVip');?>"  class="underlineNegUN">
+            <p>VIP会员</p>
+            <p>核心服务</p>
+        </a>
+    </div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>
             <div class="clear"></div>
             <!--轮播图-->
             <div class="carousel">
@@ -224,15 +289,15 @@
 	<div class="friendly_link">
 			<p class="link_title">友情链接</p>
 			<ul>
-				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">四度信息</a></li>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
 			</ul>
 		</div>
 		<div class="footerAll">
@@ -242,9 +307,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>

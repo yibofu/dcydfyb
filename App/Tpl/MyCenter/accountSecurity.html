@@ -6,6 +6,18 @@
 		<link rel="stylesheet" href="/Public/app/css/account-security.css" />
 		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
 		<script src="/Public/app/js/jquery.min.js"></script>
+		<style>
+		    .tishicontant{
+			        width: 300px;
+			        margin: 20px 0 20px 0;
+			        height: 30px;
+			        color: #F55E5E;
+			        font-size: 14px;
+			        line-height: 30px;
+			        margin-left: 70px!important;
+					display: none;
+			    }
+		</style>
 	</head>
 	<body>
 		<div class="page_all">
@@ -20,9 +32,10 @@
 						<p class="person_title"><span>账户安全</span></p>
 						<div class="security">
 							<form>
-								<p><span>原始密码：</span><input class="oldPassword"  type="text" name="oldpasswd"/><span class="hint"></span></p>
-								<p><span>新建密码：</span><input  class="newPassword" type="text" name="newpasswd"/><span class="hint"></span></p>
-								<p><span style="margin-left: 14px;">验证码：</span><input  type="text" class="inputCode" name="vcode"/><input class="codeBtn" type="button" value="发送验证码" name="sendCode"></p>
+								<p><span>原始密码：</span><input class="oldPassword"  type="password" name="oldpasswd"/><span class="hint"></span></p>
+								<p><span>新建密码：</span><input  class="newPassword" type="password" name="newpasswd"/><span class="hint"></span></p>
+								<p><span style="margin-left: 14px;">验证码：</span><input  type="text" class="inputCode" name="vcode"/><input class="codeBtn" style="height:auto;" type="button" value="发送验证码" name="sendCode"></p>
+								<p class="tishicontant">验证码已发送到您注册的手机上，请注意查收</p>
 								<button name="sub" type="button">提交</button>
 							</form>
 						</div>
@@ -37,13 +50,17 @@
 				$(".bac-e a").eq(3).css("color","#55BDCF");
 
 				$('input[name=sendCode]').click(function(){
+					if(!checkInput()) {
+						return false;
+					}
+
 					$.post('{:U("Code/chwd")}', {}, 
 						function(res){
 							if(res == 0) {
 								location.href = "{:U('Login/loginPage')}"
 								return;
 							} else {
-								alert(res);
+								$('.tishicontant').show();
 							}
 						}
 					);		
@@ -67,7 +84,6 @@
 				}	
 			);
 		});
-
 
 
 		//收集表单数据
@@ -110,6 +126,16 @@
 			return data;
 		}
 
-
+		function checkInput() {
+			var flag = true;
+			$('input[type=password]').each(function(){
+				if($(this).val().trim() == '') {
+					flag = false;
+					$(this).css('border', '1px #F55E5E solid');
+				} 
+			}); 		
+			
+			return flag;
+		}
 		</script>
 </html>

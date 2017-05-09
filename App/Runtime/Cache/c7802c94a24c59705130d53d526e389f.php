@@ -17,8 +17,8 @@
     <style>
 
         /*********** 文字 ************/
-        .sizea{ font-size: 1.6rem;}/*18*/
-        .sizec{ font-size: 1.6rem;}/*18*/
+        .sizea{ font-size: 1.4rem;}/*18*/
+        .sizec{ font-size: 1.8rem;}/*18*/
         .fom-jia{ font-weight: bold;}
         .texta{text-indent:2em;}
         .yinc{text-overflow : ellipsis;
@@ -26,7 +26,7 @@
             overflow : hidden;
         }
         .lin-a{ line-height: 1.8rem}
-        .lin-b{ line-height: 3rem}
+        .lin-b{ line-height: 3rem; cursor: pointer;}
         .fona-w{font-family: 'Georgia', Times, Times New Roman, serif;color: #999999; font-size: 1.8rem;}
         .fona-r{font-family: 'Georgia', Times, Times New Roman, serif;color: #000000; font-size: 1.4rem;}
         .lin-d{ line-height: 60px;}
@@ -87,21 +87,22 @@
         }
         .tab-nav{
             margin:0;
-            height:3rem;
+            height:4rem;
             padding:0;
             background: #ffffff;
         }
         .tab-nav li{
             margin:0;
             padding:0;
-            width:33.3%;
-            height:3rem;
-            line-height: 2rem;
+            width:8rem;
+            margin-left: 2rem;
+            height:4rem;
+            line-height: 4rem;
             float:left;
             text-align:center;
         }
         .current{
-            border-bottom: .1rem solid #00a0e9;
+            border-bottom: .2rem solid #00a0e9;
         }
         .tab-content{
             width: 716px;
@@ -126,15 +127,18 @@
         }
         .content .content-o{
             width: 554px;
-            height: 217px;
+            min-height:217px;
+            overflow: auto;
             background: #d7f8ff;
             border: 1px solid #7ecef4;
             margin-left: 62px;
-
+        }
+        .content{
+            padding-top: 50px;
         }
         .content .content-o .content-o-a{
             width: 167px;
-            height: 217px;
+
             display: inline-block;
         }
         .content .content-o .content-o-a img{
@@ -146,6 +150,8 @@
             display: inline-block;
             margin-left: 63px;
             margin-top: 10px;
+            border:1px black solid:
+
         }
         .content .content-i{
             line-height: 2.6rem;
@@ -238,7 +244,7 @@
         .web-ya{ width:2.3rem; height: 1.4rem;margin-left: 8%;margin-bottom: .6rem;}
         .iond{ position: absolute; top: 3.6rem; left: 2%; width: 4rem; height: 2rem;}
 
-        #preview1{color: #00a0e9;width: 520px;}
+        #preview1{color: #999999;width: 520px;}
         .none1{display: block;}
         .none2{display: none;}
         .none3{display: none;}
@@ -251,16 +257,16 @@
         .clearfix:after{content: '';display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
         .bac{line-height: 60px;}
         .containera{ margin-top: 30px;}
-        .container-a{ width: 475px; margin-left: 25px; float: left;}
+        .container-a{ width: 475px; margin-left: 25px; float: left;overflow: hidden;}
         .fona-a{ font-size: 18px;}
         .liny-a{ line-height: 30px;}
         .container-b{ width: 458px; height: 36px; border: 2px solid #eeeeee; line-height: 36px; padding-left: 13px; font-size: 12px; position: absolute; color: #949494;}
         .conner-b{ position: relative; top: -47px; left: 6px; width: 71px; height: 18px; line-height: 18px; font-size: 14px; background: #f5f5f5;text-align: center;}
-        .ciner-c{ width: 121px; height: 38px; line-height: 38px; text-align: center; border: 1px solid #0098b3; margin-top: 70px; color: #0098b3;}
-        .ciner-c a{color: #0098b3;}
+        .ciner-c{ width: 121px; height: 38px; line-height: 38px; text-align: center; border: 1px solid #0098b3; margin-top: 70px;margin-right: 20px; color: #0098b3;float: left;}
+        .ciner-c a{color: #0098b3;text-decoration: none;}
         .basic-a{ width: 605px; height: 40px; line-height: 40px; color: #ffffff;}
         .basic-a .basica{background: #666666;width: 72px; display: block; text-align: center;}
-        .basic-a .basicb{background: #eeeeee;width: 516px; display: block;padding-left: 16px}
+        .basic-a .basicb{background: #eeeeee;width: 516px; display: block;padding-left: 16px;}
         .flo-a{ margin-left: 30px;}
         .official-head .head-two .trade{ display: none;}
         .basic-a .basicb:hover{ cursor:pointer;font-weight: bold;}
@@ -288,6 +294,21 @@
         .seek{
             overflow: hidden;
         }
+        .severImgText p{
+            margin: 0;
+            padding:0 ;
+        }
+        .newlin-b{
+            color: #999999;
+            font-size: 18px;
+        }
+        .bac p{
+            float: left;
+            margin-left: 10px;
+        }
+        .bac{
+            overflow: hidden;
+        }
     </style>
     <script src="/Public/app/js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
     <script>
@@ -312,7 +333,7 @@
 </head>
 <body>
 <!--头部 c02003-->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -320,10 +341,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -332,17 +371,31 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != null): echo ($_SESSION['admins']['nickname']); ?>
+								<?php else: ?>
+									<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -379,30 +432,40 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
 <!--选择卡-->
 
 <div class="box">
-    <p class="bac">全部课程 > 行业主题 > 主讲老师</p>
+    <div class="bac">
+        <p>全部课程 > 行业主题 > 主讲老师 ></p >
+        <p class="videoName"><?php echo ($data[0]["title"]); ?></p >
+    </div>
     <div class="container" id="container">
         <div class="row">
             <div class="vilo">
                 <div id="willesPlay">
-                    <div class="playHeader">
-                        <div class="videoName"><?php echo ($data[0]["title"]); ?></div>
-                    </div>
+
                     <div class="playContent">
                         <div class="videoitem" >
                             <video width="100%" height="100%;" src="<?php echo ($data[0]['url']); ?>" controls="true" loop></video>
@@ -426,28 +489,31 @@
         </div>
         <div class="container-b">
             阅读量：123 课时总数：50课时
-            <div class="conner-b">开课时间</div>
+            <!--<div class="conner-b">开课时间</div>-->
         </div>
-        <div style="width: 463px; background: #eeeeee; line-height: 32px; padding-left: 12px; font-size: 14px;color: #e74b00; margin-top: 70px;">
-            欢迎进入扁鹊财院
+        <div style="width: 463px; background: #eeeeee; line-height: 32px; padding-left: 12px; font-size: 14px;margin-top: 70px;">
+            <p style="color: #e74b00; ">￥20000.00</p>
         </div>
         <div class="ciner-c">
             <a href="http://pct.zoosnet.net/LR/Chatpre.aspx?id=PCT10814050&lng=cn">在线客服</a>
         </div>
+        <div class="ciner-c" style="background: #0098b3;">
+            <a style="color: white;" href="<?php echo U('Orders/orderConfirm');?>?courid=<?php echo ($data[0]['id']); ?>">立即购买</a>
+        </div>
     </div>
     <div class="clearfix"></div>
 </div>
-<div style="background: #EEEEEE; width: 100%; margin-top: 20px;">
+<div style="background: #EEEEEE; width: 100%; margin-top:0px;padding-bottom: 30px;">
     <div style="width: 1000px; margin: 0 auto;">
         <div class="videob fl" style="width: 716px;">
             <div class="main-title">
                 <ul class="tab-nav">
-                    <li class="current sizec lin-b" name="basic"><a id="kcjs" class="lin-b">课程介绍</a></li>
-                    <li class="sizec lin-b" name="content"><a id="zjjj" class="lin-b">专家讲师</a></li>
-                    <li class="sizec lin-b" name="user"><a id="xypl" class="lin-b">学员评论</a></li>
+                    <li class="current sizec lin-b" name="basic"><a id="kcjs" class="lin-b newlin-b">课程介绍</a></li>
+                    <li class="sizec lin-b" name="content"><a id="zjjj" class="lin-b newlin-b">专家讲师</a></li>
+                    <li class="sizec lin-b" name="user"><a id="xypl" class="lin-b newlin-b">学员评论</a></li>
                 </ul>
                 <div class="tab-content basic">
-                    <?php if(is_array($ress)): $i = 0; $__LIST__ = $ress;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><div class="basic-a flo-a" style="padding-top: 21px;"><span class="fl basica">第<?php echo ($vo1["chapternum"]); ?>章</span><a href="<?php echo U('Index/visual');?>?id=<?php echo ($vo1["id"]); ?>&kname=<?php echo ($vo1["kname"]); ?>&name=<?php echo ($vo1["name"]); ?>&kctitle=<?php echo ($vo1["kctitle"]); ?>&title=<?php echo ($vo1["title"]); ?>"><p class="fl basicb"><?php echo ($vo1["title"]); ?></p></a></div>
+                    <?php if(is_array($ress)): $i = 0; $__LIST__ = $ress;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><div class="basic-a flo-a" style="padding-top: 21px;"><span class="fl basica">第<?php echo ($vo1["chapternum"]); ?>章</span><a href="<?php echo U('Index/visual');?>?id=<?php echo ($vo1["id"]); ?>&kname=<?php echo ($vo1["kname"]); ?>&name=<?php echo ($vo1["name"]); ?>&kctitle=<?php echo ($vo1["kctitle"]); ?>&title=<?php echo ($vo1["title"]); ?>"><p class="fl basicb" style="color: #333333;font-size: 14px;"><?php echo ($vo1["title"]); ?><a href="#"><img src="/Public/app/img/playcolor.png" width="20px" height="20px" style="margin-top: -3px;margin-left: 10px;"/></a></p></a></div>
                         <div class="clearfix"></div>
                         <div id="preview1" class="sizea height-c inu"><?php echo ($vo1["introduce"]); ?></div><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
@@ -455,10 +521,10 @@
                         <div class="content-o">
                             <div class="content-o-a fl"><img src="<?php echo ($arra['timg']); ?>"/></div>
                             <div class="content-o-b fl">
-                                <h2 class="sizeo colod">扁鹊财学院创始人：<?php echo ($arra['name']); ?></h2>
-                                <p class="opi sizeq">
+                                <h2 class="sizeo colod">
+                                    扁鹊财学院创始人：<?php echo ($arra['name']); ?></h2>
+                                <p class="opi sizeq" style="overflow: hidden;">
                                     <?php echo ($arra['explain']); ?>
-                                </p>
                             </div>
                         </div>
                     <!--<h2 class="content-ion fona-r fom-jia">你喜欢的课程</h2>-->
@@ -487,7 +553,7 @@
                         <form action="">
                             <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
                             <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
-                            <a href="#"><input type="button" value="评论" id="submit"></a>
+                            <a href="#"><input type="button" value="评论" style="top:250px!important;" id="submit"></a>
                         </form>
                     </div>
                     <div class="clearfix"></div>
@@ -536,15 +602,15 @@
 	<div class="friendly_link">
 			<p class="link_title">友情链接</p>
 			<ul>
-				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">四度信息</a></li>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
 			</ul>
 		</div>
 		<div class="footerAll">
@@ -554,9 +620,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>
@@ -589,75 +656,22 @@
 
 </body>
 <script type="text/javascript">
-    //导航栏 c02003
-//    $(function(){
-//        $(".boe").hover(function(){
-//            $(".aoe").css('border','0');
-//        })
-//        $(".aoe").hover(function(){
-//            $(".aoe").css('border','0');
-//        })
-//        $(".boe").mouseout(function(){
-//            $(".aoe").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-left','1px solid #ffffff');
-//        })
-//        $(".boa").hover(function(){
-//            $(".aoa").css('border','0');
-//            $(".aoe").css('border-right','0px');
-//        })
-//        $(".aoa").hover(function(){
-//            $(".aoa").css('border','0');
-//            $(".aoe").css('border-right','0');
-//        })
-//        $(".boa").mouseout(function(){
-//            $(".aoa").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-left','1px solid #ffffff');
-//        })
-//
-//
-//        $(".bob").hover(function(){
-//            $(".aoa").css('border','0');
-//            $(".aob").css('border','0');
-//        })
-//        $(".aob").hover(function(){
-//            $(".aoa").css('border','0');
-//            $(".aob").css('border','0');
-//        })
-//        $(".bob").mouseout(function(){
-//            $(".aoa").css('border-right','2px solid #ffffff');
-//            $(".aob").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-left','1px solid #ffffff');
-//        })
-//
-//        $(".boc").hover(function(){
-//            $(".aob").css('border','0');
-//            $(".aoc").css('border','0');
-//        })
-//        $(".aoc").hover(function(){
-//            $(".aob").css('border','0');
-//            $(".aoc").css('border','0');
-//        })
-//        $(".boc").mouseout(function(){
-//            $(".aob").css('border-right','2px solid #ffffff');
-//            $(".aoc").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-left','1px solid #ffffff');
-//        })
-//
-//        $(".bod").hover(function(){
-//            $(".aod").css('border','0');
-//            $(".aoc").css('border','0');
-//        })
-//        $(".aod").hover(function(){
-//            $(".aod").css('border','0');
-//            $(".aoc").css('border','0');
-//        })
-//        $(".bod").mouseout(function(){
-//            $(".aod").css('border-right','2px solid #ffffff');
-//            $(".aoc").css('border-right','2px solid #ffffff');
-//            $(".aoe").css('border-left','1px solid #ffffff');
-//        })
-//    })
+
+    //新加的
+    $(".basic-a img").hover(function(){
+       $(this).attr("src","/Public/app/img/playcolorchecked.png");
+    });
+    $(".basic-a img").mouseleave(function(){
+        $(this).attr("src","/Public/app/img/playcolor.png");
+    });
+    $(".newlin-b").eq(0).css("color","#333333");
+    $(".newlin-b").click(function () {
+        $(".newlin-b").css("color","#999999");
+       $(this).css("color","#333333");
+    });
+//    $(".newlin-b").mouseleave(function () {
+//        $(this).css("color","");
+//    });
     $('#kcjs').bind('click',function(){
 //        alert(1);
         $(".basic").css("display","block");

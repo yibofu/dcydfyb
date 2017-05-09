@@ -24,7 +24,50 @@
 			}		
 			.my_order>p span a:hover {
 				text-decoration:underline;
-			}		
+			}
+
+
+
+            .yihan{
+                overflow: hidden;
+                height: 200px;
+                padding-top: 20px;
+            }
+            .yihan img{
+                float: left;
+                margin-left: 150px;
+                margin-top: 30px;
+            }
+            .yihan div{
+                float: left;
+                margin-top:80px;
+
+            }
+            .yihan div p{
+                font-size: 18px;
+                color: #999999;
+			} 
+			.my_order_text_text a{
+				color:#666666;
+				font-size:14px;
+				text-decoration:none;
+			}
+			.my_order_text_text a:hover{
+				color:#f55e5e;
+			}
+			.boss_thought_model a{
+				text-decoration:none;
+			}
+			.boss_thought_model a p:hover{
+				color:#f55e5e;
+			}
+			.name_icon a{
+				text-decoration:none;
+				color:#666666;
+			}
+			.name_icon a:hover{
+				color:#f55e5e;
+			}
 		</style>
 	<body>
 		<div class="page_all">
@@ -58,32 +101,41 @@
 						<!--待付款-->
 						<div class="name_icon">
 							<div>
-								<img src="/Public/app/img/obligation.png" />
-								<p>待付款<span>{$noPaynumber}</span></p>
+								<a href="{:U('MyCart/index')}">
+									<img src="/Public/app/img/obligation.png" />
+									<p>待付款<span>{$noPaynumber}</span></p>
+								</a>
 							</div>
 							<div>
-								<img src="/Public/app/img/answer.png" />
-								<p>待回答<span>{$noAnswer}</span></p>
+								<a href="{:U('MyService/questionList')}">
+									<img src="/Public/app/img/answer.png" />
+									<p>待回答<span>{$noAnswer}</span></p>
+								</a>
 							</div>
 							<div>
-								<img src="/Public/app/img/sign_up.png" />
-								<p>已报名<span>{$signUp}</span></p>
+								<a href="{:U('MyOpenCourse/index')}">
+									<img src="/Public/app/img/sign_up.png" />
+									<p>已报名<span>{$signUp}</span></p>
+								</a>
 							</div>
 							<div>
-								<img src="/Public/app/img/meet.png" />
-								<p>待约见<span>{$yjtNumber}</span></p>
+								<a href="{:U('MyService/apporintmentList')}">
+									<img src="/Public/app/img/meet.png" />
+									<p>待约见<span>{$yjtNumber}</span></p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<!--我的订单-->
 					<div class="my_order">
-						<p>我的订单<span><a href="{:U('MyCart/index')}">查看全部订单</a></span></p>
+						<p style="margin-left:20px;">我的学习<span><a href="{:U('MyCart/index')}">查看全部订单</a></span></p>
 						<!--我的订单开始遍历-->
+                        
 						<volist name="orderInfo" id="order" empty="$empty">
 						<div class="my_order_text">
 							<img src="{$order.img}" style="width:122px;" />
 							<div class="my_order_text_text">
-								<div><p>{$order.title}</p></div>
+								<div><p><a href="{:U('Index/visual')}?id={$order.id}&kname={$order.kname}&name={$order.name}&kctitle={$order.kctitle}&title={$order.title}">{$order.title}</a></p></div>
 								<div><p>￥{$order.money}</p><p>在线支付</p></div>
 							<div><p>{$order.day}</p><p>{$order.hour}</p></div>
 							<div>
@@ -100,29 +152,34 @@
 						</volist>
 					</div>
 					<!--最近浏览-->
+					<?php if(!empty($browserInfo)){ ?>
 					<div class="recent">
-						<p class="recent_title">最新浏览</p>
+						<p class="recent_title" style="margin-left:20px;">最新浏览</p>
 						<div class="video_show">
 						<!--块级-->
-						<volist name="browserInfo" id="video" empty="$empty">
+						<volist name="browserInfo" id="video" empty="">
 							<div class="video_show_part">
 								<img class="img_num1"  src="{$video.img}" />
 								<div class="first_model">
+									<!--
 									<p><span>视频</span></p>
+									-->
 									<span>{$video.title}</span>
 								</div>
 								<div class="second_model">
-									<img src="/Public/app/img/person.png" />
+									<!--<img style="width:50px;" src="/Public/app/img/person.png" />
 									<span style="font-size: 10px;">{$video.teacher}</span>
 									<span style="font-size: 10px;" class="price">￥{$video.money}</span>
-									<span  style="font-size: 10px;"class="VIP_free">VIP免费</span>
-									<img class="star_collect" src="/Public/app/img/collect.png" />
-									<span class="star_number" style="font-size: 10px;">{$video.collNum}</span>
+										<span  style="font-size: 10px;"class="VIP_free">VIP免费</span>
+										<img class="star_collect" src="/Public/app/img/collect.png" />
+										<span class="star_number" style="font-size: 10px;">{$video.collNum}</span>
+									-->
 								</div>
 							</div>
 						</volist>
 						</div>
 					</div>
+					<?php } ?>
 				</div>
 				<!--右侧会员推荐-->
 				<div class="main_right">
@@ -132,8 +189,8 @@
 						<a><img src="/Public/app/img/jinque_vip.png" /></a>
 						<div class="boss_thought">
 							<div class="boss_thought_model">
-								<p class="boss_thought_title">老板财务思维</p>
 								<img src="/Public/app/img/video_img.png" width="80%"/>
+								<a href="#"><p class="boss_thought_title">老板财务思维</p></a>
 							</div>
 						</div>
 					</div>
@@ -142,16 +199,17 @@
 					<div>
 						<p class="my_collect_title">我的收藏</p>
 						<div class="my_collect">
-							<volist name="collectionInfo" id="collect" empty="$empty">
+							<volist name="collectionInfo" id="collect" empty="">
 							<div class="my_collect_model">
 								<img src="{$collect.img}" style="width:105px;" />
-								<p><a href="#">{$collect.title}</a></p>
+								<p><a href="{:U('Index/visual')}?id={$collect.courseid}&kname={$collect.kname}&name={$collect.name}&kctitle={$collect.kctitle}&title={$collect.title}">{$collect.title}</a></p>
 							</div>
 							</volist>
 						</div>
 					</div>
 				</div>
 			</div>
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>

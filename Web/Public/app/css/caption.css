@@ -13,7 +13,7 @@ body {font-size: 12px;}
 h1{font-size: 40px;}h2{font-size: 22px;}h3{font-size: 20px;}h4{font-size: 18px;}h5{font-size: 16px;}h6{font-size: 14px;}
 a:link,a:visited {text-decoration:none; cursor:pointer;}
 a{text-decoration:none;color:#000;}
-a:hover,a:active {text-decoration: underline;-webkit-transition:color .15s linear , background-color .3s linear;-moz-transition:color .15s linear , background-color .3s linear;-o-transition:color .15s linear , background-color .3s linear;-ms-transition:color .15s linear , background-color .3s linear;transition:color .15s linear , background-color .3s linear; cursor:pointer;}
+a:hover,a:active {-webkit-transition:color .15s linear , background-color .3s linear;-moz-transition:color .15s linear , background-color .3s linear;-o-transition:color .15s linear , background-color .3s linear;-ms-transition:color .15s linear , background-color .3s linear;transition:color .15s linear , background-color .3s linear; cursor:pointer;}
 .clear {height:0; width:100%; overflow:hidden; clear:both;}
 .clear8 {height:8px; overflow:hidden; clear:both;}
 .float_left{ float:left;}

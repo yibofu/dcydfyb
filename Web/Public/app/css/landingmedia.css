@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    .landing .landing-tw {
+        width: 135%;
+    }
+    .landing .landing-fout-0 {
+        width: 135%;
+    }
+    .landing .landing-three {
+        margin-left: 16%;
+    }
+    .landing .landing-fout {
+        width: 135%;
+    }
+    .landing .landing-zero {
+        width: 135%;
+    }
+    .landing .landing-nine {
+        width: 135%;
+    }
+    .landing .landing-dof {
+        margin-left: 9%;
+    }
+    .landing .landing-bottom {
+        width: 135%;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    .landing .landing-tw {
+        width: 130%;
+    }
+    .landing .landing-fout-0 {
+        width: 130%;
+    }
+    .landing .landing-three {
+        margin-left: 16%;
+    }
+    .landing .landing-fout {
+        width: 130%;
+    }
+    .landing .landing-zero {
+        width: 130%;
+    }
+    .landing .landing-nine {
+        width: 130%;
+    }
+    .landing .landing-dof {
+        margin-left: 9%;
+    }
+    .landing .landing-bottom {
+        width: 130%;
+    }
+    .landing  .landing-eight {
+        width: 1280px;
+    }
+}

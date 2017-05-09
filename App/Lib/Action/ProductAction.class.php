@@ -50,7 +50,7 @@ class ProductAction extends Action{
         $data = $eight->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $eight->add($data);
         echo json_encode($str);
     }
@@ -59,7 +59,7 @@ class ProductAction extends Action{
         $data = $two->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $two->add($data);
         echo json_encode($str);
     }
@@ -69,7 +69,7 @@ class ProductAction extends Action{
         $data = $camp->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $camp->add($data);
         echo json_encode($str);
     }
@@ -79,7 +79,7 @@ class ProductAction extends Action{
         $data = $cost->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $cost->add($data);
         echo json_encode($str);
     }
@@ -88,7 +88,7 @@ class ProductAction extends Action{
         $data = $five->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $five->add($data);
         echo json_encode($str);
     }
@@ -97,7 +97,7 @@ class ProductAction extends Action{
         $data = $nine->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $nine->add($data);
         echo json_encode($str);
     }
@@ -106,7 +106,7 @@ class ProductAction extends Action{
         $data = $one->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $one->add($data);
         echo json_encode($str);
     }
@@ -115,7 +115,7 @@ class ProductAction extends Action{
         $data = $seven->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $seven->add($data);
         echo json_encode($str);
     }
@@ -124,7 +124,7 @@ class ProductAction extends Action{
         $data = $six->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $six->add($data);
         echo json_encode($str);
     }
@@ -133,7 +133,7 @@ class ProductAction extends Action{
         $data = $tax->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $tax->add($data);
         echo json_encode($str);
     }
@@ -142,7 +142,7 @@ class ProductAction extends Action{
         $data = $three->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $three->add($data);
         echo json_encode($str);
     }
@@ -152,7 +152,7 @@ class ProductAction extends Action{
         $data = $styli->create();
         $data["name"] = $this->_post("name");
         $data["phone"] = $this->_post("phone");
-        $data["time"] = time();
+	$data["time"] = time();
         $str = $styli->add($data);
         echo json_encode($str);
     }

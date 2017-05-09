@@ -66,22 +66,19 @@
 	overflow: hidden;
 }
 .addAddress{
-	border: 3px #55bdcf solid;
+	background: #55bdcf;
 	width: 100px;
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
 	float: left;
+    cursor: pointer;
 }
 .addAddress p{
-	color: black;
+	color: #ffffff;
 	font-size: 14px;
 }
-.addAddress img{
-	position: relative;
-	top: -23px;
-	left: 44px;
-}
+
 .foundAddress{
 	float: left;
 	height: 35px;

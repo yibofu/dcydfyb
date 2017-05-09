@@ -5,8 +5,9 @@
 			if(!isset($_SESSION['admins']['id'])) {
 				if($this->isAjax()) {
 					$this->ajaxReturn(0);
+				} else {
+					$this->redirect('Login/loginPage');
 				}
-				$this->redirect('Login/loginPage');
 			}
 		}
 
@@ -16,7 +17,7 @@
 			$uid = $_SESSION['admins']['id'];
 			
 			$model = M('service');
-			$total = $model->where('uid='.uid)->count();
+			$total = $model->where('uid='.$uid)->count();
 
 			import('ORG.Util.Page'); 
 			$page = new Page($total, 6);
@@ -59,10 +60,12 @@
 
 			//数据为空显示的
 			$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
+			$nowPage = $page->firstRow/$page->listRows+1;
 
 			$this->assign('empty', $empty);
 			$this->assign('list', $list);
 			$this->assign('page', $page->show());
+			$this->assign('nowPage', $nowPage);
 			$this->display();
 		}
 
@@ -122,7 +125,7 @@
 			$uid = $_SESSION['admins']['id'];
 			
 			$model = M('yjt');
-			$total = $model->where('uid='.uid)->count();
+			$total = $model->where('uid='.$uid)->count();
 
 			import('ORG.Util.Page'); 
 			$page = new Page($total, 6);
@@ -164,15 +167,17 @@
 						break;
 				}
 
-				$list[$key]['addtime'] = date('Y-m-d H:i:s', $item['time']);
+				$list[$key]['addtime'] = date('Y-m-d H:i:s', $item['addtime']);
 			}
 
 			//数据为空显示的
 			$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
+			$nowPage = $page->firstRow/$page->listRows+1;
 
 			$this->assign('empty', $empty);
 			$this->assign('list', $list);
 			$this->assign('page', $page->show());
+			$this->assign('nowPage', $nowPage);
 			$this->display();
 		}
 
@@ -290,10 +295,12 @@
 
 			//数据为空显示的
 			$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
+			$nowPage = $page->firstRow/$page->listRows+1;
 
 			$this->assign('empty', $empty);
 			$this->assign('list', $list);
 			$this->assign('page', $page->show());
+			$this->assign('nowPage', $nowPage);
 			$this->display();
 		}
 		

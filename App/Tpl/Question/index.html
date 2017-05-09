@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,18 +20,19 @@
         .content .nav .nav-a p{ width: 100%; text-align: center; display: inline-block; margin-top: 1.8rem;}
         .content .nav-b{ height: 18rem; background: #eeeeee;}
         .content .nav-b .imga{ height: 15rem; width: 65%; margin: 0 auto; padding: 1.25rem 0 1.25rem 0;}
-        .content .pa{ line-height: 2rem; text-align: center;}
-        .content .pb{ margin: 1rem 0 4rem 3%; position: relative;}
-        .content .pb .ma{ position: absolute; right: 20%; bottom:0; height: 1.5rem; width: 18%; background: #3588e7; border: .04rem solid #1e6fcd; border-radius: .2rem; text-align: center; line-height: 1.5rem;}
+        .content .pa{ height: 2.4rem; padding-left: 7%; padding-right: 7%;}
+        .content .pb{ margin: 1rem 0 4rem 7%; position: relative;}
+        .content .pb .ma{ position: absolute; right: 20%; bottom:0; height: 1.5rem; width: 25%; background: #3588e7; border: .04rem solid #1e6fcd; border-radius: .2rem; text-align: center; line-height: 1.5rem;color: #ffffff;}
         .content .bottom{ width: 100%; height: 2.6rem; position: fixed; left: 0;bottom: 0;}
         .content .bottom .nina{ width: 89%; height: 2.2rem; margin: .2rem auto; text-align: center; display: block; background: #00a0e9; color: #ffffff; line-height: 2.2rem; border-radius: .3rem;}
         /*文字*/
-        .foa{ font-size:.64rem;}/*18px*/
-        .fob{ font-size:.86rem;}/*24px*/
+        .foa{ font-size:.78rem;}/*18px*/
+        .fob{ font-size:.92rem;}/*24px*/
         .foc{ font-size:.71rem;}/*20px*/
 
         .cbo{ color: #b1b1b1;}
         .cda{ color: #143452;}
+        .reg{ color: #c00;}
 
         .dis{display: block;}
         .bor{border-top: .04rem solid #CCCCCC;border-bottom: .04rem solid #CCCCCC;}
@@ -61,7 +62,7 @@
                 </a>
                 <a class="nav-a fl dis">
                     <div class="na"><img src="/Public/app/img/nav-a.png" class="dis img1"/></div>
-                    <p class="fob">面试财务经理</p>
+                    <p class="fob">财务面试</p>
                 </a>
             </div>
             <h4 class="fob">扁鹊告诉您怎么做...</h4>
@@ -72,12 +73,12 @@
             <p class="bor cbo foa pa">最具专业价值的企业财务问题诊断、合同及报表审改、财务经理面试</p>
             <p class="cbo foa pb">
                 诊断方式：在线预约、远程视频诊断<br/>
-                诊断费用：会员首次免费体验<br/>
+                <span class="reg">诊断费用：会员首次免费体验</span><br/>
                 专家团队：国内顶级财务咨询师
-                <a href="http://www.bianquecxy.com/kjia/" class="ma foa cda">专家团队</a>
+                <a href="http://www.bianquecxy.com/kjia/" class="ma foa cda">查看专家团队</a>
             </p>
             <div class="bottom">
-                <a href="{:U('Question/make')}" class="nina">立即预约，财税问诊</a>
+                <a href="{:U('Question/make')}" class="nina">立即预约 财税问诊</a>
             </div>
         </div>
     </div>

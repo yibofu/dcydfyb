@@ -45,7 +45,6 @@ class CodeAction extends Action{
             $code = rand(100000,999999);
             session('forget'.$mobile,$code,60);
             session('forget'.$mobile);
-			$_SESSION['forget'.$mobile] = $code;
             $tim = 60;
             $time = $tim ."秒";
             $arr = array($code,$time);
@@ -58,7 +57,7 @@ class CodeAction extends Action{
                 echo json_encode($result);
             }
     }
-	
+
 	//修改密码
 	public function chwd(){
 		//查询用户注册的手机号
@@ -79,7 +78,6 @@ class CodeAction extends Action{
 		$code = rand(100000,999999);
 		session('chvcode',$code,60);
 		session('chvcode');
-
 		//发送验证码
 		$tim = 60 . '秒';
 		$arr = array($code,$tim);

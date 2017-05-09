@@ -2,7 +2,15 @@
 class ReciveAddressAction extends Action {
 	public function __construct() {
 		parent::__construct();	//继承父类构造方法
+			$_SESSION['admins']['id'] = 25;
 		if(!isset($_SESSION['admins']['id'])) {
+			$this->redirect('Login/loginPage');
+		}
+
+		$userModel = M('user');
+		$user = $userModel->field('id')->where('id=' . $_SESSION['admins']['id'])->find();
+
+		if(!$user['id']) {
 			$this->redirect('Login/loginPage');
 		}
 	}
@@ -16,6 +24,7 @@ class ReciveAddressAction extends Action {
 
 		$allAddress = $addressModel->field('id, reciver, area, address, phonenumber, isdefault')
 								->where('uid=' . $uid)
+								->order('id desc')
 								->limit(4)
 								->select();
 		foreach($allAddress as $key => $address) {
@@ -148,8 +157,13 @@ class ReciveAddressAction extends Action {
 
 	//删除收货地址
 	public function delAddress() {
-		$addressId = $this->_get('addressid');
-
+		$uid = $_SESSION['admins']['id'];
+		$addressId = intval($this->_post('addressid'));
+		$ids = $this->_post('ids');
+		$ids = array_map('intval', $ids);
+		$ids = implode(',', $ids);
+		$ids = '('.$ids.')';
+			
 		if(!$addressId) {
 			$this->error('该地址不存在');
 			return false;
@@ -157,10 +171,34 @@ class ReciveAddressAction extends Action {
 
 		$addressModel = M('address');
 
-		if($addressModel->where('id='.$addressId)->delete()) {
-			$this->success('删除成功');
+		if($addressModel->where('id=' .$addressId. ' and uid=' . $uid)->delete()) {
+			/*
+			$html = '';
+			$address = $addressModel->field('id, reciver, area, address, phonenumber, isdefault')
+							->where('uid=' .$uid. ' and id not in ' . $ids)
+							->order('id desc')
+							->find();
+
+			$html = <<<eof
+					<div class="addressSpecificModel">
+						<p class="shanchuAdd"><img attr="{$address['id']}" src="/Public/app/img/cross.png" name="del"/></p>
+						<p class="name"><span>收货人：</span>{$address['reciver']}
+							<span name="makeDefault" attr="{$address['id']}" style="display:none">
+							默认地址
+							</span>
+						</p>
+						<p class="area"><span>所在地区：</span>{$address['area']}</p>
+						<p class="address"><span>地址：</span>{$address['address']}</p>
+						<p class="phone"><span>手机：</span>{$address['phonenumber']}</p>
+					</div>
+eof;
+
+			$this->ajaxReturn($html);
+			*/
+			$this->ajaxReturn(1);
 		} else {
-			$this->error('删除失败');
+			$this->ajaxReturn(0);
 		}
+		
 	}
 }

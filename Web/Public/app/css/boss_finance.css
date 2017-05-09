@@ -7,6 +7,7 @@
 }
 /*左边的按钮*/
 .apply{
+    display: block;
 	background-color: #5fc8da;
 	width: 114px;
 	height: 42px;
@@ -39,6 +40,7 @@
 }
 /*右边的按钮*/
 .audition{
+    display: block;
 	background-color: #ff934c;
 	width: 114px;
 	height: 42px;
@@ -215,9 +217,7 @@
 	color: #333333;
 	float: left;
 }
-.earnings_text:hover{
-	cursor: pointer;
-}
+
 /*参训人群*/
 .person{
 	overflow: hidden;
@@ -245,9 +245,7 @@
 .we_teamimg{
 	float: left;
 }
-.person_text:hover{
-	cursor: pointer;
-}
+
 
 /*课程特色*/
 .classes{
@@ -272,9 +270,7 @@
 	color: #333333;
 	float: left;
 }
-.classes_text:hover{
-	cursor: pointer;
-}
+
 /*课程介绍*/
 .class_outline{
 	width: 625px;
@@ -320,14 +316,16 @@
 	cursor: pointer;
 }
 
-.outline_listen input:hover{
+.outline_listen a:hover{
 	cursor: pointer;
+    text-decoration: none;
 }
 .outline_listen img{
 	float: left;
 	margin:7px 3px 0 5px;
 }
-.outline_listen input{
+.outline_listen a{
+    text-decoration: none;
 	display: inline-block;
 	background: none;
 	color: white;
@@ -352,15 +350,17 @@
 	cursor: pointer;
 }
 
-.outline_get input:hover{
+.outline_get a:hover{
 	cursor: pointer;
+    text-decoration: none;
 }
 .outline_get img{
 	float: left;
 	margin:7px 3px 0 5px;
 }
-.outline_get input{
-	display: inline-block;
+.outline_get a{
+    text-decoration: none;
+    display: inline-block;
 	background: none;
 	color: white;
 	font-size: 12px;
@@ -686,3 +686,114 @@
 	margin:20px 5px 5px 0;
 	box-shadow: 1px 2px  1px #0b525e;
 }
+
+
+
+/*弹窗*/
+.popup{
+    width: 950px;
+    margin-left: 20px;
+    height: 417px;
+    border-radius: 5px;
+    border:2px #7c8ea6 solid;
+    background: white;
+}
+.popup a{
+    text-decoration: none;
+}
+.popup_text{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.off_btn{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.off_btn:hover{
+    cursor: pointer;
+}
+.submit_success_title{
+    color: #044a99;
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.submit_success_text{
+    width: 100%;
+    margin-top: 20px;
+}
+.submit_success_text p{
+    color: #444444;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+.skipPage{
+    margin-top: 20px;
+}
+.skipPage p{
+    line-height: 15px;
+    text-align: center;
+    color: #044a99;
+}
+.skipPage p a{
+    color: #F55e5e;
+    font-size: 16px;
+}
+.popup_phone{
+    width:400px;
+    margin: 10px auto;
+    height: 55px;
+    line-height: 45px;
+    text-align: center;
+}
+.popup_phone img{
+    float: left;
+    margin-top: 5px;
+}
+.phone_number{
+    float: left;
+    display:block;
+    margin-left: 10px;
+    color: #ff5918;
+    font-size: 22px;
+    font-weight: 700;
+}
+.phone_text{
+    color: #555555;
+    font-size: 22px;
+    font-weight: 700;
+}
+.focusOn{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.inFont_img{
+    margin-left: 200px;
+    overflow: hidden;
+}
+.inFont_img i{
+    color: #a9a9a9;
+    font-size: 65px;
+}
+.inFont_img p{
+    color: #a9a9a9;
+    font-size: 16px;
+    font-weight: 700;
+}
+.icon_num{
+    float: left;
+    margin-right: 80px;
+}
+.icon_num :hover{
+    cursor: pointer;
+}
+
+

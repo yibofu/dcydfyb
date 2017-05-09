@@ -10,6 +10,7 @@
 		public function index() {
 			$uid = $_SESSION['admins']['id'];
 			
+
 			$model = M('mycourse');
 			$total = $model->where('uid=' . $uid)->count();
 
@@ -77,10 +78,12 @@
 
 			//数据为空显示的
 			$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
+			$nowPage = $page->firstRow/$page->listRows+1;
 
 			$this->assign('empty', $empty);
 			$this->assign('list', $list);
 			$this->assign('page', $page->show());
+			$this->assign('nowPage', $nowPage);
 			$this->display();
 		}
 	

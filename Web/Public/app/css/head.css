@@ -17,7 +17,7 @@
 .headTopCenter ul{
 	/*border: 1px red solid;*/
 	height: 100%;
-	width: 450px;
+	width: 510px;
 	float: right;
 	overflow: hidden;
 }
@@ -140,6 +140,9 @@
 	cursor: pointer;
 	text-align: center;
 	text-decoration:none;
+}
+.liOutA:hover{
+        text-decoration:none;
 }
 .navBar{
 	width: 100%;

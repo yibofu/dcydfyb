@@ -17,13 +17,14 @@ html{
 }
 .apply_classes_title{
 	margin: 0 ;
-	height: 35px;
+	height: 40px;
 	border-bottom: 3px #dbdbdb solid;
 	overflow: hidden;
+
 }
 .apply_classes_title img{
 	float: left;
-	margin-top:2px;
+	margin-top:12px;
 }
 .apply_classes_title span{
 	color: #333333;
@@ -63,7 +64,7 @@ html{
 }
 .training-income_title img{
 	float: left;
-	margin-top:2px;
+	margin-top:12px;
 }
 .training-income_title span{
 	color: #333333;
@@ -74,7 +75,7 @@ html{
 .training-income_title{
 	margin: 0;
 	overflow: hidden;
-	height: 35px;
+	height: 40px;
 	border-bottom: 3px #dbdbdb solid;
 }
 .training-income button{
@@ -93,7 +94,7 @@ html{
 .training-income_title button img{
 	float: left;
 	margin: 0;
-	margin-top: 2px;
+	margin-top:5px;
 	padding: 0;
 }
 .training-income{
@@ -101,21 +102,20 @@ html{
 	float: left;
 	margin-left: 20px;
 }
-
-.training-income textarea{
+.oldtextarea{
+    margin: 15px 0 0 30px;
+    height:140px ;
+    overflow: hidden;
+}
+.training-income div p{
 	resize: none;
 	width: 420px;
 	color: #666666;
 	font-size: 18px;
-	font-weight: 700;
-	text-indent: 0!important;
 	padding: 0;
 	margin: 0;
 	text-align: left;
 	line-height: 35px;
-	margin-top: 20px;
-	border: none;
-	padding-left: 20px;
 }
 /*联系人基本信息*/
 .training_person{
@@ -126,6 +126,7 @@ html{
 .training_person_title img{
 	float: left;
 	margin-right: 10px;
+    margin-top: 12px;
 }
 .training_person_title :nth-child(2){
 	color: #333333;
@@ -179,7 +180,7 @@ html{
 .pay_style_title img{
 	float: left;
 	margin-right: 10px;
-	margin-top: 3px;
+	margin-top: 12px;
 }
 .bank_price{
 	margin-left: 20px;
@@ -202,7 +203,7 @@ html{
 .other_requirements_title img{
 	float: left;
 	margin-right: 10px;
-	margin-top: 3px;
+	margin-top: 12px;
 }
 .other_requirements textarea{
 	width: 920px;

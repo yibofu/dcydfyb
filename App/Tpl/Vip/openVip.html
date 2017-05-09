@@ -13,7 +13,7 @@
 	<script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
 
 </head>
-<body style="background-color:white ;">
+<body style="background-color:white;">
 <!--头部 c02003-->
 <include file="Public:head" />
 <div class="vip_all">
@@ -81,11 +81,29 @@
 	</div>
 	<!--按钮-->
 	<div class="promptly_open">
-		<a href="{:U('Vip/member')}"><button >升级金鹊会员？立即开通</button></a>
+		<button id="kt" >升级金鹊会员？立即开通</button>
 	</div>
 	<!--友情链接-->
 
 </div>
 <include file="Public:bottom" />
 </body>
+<script>
+	$("#kt").bind('click',function(){
+		$.ajax({
+			type:"post",
+			url:"{:U('Vip/member')}",
+			success:function(data){
+				if(data == 1){
+					alert("您已经是金雀会员");
+				}else if(data == 0){
+					window.location.href = "/index.php/Login/loginPage";
+				}else if(data == 2){
+					window.location.href = "{:U('Vip/member0')}";
+				}
+			}
+		})
+	})
+
+</script>
 </html>

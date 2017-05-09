@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>支付问题</title>
+		<link rel="stylesheet" href="/Public/app/css/problem.css" />
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<script src="/Public/app/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="page_all">
+			<!--banner部分-->
+			<include file="Public/head" />
+			<!--内容部分-->
+			<div class="text_all">
+				<!--左侧菜单栏-->
+				<div class="menu_list">
+					<ul class="three-a fl title-a text tab-nav">
+						<li class="bac-a color-d">帮助中心</li>
+						<li class="i bac-e color-v" name="basif"><a href="{:U('HelpCenter/index')}?ques=zhifupro">支付问题</a></li>
+						<li class="i bac-e color-v" name="basio"><a href="{:U('HelpCenter/index')}?ques=fapiaopro">发票问题</a></li>
+						<li class="i bac-e color-v" name="basip"><a href="{:U('HelpCenter/index')}?ques=zhhupro">账户问题</a></li>
+						<li class="i bac-e color-v" name="basip"><a href="{:U('HelpCenter/index')}?ques=dingzhipro">定制服务</a></li>
+					</ul>
+				</div>
+				<!--个人信息-->
+				<div class="main_person_text" style="width: 700px;" >
+					<p class="person_title"><span>{$subtitle}</span></p>
+					<!--<p class="payProblem"><span>|</span>-->
+						{$article}
+					</p>
+				</div>
+				
+			</div>
+			<!--友情链接-->
+			<include file="Public/bottom" />
+		</div>
+	</body>
+	<script>
+			$(function(){
+				var prolist = $('.i').children('a');
+				var subtitle = $('.person_title').children('span').html();
+				prolist.each(function() {
+					var html = $(this).html();		
+					if(html == subtitle) {
+						$(this).css("color","#55BDCF");
+					}
+				});
+			});
+		</script>
+</html>

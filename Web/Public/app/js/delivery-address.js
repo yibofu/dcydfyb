@@ -9,22 +9,15 @@ $(function(){
 		$("html").css({"background":""});
 	});
 	
-	// $(".addressSpecificModel").eq(0).find(".name :last-child").addClass("default-Address");
-	// $(".addressSpecificModel").eq(0).find(".name :last-child").html("默认地址");
+//	$(".addressSpecificModel").eq(0).find(".name :last-child").addClass("default-Address");
+//	$(".addressSpecificModel").eq(0).find(".name :last-child").html("默认地址");
 	$(".addressSpecificModel").eq(0).find(".name :last-child").css("box-shadow"," 1px 1px 1px #686868");
-	$(".addressSpecificModel").click(function(){
-		$(this).find(".name :last-child").addClass("default-Address");
-		$(this).find(".name :last-child").html("默认地址");
-		$(this).siblings().find(".name :last-child").removeClass("default-Address");
-		$(this).siblings().find(".name :last-child").html("");
-	})
-	
 	$(".addressSpecificModel").hover(function(){
 		$(this).css("box-shadow"," 1px 1px 1px #686868").siblings().css("box-shadow","");
-		$(this).find(".name :last-child").addClass("default-Address");
-		$(this).find(".name :last-child").html("默认地址");
-		$(this).siblings().find(".name :last-child").removeClass("default-Address");
-		$(this).siblings().find(".name :last-child").html("");
+		$(this).find("span[name=makeDefault]").addClass("default-Address");
+		$(this).find("span[name=makeDefault]").html("设为默认");
+		$(this).siblings().find("span[name=makeDefault]").removeClass("default-Address");
+		$(this).siblings().find("span[name=makeDefault]").html("");
 	});
 	//删除抬头
 	$(".invoiceTitle p :nth-child(1)").click(function(){

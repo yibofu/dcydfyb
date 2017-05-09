@@ -232,10 +232,10 @@
     </div>
 <div class="main">
     <div class="inner">
-        <p class="back_link" style="font-size:18px;margin-top:20px;"><a href="#" style="padding:5px 15px;background:#0098b3; color:#FFF">关键字</a>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<span>{$keywords}</span></p>
+        <p class="back_link" style="font-size:18px;margin-top:20px;"><span style="padding:5px 15px;background:#0098b3; color:#FFF">关键字</span>&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<span>{$keywords}</span></p>
         <div id="video" style="margin-top:20px;">
             <ul class="ck-video basia tab-content newslist" id="all" style="display: block;">
-                <volist name="data" id="vo">
+                <volist name="data" id="vo" empty="没有相关内容">
                 <li class="fl">
                     <a href="{:U('Index/visual')}?id={$vo.id}&kname={$vo.kname}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}" class="avio">
                         <img src="{$vo.img}">

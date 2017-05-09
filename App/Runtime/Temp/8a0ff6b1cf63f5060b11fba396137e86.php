@@ -1,3 +1,0 @@
-<?php
-//000000000000s:405:"SELECT dcyd_mycourse.isevaluate isevaluate,dcyd_mycourse.id id,dcyd_open_course.id courseid,dcyd_open_course.type type,dcyd_mycourse.status status,dcyd_open_course.paytype paytype,dcyd_open_course.startday startday,dcyd_open_course.endday endday FROM `dcyd_mycourse` inner join dcyd_open_course on dcyd_mycourse.courseid=dcyd_open_course.id WHERE ( uid=25 ) ORDER BY dcyd_mycourse.addtime desc LIMIT 0,4  ";
-?>

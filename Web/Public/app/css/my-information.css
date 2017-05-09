@@ -17,7 +17,9 @@
 }
 .messageBtn{
 	overflow: hidden;
+    margin-bottom: 10px;
 }
+
 .messageBtn>div{
 	float: left;
 	margin-right: 10px;
@@ -42,39 +44,32 @@
 .messageMain{
 	border: 1px #CCCCCC solid;
 }
+
 .deleteAddress{
 	width: 100px;
 	height: 25px;
 	line-height: 25px;
 	text-align: center;
 	margin-top: 20px;
+    cursor: pointer;
 }
 .deleteAddress p{
-	color: black;
 	font-size: 14px;
 }
-.deleteAddress img{
-	position: relative;
-	top: -23px;
-	left: 44px;
-	display: none;
-}
+
 .readAddress{
 	width: 100px;
 	height: 25px;
 	line-height: 25px;
 	text-align: center;
 	margin-top: 20px;
+    cursor: pointer;
 }
 .readAddress p{
 	color: black;
 	font-size: 14px;
 }
-.readAddress img{
-	position: relative;
-	top: -19px;
-	left: 44px;
-}
+
 .messageMainBtn{
 		overflow: hidden;
 }

@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
 		<link rel="stylesheet" href="/Public/app/css/fenye.css" />
 		<script src="/Public/app/js/jquery.min.js"></script>
-		<script type="text/javascript" src="/Public/app/js/fenye.js" ></script>
 	</head>
 	<body>
 		<div class="page_all">
@@ -31,7 +30,7 @@
 					<div class="coursesText">
 						<volist name="list" id="course" empty="$empty">				
 						<div class="textSpecific">
-							<img src="/Public/app/img/课程图片.png"/>
+							<img src="/Public/app/img/courseimg.png" style="width:111px;height:63px;"/>
 							<p class="imgText">
 								<span>{$course.courseName}</span>
 								<span>开课时间&nbsp;|<span>{$course.date}</span></span>
@@ -81,12 +80,15 @@
 			
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>
-			$(function(){
-				$(".bac-e a").eq(10).css("color","#55BDCF");
-			});
-		</script>
+		$(function(){
+			$(".bac-e a").eq(10).css("color","#55BDCF");
+		});
+		//分页样式
+		var page = {$nowPage}; 
+		$('.page').children('li').eq(page-1).css({'background':'#55bdcf'}).find('a').css('color','#FFFFFF');
+	</script>
 </html>

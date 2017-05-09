@@ -1,25 +1,25 @@
-<?php
+﻿<?php
 class ArticleAction extends Action{
     public function message(){
         $article = M("article");
         $result = $article->where("lanmu=1 and status = 2")
             ->field('id,title,status')
-            ->limit(4)
+            ->limit(5)
             ->select();
 
         $resul = $article->where("lanmu=2 and status = 2")
             ->field('id,title,status')
-            ->limit(4)
+            ->limit(5)
             ->select();
 
         $resu = $article->where("lanmu=3 and status = 2")
             ->field('id,title,status')
-            ->limit(4)
+            ->limit(5)
             ->select();
 
         $res = $article->where("lanmu=4 and status = 2")
             ->field('id,title,status')
-            ->limit(4)
+            ->limit(5)
             ->select();
 
         foreach($result as &$val){
@@ -36,9 +36,15 @@ class ArticleAction extends Action{
     public function articlelist(){
         $lanmu = isset($_GET["lanmu"]) && !empty($_GET["lanmu"]) ? $_GET["lanmu"] : 1;
         $article = M("article");
-        $result = $article->where("lanmu=$lanmu and status = 2")
-            ->field('id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status')
-            ->limit(20)
+        import('ORG.Util.Page');
+        $count = $article->where("lanmu=$lanmu and status = 2")->count();
+        $page = new Page($count,20);
+        $nowPage = $page->firstRow/$page->listRows+1;
+        $this->assign('nowPage', $nowPage);
+        $page->setConfig('theme','%upPage%%linkPage%%downPage%' );
+        $result = $article->field('id,title,keywords,lanmu,laiyuan,content,auth,describe,time,status')
+            ->where("lanmu=$lanmu and status = 2")
+            ->limit($page->firstRow.','.$page->listRows)
             ->select();
         foreach($result as &$val){
             $val['time'] = date('Y-m-d H:i:s',$val['time']);
@@ -55,6 +61,7 @@ class ArticleAction extends Action{
             }
         }
         $this->assign("result",$result);
+        $this->assign("page",$page->show());
         // 赋值分页输出
         $this->display();
     }

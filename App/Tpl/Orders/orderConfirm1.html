@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>订单确认</title>
+		<link rel="stylesheet" href="/Public/app/css/orderconfirm.css" />
+	</head>
+	<body>
+		<div class="mianAll">
+			<div class="mianAllTitle">
+				<p><span>请核对订单信息</span></p>
+			</div>
+			<div class="mianAllText">
+				<div class="orderInformation">
+					<p>订单信息</p>
+					<div class="orderInfTxt">
+						<p>
+							<span>视频课程</span>
+							<span>营改增该如何应对？  </span>
+							<span>讲师：刘国东  </span>
+						</p>
+					</div>
+				</div>
+				<div class="billInformation">
+					<div class="shkbillsort">
+						<p class="billTil">发票信息</p>
+						<p class="inputbill">
+							<input type="radio" name="billchk" id="billifm" />
+							<label for="billifm">不要发票</label>
+						</p>
+						<p class="inputbill">
+							<input type="radio" name="billchk" id="billifm1" />
+							<label for="billifm1">普通发票</label>
+						</p>
+						<p class="inputbill">
+							<input type="radio" name="billchk" id="billifm2" />
+							<label for="billifm2">增值税发票</label>
+						</p>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="billInfTxt">
+						<div style="display: block;">
+							<p class="billmainp">
+								<span style="color:#005EA7;">发票内容：</span>
+								<input type="radio" id="mainBill" name="mainBill" />
+								<label for="mainBill">培训</label>
+								<input type="radio" id="mainBills" name="mainBill" />
+								<label for="mainBills">咨询</label>
+							</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">发票抬头：</span>广州开飞的更高有限公司21312165156233333333333333333333333333</p>
+						</div>
+						<div style="display: none;">
+							<p>广州开飞的更6</p>
+						</div>
+						<div style="display: none;">
+							<p>广州开飞的更高156</p>
+						</div>
+					</div>
+				</div>
+				<div class="billAddress">
+					<p class="billAddressTil">发票邮寄地址</p>
+					<div class="orAdd">
+						<p class="oraddimg" style="line-height: 30px;">默认地址<img src="/Public/app/img/gou.png"></p>
+						<p class="Address">北京 东城区 张 133****5527</p>
+						<div>
+							<a>新增收货地址</a>
+							<p><a>编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>删除</a></p>
+						</div>
+					</div>
+					<a>更多地址></a>
+				</div>
+				<div class="payStyle">
+					<p class="billStyleTil">请选择支付方式</p>
+					<div>
+						<p>微信支付<img src="/Public/app/img/gou.png"></p>
+					</div>
+				</div>
+				
+			</div>
+			<a class="payyes">确认支付</a>
+		</div>
+	</body>
+	<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			$(".inputbill").eq(0).css("color","#005ea7");
+			$(".billmainp label").eq(0).css("color","#005ea7");
+			$(".inputbill").click(function(){
+				$(this).css("color","#005ea7").siblings(".inputbill").css("color","");
+				var Oindex=$(this).index();
+//				alert(Oindex-1);
+				$(".billInfTxt div").eq(Oindex-1).css("display","block").siblings().css("display","none");
+			});
+			$(".billmainp label").click(function(){
+				$(this).css("color","#005ea7").siblings("label").css("color","");
+			});
+			
+		})
+	</script>
+</html>
+
+
+
+
+

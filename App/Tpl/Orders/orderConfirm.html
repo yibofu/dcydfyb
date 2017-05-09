@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>订单确认</title>
+		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
+		<link rel="stylesheet" href="/Public/app/css/orderconfirm.css" />
+	</head>
+	<body>
+		<include file="Public/myhead" />
+		<div class="mianAll">
+			<div class="mianAllTitle">
+				<p><span>请核对订单信息</span></p>
+			</div>
+			<div class="mianAllText">
+				<div class="orderInformation">
+					<p>订单信息</p>
+					<div class="orderInfTxt">
+						<p>
+							<span>视频课程</span>
+							<span>{$course.title}</span>
+							<span>讲师：{$course.name}</span>
+						</p>
+					</div>
+				</div>
+				<div class="billInformation">
+					<form action="{:U('Orders/codePage')}" method="post">
+					<div class="shkbillsort">
+						<p class="billTil">发票信息</p>
+						<p class="inputbill">
+							<input type="radio" name="billchk" value="0" id="billifm" />
+							<label for="billifm">不要发票</label>
+						</p>
+						<p class="inputbill billhave">
+							<input type="radio" name="billchk" value="pt_{$ptbill.id}" id="billifm1" />
+							<label for="billifm1">普通发票</label>
+						</p>
+						<p class="inputbill billhave">
+							<input type="radio" name="billchk" value="zz_{$zzbill.id}" id="billifm2" />
+							<label for="billifm2">增值税发票</label>
+						</p>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="billInfTxt">
+						<div style="display:block;">
+							<p>无发票</p>
+						</div>
+						<div style="display: none;">
+							<p class="billmainp">
+								<span style="color:#005EA7;">发票内容：</span>
+								<input type="radio" id="mainBill" class="mainBillone" value="1" name="mainBill" />
+								<label for="mainBill">培训</label>
+								<input type="radio" id="mainBills"  value="2" name="mainBill" />
+								<label for="mainBills">咨询</label>
+							</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">发票抬头：</span>{$ptbill.head}</p>
+						</div>
+						<div style="display: none;">
+							<p class="billtaitoutext"><span style="color: #005ea7;">公司名称：</span>{$zzbill.company}</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">纳税人识别码：</span>{$zzbill.personcode}</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">注册地址：</span>{$zzbill.regaddress}</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">注册电话：</span>{$zzbill.regphone}</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">开户银行：</span>{$zzbill.bank}</p>
+							<p class="billtaitoutext"><span style="color: #005ea7;">银行账户：</span>{$zzbill.account}</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="billAddress">
+					<p class="billAddressTil">发票邮寄地址</p>
+					<div class="orAdd">
+						<!--<p class="oraddimg" style="line-height: 30px;">默认地址<img src="/Public/app/img/gou.png"></p>-->
+						<p class="Address">{$address.area}&nbsp;&nbsp;{$address.reciver}&nbsp;&nbsp;{$address.phonenumber}</p>
+						<!--
+						<div>
+							<a>新增收货地址</a>
+							<p><a>编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>删除</a></p>
+						</div>
+						-->
+					</div>
+					<!--<a>更多地址></a>-->
+				</div>
+				<div class="payStyle">
+					<p class="billStyleTil">请选择支付方式</p>
+					<div>
+						<p>微信支付<img src="/Public/app/img/gou.png"></p>
+					</div>
+				</div>
+				
+			</div>
+				<input type="hidden" name="courid" value="{$course.id}" />
+				<input type="hidden" name="addrid" value="{$address.id}" />
+				<input type="hidden" name="ptype" value="1" />
+				<input type="hidden" name="cid" value="{$cid}" />
+				<button type="submit" class="payyes">确认支付</button>
+			</form>
+		</div>
+		<include file="Public/bottom" />
+	</body>
+	<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+	<script>
+		$(function(){
+			$(".inputbill").eq(0).find("input").attr("checked",true);
+			$(".mainBillone").attr("checked",true);
+			$(".mainBillone").css("color","#005ea7");
+			$(".mainBilltwo").attr("checked",true);
+			$(".mainBilltwo").css("color","#005ea7");
+			$(".billmainp label").eq(0).css("color","#005ea7");
+			$(".inputbill").click(function(){
+				$(this).css("color","#005ea7").siblings(".inputbill").css("color","");
+				var Oindex=$(this).index();
+//				alert(Oindex-1);
+				
+				$(".billInfTxt div").eq(Oindex-1).css("display","block").siblings().css("display","none");
+			});
+			$(".billmainp label").click(function(){
+				$(this).css("color","#005ea7").siblings("label").css("color","");
+			});
+			
+		})
+	</script>
+</html>
+
+
+
+
+

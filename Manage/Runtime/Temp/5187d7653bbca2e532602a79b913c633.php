@@ -1,3 +1,0 @@
-<?php
-//000000000000s:110:"SELECT COUNT(*) AS tp_count FROM `dcyd_user` WHERE (  (`ctime` BETWEEN 1491926400 AND 1492185600 ) ) LIMIT 1  ";
-?>

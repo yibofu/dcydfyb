@@ -16,7 +16,6 @@ class ReplyAction extends Action{
 
     public function ones(){
         $lyk = M('lyk');
-
         $data = $lyk->create();
         $data['name'] = $this->_post('name');
         $data['phone'] = $this->_post('phone');

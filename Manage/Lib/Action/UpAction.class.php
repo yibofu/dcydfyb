@@ -346,13 +346,17 @@ class UpAction extends Action{
 
         if ($_POST['id'] != "") $map['id'] = $_POST['id'];
         if ($_POST['title'] != "") $map['title'] = array('like','%'.$_POST['title'].'%');
-        if ($_POST['name'] != "") $map['name'] = array('like','%'.$_POST['name'].'%');
-        if ($_POST['ytime'] != "") $map['ytime'] = array('like','%'.$_POST['ytime'].'%');
+        if ($_POST['money'] != "") $map['money'] = array('like','%'.$_POST['money'].'%');
+        if ($_POST['kctitle'] != "") $map['kctitle'] = array('like','%'.$_POST['kctitle'].'%');
 
         $view = M("view");
-        $list = $view->field("id,kid,zid,kname,zname,name,url,title,money,introduce,chapternum,kctitle,img,isrecommend")->where($map)->page($page.','.$rows)->select();
-        $total = $view->where($map)->count();
-
+        $list = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+            ->join("dcyd_viewclass as c on c.id = a.zid")
+            ->field('a.id,a.kid,a.zid,b.kind,c.zname,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.isrecommend,a.kctitle,a.collnum,a.img')
+            ->where($map)->page($page.','.$rows)->select();
+        $total = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+            ->join("dcyd_viewclass as c on c.id = a.zid")
+            ->where($map)->count();
         $result = array(
             'total' => $total,
             'rows' =>$list,
@@ -382,7 +386,10 @@ class UpAction extends Action{
         $id = $this->_post('id');
         if(!empty($id) && isset($id)){
             $view = M("view");
-            $result = $view->field("id,kid,kname,zname,name,url,title,money,introduce,chapternum,kctitle,img")->where("id = ".$id)->find();
+            $result = $view->table("dcyd_view as a")->join("dcyd_viewkinds as b on b.id = a.kid")
+                ->join("dcyd_viewclass as c on c.id = a.zid")
+                ->field('a.id,a.kid,a.zid,b.kind,c.zname,a.name,a.url,a.title,a.money,a.introduce,a.chapternum,a.isrecommend,a.kctitle,a.collnum,a.img')
+                ->where("a.id = ".$id)->find();
             echo json_encode($result);
         }
     }
@@ -563,14 +570,25 @@ class UpAction extends Action{
             $error = 2;
         }else{
             $info = $upload->getUploadFileInfo();
-            $filename = $info[0]["savename"];
-            $filename1 = $info[1]["savename"];
-            $fujianurl = substr($info[0]['savepath'].$filename,2 );
-            $fujianurl1 = substr($info[1]['savepath'].$filename1,2);
-            $data['timg'] = $fujianurl;
-            $data['limg'] = $fujianurl1;
+            foreach($info as $k=>$v){
+                if($v['key'] == 'timg'){
+                    $filename = $v["savename"];
+                    $fujianurl = substr($v['savepath'].$filename,2 );
+                    $data['timg'] = $fujianurl;
+                }else if($v['key'] == 'limg'){
+                    $filename1 = $v["savename"];
+                    $fujianurl1 = substr($v['savepath'].$filename1,2);
+                    $data['limg'] = $fujianurl1;
+                }else{
+                    $filename = $v["savename"];
+                    $fujianurl = substr($v['savepath'].$filename,2 );
+                    $data['timg'] = $fujianurl;
+                    $filename1 = $v["savename"];
+                    $fujianurl1 = substr($v['savepath'].$filename1,2);
+                    $data['limg'] = $fujianurl1;
+                }
+            }
         }
-
         $result = $teacher->where('id = '.$_GET['id'])->save($data);
 
         if($result !== false){

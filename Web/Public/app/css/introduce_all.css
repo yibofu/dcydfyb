@@ -1,4 +1,4 @@
-
+﻿
 /*重置css c02003*/
 body,h1,h2,h3,h4,h5,h6,p,a,ul,li,div,input,dd,dt,dl.ol,img,span,i,b,strong{margin:0;padding:0;}
 li{list-style:none;}
@@ -55,7 +55,7 @@ button{ border: 0;}
 .carousel{
 	width: 323px;
 	height: 278px;
-	margin-top: 70px;
+	margin-top:70px;
 	background-color:#f4f4f4 ;
 }
 .carousel_title{

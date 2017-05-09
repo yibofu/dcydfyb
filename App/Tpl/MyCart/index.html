@@ -7,7 +7,17 @@
 		<link rel="stylesheet" href="/Public/app/css/commonality.css" />
 		<link rel="stylesheet" href="/Public/app/css/fenye.css" />
 		<script src="/Public/app/js/jquery.min.js"></script>
-		<script type="text/javascript" src="/Public/app/js/fenye.js" ></script>
+		<style>
+			.imgText a{
+				    color: #0098B3;
+   					 font-size: 14px;
+    				font-weight: 700;
+					text-decoration:none;
+			}
+			.imgText a:hover{
+				color:#f55e5e;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="page_all">
@@ -32,18 +42,18 @@
 					<div class="coursesText">
 						<p class="textTime">{$view.addtime}</p>
 						<div class="textSpecific">
-							<img src="/Public/app/img/课程图片.png"/>
-							<p class="imgText">{$view.title}</p>
+							<img src="{$view.img}" style="width:111px;height:63px;"/>
+							<p class="imgText"><a href="{:U('Index/visual')}?id={$view.courseid}&kname={$view.kname}&name={$view.teacher}&kctitle={$view.kctitle}&title={$view.title}">{$view.title}</a></p>
 							<p class="status">{$view.dstatus}</p>
 							<div>
-							<if condition="$view.status eq 1">
-								<a href="{:U('Wxpay/cartPay')}?cartid={$view.id}">立即付款</a>
-							<elseif condition="$view.status eq 2 && $view.isevaluate eq 0" />
+							<if condition="$view.status eq 0">
+								<a href="{:U('Orders/codePage')}?oid={$view.tradno}">立即付款</a>
+								<p><a href="{:U('MyCart/delGoods')}?oid={$view.tradno}">删除记录</a></p>
+							<elseif condition="$view.status eq 1 && $view.isevaluate eq 0" />
 								<a href="{:U('MyCart/evaluate')}?cid={$view.id}">评论</a>
-							<elseif condition="$view.status eq 2 && $view.isevaluate eq 1" />
+							<elseif condition="$view.status eq 1 && $view.isevaluate eq 1" />
 								<p>已评论</p>
 							</if>
-								<p><a href="{:U('MyCart/delGoods')}?oid={$view.id}">删除记录</a></p>
 							</div>
 						</div>
 					</div>
@@ -56,13 +66,16 @@
 			
 			</div>
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script>
-			$(function(){
-				$(".bac-e a").eq(9).css("color","#55BDCF");
+		$(function(){
+			$(".bac-e a").eq(9).css("color","#55BDCF");
 
-			});
-		</script>
+		});
+		//分页样式
+		var page = {$nowPage}; 
+		$('.page').children('li').eq(page-1).css({'background':'#55bdcf'}).find('a').css('color','#FFFFFF');
+	</script>
 </html>

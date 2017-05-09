@@ -83,13 +83,24 @@
     .lunbo{
         display:block;
     }
+    .four-one-ab{
+	overflow:hidden;
+    }
 </style>
+<script>
+    if (navigator.userAgent.indexOf('Firefox') >= 0){
+        $("body").css("margin-top","0px");
+    }
+    if (navigator.userAgent.indexOf('Chrome') >= 0){
+        $("body").css("margin-top","-20px");
+    }
+</script>
 </head>
 
 <body>
     <div class="official">
         <div class="official-head">
-            <!DOCTYPE html>
+            ﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -97,10 +108,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -109,17 +138,31 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">登录</a></li>
 						<li class="ahref"><a href="<?php echo U('Register/doorway');?>">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('Login/loginPage');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<?php else: ?>
 					<ul>
-						<li class="welHead">您好，欢迎<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"><?php echo ($_SESSION['admins']['Phone']); ?></a>访问扁鹊财院</li>
+
+						<li class="welHead">您好<a href="<?php echo U('MyCenter/index');?>" style="color:#ff5918;"> 
+							<?php if($_SESSION['admins']['nickname'] != null): echo ($_SESSION['admins']['nickname']); ?>
+								<?php else: ?>
+									<?php echo ($_SESSION['admins']['Phone']); endif; ?> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="<?php echo U('Index/loginout');?>" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="<?php echo U('WebMessage/index');?>">消息</a></li>
 						<li class="ahref"><a href="<?php echo U('MyCenter/index');?>">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul><?php endif; ?>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -156,17 +199,26 @@
 						<a href="<?php echo U('Index/index');?>" class="liOutA">首页</a>
 						<a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>" class="liOutA">财税问诊</a>
 						<a href="<?php echo U('Index/kce');?>" class="liOutA">课程中心</a>
-						<a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
-						<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>
+						<!--<a href="<?php echo U('AskAnswer/Asks');?>" class="liOutA">百问百答</a>-->
 						<a href="<?php echo U('Vip/openVip');?>" class="liOutA">会员专享</a>
 						<a href="<?php echo U('Teacher/teacherList');?>" class="liOutA">专家团队</a>
-						<a href="<?php echo U('Index/about');?>" class="liOutA">关于扁鹊</a>
+                        <a href="<?php echo U('Article/message');?>" class="liOutA">新政速递</a>
+						<a href="<?php echo U('Index/about');?>" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>
 
         </div>
@@ -192,7 +244,7 @@
                         <li id="pnb"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="b bor-f">面对面咨询</p></a></li>
                         <li id="pnc"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="c bor-f">我要审核合同</p></a></li>
                         <li id="pnd"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="d bor-f">我要审报表</p></a></li>
-                        <li id="pne"><a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><p class="e">财务分析</p></a></li>
+                        <li id="pne"><a href="<?php echo U('AskAnswer/Asks');?>"><p class="e">百问百答</p></a></li>
                         <div class="clearfix"></div>
                     </ul>
                     <div></div>
@@ -279,23 +331,105 @@
                         </div>
                         <!--5-->
                         <div class="sublist">
-                            <div class="one-aa bor-a fl">
-                                <img src="/Public/app/img/z05_03.png"/>
-                                <div class="one-ab color-d title-a">财务分析</div>
-                            </div>
-                            <div class="one-bb fl bor-j">
-                                <div class="one-bb-a fl">
-                                    <h3 class="title-c wid height-b">帮助优秀的企业找到财务精英</h3>
-                                    <p class="title-d height-c">1、在线预约  <a href="<?php echo U('Videodiagnostic/Video_diagnostic');?>"><span id="five" class="color-c cursor">【预约申请】</span></a></p>
-                                    <p class="title-d height-c">2、扁鹊客服进行分析需求</p>
-                                    <p class="title-d height-c">3、财务专家进行第二轮把关</p>
-                                    <p class="title-d height-c">4、客服与您联系，推荐优秀财务精英进行财务分析。 </p>
+                            <!--问答解决方案-->
+                            <div class="official-three bac-b bor-e" style="padding: 0;margin: 0; box-shadow: none;">
+                                <!--<div class="one-yi bor-d">-->
+                                    <!--<a href="<?php echo U('AskAnswer/Asks');?>"><h3 class="title-b color-e wid fl one-san one-yic">百问百答</h3></a>-->
+                                    <!--<div class="clearfix"></div>-->
+                                <!--</div>-->
+                                <div class="clearfix"></div>
+                                <div class="three">
+                                    <img src="/Public/app/img/three-a_03.png" class="fl"/>
+                                    <div class="three-a fl">
+                                        <div class="abouta bac-d fl">
+                                            <ul class="about color-d">
+                                                <p class="title-j">2017</p>
+                                                <h3 class="title-j">您所关注的财税问题都在这里</h3>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>"><li attr="<?php echo ($qtypeList[0]['id']); ?>" name="qtype" class="ac uiny"><?php echo ($qtypeList[0]['name']); ?></li></a>
+                                                <?php if(is_array($qtypeList)): $i = 0; $__LIST__ = array_slice($qtypeList,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qtype): $mod = ($i % 2 );++$i;?><a href="<?php echo U('AskAnswer/Asks');?>"><li name="qtype" attr="<?php echo ($qtype["id"]); ?>"><?php echo ($qtype["name"]); ?></li></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </ul>
+                                        </div>
+
+                                        <!--钱帐税-->
+                                        <div class="main_a ac fr">
+                                            <div class="main_aa bor-p">
+                                                <h4 class="color-e title-d height-d">税已经抄报了，15号之前要扣税款，账上没有钱，怎么办啊？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>如果你处于这样的困境，那么你会面临两个问题。首先，你得找出给国税局(IRS)付税的方法。其次，你要搞清你的生意出了什么问题，特别在资金流动方面，然后作出改进。也许最要记住的事是你即使付不起税也要报税。</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                            <div class="main_aa min-j">
+                                                <h4 class="color-e title-d height-d">入公司账户的钱要扣哪些税？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>只有做为收入进入公司帐户的款顶才有交税的可能，其他往来款项是没有税的。</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                        </div>
+                                        <!--股权设立-->
+                                        <div class="main_a fr">
+                                            <div class="main_aa bor-p">
+                                                <h4 class="color-e title-d height-d">合伙开公司股权比例如何分配？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>这个问题由股东协商对公司进行估值，比如估值100万，出10万就占10%，如果估值50万出资10万就占20%；</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                            <div class="main_aa min-j">
+                                                <h4 class="color-e title-d height-d">请问几个人合伙开公司怎么分股？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>你们可以在一起好好商量商量！技术员懂技术，一切由他管理，可以分2股；投资最多的人只投钱什么都不管，可以分3股；其余的人都参与，平均分5股！！！ </a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                        </div>
+                                        <!--收购并购-->
+                                        <div class="main_a fr">
+                                            <div class="main_aa bor-p">
+                                                <h4 class="color-e title-d height-d">公司收购需要注意的风险有哪些？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>一、资本、资产方面的风险：注册资本问题。 二、财务会计制度方面的风险 三、税务方面的风险 </a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                            <div class="main_aa min-j">
+                                                <h4 class="color-e title-d height-d">非上市企业如何进行估值_非上市企业的估值怎么做？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>相对估值法、收益估值法、资产基础法、期权定价法</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+
+                                        </div>
+                                        <!--新三板-->
+                                        <div class="main_a fr">
+                                            <div class="main_aa bor-p">
+                                                <h4 class="color-e title-d height-d">新三板挂牌企业要注意的财务问题是什么？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>一、会计政策适用问题。二、会计基础重视问题。三、内部控制提升问题。四、企业盈利规划问题五、资本负债结构问题。六、税收方案筹划问题。七、关联交易处理问题。</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+                                            <div class="main_aa min-j">
+                                                <h4 class="color-e title-d height-d">新三板挂牌对公司财务有什么要求？</h4>
+                                                <a class="linp title-a height-j"><span class="bac-c fl"></span>新三板对准备挂牌上市的企业，在准入条件上是不设财务门槛的，只要企业股权结构清晰、经营合法规范、公司治理健全、业务明确并履行信息披露义务、就算公司还未盈利，都可以申请在新三板挂牌上市。</a>
+                                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
-                                <div class="fl min-a minu">
-                                    <img src="/Public/app/img/z05_06.png" class="minu"/>
+                                <!--热点问题-->
+                                <div class="threea">
+                                    <div class="one-yi bor-d">
+                                        <a href="<?php echo U('AskAnswer/Asks');?>"><h3 class="title-b color-e wid fl one-san one-yic">热点问题</h3></a>
+                                        <img src="/Public/app/img/laba.png" class="img1 fl"/>
+                                        <div id="ctn">
+                                            <p><div class="con fl"><div class="fk bac-c fl"></div>企业经营分析与问题解决</div></p>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div id="area">
+                                        <div class="inua bac-d color-d">我要提问</div>
+                                        <form action="">
+                                            <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
+                                            <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
+                                            <a><input class="wid" type="button" style="background-color:#8c97cb;" value="提交问题" id="submit"></a>
+                                            <input type="hidden" value="<?php echo ($qtypeList[0]['id']); ?>" name="sqtype">
+                                        </form>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -304,12 +438,12 @@
             <div class="official-four bac-b bor-e">
                 <a href="<?php echo U('Index/kce');?>"><img src="/Public/app/img/kc.png" class="mioj"/></a>
                 <div class="one-yi bor-i min-k">
-                    <a class="title-b color-b wid fl one-yih min-i" style="cursor: pointer;">系列专题</a>
-                    <p class="color-b title-e fl height-j">为我的企业定制专题课</p>
+                    <a class="title-b color-b wid fl one-yih min-i" style="cursor: pointer;">最新视频</a>
+                    <!--<p class="color-b title-e fl height-j">为我的企业定制专题课</p>-->
                     <div class="clearfix"></div>
                 </div>
                 <div class="four-one">
-                    <?php if(is_array($arr)): $i = 0; $__LIST__ = $arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voa): $mod = ($i % 2 );++$i;?><a class="four-one-a fl" href="<?php echo U('Index/visual');?>?id=<?php echo ($voa["id"]); ?>&kname=<?php echo ($voa["kname"]); ?>&name=<?php echo ($voa["name"]); ?>&kctitle=<?php echo ($voa["kctitle"]); ?>&title=<?php echo ($voa["title"]); ?>">
+                    <?php if(is_array($arr)): $i = 0; $__LIST__ = $arr;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voa): $mod = ($i % 2 );++$i;?><a class="four-one-a fl" href="<?php echo U('Index/visual');?>?id=<?php echo ($voa["id"]); ?>&kind=<?php echo ($voa["kind"]); ?>&name=<?php echo ($voa["name"]); ?>&kctitle=<?php echo ($voa["kctitle"]); ?>&title=<?php echo ($voa["title"]); ?>">
                             <img src="<?php echo ($voa["img"]); ?>"/>
                             <div class="four-one-aa bac-aa">
                                 <div class="four-one-ab">
@@ -318,24 +452,6 @@
                                 </div>
                             </div>
                         </a><?php endforeach; endif; else: echo "" ;endif; ?>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="one-yi bor-i min-k">
-                    <a class="title-b color-b wid fl one-yih min-i" style="cursor: pointer;">专家精选</a>
-                    <p class="color-b title-e fl height-j">听财务专家分享他们的财务管理精髓</p>
-
-                    <div class="clearfix"></div>
-                </div>
-                <div class="four-one">
-                    <?php if(is_array($arra)): $i = 0; $__LIST__ = $arra;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voaa): $mod = ($i % 2 );++$i;?><a class="four-one-a fl" href="<?php echo U('Index/visual');?>?id=<?php echo ($voaa["id"]); ?>&kname=<?php echo ($voaa["kname"]); ?>&name=<?php echo ($voaa["name"]); ?>&kctitle=<?php echo ($voaa["kctitle"]); ?>&title=<?php echo ($voaa["title"]); ?>">
-                        <img src="<?php echo ($voaa["img"]); ?>"/>
-                        <div class="four-one-aa bac-aa">
-                            <div class="four-one-ab">
-                                <h3 class="title-c color-d text"><?php echo ($voaa["name"]); ?>老师分享：</h3>
-                                <p class="title-d color-d text"><?php echo ($voaa["kctitle"]); ?></p>
-                            </div>
-                        </div>
-                    </a><?php endforeach; endif; else: echo "" ;endif; ?>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -347,157 +463,14 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="six-one">
-                    <div class="six-one-a fl" >
-                        <div id="xxdk1">
-                         <a href="<?php echo U('Kecheng/boss');?>?ctid=<?php echo ($rea[0]['id']); ?>"> <img src="<?php echo ($rea[0]['img']); ?>"/></a>
-                        
-                        </div>
-
-                    </div>
-                    <div class="six-one-a fl min-s">
-                        <div id="xxdk2">
-                            <a href="<?php echo U('Kecheng/boss');?>?ctid=<?php echo ($rea[1]['id']); ?>"><img src="<?php echo ($rea[1]['img']); ?>?ctid=<?php echo ($rea[1]['id']); ?>"/></a>
-                       
-                        </div>
-                    </div>
-                    <div class="six-one-a fl min-s">
-                        <div id="xxdk3">
-                            <a href="<?php echo U('Kecheng/boss');?>?ctid=<?php echo ($rea[2]['id']); ?>"><img src="<?php echo ($rea[2]['img']); ?>?ctid=<?php echo ($rea[2]['id']); ?>"/></a>
-                       
-                        </div>
-                    </div>
+                    <?php if(is_array($rea)): $i = 0; $__LIST__ = array_slice($rea,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$openCourse): $mod = ($i % 2 );++$i;?><div class="six-one-a fl" >
+                            <div id="xxdk1">
+                                <a href="<?php echo U('Kecheng/index');?>?cate=<?php echo ($openCourse['urlflag']); ?>"> <img src="<?php echo ($openCourse['img']); ?>"/></a>
+                            </div>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
                     <div class="clearfix"></div>
                 </div>
             </div>
-	 <!--问答解决方案-->
-            <div class="official-three bac-b bor-e">
-                <div class="one-yi bor-d">
-                    <a href="<?php echo U('AskAnswer/Asks');?>"><h3 class="title-b color-e wid fl one-san one-yic">百问百答</h3></a>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="three">
-                    <img src="/Public/app/img/three-a_03.png" class="fl"/>
-                    <div class="three-a fl">
-                        <div class="abouta bac-d fl">
-                            <ul class="about color-d">
-                                <p class="title-j">2017</p>
-                                <h3 class="title-j">您所关注的财税问题都在这里</h3>
-									<a href="<?php echo U('AskAnswer/Asks');?>"><li attr="<?php echo ($qtypeList[0]['id']); ?>" name="qtype" class="ac uiny"><?php echo ($qtypeList[0]['name']); ?></li></a>
-									<?php if(is_array($qtypeList)): $i = 0; $__LIST__ = array_slice($qtypeList,1,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$qtype): $mod = ($i % 2 );++$i;?><a href="<?php echo U('AskAnswer/Asks');?>"><li name="qtype" attr="<?php echo ($qtype["id"]); ?>"><?php echo ($qtype["name"]); ?></li></a><?php endforeach; endif; else: echo "" ;endif; ?>
-                            </ul>
-                        </div>
-
-                        <!--钱帐税-->
-                        <div class="main_a ac fr">
-                            <div class="main_aa bor-p">
-                                <h4 class="color-e title-d height-d">税已经抄报了，15号之前要扣税款，账上没有钱，怎么办啊？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>如果你处于这样的困境，那么你会面临两个问题。首先，你得找出给国税局(IRS)付税的方法。其次，你要搞清你的生意出了什么问题，特别在资金流动方面，然后作出改进。也许最要记住的事是你即使付不起税也要报税。</a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                            <div class="main_aa min-j">
-                                <h4 class="color-e title-d height-d">入公司账户的钱要扣哪些税？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>只有做为收入进入公司帐户的款顶才有交税的可能，其他往来款项是没有税的。</a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                        </div>
-                        <!--股权设立-->
-                        <div class="main_a fr">
-                            <div class="main_aa bor-p">
-                                <h4 class="color-e title-d height-d">合伙开公司股权比例如何分配？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>这个问题由股东协商对公司进行估值，比如估值100万，出10万就占10%，如果估值50万出资10万就占20%；</a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                            <div class="main_aa min-j">
-                                <h4 class="color-e title-d height-d">请问几个人合伙开公司怎么分股？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>你们可以在一起好好商量商量！技术员懂技术，一切由他管理，可以分2股；投资最多的人只投钱什么都不管，可以分3股；其余的人都参与，平均分5股！！！ </a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                        </div>
-                        <!--收购并购-->
-                        <div class="main_a fr">
-                            <div class="main_aa bor-p">
-                                <h4 class="color-e title-d height-d">公司收购需要注意的风险有哪些？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>一、资本、资产方面的风险：注册资本问题。 二、财务会计制度方面的风险 三、税务方面的风险 </a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                            <div class="main_aa min-j">
-                                <h4 class="color-e title-d height-d">非上市企业如何进行估值_非上市企业的估值怎么做？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>相对估值法、收益估值法、资产基础法、期权定价法</a> 
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                           
-                        </div>
-                        <!--新三板-->
-                        <div class="main_a fr">
-                            <div class="main_aa bor-p">
-                                <h4 class="color-e title-d height-d">新三板挂牌企业要注意的财务问题是什么？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>一、会计政策适用问题。二、会计基础重视问题。三、内部控制提升问题。四、企业盈利规划问题五、资本负债结构问题。六、税收方案筹划问题。七、关联交易处理问题。</a>
-                                <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                            <div class="main_aa min-j">
-                                <h4 class="color-e title-d height-d">新三板挂牌对公司财务有什么要求？</h4>
-                                <a class="linp title-a height-j"><span class="bac-c fl"></span>新三板对准备挂牌上市的企业，在准入条件上是不设财务门槛的，只要企业股权结构清晰、经营合法规范、公司治理健全、业务明确并履行信息披露义务、就算公司还未盈利，都可以申请在新三板挂牌上市。</a>
-                                 <a href="<?php echo U('AskAnswer/Asks');?>" style="display:block;float:right; width:50px;color:white;background:#0098b3;text-align:center;border-radius:3px;">更多</a>
-                            </div>
-                           
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <!--热点问题-->
-                <div class="threea">
-                    <div class="one-yi bor-d">
-                        <a href="<?php echo U('AskAnswer/Asks');?>"><h3 class="title-b color-e wid fl one-san one-yic">热点问题</h3></a>
-                        <img src="/Public/app/img/laba.png" class="img1 fl"/>
-                        <div id="ctn">
-                            <p><div class="con fl"><div class="fk bac-c fl"></div>企业经营分析与问题解决</div></p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div id="area">
-                        <div class="inua bac-d color-d">我要提问</div>
-                        <form action="">
-                            <textarea name="text" id="textArea" maxlength="140" onkeyUp="textLimitCheck(this, 30);"></textarea>
-                            <font class="uij" color=#666666>限 30 个字符  已输入 <font color="#CC0000"><span id="messageCount">0</span></font> 个字</font>
-                            <a><input class="wid" type="button" style="background-color:#8c97cb;" value="提交问题" id="submit"></a>
-							<input type="hidden" value="<?php echo ($qtypeList[0]['id']); ?>" name="sqtype">
-                        </form>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-            <!--约见专家-->
-             <div class="official-two bac-b bor-e">
-                <div class="one-yi bor-d">
-                    <a href="<?php echo U('Teacher/teacherList');?>"><h3 class="title-b color-b wid fl one-san one-yih">约见专家</h3></a>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="two-yi scroll">
-                    <ul class="yi-ain">
-                        <?php if(is_array($aa)): $i = 0; $__LIST__ = $aa;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voa): $mod = ($i % 2 );++$i;?><li>
-                            <?php if(is_array($voa)): $i = 0; $__LIST__ = $voa;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($i % 2 );++$i;?><div class="ain-a bor-k fl min-d">
-                                    <div class="ain-yi fl">
-                                        <a href="<?php echo U('Teacher/teacherIntroduce');?>?id=<?php echo ($vv["id"]); ?>"><img  style="whdth:100%;height:100%;" src="<?php echo ($vv["timg"]); ?>" class="img1"/></a>
-                                        <!--<div class="img2 title-d color-d">相信我，会给你不一样的财务服务体验！</div>-->
-                                    </div>
-                                    <a href="<?php echo U('Teacher/teacherIntroduce');?>?id=<?php echo ($vv["id"]); ?>" class="ain-er fl title-a height-e color-a">
-                                        <h3 class="color-b title-e height-d">扁鹊首席财务健康顾问：<?php echo ($vv["name"]); ?></h3>
-                                        <?php echo ($vv["explain"]); ?>
-                                    </a>
-                                    <!--<button class="bac-c color-d title-a sevenabv"  type="button" style="margin-left: 185px; border-radius: 5px; margin-top: 15px">预约专家</button>-->
-                                    <input type="hidden" name="hid" value="<?php echo ($voa["id"]); ?>">
-                                </div><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </li><?php endforeach; endif; else: echo "" ;endif; ?> 
-                        
-                    </ul>
-                    
-                </div>
-                     <a class="prev"><img src="/Public/app/img/zdian.png" border="0"></a>
-                     <a class="next"><img src="/Public/app/img/ydian.png" border="0"></a>
-            </div>
-          	
             <!--财税咨询-->
             <div class="official-five bac-b bor-e">
                 <div class="one-yi bor-i">
@@ -511,7 +484,7 @@
                                 <img src="/Public/app/img/one-aa_03.png"/>
                             </div>
                             <div class="one-ab fl min-o">
-                                <div class="min-n"><div class="fl title-d wid"><a id="kina" class="color-q">动态</a><a id="cina" class="color-n bor-b">法规</a></div><img src="/Public/app/img/one-ab.png" class="fr"/></div>
+                                <div class="min-n" style="margin-top: 0px;"><div class="fl title-d wid"><a id="kina" class="color-q">动态</a><a id="cina" class="color-n bor-b">法规</a></div><img src="/Public/app/img/one-ab.png" class="fr"/></div>
                                 <div class="clearfix"></div>
                                 <div id="kin">
                                     <?php if(is_array($re)): foreach($re as $key=>$vo): ?><div class="one-ab-a height-e"><span class="fl yiunp"></span><p class="fl title-a"><a class="color-a" href="<?php echo U('Article/article');?>?id=<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></a></p></div>
@@ -528,15 +501,15 @@
                         </div>
                         <div class="one-b">
                             <div class="one-ac fl">
-                                <h4 class="height-j title-d">热点点评</h4>
+                                <h4 class="height-j title-d" style="margin-bottom: 10px;">热点点评</h4>
                                 <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483815&idx=1&sn=3fccac490c66c3e91e2baab9dddc1812&chksm=eade3505dda9bc136f5238eafb820397d0849c129730ad2c0fec7d647d4c47cddea15cb13c43&scene=4#wechat_redirect" class="title-a color-a height-j"><p class="fl">【精选】BOSS听：工资结算全面银行化又是什么鬼?</p><img src="/Public/app/img/one-ac.png" style="margin-top: 6px;"/></a>
                                 <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483800&idx=1&sn=aee3dbb15158437cb4a0d521d896aa0c&chksm=eade353adda9bc2c472848b859a168d88f5a8a54ece4a12fdbc96e403c6274508dcea01a0c5d&scene=4#wechat_redirec" class="title-a color-a height-j"><p class="fl">【精选】BOSS听：税收居民证明有啥用?朱宝珠</p><img src="/Public/app/img/one-ac.png" style="margin-top: 7px;"/></a>
                                 <a href="http://mp.weixin.qq.com/s/2seYvgm_CUjxWJim0AheSw" class="title-a color-a height-j"><p class="fl">【原创】只收15%企业所得税，这些最新优惠政策你知道吗？</p><img src="/Public/app/img/one-ac.png" style="margin-top: 8px;"/></a>
                                 <a href="http://mp.weixin.qq.com/s?__biz=MzI2OTQ5MzcwOQ==&mid=2247483771&idx=2&sn=b38a3bd4806083a96462afb2532121c5&chksm=eade35d9dda9bccfc15bb9165680e4d61e6d3962052c398d6c9823b50700cf2d5ad42d001471&scene=4#wechat_redirect" class="title-a color-a height-j"><p class="fl">【精选】BOSS听：女助理侵吞8000万，漏洞在这</p><img src="/Public/app/img/one-ac.png" style="margin-top: 9px;"/></a>
                                 <!--<a class="title-a fr aar">查看更多</a>-->
                             </div>
-                            <div class="one-ab fl min-o">
-                                <div class="min-n"><div class="fl title-d wid"><a id="kna" class="color-q">案例</a><a id="cna" class="color-n bor-b">干货</a></div><img src="/Public/app/img/one-abc.png" class="fr"/></div>
+                            <div class="one-ab fl min-o" style="height: 127px;">
+                                <div class="min-n" style="margin-top: 3px;"><div class="fl title-d wid"><a id="kna" class="color-q">案例</a><a id="cna" class="color-n bor-b">干货</a></div><img src="/Public/app/img/one-abc.png" class="fr"/></div>
                                 <div class="clearfix"></div>
                                 <div id="kins">
                                     <?php if(is_array($resul)): foreach($resul as $key=>$vo2): ?><div class="one-ab-a height-e"><span class="fl yiunp"></span><p class="fl title-a"><a class="color-a" href="<?php echo U('Article/article');?>?id=<?php echo ($vo2["id"]); ?>"><?php echo ($vo2["title"]); ?></a></p></div>
@@ -610,15 +583,15 @@
 	<div class="friendly_link">
 			<p class="link_title">友情链接</p>
 			<ul>
-				<li><a href="www.changcaizixun.com">天津长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">北京长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">太原长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">广州长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">成都长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">长沙长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">金华长财咨询</a></li>
-				<li><a href="www.changcaizixun.com">四度信息</a></li>
+				<li><a href="http://www.changcaizixun.com">天津长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">北京长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">太原长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">广州长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">成都长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">长沙长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">金华长财咨询</a></li>
+				<li><a href="http://www.changcaizixun.com">四度信息</a></li>
 			</ul>
 		</div>
 		<div class="footerAll">
@@ -628,9 +601,10 @@
 				</div>
 				<div class="footHelpCenter">
 					<h5>帮助中心</h5>
-					<p><a href="#">购物帮助</a></p>
-					<p><a href="#">支付方式</a></p>
-					<p><a href="#">选定课程</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhifupro">支付问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=fapiaopro">发票问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=zhhupro">账户问题</a></p>
+					<p><a href="<?php echo U('HelpCenter/index');?>?ques=dingzhipro">定制问题</a></p>
 				</div>
 				<div class="footerAboutUs">
 					<h5>关于我们</h5>
@@ -663,7 +637,12 @@
     </div>
 </body>
 <script>
-
+        //新政速递反转动画
+        $(".one-c-b-a").hover(function(){
+            $(this).css({"background":"#0098b3"}).siblings().css("background","");
+            $(this).find(".color-a").css("color","white");
+            $(this).siblings().find(".color-a").css("color","#999999");
+        });
 
         var w=967;
         var l=0;
@@ -699,18 +678,20 @@
             });
         };
 
-//        白问百答
-            $(".abouta ul a").eq(0).find("li").css({"color":"#666666","background-color":"white"})
-            $(".abouta ul a li").hover(function () {
-                var Oindex=$(this).parent().index();
-                $(".abouta ul a li").css({"color":"#666666","background":""});
-                $(this).css({"color":"black","background":"white"});
+        //        白问百答
+        $(".abouta ul a").find("li").css({"color":"white","background-color":"#8c97cb"});
+        $(".abouta ul a").eq(0).find("li").css({"color":"#8c97cb","background-color":"white"})
+        $(".abouta ul a li").hover(function () {
+            var Oindex=$(this).parent().index();
+            $(".abouta ul a li").css({"color":"white","background":"#8c97cb"});
+            $(this).css({"color":"#8c97cb","background":"white"});
 
-                $(".main_a").css("display","none");
-                $(".main_a").eq(Oindex-2).css("display","block");
-				$('input[name=sqtype]').val($(this).attr('attr'));
+            $(".main_a").css("display","none");
+            $(".main_a").eq(Oindex-2).css("display","block");
+            $('input[name=sqtype]').val($(this).attr('attr'));
 
-            });
+        });
+
 //
 		$('#submit').click(function() {
 			var	content = $('#textArea').val();	
@@ -785,11 +766,6 @@
         $('.official-yc').css('display','none');
         $('.official-yd').css('display','block');
     });
-//
-
-
-
-
 
     $(function () {
         $tds = $(".next");
@@ -827,39 +803,41 @@
     });
 
 
-    window.onload=function(){
-        var Oimg=document.getElementById("Oimg");
-        var Ocricle=document.getElementById("cricle").getElementsByTagName("li");
-        var timer=setInterval(start,2000);
-        Ocricle[0].style.background="#f63";
-        var index=0;
-        function start(){
-            index++;
-            if (index==3) {
-                index=0;
+        window.onload=function(){
+            var Oimg=document.getElementById("Oimg");
+            var Ocricle=document.getElementById("cricle").getElementsByTagName("li");
+            var timer=setInterval(start,2000);
+            Ocricle[0].style.background="#f63";
+            var index=0;
+            function start(){
+                index++;
+                if (index==3) {
+                    index=0;
+                }
+                if(index==0){
+                    Oimg.src="/Public/app/img/banner"+0+".png";
+                    Oimg.parentNode.href="<?php echo U('Kecheng/index');?>?cate=glccwsw";
+                }
+                if(index==1){
+                    Oimg.src="/Public/app/img/banner"+1+".png";
+                    Oimg.parentNode.href="<?php echo U('Kecheng/index');?>?cate=cwt";
+                }
+                if(index==2){
+                    Oimg.src="/Public/app/img/banner"+2+".png";
+                    Oimg.parentNode.href="<?php echo U('Kecheng/index');?>?cate=cwxtb";
+                }
+                Ocricle.background="white";
+                resetLiBg();
+                Ocricle[index].style.background="#f63";
+            }
+            function resetLiBg(){
+                for (var i=0;i<Ocricle.length;i++) {
+                    Ocricle[i].style.background="white";
+                }
+            }
+        };
 
-            }
-            Oimg.src="/Public/app/img/banner"+index+".png";
-
-            if(index==1){
-                Oimg.src="/Public/app/img/banner"+1+".png";
-                Oimg.parentNode.href="<?php echo U('Kecheng/finance');?>";
-            }
-            if(index==2){
-                Oimg.src="/Public/app/img/banner"+2+".png";
-                Oimg.parentNode.href="<?php echo U('Kecheng/finance');?>";
-            }
-            Ocricle.background="white";
-            resetLiBg();
-            Ocricle[index].style.background="#f63";
-        }
-        function resetLiBg(){
-            for (var i=0;i<Ocricle.length;i++) {
-                Ocricle[i].style.background="white";
-            }
-        }
-    };
-    //导航栏 c02003
+        //导航栏 c02003
 
 //        $(".sublist").eq(0).css("display","block");
 //        $("#fadetab li").eq(0).css({"background-color":"rgb(201, 234, 240)"});
@@ -1122,131 +1100,7 @@
 
 
 
-//     $(function(){
-//         $("input[name='Phone']").focus(function(){
-//             $(this).next("span").remove();
-//             $("input[name='Phone']").attr("placeholder","请输入手机号");
-//         }).blur(function(){
-//             ab = $(this);
-//             var s = ab.val();
-//             if(s == ""){
-//                 $("input[name='Phone']").attr("placeholder","手机号不能为空");
-//                 return false;
-//             }else if(s.match(/^1[0-9]{10}$/) == null){
-//                 $("input[name='Phone']").val("").attr("placeholder","请填写合法的手机号码");
-//                 return false;
-//             }else{
-//                 $.get("<?php echo U('Index/check_phone');?>",{Phone:s},function(data){
-//                     var data = eval("("+data+")");
-//                     if(data.error == false){
-//                         ab.next("span").remove();
-//                         $("input[name='Phone']").val("").attr("placeholder","手机号已注册过");
-//                         alert(data.msg);
-//                         return false;
-//                     }else{
-//                         ab.next("span").remove();
-//                         $("<span>√</span>").css("color","#00A0E9").insertAfter(ab);
-//                         return true;
-// //                        $("<span>√</span>").css("color","#00A0E9").insertAfter(ab);
-//                     }
-//                 },"html")
-//             }
-//         })
-//     })
 
-
-
-    //短信验证定时器
-//     var new_time = 60;
-//     function dingshiqi(new_time){
-//         var a = setInterval(function(){
-//             new_time = new_time -1;
-//             if(new_time == 0){
-//                 window.clearInterval(a);
-//                 new_time = 60;
-//                 $("#fgot_code").hide();
-//                 $("#fbtn").show();
-//             }
-//             $("#fsecond").html(new_time);
-//         },1000);
-//     }
-//     function get_fcode(dom) {
-//         var Phone = $("input[name='Phone']").val();
-//         if (Phone == '' || Phone.match(/^1[0-9]{10}$/) == null) {
-//             $("input[name='Phone']").val("").attr("placeholder", "请输入合法的手机号码");
-//             return false;
-//         }
-//         $.ajax({
-//             type:"post",
-//             url:"<?php echo U('Code/fpwd');?>",
-//             data:{"Phone":Phone},
-//             success:function(data){
-//                 var data = eval("("+data+")");
-//                 if(data.error==false){
-//                     return false;
-//                 }else{
-//                     dingshiqi(new_time);
-//                     $("#fgot_code").show();
-//                     $("#fbtn").hide();
-//                 }
-//             }
-//         })
-//     }
-//     $("input[name='regis']").bind('click',function(){
-//         var Phone = $("input[name='Phone']").val();
-//         var yanzheng = $("input[name='yanzheng']").val();
-//         var password = $("input[name='password']").val();
-//         if(Phone == '' && yanzheng == '' && password == ''){
-//             $("input[name='Phone']").val("").attr("placeholder", "手机号不能为空");
-//             $("input[name='yanzheng']").val("").attr("placeholder", "验证码不能为空");
-//             $("input[name='password']").val("").attr("placeholder", "密码不能为空");
-//             return false;
-//         }
-//         $.ajax({
-//             type:"post",
-//             url:"<?php echo U('Index/check');?>",
-//             data:{'Phone':Phone,'yanzheng':yanzheng,'password':password},
-//             success:function(data){
-//                 var data = eval("("+data+")");
-//                 if(data.error == 2){
-// //                    window.location.href = "<?php echo U('Index/index');?>";
-//                     alert(data.msg);
-//                     return false;
-//                 }
-//                 if(!(data.error == 2)){
-//                     alert("注册成功，您可以去个人中心完善个人信息");
-//                     window.location.href="<?php echo U('Index/index');?>";
-//                 }
-//             }
-//         })
-//     })
-
-//     $(".searchsub").bind('click',function(){
-//         var name = $("input[name='names']").val();
-//         var pwd = $("input[name='pwds']").val();
-
-//         if(name == '' || pwd == ''){
-//             $("input[name='names']").attr("placeholder","请输入账号");
-//             $("input[name='pwds']").attr("placeholder","请输入密码");
-//             return false;
-//         }
-// //        $("#form1").submit(function(){
-// //            return false;
-// //        })
-//         $.ajax({
-//             type:"post",
-//             dataType:'json',
-//             url:"<?php echo U('Index/login');?>",
-//             data:{'Phone':name,'password':pwd},
-//             success:function(data){
-//                 var row = eval(data);
-//                 if(row){
-//                     window.location.href = "<?php echo U('Index/index');?>";
-//                     alert("登录成功");
-//                 }
-//             }
-//         });
-//     })
 	
 	$('#submit').click(function() {
 		var	content = $('#textArea').val();	

@@ -33,7 +33,7 @@ var ThinkAjax = {
 	updateEffect:{'opacity': [0.1,0.85]},			// 更新效果
 	image:['','',''], // 依次是处理中 成功 和错误 显示的图片
 	tipTarget:'ThinkAjaxResult',	// 提示信息对象
-	showTip:true,	 // 是否显示提示信息，默认开启
+	showTip:false,	 // 是否显示提示信息，默认开启
 	status:0, //返回状态码
 	info:'',	//返回信息
 	data:'',	//返回数据

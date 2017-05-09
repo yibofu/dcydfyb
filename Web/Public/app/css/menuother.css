@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family:"方正大标宋简体";
+    src: url(../fontM/FZDBSJW.TTF);
+}
+.menuRightcho{
+    width: 321px;
+    height: 193px;
+    background: #f4f4f4;
+    overflow: hidden;
+}
+.menuRightchol{
+    float: left;
+    width: 221px;
+    height: 193px;
+}
+.menuRightchor{
+    float: left;
+    width: 50px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    padding: 35px 5px 20px 15px;
+    text-align: center;
+    height: 193px;
+    font-family: "方正大标宋简体";
+}
+.menuRightchor p{
+    color: #0098b3;
+    font-size: 20px;
+    font-family:;
+}
+.underlineNeg{
+    width: 75px;
+    height: 75px;
+    float: left;
+    background: white;
+    margin:10px 0 10px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+.underlineNeg i{
+    color: #0098B3;
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    /*border: 1px red solid;*/
+}
+.underlineNeg p{
+    /*border: 1px red solid;*/
+    font-size: 12px;
+    text-align: center;
+    width:100%;
+    color: #0098B3;
+}
+
+
+
+
+

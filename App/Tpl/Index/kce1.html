@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Public/app/img/logo.ico" type="image/x-icon">
+    <title>扁鹊财院---课程中心</title>
+    <link rel="stylesheet" href="/Public/app/css/official.css">
+    <link rel="stylesheet" href="/Public/app/css/caption.css">
+    <script type="text/javascript" src="/Public/app/js/jquery.js"></script>
+    <script type="text/javascript" src="/Public/app/js/ajaxUtil2.js"></script>
+    <script type="text/javascript" src="/Public/app/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/Public/app/js/jquery.kkPages.js"></script>
+    <script type="text/javascript" src="/Public/app/js/L_slide.js"></script>
+    <script language="javascript" src="http://pct.zoosnet.net/JS/LsJS.aspx?siteid=PCT10814050&float=1&lng=cn"></script>
+    <style>
+        #Pagination{
+            position: relative;
+            left: 190px;
+            bottom: 0px;
+        }
+        .hl_scrool_leftbtn {
+            position: relative;
+            top: -29px;
+            right: -772px;
+            width: 7px;
+            height: 12px;
+        }
+        .hl_scrool_rightbtn {
+            position: relative;
+            top: -29px;
+            right: -793px;
+            width: 7px;
+            height: 12px;
+        }
+        .h1_main5_title{
+            width: 807px;height: 94px;
+        }
+        .h1_main5_title .h1_main5_title-one{
+            text-align: center;
+            height: 32px;
+            width: 141px;
+            margin-top: 6px;
+            margin-left: 1px;
+            border-right: 1px solid #dddddd;
+        }
+        .h1_main5_title .h1_main5_title-one a{
+            display: inline-block;
+            box-shadow: 2px 2px 5px #999999;
+            line-height: 41px;width: 133px;
+            margin-top: -4px;
+        }
+        .h1_main5_title .h1_main5_title-one:active a {
+            box-shadow: 0px 0px 5px #ccc;
+        }
+        .h1_main5_title .h1_main5_title-one:hover a {
+            color: #0098b3;
+        }
+        .h1_main5_title .h1_main5_title-one{
+            cursor:pointer;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-one:active a {
+            box-shadow: 0px 0px 5px #ccc;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-one:hover a {
+            color: #0098b3;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-one{
+            cursor:pointer;
+        }
+        .h1_main5_title .h1_main5_title-two{
+            border-bottom: 1px solid #dddddd;height: 47px;margin-left: 3px;
+        }
+        .h1_main5_title .h1_main5_title-two li{
+            text-align: center; height: 32px;width: 110px;border-right: 1px solid #dddddd;
+            margin: 7px 0 0 4px;
+            padding-right: 4px;
+        }
+        .h1_main5_title .h1_main5_title-two li a{
+            box-shadow: 0px 2px 8px #999999;
+            width: 110px; line-height: 41px;
+            display:block;
+            margin-top: -5px;
+            font-size: 14px;
+        }
+        .h1_main5_title .h1_main5_title-two li:active a{
+            box-shadow: 0px 0px 5px #ccc;
+        }
+        .h1_main5_title .h1_main5_title-two li:hover a{
+            color: #0098b3;
+        }
+        .h1_main5_title .h1_main5_title-two li{
+            cursor:pointer;
+        }
+        /*.h1_main5_title .h1_main5_title-two li span{
+            border-right: 1px solid #dddddd;position: relative;left: 28px;
+        }*/
+        .h1_main5_title .hl_main5_content1 {
+            overflow: hidden;
+            width: 622px;
+            height: 47px;
+            float: left;
+        }
+        .h1_main5_title .hl_main5_content1-one {
+            text-align: center;
+            height: 32px;
+            width: 141px;
+            margin-top: 6px;
+            margin-left: 1px;
+            border-right: 1px solid #dddddd;
+            float: left;
+        }
+        .hl_main5_content1-one a {
+            display: inline-block;
+            box-shadow: 2px 2px 5px #999999;
+            line-height: 41px;
+            width: 133px;
+            margin-top: -5px;
+            margin-left: 4px;
+            float: left;
+            text-align: center;
+        }
+        /*.h1_main5_title .hl_main5_content1 .hl_main5_content1-one span{
+            border-right: 1px solid #dddddd;position: relative;left: 28px;
+        }*/
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two {
+            width: 99999px;
+            height: 47px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two li{
+            text-align: center; height: 32px;width: 80px;border-right: 1px solid #dddddd;
+            margin: 6px 0 0 4px;
+            padding-right: 4px;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two li a{
+            box-shadow: 0px 2px 8px #999999;
+            width: 80px; line-height: 41px;
+            display:block;
+            margin-top: -5px;
+            color: #333333;
+            font-size: 14px;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two li:active a{
+            box-shadow: 0px 0px 5px #ccc;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two li:hover a{
+            color: #0098b3;
+        }
+        .h1_main5_title .hl_main5_content1 .hl_main5_content1-two li{
+            cursor:pointer;
+        }
+        /*.h1_main5_title .hl_main5_content1 .hl_main5_content1-two span{
+            border-right: 1px solid #dddddd;position: relative;left: 20px;display: inline-block;
+        }*/
+        .kce-one{
+            background: #ffffff;border: 1px solid #dddddd;
+        }
+        .kce-one .kce-oneone{
+            border-right: 1px solid #dddddd; height: 94px;width: 158px;
+        }
+        .main .inner #video .ck-video li a i {
+            opacity: 0;
+            position: absolute;
+            left: 46%;
+            top: 50%;
+            margin-top: -26px;
+            height: 50px;
+            width: 50px;
+            margin-left: -26px;
+            -webkit-transition: opacity .4s ease-in;
+            -moz-transition: opacity .4s ease-in;
+            -ms-transition: opacity .4s ease-in;
+            transition: opacity .4s ease-in;
+            bottom: auto;
+            background: url("/Public/app/img/play.png") center center no-repeat scroll;
+            background-size: 50px 50px;
+            z-index: 9999;
+        }
+        .main .inner #video .ck-video li a:hover i{
+            opacity:1;
+        }
+        .main .inner #video .ck-video li:hover{
+            box-shadow: 0px 0px 10px #999;
+        }
+        .main .inner #video .ck-video li:hover span a{
+            color: #0098b3;
+        }
+        .avio{
+            position: absolute;width: 244px;height: 212px;
+        }
+        .main .inner #video .ck-video li span {
+            margin-top: 15px;
+            line-height: 15px;
+            margin-left: 15px;
+            padding-left: 45px;
+            background: url(/Public/app/img/icon_03.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            display: block;
+            color: #666666;
+        }
+        .main .inner #video .ck-video li span a{
+            font-size: 12px;
+        }
+        .main .inner #video .ck-video li .avio-one{
+            width: 15px; height: 15px; margin: -15px 20px 0 0;
+        }
+        .main .inner #video .ck-video li .avio-one .img1{
+            width: 100%;height:100%;
+        }
+        .main .inner #title span {
+            font-size: 16px;
+            line-height: 26px;
+            height: 26px;
+            color: #999999;
+            display: inline;
+        }
+
+        .Num{
+            float: right;
+            margin-top:-23px;
+            margin-right: 10px;
+        }
+        .ck-video p{
+            width: 130px;
+            float: left;
+        }
+        .avio-one{
+            float: left;
+
+        }
+
+    </style>
+</head>
+<body>
+<!--头部 c02003-->
+<include file="Public:head" />
+<!--选择卡-->
+<include file="Public:xxk" />
+
+    <div class="banner">
+        <img src="/Public/app/img/kecheng.png"/>
+    </div>
+<div class="main">
+    <div class="inner">
+        <div class="kce-one">
+            <div id="ck" class="tab-nav hl_main5_content">
+                <div class="fl kce-oneone">
+                    <a href="{:U(Index/kce)}"><img src="/Public/app/img/officialkce-xin.png" style="margin: 2px 0 0 1px;"/></a>
+                </div>
+                <div class="fl h1_main5_title">
+                    <div class="title-f fl h1_main5_title-one"><a href="{:U('Index/kce')}?name={$rea[0]['kind']}" class="color-k">{$rea[0]['kind']}></a></div>
+                    <!--系列专题后边的选项-->
+                    <ul class="h1_main5_title-two">
+                        <volist name="resultt" id="vov">
+                            <li class="title-e fl"><a href="{:U('Index/vielist')}?name={$vov.zname}" name="zna">{$vov.zname}</a></li>
+                        </volist>
+                    </ul>
+                    <div class="hl_main5_content1-one title-f"><a href="{:U('Index/kce')}?name={$rea[1]['kind']}" class="color-k">{$rea[1]['kind']}></a></div>
+                    <!--专家精选后边的后边的选项-->
+                    <div class="hl_main5_content1">
+                        <ul class="hl_main5_content1-two">
+                            <volist name="resultt1" id="vvoo">
+                                <li class="title-e fl content1-two"><a href="{:U('Index/vielist')}?name={$vvoo.name}" name="za">{$vvoo.name}</a></li>
+                            </volist>
+                        </ul>
+                    </div>
+                    <div class="hl_scrool_leftbtn cursor" style="font-size: 18px;">
+                        <
+                    </div>
+                    <div class="hl_scrool_rightbtn cursor" style="font-size: 18px;">
+                        >
+                    </div>
+                </div>
+            </div>
+            <div id="title">
+                <span class="fl">全部视频<i style="margin-left: 5px;">></i></span>
+                <span class="fl" style="font-size: 14px; margin: 2px 0 0 5px;">专家精选<i style="margin-left: 5px;">></i></span>
+                <span class="fl" style="font-size: 14px; margin: 2px 0 0 5px;">刘国东</span>
+            </div>
+        </div>
+        <div id="video">
+            <!--全部的课程-->
+            <ul class="ck-video basia tab-content newslist" id="all" style="display: block;">
+                <volist name="result" id="vo">
+                <li class="fl">
+                    <a href="{:U('Index/visual')}?id={$vo.id}&kind={$vo.kind}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}" class="avio">
+                        <img src="{$vo.img}">
+                        <i></i>
+                    </a>
+                    <div class="cursor" style="margin-top: 230px;">
+                        <span><a href="{:U('Index/visual')}?id={$vo.id}&kind={$vo.kind}&name={$vo.name}&kctitle={$vo.kctitle}&title={$vo.title}">{$vo.kctitle}</a></span>
+                        <p>讲师:&nbsp{$vo.name}</p>
+                        <div style="color: #F55E5E;font-size: 14px; float:left;margin-left: -30px; display: inline-block;margin-top: 5px;">￥{$vo.money}</div>
+			<if condition="$vo.iscoll eq 0">
+                        <div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" attr="{$vo.id}"  name="coll" title="收藏"/></div>
+						<else />
+                        <div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collecta.png" class="img1" attr="{$vo.id}" title="收藏"/></div>
+						</if>
+                        <div class="Num">{$vo.collnum}</div>
+<!--
+                        <div class="fr avio-one"  style="margin-top: 10px;margin-left: 40px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" attr="{$vo.id}"  name="coll" title="收藏"/></div>
+                        <div class="Num">9</div>
+-->
+                    </div>
+                </li>
+                </volist>
+            </ul>
+            <!--点击系列专题的出来的视频-->
+            <ul class="ck-video basia tab-content newslist" id="son" style="display: none;">
+                <volist name="arr1" id="voo">
+                    <li class="fl">
+                        <a href="{:U('Index/visual')}?id={$voo.id}&kind={$voo.kind}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}" class="avio">
+                            <img src="{$voo.img}">
+                            <i></i>
+                        </a>
+                        <div class="cursor" style="margin-top: 230px;">
+                            <span><a href="{:U('Index/visual')}?id={$voo.id}&kind={$voo.kind}&name={$voo.name}&kctitle={$voo.kctitle}&title={$voo.title}">{$voo.kctitle}</a></span>
+                            <p>讲师:&nbsp{$voo.name}</p>
+			<div style="color: #F55E5E;font-size: 14px; float:left;margin-left: -15px; display: inline-block;margin-top: 5px;">￥{$voo.money}</div>
+			<if condition="$voo.iscoll eq 0">
+			<div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collectb.png" class="img1" attr="{$voo.id}"  name="coll" title="收藏"/></div>
+			<else />
+			<div class="fr avio-one"  style="margin-top: -22px;margin-left: 190px;"><img src="/Public/app/img/offcial-collecta.png" class="img1" attr="{$voo.id}" title="收藏"/></div>
+			</if>
+                            <div class="Num">{$voo.collnum}</div>
+                        </div>
+                    </li>
+                </volist>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class='clearfix'></div>
+    </div>
+    <include file="Public:bottom" />
+</div>
+</body>
+<script src="/Public/app/js/rollSlide.js"></script>
+<script>
+    $("document").ready(function(){
+        $(".tab-nav li").each(function(){
+            $(this).click(function(){
+                if(!$(this).hasClass('current')){
+                    $(this).addClass('current').siblings('.current').removeClass('current');
+                }else{
+                    $(this).siblings('.current').removeClass('current');
+                }
+                var target = $(this).attr('name');
+                $("."+target).show();
+                $("."+target).siblings('.tab-content').hide();
+            });
+        });
+    });
+    var flag = "left";
+    function DY_scroll(wraper,prev,next,img,imga,speed,or){
+        var wraper = $(wraper);
+        var prev = $(prev);
+        var next = $(next);
+        var img = $(img).find('ul');
+        var imga = $(imga).find('ul li');
+        var w = img.find('li').outerWidth(true);
+        var s = speed;
+        next.click(function(){
+            img.animate({'margin-left':-w}/*,1500,'easeOutBounce'*/,function(){
+                img.find('li').eq(0).appendTo(img);
+                img.css({'margin-left':0});
+            });
+            flag = "left";
+        });
+        prev.click(function(){
+            img.find('li:last').prependTo(img);
+            img.css({'margin-left':-w});
+            img.animate({'margin-left':0}/*,1500,'easeOutBounce'*/);
+            flag = "right";
+        });
+        if(imga.length>4){
+            if (or == true){
+                ad = setInterval(function() { flag == "left" ? next.click() : prev.click()},s*1000);
+                wraper.hover(function(){clearInterval(ad);},function(){ad = setInterval(function() {flag == "left" ? next.click() : prev.click()},s*1000);});
+            }
+        }
+
+    }
+    DY_scroll('.hl_main5_content','.hl_scrool_leftbtn','.hl_scrool_rightbtn','.hl_main5_content1','.hl_main5_content1',0,false);// true为自动播放，不加此参数或false就默认不自动
+
+
+
+    //获取url的get参数并且解决汉字乱码问题
+    $(function(){
+        var local_url = document.location.href;
+        var url = local_url.split('name=')[1];
+        var u = decodeURI(url);
+        if(u == "专家精选"){
+            $("#all").css("display","none");
+            $("#son").css("display","block");
+        }
+        else if(u == "系列专题"){
+            $("#all").css("display","none");
+            $("#son").css("display","block");
+        }else{
+            $("#all").css("display","block");
+            $("#son").css("display","none");
+        }
+    })
+    $("#xilie").bind('click',function(){
+        $('#xlztz').text(" ");
+        $("#xlzt").css("display","block");
+        $("#all").css("display","none");
+        $("#zjjx").css("display","none");
+    })
+    $("#zhuanjia").bind('click',function(){
+        $('#xlztz').text(" ");
+        $("#all").css("display","none");
+        $("#xlzt").css("display","none");
+        $("#zjjx").css("display","block");
+    })
+
+    function xilie(){
+        $('#xlztz').text(" ");
+        $("#xlzt").css("display","block");
+        $("#all").css("display","none");
+        $("#zjjx").css("display","none");
+    }
+
+    function zhuanjia(){
+        $('#xlztz').text(" ");
+        $("#all").css("display","none");
+        $("#xlzt").css("display","none");
+        $("#zjjx").css("display","block");
+    }
+
+ $('img[name=coll]').click(function() {
+        var courid = $(this).attr('attr');
+        var that = $(this);
+
+        $.post(
+                '{:U("MyCollect/collection")}',
+                {'couid' : courid},
+
+                function(res) {
+                    if(res == 1) {
+                        that.attr('src','/Public/app/img/offcial-collecta.png');
+			var numNode = that.parent().siblings(".Num");
+			var num = parseInt(numNode.html());
+			numNode.html(num+1);
+			that.unbind("click");
+                    } else if(res == 0) {
+			location.href = "{:U('Login/loginPage')}";
+			}
+                }
+
+        );
+
+    });
+</script>
+</html>

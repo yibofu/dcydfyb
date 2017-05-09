@@ -181,7 +181,7 @@ class QuestionAction extends Action{
 
     public function sbbshow(){
         $id = $this->_post("id");
-        $sbb = M("sbb");
+        $sbb = M("ssb");
         $ret['status'] = 2;
         $result = $sbb->where("id=".$id)->save($ret);
         echo json_encode($result);

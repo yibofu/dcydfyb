@@ -54,21 +54,21 @@
 >
     <thead>
     <tr>
-        <th field="id" align="center" width="10%">id</th>
-        <th field="kid" align="center" width="10%">视频种类id</th>
-        <th field="kname" align="center" width="10%">视频种类名称</th>
-        <th field="zname" align="center" width="10%">视频子类名称</th>
-        <th field="zid" align="center" width="10%">视频子类id</th>
-        <th field="name" align="center" width="10%">老师名字</th>
-        <th field="url" align="center" width="10%" >视频连接</th>
-        <th field="title" align="center" width="10%" >章节标题</th>
-        <th field="money" align="center" width="10%" >课程价格</th>
-        <th field="introduce" align="center" width="10%" >章节介绍</th>
-        <th field="chapternum" align="center" width="10%" >章节数</th>
-        <th field="kctitle" align="center" width="10%" >课程标题</th>
-        <th field="img" align="center" width="15%" formatter="imgFormatter">课程图片</th>
-        <th field="isrecommend" align="center" width="10%" formatter="show_status">是否设置为推荐课程</th>
-        <th field="f" align="center" width="30%" formatter="show_manger">操作</th>
+        <th field="id" align="center" width="15%">id</th>
+        <!--<th field="kid" align="center" width="15%">视频种类id</th>-->
+        <th field="kind" align="center" width="15%">视频种类名称</th>
+        <!--<th field="zname" align="center" width="15%">视频子类名称</th>-->
+        <!--<th field="zid" align="center" width="15%">视频子类id</th>-->
+        <th field="name" align="center" width="15%">老师名字</th>
+        <!--<th field="url" align="center" width="20%" >视频连接</th>-->
+        <th field="title" align="center" width="30%" >章节标题</th>
+        <th field="money" align="center" width="15%" >课程价格</th>
+        <th field="introduce" align="center" width="30%" >章节介绍</th>
+        <th field="chapternum" align="center" width="5%" >章节数</th>
+        <th field="kctitle" align="center" width="20%" >课程标题</th>
+        <th field="img" align="center" width="30%" formatter="imgFormatter">课程图片</th>
+        <th field="isrecommend" align="center" width="20%" formatter="show_status">是否设置为推荐课程</th>
+        <th field="f" align="center" width="40%" formatter="show_manger">操作</th>
     </tr>
     </thead>
 </table>
@@ -76,9 +76,9 @@
     <div>
         <table>
             <tr>
-                <td>视频专题:<input class="easyui-validatebox" id="title" type="text" name="title" size="14" ></td>
+                <td>章节标题:<input class="easyui-validatebox" id="title" type="text" name="title" size="14" ></td>
                 <td>视频价格:<input class="easyui-validatebox" id="money" type="text" name="money" size="15" ></td>
-                <td>发布时间：<input style="width:90px;"   type="text"  class="Wdate"  onClick="WdatePicker()" id="ytime" name="ytime"></td>
+                <td>课程标题:<input class="easyui-validatebox" id="kctitle" type="text" name="kctitle" size="14" ></td>
                 <td>
                     <a href="javascript:void(0)" iconCls="icon-search" class="easyui-linkbutton" onClick="doSearch()">查询</a>
                 </td>
@@ -92,21 +92,21 @@
     <form id="fmup" method="post" enctype="multipart/form-data">
         <div class="fitem">
             <label>视频种类</label>
-            <select data-options="panelHeight:'auto',editable:false" class="easyui-combobox" name="kname" id="kname">
+            <select data-options="panelHeight:'auto',editable:false" class="easyui-combobox" name="kind" id="kname">
                 <option value="">--请选择--</option>
                 <?php if(is_array($re)): $i = 0; $__LIST__ = $re;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["kind"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
         </div>
         <div class="fitem">
             <label>视频子类</label>
-            <select data-options="panelHeight:'auto',editable:false" class="easyui-combobox" name="zname" id="zname">
+            <select data-options="panelHeight:'auto',editable:false"  class="easyui-combobox" name="zname" id="zname">
                 <option value="">--请选择--</option>
                 <?php if(is_array($ras)): $i = 0; $__LIST__ = $ras;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voa): $mod = ($i % 2 );++$i;?><option value="<?php echo ($voa["id"]); ?>"><?php echo ($voa["zname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
         </div>
         <div class="fitem">
             <label>老师名字:</label>
-            <select data-options="panelHeight:'auto',editable:false" class="easyui-combobox" name="name" id="name">
+            <select style="height:20px; overflow: scroll;" class="easyui-combobox" name="name" id="name">
                 <option value="">--请选择--</option>
                 <?php if(is_array($ree)): $i = 0; $__LIST__ = $ree;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($voo["id"]); ?>"><?php echo ($voo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
@@ -121,12 +121,10 @@
         </div>
         <div class="fitem">
             <label>章节标题:</label>
-            <!--<input name="title"  class="easyui-validatebox" style="width:300px;height: 100px;">-->
             <textarea name="title" class="easyui-validatebox" cols="20" rows="5"></textarea>
         </div>
         <div class="fitem">
             <label>章节介绍:</label>
-            <!--<input name="introduce"  class="easyui-validatebox" style="width:300px;height: 100px;">-->
             <textarea name="introduce" class="easyui-validatebox" cols="30" rows="5"></textarea>
         </div>
         <div class="fitem">
@@ -171,6 +169,8 @@
     function doSearch(){
         $('#dg').datagrid('load',{
             title: $('#title').val(),
+            money: $('#money').val(),
+            kctitle: $('#kctitle').val()
         });
     }
 

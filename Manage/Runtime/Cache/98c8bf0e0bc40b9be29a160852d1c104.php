@@ -24,7 +24,7 @@ html,body {
 	background-image:-ms-linear-gradient(bottom, #0C679E 0%, #0C679E 100%);*/
 	
 	
-	background:url(/Public/admin/imgs/ta_003.jpg) repeat-x top;
+	background:url(/Public/admin/imgs/ta_003.jpg) repeat-x top; 
 	
 	margin: 0 auto;
 	position: relative;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,6 +8,13 @@
 		<script src="/Public/app/js/jquery.min.js"></script>
 		<script src="/Public/app/js/delivery-address.js"></script>
 		<script src="/Public/app/js/region_select.js"></script>
+        <style>
+            .shanchuAdd{
+                float: right;
+                margin: -20px -10px 0 0;
+                cursor: pointer;
+            }
+        </style>
 	</head>
 	<body>
 		<div class="page_all">
@@ -21,15 +28,22 @@
 				<div class="main_person_text" style="width: 780px;" >
 						<p class="person_title"><span>收货地址</span></p>
 						<div class="getAddressAll">
+							<!--
 							<div class="getAddress">
 								<div class="yetAddress"><p>已有收货地址</p><img src="/Public/app/img/gou.png"/></div>
 							</div>	
+							-->
 							<div class="addressSpecific">
 								<volist name="data.allAddress" id="address" empty="$empty">
 								<div class="addressSpecificModel">
+                                    <p class="shanchuAdd"><img attr="{$address.id}" src="/Public/app/img/cross.png" name="del"/></p>
 									<p class="name"><span>收货人：</span>{$address.reciver}
-										<span name="makeDefault" attr="{$address.id}" <if condition="$address.isdefault eq 1">class="default-Address"</if> style="<if condition="$address.isdefault eq 1">block</if>">
-										<if condition="$address.isdefault eq 1">默认地址</if>
+										<if condition="$address.isdefault eq 1">
+											<span name="default" attr="{$address.id}" class="default-Address" style="block">
+											默认地址
+										<else />
+											<span name="makeDefault" attr="{$address.id}">
+										</if>
 										</span>
 									</p>
 									<p class="area"><span>所在地区：</span>{$address.area}</p>
@@ -39,13 +53,10 @@
 								</volist>
 							</div>
 							<div class="addAddress-main">
-								<div class="addAddress"><p>新增收货地址</p><img src="/Public/app/img/gou.png"/></div>
+								<div class="addAddress"><p>新增收货地址</p></div>
 								<p class="foundAddress">您已创建{$data.count}个收货地址</p>
 							</div>
-							<div class="btn">
-								<button class="submitBtn">提交</button>
-								<button class="abolishBtn">取消</button>
-							</div>
+							
 						</div>
 						<!--新增收货地址-->
 						<div class="addAddressPopup" style="display: none;">
@@ -94,20 +105,31 @@
 			</div>
 			
 			<!--友情链接-->
-			<include file="Public/mybottom" />
+			<include file="Public/bottom" />
 		</div>
 	</body>
 	<script type="text/javascript">
+        $(".shanchuAdd").click(function(){
+           $(this).parent(".addressSpecificModel").css("display","none");
+        });
 		new PCAS('location_p', 'location_c', 'location_a');
 
-		$('span[name=makeDefault]').click(function(){
+		$('span[name=makeDefault], span[name=default]').click(function(){
 			var aid = $(this).attr('attr');		
+			var that = $(this);
 			$.post(
 				'{:U("ReciveAddress/isDefault")}',	
 				{'data':aid},
 				function(res) {
 					if(res == 1) {
-						alert('设置成功');
+						that.addClass("default-Address").html("默认地址");
+						that.parents('.addressSpecificModel')
+							.siblings().find("span[name=default]")
+							.attr('name','makeDefault')
+							.removeClass("default-Address")
+							.html('')
+
+						that.attr('name', 'default');
 					} else {
 						alert('设置失败');
 					}
@@ -122,11 +144,35 @@
 			$.post('{:U("ReciveAddress/addAddress")}', {'data':data}, 
 				function(res) {
 					if(res == 1)  {
-						alert('添加成功');
+						location.reload();
 					} else {
 						alert('添加失败');
 					}
 				}	
+			);
+		});
+
+		$('img[name=del]').click(function() {
+			if(!confirm('您确定删除吗？')) {
+				return false;
+			}
+			var addressid = $(this).attr('attr');		
+			var ids = [];
+			var	i = 0;
+			$('img[name=del]').each(function(){
+				ids[i] = $(this).attr('attr');
+				i++;
+			})
+
+			$.post(
+				'{:U("ReciveAddress/delAddress")}',
+				{'addressid' : addressid, 'ids' : ids},
+
+				function(res) {
+					if(res == 1) {
+						location.reload();
+					} 
+				}
 			);
 		});
 
@@ -161,5 +207,7 @@
 
 			return data;
 		}		
+
+		
 	</script>
 </html>

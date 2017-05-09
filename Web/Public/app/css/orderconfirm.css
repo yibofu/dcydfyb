@@ -1,0 +1,195 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.mianAll{
+	width: 790px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.mianAllTitle p{
+	margin-top: 50px;
+	height: 30px;
+	line-height: 20px;
+	border-bottom: 1px #DDDDDD solid;
+}
+.mianAllTitle p span{
+	color: #333333;
+	font-size: 14px;
+	height: 20px;
+	display: block;
+	border-left: 3px #0098b3 solid;
+	padding-left: 5px;
+}
+.mianAllText>div{
+	height: 115px;
+	width: 710px;
+	margin-top: 35px;
+	margin-left: 40px;
+	border: 1px #cccccc solid;
+}
+.mianAllText>div>p{
+	color: #010101;
+	font-size: 14px;
+	text-indent: 20px;
+	margin: 0 5px 0 5px;
+	height: 40px;
+	border-bottom: 1px #CCCCCC solid;
+	line-height: 50px;
+}
+.orderInfTxt{
+	margin-top: 10px;
+}
+.orderInfTxt>p{
+	color: #999999;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 25px;
+}
+.billInfTxt>div>p{
+	color: #999999;
+	font-size: 14px;
+	height: 30px;
+	line-height:30px;
+	text-indent: 25px;
+}
+
+.orderInfTxt>div span{
+	margin-right: 40px;
+}
+
+.billInformation{
+	height: auto;
+	overflow: hidden;
+}
+.shkbillsort{
+	color: #999999;
+	font-size: 14px;
+	border-bottom: 1px #CCCCCC solid;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 25px;
+	margin: 0 5px 0 5px;
+}
+.billTil{
+	color: #010101;
+	font-size: 14px;
+}
+
+.billInfTxt{
+	height: 50px;
+	margin-top: 10px;
+}
+.billInfTxt p{
+	text-indent: 0;
+	padding-left: 25px;
+	height: 50px;
+	line-height: 25px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient:vertical;
+}
+.shkbillsort p{
+	
+	float: left;
+}
+.shkbillsort label{
+	cursor: pointer;
+}
+.billAddressTil{
+	color: #999999;
+	font-size: 14px;
+	border-bottom: 1px #CCCCCC solid;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 25px;
+	margin: 0 5px 0 5px;
+}
+
+.orAdd{
+	overflow: hidden;
+	padding-left: 25px;
+	margin-top: 10px;
+}
+.oraddimg{
+	margin-top: 5px;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	width: 135px;
+	height: 30px;
+	border: 2px #55bdcf solid;
+	cursor: pointer;
+}
+.oraddimg img{
+	position: relative;
+	top: 10px;
+	left: 32px;
+}
+.orAdd>p{
+	line-height: 40px;
+	float: left;
+}
+.orAdd>div{
+	float: right;
+	margin-right: 30px;
+}
+.orAdd>div a{
+	cursor: pointer;
+	text-decoration: none;
+}
+.Address{
+	font-size: 14px;
+	color: #666666;
+	margin-left: 50px;
+}
+.orAdd>div a{
+	color: #005ea7;
+	font-size: 12px;
+}
+.billAddress>a{
+	color: #999999;
+	margin-left: 25px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 14px;
+}
+.payStyle>div{
+	margin-top: 10px;
+}
+.payStyle>div p{
+	width: 135px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 2px #55BDCF solid;
+	margin-left: 25px;
+}
+.payStyle>div p img{
+	position: relative;
+	left: 28px;
+	top: 10px;
+}
+.payyes{
+	display: block;
+	width: 80px;
+	height: 25px;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	background: #f55e5e;
+	margin-top: 30px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.billtaitoutext{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+

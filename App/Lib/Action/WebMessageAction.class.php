@@ -2,7 +2,6 @@
 class WebMessageAction extends Action {
 	public function __construct() {
 		parent::__construct();	//继承父类构造方法
-
 		if(!isset($_SESSION['admins']['id'])) {
 			$this->redirect('Login/loginPage');
 		}
@@ -34,7 +33,7 @@ class WebMessageAction extends Action {
 		}
 
 		//数据为空显示的
-		$empty = '<div class="MinHeight"> <p>您在此没有留下足迹 </p> </div>';
+		$empty = '<div class="MinHeight"> <p>暂无消息公告</p> </div>';
 		$nowPage = $page->firstRow/$page->listRows+1;
 
 		$this->assign('empty', $empty);

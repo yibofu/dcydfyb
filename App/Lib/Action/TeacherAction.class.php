@@ -12,6 +12,10 @@
 			foreach($result as &$list){
 				$list['explain'] = htmlspecialchars_decode($list['explain']);
 			}
+
+			$nowPage = $page->firstRow/$page->listRows+1;
+			$this->assign('nowPage', $nowPage);
+
 			$this->assign("result",$result);
 			$this->assign("page",$page->show());
 			$this->display();
@@ -61,6 +65,7 @@
 				$allCourseType[$k]['courses'] = $courses;
 			}
 
+			
 			$this->assign("tea",$tea);
 			$this->assign('allCourseType', $allCourseType);
 			$this->display();

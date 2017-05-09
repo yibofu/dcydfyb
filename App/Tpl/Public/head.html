@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -6,10 +6,28 @@
 		<link rel="stylesheet" href="/Public/app/css/head.css" />
 		<script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
 		<script type="text/javascript" src="/Public/app/js/head.js" ></script>
+        <style>
+            .liOutA{
+                padding: 0 8px;
+            }
+            .QR_code{
+                height: 120px;
+                width: 100px;
+                border: 1px #cdcdcd solid;
+                background: #ffffff no-repeat;
+                position: relative;
+                left:895px;
+            }
+            .QR_code p{
+                font-size: 12px;
+                color: #497fcf;
+                padding:0 0 0 8px;
+            }
+        </style>
 	</head>
 	<body>
 		
-		<div class="headAll">
+		<div class="headAll" style="margin-top:-20px;">
 
 			<!--头部栏-->
 			<div class="headTop">
@@ -19,18 +37,34 @@
 						<li class="welHead"><a href="#">欢迎访问扁鹊财院</a></li>
 						<li class="ahref"><a href="{:U('Login/loginPage')}">登录</a></li>
 						<li class="ahref"><a href="{:U('Register/doorway')}">注册</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="{:U('Login/loginPage')}">消息</a></li>
 						<li class="ahref"><a href="{:U('Login/loginPage')}">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				<else />
 					<ul>
-						<li class="welHead">您好，欢迎<a href="{:U('MyCenter/index')}" style="color:#ff5918;">{$_SESSION['admins']['Phone']}</a>访问扁鹊财院</li>
+
+						<li class="welHead">您好<a href="{:U('MyCenter/index')}" style="color:#ff5918;"> 
+							<if condition="$_SESSION['admins']['nickname'] neq null">
+									{$_SESSION['admins']['nickname']}
+								<else />
+									{$_SESSION['admins']['Phone']}
+							</if> 
+						</a>，欢迎访问扁鹊财院</li>
 						<li class="ahref"><a href="{:U('Index/loginout')}" style="color:#ff5918;">[退出]</a></li>
-						<li class="ahref"><a href="#">消息</a></li>
+						<li class="ahref"><a href="{:U('WebMessage/index')}">消息</a></li>
 						<li class="ahref"><a href="{:U('MyCenter/index')}">用户中心</a></li>
+						<li class="ahref"><a href="#">关注公众号</a></li>
 					</ul>
 				</if>
-				</div> 
+				</div>
+                <div style="width: 1000px;margin: 0 auto;overflow: hidden;height: 150px;">
+                    <div class="QR_code">
+                        <img src="/Public/app/img/QRgongzhong.jpg" width="100px;" height="100px;" />
+                        <p>扫码关注公众号</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
 			</div>
 			<!--中间栏目-->
 			<div class="serchTop">
@@ -67,15 +101,24 @@
 						<a href="{:U('Index/index')}" class="liOutA">首页</a>
 						<a href="{:U('Videodiagnostic/Video_diagnostic')}" class="liOutA">财税问诊</a>
 						<a href="{:U('Index/kce')}" class="liOutA">课程中心</a>
-						<a href="{:U('Article/message')}" class="liOutA">新政速递</a>
-						<a href="{:U('AskAnswer/Asks')}" class="liOutA">百问百答</a>
+						<!--<a href="{:U('AskAnswer/Asks')}" class="liOutA">百问百答</a>-->
 						<a href="{:U('Vip/openVip')}" class="liOutA">会员专享</a>
 						<a href="{:U('Teacher/teacherList')}" class="liOutA">专家团队</a>
-						<a href="{:U('Index/about')}" class="liOutA">关于扁鹊</a>
+                        <a href="{:U('Article/message')}" class="liOutA">新政速递</a>
+						<a href="{:U('Index/about')}" class="liOutA">了解扁鹊</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		
 	</body>
+<script>
+    $(".QR_code").css("display","none");
+    $(".ahref:last").hover(function(){
+        $(".QR_code").css("display","block");
+    });
+    $(".ahref:last").mouseleave(function(){
+        $(".QR_code").css("display","none");
+    });
+</script>
 </html>

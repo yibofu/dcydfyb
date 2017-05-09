@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,138 +12,10 @@
         <img src="/Public/app/img/heah.png"/>
         <div class="src-one">
             <img src="/Public/app/img/wt.png" class="img2"/>
-            <p class="fon-a">选出您最关心的财务问题,答案在下周三神秘揭晓!</p>
+            <p class="fon-a">选出您最关心的财务问题,答案将在周二（2017.05.02）神秘揭晓!</p>
             <img src="/Public/app/img/heaha.png" class="img1"/>
             <p class="fon-b texta">以下财务问题为扁鹊财院调研得来，我们将对老板感兴趣的问题进行投票选择，票数高的前五个问题将会被选择在直播问答中一一解答。快快发动朋友们一起投票吧。</p>
             <div class="clearfix"></div>
-        </div>
-        <div class="src-two">
-            <h4 class="fon-a">企业老板最想知道的财务问题、参与投票!（可多选）</h4>
-            <div class="two-one">
-                <img src="/Public/app/img/picture-a_03.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">1.请问农产品加工企业，如果做贴牌销售，怎么处理能合理避税。</h6>
-                    <div id="min-e">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl" name="num1">票数:{$resul[0]["num"]}</p>
-                        <input class="inputa fl" type="button" name="submit" onclick="vote1()"  value="快投我"/>
-                        <input type="hidden" name="vote1" value="1">
-                    </div>
-
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_03.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">2.老师，分公司所得税需要预缴一部分吗?</h6>
-                    <div id="min-a">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl" name="num2">票数:{$resul[1]["num"]}</p>
-                        <input class="inputa fl" type="submit" name="submit2" onclick="vote2()" value="快投我"/>
-                        <input type="hidden" name="vote2" value="2">
-                    </div>
-
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_06.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">3.我们公司被法院判决企业支付赔偿金，但是拿不到发票，这个支出能税前扣除吗？</h6>
-                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                    <p class="fon-c fl" name="num3">票数:{$resul[2]["num"]}</p>
-                    <input class="inputa fl" type="submit" name="submit3" onclick="vote3()" value="快投我"/>
-                    <input type="hidden" name="vote3" value="3">
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_08.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">4.我想以公司名义投资基金。想咨询相关问题。</h6>
-                    <div id="min-d">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl"  name="num4">票数:{$resul[3]["num"]}</p>
-                        <input class="inputa fl" type="submit" name="submit4" onclick="vote4()" value="快投我"/>
-                        <input type="hidden" name="vote4" value="4">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_10.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">5.我们单位每年组织员工体检，这个体检的费用能不能在做所得税前给它扣除？</h6>
-                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                    <p class="fon-c fl"  name="num5">票数:{$resul[4]["num"]}</p>
-                    <input class="inputa fl" type="submit" name="submit5" onclick="vote5()" value="快投我"/>
-                    <input type="hidden" name="vote5" value="5">
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_12.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">6.买车是自己名义好还是公司名义买好？</h6>
-                    <div id="min-d">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl"  name="num6">票数:{$resul[5]["num"]}</p>
-                        <input class="inputa fl" type="submit" name="submit6" onclick="vote6()" value="快投我"/>
-                        <input type="hidden" name="vote6" value="6">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_14.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">7.买房是个人买好，还是公司买更好？</h6>
-                    <div id="min-d">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl" name="num7">票数:{$resul[6]["num"]}</p>
-                        <input class="inputa fl" type="submit" name="submit7" onclick="vote7()" value="快投我"/>
-                        <input type="hidden" name="vote7" value="7">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_16.png" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">8.怎么才能把企业估值做高？</h6>
-                    <div id="min-c">
-                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                        <p class="fon-c fl"  name="num8">票数:{$resul[7]["num"]}</p>
-                        <input class="inputa fl" type="submit" name="submit8" onclick="vote8()" value="快投我"/>
-                        <input type="hidden" name="vote8" value="8">
-                    </div>
-
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_02.jpg" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">9.我们公司下属车辆交通肇事受损，对方给予赔偿，这比收入是否也要交税？</h6>
-                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                    <p class="fon-c fl" name="num9">票数:{$resul[8]["num"]}</p>
-                    <input class="inputa fl" type="submit" name="submit9" onclick="vote9()" value="快投我"/>
-                    <input type="hidden" name="vote9" value="9">
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="two-one">
-                <img src="/Public/app/img/three_01.jpg" class="img1 fl"/>
-                <div class="img2 fl">
-                    <h6 class="fon-b">10.我们公司从事软件行业，不知道小型微利企业的优惠和软件企业的两免三减半能否同时享受？</h6>
-                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
-                    <p class="fon-c fl"  name="num10">票数:{$resul[9]["num"]}</p>
-                    <input class="inputa fl" type="submit" name="submit10" onclick="vote10()" value="快投我"/>
-                    <input type="hidden" name="vote10" value="10">
-                </div>
-                <div class="clearfix"></div>
-            </div>
         </div>
         <div class="src-three">
             <h6 class="fon-a">快分享给您的朋友，助力投票，前五个票数高的问题将在直播中解答</h6>
@@ -163,8 +35,75 @@
             </div>
             <input class="inputb fr" id="tijiao" type="submit" name="submitti" value="提交"/>
             <div class="clearfix"></div>
-            <p class="popularize-h">最终解释权归大财有道科技有限公司所有</p>
         </div>
+         <div class="src-two" style="margin-top: 38.4rem;">
+            <h4 class="fon-a">企业老板最想知道的财务问题、参与投票!（可多选）</h4>
+            <div class="two-one">
+                <img src="/Public/app/img/picture-a_03.png" class="img1 fl"/>
+                <div class="img2 fl">
+                    <h6 class="fon-b">1.公司账上有1000万借款（假借款），公司跟投资人借的，借款时间有3年，账面该怎样处理？</h6>
+                    <div id="min-e">
+                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
+                        <p class="fon-c fl" name="num1">票数:{$resul[0]["num"]}</p>
+                        <input class="inputa fl" type="button" name="submit" onclick="vote1()"  value="快投我"/>
+                        <input type="hidden" name="vote1" value="1">
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div> 
+             <div class="two-one">
+                <img src="/Public/app/img/three_03.png" class="img1 fl"/>
+                <div class="img2 fl">
+                    <h6 class="fon-b">2.有限责任公司还是股份有限公司，他们之间具体的区别和优劣处是什么？</h6>
+                    <div id="min-a">
+                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
+                        <p class="fon-c fl" name="num2">票数:{$resul[1]["num"]}</p>
+                        <input class="inputa fl" type="submit" name="submit2" onclick="vote2()" value="快投我"/>
+                        <input type="hidden" name="vote2" value="2">
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+             <div class="two-one">
+                <img src="/Public/app/img/three_06.png" class="img1 fl"/>
+                <div class="img2 fl">
+                    <h6 class="fon-b">3.端午节给员工发粽子，要交个税吗？</h6>
+                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
+                    <p class="fon-c fl" name="num3">票数:{$resul[2]["num"]}</p>
+                    <input class="inputa fl" type="submit" name="submit3" onclick="vote3()" value="快投我"/>
+                    <input type="hidden" name="vote3" value="3">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
+           <div class="two-one">
+                <img src="/Public/app/img/three_08.png" class="img1 fl"/>
+                <div class="img2 fl">
+                    <h6 class="fon-b">4.公司买办公桌椅、字画的钱，能不能成为我们公司的费用抵扣所得税呢？</h6>
+                    <div id="min-d">
+                        <img src="/Public/app/img/vote.png" class="img3 fl"/>
+                        <p class="fon-c fl"  name="num4">票数:{$resul[3]["num"]}</p>
+                        <input class="inputa fl" type="submit" name="submit4" onclick="vote4()" value="快投我"/>
+                        <input type="hidden" name="vote4" value="4">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div> 
+             <div class="two-one">
+                <img src="/Public/app/img/three_10.png" class="img1 fl"/>
+                <div class="img2 fl">
+                    <h6 class="fon-b">5.小企业商品销售按什么确认收入？</h6>
+                    <img src="/Public/app/img/vote.png" class="img3 fl"/>
+                    <p class="fon-c fl"  name="num5">票数:{$resul[4]["num"]}</p>
+                    <input class="inputa fl" type="submit" name="submit5" onclick="vote5()" value="快投我"/>
+                    <input type="hidden" name="vote5" value="5">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <p style="text-align: center; color: #ffffff; line-height: 60px;">最终解释权归大财有道科技有限公司所有</p>
 
     </div>
 </body>

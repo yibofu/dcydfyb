@@ -1,5 +1,6 @@
 <?php
 class YuejtAction extends Action{
+	
     public function index(){
         $this->display();
     }

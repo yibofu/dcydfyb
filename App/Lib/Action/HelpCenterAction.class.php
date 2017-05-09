@@ -1,29 +1,30 @@
 <?php
 	class HelpCenterAction extends Action {
-		public function __construct() {
-			parent::__construct();	//继承父类构造方法
-			
-			if(!isset($_SESSION['admins']['id'])) {
-				$this->redirect('Login/loginPage');
-			}
-		}
 		//支付问题
-		public function payProblem() {
+		public function index() {
+			//表名映射
+			$ques = array(
+				'zhifupro' => array('zfques', '支付问题'),		
+				'dingzhipro' => array('custom', '定制问题'),		
+				'fapiaopro' => array('billques', '发票问题'),		
+				'zhhupro' => array('zhques', '账户问题'),		
+			);
+
+			$tableKey =  $this->_get('ques') ? $this->_get('ques') : 'zhifupro';
+			$keys = array_keys($ques);
+
+			if(!in_array($tableKey, $keys)) {
+				$tableKey = 'zhifupro';
+			}
+
+			$tableName = $ques[$tableKey][0];
+
+			$model = M($tableName); 		
+			$article = $model->field('question')->where('status="2"')->find();
+			
+			$this->assign('subtitle', $ques[$tableKey][1]);
+			$this->assign('article', strip_tags(htmlspecialchars_decode($article['question'])));
 			$this->display();
 		}
 
-		//发票问题
-		public function billProblem() {
-			$this->display();	
-		}
-
-		//账户问题
-		public function accountProblem() {
-			$this->display();	
-		}
-
-		//定制问题
-		public function makeselfProblem() {
-			$this->display();	
-		}
 	}

@@ -9,6 +9,7 @@ class ArticleAction extends Action{
     public function index(){
         $this->display();
     }
+
     public function articlelist(){
         $page = isset($_POST['page']) ? intval($_POST['page']) : 1;
         $rows = isset($_POST['rows']) ? intval($_POST['rows']) == 0 ? 20 : intval($_POST['rows']) : 20;

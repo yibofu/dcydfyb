@@ -1,0 +1,562 @@
+[ 2017-05-05T15:20:48+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.007001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.002000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.007001s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.292017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.293017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-05-05T15:21:15+08:00 ] 127.0.0.1 /index.php/AskAnswer/Asks.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question` [ RunTime:0.007001s ]
+SQL: SELECT dcyd_question.question question,dcyd_question.addtime addtime,dcyd_user.Phone phone FROM `dcyd_question` inner join dcyd_user on dcyd_question.userid=dcyd_user.id ORDER BY dcyd_question.addtime desc LIMIT 0, 7   [ RunTime:0.003000s ]
+SQL: SELECT dcyd_question.type type,dcyd_question.question question,dcyd_question.id id,dcyd_answer.id aid,dcyd_answer.answer answer,dcyd_answer.teacherid teacherid,dcyd_answer.upvote upvote,dcyd_user.img img,dcyd_user.nickname nickname FROM `dcyd_question` inner join dcyd_answer on dcyd_question.id = dcyd_answer.qid inner join dcyd_user on dcyd_question.userid = dcyd_user.id ORDER BY dcyd_question.addtime desc LIMIT 0, 7   [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: 2 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: 3 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: 4 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../App/Tpl/Public/xxk.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\f42ded3731e539445690c0fcf0ac009a.php 第 47 行.
+NOTIC: [8] Undefined variable: page D:\phpstudy\WWW\dcyd\App\Runtime\Cache\f42ded3731e539445690c0fcf0ac009a.php 第 178 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-05-05T15:24:27+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.300017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.302017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:28:08+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.003000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.293017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.293017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-05-05T15:41:24+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:42:12+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:42:13+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005000s ]
+
+[ 2017-05-05T15:42:14+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:42:14+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.006000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005000s ]
+
+[ 2017-05-05T15:42:14+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:42:15+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005001s ]
+
+[ 2017-05-05T15:42:15+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:42:15+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004001s ]
+
+[ 2017-05-05T15:42:15+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.007000s ]
+
+[ 2017-05-05T15:42:16+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and 'img' is not null ) GROUP BY kctitle LIMIT 3   [ RunTime:0.006000s ]
+
+[ 2017-05-05T15:43:05+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005000s ]
+
+[ 2017-05-05T15:43:33+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.277015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.278016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-05-05T15:44:33+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+NOTIC: [8] Undefined index: id D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 528 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.280016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-05-05T15:54:57+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.005001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: urlflag D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 486 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.245014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.246014s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-05-05T15:55:10+08:00 ] 127.0.0.1 /index.php/AskAnswer/Asks.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question` [ RunTime:0.005000s ]
+SQL: SELECT dcyd_question.question question,dcyd_question.addtime addtime,dcyd_user.Phone phone FROM `dcyd_question` inner join dcyd_user on dcyd_question.userid=dcyd_user.id ORDER BY dcyd_question.addtime desc LIMIT 0, 7   [ RunTime:0.000000s ]
+SQL: SELECT dcyd_question.type type,dcyd_question.question question,dcyd_question.id id,dcyd_answer.id aid,dcyd_answer.answer answer,dcyd_answer.teacherid teacherid,dcyd_answer.upvote upvote,dcyd_user.img img,dcyd_user.nickname nickname FROM `dcyd_question` inner join dcyd_answer on dcyd_question.id = dcyd_answer.qid inner join dcyd_user on dcyd_question.userid = dcyd_user.id ORDER BY dcyd_question.addtime desc LIMIT 0, 7   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.004000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `name` FROM `dcyd_teacher` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 45 行.
+NOTIC: [8] Undefined index: 2 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: 3 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: 4 D:\phpstudy\WWW\dcyd\App\Lib\Action\AskAnswerAction.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../App/Tpl/Public/xxk.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpstudy\WWW\dcyd\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 695 行.
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\f42ded3731e539445690c0fcf0ac009a.php 第 47 行.
+NOTIC: [8] Undefined variable: page D:\phpstudy\WWW\dcyd\App\Runtime\Cache\f42ded3731e539445690c0fcf0ac009a.php 第 178 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-05-05T15:58:32+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: expire D:\phpstudy\WWW\dcyd\ThinkPHP\Common\functions.php 第 549 行.
+SQL: SHOW COLUMNS FROM `dcyd_article` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=1 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=2 && status=2 )  [ RunTime:0.001000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=3 && status=2 )  [ RunTime:0.000000s ]
+SQL: SELECT `id`,`title`,`keywords`,`lanmu`,`laiyuan`,`content`,`auth`,`describe`,`time`,`status` FROM `dcyd_article` WHERE ( lanmu=4 && status=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_view` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '系列专题' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.005000s ]
+SQL: SELECT `id`,`kname`,`name`,`url`,`title`,`money`,`introduce`,`chapternum`,`kctitle`,`img` FROM `dcyd_view` WHERE ( kname = '专家精选' and img != '' ) GROUP BY kctitle LIMIT 3   [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `dcyd_open_course_type` [ RunTime:0.004000s ]
+SQL: SELECT `id`,`tname`,`cost`,`days`,`img` FROM `dcyd_open_course_type`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dcyd_teacher` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name`,`timg`,`explain` FROM `dcyd_teacher`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dcyd_question_type` [ RunTime:0.005000s ]
+SQL: SELECT `id`,`name` FROM `dcyd_question_type`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admins D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 137 行.
+NOTIC: [8] Undefined index: urlflag D:\phpstudy\WWW\dcyd\App\Runtime\Cache\a43ee091293c08b425f9e73d2888eec8.php 第 486 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.250014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.251015s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004000s ]
+

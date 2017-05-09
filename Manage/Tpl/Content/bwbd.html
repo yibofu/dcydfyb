@@ -52,9 +52,8 @@
         <th field="id" align="center" width="5%">id</th>
         <th field="title" align="center" width="10%">标题</th>
         <th field="content" align="center" width="20%" >内容</th>
-        <th field="img" align="center" width="20%" formatter="imgFormatter">图片</th>
-        <th field="url" align="center" width="15%">微信连接</th>
-        <th field="view" align="center" width="10%">视频连接</th>
+        <th field="img" align="center" width="25%" formatter="imgFormatter">图片</th>
+        <th field="url" align="center" width="20%">微信连接</th>
         <th field="f" align="center" width="10%" formatter="show_manger">操作</th>
     </tr>
     </thead>
@@ -92,12 +91,8 @@
             <input name="url"  class="easyui-validatebox" style="width:200px;">
         </div>
         <div class="fitem">
-            <lable>图片连接:</lable>
+            <lable>图片:</lable>
             <input type="file" name="img" id="img">
-        </div>
-        <div class="fitem">
-            <label>视频连接:</label>
-            <input type="file" name="view" id="view">
         </div>
         <div id="dlg-button">
             <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()">保存</a>
@@ -123,12 +118,8 @@
             <input name="url"  class="easyui-validatebox" style="width:200px;">
         </div>
         <div class="fitem">
-            <lable>图片连接:</lable>
+            <lable>图片:</lable>
             <input type="file" name="img">
-        </div>
-        <div class="fitem">
-            <label>视频连接:</label>
-            <input type="file" name="view" id="view">
         </div>
         <!--显示:<img src="{$res['img']}" style="height:100px;width: 100px;" alt="">-->
         <div id="dlg-button">

@@ -17,7 +17,7 @@
 			$page = new Page($total, 6);
 			$page->setConfig('theme', '%upPage%%linkPage%%downPage%');
 
-			$list = $model->field('dcyd_collection.id id, dcyd_view.title title, dcyd_view.img img, dcyd_view.url url')
+			$list = $model->field('dcyd_collection.id id, dcyd_view.title title, dcyd_view.kname kname, dcyd_view.kctitle kctitle, dcyd_view.name name, dcyd_collection.courseid courseid, dcyd_view.img img, dcyd_view.url url')
 						  ->join('inner join dcyd_view on dcyd_collection.courseid=dcyd_view.id')
 						  ->where('dcyd_collection.uid=' . $uid)
 						  ->limit($page->firstRow, $page->listRows)
@@ -85,13 +85,61 @@ h;
 		public function collection() {
 			$courseId = $this->_post('couid');
 			$uid = $_SESSION['admins']['id'];
+			
+			//判断用户是否登陆
+			if(!$uid) {
+				$this->redirect('Login/loginPage');
+			}
+
+			//判断用户是否合法
+			$userModel = M('user');
+			$userFind = $userModel->field('id')->where('id=' . $uid)->find();
+
+			if(!$userFind['id']) {
+				$this->redirect('Login/loginPage');
+			}
+			
+			
+			//判断课程是否存在
+			$viewModel = M('view');
+			$viewFind = $viewModel->field('id')->where('id=' . $courseId)->find();
+
+			if(!$viewFind['id']) {
+				$this->ajaxReturn('此课程不存在');
+			}
+
+			//查看用户是否已收藏
 			$model = M('collection');
+
+			$uvfind = $model->field('id')->where('uid=' .$uid. ' and courseid=' . $courseId)->find();
+
+			if($uvfind['id']) {
+				$this->ajaxReturn(2);
+			}
+
 			$data = array(
 				'uid' => $uid,		
-				'courseid' => $courseId
+				'courseid' => $courseId,
+				'addtime' => time()
 			);
 
+			$rules = array(
+				array('uid', 'number', '非法数据', 1),		
+				array('courseid', 'number', '此课程不存在', 1),		
+			);
+
+			$res = $model->validate($rules)->create($data);
+			if(!$res) {
+				$this->ajaxReturn($model->getError());
+			}
+
 			if($model->add($data)) {
+				//增加课程收藏数加一
+				$collNum = $viewModel->field('collnum')->where('id=' . $courseId)->find();
+				$collNum['collnum'] += 1;
+				$savedata = array('collnum' => $collNum['collnum']);
+				$viewModel->where('id=' . $courseId)->save($savedata);
+
 				$this->ajaxReturn(1);
 			} else {
 				$this->ajaxReturn(0);

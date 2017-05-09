@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菜单栏</title>
+    <link rel="stylesheet" href="/Public/app/fontM/iconfont.css"/>
+    <link rel="stylesheet" href="/Public/app/css/menu.css"/>
+    <script type="text/javascript" src="/Public/app/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="/Public/app/fontM/iconfont.js"></script>
+</head>
+<body>
+    <div class="menuRightcho">
+        <a href="{:U('Article/message')}" class="underlineNeg">
+            <i class="icon iconfont icon-xiaofeizhe"></i>
+            <p>财税资讯</p>
+        </a>
+        <a href="{:U('Videodiagnostic/Video_diagnostic')}"  class="underlineNeg">
+            <i class="icon iconfont icon-zaixianwenzhen"></i>
+            <p>财税问诊</p>
+        </a>
+        <a href="{:U('Index/kce')}" class="underlineNeg">
+            <i class="icon iconfont icon-anpaimianshi"></i>
+            <p>课程中心</p>
+        </a>
+        <a href="{:U('Kecheng/boss')}"  class="underlineNeg">
+            <i class="icon iconfont icon-hetongshenhe"></i>
+            <p>课程报名</p>
+        </a>
+        <a href="{:U('AskAnswer/Asks')}"  class="underlineNeg">
+            <i class="icon iconfont icon-lesson"></i>
+            <p>财税问题</p>
+        </a>
+        <a href="{:U('Vip/openVip')}"  class="underlineNegUN">
+            <p>VIP会员</p>
+            <p>核心服务</p>
+        </a>
+    </div>
+</body>
+<script>
+    $(function(){
+        $(".underlineNeg").hover(function(){
+            $(this).css({"background-color":"#0098b3"}).siblings(".underlineNeg").css("background","white");
+            $(this).find("i,p").css("color","white");
+            $(this).siblings(".underlineNeg").find("i,p").css("color","#0098b3");
+        });
+        $(".underlineNeg").mouseleave(function(){
+            $(this).css({"background":""});
+            $(this).find("i,p").css("color","#0098b3");
+        });
+    });
+</script>
+</html>

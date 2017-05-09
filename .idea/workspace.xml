@@ -1,56 +1,607 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/App/Tpl/Product/tiao.html" line="18" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="3ef3ad6c-51fb-4d33-b518-87da35e7fc0a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/MyOpenCourseAction1.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/MyServiceAction1.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/MyCenter/.personInfo.html.swp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Tpl/User/man.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Tpl/User/mesage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Tpl/User/women.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/CodeAction1.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/TeacherAction1.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/VideoAction.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Lib/Action/WxpayAction.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/038c884c4959b04bb16a0e481a954cec.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/10fc7e98d81bbd9e3333963dabdb3a43.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/276c6d9de51d5ff9bf405fbcf2c37d18.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/31a19d9951f1905a5df811ffc80fc0cd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/395f008d56a0eec545ee147e708ac3c1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/3b5624287c43a113c50c9c759c55bd98.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/3c445014e9ce19d684edf7d3baef07dc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/49ec59a61e627018ee3c99ed1b02f149.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/5a1c7ea673d96882ff8b7aa2f712b743.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/680af9ef4304250295268c0fdde4e09d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/703f39a5ba564e7b2a50ef11581db081.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/93e8ca02d80d26906689d5ea9fd088cc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/9f62453896ef54b1b4b913f8f208f03f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/a363113a8e002e496bc14b51afbeb6ab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/aad07320dc524e9e95961394babbaba2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/b084d558c5b20224aba818383454aded.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/b91f662ccf9aaf3b8991f1c1123bd877.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/bd65ad80d1ff242a89241dbe9aa99b4d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/bdcc73d65bfebaac84e68df0e714bd98.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/be067c804ac21a841330499f1043bf9f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/c367c08cfb07ca691a0cc2aebb657016.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/d84f5545476b0c402105a28979af1ae2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/d8a0a869f5f38c36919e2d60c7acdbea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/e0ed968955cb7a1e3a7d70271a9a0412.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/efa13951776963dd78008ae84bac1811.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f2ee3389a655d2b6fd412bf29a5aa3e9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f81104b5db6795124ddbb4845070fcf3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/1492320237-17_04_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/1492330710-17_04_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/018f227dbc3585c1dcb66fb82e832c15.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/033f67e1896e91bdfbf4cd721893d672.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0407df71ff0f351e4a79a2ca87a4ed32.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0881d671a91bb64050d05cc6d4ee37a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/088271a1c4aae257c69892c10db707c4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0cbb5d5a05f3f9c75416d545dcf310c0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0ccc5fe85b6ad3343af58a55c98d0b0d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0ddd448d81e5efd8d7b19b3d4e920cea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0e3e9fe9d921bfe605d85db4bfeac70b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0edd418afaf050154bfbd2629cd9d0b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/0f4682d0fc1673802786af80c5748037.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/13ce75e342d9b5ca887ebe278fbc43f3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/13f43ff8c91f96cd7009ecc64d45c1f2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/178a44d4f1a7f911608f5aa6d430756e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1a58bfcecda635ddd70bcccbce9c24d3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1aafe1aefba8701eeeba6d8ba4280a3e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1b911c0b1b0ce9b076904d22b291f0b2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1bb6436e04674b46ff8a313167817805.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1e33a7a5dbee75b83d1a011436da46d2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/1ee54d33a8f4f5cca99b7fd6f3dcf0b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/22d249fc0f7a98f9f45f251f6a106f1a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/23e17d8eca1bbc3dadfdabe85e569e60.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/25635cb1c3ba2735e6c0687f177bb7e6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/25cafb574add06471817f3dd63fe01b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/2826cb10770248e268e9c0768a22cad4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/28714205a6697d12e173213251714ea7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/2b22f58646e633c129ed31a05fa28d05.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/2ca490735d3ebeff4428c7e0ae3b5830.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/3023b69c64e8437f0ad441a7608c9d33.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/302ebb512fe6c93a1e4438b962901982.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/38285c353031d91336f39a572b978fe4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/38ea702976c13edd0d176df3d8b19daf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/3a579bc1c6e86cc059f94a63fb9cdee7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/3ccaa27d20cdfcfc45f51f883961706b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4081bc0f6af68cbb876e663cec1d5a41.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/40bb3f3164e5e9fb19647cded2cf1425.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/42524fabe975d716350c19b1adffa543.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/472127f9bb14df865a2550c4f2e6d80d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/47f5efcd254d53e48ddd41536aebe207.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4993a10e2512329aea9738b1e178d994.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4b80924bd8ff3ed8e97351cef2ac6abb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4ba59d51aea03b1b0edb40b76ff50dc2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4da7d10769eabd836983853214b64f0b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/4e1623cb86d44b959750c3cc7b8b610b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/51d59e7b885dfa9b63407dc3d357065e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5209b0f47089139f352dda9ddd7b0987.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/524e74c0c9108747510a6007e1cf7353.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/54e347f00ce71ccbcaf082a57206dcc1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/55e0e52aa72bb03a086ac587d79e6c3c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/56fa62dcd3ca292b81d79f45919148c2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5756efd46492824a0c387883857d9530.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/586cade949628df77cb9322948906224.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/593fecf9685c958ac84287adedabe758.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/59f33749a7d4b29324347faf1082d865.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5a1a8f61109f8815255e16390c310c94.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5b3f69b698f8c9b9f79ce22d6c1cac15.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5bbe8468e8dabe94cfc1bbb9648074cc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/5fea54612f390da33f9ad3e96fe04e75.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/61d09b8fb22fa46e5e61e6345ec71621.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/61dc76f18b4f7bf62a21e0d26abb389b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/62a79989270fd327ef083904b69624b2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/632551c31b3b34233f57f1cdec58f50d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/64266bdc35042658daa1b21b2d0a044d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/65d045a23723271232b5773aea3e8195.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/67bbecd73a5659714aa6899c1a878d2e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/687f43ff58a001ed6a33ca9fc2ddc2ad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/68fb3c6d489aa348aa24960da3074798.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/6ad019bae1963652eceea5a633a19ac5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/6ca9282393a91ac3e8c6dba83c9f1e0d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/6e418fbd9461da3558d385f31d5c5821.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/6e981efba20abbee6d9c4961891a0148.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/6ff64a0931815b954c38bc7ce2463eba.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/71f91aa4588d2e3f887f85d1d144c1f2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/751288653c0620046684ee1df7ea5bef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/765889f5b939e5d1004d3271aced96d2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/78cdfd6183d2301dc049a1e4e9a6f13e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/799dd8061efca874cede7b330eb54035.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/79ea80c88f30b4d90c7ab0e4160a20c5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/7d3aca77ea3a2c3e6054bd551f6e1c75.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/7e59be41d0b8d91646cff050f64892bc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/82baf26d41f90946027af43ae1b42e99.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/84fbebe6b693b629ab837a8e4347412b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/864b5b0bad99edeebcc539fef22bc6ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/88cc57ece3fa7a1406033202e71e6844.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/89d2d55fe7086413401abcf59e38bb30.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/8a0ff6b1cf63f5060b11fba396137e86.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/8b97618c27c7675b0d2be8919a70d737.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/8fdd047544279c852c9449aa9a3008df.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9341957d54fbc89c86b777d2022e61a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/96a589ab6d248496cd3379646b686bb1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9b5638654d7ecb2a08368f998e22052d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9b84ee5bc87258b651968377785ae89b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9e3fae566f457a0a9567f4ed398cefd1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9ec779b13f136887e2e733141c79c364.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/9f1086cf414309fdd09b4e989e39c8d8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a14785504c57a6256d5cbb72589be4c3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a1be314c31397a3e3dae439ddc2d1002.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a27b1e190b8c3bb68e53764c8bd82a01.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a35af4c679f56423f48872d094136476.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a5a7c37c3295c25ea21f2fe69c0519af.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/a8fd032fbb97c56da1c3f03f1316cd49.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/acf8b7b915d6eab231358264510e2ae8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/adc5dc5bf7e46b8ee1a82342dd4c1d1e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ae5627b33c13e2e15dc0fc16c1dfc666.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/aec40943d8dd8f752b2ec9c15d10e755.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/aee00fca6a515fdc66589389c06bcf4b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b28d2f313f4c10756a1913e65c068f61.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b5372426a8e280b3af4834d0152a9277.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b61080e9442401c6e99d4ae7735381fd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b65ecad778b7c7df2cdde26c6e82cf32.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b80b777659b4efe6d73c357a9428949e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/b9996621cd145e91e246e1facfcb8d70.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/bbff2227b66fabd974613790ef912883.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/c52e74848ad26ff613a625bc08a541fe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/c5f8a5c836541f1f2a0ba4db90352271.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/c609cb5913eef90283d913ed4dcb6502.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/c70dd6605a733caebc24b57398f09bbc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/c72a25fb527118e1d77dcdfcf7b5d2b9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ca60d993a6a403be551190fc000e2043.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/cc6d3e324aef5eeb3a11606360925b11.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d0166e90905d814cf5313148e7ae66a0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d017afa524d1278ceb18353c36d96140.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d12c2fa9c2485850bf07e61c7273f1ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d25afacec6bdc3767e073cfcf8bbacff.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d269309a5766d5c9d1ff2be5bd98f04d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d4bd4c545eeb6866712c7f90f3ca843e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d5c695ef8d083550d0dfba0d9076eac5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/d94398775fdf7fd32d4eada2a9818c7c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/dabba0c9923dc8ff99b34b166d5a8749.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/db0e6d3df602938eed65c7d24e6c5a0b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/dc0a418403977ec6f1648ed58b6e8f69.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/dc26abdd159d7b361732c51f79a067be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/dc86306d39efb0586a2258a45af0b317.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/dd083f59040738c4e879f16b351166e1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ddbd3cf1a4d1e5e801c4777c5975c8da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/de15d102e6813db4550645442c6db87b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/de85d728fd0398c8d9fb421884947091.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e0c05328546f2b8258f80c9a92841cec.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e1ce47f72811155a7751d32331596a1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e1f253406dace5c862c99768b7a0d13d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e24348ef662ad09545324c0752be0535.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e34d7a546e8c50b50d67b99e13a781af.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e5f6bd25da7dd1b824d17562f1d6c008.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e7215ab9f025661d533c1525bc317327.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e839c448576d6808bcbf7e16408e1e1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/e8b02f7e584f35beee04448966de8bff.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ed238b0bbcd97b1ae2e02fcd2439f505.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ed4d35d4cf108a4e4a6e2f39f42830eb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ed887dd441e481cd77e9f6294d17249d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ee0b8cf88ce6064e050fecba9f0e00f3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ee72cd63fadacbed7e03cebc57600670.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ef3971dd934b42ecc8eb296153da537f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/ef5f4cfd65d6459577189b25a38ef0a8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/f192801dba5cdfe53852e874a823a84f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/f304ae54d04e5ffd9a11cc823b080e59.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/f36c7a7ac79ed1412296d236bb10ea33.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/f76cad2c3ea81566832c4d7a291cee60.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/fa95accf9599e112ed50ade960f92835.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/fa9795950eba7ca2873e47d02b684155.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/fc07c1f405dd02e095083c064a2204ef.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/fd8480043af1343085b6fd6dcf350bb1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Runtime/Temp/fe35982f68859c662c3b7c5697d44c75.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/HelpCenter/accountProblem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/HelpCenter/billProblem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/HelpCenter/makeselfProblem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/HelpCenter/payProblem.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Index/index1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Index/xxdk.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/MyCart/.index.html.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/MyCollect/.index.html.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/MyOpenCourse/.index.html.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Popularize/popularize1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Public/xxk1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Sj/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Video/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Video/visual.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/ba.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/baa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bab.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bbc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/be.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhia.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhib.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhif.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bhiy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/boase.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/booi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/br.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/bw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Vk/images/by.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Tpl/Wxpay/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/0c156859692f1550b05b46c0ce50ff1c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/1c20447516eda16850f3ba6a2e4ae017.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/1e3b01c1dc7e44898fb7dafc4d33e2ad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/48c59773258d359b80659adfbded1780.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/4b3bca510e359bce2eae03ba9744db05.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/5c63bf71f3775daeccdfe955f9102834.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/5f44d1eed1cdeda1518021c5cbc212ff.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/65573251e564b894f5410149bf61c3f3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/81441b708ea9c9998f232ae1da8057db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/94563be90d66fef15489342c5b53a112.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/9ab263c930f3bb26629c2c21592bacfb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/b3019738780b10a9700414092e1c63dc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/b9e2d1b9c6b10b8c070705e9fd10fe7f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/bb953dee40402fc20084f5c89c9fac59.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/ed8044443c2d3f3b8cd1c29bb9da8f1c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/ee06f15cfc1b49df60d26531f37e4fc4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/f48ef5a526acabe6ec3960694542bb11.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_13.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_18.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_19.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Logs/17_04_21.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/022faf406ae42e2451063ac84ddbca91.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/02cc86fecef322b6e80dce1556a54ceb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/04339bc520eb9902acff42456aa23cd2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0472d1dfb9f632c922dcaff3f5d57a51.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/049154338af3f215cd693926b99cb5c0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/05221184872f89ff7dc573636b9b3777.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/06bb502eb1a714bd236eae4c94605eb7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/07cbf19d673c29f9d605f3fdcd54057c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/082d96b2f9e05968d0c6d1ba2db95e9a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/08da23287bcdaa720ae9a1a4a8d9396a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/094a1fa8b4709bba222dfe3ea609de6f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0955f088c78e93ddfd00a8d568bdf7d4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0b2c4a91baf2b3ef1bb44df7bd3f906b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0be734f5eea754e957a1139cbc565896.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0c1084b5ee6a4e9245c478f6e6e2bd09.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/0eeaf3e10ee4ee94d95ff8dc83353c9d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/11d8072de4f014b7d4090e9b102b9fe1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/13f264f08576e4afc1e5580df0c44943.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/16532ab25acb064ce39e346f47af2ef4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/1b240501ca5265f3bfdb84d9d6ddf8f9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/1b797d6cb9cbcaa36d8cc2ab76476688.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/1c721558ffc0626523cd844c65f69702.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/1ed952de21d7177eb4c7fd79dd79a739.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/20e5d7277e15aab7f587d1c0d67c9fb1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/20f5ce8e7b7091b439ef12205fa5ab79.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/21b17617c9c266b63ca0403e381e742c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2221d31c286ae274dfb481300ba03c5f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2361b0f57978e0b67832da007c8f655b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2696fd2f5758dad34c743ec7fd3b01d7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/26dba4c82271e338587f36c98847a3c4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2743291275d6c07871dab9e43e556403.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2b3d1e9424b650e60a8b51ed74470943.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2c55d527b7badd91b48792adeeb93842.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2d8e317b22b8a409905d3b27f971edb7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2ecf70875487110d87557e4052618887.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2f9c92b3a6c0ffccb61566bc0ae6f2ea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2fe918f988933db832f8464efc56fe49.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/2ffc7f643634d12eb6dab9b9b2bc0ba4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/3022df4db5c7e916fdb3e8b48a6ab46a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/32a01f83622ae4cf20afd9cf4446ae0a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/32fed83e88c6f3b15242dfcde36568d5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/33b89b495abf64b2eb928b086f444ff7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/37b893ce98278ec7cd0f5dfab90f14e8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/39b0f78ada1688e23379178784410de2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/39e18a3f02a07096d281dbb5793f1e53.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/3a1372361a2700afb1d718bbbf478753.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/3a9822a9af2fc3efd1f33b64835f2927.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/3c5abda7a93b16f12e973bf1e7b98d1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/3e204e4b77ecaf0f6d5ddbb2f3966114.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/422bce58b73416c7ceb639dfcd2d8d93.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/44be42e62bbbea18076b1dcd2fc2cd9a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/46e06ad4c87e0c6e7194355d8c843104.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/47c20bf6dbeb8cafef754131da422a63.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/47d7fd4449afb93fab88b89058fe7588.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/49280ab1e835ee574f1ddc03da46c329.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/4968fe95dd3e3c1357086b7f8015fe6b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/49e4ae44323f380a89a8b988dadbbc99.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/4c15b4bfca00b01aad2027a297516cf3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/4f73050352377751f3fb9ec6f06146dd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/517940dc27b38d679a1652b24f371f98.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/5187d7653bbca2e532602a79b913c633.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/55ce47e02a727dd86393957b9ed46f08.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/56da3789996eda4d34d9041453dbee2d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/570584592661000a54329e250eb0d2e5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/5a72977bec0505ede4a4470d5863879f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/5c577fa4930480cf146814cecb7983b2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/5f2a811f769f545545722efd86825ecb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/5febf4a2ddb93348bb77b2acae0a7094.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/64bb8207ab2d546da3d694e9dcb59e11.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/64f52e0335d3da11049f2f0150be1978.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/66d045196bfb42151de71540b30c58e0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/674686d9b24b0b5733265670f6a70cf5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/69ddcf881d371910c962d12e7c27b72f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/69f5f736cba8a3fe997264a0d75fe3d5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/6b76bd25e9efa6094ba1a5c803747ffe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/6c5b2d1e1b7d4f091b7d53222007e4ce.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/6cd2b21c7100ba20ede29e953f99d96c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/6d7995cb39afbe1881639a473e50102c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/6e2cc36a26b26f9c6966dc81718bb0d6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/747fe78dfd5aaaea46c84b6745001610.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7497226080834c67c8bcd216d3a42be7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/74ae87d135010447369b9d3a7c66b597.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/75035c77aed7ce18e1fb77cb8fce1e3b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/75cad4c758b648cb90232937189039e3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/774916b051c22bed3d024374f605be1b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7765ee7745010ba34ddca2e2eb72ffdf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/79b15f44b2121042fa46e71b9158b471.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7af2c22c50581a23fa67296f23991159.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7c28f5f584d306403763381e434d6e49.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7cab18677e749c27a0725777f5da29f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7ceec0ec6374cfdba52229319912abd2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/7fcd50f9ecb93748e401eb15d21845b2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/8377a34268aecf47bebf8fb03551c94c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/844d4fb41b2599642e52f6b2518b8b29.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/847aaf9a1f2c6baf98283fde17ef071b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/8934cde723d5fea9bf2656f0a3e4b514.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/893a201c3c618af5d07631a45c2cdc94.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/8a90c7b7085d3e91a71184522de629fe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/8e8cd2ddc12dab804faad738fcb31b4b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/9286c5b1f61a97b5df970906dd8fcfe5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/93af5887eb5ff6c9a17b1bb055b526a0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/9a40408974337a48e49ae9fdd0dc7a02.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/9b9ccb1c413a267c3545c3ccde72ec1d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/9fb57622f28b5648a2b36b9464bc31f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/9fcb2e235e6c4e7bc8169b4d2f62b8a4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a0d1297bb79895a596b9b2d1d38d5c59.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a11de6b7807fc737af1438fa869feb98.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a1d21f04360d4f95dd8670aa53e933f2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a4427992b3fc856cd61ba842f56fe88e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a50c3194c6376d24e41cb4575f3f3f64.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a5bf9d3e955757c36de021dc9a816e40.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a6efc78c3b0e447e692367928f16b051.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a7983b36a26f033a540e2a397b4c547b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a7e850adb6d1c0952be3006397029761.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a7ee9693f2030baee3cce3b29d4a67bb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/a97cec1c5b84f205fdd2ee26d51dc806.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ab068832ce781510653dc73ca7de00df.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ab2762d5fe209a9619e59448293d2651.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ac809fb648d5321637601021980c59df.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/acdcbe632ecdbbafdf5489530115191b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/aced1798cd6485af952a24818e609940.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/adebc9efa045543d4c3cf4339eeac2a2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/adfaa6bea4dbd7a7d36349714756cfa9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/af0c963c08119d844532eaf7e3b6a256.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b1919a2733a5a2f882f0bb35c64cfaad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b1f6a10208506204cdadbb510e8bd392.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b218b8d35520f10fa14e15cd6243de90.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b29db22b2f174cec4ba335b1d7d2fb30.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b2d2b96bfc524124d6e7560d961d33ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b49e239afe9aace813e6ada5fc86cf3b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b6966a8a8275f008da23315f8af5db79.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b6dc6c59581841361acf84e9ee2f1c83.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b8c61094457444dc7485b31c1920dc46.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/b8c68553279bf493541f4bffa29911ab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ba6aafee6eaf99bea7e311860d382d1a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/bab830ff4e067aa30b654fd37fc143b1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/bb578bacbe6519dd284da1c56e801d37.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/bba071d244176f591e9d9dccd06e4102.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/bcc31cd4fa3af56a524bce4429c08255.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/bfbdab0768490421882e3a8559ac602f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/c1a83c9a27d8de6138006da05ec47521.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/c3bbabaf405762f82745d0f9c4cd0d71.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/c7ab95156fe510343b246e7c2556f61d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/c8a1369ca2649090ff9d1a1b5016f3dd.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/c94b4d55bb6d877321f9f80f0d31848b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ce5cc6587828d6addd8c8f62f8f886a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/cfb864da3f891020dc85d695e08adc3c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d0b3adf97d7bbe72e0d7e5b53f066427.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d2cfe3192cf170e496b2b238e8d176c8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d30e2a2d4437a48e656a59223f7ef781.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d3a5484490d00948e20c621e639141e2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d4ac00d464be5f6ff24dbf0fd3f0f232.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d9a92eaf491e811908f1e498b9b1aa52.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/d9b00e772fb5ac95f8cf20295b48ba55.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/da97acc7ff1fa4c40188e7efd5130221.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/dd7c4b62f42848df292e14ee668c2555.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ddc4eb9c84b15d3e96ded3978bc4312c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/df6939aa125c929eb18475a242a49f37.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/e064bbb4d4f3f16120f576c89e37c231.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/e613cfda97662a935a8d4452e451f475.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/e7789117f2e272f56d185bd0f5f50f39.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ed386a109cfa114d64184b630f2cb0e6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/ef3586c98f7a6248d5df6b99cda32b28.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/efe4e0ed1c0bf7c71fa3d46cc4db9cad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f1707622ad4b0d29c0c4d606ba748929.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f34056d743d22e69377c5e646478cfc6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f4eceb4bbec56d904cc10c94accbbdd6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f5651a83e30bb20b5c268ba8aa03e303.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f7c68b5140651dffc68c651cc1a777ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/f97cb7d98794338d11d65add9de30a9f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Manage/Runtime/Temp/fb1c9849227215fea2ae5936caa7e7fc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/css/boss_finance1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/css/teachers_introduce1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/img/Video_diagnostic/未标题-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/img/Video_play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/img/carousel_1 (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/img/crossTeacher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/img/sj/.new_file.css.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/js/ask_answer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/Public/app/media/spring.mp3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/img/person.png" afterPath="$PROJECT_DIR$/Web/Public/app/img/person.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/img/support.png" afterPath="$PROJECT_DIR$/Web/Public/app/img/support.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/media/Upbeat.mp3" afterPath="$PROJECT_DIR$/Web/Public/app/media/Upbeat.mp3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/media/inin.mp4" afterPath="$PROJECT_DIR$/Web/Public/app/media/inin.mp4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/ArticleAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/ArticleAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/CodeAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/CodeAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/HelpCenterAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/HelpCenterAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/LoginAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/LoginAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyCartAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyCartAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyCollectAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyCollectAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyOpenCourseAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyOpenCourseAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/ProductAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/ProductAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/ReciveAddressAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/ReciveAddressAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/ReplyAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/ReplyAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/SearchAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/SearchAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/TeacherAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/TeacherAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/VoteAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/VoteAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/WebMessageAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/WebMessageAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Lib/Action/YuejtAction.class.php" afterPath="$PROJECT_DIR$/App/Lib/Action/YuejtAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/272487dfab5634287eff798022d8ff45.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/272487dfab5634287eff798022d8ff45.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/3b629ba68d77b305f4e3f024a2edff36.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/3b629ba68d77b305f4e3f024a2edff36.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/4b0d02b17ab97e7dd2ee659a573cb11d.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/4b0d02b17ab97e7dd2ee659a573cb11d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/502d23d2d54f4839c0d3510e2921b11c.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/502d23d2d54f4839c0d3510e2921b11c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/59d99ca1d0e4c4b233626ca4823616a7.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/59d99ca1d0e4c4b233626ca4823616a7.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/7c242b0f29e23d855be13ac11d5ab751.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/7c242b0f29e23d855be13ac11d5ab751.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/81535ff447fb2539630e718f54c84ff3.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/81535ff447fb2539630e718f54c84ff3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/837f48e01938dee30ef989382b4861bc.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/837f48e01938dee30ef989382b4861bc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/9ea754016c3c1d1dec6c07adc1701162.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/9ea754016c3c1d1dec6c07adc1701162.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/a43ee091293c08b425f9e73d2888eec8.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/a43ee091293c08b425f9e73d2888eec8.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/b0a41389f28f4bfedfa85cd7797ff00a.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/b0a41389f28f4bfedfa85cd7797ff00a.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/bd65ad80d1ff242a89241dbe9aa99b4d.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/bd65ad80d1ff242a89241dbe9aa99b4d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/c11e52a1dd9d352e30c8b674b4f4712c.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/c11e52a1dd9d352e30c8b674b4f4712c.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/c7802c94a24c59705130d53d526e389f.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/c7802c94a24c59705130d53d526e389f.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/e5014dda3b2c86016cdc3a9e18ef9fe6.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/e5014dda3b2c86016cdc3a9e18ef9fe6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f42ded3731e539445690c0fcf0ac009a.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/f42ded3731e539445690c0fcf0ac009a.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f45abec09fc009468233ed571472d4fe.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/f45abec09fc009468233ed571472d4fe.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f81104b5db6795124ddbb4845070fcf3.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/f81104b5db6795124ddbb4845070fcf3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Cache/f980e546fcb5a58943e4ef2ce06dcc7c.php" afterPath="$PROJECT_DIR$/App/Runtime/Cache/f980e546fcb5a58943e4ef2ce06dcc7c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Runtime/Logs/17_04_17.log" afterPath="$PROJECT_DIR$/App/Runtime/Logs/17_04_17.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Apply/sign_up.html" afterPath="$PROJECT_DIR$/App/Tpl/Apply/sign_up.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Article/article.html" afterPath="$PROJECT_DIR$/App/Tpl/Article/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Article/articlelist.html" afterPath="$PROJECT_DIR$/App/Tpl/Article/articlelist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Article/message.html" afterPath="$PROJECT_DIR$/App/Tpl/Article/message.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html" afterPath="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Cooperation/counselor.html" afterPath="$PROJECT_DIR$/App/Tpl/Cooperation/counselor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Cooperation/opp.html" afterPath="$PROJECT_DIR$/App/Tpl/Cooperation/opp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Cooperation/refer.html" afterPath="$PROJECT_DIR$/App/Tpl/Cooperation/refer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Cooperation/reserve.html" afterPath="$PROJECT_DIR$/App/Tpl/Cooperation/reserve.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Coursebm/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Coursebm/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/H5g/index.html" afterPath="$PROJECT_DIR$/App/Tpl/H5g/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/about.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/kce.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/kce.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/vielist.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/vielist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Index/visual.html" afterPath="$PROJECT_DIR$/App/Tpl/Index/visual.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Kecheng/signUp.html" afterPath="$PROJECT_DIR$/App/Tpl/Kecheng/signUp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCart/evaluate.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCart/evaluate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCart/index.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCart/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCenter/accountSecurity.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCenter/accountSecurity.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCenter/bill.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCenter/bill.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCenter/index.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCenter/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCenter/personInfo.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCenter/personInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyCollect/index.html" afterPath="$PROJECT_DIR$/App/Tpl/MyCollect/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyOpenCourse/evaluate.html" afterPath="$PROJECT_DIR$/App/Tpl/MyOpenCourse/evaluate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyOpenCourse/index.html" afterPath="$PROJECT_DIR$/App/Tpl/MyOpenCourse/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/apporintmentList.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/apporintmentList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/diagnoseList.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/diagnoseList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/evaluate.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/evaluate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/getAnswer.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/getAnswer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/MyService/questionList.html" afterPath="$PROJECT_DIR$/App/Tpl/MyService/questionList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/camp.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/camp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/cost.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/cost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/eight.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/eight.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/five.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/five.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/styli.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/styli.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Product/two.html" afterPath="$PROJECT_DIR$/App/Tpl/Product/two.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Public/bottom.html" afterPath="$PROJECT_DIR$/App/Tpl/Public/bottom.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Public/head.html" afterPath="$PROJECT_DIR$/App/Tpl/Public/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Public/mybottom.html" afterPath="$PROJECT_DIR$/App/Tpl/Public/mybottom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Public/myleft.html" afterPath="$PROJECT_DIR$/App/Tpl/Public/myleft.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Question/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Question/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Question/make.html" afterPath="$PROJECT_DIR$/App/Tpl/Question/make.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/ReciveAddress/index.html" afterPath="$PROJECT_DIR$/App/Tpl/ReciveAddress/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Register/registerSuccess.html" afterPath="$PROJECT_DIR$/App/Tpl/Register/registerSuccess.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Register/vipRegister.html" afterPath="$PROJECT_DIR$/App/Tpl/Register/vipRegister.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" afterPath="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Reply/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Reply/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Reply/one.html" afterPath="$PROJECT_DIR$/App/Tpl/Reply/one.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Search/articleList.html" afterPath="$PROJECT_DIR$/App/Tpl/Search/articleList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Search/videoList.html" afterPath="$PROJECT_DIR$/App/Tpl/Search/videoList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Swjcldy/fall.html" afterPath="$PROJECT_DIR$/App/Tpl/Swjcldy/fall.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce.html" afterPath="$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Teacher/teacherList.html" afterPath="$PROJECT_DIR$/App/Tpl/Teacher/teacherList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" afterPath="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Vip/member2.html" afterPath="$PROJECT_DIR$/App/Tpl/Vip/member2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Vip/openVip.html" afterPath="$PROJECT_DIR$/App/Tpl/Vip/openVip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Vk/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Vk/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Vote/src.html" afterPath="$PROJECT_DIR$/App/Tpl/Vote/src.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/WebMessage/index.html" afterPath="$PROJECT_DIR$/App/Tpl/WebMessage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Yuejt/index.html" afterPath="$PROJECT_DIR$/App/Tpl/Yuejt/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Tpl/Yuejt/one.html" afterPath="$PROJECT_DIR$/App/Tpl/Yuejt/one.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Conf/config.php" afterPath="$PROJECT_DIR$/Manage/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/ArticleAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/ArticleAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/ContentAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/ContentAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/PublicAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/PublicAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/QuestionAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/QuestionAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Lib/Action/UserAction.class.php" afterPath="$PROJECT_DIR$/Manage/Lib/Action/UserAction.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/21419c6487a78b63cc440a51c596b5b9.php" afterPath="$PROJECT_DIR$/Manage/Runtime/Cache/21419c6487a78b63cc440a51c596b5b9.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/6eb21b90e50e413ebd495101e2f3fb87.php" afterPath="$PROJECT_DIR$/Manage/Runtime/Cache/6eb21b90e50e413ebd495101e2f3fb87.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/98c8bf0e0bc40b9be29a160852d1c104.php" afterPath="$PROJECT_DIR$/Manage/Runtime/Cache/98c8bf0e0bc40b9be29a160852d1c104.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Runtime/Cache/d177e71e5bdb578dc01047b7b6f6b074.php" afterPath="$PROJECT_DIR$/Manage/Runtime/Cache/d177e71e5bdb578dc01047b7b6f6b074.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Article/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Article/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Content/boss.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Content/boss.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Content/bwbd.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Content/bwbd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Content/vk.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Content/vk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Index/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Kecheng/arrange.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Kecheng/arrange.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Power/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Power/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Public/login.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Public/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Rate/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Rate/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Reply/one.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Reply/one.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Up/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Up/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Up/vede.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Up/vede.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Extend/Vendor/WxPayPubHelper/WxPayPubHelper.php" afterPath="$PROJECT_DIR$/ThinkPHP/Extend/Vendor/WxPayPubHelper/WxPayPubHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/bill.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/bill.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/js/bill.js" afterPath="$PROJECT_DIR$/Web/Public/app/js/bill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/User/message.html" afterPath="$PROJECT_DIR$/Manage/Tpl/User/message.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Xxdk/index.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Xxdk/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manage/Tpl/Yuejt/one.html" afterPath="$PROJECT_DIR$/Manage/Tpl/Yuejt/one.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/admin/js/jquery.easyui.min.js" afterPath="$PROJECT_DIR$/Web/Public/admin/js/jquery.easyui.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/caption.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/caption.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/delivery-address.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/delivery-address.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/finance_class.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/finance_class.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/head.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/head.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/introduce_all.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/introduce_all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/my-information.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/my-information.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/official.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/official.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/sign_up.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/sign_up.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/css/teachers_introduce.css" afterPath="$PROJECT_DIR$/Web/Public/app/css/teachers_introduce.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/js/Ajax/ThinkAjax.js" afterPath="$PROJECT_DIR$/Web/Public/app/js/Ajax/ThinkAjax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/js/L_slide.js" afterPath="$PROJECT_DIR$/Web/Public/app/js/L_slide.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/Public/app/js/delivery-address.js" afterPath="$PROJECT_DIR$/Web/Public/app/js/delivery-address.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
     </list>
     <ignored path="dcyd.iws" />
@@ -63,7 +614,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -85,26 +635,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserAction.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/UserAction.class.php">
+      <file leaf-file-name="ApplyAction.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/Lib/Action/ApplyAction.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
+            <state relative-caret-position="243">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collection.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/collection.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -127,59 +663,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/Tpl/Wxpay/index.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Vip/member1.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Vip/member.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Vip/member2.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Kecheng/boss.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Kecheng/finance.html" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/finance_class.css" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/official.css" />
-        <option value="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/welcomeTwo.css" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/vipRegister.css" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/findpassword.css" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/Video_diagnostic.css" />
-        <option value="$PROJECT_DIR$/App/Tpl/Register/doorway.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Login/loginPage.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Login/findpassword.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/VideodiagnosticAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Tpl/Index/visual.html" />
-        <option value="$PROJECT_DIR$/Manage/Tpl/Xxdk/index.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Index/vielist.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Index/index.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Index/kce.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php" />
-        <option value="$PROJECT_DIR$/Web/Public/app/js/ask_answer.js" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/teachers_introduce.css" />
-        <option value="$PROJECT_DIR$/Web/Public/app/css/boss_finance.css" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/MyOpenCourseAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Tpl/Kecheng/confirmation.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php" />
-        <option value="$PROJECT_DIR$/Web/Public/app/js/delivery-address.js" />
-        <option value="$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/ReciveAddressAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Tpl/Register/registerSuccess.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Register/vipRegister.html" />
-        <option value="$PROJECT_DIR$/App/Tpl/Public/head.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/CodeAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php" />
-        <option value="$PROJECT_DIR$/App/Tpl/Index/about.html" />
-        <option value="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
-        <option value="$PROJECT_DIR$/Manage/Tpl/User/bill.html" />
-        <option value="$PROJECT_DIR$/Manage/Tpl/User/index.html" />
-        <option value="$PROJECT_DIR$/Manage/Tpl/Up/vede.html" />
-        <option value="$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Extend/Vendor/WxPayPubHelper/WxPayPubHelper.php" />
         <option value="$PROJECT_DIR$/Manage/Tpl/User/comments.html" />
         <option value="$PROJECT_DIR$/Manage/Tpl/User/collection.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/CodeAction.class.php" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/User/message.html" />
         <option value="$PROJECT_DIR$/Manage/Lib/Action/UserAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Article/message.html" />
+        <option value="$PROJECT_DIR$/Web/Public/app/css/caption.css" />
+        <option value="$PROJECT_DIR$/App/Tpl/Article/article.html" />
+        <option value="$PROJECT_DIR$/Web/Public/app/css/reset.css" />
+        <option value="$PROJECT_DIR$/Web/Public/app/css/ask_answer.css" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Xxdk/index.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/ReciveAddress/index.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Search/articleList.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/TeacherAction.class.php" />
+        <option value="$PROJECT_DIR$/Web/Public/app/css/landing.css" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Kecheng/arrange.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Kecheng/mess.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Teacher/teacherList.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/LoginAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Index/visual.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Help/payques.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Help/billques.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Help/zhques.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Help/custom.html" />
+        <option value="$PROJECT_DIR$/Manage/Lib/Action/HelpAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Article/articlelist.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Register/vipRegister.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/AskAnswer/Asks.html" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Article/index.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Public/bottom.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Index/vielist.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Public/menuother.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Public/mybottom.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Index/kce.html" />
+        <option value="$PROJECT_DIR$/App/Tpl/Index/coursedetails.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/ArticleAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Vip/openVip.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/VipAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Index/index.html" />
+        <option value="$PROJECT_DIR$/Manage/Lib/Action/AskAnswerAction.class.php" />
+        <option value="$PROJECT_DIR$/App/Tpl/Public/head.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php" />
+        <option value="$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php" />
+        <option value="$PROJECT_DIR$/Manage/Tpl/Up/vede.html" />
+        <option value="$PROJECT_DIR$/App/Lib/Action/ApplyAction.class.php" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -222,15 +762,8 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -248,7 +781,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,12 +788,6 @@
               <option name="myItemId" value="dcyd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dcyd" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -277,7 +803,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemId" value="App" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,33 +817,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkPHP" />
+              <option name="myItemId" value="App" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Extend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThinkPHP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Vendor" />
+              <option name="myItemId" value="Lib" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,61 +835,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Manage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tpl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Manage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tpl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Manage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dcyd" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Manage" />
+              <option name="myItemId" value="App" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -399,20 +849,40 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="SearchEverywhereHistoryKey" value="操盘案例&#9;null&#9;null" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.splitter.proportion" value="0.27299413" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="989" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="196" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="989" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpstudy\WWW\dcyd\Web\Public\app\img" />
-      <recent name="D:\phpstudy\WWW\dcyd\Web\Public\app\img\Video_diagnostic" />
+      <recent name="D:\phpstudy\WWW\dcyd\Web\Public\app" />
+      <recent name="D:\phpstudy\WWW\dcyd\Web\Public\app\css" />
+      <recent name="D:\phpstudy\WWW\dcyd\App\Tpl\Public" />
+      <recent name="D:\phpstudy\WWW\dcyd\App\Tpl\Teacher" />
+      <recent name="D:\phpstudy\WWW\dcyd\App\Tpl\Videodiagnostic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpstudy\WWW\dcyd\App\Tpl\H5g" />
@@ -461,7 +931,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -625,12 +1095,31 @@
       <workItem from="1492477537507" duration="23748000" />
       <workItem from="1492566194980" duration="16896000" />
       <workItem from="1492649180297" duration="21904000" />
-      <workItem from="1492737577385" duration="7575000" />
+      <workItem from="1492737577385" duration="24700000" />
+      <workItem from="1492772569207" duration="1000" />
+      <workItem from="1492996407904" duration="9962000" />
+      <workItem from="1493083110120" duration="19136000" />
+      <workItem from="1493174398266" duration="17781000" />
+      <workItem from="1493255605534" duration="12894000" />
+      <workItem from="1493343461711" duration="13184000" />
+      <workItem from="1493688840601" duration="15779000" />
+      <workItem from="1493775243534" duration="20217000" />
+      <workItem from="1493861551005" duration="10507000" />
+      <workItem from="1493946412943" duration="4727000" />
+      <workItem from="1493960414362" duration="15452000" />
+      <workItem from="1494049456705" duration="13553000" />
+      <workItem from="1494138918310" duration="12484000" />
+      <workItem from="1494157843115" duration="972000" />
+      <workItem from="1494162514838" duration="1569000" />
+      <workItem from="1494213228598" duration="3499000" />
+      <workItem from="1494237851135" duration="5000" />
+      <workItem from="1494292968920" duration="1727000" />
+      <workItem from="1494296630511" duration="445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2208005000" />
+    <option name="totallyTimeSpent" value="2399024000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -642,26 +1131,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19826518" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20208605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +1175,7 @@
           <option name="timeStamp" value="138" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="266" />
+      <option name="time" value="274" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -704,358 +1192,348 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Login/findpassword.html">
+    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="-129">
+          <caret line="1084" column="52" lean-forward="false" selection-start-line="1084" selection-start-column="52" selection-end-line="1084" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/VideodiagnosticAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Xxdk/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Kecheng/boss.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="62" column="91" selection-start-line="62" selection-start-column="91" selection-end-line="62" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/kce.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/vielist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="337" column="28" selection-start-line="337" selection-start-column="28" selection-end-line="337" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/AskAnswerAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/MyCenter/bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/AskAnswer/Asks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2012">
-          <caret line="140" column="34" selection-start-line="140" selection-start-column="34" selection-end-line="140" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/js/ask_answer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/teachers_introduce.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="331" column="0" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/boss_finance.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10692">
-          <caret line="486" column="21" selection-start-line="486" selection-start-column="21" selection-end-line="486" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/KechengAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3916">
-          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Kecheng/confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/MyOpenCourseAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/MyServiceAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3014">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/delivery-address.css">
+    <entry file="file://$PROJECT_DIR$/Web/Public/app/js/L_slide.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/js/delivery-address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Teacher/teacherIntroduce.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="418" column="45" selection-start-line="418" selection-start-column="45" selection-end-line="418" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Public/app/img/play.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Wxpay/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/HtmlAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/CodeAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/vipRegister.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/registerSuccess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Videodiagnostic/Video_diagnostic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="294" column="22" selection-start-line="294" selection-start-column="22" selection-end-line="294" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/ReciveAddressAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="296" column="21" selection-start-line="296" selection-start-column="21" selection-end-line="296" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/mesage.html" />
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Lib/Core/Action.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="409" column="0" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Lib/Core/Think.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Lib/Core/App.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/Manerger/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/VipAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/XxdkAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/WxpayAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="205" column="24" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/visual.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="397" column="49" selection-start-line="397" selection-start-column="38" selection-end-line="397" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="375" column="33" selection-start-line="375" selection-start-column="33" selection-end-line="375" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Up/vede.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="214" column="41" selection-start-line="214" selection-start-column="41" selection-end-line="214" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/bill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/KechengAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="-1078">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Extend/Vendor/WxPayPubHelper/WxPayPubHelper.php">
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Kecheng/mess.html" />
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Kecheng/arrange.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="77" column="46" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="46" />
+        <state relative-caret-position="352">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/comments.html">
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/TeacherAction1.class.php" />
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/TeacherAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="94" column="58" selection-start-line="94" selection-start-column="58" selection-end-line="94" selection-end-column="58" />
+        <state relative-caret-position="308">
+          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/index.html">
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Teacher/teacherList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="91" column="42" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="385">
+          <caret line="236" column="12" lean-forward="false" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/collection.html">
+    <entry file="file://$PROJECT_DIR$/Web/Public/app/css/official.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6072">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/UserAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Login/loginPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/MyCenterAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="206" column="63" lean-forward="false" selection-start-line="206" selection-start-column="63" selection-end-line="206" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/welcomeTwo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/LoginAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Help/billques.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3806">
+          <caret line="173" column="41" lean-forward="false" selection-start-line="173" selection-start-column="41" selection-end-line="173" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Help/zhques.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="173" column="39" lean-forward="false" selection-start-line="173" selection-start-column="39" selection-end-line="173" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Help/payques.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Help/custom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2497">
+          <caret line="186" column="5" lean-forward="false" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Register/vipRegister.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/HelpAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="204" column="9" lean-forward="false" selection-start-line="204" selection-start-column="9" selection-end-line="204" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/User/bill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="209" column="41" lean-forward="false" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/UserAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
+        <state relative-caret-position="245">
+          <caret line="89" column="32" lean-forward="false" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/ArticleAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="106" column="14" lean-forward="false" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/AskAnswer/Asks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Up/teacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Article/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="289" column="45" lean-forward="false" selection-start-line="289" selection-start-column="45" selection-end-line="289" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/vielist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="304" column="35" lean-forward="false" selection-start-line="304" selection-start-column="30" selection-end-line="304" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3498">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/bottom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-547">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/menuother.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/mybottom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/myleft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/kce.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="298" column="81" lean-forward="false" selection-start-line="298" selection-start-column="81" selection-end-line="298" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/coursedetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="298" column="81" lean-forward="false" selection-start-line="298" selection-start-column="81" selection-end-line="298" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/visual.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5797">
+          <caret line="649" column="28" lean-forward="false" selection-start-line="649" selection-start-column="28" selection-end-line="649" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/IndexAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Article/articlelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/ArticleAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="62" lean-forward="false" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/MyCenter/accountSecurity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Vip/openVip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2222">
+          <caret line="101" column="60" lean-forward="false" selection-start-line="101" selection-start-column="60" selection-end-line="101" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/VipAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="524" column="11" lean-forward="false" selection-start-line="524" selection-start-column="11" selection-end-line="524" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/AskAnswerAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/myhead.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Lib/Action/UpAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="354" column="26" lean-forward="false" selection-start-line="354" selection-start-column="26" selection-end-line="354" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manage/Tpl/Up/vede.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="59" column="61" lean-forward="false" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/RegisterAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Tpl/Public/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="47" column="83" lean-forward="false" selection-start-line="47" selection-start-column="83" selection-end-line="47" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Lib/Action/ApplyAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding />
         </state>
       </provider>
